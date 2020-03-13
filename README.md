@@ -69,6 +69,24 @@ and then aggregated to the county level, summed up the bed counts and took some 
 
 got some really messy jupyter notebooks that did this processing, and i'm using kepler to visualize for speed's sake
 
+## Running the notebooks
+
+You can run the Jupyter notebooks for data processing and analytics directly on your machine by using [Docker](https://docs.docker.com/install/).
+
+To get started you can use these scripts (requires non-Windows OS with a Docker installation):
+
+```
+> ./docker/build
+> ./docker/run
+```
+
+The docker container will mount the notebooks and data folder into the container, so that any notebook
+work is saved to the `nbs/` folder on your machine, and an data moved into the `data/` folder will be accessable
+through `/home/jovyan/data` inside any notebook.
+
+Developing inside a docker container keeps track of what dependencies the notebooks need to run.
+All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
+
 ## Where to Help
 
 - geodata cleanup, further processing, spatial analysis and combining with other datasets like covid case counts by day/county/state, this is maybe the best one for the US right now: https://covidtracking.com/
