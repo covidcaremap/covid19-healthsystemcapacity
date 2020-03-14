@@ -128,7 +128,7 @@ Help us get going. There's no more time to wait.
 
 ## How To Help
 
-- lots of data to science:
+- lots of data to science*:
   - ingesting new data and cleaning up things
   - validation and error checking, 
   - spatial and temporal analyses at different scales
@@ -148,6 +148,24 @@ Help us get going. There's no more time to wait.
 Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere, send a pull request, join the gitter chat:
 
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+### \*Running the notebooks
+
+You can run the Jupyter notebooks for data processing and analytics directly on your machine by using [Docker](https://docs.docker.com/install/).
+
+To get started you can use these scripts (requires non-Windows OS with a Docker installation):
+
+```
+> ./docker/build
+> ./docker/run
+```
+
+The docker container will mount the notebooks and data folder into the container, so that any notebook
+work is saved to the `nbs/` folder on your machine, and an data moved into the `data/` folder will be accessable
+through `/home/jovyan/data` inside any notebook.
+
+Developing inside a docker container keeps track of what dependencies the notebooks need to run.
+All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
 
 ## Methodology Notes (things get messy here)
 
