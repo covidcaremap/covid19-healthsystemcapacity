@@ -22,16 +22,20 @@ Run the jupyter notebook in a covid19 docker image locally
 "
 }
 
+JUPYTER="-v ${NOTEBOOK_DIR}:/opt/jupyter -p 8888:8888"
+CMD=(jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root --notebook-dir=/opt/jupyter)
+
+
 if [ "${BASH_SOURCE[0]}" = "${0}" ]
 then
     docker run --rm -it \
            -e "AWS_PROFILE=$AWS_PROFILE" \
            -v "$HOME/.aws":/root/.aws:ro \
            -v "$PROJECT_ROOT":/opt/src \
-           -v ${DATA_DIR}:/home/jovyan/data \
-           -v ${NOTEBOOK_DIR}:/home/jovyan/nbs \
+           -v ${DATA_DIR}:/opt/jupyter/data \
+           -v ${NOTEBOOK_DIR}:/opt/jupyter/nbs \
            --ip 0.0.0.0 \
            -p 8888:8888 \
            covid19:latest \
-           /bin/sh -c "PYTHONPATH=/opt/src:$PYTHONPATH start-notebook.sh"
+           "${CMD[@]}"
 fi
