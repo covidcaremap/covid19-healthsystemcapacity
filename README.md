@@ -170,16 +170,19 @@ To get started you can use these scripts (requires non-Windows OS with a Docker 
 > ./docker/run
 ```
 
+This will print out a URL with a token parameter to open up in your browser.
+Use the last one listed (starting with `http://127.0.0.1:8888`)
+
 The docker container will mount the notebooks and data folder into the container, so that any notebook
 work is saved to the `nbs/` folder on your machine, and an data moved into the `data/` folder will be accessable
-through `/home/jovyan/data` inside any notebook.
+through `/opt/jupyter/data` inside any notebook.
 
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
 
 ## Methodology Notes (things get messy here)
 
-1.1:  
+1.1:
 
 Following this [paper's methodology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4351597/), I grabbed every US health facility that reported cost data to Medicare in FY2018 (via CMS' Healthcare Cost Reporting Info Sys or [HCRIS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports)), ran their addresses through geocoders to get point lngs/lats per facility, and counted up their various reported bed capacities (ICU, adult+peds, Total beds)
 
