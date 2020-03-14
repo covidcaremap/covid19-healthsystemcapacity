@@ -12,13 +12,19 @@ Let's #FlattenTheCurve and raise our capacity to care for COVID19 patients (and 
 
 Source: https://twitter.com/alxrdk/status/1237021885239635969
 
-You've likely seen some version of this #FlattenTheCurve diagram. Look at the orange lines. The dashed orange line says "Treatment Capacity without action" and the solid orange line is "Treatment capacity with delay" (solid orange). In other graphics, this is often shown as a flat line labeled as "Health Systems Capacity". 
+You've likely seen some version of this #FlattenTheCurve diagram. Look at the orange lines. The dashed orange line says "Treatment Capacity without action" and the solid orange line is "Treatment capacity with delay". In other graphics, this is often shown as a flat line labeled as "Health Systems Capacity". 
 
 Notice how these lines dip and grow differently between the fast+high peaking caseload vs flattened caseload scenarios. The growth reflects our healthcare system's response to the growing crisis. They can increase capacity by clearing and diverting non-urgent/elective cases, bringing in more providers, setting up and staffing spare inpatient and ICU beds with ventilators, stockpiling and increasing supply shipments, etc. In China's case, they built 2 new hospitals dedicated to COVID19 patients and sent 10s of thousands of health providers from other areas of China into Wuhan (citation TODO). But there are hard limits to capacity growth as signified by the plateau. 
 
 More importantly, see how capacity dips with high+fast peaking demand on health systems. This happens because [health systems become overwhelmed](https://www.theatlantic.com/ideas/archive/2020/03/who-gets-hospital-bed/607807/) by rapidly surging #s of active patients in need and deteriorate in their ability to effectively care for them. Beds get filled up and stay occupied longer, supplies run low, there aren't enough ventilators or other critical care equipment to go around, [providers get exhausted or exposed to COVID19 and taken out of work by quarantine, sickness, or death](https://www.businessinsider.com/healthcare-workers-getting-coronavirus-500-infected-2020-2).
 
-A health system's ability to handle this surge of patients with minimal capacity dip and ramp up to an higher overall capacity for care is a very localized question. While [new cases are being reported every day in new places across the globe](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) and [estimates that 20-60% of the adult population may ultimately be infected](https://news.harvard.edu/gazette/story/2020/03/hundreds-of-u-s-coronavirus-cases-may-have-slipped-through-screenings/) by the virus permeate the public's understanding, this spread is not evenly distributed in place nor time. Even considering disparities in covid19 testing capacity and lag between becoming infected and showing symptoms which delay or skew our understanding of the disease's true spatiotemporal distribution, outbreaks start in different places at different times and grow at different rates. It differs depending on how many came from elsewhere and when, population density, distributions of age and/or health comorbidities, effectiveness of early testing and containment efforts, or social distancing and other mitigation measures put in place when and how aggressively. In short, the slope of increase and peak of the demand curve can vary greatly in place and time.
+Fast growing demand and dipping capacity means critical care can quickly become a scarce resource that needs to be triaged, as described by [researchers of what is now happening in Italy](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30627-9/fulltext):
+
+>The percentage of patients in intensive care reported daily in Italy between March 1 and March 11, 2020, has consistently been between 9% and 11% of patients who are actively infected. The number of patients infected since Feb 21 in Italy closely follows an exponential trend. If this trend continues for 1 more week, there will be 30 000 infected patients. Intensive care units will then be at maximum capacity; up to 4000 hospital beds will be needed by mid-April, 2020.
+
+>In theory, we are in a better position than many other countries to react to the current outbreak. However, an aggressive approach needs to be taken with patients who are critically ill with SARS-CoV-2, often including ventilatory support. The system's capacity to respond to changing circumstances has been under enormous pressure, at least in the Lombardy region, where two clusters have already emerged since Feb 21. We predict that if the exponential trend continues for the next few days, more than 2500 hospital beds for patients in intensive care units will be needed in only 1 week to treat ARDS caused by SARS-CoV-2-pneumonia in Italy. In the meantime, the government is preparing to pass legislation that will enable the health service to hire 20 000 more doctors and nurses and to provide 5000 more ventilators to Italian hospitals. These measures are a step in the right direction, but our model tells us that they need to be implemented urgently, in a matter of days. Otherwise, a substantial number of unnecessary deaths will become inevitable. Intensive care specialists are already considering denying life-saving care to the sickest and giving priority to those patients most likely to survive when deciding who to provide ventilation to.
+
+A health system's ability to handle this surge of patients with minimal capacity dip and ramp up to an higher overall capacity for care is a question that depends, among other things, on where and when. While [new cases are being reported every day in new places across the globe](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) and [estimates that 20-60% of the adult population may ultimately be infected](https://news.harvard.edu/gazette/story/2020/03/hundreds-of-u-s-coronavirus-cases-may-have-slipped-through-screenings/) by the virus permeate the public's understanding, this spread is not evenly distributed in place nor time. Even considering disparities in covid19 testing capacity and lag between becoming infected and showing symptoms which delay or skew our understanding of the disease's true spatiotemporal distribution, outbreaks start in different places at different times and grow at different rates. It differs depending on how many came from elsewhere and when, population density, distributions of age and/or health comorbidities, effectiveness of early testing and containment efforts, or social distancing and other mitigation measures put in place when and how aggressively. In short, the slope of increase and peak of the demand curve can vary greatly in place and time.
 
 This example of the different infectious disease impact on different communities is well studied in the 1918 Spanish Flu case of Philadelpha and St. Louis:
 
@@ -91,13 +97,13 @@ Help us get going. There's no more time to wait.
 
     1.2: Clean-up and bring together into data-science ready formats:
     
-    * Notebooks: [/nbs](./nbs/) TODO
+    * Jupyter Notebooks: [/nbs](./nbs/)
     * GeoJSON, spreadsheets, & other data produced: [/data](./data/)
 
     1.3: Visualizations and Dashboards: 
     
     * 1st attempt: [https://daveluo.github.io/covid19-healthsystemcapacity/viz/covid19-usabedcapacity-geoviz20200313v1](https://daveluo.github.io/covid19-healthsystemcapacity/viz/covid19-usabedcapacity-geoviz20200313v1)
-    
+
     ![](./figs/viz_v1_screencap.png)
 
 2. Map how capacity responds in place and time to the anticipated spatiotemporal distribution of COVID19 spread:
@@ -143,6 +149,10 @@ Help us get going. There's no more time to wait.
 - communication and education - what and why are these tools important for personal & community protection, public health decisionmaking at the local, county & state levels
   - public awareness building and truth-seeking to detect problems and implore action where it's most needed. Focus on creating actionable awareness and avoid paralysis by analysis, panic, despair. 
 - project management...enough said.
+- ask great questions
+  - about how some part or all of this project works or more importantly, is useful
+  - where to avoid reinventing the wheel and use what's already built and useful out there
+  - how to connect and coordinate with related efforts
 - what else...you tell us! Or better yet, take what's here and run with it, build on it, make it work for your community. Let us know what you come up with so we can link to it and learn from you. Let's build and share expertise together!
 
 Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere, send a pull request, join the gitter chat:
@@ -178,6 +188,22 @@ calculated bed occupancy rates by dividing total inpt days / total available bed
 spatial joined with US county polygons, summed bed counts, joined US 2018 census population data, calculated beds/1000 people and beds/1000 15+ year olds
 
 got some really messy jupyter notebooks and using kepler to visualize for speed's sake
+
+**Known issues with this approach:**
+- definition of a bed defined in HCRIS (nicely tucked away on page 62 of [Chapter 40](https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/P152_40.zip) of the [Provider Reimbursement Manual](https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Paper-Based-Manuals-Items/CMS021935), see below for excerpt) is what was staffed across the reporting year, not the total # of physical beds or licensed beds
+
+>A bed means an adult bed, pediatric bed, portion of inpatient labor/delivery/postpartum (LDP) room (also referred to as birthing room) bed when used for services other than labor and delivery, or newborn ICU bed (excluding newborn bassinets) maintained in a patient care area for lodging patients in acute, long term, or domiciliary areas of the hospital. Beds in post-anesthesia, post- operative recovery rooms, outpatient areas, emergency rooms, ancillary departments (however, see exception for labor and delivery department), nurses' and other staff residences, and other such areas that are regularly maintained and utilized for only a portion of the stay of patients (primarily for special procedures or not for inpatient lodging) are not termed a bed for these purposes. (See CMS Pub. 15-1, chapter 22, §2205.)
+
+- which means the bed counts here are lower end of the range for total potential bed capacity, although it should be a good baseline of what "business as usual" hospital capacity has been in recently years
+- total and ICU bed counts also doesn't distinguish between adult or peds. We could estimate based on the distribution of adult vs peds beds across a county or state
+- another set of national numbers on beds and other facility stats could come from the AHA: 
+  - https://www.aha.org/system/files/2018-07/2018-aha-chartbook.pdf
+  - https://www.aha.org/statistics/fast-facts-us-hospitals
+- or on a state level, by the licensing reports filed with each DOH, i.e. for California: https://healthdata.gov/dataset/licensed-and-certified-healthcare-facility-bed-types-and-counts
+    - note that these are licensed bed counts as opposed to staffed beds so this would be on the upper end of potential capacity for a facility
+
+
+
 
 ## Sources
 
