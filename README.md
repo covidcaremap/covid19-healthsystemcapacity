@@ -16,6 +16,9 @@ B. Perform an analysis of the healthcare system capacity as compared to disease 
 
 C. Visualize the result of the analysis as well as the disease forecast and healthcare system capacity data in a format that supports healthcare system preparedness and resourcing decisions.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information on how to contribute!
 
 ## Why
 
