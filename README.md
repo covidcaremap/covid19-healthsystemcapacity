@@ -1,5 +1,18 @@
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+- [TL;DR Summary](#tldr-summary)
+- [Contributing](#contributing)
+- [Why](#why)
+  - [Take-home message #1](#take-home-message-1)
+  - [Take-home message #2](#take-home-message-2)
+- [What To Do](#what-to-do)
+- [How To Help](#how-to-help)
+  - [Running the notebooks](#running-the-notebooks)
+- [Methodology Notes (things get messy here)](#methodology-notes-things-get-messy-here)
+- [Sources](#sources)
+- [Acknowledgments](#acknowledgments)
+- [Misc](#misc)
+
 ## TL;DR Summary
 
 Understand, anticipate, and act to support and ramp up our local health systems' capacity (providers, supplies, ventilators, beds, meds) to effectively care for a rapidly growing flow of active COVID19 patients. 
@@ -58,12 +71,12 @@ For COVID19 in China, drastic differences were seen comparing Wuhan (left figure
 * Paper: https://dash.harvard.edu/handle/1/42599304
 * Data: https://github.com/c2-d2/COVID-19-wuhan-guangzhou-data
 
-### Take-home message #1:
+### Take-home message #1
 Social distancing works and is among the best practices we have on hand to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. Know what to do and do your part to protect yourself and your community with these resources:
 - [Flatten The Curve](https://www.flattenthecurve.com/)
 - [CDC: How To Prepare and Take Action](https://www.cdc.gov/coronavirus/2019-ncov/community/index.html)
 
-### Take-home message #2:
+### Take-home message #2
 Our health system capacity is at great risk of being saturated or overwhelmed. If you look again at the above figure for Wuhan at their peak of active severely ill and critically ill cases, the # of critically ill (patients who require ICU-level care) per capita hits the US' number of ICU beds per capita. 
 
 **In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICUs with COVID19 patients.** Note that our ICUs typically operate at around 70% occupancy (or higher in a particularly bad flu season) which means everyone else who typically needs to be in ICU may be displaced, critically ill COVID patients may not get an ICU bed or level of care, or both. The USA is very much on the COVID case growth trajectory of [Italy who is facing not a wave, but a tsunami of patients](https://www.pbs.org/newshour/health/not-a-wave-a-tsunami-italy-hospitals-at-virus-limit). 
@@ -206,7 +219,7 @@ Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere
 
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### \*Running the notebooks
+### Running the notebooks
 
 You can run the Jupyter notebooks for data processing and analytics directly on your machine by using [Docker](https://docs.docker.com/install/).
 
