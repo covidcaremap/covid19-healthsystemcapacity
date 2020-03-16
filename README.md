@@ -1,10 +1,23 @@
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+- [TL;DR Summary](#tldr-summary)
+- [Contributing](#contributing)
+- [Why](#why)
+  - [Take-home message #1](#take-home-message-1)
+  - [Take-home message #2](#take-home-message-2)
+- [What To Do](#what-to-do)
+- [How To Help](#how-to-help)
+  - [Running the notebooks](#running-the-notebooks)
+- [Methodology Notes (things get messy here)](#methodology-notes-things-get-messy-here)
+- [Sources](#sources)
+- [Acknowledgments](#acknowledgments)
+- [Misc](#misc)
+
 ## TL;DR Summary
 
 Understand, anticipate, and act to support and ramp up our local health systems' capacity (providers, supplies, ventilators, beds, meds) to effectively care for a rapidly growing flow of active COVID19 patients. 
 
-Open-source data collection, geospatial analysis, visualizations, and scenario-planning tools informing decisionmaking and resource deployment to support our healthcare providers at local, county, & state scale when and where the needs are greatest. USA-centric at the moment but tools and knowhow are intended to be applicable globally.
+Open-source data collection, geospatial analysis, visualizations, and scenario-planning tools informing decision-making and resource deployment to support our healthcare providers at local, county, & state scale when and where the needs are greatest. USA-centric at the moment but tools and knowhow are intended to be applicable globally.
 
 Let's #FlattenTheCurve and raise our capacity to care for COVID19 patients (and everyone else who needs medical care!) here and now.
 
@@ -28,7 +41,7 @@ Source: https://twitter.com/alxrdk/status/1237021885239635969
 
 You've likely seen some version of this #FlattenTheCurve diagram. Look at the orange lines. The dashed orange line represents "Treatment capacity without action" and the solid orange line is "Treatment capacity with delay". In other graphics, this is often shown as a flat line labeled as "Health Systems Capacity". 
 
-Notice how these lines dip or grow differently between the fast+high peaking patient needs scenario vs the flattened patient needs scenario. The change in the line reflects our healthcare system responding to the growing crisis. We can increase care capacity by clearing and diverting non-urgent/elective cases, bringing in more providers, setting up and staffing normally unused beds and ventilators, releasing stockpiled supplies and receiving more, etc. In China's case, they built 2 new hospitals dedicated to COVID19 patients and sent 10s of thousands of health providers from other areas of China into Wuhan (citation TODO). But there are hard limits to how high capacity can grow as signified by the line's plateaui. 
+Notice how these lines dip or grow differently between the fast+high peaking patient needs scenario vs the flattened patient needs scenario. The change in the line reflects our healthcare system responding to the growing crisis. We can increase care capacity by clearing and diverting non-urgent/elective cases, bringing in more providers, setting up and staffing normally unused beds and ventilators, releasing stockpiled supplies and receiving more, etc. In China's case, they built 2 new hospitals dedicated to COVID19 patients and sent 10s of thousands of health providers from other areas of China into Wuhan (citation TODO). But there are hard limits to how high capacity can grow as signified by the line's plateau. 
 
 More importantly, see how capacity dips with high+fast peaking demand on health systems. This happens because [health systems become overwhelmed](https://www.theatlantic.com/ideas/archive/2020/03/who-gets-hospital-bed/607807/) by rapidly surging #s of active patients in need and their ability to effectively care for them deteriorates. Beds get filled up and stay occupied longer, supplies run low, there aren't enough ventilators or other critical care equipment to go around, [providers get exhausted or exposed to COVID19 and taken out of work by quarantine, sickness, or death](https://www.businessinsider.com/healthcare-workers-getting-coronavirus-500-infected-2020-2).
 
@@ -42,7 +55,7 @@ A health system's ability to handle a rapid surge of patients with minimal capac
 
 Even considering disparities in covid19 testing capacity and lag between becoming infected and showing symptoms which delay or skew our understanding of the disease's true spatiotemporal distribution, outbreaks start in different places at different times and grow at different rates. Spread differs depending on how many cases were imported from elsewhere and when, an area's population density, age distributions and prevalence of health comorbidities, effectiveness and timing of early testing, containment, social distancing, or mitigation measures. In short, the slope of increase and peak of the demand curve can vary greatly in place and time.
 
-This example of a pandemic's different impact on different communities is well studied in the 1918 Spanish Flu case of Philadelpha and St. Louis:
+This example of a pandemic's different impact on different communities is well studied in the 1918 Spanish Flu case of Philadelphia and St. Louis:
 
 ![](https://cms.qz.com/wp-content/uploads/2020/03/image.png?w=1240&h=778&crop=1&strip=all&quality=75)
 Source: [Quartz: This chart of the 1918 Spanish flu shows why social distancing works](https://qz.com/1816060/a-chart-of-the-1918-spanish-flu-shows-why-social-distancing-works/)
@@ -58,12 +71,12 @@ For COVID19 in China, drastic differences were seen comparing Wuhan (left figure
 * Paper: https://dash.harvard.edu/handle/1/42599304
 * Data: https://github.com/c2-d2/COVID-19-wuhan-guangzhou-data
 
-### Take-home message #1:
+### Take-home message #1
 Social distancing works and is among the best practices we have on hand to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. Know what to do and do your part to protect yourself and your community with these resources:
 - [Flatten The Curve](https://www.flattenthecurve.com/)
 - [CDC: How To Prepare and Take Action](https://www.cdc.gov/coronavirus/2019-ncov/community/index.html)
 
-### Take-home message #2:
+### Take-home message #2
 Our health system capacity is at great risk of being saturated or overwhelmed. If you look again at the above figure for Wuhan at their peak of active severely ill and critically ill cases, the # of critically ill (patients who require ICU-level care) per capita hits the US' number of ICU beds per capita. 
 
 **In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICUs with COVID19 patients.** Note that our ICUs typically operate at around 70% occupancy (or higher in a particularly bad flu season) which means everyone else who typically needs to be in ICU may be displaced, critically ill COVID patients may not get an ICU bed or level of care, or both. The USA is very much on the COVID case growth trajectory of [Italy who is facing not a wave, but a tsunami of patients](https://www.pbs.org/newshour/health/not-a-wave-a-tsunami-italy-hospitals-at-virus-limit). 
@@ -111,7 +124,7 @@ Finding out, anticipating, and addressing this healthcare systems capacity gap i
 2. map how capacity responds in place and time to the anticipated spatiotemporal distribution of COVID19 spread
 3. assess our potential and progress in ramping up capacity where needed
 4. identify where and how care gaps remain as proactively as possible
-5. prioritize deployment of more resources to where it needs to be the most to relieve overstrained health systems and minimize deterioriation of care for patients.
+5. prioritize deployment of more resources to where it needs to be the most to relieve overstrained health systems and minimize deterioration of care for patients.
 
 Help us get going. There's no more time to wait.
 
@@ -176,7 +189,7 @@ Help us get going. There's no more time to wait.
  
 4. Identify where and how care gaps remain as proactively as possible
 
-5. Prioritize deployment of more resources to where it needs to be the most to relieve overstrained health systems and minimize deterioriation of care for patients.
+5. Prioritize deployment of more resources to where it needs to be the most to relieve overstrained health systems and minimize deterioration of care for patients.
 
 ## How To Help
 
@@ -206,7 +219,7 @@ Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere
 
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### \*Running the notebooks
+### Running the notebooks
 
 You can run the Jupyter notebooks for data processing and analytics directly on your machine by using [Docker](https://docs.docker.com/install/).
 
