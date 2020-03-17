@@ -1,7 +1,12 @@
 # Data generated in the notebook directory. All committed data should be in the data/ folder.
-nbs/*.json*
-nbs/*.geojson*
-nbs/*.csv*
+nbs/**/*.json*
+nbs/**/*.geojson*
+nbs/**/*.csv*
+nbs/**/*.zip*
+nbs/**/*.pdf*
+nbs/**/*.xlsx*
+nbs/**/*.docx*
+nbs/**/*.txt*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
