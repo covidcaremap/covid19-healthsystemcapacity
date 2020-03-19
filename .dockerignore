@@ -1,0 +1,10 @@
+**/*.json
+**/*.geojson
+**/*.csv
+**/*.CSV
+**/*.zip
+**/*.pdf
+**/*.xlsx
+**/*.docx
+**/*.txt
+!**/requirements.txt

@@ -2,10 +2,14 @@
 
 set -e
 
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
 function usage() {
 
     echo -n \
-"Usage: $(basename "$0")
+        "Usage: $(basename "$0")
 Setup project containers.
 "
 }
@@ -15,10 +19,8 @@ function build_containers() {
     docker build -t covid19 -f docker/Dockerfile .
 }
 
-if [ "${BASH_SOURCE[0]}" = "${0}" ]
-then
-    if [ "${1:-}" = "--help" ]
-    then
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
         usage
     else
         build_containers
