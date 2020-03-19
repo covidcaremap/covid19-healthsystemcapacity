@@ -10,5 +10,7 @@ RUN pip install -r /tmp/requirements.txt
 
 WORKDIR /opt/src
 
+ENV PYTHONPATH=/opt/src:$PYTHONPATH
+
 ENTRYPOINT [ "jupyter" ]
 CMD [ "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--notebook-dir=/opt/jupyter" ]
