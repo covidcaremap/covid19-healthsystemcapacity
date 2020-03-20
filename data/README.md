@@ -44,4 +44,4 @@ Data Description here: https://www2.census.gov/programs-surveys/popest/technical
 
 Downloaded from https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/asrh/cc-est2018-alldata.csv
 
-**Not** Committed to repository. Must run `download-external.sh` in the data directory to get.
+**Note** Committed to repository. Must run `download-external.sh` in the data directory to get.
