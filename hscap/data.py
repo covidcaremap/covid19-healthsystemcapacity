@@ -1,3 +1,4 @@
+import os
 import json
 
 import pandas as pd
@@ -5,6 +6,12 @@ import geopandas as gpd
 
 ## TODO: Replace docker locations with downloading from GitHub to some directory
 ## if we want to make this available outside the container.
+
+def data_dir():
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+
+def data_path(fname):
+    return os.path.join(data_dir(), fname)
 
 def read_hcris_gj():
     return json.loads(open('/opt/src/data/usa_hospital_beds_hcris2018_v2.geojson').read())
