@@ -11,6 +11,29 @@ Hospital Beds per 1,000 Population by Ownership Type
 
 Committed to repository.
 
+### hifld-hospitals.csv
+
+From https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals.
+
+> This feature class/shapefile contains locations of Hospitals for 50 US states, Washington D.C., US territories of Puerto Rico, Guam, American Samoa, Northern Mariana Islands, Palau, and Virgin Islands. The dataset only includes hospital facilities based on data acquired from various state departments or federal sources which has been referenced in the SOURCE field. Hospital facilities which do not occur in these sources will be not present in the database. The source data was available in a variety of formats (pdfs, tables, webpages, etc.) which was cleaned and geocoded and then converted into a spatial database. The database does not contain nursing homes or health centers. Hospitals have been categorized into children, chronic disease, critical access, general acute care, long term care, military, psychiatric, rehabilitation, special, and women based on the range of the available values from the various sources after removing similarities. In this update the TRAUMA field was populated for 172 additional hospitals and helipad presence were verified for all hospitals.
+
+https://opendata.arcgis.com/datasets/6ac5e325468c4cb9b905f1728d6fbf0f_0.csv
+
+### HGHI Data
+
+This data was collected from the Harvard Global Health Institute (HGHI) study described here: https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/
+
+#### HGHI - Hospital Capacity by State.csv
+
+Exported from https://docs.google.com/spreadsheets/d/1XUVyZF3X_4m72ztFnXZFvDKn5Yys1aKgu2Zmefd7wVo/edit?usp=sharing
+
+#### Per HRR data:
+- `HGHI - HRR Scorecard - 60% Population.csv`
+- `HGHI - HRR Scorecard - 40% Population.csv`
+- `HGHI - HRR Scorecard - 20% Population.csv`
+
+Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
+
 ### us_counties.geojson
 
 Source: https://eric.clst.org/tech/usgeojson/
@@ -28,6 +51,8 @@ File at https://eric.clst.org/assets/wiki/uploads/Stuff/gz_2010_us_040_00_20m.js
 Committed to repository.
 
 ### us_hrr.geojson
+
+Hopital Re
 
 Source: https://atlasdata.dartmouth.edu/static/supp_research_data#boundaries
 
