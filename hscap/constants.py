@@ -2,16 +2,26 @@ CONVENTIONAL = 'Conventional'
 CONTINGENCY = 'Contingency'
 CRISIS = 'Crisis'
 
+SCENARIOS = [CONVENTIONAL, CONTINGENCY, CRISIS]
+
 BEDS = 'Beds'
 VENTS = 'Ventilators'
 PHYSICIANS = 'Physicians'
-RESP_THERP = 'Respiratory Therapist'
-NURSE = 'Critical Care Nurse'
+RESP_THERP = 'Respiratory Therapists'
+NURSE = 'Critical Care Nurses'
 
 STAFF = [PHYSICIANS, RESP_THERP, NURSE]
 
 BOUND_LOWER = 'Lower'
 BOUND_UPPER = 'Upper'
+
+POP_PEOPLE = 'People'
+POP_ADULTS = 'Adults (20+)'
+POP_ELDERLY = 'Elderly (65+)'
+
+PER_CAPITA_BASE = 1000
+
+POPULATIONS = [POP_PEOPLE, POP_ADULTS, POP_ELDERLY]
 
 scenarios = {
     CONVENTIONAL: {
@@ -93,3 +103,22 @@ def construct_vents_field_name(scenario, level):
 def construct_staff_field_name(scenario, staff, level):
     return '{} Required to Staff {} ({}) - {}'.format(
         staff, BEDS, scenario, level)
+
+def facility_level_count_columns():
+    """Returns the column names for facility-level counts"""
+    columns = []
+    for scenario in SCENARIOS:
+        columns.extend([
+            construct_beds_field_name(scenario, BOUND_LOWER),
+            construct_beds_field_name(scenario, BOUND_UPPER),
+            construct_vents_field_name(scenario, BOUND_LOWER),
+            construct_vents_field_name(scenario, BOUND_UPPER),
+        ])
+
+        for staff in STAFF:
+            for level in [BOUND_LOWER, BOUND_UPPER]:
+                columns.append(
+                    construct_staff_field_name(scenario, staff, level)
+                )
+
+    return columns
