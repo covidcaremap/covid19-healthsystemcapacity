@@ -80,3 +80,9 @@ Data Description here: https://www2.census.gov/programs-surveys/popest/technical
 Downloaded from https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/asrh/cc-est2018-alldata.csv
 
 **Note** Committed to repository. Must run `download-external.sh` in the data directory to get.
+
+### ventilators_by_state.csv
+
+Source: https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/mechanical-ventilators-in-us-acute-care-hospitals/F1FDBACA53531F2A150D6AD8E96F144D
+
+From spreadsheet constructed by Dave Luo: https://docs.google.com/spreadsheets/d/1IDeFJJ1Kq5fXAp5vR_Fqp1jtf_4qjqqfeha5BsKUGe8/edit#gid=891030621
