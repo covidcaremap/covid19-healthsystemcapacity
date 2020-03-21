@@ -89,7 +89,7 @@ Social distancing works and is among the best practices we have on hand to slow 
 
 Our health system capacity is at risk of being overwhelmed. If you look again at the above figure for Wuhan at their peak of active severely ill and critically ill cases, the # of critically ill (patients who require ICU-level care) per capita nearly reaches the US' number of ICU beds per capita.
 
-**In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICUs with COVID19 patients.** 
+**In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICU beds with COVID19 patients.** 
 
 Note that our ICUs typically operate at around 70% occupancy (or up to 90% in a particularly bad flu season) which means critically ill COVID patients (or non-COVID patients who need it) may not get ICU  level of care due to lack of available beds or staffing or equipment. 
 
@@ -113,7 +113,7 @@ In the section on "Specific Priority Action Items To Be Taken", we see clear opp
 > - Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice. About 10-20% of a hospital’s bed capacity can be mobilized within a few hours by expediting discharges, using discharge holding areas, converting single rooms to double rooms, and opening closed areas, if staffing is available. Another 10% can be obtained within a few days by converting flat spaces, such as lobbies, waiting areas, and classrooms.4
 > - Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice.
 
-How does planning to 
+How will health systems' planning to 
 
 > "Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice" 
 
@@ -121,43 +121,47 @@ and
 
 > "Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice." 
 
-meet up with our current, best estimates of the growing and peak patient needs for hospitalization and critical care?
+meet up with our current best estimates of the growing and peak patient needs for hospitalization and critical care?
 
-In very recent work by the [Harvard Global Health Institute](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) (with stories and visualizations by the [NYTimes](https://www.nytimes.com/interactive/2020/03/17/upshot/hospital-bed-shortages-coronavirus.html), [ProPublica](https://projects.propublica.org/graphics/covid-hospitals)), researchers found that across a range of plausible scenarios where the US adult population is infected by COVID19 (20%, 40%, 60%) and how long the demand curve is flattened out (epidemic lasting 6 months, 12 months, or 18 months) the demand at peak could surge past the number of US hospital beds (unoccupied or total depending on the scenario):
+In very recent work by the [Harvard Global Health Institute](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) (with stories and visualizations by the [NYTimes](https://www.nytimes.com/interactive/2020/03/17/upshot/hospital-bed-shortages-coronavirus.html), [ProPublica](https://projects.propublica.org/graphics/covid-hospitals)), they found that across a range of plausible scenarios where the US adult population is infected by COVID19 (20%, 40%, 60%) and how long the demand curve can be flattened out (epidemic lasting 6 months, 12 months, or 18 months) the demand at peak could surge past the number of US hospital beds (unoccupied or total depending on the scenario):
 
 ![](./figs/HGHI_allbeddemand_fig.png)
 
-And more critically for ICU care, possibly several multiples past existing available and total capacity (unoccupied and total US ICU beds):
+And even more so for ICU care - going possibly several multiples past existing available and total capacity (unoccupied and total US ICU beds):
 ![](./figs/HGHI_icubeddemand_fig.png)
 
-[Ferguson, et al](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) which has [informed and shifted the USA's response at the national level](https://www.nytimes.com/2020/03/16/us/coronavirus-fatality-rate-white-house.html), they modeled the effects of various "[non-pharmaceutical intervention](https://www.paho.org/disasters/index.php?option=com_docman&view=download&category_slug=tools&alias=530-pandinflu-leadershipduring-tool-4&Itemid=1179&lang=en)" scenarios where governments implement different types and combinations of disease mitigation and suppression measures (i.e. closing schools, general social distancing, isolating known cases) and see how this affects the demand curve (critical care beds occupied per capita). The analysis show an overshoot of the "surge critical care bed capacity" (red line) by several multiples in any of their scenarios:
+In epidemiologic modeling work by [Ferguson, et al](https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf) which has [informed and shifted the USA's response at the national level](https://www.nytimes.com/2020/03/16/us/coronavirus-fatality-rate-white-house.html), they simulated various [non-pharmaceutical intervention](https://www.paho.org/disasters/index.php?option=com_docman&view=download&category_slug=tools&alias=530-pandinflu-leadershipduring-tool-4&Itemid=1179&lang=en) scenarios where governments implement different types and combinations of disease mitigation and suppression measures (i.e. closing schools, general social distancing, isolating known cases) to see how this affects timing and hight of the demand curve (in terms of critical care beds occupied per capita). Their analysis shows an overshoot of "surge critical care bed capacity" (red line) by several multiples in any of their scenarios and more than 15x in the "Do nothing" scenario:
 
 ![Ferguson et al, appendix A](./figs/ferguson_appdxA.png)
 
 What does peak case load (demand) and health system capacity (supply) look like on a more granular spatial level?
 
-In the same Harvard Global Health Institute work above, they used the same approach to estimating demand curves and bed capacity under those same scenarios for all hospital facilities grouped by [Hospital Referral Regions](https://www.arcgis.com/home/item.html?id=62969fa5bc3c4e3abd045cd62332c58c) in order to understand differences in the spatial distribution of potential health system capacity gaps and found large differences between regions (from well within capacity in some areas to 2-3x over capacity in others under the Moderate scenario):
+In that same Harvard Global Health Institute analysis above, they estimate demand curves and bed capacity needs under those same scenarios for hospital facilities grouped by [Hospital Referral Regions](https://www.arcgis.com/home/item.html?id=62969fa5bc3c4e3abd045cd62332c58c) in order to compare regional differences in potential health system capacity gaps. They found large differences between regions (from within capacity in some regions to 2-3x over capacity in others under the Moderate scenario):
 
 ![](./figs/HGHI_hrr_demand.png)
 [Interactive visualization link](https://www.nytimes.com/interactive/2020/03/17/upshot/hospital-bed-shortages-coronavirus.html)
 
-In the study by [Li, et al](https://dash.harvard.edu/handle/1/42599304) described earlier, they also estimate the number of critically ill patients at Wuhan-like COVID19 peak demand in the USA population of different cities accounting for differences in local patient demographics (how many are 65+ in age or how many have hypertension):
+In the study by [Li, et al](https://dash.harvard.edu/handle/1/42599304) described earlier, they also estimate the number of critically ill patients at Wuhan-like peak demand in the USA population of different cities by accounting for local differences in demographics (how many are 65+ in age or how many have hypertension). The paper cites the US national average for ICU beds as 2.80 per 10,000 adults (15+) and the % of empty beds being 31.8% for a business-as-usual available ICU bed capacity of 0.9 beds per 10,0000 adults. With these high-level numbers in mind, our health system capacity - specifically ICU care, even if we freed up 100% of ICU beds for COVID19 patients - would be stretched close to or past its max in every city studied:
 
 ![paper fig3](./figs/icu_demand_paper_fig3.png)
 
-The paper cites the US national average for ICU beds as 2.80 per 10,000 adults (15+) and the % of empty beds being 31.8%. With these high-level numbers in mind, our health system capacity - particularly critical care/ICU with an assumption that 100% of capacity is made available for COVID19 patients - will be strained close to or past its max in every city shown in figure 3.
+
 
 ### What Do We Need to Know About Capacity Going Forward?
 
-What is the care capacity (particularly ICU care) in each facility, city, county or region now? How much can capacity ramp in preparation health system by health system?  When and how quickly will this happen in different areas? How much past 100% capacity might the demand grow in that particular area? How much past 100% capacity might the demand grow in that particular area?
+What is the current care capacity (particularly ICU care) in each facility, city, county or region? By how much can capacity realistically increase in a facility, health system, or region? When and how quickly should this happen in different areas? Is it enough to meet forecasted patient demand? If not, from where and how we do make new capacity available?
 
-Getting closer to these answers relies on knowing more granularly in time and place the health system capacity of a city, county, state, and region. We could use inpatient and ICU bed availability as rough high level proxies to provide decisionmakers with more concrete, actionable awareness of current and foreseeable gaps between demand and supply. 
+From a [2015 study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636910/) to model the "capacity of the healthcare system to use additional mechanical ventilators during a large-scale public health emergency (PHE)" by representatives of multiple federal health agencies (FDA, HHS, CDC), they identified 4 key components needed for effective mechanical ventilation (MV), a key part of delivering effective ICU care in particular for COVID19 patients:
 
-**TODO**: go into the various components of ICU care needed in surge settings
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636910/bin/nihms725303f1.jpg)
 
-How do we dynamically track capacity at this same granularity as it changes over time and in response to increased demand? How do we decide about resources to minimize any foreseen gap as much and as proactively as possible?
+We can start answering these current and potential capacity questions by collecting reported total inpatient and ICU bed availability (and typical bed occupany rates) or estimating them for facilities where the data is not available. This gives a better understanding of currently available space ("Critical Care Beds" in the above figure). Then, using ratios, percentages, and absolute estimates for staffing and supplies based on the number of ICU beds needed for different scenarios in [critical care surge capacity planning](https://journal.chestnet.org/article/S0012-3692(15)51987-9/fulltext#cesec30), we can model the potential increase in critical care capacity for a given facility or area at increasing levels of surge mobilization ([Conventional, Contingency, Crisis](https://marlin-prod.literatumonline.com/cms/attachment/2119285238/2091674456/gr1_lrg.jpg)). This table from the same study shows how many ICU patients could potentially be treated at different staffing ratios and % of beds at the 3 different levels of surge capacity at the national level:
 
-What is the capacity gap currently in a particular location and how might we model how it grows or shrinks over time under different scenarios of mitigating disease spread (lowering demand) and deploying limited healthcare resources (raising supply).
+![](./figs/ventcapacityscenarios_table1.png)
+
+We can make similar estimates for bed capacity in the same scenarios more granularly at the facility, city, county, state levels. Then we can assess what capacity is likely possible at those levels and what support or bottlenecks need to be relieved would take to get there (in terms of ventilators, providers, systems, etc).
+
+Once we do this, how do we dynamically track changes in capacity over time towards reaching the necessary capacity levels to meet patient demand? How do we proactively detect and deploy additional resources to where new capacity gaps are emerging?
 
 Finding out, anticipating, and addressing this healthcare systems capacity gap is what this project is about. We need to:
 
@@ -251,8 +255,6 @@ All required libraries to run notebooks should be placed in `nbs/requirements.tx
 
 ## Methodology Notes (things get messy here)
 
-1.1:
-
 Following this [paper's methodology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4351597/), I grabbed every US health facility that reported cost data to Medicare in FY2018 (via CMS' Healthcare Cost Reporting Info Sys or [HCRIS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports)), ran their addresses through geocoders to get point lngs/lats per facility, and grabbed their reported bed counts (Medical ICU, Cardiac ICU, Burn ICU, Surg ICU, General adult+peds, Total beds)
 
 Calculated bed occupancy rates by dividing total inpt days / total available bed days across the reporting year
@@ -274,6 +276,8 @@ Spatial joined with US county polygons, summed bed counts, joined US 2018 census
   - note that these are licensed bed counts as opposed to staffed beds. Licensed bed count = 100% capacity for a facility
 
 ## Key Sources
+
+TODO: To be much better organized
 
 - National (CMS HCRIS cost reporting data):
      - https://www.cms.gov/files/document/2018-mdcr-providers-4.pdf
@@ -299,9 +303,6 @@ Spatial joined with US county polygons, summed bed counts, joined US 2018 census
    - http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337/2
    - https://avatorl.org/covid-19/
    - https://nextstrain.org/narratives/ncov/sit-rep/2020-03-13
-
-     2.2: epi modeling:
-
    - https://my.causal.app/models/1432
    - http://deim.urv.cat/~alephsys/COVID-19/spain/es/index.html
    - https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases
@@ -312,6 +313,13 @@ Spatial joined with US county polygons, summed bed counts, joined US 2018 census
 
 ## Acknowledgments
 
-TODO
+Much thanks to all contributors (by alphabetical order of first name):
 
-## Misc
+- Aaron Su
+- Dave Luo
+- Hector Castro
+- Jeff Frankl
+- Lauren Moos
+- Matt McFarland
+- Rob Emanuelle
+- Simon Kassel
