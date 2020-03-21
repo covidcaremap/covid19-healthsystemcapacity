@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vocid19-healthsystemcapacity/static/css/main.105e4ed9.chunk.css",
+    "main.js": "/vocid19-healthsystemcapacity/static/js/main.3a246ada.chunk.js",
+    "main.js.map": "/vocid19-healthsystemcapacity/static/js/main.3a246ada.chunk.js.map",
+    "runtime-main.js": "/vocid19-healthsystemcapacity/static/js/runtime-main.976c9e1f.js",
+    "runtime-main.js.map": "/vocid19-healthsystemcapacity/static/js/runtime-main.976c9e1f.js.map",
+    "static/css/2.252254bf.chunk.css": "/vocid19-healthsystemcapacity/static/css/2.252254bf.chunk.css",
+    "static/js/2.1a41f116.chunk.js": "/vocid19-healthsystemcapacity/static/js/2.1a41f116.chunk.js",
+    "static/js/2.1a41f116.chunk.js.map": "/vocid19-healthsystemcapacity/static/js/2.1a41f116.chunk.js.map",
+    "index.html": "/vocid19-healthsystemcapacity/index.html",
+    "precache-manifest.c42b96c44de541ab8fd8062cd6a8c5f2.js": "/vocid19-healthsystemcapacity/precache-manifest.c42b96c44de541ab8fd8062cd6a8c5f2.js",
+    "service-worker.js": "/vocid19-healthsystemcapacity/service-worker.js",
+    "static/css/2.252254bf.chunk.css.map": "/vocid19-healthsystemcapacity/static/css/2.252254bf.chunk.css.map",
+    "static/css/main.105e4ed9.chunk.css.map": "/vocid19-healthsystemcapacity/static/css/main.105e4ed9.chunk.css.map",
+    "static/js/2.1a41f116.chunk.js.LICENSE.txt": "/vocid19-healthsystemcapacity/static/js/2.1a41f116.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.976c9e1f.js",
+    "static/css/2.252254bf.chunk.css",
+    "static/js/2.1a41f116.chunk.js",
+    "static/css/main.105e4ed9.chunk.css",
+    "static/js/main.3a246ada.chunk.js"
+  ]
+}

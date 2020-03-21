@@ -1,3 +1,5 @@
+viz/
+
 **/*.json
 **/*.geojson
 **/*.csv
