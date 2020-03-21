@@ -180,10 +180,10 @@ def sum_per_region(facilities, regions, groupby_columns, population_columns=None
     return region_level
 
 def sum_per_county(facilities):
-    return sum_per_region(facilities, read_us_counties_gdf(), groupby_columns=['STATE','COUNTY','GEO_ID'])
+    return sum_per_region(facilities, read_us_counties_gdf(), groupby_columns=['State','COUNTY','GEO_ID'])
 
 def sum_per_state(facilities):
-    return sum_per_region(facilities, read_us_states_gdf(), groupby_columns=['STATE','GEO_ID'])
+    return sum_per_region(facilities, read_us_states_gdf(), groupby_columns=['State','GEO_ID'])
 
 def sum_per_hrr(facilities):
-    return sum_per_region(facilities, read_us_hrr_gdf(), groupby_columns=['HRR_BDRY_I'])
+    return sum_per_region(facilities, read_us_hrr_gdf(), groupby_columns=['HRR_BDRY_I', 'HRRCITY'])
