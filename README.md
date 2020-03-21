@@ -4,15 +4,15 @@
 - [Overview](#overview)
 - [Contributing](#contributing)
 - [Why](#why)
-  - [Take-home message #1](#take-home-message-1)
-  - [Take-home message #2](#take-home-message-2)
+  - [Take-home Message #1](#take-home-message-1)
+  - [Take-home Message #2](#take-home-message-2)
 - [What To Do](#what-to-do)
 - [How To Help](#how-to-help)
   - [Running the notebooks](#running-the-notebooks)
-- [Methodology Notes (things get messy here)](#methodology-notes-things-get-messy-here)
-- [Sources](#sources)
 - [Acknowledgments](#acknowledgments)
-- [Misc](#misc)
+- [Methodology Notes](#methodology-notes)
+- [Sources](#sources)
+
 
 ## TL;DR
 
@@ -78,22 +78,20 @@ We can also see different case growth trajectories at the country level. The USA
 ![](./figs/ft_countries_casecurve_comparison_20200319.png)
 Source: [Financial Times, updated Mar 19, 2020](https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441)
 
-### Take-home message #1
+### Take-home Message #1
 
 Social distancing works and is among the best practices we have on hand to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. Know what to do and do your part to protect yourself and your community with these resources:
 
 - [Flatten The Curve](https://www.flattenthecurve.com/)
 - [CDC: How To Prepare and Take Action](https://www.cdc.gov/coronavirus/2019-ncov/community/index.html)
 
-### Take-home message #2
+### Take-home Message #2
 
 Our health system capacity is at risk of being overwhelmed. If you look again at the above figure for Wuhan at their peak of active severely ill and critically ill cases, the # of critically ill (patients who require ICU-level care) per capita nearly reaches the US' number of ICU beds per capita.
 
 **In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICU beds with COVID19 patients.** 
 
 Note that our ICUs typically operate at around 70% occupancy (or up to 90% in a particularly bad flu season) which means critically ill COVID patients (or non-COVID patients who need it) may not get ICU  level of care due to lack of available beds or staffing or equipment. 
-
-### What Do We Know About Health System Capacity and Preparedness So Far?
 
 How prepared are our health systems? How do we prepare?
 
@@ -145,15 +143,11 @@ In the study by [Li, et al](https://dash.harvard.edu/handle/1/42599304) describe
 
 ![paper fig3](./figs/icu_demand_paper_fig3.png)
 
-
-
-### What Do We Need to Know About Capacity Going Forward?
-
 What is the current care capacity (particularly ICU care) in each facility, city, county or region? By how much can capacity realistically increase in a facility, health system, or region? When and how quickly should this happen in different areas? Is it enough to meet forecasted patient demand? If not, from where and how we do make new capacity available?
 
 From a [2015 study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636910/) to model the "capacity of the healthcare system to use additional mechanical ventilators during a large-scale public health emergency (PHE)" by representatives of multiple federal health agencies (FDA, HHS, CDC), they identified 4 key components needed for effective mechanical ventilation (MV), a key part of delivering effective ICU care in particular for COVID19 patients:
 
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636910/bin/nihms725303f1.jpg)
+![](./figs/ventcapacityscenarios_fig1.jpg)
 
 We can start answering these current and potential capacity questions by collecting reported total inpatient and ICU bed availability (and typical bed occupany rates) or estimating them for facilities where the data is not available. This gives a better understanding of currently available space ("Critical Care Beds" in the above figure). Then, using ratios, percentages, and absolute estimates for staffing and supplies based on the number of ICU beds needed for different scenarios in [critical care surge capacity planning](https://journal.chestnet.org/article/S0012-3692(15)51987-9/fulltext#cesec30), we can model the potential increase in critical care capacity for a given facility or area at increasing levels of surge mobilization ([Conventional, Contingency, Crisis](https://marlin-prod.literatumonline.com/cms/attachment/2119285238/2091674456/gr1_lrg.jpg)). This table from the same study shows how many ICU patients could potentially be treated at different staffing ratios and % of beds at the 3 different levels of surge capacity at the national level:
 
@@ -178,25 +172,28 @@ Help us get going. There's no more time to wait.
 1. Know the baseline capacity of healthcare systems to enough granularity for localized decisionmaking at the city, county, and state levels:
 
    1.1: Amass healthcare facilities, beds, care utilization, provider data from national, state, county data sources:
+    - [HCRIS Medicare cost reporting data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports)
+    - [HIFLD hospital facilities data](https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals)
+    - [Definitive Health hospital open data](https://www.arcgis.com/apps/opsdashboard/index.html#/8c4dcccd9e3845eb89f6401f919007f2)
    
    1.2: Clean-up and bring together into data-science ready formats:
 
-   - Jupyter Notebooks: [/nbs](./nbs/)
-   - GeoJSON, spreadsheets, & other data produced: [/data](./data/)
+    - [Jupyter Notebooks](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/nbs)
+    - [GeoJSON, spreadsheets, & other data produced](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/data)
 
-     1.3: Visualizations and Dashboards:
+   1.3: Visualizations and Dashboards:
 
-   - 1st attempt here (**DISCLAIMER:** Data has been sanity-checked at a high level to be in the right ballpark but errors are present and more rigorous data validation and clean-up is needed):
+    - 1st attempt (**DISCLAIMER:** Data has been sanity-checked at a high level to be in the right ballpark but errors are present and more rigorous data validation and clean-up is needed):
 
-   Interactive: [https://daveluo.github.io/covid19-healthsystemcapacity/viz/covid19-usabedcapacity-geoviz20200313v1](https://daveluo.github.io/covid19-healthsystemcapacity/viz/covid19-usabedcapacity-geoviz20200313v1)
+      Interactive link: [covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1](https://www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1)
 
    ![](./figs/viz_v1_screencap.png)
 
-2. Model and map potential capacity versus anticipated spatiotemporal distribution of COVID19 spread:
+2. Model and map potential capacity versus anticipated spatiotemporal distribution of COVID19 spread
 
-   2.1. Capacity (supply) modeling:
+   2.1: Model care capacity (supply)
 
-   2.2. Case load (demand) modeling:
+   2.2: Model COVID19 patient case loads (demand)
 
 3. Track/estimate progress in ramping up capacity in response/preparation for patient demand
 
@@ -206,27 +203,38 @@ Help us get going. There's no more time to wait.
 
 ## How To Help
 
-- lots of data to science\*:
-  - ingesting new data and cleaning up things
-  - validation and error checking,
-  - spatial and temporal analyses at different scales
-  - combining with other datasets like covid case counts by day/county/state, this is maybe the best one for the US right now: https://covidtracking.com/
-  - visualizations and information design that's much better than what I can do
-  - basic to advanced epi modeling would be really helpful to project out # of active cases putting demand on the healthcare system in different locations at different times. Ideally broken out to the individual county level but statewide works too.
-    - Something like this [SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model) would be a great start: https://neherlab.org/covid19/
-    - and/or: https://institutefordiseasemodeling.github.io/COVID-public/
-    - and/or: https://cmmid.github.io/topics/covid19/current-patterns-transmission/global-time-varying-transmission.html
-    - and/or we could design our data to be easily inputted into CDC's [Flu Surge 2.0](https://www.cdc.gov/flu/pandemic-resources/tools/flusurge.htm) Excel-based model or something similar that is already familar to and in use by hospital admin.
-- user feedback and validation
-  - connecting with decisionmakers and validating the usefulness of what's being produced here. Maybe that user or decisionmaker is you!
-- communication and education - what and why are these tools important for personal & community protection, public health decisionmaking at the local, county & state levels
-  - public awareness building and truth-seeking to detect problems and implore action where it's most needed. Focus on creating actionable awareness and avoid paralysis by analysis, panic, despair.
-- project management...enough said.
-- ask great questions
-  - about how some part or all of this project works or more importantly, is useful
-  - where to avoid reinventing the wheel and use what's already built and useful out there
-  - how to connect and coordinate with related efforts
-- what else...you tell us! Or better yet, take what's here and run with it, build on it, make it work for your community. Let us know what you come up with so we can link to it and learn from you. Let's build and share expertise together!
+- [Data gathering, cleaning, cataloging](https://github.com/daveluo/covid19-healthsystemcapacity/projects/1):
+  - Researching and sourcing new data
+  - Ingesting datasets and cleaning up things
+  - Building data validation and error correction systems
+  - Combining with other datasets like COVID19 case counts by day/county/state like from [covidtracking.com](https://covidtracking.com/)
+
+- [Data analytics](https://github.com/daveluo/covid19-healthsystemcapacity/projects/2):
+  - Spatial and temporal analyses at different scales
+  - Basic to advanced epi modeling (or plugging into such work), i.e.:
+    - [SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model) for COVID19 scenarios like from [Neher Lab](https://neherlab.org/covid19/)
+    - [SEIR model](https://github.com/alsnhll/SEIR_COVID19)
+    - [Institute for Disease Modeling](https://institutefordiseasemodeling.github.io/COVID-public/)
+    - [Centre for the Mathematical Modelling of Infectious Diseases](https://cmmid.github.io/topics/covid19/current-patterns-transmission/global-time-varying-transmission.html)
+    - and/or we could design our data to be easily inputted into surge planning tools that is already familar and in use by health systems.
+
+- [Visualizing, Designing, Communicating](https://github.com/daveluo/covid19-healthsystemcapacity/projects/3):
+  - Visualizing and designing to inform decisionmaking 
+  - Connecting with users and validating the usefulness of what's being produced here. Maybe that user or decisionmaker is you!
+  - Communicating and educating about what this data means and how they're important for supporting our healthcare systems, personal & community protection, public health decisionmaking at the local, county & state levels
+  - Public awareness building and truth-seeking to highlight problems and implore action where it's most needed. Focus on creating actionable awareness and avoid paralysis by analysis, panic, despair.
+
+- [Project Direction](https://github.com/daveluo/covid19-healthsystemcapacity/projects/4):
+  - Managing different aspects of the project from volunteers to research to organization and documentation
+  - Organizing ourselves and creating useful structure
+  - Advising on matters of your expertise (healthcare provision, epidemiology, public health emergency response...)
+  - Recommending and implementing new tools or practices for us to work better, faster
+  - Asking great questions
+    - about how some part or all of this project works or more importantly, is useful
+    - where to avoid reinventing the wheel and use what's already built and useful out there
+    - how to connect and coordinate with related efforts
+
+- What else...you tell us! Or better yet, take what's here and run with it, build on it, make it work for your community. Let us know what you come up with so we can link to it and learn from you. Let's build and share expertise together!
 
 Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere, send a pull request, join the gitter chat:
 
@@ -253,67 +261,9 @@ through `/opt/jupyter/data` inside any notebook.
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
 
-## Methodology Notes (things get messy here)
-
-Following this [paper's methodology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4351597/), I grabbed every US health facility that reported cost data to Medicare in FY2018 (via CMS' Healthcare Cost Reporting Info Sys or [HCRIS](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports)), ran their addresses through geocoders to get point lngs/lats per facility, and grabbed their reported bed counts (Medical ICU, Cardiac ICU, Burn ICU, Surg ICU, General adult+peds, Total beds)
-
-Calculated bed occupancy rates by dividing total inpt days / total available bed days across the reporting year
-
-Spatial joined with US county polygons, summed bed counts, joined US 2018 census population data, calculated beds/1000 people and beds/1000 15+ year olds
-
-**Known issues with this approach:**
-
-- a bed as defined in HCRIS (nicely tucked away on page 62 of [Chapter 40](https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/P152_40.zip) of the [Provider Reimbursement Manual](https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Paper-Based-Manuals-Items/CMS021935), see below for excerpt) is what gets staffed across the reporting year, not the total # of physically available beds or licensed beds ([more about these bed distinctions](https://esf8.dhh.la.gov/documentportal/Download/Public/Definitions%20of%20Bed%20Poll%20Terms.pdf))
-
-> A bed means an adult bed, pediatric bed, portion of inpatient labor/delivery/postpartum (LDP) room (also referred to as birthing room) bed when used for services other than labor and delivery, or newborn ICU bed (excluding newborn bassinets) maintained in a patient care area for lodging patients in acute, long term, or domiciliary areas of the hospital. Beds in post-anesthesia, post- operative recovery rooms, outpatient areas, emergency rooms, ancillary departments (however, see exception for labor and delivery department), nurses' and other staff residences, and other such areas that are regularly maintained and utilized for only a portion of the stay of patients (primarily for special procedures or not for inpatient lodging) are not termed a bed for these purposes. (See CMS Pub. 15-1, chapter 22, §2205.)
-
-- which means the bed counts here are lower end of the range for total potential bed capacity, although it should be a good baseline of what "business as usual" hospital capacity has been in recently years
-- total and ICU bed counts also doesn't distinguish between adult or peds. We could categorize all beds from childrens' hospitals as peds and/or estimate adult beds based on the overall proportion of adult vs peds beds across a county or state
-- another set of national numbers on beds and other facility stats could come from the AHA:
-  - https://www.aha.org/system/files/2018-07/2018-aha-chartbook.pdf
-  - https://www.aha.org/statistics/fast-facts-us-hospitals
-- or on a state level, by the licensing reports filed with each DOH, i.e. for California: https://healthdata.gov/dataset/licensed-and-certified-healthcare-facility-bed-types-and-counts
-  - note that these are licensed bed counts as opposed to staffed beds. Licensed bed count = 100% capacity for a facility
-
-## Key Sources
-
-TODO: To be much better organized
-
-- National (CMS HCRIS cost reporting data):
-     - https://www.cms.gov/files/document/2018-mdcr-providers-4.pdf
-     - https://www.cms.gov/research-statistics-data-systems/provider-services-current-files/2019-pos-file
-     - https://www.resdac.org/articles/medicare-cost-report-data-structure
-   - NY:
-     - https://health.data.ny.gov/Health/Health-Facility-Map/875v-tpc8
-     - https://health.data.ny.gov/Health/Adult-Care-Facility-Directory/wssx-idhx
-     - https://health.data.ny.gov/Health/Health-Facility-Certification-Information/2g9y-7kqm
-   - CA:
-     - https://healthdata.gov/dataset/licensed-and-certified-healthcare-facility-bed-types-and-counts
-   - NJ:
-     - https://www.nj.gov/cgi-bin/dhss/healthfacilities/hospitaldisplay.pl?id=10402
-   - MA: \* https://www.mass.gov/service-details/find-information-about-licensed-or-certified-health-care-facilities
-
-
-   - http://coronavirusapi.com/
-   - https://covidtracking.com/
-   - https://projects.sfchronicle.com/2020/coronavirus-map/
-   - https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html
-   - https://github.com/pcm-dpc/COVID-19
-   - https://scarpino.shinyapps.io/Emergent_Epidemics_Lab_nCoV2019/?mkt_tok=eyJpIjoiWmpFMVpEY3pZalk0WVRNMyIsInQiOiJvWGl2RnhkRDZaOHpGcVVSNGhyT2JxWVJcLzdIdVBFam96b3MxZFM2WkdKT09PK1wvTm5Jb1loMzNLMVl2TUhDb05cL0tMUVM1ZzBtUnpvTWY2bjdocW8rb1JGSXlpejZsXC96TGhpVHNvXC95NzhKcGd0dkF2K2dFNlZySmt1QTZzaWVyIn0%3D
-   - http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337/2
-   - https://avatorl.org/covid-19/
-   - https://nextstrain.org/narratives/ncov/sit-rep/2020-03-13
-   - https://my.causal.app/models/1432
-   - http://deim.urv.cat/~alephsys/COVID-19/spain/es/index.html
-   - https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases
-   - http://scratch.neherlab.org/about
-   - https://institutefordiseasemodeling.github.io/COVID-public/
-   - https://www.technologyreview.com/s/615360/cdc-cmu-forecasts-coronavirus-spread/
-
-
 ## Acknowledgments
 
-Much thanks to all contributors (by alphabetical order of first name):
+Much thanks to all contributors so far (by alphabetical order of first name):
 
 - Aaron Su
 - Dave Luo
@@ -321,5 +271,14 @@ Much thanks to all contributors (by alphabetical order of first name):
 - Jeff Frankl
 - Lauren Moos
 - Matt McFarland
-- Rob Emanuelle
+- Rob Emanuele
 - Simon Kassel
+
+## Methodology Notes
+
+TODO
+
+## Sources
+
+TODO see [issue](https://github.com/daveluo/covid19-healthsystemcapacity/issues/31)
+
