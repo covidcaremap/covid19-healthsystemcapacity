@@ -4,6 +4,8 @@ import json
 import pandas as pd
 import geopandas as gpd
 
+from hscap.constants import state_name_to_abbreviation
+
 ## TODO: Replace docker locations with downloading from GitHub to some directory
 ## if we want to make this available outside the container.
 
@@ -26,7 +28,10 @@ def read_us_counties_gdf():
     return gpd.read_file('/opt/src/data/us_counties_with_pop.geojson', encoding='utf-8')
 
 def read_us_states_gdf():
-    return gpd.read_file('/opt/src/data/us_states_with_pop.geojson', encoding='utf-8')
+    df = gpd.read_file('/opt/src/data/us_states_with_pop.geojson', encoding='utf-8')
+    df = df.drop(columns=['STATE'])
+    df['State'] = df['NAME'].apply(lambda x: state_name_to_abbreviation[x])
+    return df
 
 def read_us_hrr_gdf():
     return gpd.read_file('/opt/src/data/us_hrr_with_pop.geojson', encoding='utf-8')

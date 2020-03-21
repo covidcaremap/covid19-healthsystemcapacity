@@ -141,7 +141,7 @@ def spatial_join_facilities(left,
     return result[[lid_property, rid_property]]
 
 
-def sum_per_region(facilities, regions, groupby_columns, population_columns=None):
+def sum_per_region(facilities, regions, groupby_columns, region_id_column, population_columns=None):
     """
     Aggregate facility-level data by region via summation.
 
@@ -150,6 +150,7 @@ def sum_per_region(facilities, regions, groupby_columns, population_columns=None
             Must have the columns specified in constants.py. Must be EPSG:4326
         regions - Regions to aggregate to. Must be a geopandas dataframe in EPSG:4326
         groupby_columns: Columns to group by for aggregation after spatial join.
+        region_id_column: ID for regions.
         population_colums - Dict with keys in POPULATIONS and values being the columns of 'regions'
             that contain the population values. Defaults to the values generated in
             "Merge Region and Census Data" notebook.
@@ -163,11 +164,30 @@ def sum_per_region(facilities, regions, groupby_columns, population_columns=None
 
     joined = gpd.sjoin(facilities, regions, how='inner', op='intersects')
 
+    joined['weighted_bed_rate'] = joined['Total Staffed Beds'] * joined['Bed Occupancy Rate']
+    joined['weighted_icu_bed_rate'] = joined['Total Staffed ICU Beds'] * joined['ICU Bed Occupancy Rate']
+
     region_level = joined.groupby(groupby_columns, as_index='False')[
-        facility_level_count_columns()
+        facility_level_count_columns() + ['weighted_bed_rate',
+                                          'weighted_icu_bed_rate']
     ].sum().reset_index()
 
-    region_level = gpd.GeoDataFrame(region_level.merge(regions), crs=4326)
+    # Calculate occupancy rates via average weighted by
+    # the number of beds.
+    region_level['Bed Occupancy Rate'] = (
+        region_level['weighted_bed_rate'] /
+        region_level['Total Staffed Beds']
+    ).round(2)
+
+    region_level['ICU Bed Occupancy Rate'] = (
+        region_level['weighted_icu_bed_rate'] /
+        region_level['Total Staffed ICU Beds']
+    ).round(2)
+
+    region_level.drop(columns=['weighted_bed_rate',
+                               'weighted_icu_bed_rate'])
+
+    region_level = gpd.GeoDataFrame(region_level.merge(regions, on=region_id_column), crs=4326)
 
     for count_column in facility_level_count_columns():
         for population in POPULATIONS:
@@ -180,10 +200,21 @@ def sum_per_region(facilities, regions, groupby_columns, population_columns=None
     return region_level
 
 def sum_per_county(facilities):
-    return sum_per_region(facilities, read_us_counties_gdf(), groupby_columns=['State','COUNTY','GEO_ID'])
+    return sum_per_region(facilities,
+                          read_us_counties_gdf(),
+                          groupby_columns=['State','COUNTY','GEO_ID'],
+                          region_id_column='GEO_ID')
 
 def sum_per_state(facilities):
-    return sum_per_region(facilities, read_us_states_gdf(), groupby_columns=['State','GEO_ID'])
+    if 'State' in facilities.columns:
+        facilities = facilities.drop(columns=['State'])
+    return sum_per_region(facilities,
+                          read_us_states_gdf(),
+                          groupby_columns='State',
+                          region_id_column='State')
 
 def sum_per_hrr(facilities):
-    return sum_per_region(facilities, read_us_hrr_gdf(), groupby_columns=['HRR_BDRY_I', 'HRRCITY'])
+    return sum_per_region(facilities,
+                          read_us_hrr_gdf(),
+                          groupby_columns=['HRR_BDRY_I', 'HRRCITY'],
+                          region_id_column='HRRCITY')
