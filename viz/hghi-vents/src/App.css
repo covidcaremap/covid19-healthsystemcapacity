@@ -49,3 +49,15 @@
     margin-right: 8px;
     opacity: 0.8;
 }
+
+.attr-display p {
+  margin: 2px;
+  font-size: 11px;
+  text-align: left;
+}
+
+.active-attr.attr-display {
+  border: 1px solid;
+  border-style: dashed;
+  border-color: darkgrey;
+}

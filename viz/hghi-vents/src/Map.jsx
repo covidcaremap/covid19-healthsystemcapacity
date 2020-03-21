@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import { useAsync } from 'react-use';
 
@@ -8,41 +8,34 @@ import { GeoJSON, Map, TileLayer } from 'react-leaflet'
 import { Card } from 'antd';
 import Control from 'react-leaflet-control';
 
-const hghiVentDataUrl = './hghi_state_data_with_vents.geojson';
-const vizAttribute = 'Estimated No. Full-Featured Mechanical Ventilators per 100,000 Population';
+import {displayAttrs} from './utils';
 
-const displayAttrs = [
-    'Estimated No. Full-Featured Mechanical Ventilators',
-    'Estimated No. Full-Featured Mechanical Ventilators per 100,000 Population',
-    'Total ICU Beds',
-    'Available ICU Beds',
-    //'Potentially Available ICU Beds*',
-    //'ICU Beds Needed, Six Months',
-    //'ICU Beds Needed, Twelve Months',
-    //'ICU Beds Needed, Eighteen Months',
-]
+const hghiVentDataUrl = './hghi_state_data_with_vents.geojson';
 
 const defaultStyle = {
     weight: 2,
     fillOpacity: 0.9,
-    color: '#ccc',
+    color: '#aaa',
 };
 
+const classificationMethod = 'quantile' // or jenks, equal_interval
 
-const createHoverDisplay = (feature) => {
+const createHoverDisplay = (feature, activeAttribute) => {
     const attrs = feature?.properties;
-    const title = feature ? attrs['State Name'] : "Hover over a state";
+    const title = feature ? attrs['State Name'] : "Select state";
     const content = feature ? displayAttrs.map((attr, idx) => {
+        const activeClass = attr === activeAttribute ? 'active-attr' : '';
         return (
-            <div key={`disp-${idx}`}>
-                <p>{attr}</p>
-                <p>{attrs[attr]}</p>
+            <div key={`disp-${idx}`} className={`${activeClass} attr-display`}>
+                <p><strong>{attr}</strong></p>
+                <p>{clean(attrs[attr], true)}</p>
             </div>
         );
     }) : '';
 
     return (
         <Card 
+            className="state-attrs"
             size="small" 
             title={title}
             style={{width: 300}}
@@ -62,7 +55,7 @@ const createLegend = (brew) => {
         const from = breaks[i];
         const to = breaks[i+1];
         const style = {
-            background: brew.getColorInRange(from)
+            background: brew.getColorInRange(from+1)
         }
         if (to) {
             labels.push(
@@ -82,28 +75,54 @@ const createLegend = (brew) => {
     )
 }
 
-export default function VentMap() {
-    const LRef = useRef(null);
+const clean = (val, pretty=false) => {
+    let out = val;
+    if (typeof(val) === "string") {
+        out = parseFloat(val.replace(',', ''));
+    }
+    out = parseFloat(out.toFixed(2));
+
+    if (pretty) {
+        out = out.toLocaleString();
+    }
+    return out;
+}
+
+export default function VentMap({activeAttribute}) {
     const [hiFeature, setHiFeature] = useState(null);
     const [currentBrew, setCurrentBrew] = useState(null);
+    const [baseData, setBaseData] = useState(null);
+    const [currentLayer, setCurrentLayer] = useState(null);
 
+    // When the selected attribute changes, rerender the layer
+    useEffect (() => {
+        if (!baseData) return;
+        const layer = createLayer(baseData);
+        setCurrentLayer(layer)
+    }, [activeAttribute, baseData]);
+
+    // Determine the color breaks based on the values of the current
+    // attribute for all states
     const createClasses = (attrName, collection) => {
         const brew = new ClassyBrew();
-        const dataSeries = collection.features.map((feature) => feature.properties[attrName] || 0)
+        const dataSeries = collection.features.map((feature) => clean(feature.properties[attrName]) || 0)
+
         brew.setSeries(dataSeries);
         brew.setNumClasses(5);
-        brew.setColorCode('BuPu');
-        brew.classify('jenks');
+        brew.setColorCode('PuBu');
+        brew.classify(classificationMethod);
         setCurrentBrew(brew);
         return brew;
     }
 
+    // Restyle the feature currently being hovered over
     function highlightFeature(e) {
         var layer = e.target;
 
         layer.setStyle({
             weight: 2,
             color: '#666',
+            dashArray: '4',
         });
 
         layer.bringToFront();
@@ -111,7 +130,9 @@ export default function VentMap() {
     }
 
     function resetHighlight(e) {
-        LRef.current.leafletElement.resetStyle(e.target);
+        e.target.setStyle({
+            weight:2, color: '#aaa', dashArray: '',
+        });
         setHiFeature(null);
     }
 
@@ -119,40 +140,35 @@ export default function VentMap() {
         layer.on({
                 mouseover: highlightFeature,
                 mouseout: resetHighlight,
+                click: highlightFeature,
         });
-    }
-
-    const handleOnClick = (e) => {
-        console.log(e);
     }
 
     const featureStyle = (brew, attrName) => {
         return (feature) => {
             const style = Object.assign(defaultStyle, {
-                fillColor: brew.getColorInRange(feature.properties[attrName])
+                fillColor: brew.getColorInRange(clean(feature.properties[attrName]))
             });
             return style;
         };
     }
 
     const createLayer = (geojson) => {
-        const brew = createClasses(vizAttribute, geojson);
+        const brew = createClasses(activeAttribute, geojson);
         return (<GeoJSON
             data={geojson}
-            onclick={handleOnClick}
             onEachFeature={handleOnEach}
-            ref={LRef}
-            style={featureStyle(brew, vizAttribute)}/>);
+            style={featureStyle(brew, activeAttribute)}/>);
     }
 
-    const dataReq = useAsync(async () => {
+    useAsync(async (cur) => {
         const resp = await axios.get(hghiVentDataUrl);
-        return createLayer(resp.data);
+        setBaseData(resp.data);
+        setCurrentLayer(createLayer(resp.data));
     });
 
-    const layer = dataReq.value ?? null;
     const position = [42, -92]
-    const highlightDisplay = createHoverDisplay(hiFeature);
+    const highlightDisplay = createHoverDisplay(hiFeature, activeAttribute);
     const legend = createLegend(currentBrew);
 
     const map = (
@@ -161,9 +177,9 @@ export default function VentMap() {
             url="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}"
             attribution="Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ"
             />
-            {layer}
+            {currentLayer}
             <Control position="topright">{highlightDisplay}</Control>
-            <Control position="bottomright">{legend}</Control>
+            <Control position="bottomleft">{legend}</Control>
         </Map>
     )
     return map;
