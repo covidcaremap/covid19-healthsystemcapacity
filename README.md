@@ -9,6 +9,7 @@
 - [What To Do](#what-to-do)
 - [How To Help](#how-to-help)
   - [Running the notebooks](#running-the-notebooks)
+  - [Building the map](#building-the-maps)
 - [Acknowledgments](#acknowledgments)
 - [Methodology Notes](#methodology-notes)
 - [Sources](#sources)
@@ -16,7 +17,7 @@
 
 ## TL;DR
 
-Mapping existing and forecasted health system capacity gaps (beds, staffing, ventilators, supplies) to care for surging numbers of COVID19 patients (especially ICU-level care) at high spatiotemporal resolution (by facility, daily, all USA to start). 
+Mapping existing and forecasted health system capacity gaps (beds, staffing, ventilators, supplies) to care for surging numbers of COVID19 patients (especially ICU-level care) at high spatiotemporal resolution (by facility, daily, all USA to start).
 
 ## Overview
 
@@ -89,9 +90,9 @@ Social distancing works and is among the best practices we have on hand to slow 
 
 Our health system capacity is at risk of being overwhelmed. If you look again at the above figure for Wuhan at their peak of active severely ill and critically ill cases, the # of critically ill (patients who require ICU-level care) per capita nearly reaches the US' number of ICU beds per capita.
 
-**In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICU beds with COVID19 patients.** 
+**In other words, if the USA on average has a similar experience as Wuhan, we would completely fill all of our ICU beds with COVID19 patients.**
 
-Note that our ICUs typically operate at around 70% occupancy (or up to 90% in a particularly bad flu season) which means critically ill COVID patients (or non-COVID patients who need it) may not get ICU  level of care due to lack of available beds or staffing or equipment. 
+Note that our ICUs typically operate at around 70% occupancy (or up to 90% in a particularly bad flu season) which means critically ill COVID patients (or non-COVID patients who need it) may not get ICU  level of care due to lack of available beds or staffing or equipment.
 
 How prepared are our health systems? How do we prepare?
 
@@ -111,13 +112,13 @@ In the section on "Specific Priority Action Items To Be Taken", we see clear opp
 > - Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice. About 10-20% of a hospital’s bed capacity can be mobilized within a few hours by expediting discharges, using discharge holding areas, converting single rooms to double rooms, and opening closed areas, if staffing is available. Another 10% can be obtained within a few days by converting flat spaces, such as lobbies, waiting areas, and classrooms.4
 > - Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice.
 
-How will health systems' planning to 
+How will health systems' planning to
 
-> "Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice" 
+> "Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice"
 
-and 
+and
 
-> "Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice." 
+> "Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice."
 
 meet up with our current best estimates of the growing and peak patient needs for hospitalization and critical care?
 
@@ -175,7 +176,7 @@ Help us get going. There's no more time to wait.
     - [HCRIS Medicare cost reporting data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports)
     - [HIFLD hospital facilities data](https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals)
     - [Definitive Health hospital open data](https://www.arcgis.com/apps/opsdashboard/index.html#/8c4dcccd9e3845eb89f6401f919007f2)
-   
+
    1.2: Clean-up and bring together into data-science ready formats:
 
     - [Jupyter Notebooks](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/nbs)
@@ -228,7 +229,7 @@ Help us get going. There's no more time to wait.
     - and/or we could design our data to be easily inputted into surge planning tools that are already familar and in use by health systems.
 
 - [Visualizing, Designing, Communicating](https://github.com/daveluo/covid19-healthsystemcapacity/projects/3):
-  - Visualizing and designing to inform decisionmaking 
+  - Visualizing and designing to inform decisionmaking
   - Connecting with users and validating the usefulness of what's being produced here. Maybe this user or decisionmaker is you!
   - Communicating and educating about what this data means and how they're important for supporting our healthcare systems, personal & community protection, public health decisionmaking at the local, county & state levels
   - Public awareness building and truth-seeking to highlight problems and implore action where it's most needed. Focus on creating actionable awareness and avoid paralysis by analysis, panic, despair.
@@ -270,6 +271,17 @@ through `/opt/jupyter/data` inside any notebook.
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
 
+### Building the maps
+
+To build the maps, run
+
+```
+> ./docker/build
+> ./docker/geneerate-maps
+```
+
+Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/maps` sites.
+
 ## Acknowledgments
 
 Much thanks to all contributors so far (by alphabetical order of first name):
@@ -290,4 +302,3 @@ TODO
 ## Sources
 
 TODO Helping here to organize our rapidly growing collection of references and data assets would be much appreciated, see [issue](https://github.com/daveluo/covid19-healthsystemcapacity/issues/31)
-
