@@ -96,7 +96,6 @@ def spatial_join_facilities(left,
         for ((l, r), w) in zip(zip(lsimilarity_properties, rsimilarity_properties), similarity_weights):
             # For joins that don't match, right properties give float 'nan' value.
             if type(row[r]) is str:
-                # score += SequenceMatcher(None, row[l], row[r]).ratio() * w
                 score += (fuzz.ratio(row[l], row[r]) * w)
         return score
 

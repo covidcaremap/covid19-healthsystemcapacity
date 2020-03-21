@@ -92,13 +92,21 @@ scenarios = {
     }
 }
 
-def construct_beds_field_name(scenario, level):
-    return 'Estimated {} Available ({}) - {}'.format(
-        BEDS, scenario, level)
+def construct_beds_field_name(scenario, level=None):
+    if level is None:
+        return 'Estimated {} Available ({})'.format(
+            BEDS, scenario)
+    else:
+        return 'Estimated {} Available ({}) - {}'.format(
+            BEDS, scenario, level)
 
-def construct_vents_field_name(scenario, level):
-    return 'Estimated Additional {} Required ({}) - {}'.format(
-        VENTS, scenario, level)
+def construct_vents_field_name(scenario, level=None):
+    if level is None:
+            return 'Estimated Additional {} Required ({})'.format(
+                VENTS, scenario)
+    else:
+        return 'Estimated Additional {} Required ({}) - {}'.format(
+            VENTS, scenario, level)
 
 def construct_staff_field_name(scenario, staff, level):
     return '{} Required to Staff {} ({}) - {}'.format(
@@ -109,10 +117,8 @@ def facility_level_count_columns():
     columns = []
     for scenario in SCENARIOS:
         columns.extend([
-            construct_beds_field_name(scenario, BOUND_LOWER),
-            construct_beds_field_name(scenario, BOUND_UPPER),
-            construct_vents_field_name(scenario, BOUND_LOWER),
-            construct_vents_field_name(scenario, BOUND_UPPER),
+            construct_beds_field_name(scenario),
+            construct_vents_field_name(scenario),
         ])
 
         for staff in STAFF:
