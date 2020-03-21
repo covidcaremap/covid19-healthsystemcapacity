@@ -20,6 +20,7 @@ const defaultStyle = {
 
 const classificationMethod = 'quantile'; // or jenks, equal_interval
 
+// Create an attribute display popup for hovering over a state
 const createHoverDisplay = (feature, activeAttribute) => {
     const attrs = feature?.properties;
     const title = feature ? attrs['State Name'] : 'Select state';
@@ -52,6 +53,8 @@ const createHoverDisplay = (feature, activeAttribute) => {
     );
 };
 
+// Create a legend for the currently calculated color ramp and classification
+// scheme
 const createLegend = brew => {
     if (!brew) return;
 
@@ -82,6 +85,8 @@ const createLegend = brew => {
     );
 };
 
+// The data values are numbers, but they might, be encoded as strings.
+// Additionally, they may have non-numeric characters to filter out.
 const clean = (val, pretty = false) => {
     let out = val;
     if (typeof val === 'string') {
