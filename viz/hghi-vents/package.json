@@ -2,6 +2,7 @@
   "name": "hghi-vents",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://covidcaremap.org/maps/hghi-vents",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -9,7 +10,9 @@
     "antd": "^4.0.3",
     "axios": "^0.19.2",
     "classybrew": "0.0.3",
+    "gh-pages": "^2.2.0",
     "leaflet": "^1.6.0",
+    "nan": "^2.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.6.3",
@@ -21,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions"
   },
   "eslintConfig": {
     "extends": "react-app"
