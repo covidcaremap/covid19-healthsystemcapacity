@@ -185,7 +185,7 @@ Help us get going. There's no more time to wait.
 
     - 1st attempt (**DISCLAIMER:** Data has been sanity-checked at a high level to be in the right ballpark but errors are present and more rigorous data validation and clean-up is needed):
 
-      Interactive link: [covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1](https://www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1)
+      Interactive link: [www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1](http://www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1)
 
    ![](./figs/viz_v1_screencap.png)
 
