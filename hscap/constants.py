@@ -114,7 +114,14 @@ def construct_staff_field_name(scenario, staff, level):
 
 def facility_level_count_columns():
     """Returns the column names for facility-level counts"""
-    columns = []
+    columns = [
+        'Total Staffed ICU Beds',
+        'Total Staffed Beds',
+        'Total Licensed Beds',
+        'Bed Occupancy Rate',
+        'ICU Bed Occupancy Rate'
+    ]
+
     for scenario in SCENARIOS:
         columns.extend([
             construct_beds_field_name(scenario),
