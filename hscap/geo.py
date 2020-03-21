@@ -141,7 +141,12 @@ def spatial_join_facilities(left,
     return result[[lid_property, rid_property]]
 
 
-def sum_per_region(facilities, regions, groupby_columns, region_id_column, population_columns=None):
+def sum_per_region(facilities,
+                   regions,
+                   groupby_columns,
+                   region_id_column,
+                   population_columns=None,
+                   per_capita_base=PER_CAPITA_BASE):
     """
     Aggregate facility-level data by region via summation.
 
@@ -154,6 +159,7 @@ def sum_per_region(facilities, regions, groupby_columns, region_id_column, popul
         population_colums - Dict with keys in POPULATIONS and values being the columns of 'regions'
             that contain the population values. Defaults to the values generated in
             "Merge Region and Census Data" notebook.
+        per_captia_base: Per capita base number. Defaults to 1000.
     """
     if population_columns is None:
         population_columns = {
@@ -191,11 +197,13 @@ def sum_per_region(facilities, regions, groupby_columns, region_id_column, popul
 
     for count_column in facility_level_count_columns():
         for population in POPULATIONS:
-            per_capita = region_level[count_column] / (region_level[population_columns[population]] / PER_CAPITA_BASE)
-            per_capita = per_capita.round(3)
-            region_level['{} [Per {} {}]'.format(count_column,
-                                                 PER_CAPITA_BASE,
-                                                 population)] = per_capita
+            pop_column = population_columns.get(population)
+            if pop_column is not None:
+                per_capita = region_level[count_column] / (region_level[pop_column] / per_capita_base)
+                per_capita = per_capita.round(3)
+                region_level['{} [Per {} {}]'.format(count_column,
+                                                     PER_CAPITA_BASE,
+                                                     population)] = per_capita
 
     return region_level
 
