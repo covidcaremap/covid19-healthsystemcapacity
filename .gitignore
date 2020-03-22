@@ -9,6 +9,9 @@ nbs/**/*.docx*
 nbs/**/*.txt*
 nbs/download_data
 
+# Data that is too big to commit to the repo
+data/us-census-cc-est2018-alldata.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
