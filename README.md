@@ -2,14 +2,21 @@
 
 - [TL;DR](#tl;dr)
 - [Overview](#overview)
+- [Data](#data)
+- [Maps](#maps)
 - [Contributing](#contributing)
 - [Why](#why)
   - [Take-home Message #1](#take-home-message-1)
   - [Take-home Message #2](#take-home-message-2)
 - [What To Do](#what-to-do)
 - [How To Help](#how-to-help)
+- [Developing COVIDCareMap](#developing-covidcaremap)
+  - [Getting Started](#getting-started)
+  - [Using Docker](#using-docker)
+  - [Repository Organization](#repository-organization)
   - [Running the notebooks](#running-the-notebooks)
   - [Building the map](#building-the-maps)
+- [Glossary of Terms](#glossary-of-terms)
 - [Acknowledgments](#acknowledgments)
 - [Methodology Notes](#methodology-notes)
 - [Sources](#sources)
@@ -34,6 +41,29 @@ A. Publish a public dataset that describes the US healthcare system capacity in 
 B. Perform an analysis of the healthcare system capacity as compared to disease spread forecasts and publish data about where, when, and how large capacity gaps are anticipated to be.
 
 C. Visualize the result of the analysis as well as the disease forecast and healthcare system capacity data in a format that supports healthcare system preparedness and resourcing decisions.
+
+## Data
+
+Published data can be found in the [data/published](data/published) folder. This data include:
+
+| File                                                 | Description                                                                   |
+|------------------------------------------------------|-------------------------------------------------------------------------------|
+| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format.                                |
+| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format.                                |
+| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format.                           |
+| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format.                           |
+| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format.                            |
+| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format.                            |
+| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. |
+| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
+
+## Maps
+
+### Ventilator Supply and Healthcare Capacity Map, by State
+
+[https://www.covidcaremap.org/maps/hghi-vents/](https://www.covidcaremap.org/maps/hghi-vents/)
+
+This map combines [health capacity data](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) from the Harvard Global Health Institute and ventilator information from a [2010 Study](https://www.ncbi.nlm.nih.gov/pubmed/21149215).
 
 ## Contributing
 
@@ -250,6 +280,45 @@ Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere
 
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+## Developing CovidCareMap
+
+### Getting Started
+
+TKTK
+
+### Using Docker
+
+TKTK
+
+### Repository Organization
+
+    ├── data
+        ├── README.md          <- This file.
+        ├── external           <- Intermediate data that has been transformed.
+        ├── published          <- The final, canonical data sets for COVIDCareMap.
+        └── processed          <- Folder containing intermediate processing data.
+    │
+    ├── notebooks              <- Jupyter notebooks.
+    │   ├── README.md          <- Overview of Jupyter Notebooks and how to run them.
+    │   ├── requirements.txt   <- Python packages required to run notebooks.
+    │   ├── old                <- Old notebooks such as previous versions of processing logic.
+    │   ├── examples           <- Notebooks containing examples for using COVIDCareMap data.
+    │   ├── processing         <- Notebooks for processing COVIDCareMap data.
+    │   └── validation         <- Notebooks for validating COVIDCareMap data.
+    │
+    ├── docker                 <- Folder containing scripts and files for running Docker.
+    │
+    ├── scripts                <- Bash utility scripts such as downloading data.
+    │
+    ├── requirements.txt       <- The requirements file for the covidcaremap python module.
+    │
+    └── covidcaremap           <- Source code for the covidcaremap python package.
+        │
+        ├── constants.py       <- Contains variables and functions related to constant parameters.
+        ├── data.py            <- Methods to download or generate data
+        └── geo.py             <- Methods for reusable geospatial methods.
+
+
 ### Running the notebooks
 
 You can run the Jupyter notebooks for data processing and analytics directly on your machine by using [Docker](https://docs.docker.com/install/).
@@ -265,8 +334,9 @@ This will print out a URL with a token parameter to open up in your browser.
 Use the last one listed (starting with `http://127.0.0.1:8888`)
 
 The docker container will mount the notebooks and data folder into the container, so that any notebook
-work is saved to the `nbs/` folder on your machine, and an data moved into the `data/` folder will be accessable
-through `/opt/jupyter/data` inside any notebook.
+work is saved to the `notebooks/` folder on your machine, and an data moved into the `data/`
+folder will be accessable through `/opt/jupyter/data` inside any notebook. Also all
+repository files are accessible through `/opt/src`.
 
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
@@ -277,10 +347,31 @@ To build the maps, run
 
 ```
 > ./docker/build
-> ./docker/geneerate-maps
+> ./docker/generate-maps
 ```
 
 Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/maps` sites.
+
+## Glossary of Terms
+
+This project uses many terms and acronyms. This brief glossary of terms is to provide a better understanding
+of the project as well as ensures everyone is speaking the same language. If you can improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
+
+#### DH
+
+Definitive Health. Used to refer to the [dataset here](https://coronavirus-resources.esri.com/datasets/definitivehc::definitive-healthcare-usa-hospital-beds), which contains facility-level information.
+
+#### HCRIS
+
+Healthcare Cost Report Information System (HCRIS). This is normally used to refer to the
+healthcare system facility data. COVIDCareMap uses this data to determine facility information
+such as Staffed Beds, Staffed ICU Beds, ICU Occupancy Rate, and more where this data is available.
+
+Read more here: https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports/Hospital-2010-form
+
+#### HRR
+
+Hospital Referral Region (HRR), specifying a market within which people generally go to the same hospitals
 
 ## Acknowledgments
 

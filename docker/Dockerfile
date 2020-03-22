@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 RUN apt-get update && apt-get install -y nodejs npm
 
-COPY nbs/requirements.txt /tmp/requirements.txt
+COPY notebooks/requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 WORKDIR /opt/src

@@ -1,16 +1,19 @@
 # Data generated in the notebook directory. All committed data should be in the data/ folder.
-nbs/**/*.json*
-nbs/**/*.geojson*
-nbs/**/*.csv*
-nbs/**/*.zip*
-nbs/**/*.pdf*
-nbs/**/*.xlsx*
-nbs/**/*.docx*
-nbs/**/*.txt*
-nbs/download_data
+notebooks/**/*.json*
+notebooks/**/*.geojson*
+notebooks/**/*.csv*
+notebooks/**/*.zip*
+notebooks/**/*.pdf*
+notebooks/**/*.xlsx*
+notebooks/**/*.docx*
+notebooks/**/*.txt*
 
 # Data that is too big to commit to the repo
-data/us-census-cc-est2018-alldata.csv
+data/external/us-census-cc-est2018-alldata.csv
+data/external/HCRIS*
+
+# Download cache used by data download notebook
+data/external/download_cache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

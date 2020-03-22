@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en-us" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"  class="responsive"> <!--<![endif]-->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="utf-8" />
+<title>Hospital Beds per 1,000 Population by Ownership Type | The Henry J. Kaiser Family Foundation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="article:tag" content="Hospitals">
+<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+<script type="text/javascript">
+	var kff_context = { id: 32444, type: "post", post_type: "state-indicator" };</script>
+<script type="text/javascript">
+	var kff_twitter_handle = "@kff";</script>
+<!--[if IE lte 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/lib/css3-multi-column.min.js"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+	<script type="text/javascript">var ajaxurl = 'https://www.kff.org/wp-admin/admin-ajax.php';</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.kff.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.kff.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='kff-webfonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C400i%2C600%2C600i%2C700%2C700i%7CBarlow%3A400%2C500%2C600%2C700%7CRoboto%3A400%2C700%7CSource+Sans+Pro&#038;ver=1.0' media='all' />
+<link rel='stylesheet' id='jquery-style-css'  href='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/stylesheets/jquery-ui.css?ver=1.12' media='all' />
+<link rel='stylesheet' id='screen-css'  href='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/stylesheets/screen.css?ver=1.12' media='all' />
+<link rel='stylesheet' id='print-css'  href='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/stylesheets/print.css?ver=1.12' media='print' />
+<link rel='stylesheet' id='mobile-768px-css'  href='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/stylesheets/mobile-768px.css?ver=1.12' media='screen and (max-width: 768px) and (min-width: 480px)' />
+<link rel='stylesheet' id='mobile-320px-css'  href='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/stylesheets/mobile-320px.css?ver=1.12' media='screen and (max-width: 480px)' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://www.kff.org/wp-content/mu-plugins/jetpack/css/jetpack.css?ver=8.3' media='all' />
+<script src='https://www.kff.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script src='https://www.kff.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script src='https://www.kff.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script src='https://www.kff.org/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/jquery_plugins/jquery.customSelect.min.js?ver=1.12'></script>
+<script src='https://www.kff.org/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/jquery_plugins/jquery.hoverIntent.minified.js?ver=1.12'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/jquery_plugins/jquery.stickytableheaders.js?ver=1.12'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/jquery_plugins/jquery.history.js?ver=1.12'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js?ver=5.3.2'></script>
+<script>
+var kff_shortlink = {"ajaxurl":"https:\/\/www.kff.org\/wp-admin\/admin-ajax.php","ajax_security":"9b0ac5a012"};
+</script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/global.bundle.min.js?ver=1.12'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/attachments.js?ver=1.12'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/navigation.js?ver=1.12'></script>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js?ver=5.3.2'></script>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-sanitize.min.js?ver=5.3.2'></script>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js?ver=5.3.2'></script>
+<link rel='https://api.w.org/' href='https://www.kff.org/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kff.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.kff.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel="canonical" href="https://www.kff.org/other/state-indicator/beds-by-ownership/" />
+<link rel='shortlink' href='https://www.kff.org/47a2f1f/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.kff.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kff.org%2Fother%2Fstate-indicator%2Fbeds-by-ownership%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.kff.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kff.org%2Fother%2Fstate-indicator%2Fbeds-by-ownership%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Hospital Beds per 1,000 Population by Ownership Type" />
+<meta property="og:url" content="https://www.kff.org/other/state-indicator/beds-by-ownership/" />
+<meta property="og:description" content="The Kaiser Family Foundation website provides in-depth information on key health policy issues including Medicaid, Medicare, health reform, global health, HIV/AIDS, health insurance, the uninsured …" />
+<meta property="article:published_time" content="2020-02-21T17:25:21+00:00" />
+<meta property="article:modified_time" content="2020-02-21T17:26:07+00:00" />
+<meta property="og:site_name" content="The Henry J. Kaiser Family Foundation" />
+<meta property="og:image" content="https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/images/kaiser-grey-logo-4x3.jpg" />
+<meta property="og:image:width" content="512" />
+<meta property="og:image:height" content="512" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:text:title" content="Hospital Beds per 1,000 Population by Ownership Type" />
+<meta name="twitter:image" content="https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/images/kaiser-grey-logo-4x3.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="539445989434974" />
+<meta name="twitter:site" content="@kff" />
+
+<!-- End Jetpack Open Graph Tags -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', "UA-36655148-1", 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0024/5869.js" async="async"></script>
+<link rel="icon" href="https://www.kff.org/wp-content/uploads/2019/05/cropped-KFF-Favicon.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://www.kff.org/wp-content/uploads/2019/05/cropped-KFF-Favicon.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.kff.org/wp-content/uploads/2019/05/cropped-KFF-Favicon.png?w=180" />
+<meta name="msapplication-TileImage" content="https://www.kff.org/wp-content/uploads/2019/05/cropped-KFF-Favicon.png?w=270" />
+</head>
+<body class="state-indicator-template-default single single-state-indicator postid-32444 beta-layout-active">
+		<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PPSVK8"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PPSVK8');</script>
+	<!-- End Google Tag Manager -->
+		<div class="viewport">
+		<div class="pane">
+			
+			<nav class="primary"><ul id="menu-main-menu" class="menu"><li id="menu-item-180518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-180518"><a href="https://www.kff.org/">Home</a></li>
+<li id="menu-item-180520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180520"><a href="#">Topics</a>
+<ul class="sub-menu">
+	<li id="menu-item-454262" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-454262"><a href="https://www.kff.org/coronavirus-covid-19/">Coronavirus (COVID-19)</a></li>
+	<li id="menu-item-185314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185314"><a href="/disparities-policy/">Disparities Policy</a></li>
+	<li id="menu-item-185315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185315"><a href="/global-health-policy/">Global Health Policy</a></li>
+	<li id="menu-item-185316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185316"><a href="/health-costs/">Health Costs</a></li>
+	<li id="menu-item-185317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185317"><a href="/health-reform/">Health Reform</a></li>
+	<li id="menu-item-185318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185318"><a href="/hivaids/">HIV/AIDS</a></li>
+	<li id="menu-item-185320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185320"><a href="/medicaid/">Medicaid</a></li>
+	<li id="menu-item-185319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185319"><a href="/medicare/">Medicare</a></li>
+	<li id="menu-item-185321" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185321"><a href="/private-insurance/">Private Insurance</a></li>
+	<li id="menu-item-185322" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185322"><a href="/uninsured/">Uninsured</a></li>
+	<li id="menu-item-185323" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-185323"><a href="/womens-health-policy/">Women&#8217;s Health Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-180531" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180531"><a href="/polling">Polling</a></li>
+<li id="menu-item-180540" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180540"><a href="/perspectives/">Perspectives</a></li>
+<li id="menu-item-180537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180537"><a href="/statedata">State Health Facts</a>
+<ul class="sub-menu">
+	<li id="menu-item-254102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254102"><a href="/statedata">State Health Facts</a></li>
+	<li id="menu-item-254101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254101"><a href="/statedata/custom/">Custom State Reports</a></li>
+</ul>
+</li>
+<li id="menu-item-180539" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180539"><a href="/graphics/search/">Graphics &amp; Interactives</a></li>
+<li id="menu-item-180538" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180538"><a href="/charts-slides/">Charts &amp; Slides</a></li>
+<li id="menu-item-180551" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180551"><a href="http://www.khn.org">Kaiser Health News</a></li>
+<li id="menu-item-180553" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180553"><a href="/social-impact-media/">Social Impact Media</a></li>
+<li id="menu-item-227302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-227302"><a href="http://www.healthsystemtracker.org/">Peterson-KFF Health System Tracker</a></li>
+<li id="menu-item-180555" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180555"><a href="/newsroom">Newsroom</a>
+<ul class="sub-menu">
+	<li id="menu-item-189647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189647"><a href="/newsroom">Newsroom</a></li>
+	<li id="menu-item-180556" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180556"><a href="/search/?post_type=press-release">News Releases</a></li>
+	<li id="menu-item-180557" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180557"><a href="/search/?post_type=event">Events</a></li>
+	<li id="menu-item-180558" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180558"><a href="/email/">Subscribe to Emails</a></li>
+	<li id="menu-item-180559" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180559"><a href="/cite-and-reprint-kff/">Cite Us/Reprint</a></li>
+	<li id="menu-item-180560" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180560"><a href="/newsroom/#media-contacts">Media Contacts</a></li>
+</ul>
+</li>
+<li id="menu-item-180561" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-180561"><a href="/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-435467" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435467"><a href="https://www.kff.org/presidents-message/">President&#8217;s Message</a></li>
+	<li id="menu-item-189648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189648"><a href="/about-us">About Us</a></li>
+	<li id="menu-item-180562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180562"><a href="/our-programs/">Our Programs</a></li>
+	<li id="menu-item-448472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448472"><a href="https://www.kff.org/support-our-work/">Support Our Work</a></li>
+	<li id="menu-item-180563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180563"><a href="/people/key-staff/">Key Staff</a></li>
+	<li id="menu-item-180552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180552"><a href="/media-internships-fellowships/">Media Fellowships</a></li>
+	<li id="menu-item-450948" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-450948"><a href="/job-posting/rowland-fellowship-for-policy-research-on-coverage-and-access-to-care-for-low-income-people/">Rowland Fellowship for Policy Research</a></li>
+	<li id="menu-item-180564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180564"><a href="/barbara-jordan-conference-center/">Barbara Jordan Conference Center</a></li>
+	<li id="menu-item-180565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180565"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-180566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180566"><a href="/employment-opportunities/">Employment Opportunities</a></li>
+</ul>
+</li>
+</ul></nav>
+			<header class="primary beta">
+    <div id="print-logo">
+        <img
+            alt="The Henry J. Kaiser Family Foundation"
+            src="https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/images/kff-logo.png"
+        />
+                <p class="">
+            Filling the need for trusted information on national health issues        </p>
+    </div>
+    <div class="header-main site-header__layer--primary">
+        <div class="site-header__inner inner">
+            <a
+                class="menu site-header__menu-toggle"
+                href="#"
+                role="button"
+            >
+                <span>
+                    menu                </span>
+            </a>
+            <a
+                class="site-header__logo"
+                href="/"
+                rel="home"
+                title="Hospital Beds per 1,000 Population by Ownership Type"
+            ></a>
+                            <p class="site-header__tagline">
+                    Filling the need for trusted information on national health issues                </p>
+                                    <div class="site-header__donate">
+                        <a
+                            href="https://www.kff.org/support-our-work/"
+                        >
+                            Support our work                        </a>
+                    </div>
+                                <div class="site-header__share share">
+                <a
+                    class="link facebook"
+                    href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F"
+                    target="_blank"
+                >
+                    <span class="screen-reader-text">
+                        Share on Facebook. Opens in a new window.                    </span>
+                </a>
+                <a
+                    class="link twitter"
+                    href="http://twitter.com/share?text=Hospital+Beds+per+1%2C000+Population+by+Ownership+Type&#038;url=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F"
+                    target="_blank"
+                >
+                    <span class="screen-reader-text">
+                        Share on Twitter. Opens in a new window.                    </span>
+                </a>
+                <a
+                    class="link email"
+                    href="mailto:?subject=Hospital%20Beds%20per%201%2C000%20Population%20by%20Ownership%20Type&#038;body=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F"
+                >
+                    <span class="screen-reader-text">
+                        Email. Opens in a new window.                    </span>
+                </a>
+            </div>
+            <form
+                action="https://www.kff.org/search/"
+                class="site-header__search-form search-form"
+            >
+                                    <button
+                        aria-controls="site-header-search"
+                        class="search-form__trigger"
+                        type="submit"
+                    >
+                        <span>
+                            Open Search...                        </span>
+                    </button>
+                                <label class="screen-reader-text" for="search-field">
+                    Search KFF.org                </label>
+                <input
+                    class="search-form__input--text"
+                    id="search-field"
+                    name="s"
+                    placeholder="Search KFF.org"
+                    type="text"
+                />
+                <input
+                    class="search-form__input--submit"
+                    id="search-submit"
+                    type="submit"
+                    value="search"
+                />
+            </form>
+            <div class="site-header__social-links">
+                <a
+                    class="link twitter"
+                    href="https://twitter.com/kff"
+                    target="_blank"
+                >
+                    <span>
+                        Twitter                    </span>
+                </a>
+                <a
+                    class="link facebook"
+                    href="https://www.facebook.com/KaiserFamilyFoundation"
+                    target="_blank"
+                >
+                    <span>
+                        Facebook                    </span>
+                </a>
+                <a
+                    class="link instagram"
+                    href="https://www.instagram.com/KaiserFamilyFoundation/"
+                    target="_blank"
+                >
+                    <span>
+                        Instagram                    </span>
+                </a>
+                <a
+                    class="link email"
+                    href="/email/"
+                    target="_blank"
+                >
+                    <span>
+                        Email                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+        <div class="site-header__layer--secondary inner">
+                <nav
+            class="site-header__trending"
+            data-label="Trending"
+        >
+            <ul id="menu-trending-links" class="menu"><li id="menu-item-180652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180652"><a href="https://www.kff.org/coronavirus-covid-19/?utm_source=web&#038;utm_medium=trending&#038;utm_campaign=coronavirus">Coronavirus</a></li>
+<li id="menu-item-180653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180653"><a href="https://www.kff.org/election-2020/?utm_source=web&#038;utm_medium=trending&#038;utm_campaign=election-2020">Election 2020</a></li>
+<li id="menu-item-180654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-180654"><a href="https://www.kff.org/tag/affordable-care-act//?utm_source=web&#038;utm_medium=trending&#038;utm_campaign=affordable-care-act">Affordable Care Act</a></li>
+</ul>        </nav>
+    </div>
+    </header>
+
+				<nav class="tertiary">
+		<div class="inner">
+			<h2 >
+				<a href="/statedata/" class="topic">
+					State Health Facts				</a>
+			</h2>
+							<ul class="title-icons">
+											<li>
+							<a href="/about-state-health-facts" class="map">
+								About State Health Facts							</a>
+						</li>
+									</ul>
+					</div>
+	</nav>
+
+	<nav class="page-meta">
+		<ul id="breadcrumbs"><li><a href="https://www.kff.org/">Home</a></li><li><a href="/statedata/">State Health Facts</a></li><li><a href="https://www.kff.org/state-category/providers-service-use/">Providers &amp; Service Use</a></li><li><a href="https://www.kff.org/state-category/providers-service-use/hospitals/">Hospitals</a></li><li><a href="https://www.kff.org/other/state-indicator/beds-by-ownership/">Hospital Beds per 1,000 Population by Ownership&hellip;</a></li></ul>	</nav>
+
+			
+			
+							<div id="content" class="inner">
+			<script type="text/javascript">
+	var appJs = appJs || {};
+	appJs = jQuery.extend(appJs, {"post_type":"state-indicator","itype":"state","table_viewer_css":"https:\/\/www.kff.org\/wp-content\/themes\/kaiser-foundation-2016\/static\/stylesheets\/table_viewer.css","geo_url":"https:\/\/www.kff.org\/wp-content\/themes\/kaiser-foundation-2016\/static\/js\/maps\/medicare_geos.json","is_preview":false,"base":"\/other\/state-indicator\/beds-by-ownership\/","gdocs_key":"1p0_9uuwQfPjLvDhxIGOLPwgbwP-sPc9SFJCa-zsM6U4","gdocsObject":[["2018",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.336845","1.661634","0.427133","2.425612"],["Alabama","1.44056","0.772759","0.912498","3.125818"],["Alaska","0.33055","1.534404","0.360476","2.225429"],["Arizona","0.10855","1.316564","0.509219","1.934333"],["Arkansas","0.317968","2.166305","0.677801","3.162075"],["California","0.315167","1.200687","0.321655","1.837508"],["Colorado","0.373202","1.086925","0.397801","1.857928"],["Connecticut","0.059358","1.95491","N\/A","2.014268"],["Delaware","N\/A","2.137799","0.038323","2.176122"],["District of Columbia","N\/A","3.52079","0.917971","4.438762"],["Florida","0.413852","1.263444","0.899582","2.576877"],["Georgia","0.28798","1.809225","0.292071","2.389277"],["Hawaii","0.272421","1.662686","N\/A","1.935107"],["Idaho","0.422156","1.108803","0.409018","1.939977"],["Illinois","0.122298","2.23413","0.163876","2.520303"],["Indiana","0.381749","1.934285","0.395639","2.711673"],["Iowa","0.898172","2.030732","0.063838","2.992742"],["Kansas","1.096395","1.41446","0.80684","3.317695"],["Kentucky","0.386671","2.373602","0.451677","3.21195"],["Louisiana","0.770008","1.738528","0.768935","3.277471"],["Maine","0.055263","2.416626","0.067211","2.5391"],["Maryland","N\/A","1.909108","0.008947","1.918055"],["Massachusetts","0.048819","1.838685","0.386189","2.273693"],["Michigan","0.067107","2.171459","0.260315","2.49888"],["Minnesota","0.311795","2.166689","N\/A","2.478484"],["Mississippi","1.621593","1.623941","0.803752","4.049285"],["Missouri","0.431748","2.218529","0.412472","3.06275"],["Montana","0.148963","2.965121","0.22533","3.339414"],["Nebraska","0.475173","2.947112","0.130867","3.553152"],["Nevada","0.211407","0.662628","1.270752","2.144786"],["New Hampshire","N\/A","1.737023","0.319181","2.056204"],["New Jersey","N\/A","2.087323","0.264798","2.35212"],["New Mexico","0.345002","0.749734","0.72632","1.821057"],["New York","0.455189","2.203596","N\/A","2.658785"],["North Carolina","0.620038","1.317907","0.137744","2.075689"],["North Dakota","N\/A","4.172383","0.094977","4.26736"],["Ohio","0.253504","2.372147","0.214023","2.839674"],["Oklahoma","0.542607","1.485952","0.799698","2.828258"],["Oregon","0.218323","1.37163","0.05739","1.647343"],["Pennsylvania","0.002578","2.521303","0.345444","2.869325"],["Rhode Island","N\/A","1.868113","0.198434","2.066547"],["South Carolina","0.585151","1.083759","0.714966","2.383876"],["South Dakota","0.232162","4.292715","0.235576","4.760452"],["Tennessee","0.513613","1.561367","0.787993","2.862973"],["Texas","0.330298","0.956244","1.007347","2.29389"],["Utah","0.262878","0.973189","0.592665","1.828733"],["Vermont","N\/A","2.090147","N\/A","2.090147"],["Virginia","0.205145","1.456133","0.463695","2.124973"],["Washington","0.383181","1.191541","0.123075","1.697797"],["West Virginia","0.358035","2.762304","0.686142","3.806481"],["Wisconsin","0.00861","1.989356","0.086097","2.084063"],["Wyoming","2.57271","0.515927","0.39993","3.488567"]]],["2017",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.3","1.7","0.4","2.5"],["Alabama","1.5","0.7","0.9","3.1"],["Alaska","0.4","1.7","0.4","2.5"],["Arizona","0.1","1.3","0.5","2"],["Arkansas","0.3","2","0.8","3.2"],["California","0.3","1.2","0.3","1.9"],["Colorado","0.4","1.1","0.4","1.9"],["Connecticut","0.05","1.9","N\/A","2"],["Delaware","N\/A","2.2","0","2.2"],["District of Columbia","N\/A","3.8","0.9","4.8"],["Florida","0.4","1.3","0.9","2.6"],["Georgia","0.3","1.8","0.3","2.4"],["Hawaii","0.3","1.6","N\/A","1.8"],["Idaho","0.5","1.1","0.4","2"],["Illinois","0.1","2.2","0.2","2.5"],["Indiana","0.4","1.8","0.4","2.6"],["Iowa","0.9","2","0","3"],["Kansas","1.1","1.5","0.8","3.4"],["Kentucky","0.4","2.3","0.5","3.2"],["Louisiana","0.7","1.8","0.8","3.3"],["Maine","0.1","2.4","0.1","2.5"],["Maryland","N\/A","1.9","0","1.9"],["Massachusetts","0.1","1.9","0.3","2.3"],["Michigan","0.1","2.2","0.3","2.5"],["Minnesota","0.4","2.1","0.0","2.5"],["Mississippi","1.7","1.6","0.8","4.1"],["Missouri","0.4","2.2","0.4","3.1"],["Montana","0.2","3.1","0.2","3.5"],["Nebraska","0.6","3","0.1","3.6"],["Nevada","0.2","0.7","1.2","2.1"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","N\/A","2.2","0.3","2.4"],["New Mexico","0.3","0.7","0.8","1.8"],["New York","0.5","2.1","N\/A","2.6"],["North Carolina","0.6","1.3","0.2","2.1"],["North Dakota","N\/A","4.1","0.2","4.3"],["Ohio","0.2","2.4","0.2","2.9"],["Oklahoma","0.6","1.5","0.8","2.9"],["Oregon","0.2","1.4","0.1","1.7"],["Pennsylvania","0","2.5","0.4","2.9"],["Rhode Island","N\/A","1.5","0.5","2"],["South Carolina","0.6","1.3","0.7","2.6"],["South Dakota","0.2","4.3","0.2","4.8"],["Tennessee","0.5","1.6","0.9","3"],["Texas","0.3","1","1","2.4"],["Utah","0.3","1","0.6","1.9"],["Vermont","N\/A","2","N\/A","2"],["Virginia","0.2","1.5","0.4","2.2"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.4","2.8","0.7","3.8"],["Wisconsin","0","2","0.1","2.1"],["Wyoming","2.2","1","0.3","3.6"]]],["2016",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.3","1.7","0.4","2.4"],["Alabama","1.6","0.6","0.9","3.1"],["Alaska","0.3","1.5","0.4","2.2"],["Arizona","0.1","1.3","0.5","1.9"],["Arkansas","0.3","2.2","0.6","3.2"],["California","0.3","1.2","0.3","1.8"],["Colorado","0.4","1.2","0.4","1.9"],["Connecticut","0","2","0","2"],["Delaware","N\/A","2.1","0","2.2"],["District of Columbia","N\/A","4.1","0.9","5.1"],["Florida","0.4","1.2","1","2.6"],["Georgia","0.3","1.8","0.3","2.4"],["Hawaii","0.3","1.4","N\/A","1.7"],["Idaho","0.5","1.1","0.4","2"],["Illinois","0.1","2.1","0.2","2.5"],["Indiana","0.4","1.8","0.4","2.6"],["Iowa","0.9","2.1","0","3"],["Kansas","1.1","1.6","0.6","3.3"],["Kentucky","0.4","2.3","0.4","3.2"],["Louisiana","0.7","1.8","0.5","3"],["Maine","0.1","2.4","0.1","2.6"],["Maryland","N\/A","1.9","0","1.9"],["Massachusetts","0.1","1.9","0.4","2.3"],["Michigan","0.1","2.2","0.3","2.5"],["Minnesota","0.4","2.2","N\/A","2.6"],["Mississippi","1.7","1.4","0.9","4"],["Missouri","0.4","2.2","0.4","3"],["Montana","0.2","3","0.3","3.5"],["Nebraska","0.6","2.8","0.1","3.4"],["Nevada","0.2","0.6","1.1","1.9"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","0.1","2","0.2","2.3"],["New Mexico","0.3","0.7","0.8","1.8"],["New York","0.5","2.2","N\/A","2.7"],["North Carolina","0.6","1.3","0.2","2.1"],["North Dakota","N\/A","4.2","0.1","4.3"],["Ohio","0.2","2.4","0.2","2.9"],["Oklahoma","0.6","1.3","0.9","2.8"],["Oregon","0.2","1.4","0","1.6"],["Pennsylvania","0","2.5","0.4","2.9"],["Rhode Island","N\/A","2","0.1","2.1"],["South Carolina","0.6","1.1","0.7","2.5"],["South Dakota","0.2","4.3","0.2","4.7"],["Tennessee","0.5","1.5","0.9","2.9"],["Texas","0.4","1","0.9","2.2"],["Utah","0.3","0.9","0.6","1.8"],["Vermont","N\/A","2","N\/A","2"],["Virginia","0.2","1.5","0.4","2.1"],["Washington","0.4","1.1","0.1","1.7"],["West Virginia","0.3","2.8","0.6","3.7"],["Wisconsin","0","2","0.1","2.1"],["Wyoming","2.3","0.5","0.2","2.9"]]],["2015",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.7","0.4","2.4"],["Alabama","1.5","0.6","0.9","3.0"],["Alaska","0.3","1.5","0.4","2.2"],["Arizona","0.1","1.5","0.4","2.0"],["Arkansas","0.3","2.2","0.7","3.2"],["California","0.3","1.2","0.3","1.8"],["Colorado","0.3","1.2","0.4","1.9"],["Connecticut","0.1","2.0","0.0","2.1"],["Delaware","N\/A","2.2","0.0","2.2"],["District of Columbia","N\/A","4.4","1.0","5.3"],["Florida","0.4","1.2","0.9","2.6"],["Georgia","0.5","1.6","0.3","2.4"],["Hawaii","0.6","1.3","N\/A","1.9"],["Idaho","0.5","1.1","0.4","2.0"],["Illinois","0.2","2.1","0.2","2.5"],["Indiana","0.5","1.8","0.4","2.6"],["Iowa","0.9","2.1","0.1","3.1"],["Kansas","1.2","1.6","0.6","3.4"],["Kentucky","0.4","2.4","0.4","3.2"],["Louisiana","0.8","1.7","0.6","3.0"],["Maine","0.1","2.5","0.1","2.6"],["Maryland","N\/A","2.0","0.0","2.0"],["Massachusetts","0.1","1.9","0.4","2.3"],["Michigan","0.1","2.1","0.2","2.5"],["Minnesota","0.4","2.2","N\/A","2.6"],["Mississippi","1.7","1.4","1.0","4.1"],["Missouri","0.4","2.2","0.4","3.1"],["Montana","0.3","3.1","0.2","3.7"],["Nebraska","0.6","2.8","0.1","3.5"],["Nevada","0.2","0.6","1.1","1.9"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","0.1","2.0","0.3","2.3"],["New Mexico","0.3","0.7","0.8","1.9"],["New York","0.5","2.2","N\/A","2.7"],["North Carolina","0.6","1.4","0.2","2.2"],["North Dakota","N\/A","4.1","0.1","4.2"],["Ohio","0.2","2.5","0.2","2.9"],["Oklahoma","0.6","1.3","1.0","2.8"],["Oregon","0.2","1.4","0.1","1.7"],["Pennsylvania","0.0","2.4","0.5","2.9"],["Rhode Island","N\/A","2.0","0.1","2.2"],["South Carolina","0.7","1.1","0.7","2.5"],["South Dakota","0.2","4.3","0.2","4.7"],["Tennessee","0.5","1.6","1.0","3.0"],["Texas","0.4","1.0","0.9","2.3"],["Utah","0.3","1.0","0.6","1.8"],["Vermont","N\/A","1.9","N\/A","1.9"],["Virginia","0.2","1.5","0.4","2.1"],["Washington","0.4","1.1","0.2","1.7"],["West Virginia","0.3","2.7","0.7","3.7"],["Wisconsin","0.0","2.1","0.1","2.2"],["Wyoming","2.2","0.7","0.2","3.1"]]],["2014",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.7","0.4","2.5"],["Alabama","1.6","0.8","0.8","3.1"],["Alaska","0.3","1.6","0.3","2.2"],["Arizona","0.1","1.5","0.4","2.0"],["Arkansas","0.3","2.1","0.7","3.1"],["California","0.3","1.2","0.3","1.8"],["Colorado","0.4","1.2","0.4","2.0"],["Connecticut","0.1","2.1","0.0","2.2"],["Delaware","N\/A","2.2","0.0","2.2"],["District of Columbia","N\/A","4.4","0.9","5.4"],["Florida","0.4","1.3","1.0","2.7"],["Georgia","0.4","1.6","0.4","2.4"],["Hawaii","0.7","1.3","N\/A","2.0"],["Idaho","0.5","1.1","0.4","2.0"],["Illinois","0.1","2.1","0.2","2.5"],["Indiana","0.5","1.8","0.3","2.6"],["Iowa","0.9","2.2","0.1","3.1"],["Kansas","1.2","1.6","0.6","3.5"],["Kentucky","0.4","2.4","0.4","3.2"],["Louisiana","0.9","1.6","0.7","3.2"],["Maine","0.1","2.4","0.1","2.5"],["Maryland","N\/A","2.0","0.0","2.0"],["Massachusetts","0.1","1.9","0.4","2.4"],["Michigan","0.1","2.1","0.3","2.5"],["Minnesota","0.4","2.3","N\/A","2.7"],["Mississippi","1.8","1.4","0.9","4.2"],["Missouri","0.4","2.2","0.5","3.1"],["Montana","0.3","3.2","0.0","3.6"],["Nebraska","0.7","2.8","0.1","3.6"],["Nevada","0.2","0.6","1.2","2.0"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","0.0","2.0","0.3","2.3"],["New Mexico","0.3","0.7","0.8","1.8"],["New York","0.5","2.3","N\/A","2.8"],["North Carolina","0.6","1.4","0.2","2.2"],["North Dakota","N\/A","4.2","0.1","4.3"],["Ohio","0.2","2.5","0.2","2.9"],["Oklahoma","0.6","1.3","1.0","2.9"],["Oregon","0.2","1.4","0.1","1.7"],["Pennsylvania","0.0","2.5","0.5","3.0"],["Rhode Island","N\/A","2.0","0.1","2.1"],["South Carolina","0.7","1.1","0.7","2.5"],["South Dakota","0.2","4.4","0.2","4.8"],["Tennessee","0.5","1.6","1.0","3.1"],["Texas","0.3","1.0","0.9","2.3"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","1.9","N\/A","1.9"],["Virginia","0.2","1.5","0.4","2.2"],["Washington","0.4","1.1","0.2","1.7"],["West Virginia","0.3","2.7","0.7","3.7"],["Wisconsin","0.0","2.1","0.1","2.2"],["Wyoming","2.3","0.7","0.2","3.1"]]],["2013",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.7","0.4","2.5"],["Alabama","1.5","0.9","0.8","3.1"],["Alaska","0.3","1.6","0.3","2.1"],["Arizona","0.1","1.5","0.4","2.0"],["Arkansas","0.3","2.1","0.8","3.2"],["California","0.3","1.2","0.3","1.8"],["Colorado","0.3","1.2","0.4","2.0"],["Connecticut","0.1","2.1","0.0","2.2"],["Delaware","N\/A","2.2","0.0","2.2"],["District of Columbia","0.6","4.1","1.0","5.6"],["Florida","0.5","1.3","1.0","2.7"],["Georgia","0.5","1.6","0.4","2.5"],["Hawaii","0.6","1.4","N\/A","2.0"],["Idaho","0.5","1.2","0.4","2.1"],["Illinois","0.1","2.2","0.2","2.5"],["Indiana","0.4","1.9","0.3","2.6"],["Iowa","0.9","2.2","0.0","3.2"],["Kansas","1.2","1.6","0.7","3.5"],["Kentucky","0.4","2.4","0.4","3.2"],["Louisiana","0.9","1.7","0.7","3.4"],["Maine","0.1","2.5","0.1","2.6"],["Maryland","N\/A","2.1","0.0","2.1"],["Massachusetts","0.1","2.0","0.4","2.5"],["Michigan","0.1","2.2","0.3","2.5"],["Minnesota","0.5","2.3","N\/A","2.7"],["Mississippi","1.9","1.5","0.9","4.3"],["Missouri","0.5","2.2","0.5","3.1"],["Montana","0.4","3.3","0.0","3.7"],["Nebraska","0.7","2.9","0.1","3.6"],["Nevada","0.2","0.6","1.2","2.0"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","0.1","2.1","0.2","2.4"],["New Mexico","0.3","0.7","0.8","1.8"],["New York","0.5","2.4","N\/A","2.9"],["North Carolina","0.7","1.5","0.2","2.3"],["North Dakota","N\/A","3.9","0.1","4.0"],["Ohio","0.2","2.5","0.2","2.9"],["Oklahoma","0.7","1.3","1.0","3.0"],["Oregon","0.3","1.4","0.1","1.7"],["Pennsylvania","0.0","2.6","0.4","3.1"],["Rhode Island","N\/A","2.0","0.1","2.1"],["South Carolina","0.7","1.3","0.7","2.7"],["South Dakota","0.3","4.5","0.2","4.9"],["Tennessee","0.5","1.6","1.1","3.1"],["Texas","0.3","1.1","0.9","2.3"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","1.9","N\/A","1.9"],["Virginia","0.2","1.5","0.5","2.2"],["Washington","0.4","1.2","0.1","1.8"],["West Virginia","0.3","2.8","0.7","3.8"],["Wisconsin","0.0","2.1","0.1","2.2"],["Wyoming","2.3","0.7","0.3","3.3"]]],["2012",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.7","0.4","2.6"],["Alabama","1.4","0.8","0.8","3.1"],["Alaska","0.3","1.5","0.3","2.1"],["Arizona","0.1","1.6","0.4","2.1"],["Arkansas","0.3","2.1","0.8","3.2"],["California","0.3","1.2","0.3","1.9"],["Colorado","0.3","1.2","0.4","2.0"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.1","0.0","2.2"],["District of Columbia","0.6","4.2","1.0","5.7"],["Florida","0.5","1.3","1.0","2.8"],["Georgia","0.5","1.5","0.4","2.5"],["Hawaii","0.7","1.4","N\/A","2.0"],["Idaho","0.6","1.1","0.4","2.1"],["Illinois","0.1","2.2","0.2","2.5"],["Indiana","0.4","1.9","0.3","2.7"],["Iowa","1.0","2.2","0.1","3.2"],["Kansas","1.2","1.7","0.6","3.5"],["Kentucky","0.4","2.4","0.5","3.2"],["Louisiana","1.0","1.6","0.7","3.3"],["Maine","0.1","2.5","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.0","0.4","2.4"],["Michigan","0.2","2.2","0.2","2.5"],["Minnesota","0.5","2.3","0.0","2.8"],["Mississippi","1.9","1.5","1.0","4.3"],["Missouri","0.5","2.2","0.5","3.2"],["Montana","0.4","3.3","0.0","3.7"],["Nebraska","0.8","2.9","0.1","3.8"],["Nevada","0.2","0.6","1.2","2.0"],["New Hampshire","N\/A","1.8","0.3","2.1"],["New Jersey","0.1","2.1","0.2","2.4"],["New Mexico","0.3","0.8","0.8","2.0"],["New York","0.5","2.4","N\/A","2.9"],["North Carolina","0.7","1.5","0.1","2.3"],["North Dakota","N\/A","4.5","0.1","4.6"],["Ohio","0.3","2.5","0.2","2.9"],["Oklahoma","0.7","1.3","1.0","3.0"],["Oregon","0.2","1.4","0.1","1.7"],["Pennsylvania","0.0","2.6","0.4","3.1"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.7","1.2","0.7","2.7"],["South Dakota","0.3","4.6","0.2","5.0"],["Tennessee","0.5","1.5","1.1","3.1"],["Texas","0.3","1.1","0.9","2.4"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","2.0","N\/A","2.0"],["Virginia","0.2","1.5","0.5","2.2"],["Washington","0.4","1.2","0.1","1.8"],["West Virginia","0.3","2.9","0.7","3.9"],["Wisconsin","0.0","2.2","0.1","2.3"],["Wyoming","2.4","0.7","0.3","3.3"]]],["2011",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.8","0.4","2.6"],["Alabama","1.5","0.9","0.9","3.2"],["Alaska","0.3","1.6","0.3","2.1"],["Arizona","0.1","1.6","0.3","2.1"],["Arkansas","0.3","2.1","0.8","3.2"],["California","0.3","1.2","0.3","1.9"],["Colorado","0.4","1.1","0.4","2.0"],["Connecticut","0.0","2.1","0.0","2.2"],["Delaware","N\/A","2.3","0.0","2.4"],["District of Columbia","0.6","4.3","1.0","5.9"],["Florida","0.5","1.3","1.0","2.8"],["Georgia","0.6","1.6","0.4","2.6"],["Hawaii","0.5","1.4","N\/A","1.9"],["Idaho","0.6","1.1","0.4","2.1"],["Illinois","0.1","2.2","0.2","2.5"],["Indiana","0.4","1.9","0.3","2.7"],["Iowa","1.0","2.3","0.0","3.3"],["Kansas","1.2","1.8","0.5","3.5"],["Kentucky","0.4","2.4","0.4","3.2"],["Louisiana","1.0","1.6","0.7","3.4"],["Maine","0.1","2.6","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.0"],["Massachusetts","0.0","2.1","0.3","2.4"],["Michigan","0.1","2.2","0.2","2.6"],["Minnesota","0.5","2.3","0.0","2.8"],["Mississippi","1.8","1.5","1.0","4.3"],["Missouri","0.5","2.2","0.4","3.1"],["Montana","0.4","3.2","0.0","3.6"],["Nebraska","0.8","2.6","0.2","3.6"],["Nevada","0.2","0.7","1.1","2.0"],["New Hampshire","N\/A","1.8","0.3","2.2"],["New Jersey","0.1","2.1","0.2","2.3"],["New Mexico","0.4","0.8","0.8","2.0"],["New York","0.5","2.4","N\/A","3.0"],["North Carolina","0.7","1.6","0.1","2.4"],["North Dakota","N\/A","4.5","0.1","4.6"],["Ohio","0.3","2.5","0.2","2.9"],["Oklahoma","0.7","1.3","1.0","3.0"],["Oregon","0.3","1.4","0.1","1.8"],["Pennsylvania","0.0","2.7","0.4","3.1"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.7","1.2","0.7","2.6"],["South Dakota","0.3","4.5","0.2","5.0"],["Tennessee","0.5","1.6","1.1","3.1"],["Texas","0.4","1.1","0.9","2.4"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","1.9","N\/A","1.9"],["Virginia","0.2","1.6","0.4","2.2"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.0","0.7","4.0"],["Wisconsin","0.0","2.2","0.0","2.3"],["Wyoming","2.4","0.7","0.3","3.5"]]],["2010",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.8","0.4","2.6"],["Alabama","1.5","0.8","0.9","3.2"],["Alaska","0.3","1.5","0.3","2.2"],["Arizona","0.1","1.6","0.4","2.1"],["Arkansas","0.4","2.1","0.8","3.2"],["California","0.3","1.2","0.3","1.9"],["Colorado","0.4","1.2","0.4","2.0"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.4","0.0","2.4"],["District of Columbia","0.4","4.3","1.0","5.7"],["Florida","0.5","1.3","1.0","2.8"],["Georgia","0.6","1.6","0.4","2.6"],["Hawaii","0.6","1.7","N\/A","2.3"],["Idaho","0.6","1.1","0.4","2.1"],["Illinois","0.2","2.2","0.2","2.6"],["Indiana","0.5","1.8","0.4","2.7"],["Iowa","1.0","2.3","0.0","3.3"],["Kansas","1.2","1.7","0.6","3.5"],["Kentucky","0.4","2.5","0.4","3.3"],["Louisiana","1.1","1.6","0.7","3.4"],["Maine","0.1","2.6","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.0"],["Massachusetts","0.0","2.2","0.2","2.4"],["Michigan","0.1","2.4","0.1","2.6"],["Minnesota","0.5","2.4","0.0","2.9"],["Mississippi","1.8","1.5","1.0","4.4"],["Missouri","0.5","2.2","0.4","3.1"],["Montana","0.3","3.4","0.0","3.7"],["Nebraska","0.9","2.8","0.2","4.0"],["Nevada","0.3","0.7","1.0","1.9"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.2","0.1","2.4"],["New Mexico","0.4","0.8","0.8","1.9"],["New York","0.5","2.5","N\/A","3.1"],["North Carolina","0.7","1.6","0.1","2.4"],["North Dakota","N\/A","4.9","0.1","5.0"],["Ohio","0.3","2.5","0.2","3.0"],["Oklahoma","0.7","1.3","0.9","3.0"],["Oregon","0.3","1.4","0.1","1.7"],["Pennsylvania","0.0","2.8","0.4","3.1"],["Rhode Island","N\/A","2.4","N\/A","2.4"],["South Carolina","0.7","1.3","0.8","2.7"],["South Dakota","0.3","4.6","0.2","5.0"],["Tennessee","0.5","1.7","1.0","3.3"],["Texas","0.4","1.1","0.9","2.4"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","2.1","N\/A","2.1"],["Virginia","0.2","1.5","0.5","2.2"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.0","0.7","3.9"],["Wisconsin","0.0","2.3","0.1","2.4"],["Wyoming","2.4","0.7","0.3","3.5"]]],["2009",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.8","0.4","2.6"],["Alabama","1.5","0.9","0.9","3.3"],["Alaska","0.3","1.6","0.3","2.2"],["Arizona","0.2","1.5","0.4","2.0"],["Arkansas","0.4","2.1","0.8","3.3"],["California","0.4","1.2","0.3","1.9"],["Colorado","0.4","1.2","0.4","2.1"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.4","0.0","2.4"],["District of Columbia","N\/A","4.5","1.2","5.8"],["Florida","0.5","1.4","1.0","2.9"],["Georgia","0.6","1.5","0.4","2.6"],["Hawaii","0.5","1.8","N\/A","2.3"],["Idaho","0.7","1.1","0.4","2.2"],["Illinois","0.2","2.3","0.2","2.6"],["Indiana","0.5","1.8","0.4","2.7"],["Iowa","1.0","2.4","0.0","3.4"],["Kansas","1.2","1.8","0.6","3.6"],["Kentucky","0.4","2.6","0.4","3.3"],["Louisiana","1.2","1.5","0.8","3.5"],["Maine","0.1","2.6","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.0","2.1","0.2","2.4"],["Michigan","0.1","2.4","0.1","2.6"],["Minnesota","0.5","2.4","0.0","3.0"],["Mississippi","1.8","1.5","1.0","4.4"],["Missouri","0.5","2.2","0.5","3.2"],["Montana","0.3","3.6","0.0","3.9"],["Nebraska","1.0","3.0","0.2","4.1"],["Nevada","0.3","0.7","1.0","1.9"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.2","0.1","2.4"],["New Mexico","0.4","0.7","0.8","2.0"],["New York","0.5","2.6","N\/A","3.1"],["North Carolina","0.7","1.6","0.1","2.4"],["North Dakota","N\/A","5.1","0.1","5.2"],["Ohio","0.3","2.5","0.1","3.0"],["Oklahoma","0.7","1.3","1.0","3.1"],["Oregon","0.3","1.4","0.1","1.7"],["Pennsylvania","0.0","2.8","0.3","3.1"],["Rhode Island","N\/A","2.4","N\/A","2.4"],["South Carolina","0.7","1.3","0.8","2.7"],["South Dakota","0.2","4.7","0.2","5.1"],["Tennessee","0.7","1.6","1.0","3.3"],["Texas","0.4","1.2","1.0","2.5"],["Utah","0.3","1.0","0.6","1.8"],["Vermont","N\/A","2.1","N\/A","2.1"],["Virginia","0.2","1.6","0.5","2.2"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.0","0.7","4.1"],["Wisconsin","0.0","2.3","0.1","2.4"],["Wyoming","2.6","0.7","0.3","3.7"]]],["2008",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.8","0.4","2.7"],["Alabama","1.5","0.9","0.9","3.3"],["Alaska","0.3","1.6","0.3","2.3"],["Arizona","0.1","1.5","0.4","2.0"],["Arkansas","0.3","2.3","0.7","3.4"],["California","0.4","1.2","0.3","1.9"],["Colorado","0.5","1.2","0.4","2.0"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.3","0.0","2.4"],["District of Columbia","N\/A","4.5","1.2","5.7"],["Florida","0.5","1.4","0.9","2.9"],["Georgia","0.8","1.4","0.4","2.6"],["Hawaii","0.7","1.7","N\/A","2.4"],["Idaho","0.7","1.2","0.3","2.2"],["Illinois","0.2","2.3","0.2","2.7"],["Indiana","0.6","1.8","0.4","2.8"],["Iowa","1.0","2.5","0.0","3.5"],["Kansas","1.2","1.8","0.6","3.7"],["Kentucky","0.4","2.5","0.4","3.3"],["Louisiana","1.1","1.6","0.9","3.6"],["Maine","0.1","2.5","0.1","2.7"],["Maryland","N\/A","2.1","0.1","2.1"],["Massachusetts","0.1","2.1","0.2","2.4"],["Michigan","0.1","2.3","0.1","2.5"],["Minnesota","0.5","2.4","N\/A","3.0"],["Mississippi","1.9","1.6","1.0","4.5"],["Missouri","0.5","2.2","0.5","3.2"],["Montana","0.3","3.5","0.0","3.9"],["Nebraska","0.9","3.0","0.2","4.1"],["Nevada","0.3","0.7","1.0","2.0"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.1","0.1","2.4"],["New Mexico","0.4","0.8","0.8","2.0"],["New York","0.5","2.6","0.0","3.1"],["North Carolina","0.7","1.7","0.1","2.5"],["North Dakota","N\/A","5.2","0.1","5.4"],["Ohio","0.3","2.6","0.1","2.9"],["Oklahoma","0.6","1.5","0.9","3.0"],["Oregon","0.3","1.5","0.1","1.8"],["Pennsylvania","0.0","2.9","0.3","3.2"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.8","1.3","0.7","2.8"],["South Dakota","0.3","4.6","0.1","5.1"],["Tennessee","0.7","1.7","1.0","3.4"],["Texas","0.4","1.2","0.9","2.5"],["Utah","0.3","1.0","0.6","1.8"],["Vermont","N\/A","2.1","N\/A","2.1"],["Virginia","0.2","1.5","0.5","2.3"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.1","0.7","4.1"],["Wisconsin","0.0","2.4","0.1","2.4"],["Wyoming","2.7","0.8","0.4","3.9"]]],["2007",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.8","0.4","2.7"],["Alabama","1.5","0.9","0.9","3.4"],["Alaska","0.3","1.6","0.3","2.3"],["Arizona","0.1","1.4","0.3","1.9"],["Arkansas","0.4","2.3","0.7","3.4"],["California","0.4","1.2","0.3","1.9"],["Colorado","0.4","1.2","0.4","2.0"],["Connecticut","0.0","2.1","0.0","2.1"],["Delaware","N\/A","2.6","N\/A","2.6"],["District of Columbia","N\/A","4.6","1.2","5.8"],["Florida","0.5","1.3","1.0","2.8"],["Georgia","0.8","1.4","0.4","2.7"],["Hawaii","0.5","1.7","N\/A","2.3"],["Idaho","0.8","1.2","0.3","2.2"],["Illinois","0.2","2.3","0.2","2.7"],["Indiana","0.6","1.8","0.3","2.7"],["Iowa","1.0","2.5","N\/A","3.5"],["Kansas","1.2","1.9","0.5","3.6"],["Kentucky","0.4","2.7","0.4","3.4"],["Louisiana","1.1","1.6","0.9","3.6"],["Maine","0.1","2.5","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.2","0.3","2.6"],["Michigan","0.2","2.3","0.0","2.5"],["Minnesota","0.6","2.5","N\/A","3.0"],["Mississippi","1.8","1.6","0.9","4.4"],["Missouri","0.5","2.2","0.5","3.1"],["Montana","0.4","3.8","0.0","4.2"],["Nebraska","1.0","3.0","0.2","4.2"],["Nevada","0.3","0.7","1.0","2.0"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.3","0.1","2.5"],["New Mexico","0.4","0.8","0.7","1.9"],["New York","0.6","2.6","0.0","3.2"],["North Carolina","0.7","1.7","0.1","2.6"],["North Dakota","N\/A","5.4","0.1","5.5"],["Ohio","0.3","2.5","0.0","2.9"],["Oklahoma","0.6","1.5","0.9","3.0"],["Oregon","0.3","1.5","0.1","1.8"],["Pennsylvania","0.0","2.9","0.3","3.2"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.8","1.2","0.8","2.7"],["South Dakota","0.3","4.9","0.1","5.3"],["Tennessee","0.6","2.0","0.9","3.5"],["Texas","0.4","1.1","0.9","2.4"],["Utah","0.2","1.0","0.5","1.7"],["Vermont","N\/A","2.2","N\/A","2.2"],["Virginia","0.2","1.5","0.5","2.2"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.0","0.7","4.1"],["Wisconsin","0.0","2.4","0.1","2.5"],["Wyoming","2.8","0.9","0.4","4.0"]]],["2006",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.9","0.4","2.7"],["Alabama","1.5","0.9","0.9","3.4"],["Alaska","0.4","1.6","0.4","2.3"],["Arizona","0.1","1.4","0.4","1.9"],["Arkansas","0.4","2.3","0.7","3.3"],["California","0.4","1.2","0.3","1.9"],["Colorado","0.4","1.2","0.4","2.0"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.5","N\/A","2.5"],["District of Columbia","N\/A","4.6","1.5","6.2"],["Florida","0.5","1.4","1.0","2.8"],["Georgia","0.8","1.4","0.4","2.7"],["Hawaii","0.5","1.8","N\/A","2.3"],["Idaho","0.9","1.1","0.3","2.3"],["Illinois","0.2","2.3","0.1","2.7"],["Indiana","0.6","1.9","0.3","2.9"],["Iowa","1.0","2.5","N\/A","3.5"],["Kansas","1.2","2.0","0.5","3.6"],["Kentucky","0.4","2.7","0.4","3.5"],["Louisiana","1.1","1.7","0.9","3.7"],["Maine","0.1","2.5","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.0"],["Massachusetts","0.1","2.2","0.3","2.5"],["Michigan","0.2","2.4","0.0","2.6"],["Minnesota","0.6","2.5","N\/A","3.1"],["Mississippi","1.9","1.6","1.0","4.5"],["Missouri","0.5","2.2","0.5","3.2"],["Montana","0.4","4.0","0.0","4.3"],["Nebraska","1.0","3.0","0.2","4.2"],["Nevada","0.3","0.6","1.0","1.9"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.4","0.1","2.5"],["New Mexico","0.3","0.8","0.7","1.8"],["New York","0.5","2.8","0.0","3.3"],["North Carolina","0.7","1.8","0.1","2.6"],["North Dakota","N\/A","5.6","N\/A","5.6"],["Ohio","0.3","2.5","0.1","2.9"],["Oklahoma","0.6","1.5","0.9","3.0"],["Oregon","0.3","1.5","0.1","1.8"],["Pennsylvania","0.0","2.9","0.3","3.2"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.8","1.2","0.8","2.7"],["South Dakota","0.3","5.1","0.1","5.5"],["Tennessee","0.6","1.9","0.9","3.3"],["Texas","0.4","1.2","0.9","2.5"],["Utah","0.2","1.0","0.6","1.8"],["Vermont","N\/A","2.1","N\/A","2.1"],["Virginia","0.2","1.5","0.5","2.3"],["Washington","0.4","1.2","0.1","1.7"],["West Virginia","0.3","3.0","0.7","4.0"],["Wisconsin","0.0","2.5","0.0","2.5"],["Wyoming","2.9","0.7","0.4","4.0"]]],["2005",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.2","1.9","0.4","2.7"],["Alabama","0.4","1.3","0.8","3.4"],["Alaska","0.2","1.4","0.3","2.1"],["Arizona","0.1","1.4","0.4","2.0"],["Arkansas","0.1","2.3","0.7","3.4"],["California","0.2","1.2","0.3","1.9"],["Colorado","0.2","1.2","0.4","2.1"],["Connecticut","0.0","2.2","0.0","2.2"],["Delaware","N\/A","2.3","N\/A","2.3"],["District of Columbia","N\/A","4.5","1.6","6.1"],["Florida","0.2","1.5","1.0","2.9"],["Georgia","0.3","1.5","0.4","2.7"],["Hawaii","0.2","1.8","N\/A","2.4"],["Idaho","0.4","1.0","0.3","2.3"],["Illinois","0.1","2.4","0.1","2.7"],["Indiana","0.2","2.0","0.4","2.8"],["Iowa","0.3","2.6","N\/A","3.6"],["Kansas","0.3","2.0","0.5","3.7"],["Kentucky","0.1","2.7","0.5","3.6"],["Louisiana","0.3","1.4","1.0","3.4"],["Maine","0.0","2.6","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.0"],["Massachusetts","0.0","2.2","0.2","2.5"],["Michigan","0.1","2.4","0.0","2.6"],["Minnesota","0.2","2.5","0.0","3.1"],["Mississippi","0.4","1.6","1.0","4.4"],["Missouri","0.2","2.3","0.5","3.3"],["Montana","0.1","4.2","N\/A","4.6"],["Nebraska","0.3","3.0","0.2","4.3"],["Nevada","0.2","0.6","1.0","1.9"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.0","2.4","0.1","2.5"],["New Mexico","0.2","0.7","0.8","1.8"],["New York","0.2","2.7","0.0","3.3"],["North Carolina","0.3","1.8","0.1","2.7"],["North Dakota","N\/A","5.5","N\/A","5.5"],["Ohio","0.1","2.5","0.1","2.9"],["Oklahoma","0.2","1.6","0.8","3.1"],["Oregon","0.1","1.5","0.1","1.8"],["Pennsylvania","0.0","2.9","0.3","3.2"],["Rhode Island","N\/A","2.2","N\/A","2.2"],["South Carolina","0.3","1.2","0.7","2.7"],["South Dakota","0.1","5.1","0.1","5.6"],["Tennessee","0.2","1.9","0.9","3.5"],["Texas","0.2","1.2","0.9","2.5"],["Utah","0.1","1.0","0.6","1.8"],["Vermont","N\/A","2.2","N\/A","2.2"],["Virginia","0.1","1.6","0.5","2.3"],["Washington","0.3","1.2","0.1","1.7"],["West Virginia","0.1","3.0","0.7","4.0"],["Wisconsin","0.0","2.6","0.0","2.6"],["Wyoming","0.7","0.7","0.4","4.0"]]],["2004",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","1.9","0.4","2.8"],["Alabama","1.2","1.3","0.8","3.4"],["Alaska","0.3","1.5","0.3","2.2"],["Arizona","0.2","1.4","0.4","1.9"],["Arkansas","0.4","2.3","0.8","3.5"],["California","0.4","1.3","0.3","2.0"],["Colorado","0.4","1.2","0.4","2.0"],["Connecticut","0.0","2.2","0.0","2.2"],["Delaware","N\/A","2.4","N\/A","2.4"],["District of Columbia","N\/A","4.6","1.6","6.2"],["Florida","0.4","1.4","1.0","2.9"],["Georgia","0.8","1.5","0.4","2.8"],["Hawaii","0.6","1.9","N\/A","2.5"],["Idaho","1.1","1.0","0.3","2.5"],["Illinois","0.2","2.4","0.1","2.7"],["Indiana","0.6","2.1","0.3","3.0"],["Iowa","1.1","2.6","N\/A","3.7"],["Kansas","1.2","2.1","0.5","3.8"],["Kentucky","0.4","2.8","0.5","3.7"],["Louisiana","1.2","1.5","1.2","3.8"],["Maine","0.1","2.6","0.1","2.7"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.2","0.2","2.5"],["Michigan","0.2","2.4","0.0","2.6"],["Minnesota","0.6","2.5","N\/A","3.2"],["Mississippi","1.9","1.6","1.0","4.5"],["Missouri","0.5","2.3","0.5","3.3"],["Montana","0.4","4.3","N\/A","4.7"],["Nebraska","1.0","3.0","0.2","4.2"],["Nevada","0.3","0.7","1.0","2.0"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.4","0.1","2.5"],["New Mexico","0.4","0.9","0.6","1.9"],["New York","0.5","2.8","0.0","3.3"],["North Carolina","0.8","1.9","0.1","2.8"],["North Dakota","N\/A","5.6","N\/A","5.6"],["Ohio","0.3","2.6","0.0","2.9"],["Oklahoma","0.7","1.7","0.6","3.1"],["Oregon","0.3","1.5","0.1","1.8"],["Pennsylvania","0.0","2.9","0.3","3.2"],["Rhode Island","N\/A","2.2","N\/A","2.2"],["South Carolina","0.8","1.3","0.6","2.7"],["South Dakota","0.4","5.5","0.1","6.0"],["Tennessee","0.6","2.0","0.8","3.5"],["Texas","0.5","1.2","0.9","2.6"],["Utah","0.2","1.0","0.6","1.9"],["Vermont","N\/A","2.4","N\/A","2.4"],["Virginia","0.2","1.6","0.5","2.3"],["Washington","0.5","1.2","0.1","1.8"],["West Virginia","0.3","3.0","0.7","4.1"],["Wisconsin","0.0","2.5","0.1","2.6"],["Wyoming","2.9","0.8","0.4","4.0"]]],["2003",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.4","2.0","0.4","2.8"],["Alabama","1.3","1.4","0.8","3.5"],["Alaska","0.4","1.5","0.3","2.2"],["Arizona","0.2","1.4","0.4","1.9"],["Arkansas","0.4","2.5","0.7","3.6"],["California","0.4","1.3","0.4","2.1"],["Colorado","0.5","1.2","0.4","2.1"],["Connecticut","0.0","2.0","0.0","2.1"],["Delaware","N\/A","2.5","N\/A","2.5"],["District of Columbia","N\/A","4.8","1.3","6.1"],["Florida","0.5","1.5","1.0","3.0"],["Georgia","0.8","1.6","0.4","2.8"],["Hawaii","0.5","2.0","N\/A","2.5"],["Idaho","1.2","1.0","0.3","2.5"],["Illinois","0.2","2.5","0.1","2.8"],["Indiana","0.7","2.1","0.3","3.1"],["Iowa","1.1","2.6","N\/A","3.7"],["Kansas","1.2","2.1","0.6","3.9"],["Kentucky","0.4","2.8","0.4","3.6"],["Louisiana","1.2","1.6","1.2","4.0"],["Maine","0.1","2.7","0.1","2.8"],["Maryland","0.0","2.0","0.1","2.1"],["Massachusetts","0.1","2.2","0.2","2.5"],["Michigan","0.2","2.4","0.0","2.6"],["Minnesota","0.7","2.6","N\/A","3.2"],["Mississippi","1.9","1.6","1.0","4.5"],["Missouri","0.5","2.5","0.4","3.4"],["Montana","0.5","4.2","N\/A","4.7"],["Nebraska","1.0","3.1","0.2","4.3"],["Nevada","0.4","0.6","0.8","1.9"],["New Hampshire","N\/A","1.9","0.3","2.2"],["New Jersey","0.1","2.5","0.1","2.6"],["New Mexico","0.4","1.0","0.6","2.0"],["New York","0.5","2.8","0.0","3.4"],["North Carolina","0.7","1.9","0.1","2.8"],["North Dakota","N\/A","5.7","N\/A","5.7"],["Ohio","0.3","2.5","0.0","2.9"],["Oklahoma","0.8","1.8","0.5","3.1"],["Oregon","0.3","1.5","0.1","1.9"],["Pennsylvania","0.0","3.1","0.2","3.3"],["Rhode Island","N\/A","2.2","N\/A","2.2"],["South Carolina","0.8","1.3","0.6","2.7"],["South Dakota","0.4","5.3","0.1","5.8"],["Tennessee","0.6","2.0","0.8","3.5"],["Texas","0.5","1.3","0.9","2.6"],["Utah","0.2","1.0","0.6","1.9"],["Vermont","N\/A","2.4","N\/A","2.4"],["Virginia","0.2","1.6","0.5","2.3"],["Washington","0.5","1.3","0.1","1.8"],["West Virginia","0.4","3.2","0.8","4.3"],["Wisconsin","0.0","2.7","0.0","2.7"],["Wyoming","2.3","0.9","0.4","3.5"]]],["2002",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.5","2.0","0.4","2.8"],["Alabama","1.4","1.4","0.8","3.6"],["Alaska","0.4","1.5","0.3","2.1"],["Arizona","0.1","1.4","0.4","2.0"],["Arkansas","0.4","2.6","0.7","3.7"],["California","0.4","1.3","0.4","2.1"],["Colorado","0.5","1.3","0.4","2.1"],["Connecticut","0.0","2.2","N\/A","2.2"],["Delaware","N\/A","2.5","N\/A","2.5"],["District of Columbia","N\/A","4.6","1.3","5.9"],["Florida","0.5","1.5","1.1","3.1"],["Georgia","0.8","1.6","0.4","2.9"],["Hawaii","0.5","2.0","N\/A","2.6"],["Idaho","1.1","1.0","0.3","2.5"],["Illinois","0.2","2.6","0.1","2.9"],["Indiana","0.7","2.1","0.3","3.1"],["Iowa","1.2","2.7","N\/A","3.8"],["Kansas","1.2","2.4","0.4","4.0"],["Kentucky","0.4","2.9","0.4","3.7"],["Louisiana","1.2","1.6","1.2","4.0"],["Maine","0.1","2.7","0.1","2.9"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.2","0.2","2.5"],["Michigan","0.2","2.4","0.0","2.6"],["Minnesota","0.7","2.6","N\/A","3.3"],["Mississippi","1.9","1.6","1.1","4.6"],["Missouri","0.5","2.4","0.4","3.3"],["Montana","0.5","4.2","N\/A","4.7"],["Nebraska","1.2","3.4","0.2","4.7"],["Nevada","0.4","0.7","1.1","2.1"],["New Hampshire","N\/A","1.9","0.3","2.3"],["New Jersey","0.1","2.7","0.1","2.8"],["New Mexico","0.4","1.1","0.5","1.9"],["New York","0.5","2.9","0.0","3.4"],["North Carolina","0.8","2.0","0.1","2.8"],["North Dakota","N\/A","5.8","0.3","6.1"],["Ohio","0.3","2.6","0.1","3.0"],["Oklahoma","0.8","1.8","0.5","3.2"],["Oregon","0.3","1.6","0.1","1.9"],["Pennsylvania","0.0","3.1","0.2","3.3"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.8","1.3","0.7","2.7"],["South Dakota","0.4","5.6","0.1","6.1"],["Tennessee","0.6","2.1","0.8","3.5"],["Texas","0.5","1.3","0.9","2.6"],["Utah","0.2","1.0","0.6","1.9"],["Vermont","N\/A","2.6","N\/A","2.6"],["Virginia","0.3","1.7","0.4","2.4"],["Washington","0.5","1.3","0.0","1.9"],["West Virginia","0.4","3.3","0.7","4.3"],["Wisconsin","0.0","2.6","0.0","2.7"],["Wyoming","2.5","0.9","0.4","3.8"]]],["2001",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.5","2.1","0.4","2.9"],["Alabama","1.5","1.4","0.8","3.7"],["Alaska","0.4","1.6","0.3","2.3"],["Arizona","0.1","1.5","0.4","2.0"],["Arkansas","0.4","2.5","0.6","3.5"],["California","0.4","1.4","0.4","2.1"],["Colorado","0.5","1.3","0.4","2.1"],["Connecticut","0.0","2.3","N\/A","2.3"],["Delaware","N\/A","2.3","N\/A","2.3"],["District of Columbia","N\/A","4.8","1.1","5.9"],["Florida","0.5","1.6","1.1","3.2"],["Georgia","0.9","1.6","0.4","2.9"],["Hawaii","0.7","1.9","0.1","2.6"],["Idaho","1.2","1.0","0.3","2.6"],["Illinois","0.2","2.6","0.1","2.9"],["Indiana","0.7","2.2","0.2","3.1"],["Iowa","1.2","2.7","0.0","3.9"],["Kansas","1.2","2.5","0.4","4.2"],["Kentucky","0.4","2.8","0.4","3.7"],["Louisiana","1.3","1.5","1.2","4.0"],["Maine","0.1","2.8","0.1","3.0"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.2","0.2","2.6"],["Michigan","0.2","2.3","0.0","2.6"],["Minnesota","0.7","2.6","N\/A","3.3"],["Mississippi","2.0","1.6","1.2","4.8"],["Missouri","0.5","2.5","0.3","3.4"],["Montana","0.5","4.4","N\/A","4.9"],["Nebraska","1.2","3.5","0.2","4.8"],["Nevada","0.4","0.5","1.0","2.0"],["New Hampshire","N\/A","2.0","0.3","2.3"],["New Jersey","0.1","2.8","0.1","2.9"],["New Mexico","0.5","1.1","0.4","2.0"],["New York","0.5","2.9","0.1","3.5"],["North Carolina","0.8","2.0","0.1","2.9"],["North Dakota","N\/A","5.5","0.3","5.8"],["Ohio","0.3","2.6","0.1","2.9"],["Oklahoma","0.8","2.0","0.5","3.2"],["Oregon","0.3","1.6","0.1","1.9"],["Pennsylvania","0.0","3.3","0.1","3.4"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.9","1.2","0.7","2.8"],["South Dakota","0.4","5.4","0.1","5.9"],["Tennessee","0.7","2.1","0.8","3.6"],["Texas","0.5","1.3","0.9","2.6"],["Utah","0.3","1.0","0.6","1.9"],["Vermont","N\/A","2.8","N\/A","2.8"],["Virginia","0.3","1.6","0.5","2.3"],["Washington","0.5","1.3","0.0","1.9"],["West Virginia","0.4","3.3","0.7","4.4"],["Wisconsin","0.0","2.8","0.0","2.9"],["Wyoming","2.5","1.0","0.4","3.9"]]],["2000",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.5","2.1","0.4","2.9"],["Alabama","1.5","1.4","0.7","3.7"],["Alaska","0.4","1.6","0.3","2.3"],["Arizona","0.2","1.5","0.4","2.1"],["Arkansas","0.4","2.6","0.7","3.7"],["California","0.4","1.4","0.4","2.1"],["Colorado","0.5","1.3","0.4","2.2"],["Connecticut","0.0","2.2","0.0","2.3"],["Delaware","N\/A","2.3","N\/A","2.3"],["District of Columbia","N\/A","4.7","1.1","5.8"],["Florida","0.5","1.6","1.1","3.2"],["Georgia","0.9","1.5","0.5","2.9"],["Hawaii","0.6","1.8","0.1","2.5"],["Idaho","1.3","1.0","0.4","2.7"],["Illinois","0.2","2.7","0.1","3.0"],["Indiana","0.7","2.2","0.2","3.1"],["Iowa","1.3","2.8","N\/A","4.0"],["Kansas","1.2","2.5","0.3","4.0"],["Kentucky","0.4","2.8","0.4","3.7"],["Louisiana","1.3","1.4","1.1","3.9"],["Maine","0.1","2.7","0.1","2.9"],["Maryland","N\/A","2.0","0.1","2.1"],["Massachusetts","0.1","2.3","0.2","2.6"],["Michigan","0.2","2.4","0.0","2.6"],["Minnesota","0.7","2.7","N\/A","3.4"],["Mississippi","1.9","1.6","1.2","4.8"],["Missouri","0.6","2.7","0.3","3.6"],["Montana","0.5","4.2","N\/A","4.7"],["Nebraska","1.3","3.3","0.2","4.8"],["Nevada","0.4","0.5","0.9","1.9"],["New Hampshire","N\/A","2.0","0.3","2.3"],["New Jersey","0.1","2.9","0.1","3.0"],["New Mexico","0.4","1.1","0.4","1.9"],["New York","0.5","2.8","0.2","3.5"],["North Carolina","0.8","1.9","0.1","2.9"],["North Dakota","N\/A","5.5","0.6","6.0"],["Ohio","0.3","2.6","0.1","3.0"],["Oklahoma","0.8","2.0","0.5","3.2"],["Oregon","0.3","1.5","0.1","1.9"],["Pennsylvania","0.0","3.3","0.1","3.4"],["Rhode Island","N\/A","2.3","N\/A","2.3"],["South Carolina","0.9","1.3","0.7","2.9"],["South Dakota","0.4","5.3","N\/A","5.7"],["Tennessee","0.7","2.0","0.8","3.6"],["Texas","0.5","1.3","0.9","2.7"],["Utah","0.3","1.1","0.6","1.9"],["Vermont","N\/A","2.7","N\/A","2.7"],["Virginia","0.3","1.6","0.5","2.4"],["Washington","0.5","1.3","0.1","1.9"],["West Virginia","0.4","3.3","0.7","4.4"],["Wisconsin","0.0","2.8","0.0","2.9"],["Wyoming","2.5","1.0","0.4","3.9"]]],["1999",[[null,"State\/Local Government","Non-Profit","For-Profit","Total"],[null,"Number","Number","Number","Number"],["United States","0.5","2.2","0.4","3.0"],["Alabama","1.6","1.4","0.7","3.7"],["Alaska","0.3","1.4","0.3","2.0"],["Arizona","0.2","1.7","0.3","2.2"],["Arkansas","0.5","2.8","0.6","3.9"],["California","0.4","1.4","0.4","2.2"],["Colorado","0.5","1.4","0.4","2.3"],["Connecticut","0.1","2.3","N\/A","2.4"],["Delaware","N\/A","2.7","N\/A","2.7"],["District of Columbia","0.5","5.0","1.3","6.8"],["Florida","0.5","1.6","1.2","3.3"],["Georgia","1.0","1.6","0.6","3.2"],["Hawaii","0.6","1.8","0.1","2.5"],["Idaho","1.4","1.1","0.4","2.8"],["Illinois","0.3","2.8","0.1","3.1"],["Indiana","0.7","2.2","0.2","3.2"],["Iowa","1.3","2.8","N\/A","4.1"],["Kansas","1.3","2.7","0.4","4.4"],["Kentucky","0.4","2.9","0.4","3.8"],["Louisiana","1.4","1.4","1.1","3.8"],["Maine","0.1","2.8","0.1","2.9"],["Maryland","N\/A","2.2","0.1","2.2"],["Massachusetts","0.1","2.3","0.2","2.6"],["Michigan","0.2","2.4","0.0","2.7"],["Minnesota","0.7","2.7","N\/A","3.4"],["Mississippi","2.0","1.7","1.1","4.8"],["Missouri","0.5","2.8","0.4","3.7"],["Montana","0.8","4.5","N\/A","5.3"],["Nebraska","1.3","3.5","0.2","5.0"],["Nevada","0.5","0.5","1.0","2.0"],["New Hampshire","N\/A","2.2","0.3","2.5"],["New Jersey","0.1","2.9","0.1","3.0"],["New Mexico","0.4","1.2","0.3","1.9"],["New York","0.6","3.1","0.1","3.8"],["North Carolina","0.8","2.1","0.1","3.1"],["North Dakota","N\/A","5.6","0.6","6.1"],["Ohio","0.3","2.7","0.1","3.0"],["Oklahoma","0.9","1.9","0.5","3.3"],["Oregon","0.3","1.6","0.1","2.0"],["Pennsylvania","0.0","3.5","0.1","3.6"],["Rhode Island","N\/A","2.4","N\/A","2.4"],["South Carolina","1.1","1.1","0.8","3.0"],["South Dakota","0.5","5.5","N\/A","5.9"],["Tennessee","0.8","2.0","0.9","3.8"],["Texas","0.5","1.4","1.0","2.8"],["Utah","0.3","1.0","0.6","2.0"],["Vermont","N\/A","2.8","N\/A","2.8"],["Virginia","0.3","1.8","0.5","2.5"],["Washington","0.5","1.4","0.1","1.9"],["West Virginia","0.4","3.3","0.8","4.5"],["Wisconsin","0.0","3.0","0.0","3.0"],["Wyoming","2.4","1.0","0.4","3.8"]]],["Notes",[["Timeframe","Distribution","Data Format","Geography","Type","Note"],["any",null,null,null,"Notes","Data include staffed beds for community hospitals, which represent 85% of all hospitals.\n\nFigures may not sum to totals due to rounding."],["any",null,null,null,"Sources","1999 - 2018 AHA Annual Survey, Copyright 2019 by Health Forum, LLC, an affiliate of the American Hospital Association. Special data request, 2019. Available at [http:\/\/www.ahaonlinestore.com](https:\/\/ams.aha.org\/eweb\/DynamicPage.aspx?WebCode=ProdDetailAdd&ivd_prc_prd_key=165f9fbf-d766-40a9-96a6-a212aed366bb).\n\nPopulation data from Annual Population Estimates by State, U.S. Census Bureau; available at [http:\/\/www.census.gov\/popest\/](http:\/\/www.census.gov\/popest\/)."],["any",null,null,null,"Definitions","*Community Hospitals:* All nonfederal, short-term general, and specialty hospitals whose facilities and services are available to the public.\n\n*N\/A*: Not applicable when state\/local government, non-profit, or for-profit hospitals do not exist in the state."],["any","State\/Local Government, For-Profit, Non-Profit, Total","Number","any","Precision","0.1"]]]],"postBody":""});
+</script>
+
+<script id="results-template" type="text/template">
+	<html>
+		<head>
+			<link rel="stylesheet" href="<%= stylesheet %>" type="text/css" />
+			<title>Table Viewer</title>
+		</head>
+		<body>
+			<header>
+				<div id="header-inner" class="clearfix">
+					<h1 id="kff-logo">KFF</h1>
+					<h2>Hospital Beds per 1,000 Population by Ownership Type</h2>
+					<h4>Timeframe&#058; <span><%= timeframe %></span></h4>
+					<div class="share">
+	<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="facebook">Facebook</a>
+	<a href="http://twitter.com/share?text=Hospital+Beds+per+1%2C000+Population+by+Ownership+Type&#038;url=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="twitter">Twitter</a>
+	<a href="https://www.linkedin.com/shareArticle?mini=true&#038;title=Hospital+Beds+per+1%2C000+Population+by+Ownership+Type&#038;url=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="linkedin">LinkedIn</a>
+	<a href="mailto:?subject=Hospital%20Beds%20per%201%2C000%20Population%20by%20Ownership%20Type&#038;body=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" class="email">Email</a>
+	<a href="#" class="print">Print</a>
+</div>
+				</div>
+			</header>
+			<div class="box">
+				<%= table %>
+			</div>
+		</body>
+	</html>
+</script>
+	<div class="box">
+		<div class="headline-wrapper">
+			<h2>Hospital Beds per 1,000 Population by Ownership Type</h2>
+			<div class="share">
+	<a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="facebook">Facebook</a>
+	<a href="http://twitter.com/share?text=Hospital+Beds+per+1%2C000+Population+by+Ownership+Type&#038;url=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="twitter">Twitter</a>
+	<a href="https://www.linkedin.com/shareArticle?mini=true&#038;title=Hospital+Beds+per+1%2C000+Population+by+Ownership+Type&#038;url=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" target="_blank" class="linkedin">LinkedIn</a>
+	<a href="mailto:?subject=Hospital%20Beds%20per%201%2C000%20Population%20by%20Ownership%20Type&#038;body=https%3A%2F%2Fwww.kff.org%2F47a2f1f%2F" class="email">Email</a>
+	<a href="#" class="print">Print</a>
+</div>
+		</div>
+		<form id="top-box-search-input" class="search-form" action="/search/">
+	<input type="text" name="s" id="search-field" placeholder="Search State Health Facts Data" />
+	<input type="hidden" name="tab" value="data" />
+	<input type="hidden" name="facets[post_type][]" value="state-indicator" />
+	<input type="submit" value="search" id="search-submit" />
+</form>
+			</div>
+<div class="clearfix state-indicator--wrapper" kff-datacenter>
+	<div ng-if="false" class="loading-placeholder">
+		<h3>
+			<i class="fa fa-circle-o-notch fa-spin fa-4x"></i>
+			Data are loading		</h3>
+	</div>
+	<div ui-view></div>
+</div>
+	<div class="right-double-column">
+		<div class="box full-post">
+						<div id="page-taxonomy" class="box primary">
+							<div class="tax-wrapper">
+			<h4>Tags</h4>
+				<ul>
+										<li><a href="https://www.kff.org/tag/hospitals/">Hospitals</a></li>
+					</ul>
+					</div>
+											<div class="tax-wrapper">
+			<h4>Categories</h4>
+				<ul>
+										<li><a href="https://www.kff.org/state-category/providers-service-use/hospitals/">Hospitals</a></li>
+					</ul>
+					</div>
+				</div>
+			<div class="single-column">
+							</div>
+			<div class="right-column">
+						</div>
+	</div>
+</div>
+			</div><!-- end #content -->
+			<div class="site-footer--type--beta">
+	<footer class="site-footer">
+		<div
+			class="site-footer__newsletter"
+		>
+			<form
+				action="/email/"
+				class="newsletter__inner"
+				method="post"
+				role="newsletter"
+			>
+				<label class="newsletter__heading" for="newsletter-signup">
+					Get The Latest On Health Policy				</label>
+				<div class="newsletter__sub-heading">
+					Sign Up For Email Alerts				</div>
+				<input type="hidden" id="hubspot_contacts_nonce" name="hubspot_contacts_nonce" value="a4fec8c906" /><input type="hidden" name="_wp_http_referer" value="/other/state-indicator/beds-by-ownership/?currentTimeframe=0" />				<div class="newsletter__field-container">
+					<input
+						class="newsletter__field"
+						type="email"
+						name="hubspot_contact[email]"
+						placeholder="Enter email address..."
+					/>
+					<button
+						type="submit"
+						class="newsletter__button--submit newsletter__button"
+					>
+						Sign Up					</button>
+				</div>
+			</form>
+		</div>
+		<section
+			class="site-footer__social"
+		>
+			<p class="site-footer__heading">
+				Follow KFF			</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/kff" class="twitter" target="_blank">
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/KaiserFamilyFoundation" class="facebook" target="_blank">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/KaiserFamilyFoundation/" class="link instagram" target="_blank">
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="/email/" class="email" target="_blank">
+						<span>Email Alerts</span>
+					</a>
+				</li>
+				<li>
+					<a href="/rss_feeds/" class="rss" target="_blank">
+						<span>Feeds</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<nav class="site-footer__nav"><ul id="menu-footer-menu" class="menu"><li id="menu-item-251253" class="nav-group menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-251253"><a href="#">Topics</a>
+<ul class="sub-menu">
+	<li id="menu-item-454263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-454263"><a href="https://www.kff.org/coronavirus-covid-19/">Coronavirus (COVID-19)</a></li>
+	<li id="menu-item-189674" class="menu-item menu-item-type-post_type menu-item-object-landing-page menu-item-189674"><a href="https://www.kff.org/disparities-policy/">Disparities Policy</a></li>
+	<li id="menu-item-204540" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-204540"><a href="https://www.kff.org/topic/global-health-policy/">Global Health Policy</a></li>
+	<li id="menu-item-380424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-380424"><a href="https://www.kff.org/topic/health-costs/">Health Costs</a></li>
+	<li id="menu-item-380421" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-380421"><a href="https://www.kff.org/topic/health-reform/">Health Reform</a></li>
+	<li id="menu-item-380422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-380422"><a href="https://www.kff.org/topic/hivaids/">HIV/AIDS</a></li>
+	<li id="menu-item-380420" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-380420"><a href="https://www.kff.org/topic/medicaid/">Medicaid</a></li>
+	<li id="menu-item-189676" class="menu-item menu-item-type-post_type menu-item-object-landing-page menu-item-189676"><a href="https://www.kff.org/medicare/">Medicare</a></li>
+	<li id="menu-item-189675" class="menu-item menu-item-type-post_type menu-item-object-landing-page menu-item-189675"><a href="https://www.kff.org/private-insurance/">Private Insurance</a></li>
+	<li id="menu-item-189670" class="menu-item menu-item-type-post_type menu-item-object-landing-page menu-item-189670"><a href="https://www.kff.org/uninsured/">Uninsured</a></li>
+	<li id="menu-item-202434" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-202434"><a href="https://www.kff.org/womens-health-policy/">Women&#8217;s Health Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-429499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-429499"><a href="#">Sections</a>
+<ul class="sub-menu">
+	<li id="menu-item-189677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189677"><a href="/polling/">Polling</a></li>
+	<li id="menu-item-189678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189678"><a href="/perspectives/">Perspectives</a></li>
+	<li id="menu-item-189679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189679"><a href="/statedata/">State Health Facts</a></li>
+	<li id="menu-item-189680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189680"><a href="/graphics/search/">Graphics &amp; Interactives</a></li>
+	<li id="menu-item-189681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189681"><a href="/charts-slides/">Charts &amp; Slides</a></li>
+	<li id="menu-item-189682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189682"><a href="http://khn.org/">Kaiser Health News</a></li>
+	<li id="menu-item-189683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189683"><a href="/social-impact-media/">Social Impact Media</a></li>
+	<li id="menu-item-227304" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-227304"><a href="http://www.healthsystemtracker.org/">Peterson-KFF Health System Tracker</a></li>
+</ul>
+</li>
+<li id="menu-item-189684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-189684"><a href="/newsroom/">Newsroom</a>
+<ul class="sub-menu">
+	<li id="menu-item-189685" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189685"><a href="/search/?post_type=press-release">News Releases</a></li>
+	<li id="menu-item-189686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189686"><a href="/search/?post_type=event">Events</a></li>
+	<li id="menu-item-189687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189687"><a href="/email/">Subscribe to Emails</a></li>
+	<li id="menu-item-189688" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189688"><a href="/cite-and-reprint-kff/">Cite Us/Reprint</a></li>
+	<li id="menu-item-189689" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189689"><a href="/newsroom/#media-contacts">Media Contacts</a></li>
+</ul>
+</li>
+<li id="menu-item-189690" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-189690"><a href="/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-435461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435461"><a href="https://www.kff.org/presidents-message/">President&#8217;s Message</a></li>
+	<li id="menu-item-189691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189691"><a href="/our-programs/">Our Programs</a></li>
+	<li id="menu-item-448471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-448471"><a href="https://www.kff.org/support-our-work/">Support Our Work</a></li>
+	<li id="menu-item-189692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189692"><a href="/people/key-staff/">Key Staff</a></li>
+	<li id="menu-item-189694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189694"><a href="/media-internships-fellowships/">Media Fellowships</a></li>
+	<li id="menu-item-189695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189695"><a href="/barbara-jordan-conference-center/">Barbara Jordan Conference Center</a></li>
+	<li id="menu-item-189696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189696"><a href="/contact-us/">Contact Us</a></li>
+	<li id="menu-item-189698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189698"><a href="/employment-opportunities/">Employment Opportunities</a></li>
+	<li id="menu-item-251254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251254"><a href="https://www.kff.org/privacy-policy/">Privacy Policy</a></li>
+</ul>
+</li>
+</ul></nav>		<section
+			class="site-footer__copyright"
+		>
+			<a
+				class="site-footer__logo"
+				href="/"
+				rel="home"
+				title="Hospital Beds per 1,000 Population by Ownership Type"
+			></a>
+			<div class="site-footer__colophon">
+				&copy; 2020 Kaiser Family Foundation			</div>
+			<div class="site-footer__vip">
+				Powered by <a href="https://wpvip.com/?utm_source=vip_powered_wpcom&#038;utm_medium=web&#038;utm_campaign=VIP%20Footer%20Credit&#038;utm_term=www.kff.org" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a>			</div>
+			<div class="site-footer__links">
+				<a class="cc" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+					<i class="cc-cc" alt="Creative Commons"></i>
+					<i class="cc-by" alt="Attribution"></i>
+					<i class="cc-nc" alt="NonCommercial"></i>
+					<i class="cc-nd" alt="NoDerivatives"></i>
+				</a>
+				<ul>
+					<li>
+						<a href="/permissions-citations-reprints/">
+							Citations and Reprints						</a>
+					</li>
+					<li>
+						<a href="/privacy-policy/">
+							Privacy Policy						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</footer>
+	
+<footer class="print site-footer--type--print">
+	<p>
+		The Henry J. Kaiser Family Foundation Headquarters: 185 Berry St., Suite 2000, San Francisco, CA 94107 | Phone 650-854-9400		<br />
+		Washington Offices and Barbara Jordan Conference Center: 1330 G Street, NW, Washington, DC 20005 | Phone 202-347-5270	</p>
+	<p>www.kff.org | Email Alerts: kff.org/email | facebook.com/KaiserFamilyFoundation | twitter.com/kff</p>
+	<p class="tagline">
+		<strong>Filling the need for trusted information on national health issues,</strong> the Kaiser Family Foundation is a nonprofit organization based in San Francisco, California.	</p>
+</footer>
+</div>
+		</div><!-- end .pane -->
+	</div><!-- end .viewport -->
+		<div style="display:none">
+	</div>
+		<!-- Start of Async HubSpot Analytics Code -->
+		<script type="text/javascript">
+			(
+				function ( d, s, i, r ) {
+					if ( d.getElementById( i ) ) {
+						return;
+					}
+					var n = d.createElement( s ), e = d.getElementsByTagName( s )[0];
+					n.id = i;
+					n.src = '//js.hubspot.com/analytics/' + (
+						Math.ceil( new Date() / r ) * r
+					) + '/292449.js';
+					e.parentNode.insertBefore( n, e );
+				}
+			)( document, "script", "hs-analytics", 300000 );
+		</script>
+		<!-- End of Async HubSpot Analytics Code -->
+	<script src='https://secure.gravatar.com/js/gprofiles.js?ver=2020Maraa'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script src='https://www.kff.org/wp-content/mu-plugins/jetpack/modules/wpgroho.js?ver=5.3.2'></script>
+<script src='https://www.kff.org/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script src='https://www.kff.org/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script src='https://www.kff.org/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/apps/datacenter/vendor-2.0.83.bundle.js?ver=2.0.83'></script>
+<script>
+var dcStrings = {"clearAllSelections":"Clear All Selections","selectAll":"Select All","unselectAll":"Unselect All"};
+</script>
+<script src='https://www.kff.org/wp-content/themes/kaiser-foundation-2016/static/js/apps/datacenter/datacenter-2.0.83.bundle.js?ver=2.0.83'></script>
+<script src='https://www.kff.org/wp-content/mu-plugins/jetpack/_inc/build/lazy-images/js/lazy-images.min.js?ver=8.3'></script>
+<script src='https://www.kff.org/wp-includes/js/wp-embed.min.js?ver=5.3.2'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202012.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.3',blog:'158133116',post:'32444',tz:'-4',srv:'www.kff.org'} ]);
+	_stq.push([ 'clickTrackerInit', '158133116', '32444' ]);
+</script>
+</body>
+</html>
