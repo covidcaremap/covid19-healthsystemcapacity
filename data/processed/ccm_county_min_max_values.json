@@ -19,16 +19,40 @@
         0.0,
         1.22
     ],
-    "Population": [
-        0.0,
-        10105518.0
+    "Staffed All Beds [Per 1000 People]": [
+        0.092,
+        32.945
     ],
-    "Population (20+)": [
-        0.0,
-        7658126.0
+    "Staffed All Beds [Per 1000 Adults (20+)]": [
+        0.128,
+        42.04
     ],
-    "Population (65+)": [
+    "Staffed All Beds [Per 1000 Elderly (65+)]": [
+        0.493,
+        484.496
+    ],
+    "Staffed ICU Beds [Per 1000 People]": [
         0.0,
-        1375957.0
+        27.452
+    ],
+    "Staffed ICU Beds [Per 1000 Adults (20+)]": [
+        0.0,
+        37.66
+    ],
+    "Staffed ICU Beds [Per 1000 Elderly (65+)]": [
+        0.0,
+        134.36
+    ],
+    "Licensed All Beds [Per 1000 People]": [
+        0.092,
+        97.226
+    ],
+    "Licensed All Beds [Per 1000 Adults (20+)]": [
+        0.128,
+        120.423
+    ],
+    "Licensed All Beds [Per 1000 Elderly (65+)]": [
+        0.493,
+        484.496
     ]
 }
