@@ -212,9 +212,7 @@ def sum_per_region(facilities,
             per_capita = region_level[count_column] / (region_level[pop_column] / per_capita_base)
             per_capita = per_capita.replace(np.inf, np.nan)
             per_capita = per_capita.round(3)
-            region_level['{} [Per {} {}]'.format(count_column,
-                                                 PER_CAPITA_BASE,
-                                                 population)] = per_capita
+            region_level[per_capita_column_name(count_column, per_capita_base, population)] = per_capita
 
     return region_level
 
