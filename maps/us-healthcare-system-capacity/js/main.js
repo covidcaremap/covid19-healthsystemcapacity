@@ -244,34 +244,16 @@ function updatePopup(event) {
       var perCapita = usePerCapita(i)
         ? " " + numbers[number].labelAbbreviated
         : "";
-      return (
-        "<tr><th>" +
-        theIndicator.label +
-        perCapita +
-        "</th><td>" +
-        formatNumber(feature.properties[getProperty(i)], i) +
-        "</td></tr>"
-      );
+      return `<tr><th>${
+        theIndicator.label
+      } ${perCapita}</th><td>${formatNumber(feature.properties[getProperty(i)], i)}</td></tr>`;
     })
     .join("");
 
-  popup.setHTML(`<h1>${name}</h1><table>${rows}</table>`);
+  popup.setHTML(
+    `<div class="tooltip-heading">${name}</div><table>${rows}</table>`
+  );
 
-  // console.log(indicators[indicator].label);
-
-  // var perCapita = usePerCapita(indicator) ? " " + numbers[number].label : "";
-
-  // popup.setHTML(
-  //   "<div class='tooltip-heading'>" +
-  //     name +
-  //     "</div>" +
-  //     "<div class='tooltip-number'>" +
-  //     formatNumber(feature.properties[getProperty(indicator)], indicator) +
-  //     "</div>" +
-  //     indicators[indicator].label +
-  //     " " +
-  //     perCapita
-  // );
   popup.setLngLat(event.lngLat).addTo(map);
   map.getCanvas().style.cursor = "default";
 }
@@ -405,7 +387,11 @@ map.on("load", function() {
 
     map.addSource("boundaries", {
       type: "vector",
-      tiles: [window.location.origin + window.location.pathname + "data/tiles/{z}/{x}/{y}.pbf"],
+      tiles: [
+        window.location.origin +
+          window.location.pathname +
+          "data/tiles/{z}/{x}/{y}.pbf"
+      ],
       minzoom: 3,
       maxzoom: 8
     });
