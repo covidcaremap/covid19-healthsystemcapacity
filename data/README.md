@@ -28,7 +28,7 @@ written to common data formats for easy consumption.
 
 **IMPORTANT NOTE**: This data may be updated. If you want to pull directly from links where the data does not change, see the note in the main README about [Using Tags](../README.md#using-tags)
 
-### CovidCareMap Healthcare System Capacity data
+### CovidCareMap US Healthcare System Capacity data
 
 This data aggregates information about the healthcare system capacity. It sources data from
 the [Healthcare Cost Report Information System (HCRIS)](#healthcare-cost-report-information-system-hcris-data) and

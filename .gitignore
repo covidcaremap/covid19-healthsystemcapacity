@@ -15,6 +15,11 @@ data/external/HCRIS*
 # Download cache used by data download notebook
 data/external/download_cache
 
+# Processed data for visualization
+viz/us-healthcare-system-capacity/data/input
+viz/us-healthcare-system-capacity/data/tiles
+viz/us-healthcare-system-capacity/data/config
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
