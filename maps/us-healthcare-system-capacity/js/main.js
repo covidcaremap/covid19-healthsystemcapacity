@@ -144,9 +144,21 @@ var types = [
 
 var numbers = [
   { label: "", stringInData: "" },
-  { label: "per 1000 people", stringInData: " [Per 1000 People]" },
-  { label: "per 1000 adults (20+)", stringInData: " [Per 1000 Adults (20+)]" },
-  { label: "per 1000 elderly (65+)", stringInData: " [Per 1000 Elderly (65+)]" }
+  {
+    labelAbbreviated: "per 1k people",
+    label: "per 1,000 people",
+    stringInData: " [Per 1000 People]"
+  },
+  {
+    labelAbbreviated: "per 1k adults (20+)",
+    label: "per 1,000 adults (20+)",
+    stringInData: " [Per 1000 Adults (20+)]"
+  },
+  {
+    labelAbbreviated: "per 1k elderly (65+)",
+    label: "per 1,000 elderly (65+)",
+    stringInData: " [Per 1000 Elderly (65+)]"
+  }
 ];
 
 var indicators = [
@@ -227,37 +239,39 @@ function updatePopup(event) {
     name += ", " + feature.properties["State"];
   }
 
-  // var rows = indicators
-  //   .map(function(theIndicator, i) {
-  //     var perCapita = usePerCapita(i) ? " " + numbers[number].label : "";
-  //     return (
-  //       "<tr><th>" +
-  //       theIndicator.label +
-  //       perCapita +
-  //       "</th><td>" +
-  //       formatNumber(feature.properties[getProperty(i)], i) +
-  //       "</td></tr>"
-  //     );
-  //   })
-  //   .join("");
+  var rows = indicators
+    .map(function(theIndicator, i) {
+      var perCapita = usePerCapita(i)
+        ? " " + numbers[number].labelAbbreviated
+        : "";
+      return (
+        "<tr><th>" +
+        theIndicator.label +
+        perCapita +
+        "</th><td>" +
+        formatNumber(feature.properties[getProperty(i)], i) +
+        "</td></tr>"
+      );
+    })
+    .join("");
 
-  // popup.setHTML(`<h1>${name}</h1><table>${rows}</table>`);
+  popup.setHTML(`<h1>${name}</h1><table>${rows}</table>`);
 
   // console.log(indicators[indicator].label);
 
-  var perCapita = usePerCapita(indicator) ? " " + numbers[number].label : "";
+  // var perCapita = usePerCapita(indicator) ? " " + numbers[number].label : "";
 
-  popup.setHTML(
-    "<div class='tooltip-heading'>" +
-      name +
-      "</div>" +
-      "<div class='tooltip-number'>" +
-      formatNumber(feature.properties[getProperty(indicator)], indicator) +
-      "</div>" +
-      indicators[indicator].label +
-      " " +
-      perCapita
-  );
+  // popup.setHTML(
+  //   "<div class='tooltip-heading'>" +
+  //     name +
+  //     "</div>" +
+  //     "<div class='tooltip-number'>" +
+  //     formatNumber(feature.properties[getProperty(indicator)], indicator) +
+  //     "</div>" +
+  //     indicators[indicator].label +
+  //     " " +
+  //     perCapita
+  // );
   popup.setLngLat(event.lngLat).addTo(map);
   map.getCanvas().style.cursor = "default";
 }
