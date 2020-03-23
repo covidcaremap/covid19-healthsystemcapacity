@@ -3,7 +3,7 @@
 - [TL;DR](#tl;dr)
 - [Overview](#overview)
 - [Data](#data)
-- [Maps](#maps)
+- [Maps and Visualizations](#maps-and-visualizations)
 - [Contributing](#contributing)
 - [Why](#why)
   - [Take-home Message #1](#take-home-message-1)
@@ -58,6 +58,16 @@ Published data can be found in the [data/published](data/published) folder. This
 | [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
 
 ## Maps
+## Maps and Visualizations
+
+Check out the [list of visualizations here](viz/index.html)
+
+### Contributing Visualizations
+
+If you have a visualization using our data, or any geospatial data related to the COVID-19 criss,
+CovidCareMap.org would love to host it! You can contribute static HTML pages, or sites that compile
+to static html pages, by making a PR against this repository. Or, if your visualization is hosted
+elsewhere, please write an issue or make a PR to add a card to the visualization listing page.
 
 ### Ventilator Supply and Healthcare Capacity Map, by State
 
