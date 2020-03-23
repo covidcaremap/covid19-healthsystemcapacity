@@ -30,32 +30,59 @@ function App() {
             content: (
                 <div>
                     <p>
-                        Ventilator data from:
-                        <br />{' '}
-                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/21149215">
-                            https://www.ncbi.nlm.nih.gov/pubmed/21149215
+                        Map visualization created by{' '}
+                        <a href="https://github.com/mmcfarland">
+                            Matt McFarland{' '}
                         </a>
-                        <br />
-                        Capacity data from:
-                        <br />{' '}
-                        <a href="https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/">
-                            https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/
+                        with support from{' '}
+                        <a href="https://azavea.com">Azavea</a>,{' '}
+                        <a href="https://www.covidcaremap.org">
+                            COVID Care Map team
                         </a>
-                        <br />
-                        Census data from:
-                        <br />{' '}
-                        <a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html">
-                            https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html
-                        </a>
-                        <br />
                     </p>
+                    <strong>Data Sources:</strong>
+                    <ul>
+                        <li>
+                            Estimated No. of Full-Featured Mechanical
+                            Ventilators data from Rubinson 2010 study on{' '}
+                            <a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/mechanical-ventilators-in-us-acute-care-hospitals/F1FDBACA53531F2A150D6AD8E96F144D">
+                                Mechanical Ventilators in US Acute Care
+                                Hospitals, TABLE 4: Quantities of Full-Feature
+                                Ventilators per Population, by State
+                            </a>
+                        </li>
+                        <li>
+                            Health System Capacity data
+                            ("Total/Available/Potentially Available ___ Beds")
+                            from{' '}
+                            <a href="https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/">
+                                Harvard Global Health Institute's regionalized
+                                capacity estimates
+                            </a>
+                        </li>
+                        <li>
+                            Per capita calculation of health system capacity
+                            ("___ Beds per 100,000 people") using{' '}
+                            <a href="https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-detail.html">
+                                2018 US Census Bureau population estimate by
+                                state
+                            </a>
+                        </li>
+                    </ul>{' '}
                     <hr />
-                    <p>
-                        Source code and methodology can be found here: <br />
-                        <a href="https://github.com/daveluo/covid19-healthsystemcapacity">
-                            https://github.com/daveluo/covid19-healthsystemcapacity
-                        </a>
-                    </p>
+                    More info, methodology & source code can be found at:
+                    <ul>
+                        <li>
+                            <a href="https://www.covidcaremap.org">
+                                CovidCareMap.org
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/covidcaremap/covid19-healthsystemcapacity/">
+                                CovidCareMap GitHub page
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             ),
             onOk() {},

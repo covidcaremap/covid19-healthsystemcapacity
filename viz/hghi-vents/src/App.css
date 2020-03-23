@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+}
+
 .App {
     text-align: center;
 }
@@ -38,7 +43,7 @@
 }
 
 .leaflet-container {
-    height: 100%;
+    height: calc(100vh - 129px);
     width: 100%;
 }
 
