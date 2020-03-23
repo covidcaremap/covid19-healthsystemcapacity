@@ -61,7 +61,9 @@ These fields are across all facility and regional datasets:
 - **HCRIS-Provider Number** - The `Provider Number` from the HCRIS reports (also matches the `PROVIDER_NUMBER` field
 in the facility information).
 
-There are additional per-capita fields in the regional datasets:
+**Source information**: In the facility dataset there is also a set of columns suffixed with '- SOURCE', which describes the source of the value for the corresponding column. The values are prefixed with 'HCRIS', in which case the number comes from HCRIS data, or 'DH', in which it's Definitive Health data. It also has the column name from that dataset so you can trace things back to the source datasets. The HCRIS columns from from the data processing steps, which are traceable back to the origin HCRIS file data value through the processing notebook workflow. The DH data column applied directly to the DH external dataset.
+
+**Per Capital Information**: There are additional per-capita fields in the regional datasets:
 
 - **Population** - Population of this region, sourced by the US Census Bureau 2018 county population estimates.
 
@@ -71,7 +73,7 @@ There are additional per-capita fields in the regional datasets:
 
 - **Staffed All Beds [Per 1000 People]**, **Staffed All Beds [Per 1000 Adults (20+)]**, **Staffed All Beds [Per 1000 Elderly (65+)]**, etc. - The `Staffed All Beds`, `Staffed ICU Beds`, and `Licensed All Beds` fields per capita of the population described.
 
-There is additional information about [estimated mechanical ventilators](#ventilator-data) for state-level data:
+**Ventilator Information**: There is additional information about [estimated mechanical ventilators](#ventilator-data) for state-level data:
 
 - **Estimated No. Full-Featured Mechanical Ventilators**
 - **Estimated No. Full-Featured Mechanical Ventilators per 100,000 Population**
