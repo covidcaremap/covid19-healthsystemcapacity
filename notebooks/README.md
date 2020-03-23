@@ -24,7 +24,7 @@ as well any other dataset produced by the project.
 
 ![workflow](images/ccm-notebook-workflow.png)
 
-This workflow combines HCRIS, DH, US Census, ventilator data, and geocoding results to generate the [CovidCareMap US Healthcare System Capacity](../data/README.md#covidcaremap-healthcare-system-capacity-data) data. The following sections describe steps of that workflow, diagrammed above, which are encapsulated into a sequence of Jupyter notebooks. Each step has it's own notebook, and each notebook contains information about how the data is being derived. We present the data generation methods in this way to maximize transparency and knowledge transfer and to allow anyone to read through and spot issues or guide improvements to methodology.
+This workflow combines HCRIS, DH, US Census, ventilator data, and geocoding results to generate the [CovidCareMap US Healthcare System Capacity](../data/README.md#covidcaremap-us-healthcare-system-capacity-data) data. The following sections describe steps of that workflow, diagrammed above, which are encapsulated into a sequence of Jupyter notebooks. Each step has it's own notebook, and each notebook contains information about how the data is being derived. We present the data generation methods in this way to maximize transparency and knowledge transfer and to allow anyone to read through and spot issues or guide improvements to methodology.
 
 #### Geocode HCRIS Data
 
@@ -68,6 +68,10 @@ This notebook aggregates the facility data into bed counts, ratios and per-capit
 counties, states, and HRRs. For states, it is also merged with [ventilator data](../data/README.md#ventilator-data).
 The regioal aggregation uses logic contained in the `sum_per_region` method of [covidcaremap/geo.py](../covidcaremap/geo.py).
 
+#### Process visualization data
+
+This notebook will generate the vector tiles needed to run the `us-healthcare-system-capacity` visualization.
+
 ##### Notebooks
 
 - [processing/01_Geocode_HCRIS_Data.ipynb](processing/01_Geocode_HCRIS_Data.ipynb)
@@ -76,7 +80,7 @@ The regioal aggregation uses logic contained in the `sum_per_region` method of [
 - [processing/04_Generate_CovidCareMap_Facility_Data.ipynb](processing/04_Generate_CovidCareMap_Facility_Data.ipynb)
 - [processing/05_Merge_Region_and_Census_Data.ipynb](processing/05_Merge_Region_and_Census_Data.ipynb)
 - [processing/06_Generate_CovidCareMap_Regional_Data.ipynb](processing/06_Generate_CovidCareMap_Regional_Data.ipynb)
-
+- [processing/07_Process_visualization_data.ipynb](processing/07_Process_visualization_data.ipynb)
 
 ### CareModel Data
 

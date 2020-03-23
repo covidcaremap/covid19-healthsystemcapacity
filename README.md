@@ -1,5 +1,7 @@
 [![Gitter](https://badges.gitter.im/covid19-healthsystemcapacity/community.svg)](https://gitter.im/covid19-healthsystemcapacity/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+![logo](img/covidcaremap-logo.png)
+
 - [TL;DR](#tl;dr)
 - [Overview](#overview)
 - [Data](#data)
@@ -86,6 +88,12 @@ elsewhere, please write an issue or make a PR to add a card to the visualization
 [https://www.covidcaremap.org/maps/hghi-vents/](https://www.covidcaremap.org/maps/hghi-vents/)
 
 This map combines [health capacity data](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) from the Harvard Global Health Institute and ventilator information from a [2010 Study](https://www.ncbi.nlm.nih.gov/pubmed/21149215).
+
+### US Healthcare System Capacity
+
+[https://www.covidcaremap.org/maps/us-healthcare-system-capacity/](https://www.covidcaremap.org/maps/us-healthcare-system-capacity/)
+
+This map visualizes the [CovidCareMap.org US Healthcare System Capacity](covidcaremap-us-healthcare-system-capacity-data).
 
 ## Contributing
 

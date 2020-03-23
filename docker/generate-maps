@@ -21,7 +21,8 @@ Generates the static site maps at covidcrisismap.org/maps
 "
 }
 
-CMD=$(cat <<-END
+HGHI_VENTS_CMD=$(cat <<-END
+      mkdir -p maps && \
       cd viz/hghi-vents && \
       npx npm-force-resolutions && \
       npm install && npm run build && \
@@ -29,10 +30,28 @@ CMD=$(cat <<-END
 END
 )
 
+HSCAP_CMD=$(cat <<-END
+      mkdir -p maps && \
+      cd viz/us-healthcare-system-capacity && \
+      rm -r ../../maps/us-healthcare-system-capacity && \
+      cp -r . ../../maps/us-healthcare-system-capacity && \
+      rm -r ../../maps/us-healthcare-system-capacity/data/input
+END
+)
+
 
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+   ECHO "Building hghi-vents site..."
     docker run --rm -it \
         -v "$PROJECT_ROOT":/opt/src \
+        --workdir /opt/src \
         --entrypoint /bin/bash \
-        covid19:latest -c "$CMD"
+        covid19:latest -c "$HGHI_VENTS_CMD"
+
+   ECHO "Building us-healthcare-system-capacity site..."
+    docker run --rm -it \
+        -v "$PROJECT_ROOT":/opt/src \
+        --workdir /opt/src \
+        --entrypoint /bin/bash \
+        covid19:latest -c "$HSCAP_CMD"
 fi
