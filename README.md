@@ -68,7 +68,7 @@ Tagged versions of the repository are below. Click on the link and browse to the
 
 | Version                                                 | Notes                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Data Release 03/22/20](https://github.com/covidcaremap/covid19-healthsystemcapacity/tree/v2020.22.03) | Initial release of CovidCareMap.org Healthcare System Capacity data |
+| *First Data Release (Coming Soon)* | Initial release of CovidCareMap.org Healthcare System Capacity data |
 
 ## Maps and Visualizations
 
