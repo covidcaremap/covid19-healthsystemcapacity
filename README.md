@@ -406,7 +406,7 @@ Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/
 ## Glossary of Terms
 
 This project uses many terms and acronyms. This brief glossary of terms is to provide a better understanding
-of the project as well as ensures everyone is speaking the same language. If you can improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
+of the project as well as ensures everyone is speaking the same language. If you can add to or improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
 
 #### DH
 
