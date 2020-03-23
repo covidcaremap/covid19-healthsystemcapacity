@@ -12,14 +12,14 @@ A catalog of all data used in the project.
 
 | File                                                 | Description                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format.                                |
-| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format.                                |
-| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format.                           |
-| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format.                           |
-| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format.                            |
-| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format.                            |
-| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. |
-| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
+| [us_healthcare_capacity-facility-CovidCareMap.geojson](published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format.                                |
+| [us_healthcare_capacity-facility-CovidCareMap.csv](published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format.                                |
+| [us_healthcare_capacity-county-CovidCareMap.geojson](published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format.                           |
+| [us_healthcare_capacity-county-CovidCareMap.csv](published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format.                           |
+| [us_healthcare_capacity-state-CovidCareMap.geojson](published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format.                            |
+| [us_healthcare_capacity-state-CovidCareMap.csv](published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format.                            |
+| [us_healthcare_capacity-hrr-CovidCareMap.geojson](published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. |
+| [us_healthcare_capacity-hrr-CovidCareMap.csv](published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
 
 
 The 'published' directory contains datasets published by CovidCareMap. These are data that

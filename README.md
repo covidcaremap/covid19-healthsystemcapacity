@@ -72,7 +72,7 @@ Tagged versions of the repository are below. Click on the link and browse to the
 
 ## Maps and Visualizations
 
-Check out the [list of visualizations here](viz/index.html)
+Check out the [list of visualizations here](https://covidcaremap.org/viz/index.html)
 
 ### Contributing Visualizations
 
