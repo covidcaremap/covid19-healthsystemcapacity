@@ -1,0 +1,22 @@
+{
+    "Staffed All Beds": [
+        1.0,
+        2753.0
+    ],
+    "Staffed ICU Beds": [
+        0,
+        506.0
+    ],
+    "Licensed All Beds": [
+        1.0,
+        2753.0
+    ],
+    "All Bed Occupancy Rate": [
+        0.0,
+        3.2534246575342465
+    ],
+    "ICU Bed Occupancy Rate": [
+        0.0,
+        1.7687422166874223
+    ]
+}
