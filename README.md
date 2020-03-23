@@ -48,16 +48,28 @@ Published data can be found in the [data/published](data/published) folder. This
 
 | File                                                 | Description                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format.                                |
-| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format.                                |
-| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format.                           |
-| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format.                           |
-| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format.                            |
-| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format.                            |
-| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. |
-| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
+| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
 
-## Maps
+See the Published Datasets section in [data/README.md](data/README.md#published-datasets) for more information.
+
+### Using Tags
+
+**IMPORTANT NOTE:** The data in this repository will be updated to iterate towards the most informative and complete data possible. While things like field names shouldn't change (besides adding columns), if you want to
+point to consistent data, we highly suggest using a tagged version of the repository, which will not change.
+
+Tagged versions of the repository are below. Click on the link and browse to the data file you want to use from
+
+| Version                                                 | Notes                                                                   |
+|------------------------------------------------------|-------------------------------------------------------------------------------|
+| [Data Release 03/22/20](https://github.com/covidcaremap/covid19-healthsystemcapacity/tree/v2020.22.03) | Initial release of CovidCareMap.org Healthcare System Capacity data |
+
 ## Maps and Visualizations
 
 Check out the [list of visualizations here](viz/index.html)
@@ -294,19 +306,48 @@ Grab the data, run the notebooks, ask questions, flag an issue, comment anywhere
 
 ### Getting Started
 
-TKTK
+After cloning the repository, build the docker container:
+
+```
+> docker/build
+```
+
+Start the Jupyter notebook server:
+
+```
+> docker/notebooks
+```
+
+Now open the link that was last output by the above command. The link should look something like
+`http://127.0.0.1:8888/?token=2b39bb1d2a955bca4622e563fa50dc973016db70d23e0ae5`.
+This will open a jupyter notebook file browser
+that shows a `data` and `notebooks` folder.
+
+Open the the [processing/00_Download_Data.ipynb](notebooks/processing/00_Download_Data.ipynb) notebook
+to download any external data needed to run the other notebooks.
+
+To run the other processing notebooks, read [notebooks/README.md](notebooks/README.md) which describes
+what notebooks need to run in what order. Note the [processing/01_Geocode_CHRIS_Data.ipynb](notebooks/processing/01_Ceocode_HCRIS_Data.ipynb) requires a Google and Mapbox API key to be supplied. You don't need to run this notebook - the geocoded results are already supplied in the repository.
+
+Getting started on building and editing the maps can be found in [viz/README.md](viz/README.md).
 
 ### Using Docker
 
-TKTK
+The `docker/build` command builds a docker container called `covid19:latest`. This container can
+run the jupyter notebook server, build the web map sites, and contains an environment that ensures
+all required libraries or packges are installed for everyone.
+
+If you contribute code that requires a specific package, please make sure it is built into the
+docker container. This can include adding python packages to `notebooks/requirements.txt` as
+well as adding `apt-get install` commands into the [Dockerfile](docker/Dockerfile).
 
 ### Repository Organization
 
     ├── data
-        ├── README.md          <- This file.
-        ├── external           <- Intermediate data that has been transformed.
-        ├── published          <- The final, canonical data sets for COVIDCareMap.
-        └── processed          <- Folder containing intermediate processing data.
+    │   ├── README.md          <- This file.
+    │   ├── external           <- Intermediate data that has been transformed.
+    │   ├── published          <- The final, canonical data sets for COVIDCareMap.
+    │   └── processed          <- Folder containing intermediate processing data.
     │
     ├── notebooks              <- Jupyter notebooks.
     │   ├── README.md          <- Overview of Jupyter Notebooks and how to run them.
