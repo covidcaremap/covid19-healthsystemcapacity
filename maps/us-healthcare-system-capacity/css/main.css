@@ -345,19 +345,10 @@ h2 {
 
 .tooltip-heading {
   font-size: 14px;
-  font-weight: 600;
-  margin: -2px -10px 10px;
-  border-bottom: 1px solid #ccc;
-  padding: 0 10px 6px;
-  color: #777;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #262e34;
 }
-
-/* .tooltip-number { */
-/*   font-size: 21px; */
-/*   font-weight: 800 !important; */
-/*   color: #262e34; */
-/*   margin: 0px 0 5px; */
-/* } */
 
 table {
   font-size: 13px;
@@ -620,6 +611,7 @@ button.primary,
 
 .mapboxgl-popup {
   z-index: 4000;
+  max-width: 320px !important;
 }
 
 /*.mapboxgl-ctrl-icon.mapboxgl-ctrl-zoom-in {
