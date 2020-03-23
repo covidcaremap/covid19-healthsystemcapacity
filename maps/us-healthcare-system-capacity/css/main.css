@@ -352,12 +352,12 @@ h2 {
   color: #777;
 }
 
-.tooltip-number {
-  font-size: 21px;
-  font-weight: 800 !important;
-  color: #262e34;
-  margin: 0px 0 5px;
-}
+/* .tooltip-number { */
+/*   font-size: 21px; */
+/*   font-weight: 800 !important; */
+/*   color: #262e34; */
+/*   margin: 0px 0 5px; */
+/* } */
 
 table {
   font-size: 13px;
