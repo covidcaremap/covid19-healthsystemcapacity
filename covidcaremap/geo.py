@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 from difflib import SequenceMatcher
-from fuzzywuzzy import fuzz
+from rapidfuzz import fuzz
 
 from covidcaremap.constants import *
 from covidcaremap.data import read_us_counties_gdf, read_us_states_gdf, read_us_hrr_gdf
