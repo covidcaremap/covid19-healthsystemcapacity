@@ -68,11 +68,11 @@ Tagged versions of the repository are below. Click on the link and browse to the
 
 | Version                                                 | Notes                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Data Release 03/22/20](https://github.com/covidcaremap/covid19-healthsystemcapacity/tree/v2020.22.03) | Initial release of CovidCareMap.org Healthcare System Capacity data |
+| *First Data Release (Coming Soon)* | Initial release of CovidCareMap.org Healthcare System Capacity data |
 
 ## Maps and Visualizations
 
-Check out the [list of visualizations here](viz/index.html)
+Check out the [list of visualizations here](https://covidcaremap.org/viz/index.html)
 
 ### Contributing Visualizations
 
@@ -406,7 +406,7 @@ Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/
 ## Glossary of Terms
 
 This project uses many terms and acronyms. This brief glossary of terms is to provide a better understanding
-of the project as well as ensures everyone is speaking the same language. If you can improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
+of the project as well as ensures everyone is speaking the same language. If you can add to or improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
 
 #### DH
 
