@@ -58,8 +58,13 @@ CCM_FACILITY_OCCUPANCY_COLUMNS = {
     CCM_ICU_BED_OCCUPANCY_COLUMN: CCM_STAFFED_ICU_BEDS_COLUMN
 }
 
+def per_capita_column_name(count_column, per_capita_base, population):
+    return '{} [Per {} {}]'.format(count_column,
+                                   per_capita_base,
+                                   population)
+
 CCM_PER_CAPITA_COLUMNS = [
-    CCM_POPULATION_COLUMNS[population]
+    per_capita_column_name(count_column, PER_CAPITA_BASE, population)
     for count_column in CCM_FACILITY_COUNT_COLUMNS
     for population in POPULATIONS
 ]
