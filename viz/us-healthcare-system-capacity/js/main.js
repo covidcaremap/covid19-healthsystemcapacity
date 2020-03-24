@@ -346,7 +346,6 @@ function setFillPaintStyle(layerName) {
 }
 
 function setLegend(colors, breaksValues) {
-  console.log(colors, breaksValues);
   var legend = colors
     .map(function(color, i) {
       return `<div class="legend-color" style="background-color: ${color}"></div><div class="legend-numbers">${formatNumber(breaksValues[i], indicator)}–${formatNumber(breaksValues[i + 1], indicator)}</div>`;
