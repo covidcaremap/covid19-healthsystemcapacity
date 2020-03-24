@@ -182,16 +182,20 @@ def sum_per_region(facilities,
 
     joined = gpd.sjoin(facilities, regions, how='inner', op='intersects')
 
-    weighted_columns = []
+    compute_columns = []
     for occupancy_rate_column, beds_column in facility_occupancy_columns.items():
         w = 'weighted_{}'.format(occupancy_rate_column)
+        b = 'base_{}'.format(occupancy_rate_column)
         joined[w] = joined[beds_column] * joined[occupancy_rate_column]
-        weighted_columns.append(w)
+        joined[b] = joined[beds_column]
+        joined.loc[joined[occupancy_rate_column].isnull(), b] = np.nan
+        compute_columns.append(w)
+        compute_columns.append(b)
 
     region_level = joined.groupby(groupby_columns, as_index='False')[
         facility_count_columns +
         list(facility_occupancy_columns.keys()) +
-        weighted_columns
+        compute_columns
     ].sum().reset_index()
 
     # Calculate occupancy rates via average weighted by
@@ -199,10 +203,10 @@ def sum_per_region(facilities,
     for occupancy_rate_column, beds_column in facility_occupancy_columns.items():
         region_level[occupancy_rate_column] = (
             region_level['weighted_{}'.format(occupancy_rate_column)] /
-            region_level[beds_column]
+            region_level['base_{}'.format(occupancy_rate_column)]
         ).round(2)
 
-    region_level = region_level.drop(columns=weighted_columns)
+    region_level = region_level.drop(columns=compute_columns)
 
     region_level = gpd.GeoDataFrame(region_level.merge(regions, on=region_id_column), crs=4326)
 
