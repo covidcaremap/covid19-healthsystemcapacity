@@ -5,7 +5,7 @@ A catalog of all data used in the project.
     └── data
         ├── README.md          <- This file.
         ├── external           <- Intermediate data that has been transformed.
-        ├── published          <- The final, canonical data sets for COVIDCareMap.
+        ├── published          <- The final, canonical data sets for COVID Care Map.
         └── processed          <- Folder containing intermediate processing data.
 
 ## Published Datasets
@@ -22,7 +22,7 @@ A catalog of all data used in the project.
 | [us_healthcare_capacity-hrr-CovidCareMap.csv](published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. |
 
 
-The 'published' directory contains datasets published by CovidCareMap. These are data that
+The 'published' directory contains datasets published by COVID Care Map. These are data that
 have been aggregated from various sources, analyzed, processed, inspected for validity and
 written to common data formats for easy consumption.
 
@@ -32,7 +32,7 @@ written to common data formats for easy consumption.
 
 This data aggregates information about the healthcare system capacity. It sources data from
 the [Healthcare Cost Report Information System (HCRIS)](#healthcare-cost-report-information-system-hcris-data) and
-an open dataset by [Definitive Healthcare](#definitive-health-dh-data).
+an open hospital facilities dataset by [Definitive Healthcare](#definitive-health-dh-data).
 
 ##### CovidCareMap Capcity Data Dictionary
 
@@ -54,16 +54,16 @@ These fields are across all facility and regional datasets:
 
 - **ICU Bed Occupancy Rate** - % of ICU beds typically occupied by patients in selected facility or area
 
-- **CCM_ID** - Unique identifier for the facility. Matches the Definitive Healtchare ID until other datasets are brought in.
+- **CCM_ID** - Unique identifier for the facility. Matches the Definitive Healtchare ID until new facilities are added or other datasets are brought in.
 
-- **DH-OBJECTID** - The `OBJECTID` in the Definitive Healtchare dataset for this facility.
+- **DH-OBJECTID** - The `OBJECTID` in the Definitive Healthcare dataset for this facility.
 
 - **HCRIS-Provider Number** - The `Provider Number` from the HCRIS reports (also matches the `PROVIDER_NUMBER` field
 in the facility information).
 
-**Source information**: In the facility dataset there is also a set of columns suffixed with '- SOURCE', which describes the source of the value for the corresponding column. The values are prefixed with 'HCRIS', in which case the number comes from HCRIS data, or 'DH', in which it's Definitive Health data. It also has the column name from that dataset so you can trace things back to the source datasets. The HCRIS columns from from the data processing steps, which are traceable back to the origin HCRIS file data value through the processing notebook workflow. The DH data column applied directly to the DH external dataset.
+**Source information**: In the facility dataset there is also a set of columns suffixed with '- SOURCE', which describes the source of the value for the corresponding column. The values are prefixed with 'HCRIS', in which case the number comes from HCRIS data, or 'DH', in which it's Definitive Health data. It also has the column name from that dataset so you can trace everything back to the source datasets. The HCRIS columns are created from the data processing steps, which are traceable back to the origin HCRIS file data value through the processing notebook workflow. The DH data columns match directly to the DH external dataset.
 
-**Per Capital Information**: There are additional per-capita fields in the regional datasets:
+**Per Capita Information**: There are additional per-capita fields in the regional datasets:
 
 - **Population** - Population of this region, sourced by the US Census Bureau 2018 county population estimates.
 
@@ -73,7 +73,7 @@ in the facility information).
 
 - **Staffed All Beds [Per 1000 People]**, **Staffed All Beds [Per 1000 Adults (20+)]**, **Staffed All Beds [Per 1000 Elderly (65+)]**, etc. - The `Staffed All Beds`, `Staffed ICU Beds`, and `Licensed All Beds` fields per capita of the population described.
 
-**Ventilator Information**: There is additional information about [estimated mechanical ventilators](#ventilator-data) for state-level data:
+**Ventilator Information**: There is additional information about [estimated mechanical ventilators](#ventilator-data) for state-level data which is from a 2010 study that uses survey data of hospitals conducted in 2009 and US Census population estimates from 2008:
 
 - **Estimated No. Full-Featured Mechanical Ventilators**
 - **Estimated No. Full-Featured Mechanical Ventilators per 100,000 Population**
@@ -82,7 +82,7 @@ in the facility information).
 
 ##### Hospital Types
 
-This information directly from the [esri page for the data](https://coronavirus-resources.esri.com/datasets/definitivehc::definitive-healthcare-usa-hospital-beds?geometry=162.949%2C-16.820%2C172.090%2C72.123)
+This information directly from the [ESRI page for the Definitive Healthcare dataset](https://coronavirus-resources.esri.com/datasets/definitivehc::definitive-healthcare-usa-hospital-beds?geometry=162.949%2C-16.820%2C172.090%2C72.123)
 
 - Short Term Acute Care Hospital (STAC)
   - Provides inpatient care and other services for surgery, acute medical conditions, or injuries

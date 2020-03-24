@@ -46,7 +46,7 @@ C. Visualize the result of the analysis as well as the disease forecast and heal
 
 ## Data
 
-Published data can be found in the [data/published](data/published) folder. This data include:
+Published data can be found in the [data/published](https://github.com/covidcaremap/covid19-healthsystemcapacity/tree/master/data/published) folder. This data include:
 
 | File                                                 | Description                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -63,18 +63,17 @@ See the Published Datasets section in [data/README.md](data/README.md#published-
 
 ### Using Tags
 
-**IMPORTANT NOTE:** The data in this repository will be updated to iterate towards the most informative and complete data possible. While things like field names shouldn't change (besides adding columns), if you want to
-point to consistent data, we highly suggest using a tagged version of the repository, which will not change.
+**IMPORTANT NOTE:** The data in this repository will be updated to rapidly iterate towards the most informative, current, and complete data possible. While things like field names shouldn't change (besides adding columns), if you want to point to consistent data, we highly suggest using a tagged version of the repository, which will not change.
 
 Tagged versions of the repository are below. Click on the link and browse to the data file you want to use from
 
 | Version                                                 | Notes                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| *First Data Release (Coming Soon)* | Initial release of CovidCareMap.org Healthcare System Capacity data |
+| *First v0.1 Data Release (Coming Soon)* | Initial release of CovidCareMap.org Healthcare System Capacity data |
 
 ## Maps and Visualizations
 
-Check out the [list of visualizations here](https://covidcaremap.org/viz/index.html)
+Check out the [list of visualizations here](https://www.covidcaremap.org/viz/index.html)
 
 ### Contributing Visualizations
 
@@ -87,7 +86,7 @@ elsewhere, please write an issue or make a PR to add a card to the visualization
 
 [https://www.covidcaremap.org/maps/hghi-vents/](https://www.covidcaremap.org/maps/hghi-vents/)
 
-This map combines [health capacity data](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) from the Harvard Global Health Institute and ventilator information from a [2010 Study](https://www.ncbi.nlm.nih.gov/pubmed/21149215).
+This map combines [health capacity data](https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/) from the Harvard Global Health Institute and ventilator supply estimates from a [2010 study](https://www.ncbi.nlm.nih.gov/pubmed/21149215).
 
 ### US Healthcare System Capacity
 
@@ -141,8 +140,11 @@ Source: [Financial Times, updated Mar 19, 2020](https://www.ft.com/content/a26fb
 
 ### Take-home Message #1
 
-Social distancing works and is among the best practices we have on hand to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. Know what to do and do your part to protect yourself and your community with these resources:
+[Social distancing and shelter-at-home policies work](https://twitter.com/ASlavitt/status/1241583932472274946) and [are urgently needed everywhere there's COVID19](https://covidactnow.org/) to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. 
 
+Know what to do and do your part to protect yourself, your healthcare providers, and your community with these resources:
+
+- [Stay Home, Save Lives](https://www.stayhomesavelives.us/)
 - [Flatten The Curve](https://www.flattenthecurve.com/)
 - [CDC: How To Prepare and Take Action](https://www.cdc.gov/coronavirus/2019-ncov/community/index.html)
 
@@ -172,7 +174,7 @@ In the section on "Specific Priority Action Items To Be Taken", we see clear opp
 > - Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice. About 10-20% of a hospital’s bed capacity can be mobilized within a few hours by expediting discharges, using discharge holding areas, converting single rooms to double rooms, and opening closed areas, if staffing is available. Another 10% can be obtained within a few days by converting flat spaces, such as lobbies, waiting areas, and classrooms.4
 > - Collaborate in regional plans to be able to make at least 200% of licensed bed capacity in the region available for COVID-19 patients on 2 weeks’ notice.
 
-How will health systems' planning to
+How will health systems planning to
 
 > "Be able to make 30% of licensed bed capacity available for COVID-19 patients on 1 week’s notice"
 
@@ -200,23 +202,23 @@ In that same Harvard Global Health Institute analysis above, they estimate deman
 ![](./figs/HGHI_hrr_demand.png)
 [Interactive visualization link](https://www.nytimes.com/interactive/2020/03/17/upshot/hospital-bed-shortages-coronavirus.html)
 
-In the study by [Li, et al](https://dash.harvard.edu/handle/1/42599304) described earlier, they also estimate the number of critically ill patients at Wuhan-like peak demand in the USA population of different cities by accounting for local differences in demographics (how many are 65+ in age or how many have hypertension). The paper cites the US national average for ICU beds as 2.80 per 10,000 adults (15+) and the % of empty beds being 31.8% for a business-as-usual available ICU bed capacity of 0.9 beds per 10,0000 adults. With these high-level numbers in mind, our health system capacity - specifically ICU care, even if we freed up 100% of ICU beds for COVID19 patients - would be stretched close to or past its max in every city studied:
+In the study by [Li, et al](https://dash.harvard.edu/handle/1/42599304) described earlier, they also estimate the number of critically ill patients at Wuhan-like peak demand in the USA population of different cities by accounting for local differences in demographics (how many are 65+ in age or how many have hypertension). The paper cites the US national average for ICU beds as 2.80 per 10,000 adults (15+) and the % of empty beds being 31.8% for a business-as-usual available ICU bed capacity of 0.9 beds per 10,0000 adults. With these high-level numbers in mind, our health system capacity - specifically ICU care, even if we freed up 100% of ICU beds for COVID19 patients - would be pushed close to or past its max capacity in every city studied:
 
 ![paper fig3](./figs/icu_demand_paper_fig3.png)
 
-What is the current care capacity (particularly ICU care) in each facility, city, county or region? By how much can capacity realistically increase in a facility, health system, or region? When and how quickly should this happen in different areas? Is it enough to meet forecasted patient demand? If not, from where and how we do make new capacity available?
+What is the current care capacity (particularly ICU care) in each facility, city, county or region? By how much can capacity feasibly ramp up in a facility, health system, or region? When and how quickly can this happen in different areas? Is it enough to meet forecasted patient demand? If not, from where and how we do make new capacity available?
 
 From a [2015 study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4636910/) to model the "capacity of the healthcare system to use additional mechanical ventilators during a large-scale public health emergency (PHE)" by representatives of multiple federal health agencies (FDA, HHS, CDC), they identified 4 key components needed for effective mechanical ventilation (MV), a key part of delivering effective ICU care in particular for COVID19 patients:
 
 ![](./figs/ventcapacityscenarios_fig1.jpg)
 
-We can start answering these current and potential health system capacity questions by collecting reported total inpatient and ICU bed availability (and typical bed occupancy rates) and estimating them for facilities where the data is not available. This gives us a better understanding of currently available space ("Critical Care Beds" in the above figure). Then, using ratios, percentages, and absolute estimates for staffing and supplies based on the number of ICU beds needed for different scenarios in [critical care surge capacity planning](https://journal.chestnet.org/article/S0012-3692(15)51987-9/fulltext#cesec30), we can model the potential increase in critical care capacity for a given facility or area at different surge care levels ([Conventional, Contingency, Crisis](https://marlin-prod.literatumonline.com/cms/attachment/2119285238/2091674456/gr1_lrg.jpg)). This table from the same vent capacity study shows how many ICU patients could potentially be treated at different staffing ratios and % of (and types of converted-to-ICU) beds at different levels of surge care on a national level:
+We can start answering these care capacity questions by collecting reported total inpatient and ICU bed availability (and typical bed occupancy rates) and estimating them for facilities where the data is not available. This gives us a better understanding of currently available space ("Critical Care Beds" in the above figure). Using ratios, percentages, and absolute estimates for staffing and supplies based on the number of ICU beds needed for different scenarios in [critical care surge capacity planning](https://journal.chestnet.org/article/S0012-3692(15)51987-9/fulltext#cesec30), we can model the potential increase in critical care capacity for a given facility or area at different surge care levels ([Conventional, Contingency, Crisis](https://marlin-prod.literatumonline.com/cms/attachment/2119285238/2091674456/gr1_lrg.jpg)). This table from the same vent capacity study shows how many ICU patients can potentially be treated at different levels of surge care (increasing additional providers, higher staffing ratios and more converted-to-ICU beds) on a national level:
 
 ![](./figs/ventcapacityscenarios_table1.png)
 
-We can make similar estimations for potential ICU bed capacity at the facility, city, county, state levels under the same surge care scenarios. Then we can assess what staffing, vents, supplies, and other constraining resources to be deployed to bring a health system or region to that capacity level. We can inform decisionmaking about resource allocations compared to other locations of need based on forecasted COVID19 case loads and relative capacity gaps.
+We can make similar estimations for potential ICU bed capacity at the facility, city, county, state levels under these surge care levels. Then we can assess what staffing, vents, supplies, and other constraining resources need to be deployed to bring a health system or region to that capacity level. We can inform decisionmaking about resource allocations compared to other locations of need based on forecasted COVID19 case loads and relative capacity gaps.
 
-Once we do this as a baseline, how do we dynamically track change and progress in ramping up capacity over time and place towards reaching the levels needed to meet patient demand? How do we proactively detect and deploy additional resources to where new capacity gaps emerge due to staffing loss or shortages of equipment and supplies?
+Once we do this as a baseline, how do we dynamically track change and progress in ramping up capacity over time and place towards reaching levels needed to care for all patients in need? How do we proactively detect and deploy additional resources to where new capacity gaps emerge due to staffing loss or shortages of equipment and supplies?
 
 Finding out, anticipating, and addressing this healthcare systems capacity gap is what this project is about. We need to:
 
@@ -244,11 +246,7 @@ Help us get going. There's no more time to wait.
 
    1.3: Visualizations and Dashboards:
 
-    - 1st attempt (**DISCLAIMER:** This has been ballpark-checked at a high level but data errors are present and more rigorous data validation and clean-up is in progress now. Please treat this as a very early preview of the types of data available, not as accurate data itself):
-
-      Interactive link: [www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1](http://www.covidcaremap.org/viz/covid19-usabedcapacity-geoviz20200313v1)
-
-   ![](./figs/viz_v1_screencap.png)
+    - See [Visualizations Page](https://www.covidcaremap.org/viz/index.html)
 
 2. Model and map potential capacity versus anticipated spatiotemporal distribution of COVID19 spread
 
@@ -278,9 +276,10 @@ Help us get going. There's no more time to wait.
 
 - [Data analytics](https://github.com/daveluo/covid19-healthsystemcapacity/projects/2):
   - Spatial and temporal analyses at different scales
-  - Capacity modeling for beds, staffing, supplies, equipment to provide effective ICU care in crisis levels:
-    - [current work on modeling staffing needs](https://github.com/daveluo/covid19-healthsystemcapacity/issues/18)
-    - [current work on modeling equipment needs](https://github.com/daveluo/covid19-healthsystemcapacity/issues/17)
+  - Capacity modeling for beds, staffing, supplies, equipment to provide effective ICU care in crisis levels. Current project work on:
+    - [Staffing needs](https://github.com/covidcaremap/covid19-healthsystemcapacity/issues/18)
+    - [Ventilator needs](https://github.com/covidcaremap/covid19-healthsystemcapacity/issues/17)
+    - [Supply needs (PPEs)](https://github.com/covidcaremap/covid19-healthsystemcapacity/issues/45)
   - Basic to advanced epi modeling (or plugging into such work), i.e.:
     - [SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model) for COVID19 scenarios like from [Neher Lab](https://neherlab.org/covid19/)
     - [SEIR model](https://github.com/alsnhll/SEIR_COVID19)
@@ -413,8 +412,7 @@ Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/
 
 ## Glossary of Terms
 
-This project uses many terms and acronyms. This brief glossary of terms is to provide a better understanding
-of the project as well as ensures everyone is speaking the same language. If you can add to or improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
+This project uses many healthcare-specific terms and acronyms. This brief glossary of terms is to provide a better understanding of the project and ensures everyone is speaking the same language. If you can add to or improve these definitions, please make a pull request, open an issue or chat about it on Gitter!
 
 #### DH
 
@@ -436,14 +434,18 @@ Hospital Referral Region (HRR), specifying a market within which people generall
 
 Much thanks to all contributors so far (by alphabetical order of first name):
 
-- Aaron Su
-- Dave Luo
-- Hector Castro
-- Jeff Frankl
+- [Aaron Su, Azavea](https://www.azavea.com/about/teammate/aaron-su/)
+- [Dave Luo, Anthropocene Labs](https://www.davidluo.com/)
+- [Hector Castro, Azavea](https://www.azavea.com/about/teammate/hector-castro/)
+- [Jeff Frankl, Azavea](https://www.azavea.com/about/teammate/jeff-frankl/)
 - Lauren Moos
-- Matt McFarland
-- Rob Emanuele
-- Simon Kassel
+- [Matt McFarland, Azavea](https://www.azavea.com/about/teammate/matt-mcfarland/)
+- [Rob Emanuele, Azavea](https://www.azavea.com/about/teammate/rob-emanuele/)
+- [Simon Kassel, Azavea](https://www.azavea.com/about/teammate/simon-kassel/)
+- [Zhuangfang NaNa Yi, Development Seed](https://developmentseed.org/team/zhuangfang-nana-yi/)
+
+A special thank you to [Azavea](https://www.azavea.com/) and its [10% Time and Volunteer programs](https://www.azavea.com/about/) for enabling the rapid kickstart and acceleration of this project.
+
 
 ## Methodology Notes
 
