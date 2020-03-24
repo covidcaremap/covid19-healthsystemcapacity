@@ -186,9 +186,13 @@ def sum_per_region(facilities,
     for occupancy_rate_column, beds_column in facility_occupancy_columns.items():
         w = 'weighted_{}'.format(occupancy_rate_column)
         b = 'base_{}'.format(occupancy_rate_column)
-        joined[w] = joined[beds_column] * joined[occupancy_rate_column]
+        # In the case that data reports an occupancy
+        # rate greater than 1.0, consider those values to be 1.0.
+        joined[w] = joined[beds_column] * np.minimum(joined[occupancy_rate_column], 1)
         joined[b] = joined[beds_column]
-        joined.loc[joined[occupancy_rate_column].isnull(), b] = np.nan
+
+        # If a facility doesn't have an occupancy rate
+        joined.loc[joined[w].isnull(), b] = 0
         compute_columns.append(w)
         compute_columns.append(b)
 
