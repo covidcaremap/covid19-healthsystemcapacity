@@ -317,11 +317,15 @@ function setFillPaintStyle(layerName) {
     colors = _.map([...Array(breaksValues.length).keys()], function(i) {
       return palette(i / breaksValues.length);
     }),
+    breaksAndColors = _.flatten(_.zip(breaksValues, colors)),
+    breaksAndColorsWithoutFirstBreak = breaksAndColors.splice(
+      1,
+      breaksAndColors.length
+    ),
     style = [
-      "interpolate",
-      ["linear"],
+      "step",
       ["number", ["get", getProperty(indicator)], breaksValues[0]]
-    ].concat(_.flatten(_.zip(breaksValues, colors)));
+    ].concat(breaksAndColorsWithoutFirstBreak);
 
   setLegend(colors, breaksValues);
 
@@ -391,11 +395,17 @@ function setCirclePaintStyle(layerName) {
     ]
   ]);
 
+  var breaksAndColors = _.flatten(_.zip(breaksValues, colors)),
+    breaksAndColorsWithoutFirstBreak = breaksAndColors.splice(
+      1,
+      breaksAndColors.length
+    );
+
   map.setPaintProperty(
     layerName,
     "circle-color",
-    ["interpolate", ["linear"], ["get", getProperty(indicator)]].concat(
-      _.flatten(_.zip(breaksValues, colors))
+    ["step", ["get", getProperty(indicator)]].concat(
+      breaksAndColorsWithoutFirstBreak
     )
   );
 }
