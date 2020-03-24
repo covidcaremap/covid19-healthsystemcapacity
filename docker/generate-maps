@@ -18,6 +18,9 @@ function usage() {
     echo -n \
         "Usage: $(basename "$0")
 Generates the static site maps at covidcrisismap.org/maps
+
+Options:
+--hscap Only build the US Healthcare System Capacity map
 "
 }
 
@@ -26,6 +29,7 @@ HGHI_VENTS_CMD=$(cat <<-END
       cd viz/hghi-vents && \
       npx npm-force-resolutions && \
       npm install && npm run build && \
+      rm -r ../../maps/hghi-vents && \
       cp -r build ../../maps/hghi-vents
 END
 )
@@ -39,16 +43,35 @@ HSCAP_CMD=$(cat <<-END
 END
 )
 
+POSITIONAL=()
+while [[ $# -gt 0 ]]
+do
+    key="$1"
+    case $key in
+        --help)
+        usage
+        exit 0
+        shift
+        ;;
+        --hscap)
+        HSCAP_ONLY=1
+        shift # past argument
+        ;;
+    esac
+done
 
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
-   ECHO "Building hghi-vents site..."
-    docker run --rm -it \
-        -v "$PROJECT_ROOT":/opt/src \
-        --workdir /opt/src \
-        --entrypoint /bin/bash \
-        covid19:latest -c "$HGHI_VENTS_CMD"
+    if [ -z "${HSCAP_ONLY}" ]
+    then
+        ECHO "Building hghi-vents site..."
+        docker run --rm -it \
+               -v "$PROJECT_ROOT":/opt/src \
+               --workdir /opt/src \
+               --entrypoint /bin/bash \
+               covid19:latest -c "$HGHI_VENTS_CMD"
+    fi
 
-   ECHO "Building us-healthcare-system-capacity site..."
+    ECHO "Building us-healthcare-system-capacity site..."
     docker run --rm -it \
         -v "$PROJECT_ROOT":/opt/src \
         --workdir /opt/src \

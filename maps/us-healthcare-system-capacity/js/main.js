@@ -249,7 +249,7 @@ function updatePopup(event) {
     .map(function(theIndicator, i) {
       var perCapita = usePerCapita(i)
         ? " " + numbers[number].labelAbbreviated
-          : "";
+        : "";
       return `<tr><th>${
         theIndicator.label
       } ${perCapita}</th><td>${formatNumber(feature.properties[getProperty(i)], i)}</td></tr>`;
@@ -312,18 +312,16 @@ function getBreaks() {
 
 function setFillPaintStyle(layerName) {
   var colorsMinMax = indicators[indicator].colors,
-      breaksValues = getBreaks(),
-      palette = interpolate(colorsMinMax),
-      colors = _.map([...Array(breaksValues.length).keys()], function(i) {
-        return palette(i / breaksValues.length);
-      }),
-      style = [
-        "interpolate",
-        ["linear"],
-        ["number", ["get", getProperty(indicator)], breaksValues[0]]
-      ].concat(
-        _.flatten(_.zip(breaksValues, colors))
-      );
+    breaksValues = getBreaks(),
+    palette = interpolate(colorsMinMax),
+    colors = _.map([...Array(breaksValues.length).keys()], function(i) {
+      return palette(i / breaksValues.length);
+    }),
+    style = [
+      "interpolate",
+      ["linear"],
+      ["number", ["get", getProperty(indicator)], breaksValues[0]]
+    ].concat(_.flatten(_.zip(breaksValues, colors)));
 
   setLegend(colors, breaksValues);
 
@@ -342,29 +340,29 @@ function setLegend(colors, breaksValues) {
   document.getElementById(
     "colors"
   ).style.backgroundImage = `linear-gradient(to right, ${colors[0]}, ${
-    colors[1]
+    colors[colors.length - 1]
   })`;
 }
 
 function setCirclePaintStyle(layerName) {
   var colorsMinMax = indicators[indicator].colors,
-      radii = indicators[indicator].radii,
-      breaksValues = getBreaks(),
-      palette = interpolate(colorsMinMax),
-      colors = _.map([...Array(breaksValues.length).keys()], function(i) {
-        return palette(i / breaksValues.length);
-      }),
-      radiiZ1 = _.map([...Array(breaksValues.length).keys()], function(i) {
-        return ((i / breaksValues.length) * 19) + 1;
-      }),
-      radiiZ2 = _.map([...Array(breaksValues.length).keys()], function(i) {
-        return ((i / breaksValues.length) * 5) + 5;
-      });
+    radii = indicators[indicator].radii,
+    breaksValues = getBreaks(),
+    palette = interpolate(colorsMinMax),
+    colors = _.map([...Array(breaksValues.length).keys()], function(i) {
+      return palette(i / breaksValues.length);
+    }),
+    radiiZ1 = _.map([...Array(breaksValues.length).keys()], function(i) {
+      return (i / breaksValues.length) * 19 + 1;
+    }),
+    radiiZ2 = _.map([...Array(breaksValues.length).keys()], function(i) {
+      return (i / breaksValues.length) * 5 + 5;
+    });
 
   map.setLayoutProperty(layerName, "visibility", "visible");
   setLegend(colors, breaksValues);
 
-    // ].concat(_.flatten(_.zip(breaksValues, radiiZ1))),
+  // ].concat(_.flatten(_.zip(breaksValues, radiiZ1))),
   // ].concat(_.flatten(_.zip(breaksValues, radiiZ2)))
 
   map.setPaintProperty(layerName, "circle-radius", [
@@ -379,7 +377,7 @@ function setCirclePaintStyle(layerName) {
       breaksValues[0],
       radii[0][0],
       breaksValues[breaksValues.length - 1],
-      radii[0][1],
+      radii[0][1]
     ],
     10,
     [
@@ -389,15 +387,17 @@ function setCirclePaintStyle(layerName) {
       breaksValues[0],
       radii[1][0],
       breaksValues[breaksValues.length - 1],
-      radii[1][1],
+      radii[1][1]
     ]
   ]);
 
-  map.setPaintProperty(layerName, "circle-color", [
-    "interpolate",
-    ["linear"],
-    ["get", getProperty(indicator)]
-  ].concat(_.flatten(_.zip(breaksValues, colors))));
+  map.setPaintProperty(
+    layerName,
+    "circle-color",
+    ["interpolate", ["linear"], ["get", getProperty(indicator)]].concat(
+      _.flatten(_.zip(breaksValues, colors))
+    )
+  );
 }
 
 var facilities = undefined;
