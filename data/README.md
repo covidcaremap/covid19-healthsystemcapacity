@@ -197,6 +197,14 @@ From spreadsheet constructed by Dave Luo: https://docs.google.com/spreadsheets/d
 
 - **ventilators_by_state.csv**: Ventilators by state. From spreadsheet constructed by Dave Luo: https://docs.google.com/spreadsheets/d/1IDeFJJ1Kq5fXAp5vR_Fqp1jtf_4qjqqfeha5BsKUGe8/edit#gid=891030621
 
+#### CovidCareMap.org US Healthcare System Capacity - Manual Override
+
+This is a file that allows CovidCareMap.org members to manually override facility information. It has the same layout as the CovidCareMap.org US Healthcare Sysmtem Capacity facility data, with two new columns - `Manual Override Reason` and `Manual Override New Data Source`. These columns describe the reason for manuall overriding, and the source where the new data is coming from, respectively.
+
+##### FILES
+
+- **covidcaremap-ushcsc-facility-manual-override.csv**: The CSV container rows that are facility-level data to be used in the CCM-USHCSC facility data generation.
+
 
 #### Kaiser Family Foundation data
 
