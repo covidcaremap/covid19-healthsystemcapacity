@@ -34,7 +34,7 @@ function removeSource(map, layer) {
 }
 
 function setType(newType) {
-  var el = this.event.toElement;
+  var el = this.event.target;
   el.parentNode.querySelectorAll("#aggregation button").forEach(function(item) {
     item.classList.remove("active");
   });
@@ -44,7 +44,7 @@ function setType(newType) {
 }
 
 function setScenario(newScenario) {
-  var el = this.event.toElement;
+  var el = this.event.target;
   el.parentNode.querySelectorAll("#scenario button").forEach(function(item) {
     item.classList.remove("active");
   });
@@ -84,10 +84,11 @@ function onMapChange() {
   resetFillPaintStyle("hrr-fill");
   resetLinePaintStyle("hrr-line");
   resetCirclePaintStyle("facility-circle");
-  if (usePerCapita(indicator)) {
+  if (allowTypeChange(indicator)) {
     document.getElementById("number").classList.remove("disabled");
   } else {
-    document.getElementById("number").classList.add("disabled");
+    var e = document.getElementById("number");
+    e.classList.add("disabled");
   }
   if (type === 0) {
     setFillPaintStyle("state-fill");
@@ -116,28 +117,28 @@ var types = [
     id: "state",
     label: "State",
     nameProperty: "State Name",
-    minMaxUrl: "data/config/ccm_state_min_max_values.json",
+    breaksUrl: "data/config/ccm_state_breaks.json",
     includeState: false
   },
   {
     id: "hrr",
     label: "HRR",
     nameProperty: "HRRCITY",
-    minMaxUrl: "data/config/ccm_hrr_min_max_values.json",
+    breaksUrl: "data/config/ccm_hrr_breaks.json",
     includeState: false
   },
   {
     id: "county",
     label: "County",
     nameProperty: "County Name",
-    minMaxUrl: "data/config/ccm_county_min_max_values.json",
+    breaksUrl: "data/config/ccm_county_breaks.json",
     includeState: true
   },
   {
     id: "facility",
     label: "Facility",
     nameProperty: "Name",
-    minMaxUrl: "data/config/ccm_facility_min_max_values.json",
+    breaksUrl: "data/config/ccm_facility_breaks.json",
     includeState: false
   }
 ];
@@ -166,31 +167,36 @@ var indicators = [
     propertyInData: "Staffed All Beds",
     label: "Staffed All Beds",
     colors: ["#e0ecf4", "#8856a7"],
-    displayAsPercent: false
+    displayAsPercent: false,
+    radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "Staffed ICU Beds",
     label: "Staffed ICU Beds",
     colors: ["#ece7f2", "#2b8cbe"],
-    displayAsPercent: false
+    displayAsPercent: false,
+    radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "Licensed All Beds",
     label: "Licensed All Beds",
     colors: ["#e5f5f9", "#2ca25f"],
-    displayAsPercent: false
+    displayAsPercent: false,
+    radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "All Bed Occupancy Rate",
     label: "All Bed Occupancy Rate",
     colors: ["#D6EDEA", "#345672"],
-    displayAsPercent: true
+    displayAsPercent: true,
+    radii: [[1, 8], [5, 40]]
   },
   {
     propertyInData: "ICU Bed Occupancy Rate",
     label: "ICU Bed Occupancy Rate",
     colors: ["#EDCDD3", "#632864"],
-    displayAsPercent: true
+    displayAsPercent: true,
+    radii: [[1, 8], [5, 40]]
   }
 ];
 
@@ -243,7 +249,7 @@ function updatePopup(event) {
     .map(function(theIndicator, i) {
       var perCapita = usePerCapita(i)
         ? " " + numbers[number].labelAbbreviated
-        : "";
+          : "";
       return `<tr><th>${
         theIndicator.label
       } ${perCapita}</th><td>${formatNumber(feature.properties[getProperty(i)], i)}</td></tr>`;
@@ -282,7 +288,14 @@ function resetFillPaintStyle(layerName) {
 }
 
 function usePerCapita(theIndicator) {
-  return number !== 0 && theIndicator !== 3 && theIndicator !== 4 && type !== 3;
+  // number == 0 is showing total values
+  // Indicators 3 and 4 are capacity
+  // type == 3 is facility-level data
+  return number != 0 && !(theIndicator == 3 || theIndicator == 4) && type !== 3;
+}
+
+function allowTypeChange(theIndicator) {
+  return !(theIndicator == 3 || theIndicator == 4) && type !== 3;
 }
 
 function getProperty(theIndicator) {
@@ -293,33 +306,37 @@ function getProperty(theIndicator) {
   return indicatorProperty;
 }
 
-function getMinMax() {
-  return minMax[type][getProperty(indicator)];
+function getBreaks() {
+  return breaks[type][getProperty(indicator)];
 }
 
 function setFillPaintStyle(layerName) {
-  var colors = indicators[indicator].colors;
-  var minMaxValues = getMinMax();
-  setLegend(colors, minMaxValues);
+  var colorsMinMax = indicators[indicator].colors,
+      breaksValues = getBreaks(),
+      palette = interpolate(colorsMinMax),
+      colors = _.map([...Array(breaksValues.length).keys()], function(i) {
+        return palette(i / breaksValues.length);
+      }),
+      style = [
+        "interpolate",
+        ["linear"],
+        ["number", ["get", getProperty(indicator)], breaksValues[0]]
+      ].concat(
+        _.flatten(_.zip(breaksValues, colors))
+      );
 
-  map.setPaintProperty(layerName, "fill-color", [
-    "interpolate",
-    ["linear"],
-    ["number", ["get", getProperty(indicator)], minMaxValues[0]],
-    minMaxValues[0],
-    colors[0],
-    minMaxValues[1],
-    colors[1]
-  ]);
+  setLegend(colors, breaksValues);
+
+  map.setPaintProperty(layerName, "fill-color", style);
 }
 
-function setLegend(colors, minMaxValues) {
+function setLegend(colors, breaksValues) {
   document.getElementById("legend-min").innerHTML = formatNumber(
-    minMaxValues[0],
+    breaksValues[0],
     indicator
   );
   document.getElementById("legend-max").innerHTML = formatNumber(
-    minMaxValues[1],
+    breaksValues[breaksValues.length - 1],
     indicator
   );
   document.getElementById(
@@ -330,10 +347,25 @@ function setLegend(colors, minMaxValues) {
 }
 
 function setCirclePaintStyle(layerName) {
-  var colors = indicators[indicator].colors;
-  var minMaxValues = getMinMax();
+  var colorsMinMax = indicators[indicator].colors,
+      radii = indicators[indicator].radii,
+      breaksValues = getBreaks(),
+      palette = interpolate(colorsMinMax),
+      colors = _.map([...Array(breaksValues.length).keys()], function(i) {
+        return palette(i / breaksValues.length);
+      }),
+      radiiZ1 = _.map([...Array(breaksValues.length).keys()], function(i) {
+        return ((i / breaksValues.length) * 19) + 1;
+      }),
+      radiiZ2 = _.map([...Array(breaksValues.length).keys()], function(i) {
+        return ((i / breaksValues.length) * 5) + 5;
+      });
+
   map.setLayoutProperty(layerName, "visibility", "visible");
-  setLegend(colors, minMaxValues);
+  setLegend(colors, breaksValues);
+
+    // ].concat(_.flatten(_.zip(breaksValues, radiiZ1))),
+  // ].concat(_.flatten(_.zip(breaksValues, radiiZ2)))
 
   map.setPaintProperty(layerName, "circle-radius", [
     "interpolate",
@@ -344,46 +376,42 @@ function setCirclePaintStyle(layerName) {
       "interpolate",
       ["linear"],
       ["get", getProperty(indicator)],
-      minMaxValues[0],
-      1,
-      minMaxValues[1],
-      20
+      breaksValues[0],
+      radii[0][0],
+      breaksValues[breaksValues.length - 1],
+      radii[0][1],
     ],
     10,
     [
       "interpolate",
       ["linear"],
       ["get", getProperty(indicator)],
-      minMaxValues[0],
-      5,
-      minMaxValues[1],
-      50
+      breaksValues[0],
+      radii[1][0],
+      breaksValues[breaksValues.length - 1],
+      radii[1][1],
     ]
   ]);
 
   map.setPaintProperty(layerName, "circle-color", [
     "interpolate",
     ["linear"],
-    ["get", getProperty(indicator)],
-    minMaxValues[0],
-    colors[0],
-    minMaxValues[1],
-    colors[1]
-  ]);
+    ["get", getProperty(indicator)]
+  ].concat(_.flatten(_.zip(breaksValues, colors))));
 }
 
 var facilities = undefined;
-var minMax = undefined;
+var breaks = undefined;
 
 map.on("load", function() {
   Promise.all(
     types.map(type =>
-      fetch(type.minMaxUrl).then(function(response) {
+      fetch(type.breaksUrl).then(function(response) {
         return response.json();
       })
     )
   ).then(data => {
-    minMax = [data[0], data[1], data[2], data[3]];
+    breaks = [data[0], data[1], data[2], data[3]];
 
     map.addSource("boundaries", {
       type: "vector",
