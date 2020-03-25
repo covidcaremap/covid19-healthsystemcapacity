@@ -166,35 +166,35 @@ var indicators = [
   {
     propertyInData: "Staffed All Beds",
     label: "Staffed All Beds",
-    colors: ["#e0ecf4", "#8856a7"],
+    colors: ["#fff7fb", "#9db5ce", "#4d7596", "#023858"],
     displayAsPercent: false,
     radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "Staffed ICU Beds",
     label: "Staffed ICU Beds",
-    colors: ["#ece7f2", "#2b8cbe"],
+    colors: ["#f7fcfd", "#b0aacb", "#7a5a8d", "#4d004b"],
     displayAsPercent: false,
     radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "Licensed All Beds",
     label: "Licensed All Beds",
-    colors: ["#e5f5f9", "#2ca25f"],
+    colors: ["#f7fcfd", "#8cc1aa", "#40825e", "#00441b"],
     displayAsPercent: false,
     radii: [[1, 20], [5, 50]]
   },
   {
     propertyInData: "All Bed Occupancy Rate",
     label: "All Bed Occupancy Rate",
-    colors: ["#D6EDEA", "#345672"],
+    colors: ["#f3e7e9", "#d49ebb", "#a55c90", "#6c2167"],
     displayAsPercent: true,
     radii: [[1, 8], [5, 40]]
   },
   {
     propertyInData: "ICU Bed Occupancy Rate",
     label: "ICU Bed Occupancy Rate",
-    colors: ["#EDCDD3", "#632864"],
+    colors: ["#e9eeed", "#91bec5", "#56899d", "#2a5675"],
     displayAsPercent: true,
     radii: [[1, 8], [5, 40]]
   }
@@ -307,21 +307,38 @@ function getProperty(theIndicator) {
 }
 
 function getBreaks() {
-  return breaks[type][getProperty(indicator)];
+  var breakpoints = breaks[type][getProperty(indicator)];
+  // TODO: Find a better way to handle this
+  // Mapbox's step expression doesn't like it when one of the breakpoints is equal to the smallest
+  // property value; this comes up some places in our map where the first breakpoint is 0, where it
+  // won't style any of the features with a value of 0. I am temporarily getting around this by
+  // adding a very small value to the break point when this happens.
+  var modifiedBreaks = breakpoints.map(function(breakpoint, i) {
+    if (i > 0 && breakpoint === breakpoints[i - 1]) {
+      return breakpoint + 0.0000000000001;
+    } else {
+      return breakpoint;
+    }
+  });
+  return modifiedBreaks;
 }
 
 function setFillPaintStyle(layerName) {
-  var colorsMinMax = indicators[indicator].colors,
-    breaksValues = getBreaks(),
-    palette = interpolate(colorsMinMax),
-    colors = _.map([...Array(breaksValues.length).keys()], function(i) {
-      return palette(i / breaksValues.length);
-    }),
-    style = [
-      "interpolate",
-      ["linear"],
-      ["number", ["get", getProperty(indicator)], breaksValues[0]]
-    ].concat(_.flatten(_.zip(breaksValues, colors)));
+  var breaksValues = getBreaks();
+  var colors = indicators[indicator].colors;
+  var breaks = _.flatten(_.zip(breaksValues, colors)).splice(
+    1,
+    colors.length + breaksValues.length - 2
+  );
+
+  style = [
+    "case",
+    // Check to make sure property is not undefined
+    ["all", ["has", getProperty(indicator)]],
+    ["step", ["number", ["get", getProperty(indicator)]]].concat(breaks),
+    // Fallback color for undefined indicator
+    "#ccc"
+  ];
 
   setLegend(colors, breaksValues);
 
@@ -329,29 +346,18 @@ function setFillPaintStyle(layerName) {
 }
 
 function setLegend(colors, breaksValues) {
-  document.getElementById("legend-min").innerHTML = formatNumber(
-    breaksValues[0],
-    indicator
-  );
-  document.getElementById("legend-max").innerHTML = formatNumber(
-    breaksValues[breaksValues.length - 1],
-    indicator
-  );
-  document.getElementById(
-    "colors"
-  ).style.backgroundImage = `linear-gradient(to right, ${colors[0]}, ${
-    colors[colors.length - 1]
-  })`;
+  var legend = colors
+    .map(function(color, i) {
+      return `<div class="legend-color" style="background-color: ${color}"></div><div class="legend-numbers">${formatNumber(breaksValues[i], indicator)}–${formatNumber(breaksValues[i + 1], indicator)}</div>`;
+    })
+    .join("");
+  document.getElementById("legend").innerHTML = legend;
 }
 
 function setCirclePaintStyle(layerName) {
-  var colorsMinMax = indicators[indicator].colors,
+  var colors = indicators[indicator].colors,
     radii = indicators[indicator].radii,
     breaksValues = getBreaks(),
-    palette = interpolate(colorsMinMax),
-    colors = _.map([...Array(breaksValues.length).keys()], function(i) {
-      return palette(i / breaksValues.length);
-    }),
     radiiZ1 = _.map([...Array(breaksValues.length).keys()], function(i) {
       return (i / breaksValues.length) * 19 + 1;
     }),
@@ -361,9 +367,6 @@ function setCirclePaintStyle(layerName) {
 
   map.setLayoutProperty(layerName, "visibility", "visible");
   setLegend(colors, breaksValues);
-
-  // ].concat(_.flatten(_.zip(breaksValues, radiiZ1))),
-  // ].concat(_.flatten(_.zip(breaksValues, radiiZ2)))
 
   map.setPaintProperty(layerName, "circle-radius", [
     "interpolate",
@@ -391,12 +394,17 @@ function setCirclePaintStyle(layerName) {
     ]
   ]);
 
+  var breaksValues = getBreaks();
+  var colors = indicators[indicator].colors;
+  var breaks = _.flatten(_.zip(breaksValues, colors)).splice(
+    1,
+    colors.length + breaksValues.length - 2
+  );
+
   map.setPaintProperty(
     layerName,
     "circle-color",
-    ["interpolate", ["linear"], ["get", getProperty(indicator)]].concat(
-      _.flatten(_.zip(breaksValues, colors))
-    )
+    ["step", ["number", ["get", getProperty(indicator)]]].concat(breaks)
   );
 }
 
@@ -507,11 +515,6 @@ map.on("load", function() {
       },
       "state-line"
     );
-
-    // map.addSource("facility", {
-    //   type: "geojson",
-    //   data: facilities
-    // });
 
     map.addLayer(
       {

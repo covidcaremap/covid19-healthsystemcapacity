@@ -576,19 +576,42 @@ button.primary,
   color: #666;
 }
 
-.legend {
-  font-size: 14px;
-  padding: 2px 4px;
+.legend-container {
+  display: flex;
   position: absolute;
   bottom: 10px;
-  position: absolute;
-  left: 50%;
-  width: auto;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#legend {
+  font-size: 14px;
+  padding: 2px 4px;
   z-index: 5000;
   background: white;
-  display: flex;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.legend-color {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+
+.legend-numbers {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.legend-numbers:last-child {
+  margin-right: 0;
 }
 
 #colors {
