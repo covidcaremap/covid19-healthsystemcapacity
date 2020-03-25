@@ -34,7 +34,7 @@ This data aggregates information about the healthcare system capacity. It source
 the [Healthcare Cost Report Information System (HCRIS)](#healthcare-cost-report-information-system-hcris-data) and
 an open hospital facilities dataset by [Definitive Healthcare](#definitive-health-dh-data).
 
-##### CovidCareMap Capcity Data Dictionary
+##### CovidCareMap Capacity Data Dictionary
 
 These fields are across all facility and regional datasets:
 

@@ -51,14 +51,14 @@ Published data can be found in the [data/published](https://github.com/covidcare
 
 | File                                                 | Description                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
 
 See the Published Datasets section in [data/README.md](data/README.md#published-datasets) for more information.
 
@@ -141,7 +141,7 @@ Source: [Financial Times, updated Mar 19, 2020](https://www.ft.com/content/a26fb
 
 ### Take-home Message #1
 
-[Social distancing and shelter-at-home policies work](https://twitter.com/ASlavitt/status/1241583932472274946) and [are urgently needed everywhere there's COVID19](https://covidactnow.org/) to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. 
+[Social distancing and shelter-at-home policies work](https://twitter.com/ASlavitt/status/1241583932472274946) and [are urgently needed everywhere there's COVID19](https://covidactnow.org/) to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care.
 
 Know what to do and do your part to protect yourself, your healthcare providers, and your community with these resources:
 
