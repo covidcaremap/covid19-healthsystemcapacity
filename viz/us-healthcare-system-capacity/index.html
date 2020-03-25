@@ -64,7 +64,7 @@
           <hr />
           <div class="map-options menu" id="indicator">
             <button class="active" onclick="setIndicator(0)">
-              <div class="button-icon" style="color: #8856a7">
+              <div class="button-icon" style="color: #023858">
                 <i class="icon-eye"></i>
                 <i class="icon-eye-off"></i>
               </div>
@@ -77,7 +77,7 @@
               </div>
             </button>
             <button onclick="setIndicator(1)">
-              <div class="button-icon" style="color: #2b8cbe">
+              <div class="button-icon" style="color: #4d004b">
                 <i class="icon-eye"></i>
                 <i class="icon-eye-off"></i>
               </div>
@@ -90,7 +90,7 @@
               </div>
             </button>
             <button onclick="setIndicator(2)">
-              <div class="button-icon" style="color: #2ca25f">
+              <div class="button-icon" style="color: #00441b">
                 <i class="icon-eye"></i>
                 <i class="icon-eye-off"></i>
               </div>
@@ -103,7 +103,7 @@
               </div>
             </button>
             <button onclick="setIndicator(3)">
-              <div class="button-icon" style="color: #345672">
+              <div class="button-icon" style="color: #6c2167">
                 <i class="icon-eye"></i>
                 <i class="icon-eye-off"></i>
               </div>
@@ -116,7 +116,7 @@
               </div>
             </button>
             <button onclick="setIndicator(4)">
-              <div class="button-icon" style="color: #632864">
+              <div class="button-icon" style="color: #2a5675">
                 <i class="icon-eye"></i>
                 <i class="icon-eye-off"></i>
               </div>
@@ -153,10 +153,8 @@
         </div>
         <div class="map-container">
           <div class="map" id="map">
-            <div class="legend">
-              <div id="legend-min"></div>
-              <div id="colors"></div>
-              <div id="legend-max"></div>
+            <div class="legend-container">
+              <div id="legend"></div>
             </div>
           </div>
         </div>
@@ -164,9 +162,10 @@
     </div>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js"></script>
     <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
     <script src="js/color.js"></script>
     <script src="js/main.js"></script>
