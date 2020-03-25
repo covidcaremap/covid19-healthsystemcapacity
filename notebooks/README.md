@@ -58,6 +58,16 @@ estimation of the field values (see the [Data Dictionary](../data/README.md#covi
 There is a set of columns with a "- SOURCE" suffix that describe the dataset and column of where that
 value was generated from, if available.
 
+##### Data Override
+
+You can add overridden facility data by doing the following:
+- Place the CSV of facility information that has overridden values in [data/external/covidcaremap-ushcsc-facility-manual-override.csv](../data/README.md#covidcaremaporg-us-healthcare-system-capacity---manual-override)
+- This data needs to be in the format as the published CovidCareMap facility data.
+  - All fields must be the same as the data except those which are overridden.
+  - Include two extra columns at the end: `Manual Override Reason` and `Manual Override New Data Source`
+  - If you generate a new ID for CCM_ID, make sure it is unique to the dataset.
+- Now running this notebook will replace or add the facility information.
+
 #### Merge Region and Census Data
 
 This step takes census data per county and merges it with county, state, and HRR regions. The HRR population calculation performs a spatial join betwee the HRRs and counties, and adds the county populations weighted by the overlapping area between the county and the HRR. The state data includes Puerto Rico census data taken from a different source than the county data. All population data are using the US Census 2018 estimates.
