@@ -7,4 +7,3 @@ us==1.0.0
 requests==2.23.0
 FuzzyWuzzy==0.18.0
 python-Levenshtein==0.12.0
-requests==2.23.0
