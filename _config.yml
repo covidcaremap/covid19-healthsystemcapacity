@@ -1,2 +1,26 @@
-theme: jekyll-theme-cayman
 title: COVID Care Map
+
+timezone: America/New York
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+exclude:
+  - .github
+  - .nvmrc
+  - .ruby_version
+  - covidcaremap
+  - data/README.md
+  - docker
+  - figs
+  - notebooks
+  - scripts
+  - viz/README.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - netlify.toml
+  - README.md
+  - runtime.txt
