@@ -40,15 +40,7 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    mdl (0.8.0)
-      kramdown (~> 2.0)
-      kramdown-parser-gfm (~> 1.0)
-      mixlib-cli (~> 2.1, >= 2.1.1)
-      mixlib-config (>= 2.2.1, < 4)
     mercenary (0.3.6)
-    mixlib-cli (2.1.5)
-    mixlib-config (3.0.6)
-      tomlrb
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.3)
@@ -61,7 +53,6 @@ GEM
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    tomlrb (1.3.0)
     unicode-display_width (1.7.0)
 
 PLATFORMS
@@ -69,7 +60,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.0)
-  mdl (~> 0.8.0)
 
 BUNDLED WITH
    2.1.4
