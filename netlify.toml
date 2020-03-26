@@ -1,0 +1,31 @@
+[Settings]
+  ID = "covidcaremap"
+
+[build]
+  base    = "."
+  publish = "_site"
+  command = "./scripts/cibuild"
+
+[context.deploy-preview]
+  environment = { JEKYLL_ENV = "staging" }
+
+[context.production]
+  environment = { JEKYLL_ENV = "production" }
+
+# [[redirects]]
+#   from = "https://covidcaremap.netlify.com/*"
+#   to = "https://www.covidcaremap.org/:splat"
+#   status = 301
+#   force = true
+
+[[headers]]
+  for = "/*"
+[headers.values]
+#   Content-Security-Policy = """
+#     default-src 'self';
+#     style-src 'self';
+#     """
+  X-Frame-Options = "DENY"
+  X-XSS-Protection = "1; mode=block"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "no-referrer"
