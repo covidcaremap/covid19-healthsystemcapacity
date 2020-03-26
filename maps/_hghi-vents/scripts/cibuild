@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+DIR="$(dirname "$0")"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Build the site!
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        npm install
+        npm run build
+
+        rsync -avz \
+            "${DIR}/../build/" "${DIR}/../../../_site/maps/hghi-vents/"
+    fi
+fi
