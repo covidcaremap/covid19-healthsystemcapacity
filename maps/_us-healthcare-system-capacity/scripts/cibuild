@@ -39,7 +39,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 
         # Install tippecanoe
         wget -qO- https://github.com/mapbox/tippecanoe/archive/1.32.5.tar.gz |
-            tar xvz - -C build/
+            tar xvz -C build/
         make -C build/tippecanoe-1.32.5
 
         # Generate intermediate data set
@@ -64,7 +64,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 
         # Install mb-util
         wget -qO- https://github.com/mapbox/mbutil/archive/v0.3.0.tar.gz |
-            tar xvz - -C build/
+            tar xvz -C build/
 
         # Generate vector tiles
         rm -rf data/tiles
