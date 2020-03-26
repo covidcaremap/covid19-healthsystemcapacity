@@ -1,0 +1,52 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+DIR="$(dirname "$0")"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Build the site!
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        mkdir -p build
+        tippecanoe -f -pk --no-tile-compression \
+            -o build/state.mbtiles --maximum-zoom=8 --minimum-zoom=2 \
+            -l state "${DIR}/../../../data/published/us_healthcare_capacity-state-CovidCareMap.geojson"
+        tippecanoe -f -pk --no-tile-compression \
+            -o build/county.mbtiles --maximum-zoom=8 --minimum-zoom=2 \
+            -l county "${DIR}/../../../data/published/us_healthcare_capacity-county-CovidCareMap.geojson"
+        tippecanoe -f -pk --no-tile-compression \
+            -o build/hrr.mbtiles --maximum-zoom=8 --minimum-zoom=2 \
+            -l hrr "${DIR}/../../../data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson"
+        tippecanoe -f -pk -pf --no-tile-compression \
+            -o build/facility.mbtiles --maximum-zoom=8 --minimum-zoom=2 -B 0 \
+            -l facility "${DIR}/../../../data/published/us_healthcare_capacity-facility-CovidCareMap.geojson"
+
+        tile-join -f -pk --no-tile-compression -o build/combined.mbtiles \
+            build/county.mbtiles \
+            build/state.mbtiles \
+            build/hrr.mbtiles \
+            build/facility.mbtiles
+
+        # mb-util --image_format=pbf build/combined.mbtiles tiles
+
+        rsync -avz \
+            --exclude data \
+            --exclude scripts \
+            --exclude .gitignore \
+            --exclude .prettierrc \
+            --exclude README.md \
+            "${DIR}/../" "${DIR}/../../../_site/maps/us-healthcare-system-capacity"
+    fi
+fi
