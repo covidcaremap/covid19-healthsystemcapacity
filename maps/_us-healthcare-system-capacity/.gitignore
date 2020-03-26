@@ -2,4 +2,4 @@
 .DS_Store
 
 # Project-specific data
-process/
+build/
