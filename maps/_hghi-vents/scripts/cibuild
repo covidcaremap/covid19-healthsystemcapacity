@@ -22,6 +22,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         npm install
         npm run build
 
+        # Synchronize everything to the Jekyll root
         rsync -avz \
             "${DIR}/../build/" "${DIR}/../../../_site/maps/hghi-vents/"
     fi
