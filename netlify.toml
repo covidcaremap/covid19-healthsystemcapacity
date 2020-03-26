@@ -5,6 +5,7 @@
   base    = "."
   publish = "_site"
   command = "./scripts/cibuild"
+  environment = { COVID19_DEBUG = "1" }
 
 [context.deploy-preview]
   environment = { JEKYLL_ENV = "staging" }
