@@ -21,11 +21,21 @@ Launch Jupyter notebooks.
 "
 }
 
+# Allow a local version of CHIME to be used.
+if [ -z "$CHIME_REPO" ]
+then
+    CHIME_SRC_FLAGS=""
+else
+    echo "Using CHIME at ${CHIME_REPO}"
+    CHIME_SRC_FLAGS="-v ${CHIME_REPO}/src/penn_chime:/opt/lib/penn_chime"
+fi
+
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
     docker run --rm -it \
         -v "$PROJECT_ROOT":/opt/src \
         -v "$DATA_DIR":/opt/jupyter/data \
         -v "$NOTEBOOK_DIR":/opt/jupyter/notebooks \
+        ${CHIME_SRC_FLAGS} \
         -p 8888:8888 \
         covid19:latest
 fi
