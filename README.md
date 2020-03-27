@@ -405,26 +405,14 @@ All required libraries to run notebooks should be placed in `nbs/requirements.tx
 To build the maps, run
 
 ```
-> ./docker/build
-> ./docker/generate-maps
+> ./scripts/cibuild
 ```
 
-Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/maps` sites.
-Make sure all data is placed correctly in the viz folders (i.e. run the notebook to [Process visualization data](notebooks#process-visualization-data).
+This will go through each map subdirectory and run its corresponding `cibuild` script. You can preview the visualizations locally by running `python -m http.server 9000` in the `_site` directory.
 
 ### Deployment
 
-Deployment of the site happens through GitHub pages. With write access to the repo, you can perform the following steps:
-
-- Run through all the processing notebooks to produce fresh data, including the notebook to [Process visualization data](notebooks#process-visualization-data).
-- Run `docker/generate-maps` to generate the maps.
-- Commit the files, including the files in `maps/` which represent the static assets of the site.
-
-Be sure to curate carefully the things you want to commit from the `maps/` folder. There could be some files produced or overriden that are build artifacts and shouldn't necessarily be committed. For instance, if youu are only
-deploying US Healthcare System Capacity visualization changes, only commit the relevant changes in `maps/us-healthcare-system-capacity`.
-
-You can do a final pass debug of the visualization by running `python -m http.server 9000` in the repositor root and navigating to the visualization you are testing, e.g. http://localhost:9000/maps/us-healthcare-system-capacity.
-
+Deployment of the site happens automatically via the Netlify build process. In addition, each pull request generates its own isolated build of the site as a deployment preview. The last build status of the pull request will contain a link when it is ready.
 
 ## Glossary of Terms
 
