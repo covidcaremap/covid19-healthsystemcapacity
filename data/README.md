@@ -1,5 +1,9 @@
 # Data Catalog
 
+- [Published Datasets](#published-datasets)
+- [External Datasets](#external-datasets)
+- [Processed Datasets](#processed-datasets)
+
 A catalog of all data used in the project.
 
     └── data
@@ -118,10 +122,13 @@ This information directly from the [ESRI page for the Definitive Healthcare data
 - [us_healthcare_capacity-facility-CovidCareMap.csv](published/us_healthcare_capacity-facility-CovidCareMap.csv): Data in CSV format.
 
 
-
-
-
 ## External Datasets
+
+External datasets used in the project will be documented here. This includes data committed to
+the repository in the `data/external` folder, data downloaded by the
+[Download_Data.ipynb](../notebooks/processing/Download_Data.ipynb) notebook, and data
+dynamically fetched from updating endpoints, normally exposed through the
+`covidcaremap` python package.
 
 ### Downloading Data
 
@@ -272,13 +279,19 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 ### Covid19 confirmed cases
 
 USAFacts county-level COVID-19 data, see https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/.
-The confirmed cases and death are recorded from Jan 22nd to March 25th at the daily bases.
+This data is fetched dynamically via methods in the `covidcaremap.cases` python package.
 
 ##### FILES
 
-- **covid_confirmed_usafacts.csv** County level data. [Data description](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). The latest updated confirmed cases can be downloaded as [csv](https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv). 
+- **covid_confirmed_usafacts.csv** County level data. [Data description](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). The latest updated confirmed cases can be downloaded as [csv](https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv).
 
 ## Processed Datasets
+
+Processed Datasets are ones which CovidCareMap.org processing and analytics produce and commit to the repository,
+but are not as well documented or verified as the published datasets as they are generall intermediary
+output.
+
+**Note:** The below list is not complete.
 
 ### HCRIS data
 
