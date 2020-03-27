@@ -269,6 +269,15 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 
 **Note** County level data is not committed to repository. See [Downloading Data](#downloading-data)
 
+### Covid19 confirmed cases
+
+USAFacts county-level COVID-19 data, see https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/.
+The confirmed cases and death are recorded from Jan 22nd to March 25th at the daily bases.
+
+##### FILES
+
+- **covid_confirmed_usafacts.csv** County level data. [Data description](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). The latest updated confirmed cases can be downloaded as [csv](https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv). 
+
 ## Processed Datasets
 
 ### HCRIS data
