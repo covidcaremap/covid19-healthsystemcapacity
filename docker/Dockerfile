@@ -24,9 +24,24 @@ RUN cd /opt && \
 COPY notebooks/requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
+# UPenn's CHIME.
+# TODO: Update to master if our changes end up being merged.
+#       Then when this is published to pypi, move install to requirements.txt
+
+## Streamlit needs a specific older version of datetimeutils. Why.
+RUN pip install python-dateutil==2.8.0
+
+## Install chime
+RUN mkdir -p /opt/tmp && \
+    cd /opt/tmp && \
+    git clone --single-branch --depth 1 \
+        --branch rde/feature/regional-sir-model https://github.com/lossyrob/chime.git && \
+    cd chime && \
+    python setup.py install
+
 WORKDIR /opt/src
 
-ENV PYTHONPATH=/opt/src:$PYTHONPATH
+ENV PYTHONPATH=/opt/src:/opt/lib:$PYTHONPATH
 
 ENTRYPOINT [ "jupyter" ]
 CMD [ "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--notebook-dir=/opt/jupyter" ]
