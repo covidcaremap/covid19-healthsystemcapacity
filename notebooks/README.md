@@ -9,7 +9,7 @@
         ├── processing         <- Notebooks for processing COVIDCareMap data.
         └── validation         <- Notebooks for validating COVIDCareMap data.
 
-- [00_gettting_started](#00_getting_started)
+- [00_getting_started](#00_getting_started)
 - [Validation](#Validation)
 - [Data Processing](#data-processing)
 
