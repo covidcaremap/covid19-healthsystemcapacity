@@ -157,3 +157,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Netlify
+.netlify-cache
