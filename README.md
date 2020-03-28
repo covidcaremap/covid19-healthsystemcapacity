@@ -331,6 +331,14 @@ Now open the link that was last output by the above command. The link should loo
 This will open a jupyter notebook file browser
 that shows a `data` and `notebooks` folder.
 
+Now navigate to the `00_getting_started` folder and run through the notebooks!
+
+#### Data Processing
+
+If you'll be working with data processing changes for the CovidCareMap.org us healtchare system capacity
+dataset, you can follow these steps. Note that you do not need to do this in order to get started using
+the notebooks for analytics.
+
 Open the the [processing/00_Download_Data.ipynb](notebooks/processing/00_Download_Data.ipynb) notebook
 to download any external data needed to run the other notebooks.
 
