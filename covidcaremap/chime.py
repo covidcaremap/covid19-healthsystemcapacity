@@ -124,9 +124,19 @@ def get_regional_predictions(
         region_id_column,
         population_column='Population',
         cases_column='Confirmed Cases',
+        num_days=60,
         region_param_override=None
 ):
     """Runs a regional CHIME prediction based on region population and case counts.
+
+    Args:
+        regions_df: The regions to be run over. Requires an ID, population, and cases columns.
+        region_id_column: The column holding the region ID.
+        population_column: The column holding the population count. Default
+        cases_column: The column holding the number of confirmed cases
+        region_param_override: A dictionary with keys of region IDs and values being
+            being a dict of overridding values for the CHIME parameters. This allows
+            regional parameters to be supplied by the user per region.
 
     Returns:
         A dataframe with the region_id, day, and projection numbers.
@@ -135,12 +145,18 @@ def get_regional_predictions(
         if row[cases_column] <= 0:
             return None
 
-        p = get_parameters_for_region(row[population_column], row[cases_column])
+        p = get_parameters_for_region(row[population_column], row[cases_column], num_days=num_days)
         m = RegionalSirModel(p)
         merged = m.dispositions_df.join(m.admits_df.set_index('day'), lsuffix='_total', rsuffix='_admitted')
         merged = merged.join(m.census_df.set_index('day').add_suffix('_census'))
         merged = merged.dropna().round()
         merged[region_id_column] = row[region_id_column]
+
+        # Reorder columns
+        cols = list(merged.columns.values)
+        cols = cols[-1:] + cols[:-1]
+        merged = merged[cols]
+
         return merged.rename(columns={'index': 'day'})
 
     predictions_by_county = pd.concat(
@@ -150,7 +166,7 @@ def get_regional_predictions(
 
     return predictions_by_county
 
-def get_county_predictions(region_param_override=None):
+def get_county_predictions(num_days=60, region_param_override=None):
     cases_by_county = get_county_case_info()
     return get_regional_predictions(cases_by_county,
                                     region_id_column='County Name')

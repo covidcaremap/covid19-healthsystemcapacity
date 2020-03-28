@@ -1,9 +1,7 @@
-import io
-
 import pandas as pd
-import requests
 
 from covidcaremap.data import external_data_path, processed_data_path
+from covidcaremap.util import fetch_df
 
 import geopandas as gpd
 
@@ -13,24 +11,38 @@ USAFACTS_CASES_URL = ('https://static.usafacts.org/public/data/covid-19/'
 USAFACTS_DEATHS_URL = ('https://static.usafacts.org/public/data/covid-19/'
                        'covid_deaths_usafacts.csv')
 
+NYTIMES_COUNTY_URL = ('https://github.com/nytimes/covid-19-data/raw/master/us-counties.csv')
+NYTIMES_STATE_URL = ('https://github.com/nytimes/covid-19-data/raw/master/us-states.csv')
+
 
 def get_usafacts_cases_by_county():
-    r = requests.get(USAFACTS_CASES_URL)
-    return pd.read_csv(io.BytesIO(r.content))
+    return fetch_df(USAFACTS_CASES_URL)
 
 def get_usafacts_deaths_by_county():
-    r = requests.get(USAFACTS_DEATHS_URL)
-    return pd.read_csv(io.BytesIO(r.content))
+    return fetch_df(USAFACTS_DEATHS_URL)
 
-def get_county_case_info():
+def get_nytimes_cases_by_county():
+    return fetch_df(NYTIMES_COUNTY_URL)
+
+def get_nytimes_cases_by_state():
+    return fetch_df(NYTIMES_STATE_URL)
+
+def get_county_case_info(date=None):
     """Generates confirmed cases and deaths information per county, merged with population data
     in a geodataframe. This pulls from the latest files at
     https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/
+
+    Args:
+        date: Date in MM/DD/YY format (same as USAFacts column names). Use None to get latest.
     """
     def get_latest_case_info(url, column_name):
-        r = requests.get(url)
-        df = pd.read_csv(io.BytesIO(r.content))
-        per_county_counts = df[df.columns[-1]]
+        df = fetch_df(url)
+        col = df.columns[-1]
+        if date is not None:
+            if not date in df.columns:
+                raise Exception('Date {} not in dataset or not in proper format'.format(date))
+            col = date
+        per_county_counts = df[col]
         df['{} Last Updated'.format(column_name)] = df.columns[-1]
         df[column_name] = per_county_counts
         return df[
