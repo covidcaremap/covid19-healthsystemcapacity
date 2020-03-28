@@ -323,7 +323,7 @@ After cloning the repository, build the docker container:
 Start the Jupyter notebook server:
 
 ```
-> docker/notebooks
+> docker/notebook
 ```
 
 Now open the link that was last output by the above command. The link should look something like
