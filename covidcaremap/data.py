@@ -29,7 +29,7 @@ def published_data_path(fname):
     return os.path.join(PUBLISHED_DATA_DIR, fname)
 
 def data_path(fname):
-    return os.path.join(data_dir(), fname)
+    return os.path.join(DATA_DIR, fname)
 
 def read_hcris_gj():
     return json.loads(open(processed_data_path('usa_hospital_beds_hcris2018.geojson')).read())
