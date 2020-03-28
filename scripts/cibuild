@@ -19,7 +19,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
     if [ "${1:-}" = "--help" ]; then
         usage
     else
-        jekyll build
+        # jekyll build
 
         mkdir -p "${DIR}/../_site/maps"
 

@@ -407,10 +407,10 @@ All required libraries to run notebooks should be placed in `nbs/requirements.tx
 To build the maps, run
 
 ```
-> ./scripts/cibuild
+> ./scripts/build-website
 ```
 
-This will go through each map subdirectory and run its corresponding `cibuild` script. You can preview the visualizations locally by running `python -m http.server 9000` in the `_site` directory.
+This will go through each map subdirectory and run its corresponding `cibuild` script inside of a simulated Netlify build environment. You can preview the website locally by running `python -m http.server 9000` in the `_site` directory.
 
 ### Deployment
 
