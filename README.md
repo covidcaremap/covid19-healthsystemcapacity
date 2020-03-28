@@ -351,19 +351,9 @@ well as adding `apt-get install` commands into the [Dockerfile](docker/Dockerfil
 
 ### Repository Organization
 
-    ├── data
-    │   ├── README.md          <- This file.
-    │   ├── external           <- Intermediate data that has been transformed.
-    │   ├── published          <- The final, canonical data sets for COVIDCareMap.
-    │   └── processed          <- Folder containing intermediate processing data.
+    ├── data                   <- Data used in this project.
     │
     ├── notebooks              <- Jupyter notebooks.
-    │   ├── README.md          <- Overview of Jupyter Notebooks and how to run them.
-    │   ├── requirements.txt   <- Python packages required to run notebooks.
-    │   ├── old                <- Old notebooks such as previous versions of processing logic.
-    │   ├── examples           <- Notebooks containing examples for using COVIDCareMap data.
-    │   ├── processing         <- Notebooks for processing COVIDCareMap data.
-    │   └── validation         <- Notebooks for validating COVIDCareMap data.
     │
     ├── docker                 <- Folder containing scripts and files for running Docker.
     │
@@ -372,11 +362,9 @@ well as adding `apt-get install` commands into the [Dockerfile](docker/Dockerfil
     ├── requirements.txt       <- The requirements file for the covidcaremap python module.
     │
     └── covidcaremap           <- Source code for the covidcaremap python package.
-        │
-        ├── constants.py       <- Contains variables and functions related to constant parameters.
-        ├── data.py            <- Methods to download or generate data
-        └── geo.py             <- Methods for reusable geospatial methods.
 
+
+See the [notebooks](notebooks/README.md) and [data](data/README.md) folder for more information.
 
 ### Running the notebooks
 
