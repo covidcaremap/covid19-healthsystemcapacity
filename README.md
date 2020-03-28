@@ -269,13 +269,13 @@ Help us get going. There's no more time to wait.
 
 ## How To Help
 
-- [Data gathering, cleaning, cataloging](https://github.com/daveluo/covid19-healthsystemcapacity/projects/1):
+- [Data gathering, cleaning, cataloging](https://github.com/covidcaremap/covid19-healthsystemcapacity/projects/1):
   - Researching and sourcing new data
   - Ingesting datasets and cleaning up things
   - Building data validation and error correction systems
   - Combining with other datasets like COVID19 case counts by day/county/state like from [covidtracking.com](https://covidtracking.com/)
 
-- [Data analytics](https://github.com/daveluo/covid19-healthsystemcapacity/projects/2):
+- [Data analytics](https://github.com/covidcaremap/covid19-healthsystemcapacity/projects/2):
   - Spatial and temporal analyses at different scales
   - Capacity modeling for beds, staffing, supplies, equipment to provide effective ICU care in crisis levels. Current project work on:
     - [Staffing needs](https://github.com/covidcaremap/covid19-healthsystemcapacity/issues/18)
@@ -323,7 +323,7 @@ After cloning the repository, build the docker container:
 Start the Jupyter notebook server:
 
 ```
-> docker/notebooks
+> docker/notebook
 ```
 
 Now open the link that was last output by the above command. The link should look something like
