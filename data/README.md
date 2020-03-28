@@ -163,13 +163,19 @@ Sources:
 - **HCRIS-hosp10_2018_RPT.CSV**: HCRIS report data for 2018.
 - **HCRIS-hosp10_2018_NMRC.CSV**: Numeric column information for the HCRIS report data.
 
+#### Institute for Health Metric and Evaluation, University of Washington (IHME) Forecasts.
+
+http://www.healthdata.org/research-article/forecasting-covid-19-impact-hospital-bed-days-icu-days-ventilator-days-and-deaths
+
+IHME COVID-19 health service utilization forecasting team. Forecasting COVID-19 impact on hospital bed-days, ICU-days, ventilator days and deaths by US state in the next 4 months. MedRxiv. 26 March 2020.
+
 #### Harvard Global Health Institute (HGHI) Data
 
-This data was collected from the Harvard Global Health Institute (HGHI) study described here: https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/
+This data was collected from the Harvard Global Health Institute (HGHI) study described here: https://globalepidemics.org/2020-03-17-caring-for-covid-19-patients/
 
 ##### FILES
 
-- [HGHI - Hospital Capacity by State.csv](: Exported from https://docs.google.com/spreadsheets/d/1XUVyZF3X_4m72ztFnXZFvDKn5Yys1aKgu2Zmefd7wVo/edit?usp=sharing
+- **HGHI - Hospital Capacity by State.csv**: Exported from https://docs.google.com/spreadsheets/d/1XUVyZF3X_4m72ztFnXZFvDKn5Yys1aKgu2Zmefd7wVo/edit?usp=sharing. This data is the 60% Population estimate.
 - **HGHI - HRR Scorecard - 60% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
 - **HGHI - HRR Scorecard - 40% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
 - **HGHI - HRR Scorecard - 20% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
@@ -281,9 +287,9 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 USAFacts county-level COVID-19 data, see https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/.
 This data is fetched dynamically via methods in the `covidcaremap.cases` python package.
 
-##### FILES
-
-- **covid_confirmed_usafacts.csv** County level data. [Data description](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/). The latest updated confirmed cases can be downloaded as [csv](https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv).
+NY Times provides county-level COVID-19 data, see
+https://github.com/nytimes/covid-19-data. This data is fetched
+dynamically via methods in the `covidcaremap.cases` python package.
 
 ## Processed Datasets
 
