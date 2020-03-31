@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a0474d819934403a2b161b6caf84f3c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0a0474d819934403a2b161b6caf84f3c" ></div>
+        
+</body>
+<script>    
+    
+            var map_0a0474d819934403a2b161b6caf84f3c = L.map(
+                "map_0a0474d819934403a2b161b6caf84f3c",
+                {
+                    center: [43.8267977, -71.5656307],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_274dfae046454f3bb7051043614f4f59 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var feature_group_c5c2917ebc72451bad93046b0174a693 = L.featureGroup(
+                {}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var circle_marker_4a067ebd73b547b2b9c666815aedc802 = L.circleMarker(
+                [43.198324099999965, -71.56263859999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_4a067ebd73b547b2b9c666815aedc802.bindTooltip(
+                `<div>
+                     <b>Name:</b> CONCORD HOSPITAL  INC.<br><b>Addr:</b> 250 PLEASANT STREET<br><b>State:</b> NH<br><b>County:</b> MERRIMACK<br><b>City:</b> CONCORD<br><b>Zip Code:</b> 03301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d0b80449a6504b15a24cc4aca2888ed4 = L.circleMarker(
+                [43.67549320000001, -72.2729588],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_d0b80449a6504b15a24cc4aca2888ed4.bindTooltip(
+                `<div>
+                     <b>Name:</b> MARY HITCHCOCK MEMORIAL HOSP<br><b>Addr:</b> ONE MEDICAL CENTER DRIVE<br><b>State:</b> NH<br><b>County:</b> GRAFTON<br><b>City:</b> LEBANON<br><b>Zip Code:</b> 03756-0001<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a2e9401c9fb409c85d403582a7f580b = L.circleMarker(
+                [43.52855350000002, -71.4631623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_5a2e9401c9fb409c85d403582a7f580b.bindTooltip(
+                `<div>
+                     <b>Name:</b> LAKES REGION GENERAL HOSPITAL<br><b>Addr:</b> 80 HIGHLAND STREET<br><b>State:</b> NH<br><b>County:</b> BELKNAP<br><b>City:</b> LACONIA<br><b>Zip Code:</b> 03246<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19adb8e5f0ef4e5d84813bf2e4e66dac = L.circleMarker(
+                [42.74912880000002, -71.47974],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_19adb8e5f0ef4e5d84813bf2e4e66dac.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. JOSEPH HOSPITAL<br><b>Addr:</b> 172 KINSLEY ST<br><b>State:</b> NH<br><b>County:</b> NaN<br><b>City:</b> NASHUA<br><b>Zip Code:</b> 03060<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af7e8effcd6a494f91eb03ea57766123 = L.circleMarker(
+                [42.98450620000004, -71.4382915],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_af7e8effcd6a494f91eb03ea57766123.bindTooltip(
+                `<div>
+                     <b>Name:</b> ELLIOT HOSPITAL<br><b>Addr:</b> 1 ELLIOT WAY<br><b>State:</b> NH<br><b>County:</b> HILLSBOROUGH<br><b>City:</b> MANCHESTER<br><b>Zip Code:</b> 03103-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13cee29275dd4964914a7810e224fd1a = L.circleMarker(
+                [43.29735209999998, -70.95989489999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_13cee29275dd4964914a7810e224fd1a.bindTooltip(
+                `<div>
+                     <b>Name:</b> FRISBIE MEMORIAL HOSPITAL<br><b>Addr:</b> 11 WHITEHALL ROAD<br><b>State:</b> NH<br><b>County:</b> STRAFFORD<br><b>City:</b> ROCHESTER<br><b>Zip Code:</b> 03867-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d2195ae86184d9482d8124012013f5e = L.circleMarker(
+                [42.876903699999986, -71.3166064],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_7d2195ae86184d9482d8124012013f5e.bindTooltip(
+                `<div>
+                     <b>Name:</b> PARKLAND MEDICAL CENTER<br><b>Addr:</b> 1 PARKLAND DRIVE<br><b>State:</b> NH<br><b>County:</b> ROCKINGHAM<br><b>City:</b> DERBY<br><b>Zip Code:</b> 03038-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5700312025f84210adce527beb9d7bd5 = L.circleMarker(
+                [43.21275460000004, -70.8736964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_5700312025f84210adce527beb9d7bd5.bindTooltip(
+                `<div>
+                     <b>Name:</b> WENTWORTH-DOUGLASS HOSPITAL<br><b>Addr:</b> 789 CENTRAL AVE<br><b>State:</b> NH<br><b>County:</b> STRAFFORD<br><b>City:</b> DOVER<br><b>Zip Code:</b> 03820<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3968db27862542e1a53a3ed676bc6412 = L.circleMarker(
+                [42.948610299999984, -72.2914692],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_3968db27862542e1a53a3ed676bc6412.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHESHIRE MEDICAL CENTER<br><b>Addr:</b> 580 COURT STREET<br><b>State:</b> NH<br><b>County:</b> CHESHIRE<br><b>City:</b> KEENE<br><b>Zip Code:</b> 03431-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34857323b37f4d6682a07574199ed6d8 = L.circleMarker(
+                [42.75646550000002, -71.46177790000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_34857323b37f4d6682a07574199ed6d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTHERN NH MEDICAL CENTER<br><b>Addr:</b> 8 PROSPECT STREET<br><b>State:</b> NH<br><b>County:</b> HILLSBOROUGH<br><b>City:</b> NASHUA<br><b>Zip Code:</b> 03060-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a69572418cea4edbbbb390927adc199a = L.circleMarker(
+                [42.98214219999997, -70.9355061],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_a69572418cea4edbbbb390927adc199a.bindTooltip(
+                `<div>
+                     <b>Name:</b> EXETER HOSPITAL  INC.<br><b>Addr:</b> 5 ALUMNI DRIVE<br><b>State:</b> NH<br><b>County:</b> ROCKINGHAM<br><b>City:</b> EXETER<br><b>Zip Code:</b> 03833<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_409506f6456a4112abc0cf1567d069d4 = L.circleMarker(
+                [43.064898199999995, -70.7902873],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_409506f6456a4112abc0cf1567d069d4.bindTooltip(
+                `<div>
+                     <b>Name:</b> PORTSMOUTH REGIONAL HOSPITAL<br><b>Addr:</b> 333 BORTHWICK AVENUE<br><b>State:</b> NH<br><b>County:</b> ROCKINGHAM<br><b>City:</b> PORTSMOUTH<br><b>Zip Code:</b> 03801-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66692858dafb43ee9890bca67127802c = L.circleMarker(
+                [42.99096739999996, -71.4743062],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_66692858dafb43ee9890bca67127802c.bindTooltip(
+                `<div>
+                     <b>Name:</b> CATHOLIC MEDICAL CENTER<br><b>Addr:</b> 100 MCGREGOR STREET<br><b>State:</b> NH<br><b>County:</b> HILLSBOROUGH<br><b>City:</b> MANCHESTER<br><b>Zip Code:</b> 03102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75e739f9db384570abd22c44f4663366 = L.circleMarker(
+                [44.90446659999997, -71.4811742],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_75e739f9db384570abd22c44f4663366.bindTooltip(
+                `<div>
+                     <b>Name:</b> UPPER CONNECTICUT VALLEY HOSPITAL<br><b>Addr:</b> CORLISS LANE  RR 2<br><b>State:</b> NH<br><b>County:</b> COOS<br><b>City:</b> COLEBROOK<br><b>Zip Code:</b> 03576<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4299bab2b60946ec86e82ff4dd5e7b7c = L.circleMarker(
+                [44.135566600000054, -72.0235237],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_4299bab2b60946ec86e82ff4dd5e7b7c.bindTooltip(
+                `<div>
+                     <b>Name:</b> COTTAGE HOSPITAL<br><b>Addr:</b> 90 SWIFTWATER ROAD<br><b>State:</b> NH<br><b>County:</b> GRAFTON<br><b>City:</b> WOODSVILLE<br><b>Zip Code:</b> 03785-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d05392e8ba6448999248cb4d23d82d24 = L.circleMarker(
+                [44.317857399999994, -71.8256441],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_d05392e8ba6448999248cb4d23d82d24.bindTooltip(
+                `<div>
+                     <b>Name:</b> LITTLETON REGIONAL HEALTHCARE<br><b>Addr:</b> 600 ST. JOHNSBURY ROAD<br><b>State:</b> NH<br><b>County:</b> GRAFTON<br><b>City:</b> LITTLETON<br><b>Zip Code:</b> 03561-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a3ac3d1d9d94973aa159f9aab6b4327 = L.circleMarker(
+                [44.48626199999999, -71.5542777],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_2a3ac3d1d9d94973aa159f9aab6b4327.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEEKS MEDICAL CENTER<br><b>Addr:</b> 173 MIDDLE STREET<br><b>State:</b> NH<br><b>County:</b> COOS<br><b>City:</b> LANCASTER<br><b>Zip Code:</b> 03584<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_252baca6df7e44fcbcde0d420b237b64 = L.circleMarker(
+                [43.420652900000036, -71.9999106],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_252baca6df7e44fcbcde0d420b237b64.bindTooltip(
+                `<div>
+                     <b>Name:</b> NEW LONDON HOSPITAL<br><b>Addr:</b> 273 COUNTY ROAD<br><b>State:</b> NH<br><b>County:</b> MERRIMACK<br><b>City:</b> NEW LONDON<br><b>Zip Code:</b> 03257-4570<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_32f381c8a7b9488fb4d9a62c3d9b3b91 = L.circleMarker(
+                [43.640602000000015, -72.2642472],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_32f381c8a7b9488fb4d9a62c3d9b3b91.bindTooltip(
+                `<div>
+                     <b>Name:</b> ALICE PECK DAY MEMORIAL HOSPITAL<br><b>Addr:</b> 10 ALICE PECK DAY DRIVE<br><b>State:</b> NH<br><b>County:</b> NaN<br><b>City:</b> LEBANON<br><b>Zip Code:</b> 03766-2900<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_badb3c4d34c24e28af1703c7ac9d0f64 = L.circleMarker(
+                [43.4489824, -71.64507500000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_badb3c4d34c24e28af1703c7ac9d0f64.bindTooltip(
+                `<div>
+                     <b>Name:</b> FRANKLIN REGIONAL HOSPITAL<br><b>Addr:</b> 15 AIKEN AVENUE<br><b>State:</b> NH<br><b>County:</b> MERRIMACK<br><b>City:</b> FRANKLIN<br><b>Zip Code:</b> 03235-1259<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d0ac3819aab45c5980306646c7eae24 = L.circleMarker(
+                [44.06135459999999, -71.13672870000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_4d0ac3819aab45c5980306646c7eae24.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEMORIAL HOSPITAL<br><b>Addr:</b> 3073 WHITE MOUNTAIN HIGHWAY<br><b>State:</b> NH<br><b>County:</b> CARROLL<br><b>City:</b> NORTH CONWAY<br><b>Zip Code:</b> 03860<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a74a60c32366429fa4fcf620ae85632c = L.circleMarker(
+                [43.38468939999998, -72.3409741],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_a74a60c32366429fa4fcf620ae85632c.bindTooltip(
+                `<div>
+                     <b>Name:</b> VALLEY REGIONAL HOSPITAL<br><b>Addr:</b> 243 ELM STREET<br><b>State:</b> NH<br><b>County:</b> SULLIVAN<br><b>City:</b> CLAREMONT<br><b>Zip Code:</b> 03743-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b1262f6bdfc4cbba936c3b6f47a46a3 = L.circleMarker(
+                [42.89324000000001, -71.940482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_6b1262f6bdfc4cbba936c3b6f47a46a3.bindTooltip(
+                `<div>
+                     <b>Name:</b> MONADNOCK COMMUNITY HOSPITAL<br><b>Addr:</b> 452 OLD STREET ROAD<br><b>State:</b> NH<br><b>County:</b> HILLSBOROUGH<br><b>City:</b> PETERBOROUGH<br><b>Zip Code:</b> 03458-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6fcb10879084ba08ab847b142faa88b = L.circleMarker(
+                [44.487610300000014, -71.15684510000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_d6fcb10879084ba08ab847b142faa88b.bindTooltip(
+                `<div>
+                     <b>Name:</b> ANDROSCOGGIN VALLEY HOSPITAL<br><b>Addr:</b> 59 PAGE HILL ROAD<br><b>State:</b> NH<br><b>County:</b> COOS<br><b>City:</b> BERLIN<br><b>Zip Code:</b> 03570-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdb5cb7e1dfe45bda84e23b0010bcd80 = L.circleMarker(
+                [43.757820199999976, -71.695243],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_bdb5cb7e1dfe45bda84e23b0010bcd80.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPEARE MEMORIAL HOSPITAL<br><b>Addr:</b> 16 HOSPITAL RD<br><b>State:</b> NH<br><b>County:</b> GRAFTON<br><b>City:</b> PLYMOUTH<br><b>Zip Code:</b> 03264-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f59f43d5cf1e422290802abc9905ac4c = L.circleMarker(
+                [43.58178690000002, -71.2006054],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_f59f43d5cf1e422290802abc9905ac4c.bindTooltip(
+                `<div>
+                     <b>Name:</b> HUGGINS HOSPITAL-AMENDED<br><b>Addr:</b> 240 SOUTH MAIN STREET<br><b>State:</b> NH<br><b>County:</b> CARROLL<br><b>City:</b> WOLFEBORO<br><b>Zip Code:</b> 03894<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49f6b2264fc848518a3880dfe08b0544 = L.circleMarker(
+                [42.764615900000024, -71.1851433],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_49f6b2264fc848518a3880dfe08b0544.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTHEAST REHABILITATION HOSPITAL<br><b>Addr:</b> 70 BUTLER STREET<br><b>State:</b> NH<br><b>County:</b> ROCKINGHAM<br><b>City:</b> SALEM<br><b>Zip Code:</b> 03079-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b4ca14d013e4f8093e39ccee74a6942 = L.circleMarker(
+                [43.201238000000004, -71.56321369999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_4b4ca14d013e4f8093e39ccee74a6942.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH REHABILITATION HOSPITAL<br><b>Addr:</b> 254 PLEASANT STREET<br><b>State:</b> NH<br><b>County:</b> MERRIMACK<br><b>City:</b> CONCORD<br><b>Zip Code:</b> 03301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d181a67da1394a958667fbca41770566 = L.circleMarker(
+                [43.19601709999999, -71.5429316],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_d181a67da1394a958667fbca41770566.bindTooltip(
+                `<div>
+                     <b>Name:</b> NEW HAMPSHIRE HOSPITAL<br><b>Addr:</b> 36 CLINTON ST<br><b>State:</b> NH<br><b>County:</b> MERRIMACK<br><b>City:</b> CONCORD<br><b>Zip Code:</b> 03301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09da47b306594740a5ff6716e0b008a3 = L.circleMarker(
+                [42.87167170000002, -71.15418049999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c5c2917ebc72451bad93046b0174a693);
+        
+    
+            circle_marker_09da47b306594740a5ff6716e0b008a3.bindTooltip(
+                `<div>
+                     <b>Name:</b> HAMPSTEAD HOSPITAL<br><b>Addr:</b> 218 EAST ROAD<br><b>State:</b> NH<br><b>County:</b> ROCKINGHAM<br><b>City:</b> HAMPSTEAD<br><b>Zip Code:</b> 03841<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_34ef8f6abe944731bdb75495ee706b84 = L.featureGroup(
+                {}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var circle_marker_68d6c670f55543459b0187bc40fa47ea = L.circleMarker(
+                [43.19882740000004, -71.562846],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_68d6c670f55543459b0187bc40fa47ea.bindTooltip(
+                `<div>
+                     <b>Name:</b> Concord Hospital (AKA Capital Region Health Care)<br><b>Addr:</b> 250 Pleasant St<br><b>State:</b> NH<br><b>County:</b> Merrimack<br><b>City:</b> Concord<br><b>Zip Code:</b> 3301<br><b>Distance discrepancy:</b> 203 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19d7f56d103548ebbb6f942c7a95eb66 = L.circleMarker(
+                [43.67549320000001, -72.2729588],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_19d7f56d103548ebbb6f942c7a95eb66.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dartmouth-Hitchcock Medical Center<br><b>Addr:</b> 1 Medical Center Dr<br><b>State:</b> NH<br><b>County:</b> Grafton<br><b>City:</b> Lebanon<br><b>Zip Code:</b> 3756<br><b>Distance discrepancy:</b> 83 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99393d2864e74ddb93f16baa53251b2f = L.circleMarker(
+                [43.528553499999994, -71.4631623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_99393d2864e74ddb93f16baa53251b2f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lakes Region General Hospital<br><b>Addr:</b> 80 Highland St<br><b>State:</b> NH<br><b>County:</b> Belknap<br><b>City:</b> Laconia<br><b>Zip Code:</b> 3246<br><b>Distance discrepancy:</b> 6 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d057f5e6ca3418886ed65576894ee7f = L.circleMarker(
+                [42.74912880000002, -71.47974],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_4d057f5e6ca3418886ed65576894ee7f.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Joseph Hospital of NH<br><b>Addr:</b> 172 Kinsley St<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Nashua<br><b>Zip Code:</b> 3060<br><b>Distance discrepancy:</b> 74 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7107abe6c5224042b7d26f509ab4256f = L.circleMarker(
+                [42.98450620000007, -71.4382915],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_7107abe6c5224042b7d26f509ab4256f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Elliot Hospital (AKA Elliot Health System)<br><b>Addr:</b> 1 Elliot Way<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Manchester<br><b>Zip Code:</b> 3103<br><b>Distance discrepancy:</b> 113 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_832e4b1024cb4a44ac34084c5e35f686 = L.circleMarker(
+                [43.29735209999998, -70.95989489999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_832e4b1024cb4a44ac34084c5e35f686.bindTooltip(
+                `<div>
+                     <b>Name:</b> Frisbie Memorial Hospital<br><b>Addr:</b> 11 Whitehall Rd<br><b>State:</b> NH<br><b>County:</b> Strafford<br><b>City:</b> Rochester<br><b>Zip Code:</b> 3867<br><b>Distance discrepancy:</b> 209 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d3c2bbbae7c47ca9002b17e9610f92d = L.circleMarker(
+                [42.87690369999993, -71.3166064],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_3d3c2bbbae7c47ca9002b17e9610f92d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Parkland Medical Center<br><b>Addr:</b> 1 Parkland Dr<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Derry<br><b>Zip Code:</b> 3038<br><b>Distance discrepancy:</b> 48 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c5e4a74042614fbabeb0b3830b75c078 = L.circleMarker(
+                [43.21275460000004, -70.8736964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_c5e4a74042614fbabeb0b3830b75c078.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wentworth-Douglass Hospital<br><b>Addr:</b> 789 Central Ave<br><b>State:</b> NH<br><b>County:</b> Strafford<br><b>City:</b> Dover<br><b>Zip Code:</b> 3820<br><b>Distance discrepancy:</b> 95 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebb7e17a16e24d32a355460d0abf225c = L.circleMarker(
+                [42.948610299999956, -72.29146920000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_ebb7e17a16e24d32a355460d0abf225c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cheshire Medical Center an Affiliate of Dartmouth-Hitchcock Health<br><b>Addr:</b> 580 Court St<br><b>State:</b> NH<br><b>County:</b> Cheshire<br><b>City:</b> Keene<br><b>Zip Code:</b> 3431<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48d74e09ce044443a57e5bddf7049ca1 = L.circleMarker(
+                [42.75646550000003, -71.46177790000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_48d74e09ce044443a57e5bddf7049ca1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Southern New Hampshire Medical Center<br><b>Addr:</b> 8 Prospect St<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Nashua<br><b>Zip Code:</b> 3060<br><b>Distance discrepancy:</b> 35 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_308d8719a679418382ce7a445449c0cc = L.circleMarker(
+                [42.98214219999997, -70.9355061],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_308d8719a679418382ce7a445449c0cc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Exeter Hospital<br><b>Addr:</b> 5 Alumni Dr<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Exeter<br><b>Zip Code:</b> 3833<br><b>Distance discrepancy:</b> 193 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6441e11a2418461d9c23afae81f31eea = L.circleMarker(
+                [43.064898199999995, -70.7902873],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_6441e11a2418461d9c23afae81f31eea.bindTooltip(
+                `<div>
+                     <b>Name:</b> Portsmouth Regional Hospital<br><b>Addr:</b> 333 Borthwick Ave<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Portsmouth<br><b>Zip Code:</b> 3801<br><b>Distance discrepancy:</b> 14 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a32651327a974eb88355b7339a139db9 = L.circleMarker(
+                [42.99096739999996, -71.4743062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_a32651327a974eb88355b7339a139db9.bindTooltip(
+                `<div>
+                     <b>Name:</b> Catholic Medical Center<br><b>Addr:</b> 100 Mcgregor St<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Manchester<br><b>Zip Code:</b> 3102<br><b>Distance discrepancy:</b> 52 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c8f112957444406a957dc25b23d117c = L.circleMarker(
+                [44.90446659999997, -71.4811742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_1c8f112957444406a957dc25b23d117c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Upper Connecticut Valley Hospital<br><b>Addr:</b> 181 Corliss Ln<br><b>State:</b> NH<br><b>County:</b> Coos<br><b>City:</b> Colebrook<br><b>Zip Code:</b> 3576<br><b>Distance discrepancy:</b> 214 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6039b518cd284a0abf20e4104bf8fce7 = L.circleMarker(
+                [44.13556660000001, -72.0235237],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_6039b518cd284a0abf20e4104bf8fce7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cottage Hospital<br><b>Addr:</b> 90 Swiftwater Rd<br><b>State:</b> NH<br><b>County:</b> Grafton<br><b>City:</b> Woodsville<br><b>Zip Code:</b> 3785<br><b>Distance discrepancy:</b> 40 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef43f396b8fd419fa938ebda6de4146d = L.circleMarker(
+                [44.317857399999994, -71.8256441],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_ef43f396b8fd419fa938ebda6de4146d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Littleton Regional Healthcare<br><b>Addr:</b> 600 Saint Johnsbury Rd<br><b>State:</b> NH<br><b>County:</b> Grafton<br><b>City:</b> Littleton<br><b>Zip Code:</b> 3561<br><b>Distance discrepancy:</b> 29 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4a2fa9463fa4f6280487ea97a352e92 = L.circleMarker(
+                [44.48626199999999, -71.5542777],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_f4a2fa9463fa4f6280487ea97a352e92.bindTooltip(
+                `<div>
+                     <b>Name:</b> Weeks Medical Center<br><b>Addr:</b> 173 Middle St<br><b>State:</b> NH<br><b>County:</b> Coos<br><b>City:</b> Lancaster<br><b>Zip Code:</b> 3584<br><b>Distance discrepancy:</b> 115 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83a6d199d78d4941b320c7e1442f0c7a = L.circleMarker(
+                [43.42065290000011, -71.9999106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_83a6d199d78d4941b320c7e1442f0c7a.bindTooltip(
+                `<div>
+                     <b>Name:</b> New London Hospital<br><b>Addr:</b> 273 County Rd<br><b>State:</b> NH<br><b>County:</b> Merrimack<br><b>City:</b> New London<br><b>Zip Code:</b> 3257<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e92901dfe4b462cb91e228fecde140b = L.circleMarker(
+                [43.640602000000015, -72.2642472],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_6e92901dfe4b462cb91e228fecde140b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Alice Peck Day Memorial Hospital<br><b>Addr:</b> 10 Alice Peck Day Dr<br><b>State:</b> NH<br><b>County:</b> Grafton<br><b>City:</b> Lebanon<br><b>Zip Code:</b> 3766<br><b>Distance discrepancy:</b> 44 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_143ec2d932bf472db063ea6afec7b628 = L.circleMarker(
+                [43.44898240000002, -71.64507500000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_143ec2d932bf472db063ea6afec7b628.bindTooltip(
+                `<div>
+                     <b>Name:</b> Franklin Regional Hospital<br><b>Addr:</b> 15 Aiken Ave<br><b>State:</b> NH<br><b>County:</b> Merrimack<br><b>City:</b> Franklin<br><b>Zip Code:</b> 3235<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae084ddbb4f9491b81de65e07563d225 = L.circleMarker(
+                [44.06135459999995, -71.13672870000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_ae084ddbb4f9491b81de65e07563d225.bindTooltip(
+                `<div>
+                     <b>Name:</b> Memorial Hospital<br><b>Addr:</b> 3073 White Mountain Hwy<br><b>State:</b> NH<br><b>County:</b> Carroll<br><b>City:</b> North Conway<br><b>Zip Code:</b> 3860<br><b>Distance discrepancy:</b> 26 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0afcf389b274933ad719b8d3c613f84 = L.circleMarker(
+                [43.384689399999985, -72.3409741],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_f0afcf389b274933ad719b8d3c613f84.bindTooltip(
+                `<div>
+                     <b>Name:</b> Valley Regional Hospital<br><b>Addr:</b> 243 Elm St<br><b>State:</b> NH<br><b>County:</b> Sullivan<br><b>City:</b> Claremont<br><b>Zip Code:</b> 3743<br><b>Distance discrepancy:</b> 179 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_baee6bb88e814b24bf6234213f805401 = L.circleMarker(
+                [42.89324000000001, -71.940482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_baee6bb88e814b24bf6234213f805401.bindTooltip(
+                `<div>
+                     <b>Name:</b> Monadnock Community Hospital<br><b>Addr:</b> 452 Old Street Rd<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Peterborough<br><b>Zip Code:</b> 3458<br><b>Distance discrepancy:</b> 7 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5ebdc92f77ea4c34acd8512817ecbece = L.circleMarker(
+                [44.487610300000014, -71.15684510000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_5ebdc92f77ea4c34acd8512817ecbece.bindTooltip(
+                `<div>
+                     <b>Name:</b> Androscoggin Valley Hospital<br><b>Addr:</b> 59 Page Hill Rd<br><b>State:</b> NH<br><b>County:</b> Coos<br><b>City:</b> Berlin<br><b>Zip Code:</b> 3570<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0886aa64470b438a897fe6745847c6f3 = L.circleMarker(
+                [43.75782019999994, -71.695243],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_0886aa64470b438a897fe6745847c6f3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Speare Memorial Hospital<br><b>Addr:</b> 16 Hospital Rd<br><b>State:</b> NH<br><b>County:</b> Grafton<br><b>City:</b> Plymouth<br><b>Zip Code:</b> 3264<br><b>Distance discrepancy:</b> 14 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cb985d641674b89bbb86829a055822f = L.circleMarker(
+                [43.58178690000002, -71.2006054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_1cb985d641674b89bbb86829a055822f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Huggins Hospital<br><b>Addr:</b> 240 S Main St<br><b>State:</b> NH<br><b>County:</b> Carroll<br><b>City:</b> Wolfeboro<br><b>Zip Code:</b> 3894<br><b>Distance discrepancy:</b> 28 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9885f483ab1d4245bf4d41be8cec6cca = L.circleMarker(
+                [42.764615900000024, -71.1851433],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_9885f483ab1d4245bf4d41be8cec6cca.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northeast Rehabilitation Hospital - Salem<br><b>Addr:</b> 70 Butler St<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Salem<br><b>Zip Code:</b> 3079<br><b>Distance discrepancy:</b> 25 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ef6da99e4b148bb8accb3928478bb74 = L.circleMarker(
+                [43.201238000000004, -71.56321369999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_1ef6da99e4b148bb8accb3928478bb74.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Concord (FKA HealthSouth Rehabilitation Hospital of Concord)<br><b>Addr:</b> 254 Pleasant St<br><b>State:</b> NH<br><b>County:</b> Merrimack<br><b>City:</b> Concord<br><b>Zip Code:</b> 3301<br><b>Distance discrepancy:</b> 524 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_da746ea2e45743d7b40bf89ab82a4a8d = L.circleMarker(
+                [43.19601709999999, -71.5429316],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_da746ea2e45743d7b40bf89ab82a4a8d.bindTooltip(
+                `<div>
+                     <b>Name:</b> New Hampshire Hospital<br><b>Addr:</b> 36 Clinton St<br><b>State:</b> NH<br><b>County:</b> Merrimack<br><b>City:</b> Concord<br><b>Zip Code:</b> 3301<br><b>Distance discrepancy:</b> 15 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c04330d5ca34b149e73b007644f5615 = L.circleMarker(
+                [42.871671700000036, -71.15418049999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_34ef8f6abe944731bdb75495ee706b84);
+        
+    
+            circle_marker_2c04330d5ca34b149e73b007644f5615.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hampstead Hospital<br><b>Addr:</b> 218 East Rd<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Hampstead<br><b>Zip Code:</b> 3841<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_88d3fc9ce6df488db4de8280fbcca9e4 = L.featureGroup(
+                {}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var feature_group_95e3a79aaa014c5faa8ae17b16657dc6 = L.featureGroup(
+                {}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var circle_marker_55147d2d372a44b9a912f2fa4a7ccf2d = L.circleMarker(
+                [42.79984280000005, -71.5459289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_95e3a79aaa014c5faa8ae17b16657dc6);
+        
+    
+            circle_marker_55147d2d372a44b9a912f2fa4a7ccf2d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northeast Rehabilitation Hospital - SNHMC Nashua<br><b>Addr:</b> 29 Northwest Blvd<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Nashua<br><b>Zip Code:</b> 3063<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce25ff49633f438cb35a7e72607d0b24 = L.circleMarker(
+                [42.98450620000007, -71.4382915],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_95e3a79aaa014c5faa8ae17b16657dc6);
+        
+    
+            circle_marker_ce25ff49633f438cb35a7e72607d0b24.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northeast Rehabilitation Hospital - Manchester<br><b>Addr:</b> 1 Elliot Way<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Manchester<br><b>Zip Code:</b> 3103<br><b>Distance discrepancy:</b> 362 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_974ca0db1c0c4c08b8f5b57b71efc86f = L.circleMarker(
+                [43.08528530000006, -70.79947270000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_95e3a79aaa014c5faa8ae17b16657dc6);
+        
+    
+            circle_marker_974ca0db1c0c4c08b8f5b57b71efc86f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northeast Rehabilitation Hospital - Portsmouth<br><b>Addr:</b> 105 Corporate Dr<br><b>State:</b> NH<br><b>County:</b> Rockingham<br><b>City:</b> Portsmouth<br><b>Zip Code:</b> 3801<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b61166bacea04fe188a415651e335cfc = L.circleMarker(
+                [43.01265400000003, -71.4409201],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_95e3a79aaa014c5faa8ae17b16657dc6);
+        
+    
+            circle_marker_b61166bacea04fe188a415651e335cfc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Manchester VA Medical Center<br><b>Addr:</b> 718 Smyth Rd<br><b>State:</b> NH<br><b>County:</b> Hillsborough<br><b>City:</b> Manchester<br><b>Zip Code:</b> 3104<br><b>Distance discrepancy:</b> 27 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_978f84dfca724f85b417d7fd17a14849 = L.featureGroup(
+                {}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+    
+            var poly_line_adbe0da37f8b40168cc1db5230143f06 = L.polyline(
+                [[43.198324099999965, -71.56263859999999], [43.19882740000004, -71.562846]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_e2ced4d8bc744ca1935623efba35ca80 = L.polyline(
+                [[43.67549320000001, -72.2729588], [43.67549320000001, -72.2729588]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_6b7cbbbae4e943aebcf19dd281489e20 = L.polyline(
+                [[43.52855350000002, -71.4631623], [43.528553499999994, -71.4631623]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_7f910e6ce6334f96a2483e97b120b2e2 = L.polyline(
+                [[42.74912880000002, -71.47974], [42.74912880000002, -71.47974]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_1685c6fe6cfe444797033184f92d8fd0 = L.polyline(
+                [[42.98450620000004, -71.4382915], [42.98450620000007, -71.4382915]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_b05f228f64df46c78fd188049050f0a5 = L.polyline(
+                [[43.29735209999998, -70.95989489999998], [43.29735209999998, -70.95989489999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_b76ffad4ba7e46439c91c4898a4996ce = L.polyline(
+                [[42.876903699999986, -71.3166064], [42.87690369999993, -71.3166064]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_669449226d774aa1abd7a9530a489fa8 = L.polyline(
+                [[43.21275460000004, -70.8736964], [43.21275460000004, -70.8736964]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_e660a9ab35f949a1b338e64e3e37f313 = L.polyline(
+                [[42.948610299999984, -72.2914692], [42.948610299999956, -72.29146920000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_7fcb583d669b492aa4e34503cf2df6e3 = L.polyline(
+                [[42.75646550000002, -71.46177790000002], [42.75646550000003, -71.46177790000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_fb6195aa5f524df6b641035ae84b8e7f = L.polyline(
+                [[42.98214219999997, -70.9355061], [42.98214219999997, -70.9355061]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_44eed58358684c2284d6fd9113c57070 = L.polyline(
+                [[43.064898199999995, -70.7902873], [43.064898199999995, -70.7902873]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_768ae08d453e445fa7e25b31d2edc4a8 = L.polyline(
+                [[42.99096739999996, -71.4743062], [42.99096739999996, -71.4743062]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_a74870a6c3af4678b1a69b122d96e2d3 = L.polyline(
+                [[44.90446659999997, -71.4811742], [44.90446659999997, -71.4811742]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_6a753f93cfc14d1e94b51c8dcd741098 = L.polyline(
+                [[44.135566600000054, -72.0235237], [44.13556660000001, -72.0235237]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_0580147503a44a1eb100a0dd0409c6b7 = L.polyline(
+                [[44.317857399999994, -71.8256441], [44.317857399999994, -71.8256441]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_528eefb180ba4b4db0fc2594ba9dc2cf = L.polyline(
+                [[44.48626199999999, -71.5542777], [44.48626199999999, -71.5542777]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_35149d43c29c4074bc6dfbf9a2436e8a = L.polyline(
+                [[43.420652900000036, -71.9999106], [43.42065290000011, -71.9999106]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_6b0c619aa8834a3fa45f77ff0174f6d1 = L.polyline(
+                [[43.640602000000015, -72.2642472], [43.640602000000015, -72.2642472]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_68ea5da3ef97461897b5c4af466ec3be = L.polyline(
+                [[43.4489824, -71.64507500000002], [43.44898240000002, -71.64507500000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_70443ed42cbd4b3c85f50ec41d7708c1 = L.polyline(
+                [[44.06135459999999, -71.13672870000002], [44.06135459999995, -71.13672870000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_c3099475d9bb4788821a2ac8cbdf182d = L.polyline(
+                [[43.38468939999998, -72.3409741], [43.384689399999985, -72.3409741]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_aa80b15ce3ea4328b7989ca10b0b3c3a = L.polyline(
+                [[42.89324000000001, -71.940482], [42.89324000000001, -71.940482]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_d3cf377dbcbf4d8f915aba806807e32c = L.polyline(
+                [[44.487610300000014, -71.15684510000001], [44.487610300000014, -71.15684510000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_9152c5e38cba45bd8ef9ab4fa0c571aa = L.polyline(
+                [[43.757820199999976, -71.695243], [43.75782019999994, -71.695243]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_c7af7469fc9745fbb046ea7bfff1ca1c = L.polyline(
+                [[43.58178690000002, -71.2006054], [43.58178690000002, -71.2006054]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_97a9b8f4a1c74f9bbcd4fc7bf5702381 = L.polyline(
+                [[42.764615900000024, -71.1851433], [42.764615900000024, -71.1851433]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_320f8e97392c4ddfb2c3390055528fca = L.polyline(
+                [[43.201238000000004, -71.56321369999999], [43.201238000000004, -71.56321369999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_4de7d7d4d8b14472955f29aaedb0b0db = L.polyline(
+                [[43.19601709999999, -71.5429316], [43.19601709999999, -71.5429316]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var poly_line_5b1a5624e2834cbab829ee9f086c677b = L.polyline(
+                [[42.87167170000002, -71.15418049999998], [42.871671700000036, -71.15418049999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_978f84dfca724f85b417d7fd17a14849);
+        
+    
+            var layer_control_fc5d56314f014d1c9c165c76dfb3f490 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_274dfae046454f3bb7051043614f4f59,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_c5c2917ebc72451bad93046b0174a693,
+                    "DH - matched" : feature_group_34ef8f6abe944731bdb75495ee706b84,
+                    "HCRIS - unmatched" : feature_group_88d3fc9ce6df488db4de8280fbcca9e4,
+                    "DH - unmatched" : feature_group_95e3a79aaa014c5faa8ae17b16657dc6,
+                    "connections" : feature_group_978f84dfca724f85b417d7fd17a14849,
+                },
+            };
+            L.control.layers(
+                layer_control_fc5d56314f014d1c9c165c76dfb3f490.base_layers,
+                layer_control_fc5d56314f014d1c9c165c76dfb3f490.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_0a0474d819934403a2b161b6caf84f3c);
+        
+</script>

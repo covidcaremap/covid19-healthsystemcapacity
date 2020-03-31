@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b579569b517f4baebe952296a55c11eb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b579569b517f4baebe952296a55c11eb" ></div>
+        
+</body>
+<script>    
+    
+            var map_b579569b517f4baebe952296a55c11eb = L.map(
+                "map_b579569b517f4baebe952296a55c11eb",
+                {
+                    center: [15.21, 145.72],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc18537cd2e44aebb03b03d22c9093e0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var feature_group_00250d9464fe400ea196a313c65c01f5 = L.featureGroup(
+                {}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var circle_marker_ae4d840b86174a70b15950a4996c8578 = L.circleMarker(
+                [15.21000000000004, 145.72],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_00250d9464fe400ea196a313c65c01f5);
+        
+    
+            circle_marker_ae4d840b86174a70b15950a4996c8578.bindTooltip(
+                `<div>
+                     <b>Name:</b> COMMONWEALTH HEALTH CENTER<br><b>Addr:</b> LOWER NAVY HILL RD<br><b>State:</b> MP<br><b>County:</b> CNMI<br><b>City:</b> SAIPAN<br><b>Zip Code:</b> 96950<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 533
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_e1b8dc65a2cf4452a92efcd5debdc1ef = L.featureGroup(
+                {}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var circle_marker_8ce10a8db12343a7aa4656350f456973 = L.circleMarker(
+                [15.212007200000055, 145.7243276],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e1b8dc65a2cf4452a92efcd5debdc1ef);
+        
+    
+            circle_marker_8ce10a8db12343a7aa4656350f456973.bindTooltip(
+                `<div>
+                     <b>Name:</b> Commonwealth Health Center<br><b>Addr:</b> 1 Lower Navy Hill Rd<br><b>State:</b> MP<br><b>County:</b> None<br><b>City:</b> Saipan<br><b>Zip Code:</b> 96950<br><b>Distance discrepancy:</b> 165 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 533
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_30c9286633c548abb1f33e6cc533daf0 = L.featureGroup(
+                {}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var feature_group_6ad96b112a144cb7bddb95ee1d4520da = L.featureGroup(
+                {}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var feature_group_13e61567517849dbb354ec9fa21a6e59 = L.featureGroup(
+                {}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+    
+            var poly_line_3aea5d146d124112a240f3be67bed66f = L.polyline(
+                [[15.21000000000004, 145.72], [15.212007200000055, 145.7243276]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_13e61567517849dbb354ec9fa21a6e59);
+        
+    
+            var layer_control_6a007110a43b4eabbfc9fa5ce1ae7ab6 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fc18537cd2e44aebb03b03d22c9093e0,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_00250d9464fe400ea196a313c65c01f5,
+                    "DH - matched" : feature_group_e1b8dc65a2cf4452a92efcd5debdc1ef,
+                    "HCRIS - unmatched" : feature_group_30c9286633c548abb1f33e6cc533daf0,
+                    "DH - unmatched" : feature_group_6ad96b112a144cb7bddb95ee1d4520da,
+                    "connections" : feature_group_13e61567517849dbb354ec9fa21a6e59,
+                },
+            };
+            L.control.layers(
+                layer_control_6a007110a43b4eabbfc9fa5ce1ae7ab6.base_layers,
+                layer_control_6a007110a43b4eabbfc9fa5ce1ae7ab6.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_b579569b517f4baebe952296a55c11eb);
+        
+</script>

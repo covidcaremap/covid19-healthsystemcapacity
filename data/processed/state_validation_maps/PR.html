@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d0836422bbbd476d8cc8f131ed1bd80b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d0836422bbbd476d8cc8f131ed1bd80b" ></div>
+        
+</body>
+<script>    
+    
+            var map_d0836422bbbd476d8cc8f131ed1bd80b = L.map(
+                "map_d0836422bbbd476d8cc8f131ed1bd80b",
+                {
+                    center: [18.2216345, -66.40213425],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5b5019fec2744418e4385b776523289 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var feature_group_11d8e971b90943a692ee4bc32e8c9d5b = L.featureGroup(
+                {}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var circle_marker_7414a3ef5dfc498bba7a860b974a2323 = L.circleMarker(
+                [18.454811000000035, -66.06569899999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_7414a3ef5dfc498bba7a860b974a2323.bindTooltip(
+                `<div>
+                     <b>Name:</b> ASHFORD PRESBYTERIAN COMMUNITY CORP<br><b>Addr:</b> 1451 ASHFORD AVE.<br><b>State:</b> PR<br><b>County:</b> SAN JUAN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00902-0032<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 129
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_683f2f3403384ecf8fbb9a39db7acab9 = L.circleMarker(
+                [18.14799999999997, -65.8121],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_683f2f3403384ecf8fbb9a39db7acab9.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL SAN PABLO HUMACAO<br><b>Addr:</b> FONT MARTELLO<br><b>State:</b> PR<br><b>County:</b> HUMACAO<br><b>City:</b> HUMACAO<br><b>Zip Code:</b> 00972<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1626
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b075cc48ce704caab311a2f146466ad8 = L.circleMarker(
+                [17.978170000000052, -66.111],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_b075cc48ce704caab311a2f146466ad8.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL SANTA ROSA<br><b>Addr:</b> LOS VETERANOS AVENUE<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> GUAYAMA<br><b>Zip Code:</b> 00785<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 600
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd2c36e12c8a497a8de802ad020ba39c = L.circleMarker(
+                [18.186204000000007, -66.830488],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_cd2c36e12c8a497a8de802ad020ba39c.bindTooltip(
+                `<div>
+                     <b>Name:</b> CASTANER HOSPITAL<br><b>Addr:</b> 1003<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> CASTANER<br><b>Zip Code:</b> 00631<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 620
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e2179a631cc948a88599d5c208d835a5 = L.circleMarker(
+                [18.39740000000001, -66.0499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_e2179a631cc948a88599d5c208d835a5.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN JAN MUNICIPAL HOSPITAL<br><b>Addr:</b> RIO PIEDRAS STATION<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00928<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 577
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d02ee15353c469ca2adfb6c6a892447 = L.circleMarker(
+                [18.144227000000008, -66.262953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_0d02ee15353c469ca2adfb6c6a892447.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL MENONITA AIBONITO<br><b>Addr:</b> JOSE C VAZQUEZ<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> AIBONITO<br><b>Zip Code:</b> 00705-1379<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 158
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff703676c289473ab59b076716195ea5 = L.circleMarker(
+                [17.99999999999999, -66.62],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_ff703676c289473ab59b076716195ea5.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DAMAS<br><b>Addr:</b> 2213 PONCE BY PASS<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> PONCE<br><b>Zip Code:</b> 00717-1318<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 385
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b15bd4e0f27d4b379453a18f0c72d2b5 = L.circleMarker(
+                [18.442269699999986, -67.1507861],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_b15bd4e0f27d4b379453a18f0c72d2b5.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL BUEN SAMARITANO<br><b>Addr:</b> HIGHWAY #2 CAIMITAL BAJO<br><b>State:</b> PR<br><b>County:</b> AGUADILLA<br><b>City:</b> AGUADILLA<br><b>Zip Code:</b> 00605-4055<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f94fb0b37d8b46faab9348372d788cc9 = L.circleMarker(
+                [18.469200000000026, -66.7186],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_f94fb0b37d8b46faab9348372d788cc9.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL CAYETANO COLL & TOSTE<br><b>Addr:</b> AVE. SAN LUCAS #129<br><b>State:</b> PR<br><b>County:</b> ARECIBO<br><b>City:</b> ARECIBO<br><b>Zip Code:</b> 00678<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 475
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4fc016484ea2477789b3ada4c849e699 = L.circleMarker(
+                [18.39999999999997, -66.04],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_4fc016484ea2477789b3ada4c849e699.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL SAN FRANCISCO<br><b>Addr:</b> DE DIEGO AVE. #371<br><b>State:</b> PR<br><b>County:</b> RIO PIEDRAS<br><b>City:</b> RIO PIEDRAS<br><b>Zip Code:</b> 00923<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 175
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d86f77dffc6466692b0a06592e7c3d6 = L.circleMarker(
+                [18.20280000000001, -67.1465],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_7d86f77dffc6466692b0a06592e7c3d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> MAYAGUEZ MEDICAL CENTER<br><b>Addr:</b> 410 HOSTOS AVENUE<br><b>State:</b> PR<br><b>County:</b> MAYAGUEZ<br><b>City:</b> MAYAGUEZ<br><b>Zip Code:</b> 00681-1838<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 582
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f7c25fa917d845589e4f3c0b9093de02 = L.circleMarker(
+                [18.219989300000037, -66.04907409999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_f7c25fa917d845589e4f3c0b9093de02.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL MENONITA CAGUAS INC<br><b>Addr:</b> ROAD 172 EXIT TO CIDRA<br><b>State:</b> PR<br><b>County:</b> CAGUAS<br><b>City:</b> CAGUAS<br><b>Zip Code:</b> 00726-4964<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d40314d8f434d6197f3f2347359a21f = L.circleMarker(
+                [18.399500000000003, -66.1526],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_3d40314d8f434d6197f3f2347359a21f.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL HIMA SAN PABLO BAYAMON<br><b>Addr:</b> SANTA CRUZ # 70<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> BAYAMON<br><b>Zip Code:</b> 00959<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 614
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_343885d0aac8459184b66f6344122de1 = L.circleMarker(
+                [18.031410099999963, -66.857723],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_343885d0aac8459184b66f6344122de1.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL METROPOLITANO TITO MATTEI<br><b>Addr:</b> #128 KM 1.0<br><b>State:</b> PR<br><b>County:</b> YAUCO<br><b>City:</b> YAUCO<br><b>Zip Code:</b> 00658<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59ba5cbadfdc42f1a609fceb6e045799 = L.circleMarker(
+                [18.390000000000008, -67.11],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_59ba5cbadfdc42f1a609fceb6e045799.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL SAN CARLOS BORROMEO<br><b>Addr:</b> 68<br><b>State:</b> PR<br><b>County:</b> MOCA<br><b>City:</b> MOCA<br><b>Zip Code:</b> 00676<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_839ec8c3581948178c8c6ab85b5c28eb = L.circleMarker(
+                [18.375799999999984, -65.9579],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_839ec8c3581948178c8c6ab85b5c28eb.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL UPR<br><b>Addr:</b> STREET 3 KM 8.3 65 INFANTERIA AVE.<br><b>State:</b> PR<br><b>County:</b> CAROLINA<br><b>City:</b> CAROLINA<br><b>Zip Code:</b> 00984<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 550
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e910ae16c06d4f2abc39bbe28f5b2f87 = L.circleMarker(
+                [18.427500000000048, -66.4921],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_e910ae16c06d4f2abc39bbe28f5b2f87.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DR. ALEJANDRO OTERO<br><b>Addr:</b> CARRETERA ESTATAL 668<br><b>State:</b> PR<br><b>County:</b> MANATI<br><b>City:</b> MANATI<br><b>Zip Code:</b> 00701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1308
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9f32f36c05004129b86354af89773aad = L.circleMarker(
+                [18.449999999999974, -66.4],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_9f32f36c05004129b86354af89773aad.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL WILMA N VAZQUEZ<br><b>Addr:</b> #2 KM 39.5<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> VEGA BAJA<br><b>Zip Code:</b> 00693<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 480
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_274299dbb36c407bab8c2a2613c90e76 = L.circleMarker(
+                [18.218303999999993, -66.031394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_274299dbb36c407bab8c2a2613c90e76.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL HIMA SAN PABLO CAGUAS<br><b>Addr:</b> AVE MU?OZ MARIN<br><b>State:</b> PR<br><b>County:</b> CAGUAS<br><b>City:</b> CAGUAS<br><b>Zip Code:</b> 00726<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fe119c9fcee4f36a1eb96bf039f8f5f = L.circleMarker(
+                [18.394598999999975, -66.073805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_6fe119c9fcee4f36a1eb96bf039f8f5f.bindTooltip(
+                `<div>
+                     <b>Name:</b> CORPORACION DEL CENTRO CARDIOVASCULA<br><b>Addr:</b> CENTRO MEDICO<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> RIO PIEDRAS<br><b>Zip Code:</b> 00936-6528<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 150
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b496a1048a341b386316bd01f6610ab = L.circleMarker(
+                [18.329499999999975, -65.6494],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_9b496a1048a341b386316bd01f6610ab.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL HIMA SAN PABLO FAJARDO<br><b>Addr:</b> AVE. GENERAL VALERO<br><b>State:</b> PR<br><b>County:</b> FAJARDO<br><b>City:</b> FAJARDO<br><b>Zip Code:</b> 00973<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 289
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81bee8731d434655918f5d5e0a352d3a = L.circleMarker(
+                [18.081308000000035, -67.03951400000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_81bee8731d434655918f5d5e0a352d3a.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSP. METROPOLITANO DE SAN GERMAN<br><b>Addr:</b> JAVILLA #8<br><b>State:</b> PR<br><b>County:</b> SAN GERMAN<br><b>City:</b> SAN GERMAN<br><b>Zip Code:</b> 00683<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 142
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fafd628a8fac47ebb268a36a0c4ebcca = L.circleMarker(
+                [18.421699999999973, -66.051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_fafd628a8fac47ebb268a36a0c4ebcca.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL METRO HATO REY  INC.<br><b>Addr:</b> PONCE DE LEON #435<br><b>State:</b> PR<br><b>County:</b> HATO REY<br><b>City:</b> HATO REY<br><b>Zip Code:</b> 00917<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 544
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0150c40833aa44ef8841696cea11c7c7 = L.circleMarker(
+                [18.269999999999968, -66.71],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_0150c40833aa44ef8841696cea11c7c7.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL METROPOLITANO DE LA MONTANA<br><b>Addr:</b> ISAAC GONZALEZ<br><b>State:</b> PR<br><b>County:</b> UTUADO<br><b>City:</b> UTUADO<br><b>Zip Code:</b> 00641<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 986
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e2a1ebe65a648b29c8358ed48896757 = L.circleMarker(
+                [18.358700000000038, -66.03959999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_0e2a1ebe65a648b29c8358ed48896757.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA SAN PABLO CUPEY<br><b>Addr:</b> CARR 844 KM 5 CUPEY BAJO<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00928<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1657
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd6c5d8a2bf94f23902b106583525c40 = L.circleMarker(
+                [18.433681899999964, -66.47262820000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_fd6c5d8a2bf94f23902b106583525c40.bindTooltip(
+                `<div>
+                     <b>Name:</b> ENCOMPASS HEALTH REHABILITATION HOSP<br><b>Addr:</b> CARRETERA #2  KILOMETRO 47.7<br><b>State:</b> PR<br><b>County:</b> PUERTO RICO<br><b>City:</b> MANATI<br><b>Zip Code:</b> 00674<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 160
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f9acfbd1a19a4c0d9dcdc81500d2f3d0 = L.circleMarker(
+                [18.421095000000015, -66.057516],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_f9acfbd1a19a4c0d9dcdc81500d2f3d0.bindTooltip(
+                `<div>
+                     <b>Name:</b> MULTY MEDICAL FACILITIES<br><b>Addr:</b> MUNOZ RIVERA AVENUE #402<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN PR 00918<br><b>Zip Code:</b> 00918<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 76
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e91fe54c6af48cea3f64ff0662c7a37 = L.circleMarker(
+                [18.466795600000015, -66.11926359999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_2e91fe54c6af48cea3f64ff0662c7a37.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNIVERSITY PEDIATRIC HOSPITAL<br><b>Addr:</b> PO BOX 191079<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00919<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1973
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09cdf973db494d95abf8e65e8ed88ea9 = L.circleMarker(
+                [18.179999999999996, -66.16],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_09cdf973db494d95abf8e65e8ed88ea9.bindTooltip(
+                `<div>
+                     <b>Name:</b> FIRST HOSPITAL PANAMERICANO<br><b>Addr:</b> STATE ROAD #787<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> CIDRA<br><b>Zip Code:</b> 00739<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 2706
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_05ea226ca731446d966dd21922c6bc2e = L.circleMarker(
+                [18.084390999999993, -67.145417],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_11d8e971b90943a692ee4bc32e8c9d5b);
+        
+    
+            circle_marker_05ea226ca731446d966dd21922c6bc2e.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL PSIQUIATRICO CABO ROJO<br><b>Addr:</b> CALLE MUNOZ RIVERA 108<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> CABO ROJO<br><b>Zip Code:</b> 00623<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 305
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_2af2c04a6dde43b397524fbea1c5d3eb = L.featureGroup(
+                {}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var circle_marker_73d6d386c436444297dc139a8a00c475 = L.circleMarker(
+                [18.456001900000008, -66.06547120000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_73d6d386c436444297dc139a8a00c475.bindTooltip(
+                `<div>
+                     <b>Name:</b> Ashford Presbyterian Community Hospital<br><b>Addr:</b> 1451 Ave Ashford<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 907<br><b>Distance discrepancy:</b> 118 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 129
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fb67a1976b74c03808942c73602f569 = L.circleMarker(
+                [18.150588699999975, -65.8266744],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_9fb67a1976b74c03808942c73602f569.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA San Pablo Humacao Hospital<br><b>Addr:</b> 3 Calle Font Martelo E<br><b>State:</b> PR<br><b>County:</b> Humacao<br><b>City:</b> Humacao<br><b>Zip Code:</b> 791<br><b>Distance discrepancy:</b> 89 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1626
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d83c37621294d9b87e391ba0e4008ea = L.circleMarker(
+                [17.973753000000066, -66.1143856],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_4d83c37621294d9b87e391ba0e4008ea.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mennonite Hospital Guayama (FKA Episcopal Hospital San Lucas Guayama)<br><b>Addr:</b> Calle Principal Urb La Hacienda<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Guayama<br><b>Zip Code:</b> 785<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 600
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_acd9c1679d7344bba05c5ef7357cc511 = L.circleMarker(
+                [18.181050199999994, -66.8331137],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_acd9c1679d7344bba05c5ef7357cc511.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital General Castaner<br><b>Addr:</b> Carretera 129 Km 642<br><b>State:</b> PR<br><b>County:</b> Adjuntas<br><b>City:</b> Castaner<br><b>Zip Code:</b> 631<br><b>Distance discrepancy:</b> 1166 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 620
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a3cd5c5ab98f4c68bd84335bf8a9c8d1 = L.circleMarker(
+                [18.4028091, -66.05004070000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_a3cd5c5ab98f4c68bd84335bf8a9c8d1.bindTooltip(
+                `<div>
+                     <b>Name:</b> University of Puerto Rico Hospital<br><b>Addr:</b> Carr 3 Km 8 3 Ave 65th Infanteria<br><b>State:</b> PR<br><b>County:</b> Carolina<br><b>City:</b> Carolina<br><b>Zip Code:</b> 984<br><b>Distance discrepancy:</b> 8864 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 577
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a00ae896d8041b5af3f7171a071a220 = L.circleMarker(
+                [18.143361600000016, -66.2617823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_3a00ae896d8041b5af3f7171a071a220.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mennonite Hospital of Aibonito<br><b>Addr:</b> Carretera 726 Calle José C. Vázquez<br><b>State:</b> PR<br><b>County:</b> Aibonito<br><b>City:</b> Aibonito<br><b>Zip Code:</b> 705<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 158
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad6b6b1c0f0a42e3bbe609fec2282ebf = L.circleMarker(
+                [17.997021400000012, -66.61801760000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_ad6b6b1c0f0a42e3bbe609fec2282ebf.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Damas<br><b>Addr:</b> 2213 Ponce Byp<br><b>State:</b> PR<br><b>County:</b> Ponce<br><b>City:</b> Ponce<br><b>Zip Code:</b> 717<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 385
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efa99d6fb2264a26909f0811172ca8c0 = L.circleMarker(
+                [18.44226969999997, -67.1507861],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_efa99d6fb2264a26909f0811172ca8c0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Comunitario Buen Samaritano<br><b>Addr:</b> Carr2 Km14 Ave Severiano Cuevas #18<br><b>State:</b> PR<br><b>County:</b> Aguadilla<br><b>City:</b> Aguadilla<br><b>Zip Code:</b> 603<br><b>Distance discrepancy:</b> 1777 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bca00d5e96b24c08af41bc84b56a3509 = L.circleMarker(
+                [18.473266600000002, -66.71683799999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_bca00d5e96b24c08af41bc84b56a3509.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano Dr Susoni (FKA Hospital Dr Susoni)<br><b>Addr:</b> 55 Calle Palma<br><b>State:</b> PR<br><b>County:</b> Arecibo<br><b>City:</b> Arecibo<br><b>Zip Code:</b> 612<br><b>Distance discrepancy:</b> 102 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 475
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24f61304d0dc40d28f636b8c60e5406e = L.circleMarker(
+                [18.399029899999974, -66.0387156],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_24f61304d0dc40d28f636b8c60e5406e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital San Francisco<br><b>Addr:</b> 371 Calle José de Diego<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 923<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 175
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_947215cfcd514273b3bb5162ec6ce5dc = L.circleMarker(
+                [18.20311740000004, -67.1412142],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_947215cfcd514273b3bb5162ec6ce5dc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital San Antonio<br><b>Addr:</b> Calle Dr Ramón Emeterio Betances # 18<br><b>State:</b> PR<br><b>County:</b> Mayaguez<br><b>City:</b> North Mayagüez<br><b>Zip Code:</b> 680<br><b>Distance discrepancy:</b> 161 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 582
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d33da12107041f1952acdf8dc73957b = L.circleMarker(
+                [18.21998930000005, -66.04907409999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_3d33da12107041f1952acdf8dc73957b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Menonita of Caguas (AKA Hospital San Juan Bautista Medical Center)<br><b>Addr:</b> Carr 172 Urb Turabo Gardens<br><b>State:</b> PR<br><b>County:</b> Caguas<br><b>City:</b> Caguas<br><b>Zip Code:</b> 727<br><b>Distance discrepancy:</b> 1695 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6cc7377178b347338c1a9447869e062b = L.circleMarker(
+                [18.397711699999995, -66.1472788],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_6cc7377178b347338c1a9447869e062b.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA San Pablo Bayamon Hospital<br><b>Addr:</b> 70 Calle Santa Cruz<br><b>State:</b> PR<br><b>County:</b> Bayamon<br><b>City:</b> Bayamon<br><b>Zip Code:</b> 961<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 614
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f25fe9209e1b416a89796831837e6113 = L.circleMarker(
+                [18.031410099999963, -66.857723],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_f25fe9209e1b416a89796831837e6113.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Pavia Yauco (FKA Hospital Metropolitano Dr Tito Mattei)<br><b>Addr:</b> Rd 128 Km 1.0 Bo Susua Baja<br><b>State:</b> PR<br><b>County:</b> Yauco<br><b>City:</b> Yauco<br><b>Zip Code:</b> 698<br><b>Distance discrepancy:</b> 650 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63edb093e96541799a29f9f3bcfc8460 = L.circleMarker(
+                [18.390193000000014, -67.1095294],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_63edb093e96541799a29f9f3bcfc8460.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital San Carlos Borromeo<br><b>Addr:</b> Calle Concepcion Vera Ayala #550 S<br><b>State:</b> PR<br><b>County:</b> Moca<br><b>City:</b> Moca<br><b>Zip Code:</b> 676<br><b>Distance discrepancy:</b> 11 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31b40f6c29334694bbe2f85c49335cf6 = L.circleMarker(
+                [18.380405400000022, -65.955638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_31b40f6c29334694bbe2f85c49335cf6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Doctors Center Hospital Carolina<br><b>Addr:</b> Calle Molinillo<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Carolina<br><b>Zip Code:</b> 988<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 550
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_903e8d36ada341e59154ca068eb31367 = L.circleMarker(
+                [18.43460230000004, -66.48237140000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_903e8d36ada341e59154ca068eb31367.bindTooltip(
+                `<div>
+                     <b>Name:</b> Manati Medical Center<br><b>Addr:</b> Calle Hernandez Carrion<br><b>State:</b> PR<br><b>County:</b> Manati<br><b>City:</b> Manati<br><b>Zip Code:</b> 674<br><b>Distance discrepancy:</b> 108 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1308
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36e80a02a7454727b75d076094e7275f = L.circleMarker(
+                [18.445621999999997, -66.398985],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_36e80a02a7454727b75d076094e7275f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wilma N Vazquez Medical Center<br><b>Addr:</b> Carr 2 Km 395 Rd Number 2 Bo Algarrobo<br><b>State:</b> PR<br><b>County:</b> Vega Baja<br><b>City:</b> Vega Baja<br><b>Zip Code:</b> 693<br><b>Distance discrepancy:</b> 2548 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 480
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7aef58769084f0cabf3acf612b07f30 = L.circleMarker(
+                [18.218303999999993, -66.031394],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_c7aef58769084f0cabf3acf612b07f30.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA San Pablo Caguas Hospital<br><b>Addr:</b> 100 Ave Luis Munoz Marin<br><b>State:</b> PR<br><b>County:</b> Caguas<br><b>City:</b> Caguas<br><b>Zip Code:</b> 725<br><b>Distance discrepancy:</b> 3664 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2fe98e350a6b48b38e527533bb3e43b6 = L.circleMarker(
+                [18.39600809999999, -66.07386239999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_2fe98e350a6b48b38e527533bb3e43b6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Industrial<br><b>Addr:</b> Centro Medico de Rio Piedras<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 936<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 150
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85677c8181a642038cea834789eb0248 = L.circleMarker(
+                [18.3321123, -65.6501216],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_85677c8181a642038cea834789eb0248.bindTooltip(
+                `<div>
+                     <b>Name:</b> Caribbean Medical Center<br><b>Addr:</b> Avenida Osvaldo Molina # 151<br><b>State:</b> PR<br><b>County:</b> Fajardo<br><b>City:</b> Fajardo<br><b>Zip Code:</b> 738<br><b>Distance discrepancy:</b> 13 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 289
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31148a5e5fbc4fe88ee48ce2676e6d5f = L.circleMarker(
+                [18.082492999999964, -67.04010820000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_31148a5e5fbc4fe88ee48ce2676e6d5f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano San German<br><b>Addr:</b> Calle Javilla #8<br><b>State:</b> PR<br><b>County:</b> San German<br><b>City:</b> San German<br><b>Zip Code:</b> 683<br><b>Distance discrepancy:</b> 93 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 142
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8fdc2d19b5948ddae55e33aecb0988d = L.circleMarker(
+                [18.419500999999993, -66.055478],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_f8fdc2d19b5948ddae55e33aecb0988d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Pavia Hato Rey<br><b>Addr:</b> 435 Ave Ponce De Leon<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Hato Rey<br><b>Zip Code:</b> 917<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 544
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b961ebd950a94022a7f056fdd249706d = L.circleMarker(
+                [18.267567500000016, -66.7013424],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_b961ebd950a94022a7f056fdd249706d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano De La Montana<br><b>Addr:</b> Calle Isaac Gonzalez Martinez<br><b>State:</b> PR<br><b>County:</b> Utuado<br><b>City:</b> Utuado<br><b>Zip Code:</b> 641<br><b>Distance discrepancy:</b> 4484 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 986
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4517327a5eb545d8838ec21090cb4768 = L.circleMarker(
+                [18.37259800000004, -66.046365],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_4517327a5eb545d8838ec21090cb4768.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA San Pablo Cupey (FKA Hospital San Gerardo)<br><b>Addr:</b> Carr 844 KM 0.5<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Rio Piedras<br><b>Zip Code:</b> 928<br><b>Distance discrepancy:</b> 5195 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1657
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c810569a1274461bf30f20573475375 = L.circleMarker(
+                [18.434497100000016, -66.4738542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_8c810569a1274461bf30f20573475375.bindTooltip(
+                `<div>
+                     <b>Name:</b> Doctors Center Hospital Manati<br><b>Addr:</b> Marginal Carretera No 2 Km 47 7<br><b>State:</b> PR<br><b>County:</b> Manati<br><b>City:</b> Manati<br><b>Zip Code:</b> 674<br><b>Distance discrepancy:</b> 269 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 160
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aef2daf644b84640aedaab94c5eeaa4e = L.circleMarker(
+                [18.420391700000046, -66.05740210000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_aef2daf644b84640aedaab94c5eeaa4e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Multy Medical Facilities Corporation<br><b>Addr:</b> 402 Munoz Rivera Avenue<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Hato Rey<br><b>Zip Code:</b> 918<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 76
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1eb288481d3745c6af66569da84d9242 = L.circleMarker(
+                [18.466007700000034, -66.1012801],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_1eb288481d3745c6af66569da84d9242.bindTooltip(
+                `<div>
+                     <b>Name:</b> University District Hospital<br><b>Addr:</b> Paseo Dr Jose Celso Barbosa<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 921<br><b>Distance discrepancy:</b> 8851 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1973
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba9c9c3d31c64b07acb35169035add01 = L.circleMarker(
+                [18.176022700000058, -66.1356904],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_ba9c9c3d31c64b07acb35169035add01.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cidra Pan American Hospital (AKA First Hospital Panamericano)<br><b>Addr:</b> State Rd #787<br><b>State:</b> PR<br><b>County:</b> Cidra<br><b>City:</b> Cidra<br><b>Zip Code:</b> 739<br><b>Distance discrepancy:</b> 4034 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 2706
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_03dc992f6a5440fdbe7365fff639b83f = L.circleMarker(
+                [18.08154100000002, -67.1457128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_2af2c04a6dde43b397524fbea1c5d3eb);
+        
+    
+            circle_marker_03dc992f6a5440fdbe7365fff639b83f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano Psiquiatrico (AKA Cabo Rojo Metropolitan Psychiatric Hospital)<br><b>Addr:</b> 108 Calle Munoz Rivera<br><b>State:</b> PR<br><b>County:</b> Cabo Rojo<br><b>City:</b> Cabo Rojo<br><b>Zip Code:</b> 623<br><b>Distance discrepancy:</b> 373 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 305
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_858d1c0da3024e21b671ec29c0a29278 = L.featureGroup(
+                {}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var circle_marker_ee9b5de2e964442594a7cb414af62851 = L.circleMarker(
+                [18.039999999999996, -66.61],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_ee9b5de2e964442594a7cb414af62851.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DR. PILA<br><b>Addr:</b> 2445 AVE. LAS AMERICAS<br><b>State:</b> PR<br><b>County:</b> PONCE<br><b>City:</b> PONCE<br><b>Zip Code:</b> 00731<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b048a04a2f143db91f9cadc3592737f = L.circleMarker(
+                [18.374400000000023, -66.0571],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_6b048a04a2f143db91f9cadc3592737f.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOCTORS CENTER HOSPITAL SAN JUAN I<br><b>Addr:</b> 1395 SAN RAFAEL ST. PDA. 20<br><b>State:</b> PR<br><b>County:</b> SAN JUAN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00910<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_603b3d8e75934e218c485f97b7d7e05a = L.circleMarker(
+                [18.14799999999997, -65.8121],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_603b3d8e75934e218c485f97b7d7e05a.bindTooltip(
+                `<div>
+                     <b>Name:</b> RYDER<br><b>Addr:</b> ROAD 30<br><b>State:</b> PR<br><b>County:</b> HUMACAO<br><b>City:</b> HUMACAO<br><b>Zip Code:</b> 00792<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_659dd40460de4a798fa36a3485153425 = L.circleMarker(
+                [18.10360000000003, -66.15379999999999],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_659dd40460de4a798fa36a3485153425.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL MENONITA DE CAYEY<br><b>Addr:</b> CARR 14 KM 1.2<br><b>State:</b> PR<br><b>County:</b> CAYEY<br><b>City:</b> BARRIO RINCON<br><b>Zip Code:</b> 00737-3130<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc8f91c9026a4c0c8034ee569a1374a3 = L.circleMarker(
+                [18.374400000000023, -66.0571],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_dc8f91c9026a4c0c8034ee569a1374a3.bindTooltip(
+                `<div>
+                     <b>Name:</b> AUXILIO MUTUO HOSPITAL<br><b>Addr:</b> PONCE DE LEON<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00919-1227<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6012e331218d4000ac00c72e28e517db = L.circleMarker(
+                [18.080000000000034, -67.05],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_6012e331218d4000ac00c72e28e517db.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DE LA CONCEPCION<br><b>Addr:</b> CARR. #2 KM 173.4 BO CAIN ALTO<br><b>State:</b> PR<br><b>County:</b> SAN GERMAN<br><b>City:</b> SAN GERMAN<br><b>Zip Code:</b> 00683<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4a47ac0b2a814ee1b36702bf89dc5314 = L.circleMarker(
+                [17.970000000000038, -66.06000000000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_4a47ac0b2a814ee1b36702bf89dc5314.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL LAFAYETTE<br><b>Addr:</b> SECTOR CUATRO CALLE KM 1<br><b>State:</b> PR<br><b>County:</b> PUERTO RICO<br><b>City:</b> ARROYO<br><b>Zip Code:</b> 00714<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b720eefb3a6443fbffd19e6e19f7d50 = L.circleMarker(
+                [18.420000000000023, -66.13],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_6b720eefb3a6443fbffd19e6e19f7d50.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL HERMANOS MELENDEZ<br><b>Addr:</b> CARR. #2 KM. 11.7<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> BAYAMON<br><b>Zip Code:</b> 00960<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa34a3aab1ec4393a22156149dd8d045 = L.circleMarker(
+                [18.073000000000004, -66.6185],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_aa34a3aab1ec4393a22156149dd8d045.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN LUCAS PONCE<br><b>Addr:</b> 917 AVE TITO CASTRO<br><b>State:</b> PR<br><b>County:</b> PUERTO RICO<br><b>City:</b> PONCE<br><b>Zip Code:</b> 00733-6810<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ba7473a1d0b4c7f8e43242201eaf5d7 = L.circleMarker(
+                [18.087773599999974, -67.15486850000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_3ba7473a1d0b4c7f8e43242201eaf5d7.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL MENONITA  GUAYAMA<br><b>Addr:</b> AVE PEDRO ALBIZU CAMPOS<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> GUAYAMA<br><b>Zip Code:</b> 00785<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e16f24eb8a8469ea8b0d19909213e43 = L.circleMarker(
+                [18.361599999999953, -66.0724],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_0e16f24eb8a8469ea8b0d19909213e43.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNIVERSITY DISCTRICT HOSPITAL<br><b>Addr:</b> BO. MONACILLO<br><b>State:</b> PR<br><b>County:</b> PUERTO RICO<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00922-2116<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_46a4b5f987e743b799e00ac4462670f9 = L.circleMarker(
+                [18.350000000000026, -66.18],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_46a4b5f987e743b799e00ac4462670f9.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOCTORS CENTER HOSPITAL BAYAMON<br><b>Addr:</b> STREET J-9 EXT. HERMANAS DAVILA<br><b>State:</b> PR<br><b>County:</b> BAYAMON<br><b>City:</b> BAYAMON<br><b>Zip Code:</b> 00956-2957<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_581ad32135b64239b3f4bc68d51977ec = L.circleMarker(
+                [18.350000000000026, -66.18],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_581ad32135b64239b3f4bc68d51977ec.bindTooltip(
+                `<div>
+                     <b>Name:</b> BAYAMON REGIONAL HOSPITAL<br><b>Addr:</b> LAUREL #100<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> BAYAMON<br><b>Zip Code:</b> 00956<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f658e20ff754ac29d7a216dc2f808cb = L.circleMarker(
+                [18.073000000000004, -66.6185],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_7f658e20ff754ac29d7a216dc2f808cb.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL SAN CRISTOBAL<br><b>Addr:</b> 509 KM 1 COTTO LAUREL<br><b>State:</b> PR<br><b>County:</b> PONCE<br><b>City:</b> PONCE<br><b>Zip Code:</b> 00980<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_082c3b4987144dbb822f03f1648f2ecd = L.circleMarker(
+                [18.47326899999994, -66.749832],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_082c3b4987144dbb822f03f1648f2ecd.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DR. SUSONI<br><b>Addr:</b> PALMA A 56<br><b>State:</b> PR<br><b>County:</b> ARECIBO<br><b>City:</b> ARECIBO<br><b>Zip Code:</b> 00614<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9450fafe88574b2895c4798f57395ff5 = L.circleMarker(
+                [18.38999999999999, -66.06000000000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_9450fafe88574b2895c4798f57395ff5.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL  SAN  GERARDO<br><b>Addr:</b> EL SENORIAL STATION<br><b>State:</b> PR<br><b>County:</b> SAN JUAN<br><b>City:</b> RIOPIEDRAS<br><b>Zip Code:</b> 00926<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_97ad1eafa2ed4d59b5aebe354b7e04a0 = L.circleMarker(
+                [18.38999999999999, -66.06000000000002],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_97ad1eafa2ed4d59b5aebe354b7e04a0.bindTooltip(
+                `<div>
+                     <b>Name:</b> PROFFESIONAL HOSPITAL<br><b>Addr:</b> AVE LAS CUMBRES<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> GUAYNABO<br><b>Zip Code:</b> 00970<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be0c5bd017f34b00beede3b3bb5bda78 = L.circleMarker(
+                [18.374400000000023, -66.0571],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_be0c5bd017f34b00beede3b3bb5bda78.bindTooltip(
+                `<div>
+                     <b>Name:</b> ADMIN DE SERVICIOS MEDICOS DE PR<br><b>Addr:</b> CENTRO MEDICO<br><b>State:</b> PR<br><b>County:</b> SAN JUAN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00922-2129<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d6775b766b34676909f36ab63d742be = L.circleMarker(
+                [18.340000000000018, -65.66000000000001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_2d6775b766b34676909f36ab63d742be.bindTooltip(
+                `<div>
+                     <b>Name:</b> CARIBBEAN MEDICAL CENTER<br><b>Addr:</b> AVE OSVALDO MOLINA #151<br><b>State:</b> PR<br><b>County:</b> FAJARDO MUNICIPIO<br><b>City:</b> FAJARDO<br><b>Zip Code:</b> 00738-7006<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_188b24973c49409985624cc3e0daa4ad = L.circleMarker(
+                [18.439999999999998, -66.06],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_188b24973c49409985624cc3e0daa4ad.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN JORGE CHILDRENS HOSPITAL<br><b>Addr:</b> 258 SAN JORGE STREET<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00912<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_775f35ab39f640dba5f3412cd6d279f6 = L.circleMarker(
+                [18.073000000000004, -66.6185],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_775f35ab39f640dba5f3412cd6d279f6.bindTooltip(
+                `<div>
+                     <b>Name:</b> INSPIRA<br><b>Addr:</b> CALLE  GUADALUPE FINAL 184<br><b>State:</b> PR<br><b>County:</b> PONCE<br><b>City:</b> PONCE<br><b>Zip Code:</b> 00763<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0749afd4551c4bcd9c082c8aa5aa03bc = L.circleMarker(
+                [18.14, -66.26],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_0749afd4551c4bcd9c082c8aa5aa03bc.bindTooltip(
+                `<div>
+                     <b>Name:</b> CENTRO DE SALUD CONDUCTUAL MENONITA<br><b>Addr:</b> CARR ESTATAL 14 INTERIOR<br><b>State:</b> PR<br><b>County:</b> AIBONITO PR<br><b>City:</b> AIBONITO<br><b>Zip Code:</b> 00705-1379<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49e28515b6764a0587a1085dc0174d0d = L.circleMarker(
+                [23.000169267203088, -96.00063241581293],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_49e28515b6764a0587a1085dc0174d0d.bindTooltip(
+                `<div>
+                     <b>Name:</b> ASOCIACION HOSPITAL DEL MAESTRO INC<br><b>Addr:</b> SERVIO CUEVAS BUSTAMANTE<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00936<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_adb13ffd606049a89ac1ae63863fbc2c = L.circleMarker(
+                [23.000167025058918, -96.0006300715526],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_adb13ffd606049a89ac1ae63863fbc2c.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL ORIENTE<br><b>Addr:</b> FONT MARTELO # 100<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> HUMACAO<br><b>Zip Code:</b> 00792<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e9b4a84920d4316a000765158a688d8 = L.circleMarker(
+                [23.000169551163076, -96.00063223047519],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_5e9b4a84920d4316a000765158a688d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL I GONZALEZ MARTINEZ<br><b>Addr:</b> CENTRO MEDICO<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> PO BOX 191811 SAN JUAN<br><b>Zip Code:</b> 00919-1811<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8c43486220048db906c4740707fa6c9 = L.circleMarker(
+                [23.000167568436513, -96.00064262073133],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_c8c43486220048db906c4740707fa6c9.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL BELLA VISTA<br><b>Addr:</b> 349 KM 2.7<br><b>State:</b> PR<br><b>County:</b> MAYAGUEZ<br><b>City:</b> MAYAGUEZ<br><b>Zip Code:</b> 00680<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d9ca611d54c48c39caca82068ff07a2 = L.circleMarker(
+                [23.000169802776004, -96.0006323028268],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_8d9ca611d54c48c39caca82068ff07a2.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL PAVIA SANTURCE<br><b>Addr:</b> ASIA STREET<br><b>State:</b> PR<br><b>County:</b> SANTURCE<br><b>City:</b> SANTURCE<br><b>Zip Code:</b> 00910<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e545ba5e153247b5a89f630165f1c31a = L.circleMarker(
+                [23.000167568436513, -96.00064262073133],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_e545ba5e153247b5a89f630165f1c31a.bindTooltip(
+                `<div>
+                     <b>Name:</b> CLINICA ESPA<br><b>Addr:</b> BO. LA QUINTA<br><b>State:</b> PR<br><b>County:</b> MAYAGUEZ<br><b>City:</b> MAYAGUEZ<br><b>Zip Code:</b> 00681<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0faa0c6d074c48548b2a235dcf58dee9 = L.circleMarker(
+                [23.000169292979667, -96.00063218700988],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_0faa0c6d074c48548b2a235dcf58dee9.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL METROPOLITANO<br><b>Addr:</b> 21 #1785<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> RIO PIEDRAS<br><b>Zip Code:</b> 00922<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_07c9e084b4a14303a48cdc2df05cc6cc = L.circleMarker(
+                [23.000169592942154, -96.00063630365156],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_07c9e084b4a14303a48cdc2df05cc6cc.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOCTOR CENTER HOSPITAL MANATI  INC.<br><b>Addr:</b> CARR. #2<br><b>State:</b> PR<br><b>County:</b> MANATI<br><b>City:</b> MANATI<br><b>Zip Code:</b> 00674<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8c38c74b0f849a2917fe285103f8177 = L.circleMarker(
+                [23.000167502180886, -96.00064268294467],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_a8c38c74b0f849a2917fe285103f8177.bindTooltip(
+                `<div>
+                     <b>Name:</b> METRO MAYAGUEZ<br><b>Addr:</b> BASORA<br><b>State:</b> PR<br><b>County:</b> MAYAGUEZ<br><b>City:</b> MAYAGUEZ<br><b>Zip Code:</b> 00681<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47916623e2db4d6ab34b6909402c9ffd = L.circleMarker(
+                [23.000169592942154, -96.00063630365156],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_47916623e2db4d6ab34b6909402c9ffd.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOCTORS CENTER HOSPITAL CAROLINA<br><b>Addr:</b> EDIF. JESUS T PINERO AVE. FERNANDEZ<br><b>State:</b> PR<br><b>County:</b> CAROLINA MUNICIPIO<br><b>City:</b> MANATI<br><b>Zip Code:</b> 00674<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e5eb884f3082455b9fb145babe87fe4c = L.circleMarker(
+                [23.000169267203088, -96.00063241581293],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_e5eb884f3082455b9fb145babe87fe4c.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH REHABILITATION HOSPITAL<br><b>Addr:</b> PMB #340<br><b>State:</b> PR<br><b>County:</b> PUERTO RICO<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00936-8344<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23a65d355f3d45cdb394e0b9936bb94d = L.circleMarker(
+                [23.000169929762357, -96.00063273545291],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_23a65d355f3d45cdb394e0b9936bb94d.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN JUAN CP HOSPITAL<br><b>Addr:</b> RR #2  BUZON 11<br><b>State:</b> PR<br><b>County:</b> SAN JUAN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00926<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17edb3ae6cbe486e95718edaf1fff522 = L.circleMarker(
+                [23.000169929762357, -96.00063273545291],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_858d1c0da3024e21b671ec29c0a29278);
+        
+    
+            circle_marker_17edb3ae6cbe486e95718edaf1fff522.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL DR. RAMON FERNANDEZ MARINA<br><b>Addr:</b> PO BOX 2100<br><b>State:</b> PR<br><b>County:</b> NaN<br><b>City:</b> SAN JUAN<br><b>Zip Code:</b> 00922<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_a7a09f9362714e39b09d773d654d3ae1 = L.featureGroup(
+                {}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var circle_marker_e949365a0efa48d9b46b02d88c276550 = L.circleMarker(
+                [18.467219699999937, -66.73138080000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_e949365a0efa48d9b46b02d88c276550.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Pavia Arecibo<br><b>Addr:</b> Carretera 129 Km 0.1 Avenida San Luis<br><b>State:</b> PR<br><b>County:</b> Arecibo<br><b>City:</b> Arecibo<br><b>Zip Code:</b> 613<br><b>Distance discrepancy:</b> 16 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a27681dd17b4803a668738dbd47b7c7 = L.circleMarker(
+                [18.397950299999998, -66.1663829],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_9a27681dd17b4803a668738dbd47b7c7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Doctors Center Hospital Bayamon<br><b>Addr:</b> 9 J St Ext Hermanas Davila<br><b>State:</b> PR<br><b>County:</b> Bayamon<br><b>City:</b> Bayamon<br><b>Zip Code:</b> 959<br><b>Distance discrepancy:</b> 6 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5456d3eb261b48edab39a3970bf5520c = L.circleMarker(
+                [18.367808800000002, -66.154322],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_5456d3eb261b48edab39a3970bf5520c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Universitario Dr Ruiz Arnau<br><b>Addr:</b> Laurel Ave Santa Juanita #100<br><b>State:</b> PR<br><b>County:</b> Bayamon<br><b>City:</b> Bayamon<br><b>Zip Code:</b> 956<br><b>Distance discrepancy:</b> 216 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc5237c36ea64ad8926141881eaff48f = L.circleMarker(
+                [18.336731200000006, -65.65485200000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_fc5237c36ea64ad8926141881eaff48f.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIMA San Pablo Fajardo<br><b>Addr:</b> 404 Ave General Valero<br><b>State:</b> PR<br><b>County:</b> Fajardo<br><b>City:</b> Fajardo<br><b>Zip Code:</b> 738<br><b>Distance discrepancy:</b> 236 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6f59cb56d16542ed9fe2e94080857d51 = L.circleMarker(
+                [18.152905200000003, -65.8340682],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_6f59cb56d16542ed9fe2e94080857d51.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Oriente (FKA Hospital Dr Dominguez)<br><b>Addr:</b> 300 Calle Font Martelo<br><b>State:</b> PR<br><b>County:</b> Humacao<br><b>City:</b> Humacao<br><b>Zip Code:</b> 791<br><b>Distance discrepancy:</b> 60 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7544f0def610412d80c6a3860433e43d = L.circleMarker(
+                [18.155973800000016, -65.8353731],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_7544f0def610412d80c6a3860433e43d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Ryder Memorial Hospital<br><b>Addr:</b> 355 Avenue Font Martelo<br><b>State:</b> PR<br><b>County:</b> Humacao<br><b>City:</b> Humacao<br><b>Zip Code:</b> 791<br><b>Distance discrepancy:</b> 81 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a36d68272b34fe8bff31875a0a5004f = L.circleMarker(
+                [18.18682750000006, -67.1192192],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_1a36d68272b34fe8bff31875a0a5004f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bella Vista Hospital<br><b>Addr:</b> Carr 349 Km 2 7 Cerro Las Mesas<br><b>State:</b> PR<br><b>County:</b> Mayaguez<br><b>City:</b> Mayaguez<br><b>Zip Code:</b> 681<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63969f06d52247dd9452f941888610cd = L.circleMarker(
+                [18.030956899999985, -66.59530510000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_63969f06d52247dd9452f941888610cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Episcopal San Lucas Ponce<br><b>Addr:</b> 917 Ave Tito Castro<br><b>State:</b> PR<br><b>County:</b> Ponce<br><b>City:</b> Ponce<br><b>Zip Code:</b> 716<br><b>Distance discrepancy:</b> 745 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae91ac9f3bb9446da352ca42d8365631 = L.circleMarker(
+                [18.038258800000012, -66.5473223],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_ae91ac9f3bb9446da352ca42d8365631.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital San Cristobal<br><b>Addr:</b> Carr 506 Km 1 0<br><b>State:</b> PR<br><b>County:</b> Ponce<br><b>City:</b> Coto Laurel<br><b>Zip Code:</b> 780<br><b>Distance discrepancy:</b> 1281 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f141feeb0f214789b365119787ffa247 = L.circleMarker(
+                [18.003756200000037, -66.610549],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_f141feeb0f214789b365119787ffa247.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano Dr Pila<br><b>Addr:</b> 2435 Bulevar Luis A Ferre<br><b>State:</b> PR<br><b>County:</b> Ponce<br><b>City:</b> Ponce<br><b>Zip Code:</b> 717<br><b>Distance discrepancy:</b> 942 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8caa91a9735443ec81ea6e4d17ea2d5f = L.circleMarker(
+                [18.09882460000002, -67.03828860000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_8caa91a9735443ec81ea6e4d17ea2d5f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital De La Concepcion<br><b>Addr:</b> Rd Number 2 Km 1734<br><b>State:</b> PR<br><b>County:</b> San German<br><b>City:</b> San German<br><b>Zip Code:</b> 683<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb6bb189564247d98682f6e9b27a86b7 = L.circleMarker(
+                [18.393116099999965, -66.07579360000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_eb6bb189564247d98682f6e9b27a86b7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Admin De Servicios Medicos Puerto Rico<br><b>Addr:</b> Bo Monacillo Carr Num 22<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 935<br><b>Distance discrepancy:</b> 1984 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_708bcbc7d7f7455badbb9794e572ef17 = L.circleMarker(
+                [18.39811769999999, -66.0726326],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_708bcbc7d7f7455badbb9794e572ef17.bindTooltip(
+                `<div>
+                     <b>Name:</b> Centro Cardiovascular of Puerto Rico and the Caribbean<br><b>Addr:</b> Ave Americo Miranda Esq Centro Medico<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 936<br><b>Distance discrepancy:</b> 8800 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0087947c568149a1a44ff7562c8e8433 = L.circleMarker(
+                [18.39063159999998, -66.0790224],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_0087947c568149a1a44ff7562c8e8433.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Caribbean Healthcare System<br><b>Addr:</b> 10 Calle Casia<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 921<br><b>Distance discrepancy:</b> 214 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7464b8c11d2446599a8003e510edb047 = L.circleMarker(
+                [18.44471109999999, -66.0696024],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_7464b8c11d2446599a8003e510edb047.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Pavia Santurce<br><b>Addr:</b> Calle Profesor Augusto Rodriguez #1462<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Fernandez Juncos<br><b>Zip Code:</b> 910<br><b>Distance discrepancy:</b> 4144 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5f5547d188a64716b23b1503b1225fb2 = L.circleMarker(
+                [18.466007700000034, -66.1012801],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_5f5547d188a64716b23b1503b1225fb2.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Juan City Hospital<br><b>Addr:</b> Paseo Dr Jose Celso Barbosa<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 921<br><b>Distance discrepancy:</b> 8851 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_786c21f56e9548e1b64c6a68c13063a2 = L.circleMarker(
+                [18.40963449999997, -66.0513208],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_786c21f56e9548e1b64c6a68c13063a2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Auxilio Mutuo Hospital<br><b>Addr:</b> Ave Ponce de Leon<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Hato Rey<br><b>Zip Code:</b> 919<br><b>Distance discrepancy:</b> 66 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cba0d1c69a540598f297923beda5000 = L.circleMarker(
+                [18.44623019999997, -66.0735383],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_1cba0d1c69a540598f297923beda5000.bindTooltip(
+                `<div>
+                     <b>Name:</b> Doctors Center Hospital San Juan<br><b>Addr:</b> 1395 Calle San Rafael<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 909<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75058f6b6b5d434eba6efa1239a21413 = L.circleMarker(
+                [18.41192689999999, -66.0685986],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_75058f6b6b5d434eba6efa1239a21413.bindTooltip(
+                `<div>
+                     <b>Name:</b> Asociacion Hospital Del Maestro<br><b>Addr:</b> Sergio Cuevas Bustamante St 550<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> San Juan<br><b>Zip Code:</b> 936<br><b>Distance discrepancy:</b> 186 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d273fb5a25a945d49638a437aaccf0c1 = L.circleMarker(
+                [18.3972943, -66.0723059],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_d273fb5a25a945d49638a437aaccf0c1.bindTooltip(
+                `<div>
+                     <b>Name:</b> University Pediatric Hospital<br><b>Addr:</b> 22 St Bo Monacillos<br><b>State:</b> PR<br><b>County:</b> Vega Baja<br><b>City:</b> San Juan<br><b>Zip Code:</b> 919<br><b>Distance discrepancy:</b> 39105 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc07d5e1ee7248049cb61ffff2097718 = L.circleMarker(
+                [18.384694099999997, -66.0222886],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_bc07d5e1ee7248049cb61ffff2097718.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Juan Capestrano Hospital<br><b>Addr:</b> SR 877 KM 1.6 Camino Las Lomos<br><b>State:</b> PR<br><b>County:</b> San Juan<br><b>City:</b> Rio Piedras<br><b>Zip Code:</b> 926<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bad4d68e901a4563b0b8b7d264aed0bd = L.circleMarker(
+                [18.14050399999999, -66.269365],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_bad4d68e901a4563b0b8b7d264aed0bd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Centro Salud Conductual Menonita<br><b>Addr:</b> Carr Estatal 14 Interior<br><b>State:</b> PR<br><b>County:</b> Cayey<br><b>City:</b> Aibonito<br><b>Zip Code:</b> 705<br><b>Distance discrepancy:</b> 11719 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b87ce4eccc64f1ca7ef775913d29b80 = L.circleMarker(
+                [18.389395999999987, -66.1653224],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_6b87ce4eccc64f1ca7ef775913d29b80.bindTooltip(
+                `<div>
+                     <b>Name:</b> Puerto Rico Womens and Children Hospital (FKA Puerto Rico Childrens Hospital)<br><b>Addr:</b> State Rd # 2 Km 117 Interior<br><b>State:</b> PR<br><b>County:</b> Bayamon<br><b>City:</b> Bayamon<br><b>Zip Code:</b> 959<br><b>Distance discrepancy:</b> 1860 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26d6163630ba4fa4987a76a180eb242d = L.circleMarker(
+                [18.396759499999973, -66.1625647],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_26d6163630ba4fa4987a76a180eb242d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bayamon Medical Center (FKA Hospital Hermanos Melendez)<br><b>Addr:</b> KM 11 7 PR-2<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Bayamon<br><b>Zip Code:</b> 960<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c495d5dc70a94425b360df83d8bf8371 = L.circleMarker(
+                [18.113494099999972, -66.1658845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_c495d5dc70a94425b360df83d8bf8371.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cayey Mennonite Medical Center<br><b>Addr:</b> Carretera 14 Interior Km. 0.3 Barrio Rincón Sector Lomas<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Cayey<br><b>Zip Code:</b> 737<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aa7221f725f84c11b44509372ba849c4 = L.circleMarker(
+                [18.202807399999976, -67.1397475],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_aa7221f725f84c11b44509372ba849c4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Perea<br><b>Addr:</b> 15 Calle Doctor Basora<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Mayaguez<br><b>Zip Code:</b> 681<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_608ae0e705fd49e7af2c7b64855734c0 = L.circleMarker(
+                [18.180706000000022, -67.152459],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_608ae0e705fd49e7af2c7b64855734c0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mayaguez Medical Center (AKA Centro Medico De Mayag)<br><b>Addr:</b> 410 Ave Hostos<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Mayaguez<br><b>Zip Code:</b> 681<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d88b7e983bc4d749f6dcd0e2ab57d65 = L.circleMarker(
+                [18.033239600000016, -66.5932779],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_4d88b7e983bc4d749f6dcd0e2ab57d65.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Oncologico Andres Grillasca<br><b>Addr:</b> 1000 Tito Castro Blvd<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Ponce<br><b>Zip Code:</b> 733<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d4b33f61b7754642b8f87d08b3d668bf = L.circleMarker(
+                [18.389969600000022, -66.09835030000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_d4b33f61b7754642b8f87d08b3d668bf.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Metropolitano<br><b>Addr:</b> Carretera 21 #1785 Las Lomas<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 922<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa77f88c57b24ed7ba425ca9c6c56c81 = L.circleMarker(
+                [18.39725730000004, -66.0735662],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_fa77f88c57b24ed7ba425ca9c6c56c81.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of San Juan (FKA HealthSouth Rehabilitation Hospital of San Juan)<br><b>Addr:</b> Centro Medico<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 921<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c4bcc016f02d408ab81404f00edf3285 = L.circleMarker(
+                [18.362320299999993, -66.0978195],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_c4bcc016f02d408ab81404f00edf3285.bindTooltip(
+                `<div>
+                     <b>Name:</b> Professional Hospital - Guaynabo<br><b>Addr:</b> Avenida Las Cumbres<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Guaynabo<br><b>Zip Code:</b> 969<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_385ca21488f94621993022e3763a2046 = L.circleMarker(
+                [18.395450799999974, -66.07270880000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_385ca21488f94621993022e3763a2046.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital Oncológico (AKA Liga Puertorriqueña Contra el Cáncer)<br><b>Addr:</b> Ave Americo Miranda<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 919<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5191958dc1d143058656f6fae9ebb3f1 = L.circleMarker(
+                [18.14050399999999, -66.269365],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_5191958dc1d143058656f6fae9ebb3f1.bindTooltip(
+                `<div>
+                     <b>Name:</b> CIMA Mennonite Hospital<br><b>Addr:</b> Calle Sargento Gerardo Santiago Interior 15 Carr 14<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Comerio<br><b>Zip Code:</b> 782<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5bd45b87a1724f85bab04fa8df6a1d85 = L.circleMarker(
+                [18.39585620000001, -66.0722722],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_5bd45b87a1724f85bab04fa8df6a1d85.bindTooltip(
+                `<div>
+                     <b>Name:</b> Comprehensive Cancer Center of UPR<br><b>Addr:</b> PR 21 INT PR 18 BO Monacillos Urbano<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 927<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef80d7903e8f40b092679628d192bbcc = L.circleMarker(
+                [18.405722600000015, -66.07995200000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_ef80d7903e8f40b092679628d192bbcc.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Juan Pan American Hospital<br><b>Addr:</b> 735 Av Juan Ponce de Leon<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 926<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d04be2c7c7c4e2cb5f498d3aec08196 = L.circleMarker(
+                [18.433895700000015, -66.47540020000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_1d04be2c7c7c4e2cb5f498d3aec08196.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Manati (FKA HealthSouth Rehabilitation Hospital of Manati)<br><b>Addr:</b> Calle 2 Km 47.7<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> Manati<br><b>Zip Code:</b> 674<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d89ec39240b24b90a77447968a27dd13 = L.circleMarker(
+                [18.393657499999964, -66.1434351],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a7a09f9362714e39b09d773d654d3ae1);
+        
+    
+            circle_marker_d89ec39240b24b90a77447968a27dd13.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Jorge Childrens & Womens Hospital<br><b>Addr:</b> 258 Calle San Jorge<br><b>State:</b> PR<br><b>County:</b> None<br><b>City:</b> San Juan<br><b>Zip Code:</b> 912<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_af4a2e4e7a234cc4a72515aad654e119 = L.featureGroup(
+                {}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+    
+            var poly_line_8cb403d019464b058f318f8d2b3d14b9 = L.polyline(
+                [[18.454811000000035, -66.06569899999998], [18.456001900000008, -66.06547120000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_6dabfa130fe046939fc05d6bcc1b176d = L.polyline(
+                [[18.14799999999997, -65.8121], [18.150588699999975, -65.8266744]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_0ae05584531a4a248adca092bd453941 = L.polyline(
+                [[17.978170000000052, -66.111], [17.973753000000066, -66.1143856]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_4ac0f022b03547eaa4cf2ae1176bc022 = L.polyline(
+                [[18.186204000000007, -66.830488], [18.181050199999994, -66.8331137]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_1f3368b0952f4f3db9120b8c28fd02f9 = L.polyline(
+                [[18.39740000000001, -66.0499], [18.4028091, -66.05004070000003]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_d9c8954cdef5404fa144d2ac50ac1728 = L.polyline(
+                [[18.144227000000008, -66.262953], [18.143361600000016, -66.2617823]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_ae626f4dcaeb498290b5cbc4fbb63613 = L.polyline(
+                [[17.99999999999999, -66.62], [17.997021400000012, -66.61801760000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_1e7e0340e1cf40578ac7e872cf5834b7 = L.polyline(
+                [[18.442269699999986, -67.1507861], [18.44226969999997, -67.1507861]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_3efbfa91b6994d1c88cbc9ba1bb1bcad = L.polyline(
+                [[18.469200000000026, -66.7186], [18.473266600000002, -66.71683799999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_4d6978df72544922bcf230cca0199f09 = L.polyline(
+                [[18.39999999999997, -66.04], [18.399029899999974, -66.0387156]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_a6f519ee070840d7a6561b670010401f = L.polyline(
+                [[18.20280000000001, -67.1465], [18.20311740000004, -67.1412142]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_d6e67c3253be4feeb0cdb7b8733d65bb = L.polyline(
+                [[18.219989300000037, -66.04907409999998], [18.21998930000005, -66.04907409999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_cd8c9358652f41069933860091ee97f6 = L.polyline(
+                [[18.399500000000003, -66.1526], [18.397711699999995, -66.1472788]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_df198346e0be4d6da5459fc1c68b7ead = L.polyline(
+                [[18.031410099999963, -66.857723], [18.031410099999963, -66.857723]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_943017ce87704ffda9ef6cac52f527c3 = L.polyline(
+                [[18.390000000000008, -67.11], [18.390193000000014, -67.1095294]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_104834fba44943e99cada877d0812584 = L.polyline(
+                [[18.375799999999984, -65.9579], [18.380405400000022, -65.955638]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_c21203eb43854b3684291b32bc1c76b1 = L.polyline(
+                [[18.427500000000048, -66.4921], [18.43460230000004, -66.48237140000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_6aad0c3fb91c43c19d69b8916bac0d73 = L.polyline(
+                [[18.449999999999974, -66.4], [18.445621999999997, -66.398985]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_1da3864056b8478cbe45abeab14b9659 = L.polyline(
+                [[18.218303999999993, -66.031394], [18.218303999999993, -66.031394]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_b7a4ddf304224ec5b27ed1199ec8d479 = L.polyline(
+                [[18.394598999999975, -66.073805], [18.39600809999999, -66.07386239999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_b74bf1dbe50e466c83a64a90748685b7 = L.polyline(
+                [[18.329499999999975, -65.6494], [18.3321123, -65.6501216]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_e8c792e8c8cc4542bf84841aede76e30 = L.polyline(
+                [[18.081308000000035, -67.03951400000001], [18.082492999999964, -67.04010820000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_8e8e92a2bcd6411f9bb5dbd8afd32c0a = L.polyline(
+                [[18.421699999999973, -66.051], [18.419500999999993, -66.055478]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_3f812c0a9b7a4dd28b17578552b14e6c = L.polyline(
+                [[18.269999999999968, -66.71], [18.267567500000016, -66.7013424]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_b7b857a76fd845218eb9885324dc737a = L.polyline(
+                [[18.358700000000038, -66.03959999999998], [18.37259800000004, -66.046365]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_6d4fd8e859954c019a222479ded3c56c = L.polyline(
+                [[18.433681899999964, -66.47262820000002], [18.434497100000016, -66.4738542]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_cea9a64eea264ed0afa56569d3709aae = L.polyline(
+                [[18.421095000000015, -66.057516], [18.420391700000046, -66.05740210000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_04da8243cd294e75aa59e6e979a64f21 = L.polyline(
+                [[18.466795600000015, -66.11926359999998], [18.466007700000034, -66.1012801]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_e6f27095ffb54d5ebdd46659d4808e22 = L.polyline(
+                [[18.179999999999996, -66.16], [18.176022700000058, -66.1356904]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var poly_line_05c9f15cf3de475abca485fb25a70d06 = L.polyline(
+                [[18.084390999999993, -67.145417], [18.08154100000002, -67.1457128]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_af4a2e4e7a234cc4a72515aad654e119);
+        
+    
+            var layer_control_fc51d5f4efab460d9c87fa85418517ae = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f5b5019fec2744418e4385b776523289,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_11d8e971b90943a692ee4bc32e8c9d5b,
+                    "DH - matched" : feature_group_2af2c04a6dde43b397524fbea1c5d3eb,
+                    "HCRIS - unmatched" : feature_group_858d1c0da3024e21b671ec29c0a29278,
+                    "DH - unmatched" : feature_group_a7a09f9362714e39b09d773d654d3ae1,
+                    "connections" : feature_group_af4a2e4e7a234cc4a72515aad654e119,
+                },
+            };
+            L.control.layers(
+                layer_control_fc51d5f4efab460d9c87fa85418517ae.base_layers,
+                layer_control_fc51d5f4efab460d9c87fa85418517ae.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_d0836422bbbd476d8cc8f131ed1bd80b);
+        
+</script>

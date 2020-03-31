@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_eb5bcf1ec5394230956039fa6e3f9725 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eb5bcf1ec5394230956039fa6e3f9725" ></div>
+        
+</body>
+<script>    
+    
+            var map_eb5bcf1ec5394230956039fa6e3f9725 = L.map(
+                "map_eb5bcf1ec5394230956039fa6e3f9725",
+                {
+                    center: [38.8241217, -80.15197],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_773ce12d90574ce8b1987ce6fbc17794 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var feature_group_bef511c4d29641c0aa9a01c2a401a3ba = L.featureGroup(
+                {}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var circle_marker_b0922ef4ca874e5f97f9d359983fd778 = L.circleMarker(
+                [39.65345069999999, -79.9573464],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_b0922ef4ca874e5f97f9d359983fd778.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEST VIRGINIA UNIVERSITY HOSPITALS<br><b>Addr:</b> MEDICAL CENTER DRIVE<br><b>State:</b> WV<br><b>County:</b> MONONGALIA<br><b>City:</b> MORGANTOWN<br><b>Zip Code:</b> 26506<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0f645b9b5d24922b66296e2a2d2c384 = L.circleMarker(
+                [37.76837289999996, -80.46524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_a0f645b9b5d24922b66296e2a2d2c384.bindTooltip(
+                `<div>
+                     <b>Name:</b> GREENBRIER VALLEY MEDICAL CENTER<br><b>Addr:</b> 1320 MAPLEWOOD AVENUE<br><b>State:</b> WV<br><b>County:</b> GREENBRIER<br><b>City:</b> RONCEVERTE<br><b>Zip Code:</b> 24970<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e6ebcd2b4f54831a60e6b3fec4d5547 = L.circleMarker(
+                [39.3271911, -80.2401398],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_8e6ebcd2b4f54831a60e6b3fec4d5547.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNITED HOSPITAL CENTER<br><b>Addr:</b> 327 MEDICAL PARK DRIVE<br><b>State:</b> WV<br><b>County:</b> HARRISON<br><b>City:</b> BRIDGEPORT<br><b>Zip Code:</b> 26330<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aec31ecc5d0f4320a60f8f60b9cdb190 = L.circleMarker(
+                [39.47644300000003, -77.98018399999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_aec31ecc5d0f4320a60f8f60b9cdb190.bindTooltip(
+                `<div>
+                     <b>Name:</b> CITY HOSPITAL INC.<br><b>Addr:</b> DRY RUN ROAD<br><b>State:</b> WV<br><b>County:</b> BERKELEY<br><b>City:</b> MARTINSBURG<br><b>Zip Code:</b> 25401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0be45dc723f54c18996221d7df34cea6 = L.circleMarker(
+                [38.86883449999999, -82.1231138],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_0be45dc723f54c18996221d7df34cea6.bindTooltip(
+                `<div>
+                     <b>Name:</b> PLEASANT VALLEY HOSPITAL<br><b>Addr:</b> VALLEY DRIVE<br><b>State:</b> WV<br><b>County:</b> MASON<br><b>City:</b> POINT PLEASANT<br><b>Zip Code:</b> 25550-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5bf5d38117fe4319b6508c4c293d7fb1 = L.circleMarker(
+                [39.94666349999995, -80.7541289],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_5bf5d38117fe4319b6508c4c293d7fb1.bindTooltip(
+                `<div>
+                     <b>Name:</b> REYNOLDS MEMORIAL HOSPITAL<br><b>Addr:</b> 800 WHEELING AVENUE<br><b>State:</b> WV<br><b>County:</b> MARSHALL<br><b>City:</b> GLEN DALE<br><b>Zip Code:</b> 26038<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 122
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f77b57d8fca14225b40af59a6f02b66a = L.circleMarker(
+                [38.8228833, -81.7295135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_f77b57d8fca14225b40af59a6f02b66a.bindTooltip(
+                `<div>
+                     <b>Name:</b> JACKSON GENERAL HOSPITAL<br><b>Addr:</b> PINNELL STREET<br><b>State:</b> WV<br><b>County:</b> JACKSON<br><b>City:</b> RIPLEY<br><b>Zip Code:</b> 25271-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf50b39fc5254132af28ed229f61b8b5 = L.circleMarker(
+                [38.34764920000002, -81.6271407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_bf50b39fc5254132af28ed229f61b8b5.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHARLESTON AREA MEDICAL CENTER  INC.<br><b>Addr:</b> 501 MORRIS STREET<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLESTON<br><b>Zip Code:</b> 25326-1320<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_635820126f564bf18e0a7c9bc41940e3 = L.circleMarker(
+                [40.39305149999999, -80.5279355],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_635820126f564bf18e0a7c9bc41940e3.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEIRTON MEDICAL CENTER<br><b>Addr:</b> 601 COLLIERS WAY<br><b>State:</b> WV<br><b>County:</b> BROOKE<br><b>City:</b> WEIRTON<br><b>Zip Code:</b> 26062-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee22efeb88f244b5b98c0a6cba300049 = L.circleMarker(
+                [39.66300989999996, -79.9470008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_ee22efeb88f244b5b98c0a6cba300049.bindTooltip(
+                `<div>
+                     <b>Name:</b> MONONGALIA COUNTY GENERAL HOSPITAL<br><b>Addr:</b> 1200 JD ANDERSON DRIVE<br><b>State:</b> WV<br><b>County:</b> MONONGALIA<br><b>City:</b> MORGANTOWN<br><b>Zip Code:</b> 26505-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1abef55d00c441669e4ad6c530719555 = L.circleMarker(
+                [38.35430950000001, -81.7259752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_1abef55d00c441669e4ad6c530719555.bindTooltip(
+                `<div>
+                     <b>Name:</b> THOMAS MEMORIAL HOSPITAL<br><b>Addr:</b> 4605 MACCORKLE AVENUE SW<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> SOUTH CHARLESTON<br><b>Zip Code:</b> 25309-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af98107139324e7f8a432f64475155f9 = L.circleMarker(
+                [38.92867499999999, -79.8518411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_af98107139324e7f8a432f64475155f9.bindTooltip(
+                `<div>
+                     <b>Name:</b> DAVIS MEMORIAL HOSPITAL<br><b>Addr:</b> GORMAN AVENUE<br><b>State:</b> WV<br><b>County:</b> RANDOLPH<br><b>City:</b> ELKINS<br><b>Zip Code:</b> 26241<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 225
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d9e985adb3c24279a1da4ae533c4da02 = L.circleMarker(
+                [38.35387789999998, -81.6330328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_d9e985adb3c24279a1da4ae533c4da02.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST FRANCIS HOSPITAL<br><b>Addr:</b> 333 LAIDLEY STREET<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLESTON<br><b>Zip Code:</b> 25301-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecef3e16c1fb48388284152fc0a8db6d = L.circleMarker(
+                [39.047732399999965, -80.4922194],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_ecef3e16c1fb48388284152fc0a8db6d.bindTooltip(
+                `<div>
+                     <b>Name:</b> STONEWALL JACKSON MEMORIAL HOSPITAL<br><b>Addr:</b> ROUTE 4<br><b>State:</b> WV<br><b>County:</b> LEWIS<br><b>City:</b> WESTON<br><b>Zip Code:</b> 26452-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_def9bdbc196b425b95c7b3fe46afc28d = L.circleMarker(
+                [37.36292419999995, -81.11302080000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_def9bdbc196b425b95c7b3fe46afc28d.bindTooltip(
+                `<div>
+                     <b>Name:</b> PRINCETON COMMUNITY HOSPITAL<br><b>Addr:</b> TWELFTH STREET<br><b>State:</b> WV<br><b>County:</b> MERCER<br><b>City:</b> PRINCETON<br><b>Zip Code:</b> 24774-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63bad5056c78425ea83008fcb40ce1c9 = L.circleMarker(
+                [39.48227399999999, -80.164825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_63bad5056c78425ea83008fcb40ce1c9.bindTooltip(
+                `<div>
+                     <b>Name:</b> FAIRMONT REGIONAL MEDICAL CENTER<br><b>Addr:</b> 1325 LOCUST AVENUE<br><b>State:</b> WV<br><b>County:</b> MARION<br><b>City:</b> FAIRMONT<br><b>Zip Code:</b> 26554<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 44
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2145bdb21030419681ee9a349390ee04 = L.circleMarker(
+                [37.84586850000002, -81.9934059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_2145bdb21030419681ee9a349390ee04.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOGAN REGIONAL MEDICAL CENTER<br><b>Addr:</b> 20 HOSPITAL DRIVE<br><b>State:</b> WV<br><b>County:</b> LOGAN<br><b>City:</b> LOGAN<br><b>Zip Code:</b> 25601<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2b365c34e9f4c3b8a26ce78c9115b26 = L.circleMarker(
+                [40.05907360000003, -80.6847817],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_f2b365c34e9f4c3b8a26ce78c9115b26.bindTooltip(
+                `<div>
+                     <b>Name:</b> WHEELING HOSPITAL<br><b>Addr:</b> 1 MEDICAL PARK<br><b>State:</b> WV<br><b>County:</b> OHIO<br><b>City:</b> WHEELING<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_25f9481809d84b8998ec6c2c2576a1d3 = L.circleMarker(
+                [38.99113929999996, -80.2362978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_25f9481809d84b8998ec6c2c2576a1d3.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. JOSEPHS HOSPITAL<br><b>Addr:</b> 1 AMALIA DRIVE<br><b>State:</b> WV<br><b>County:</b> UPSHUR<br><b>City:</b> BUCKHANNON<br><b>Zip Code:</b> 26201-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_923fcd3900ed48c7bfe8a4801bee50aa = L.circleMarker(
+                [38.409453400000004, -82.4263569],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_923fcd3900ed48c7bfe8a4801bee50aa.bindTooltip(
+                `<div>
+                     <b>Name:</b> CABELL HUNTINGTON HOSPITAL<br><b>Addr:</b> 1340 HAL GREER BLVD<br><b>State:</b> WV<br><b>County:</b> CABELL<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 25701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a29502cdf6f4330b4c41650eba96db4 = L.circleMarker(
+                [39.26961809999997, -81.5599487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_2a29502cdf6f4330b4c41650eba96db4.bindTooltip(
+                `<div>
+                     <b>Name:</b> CAMDEN-CLARK MEMORIAL HOSPITAL<br><b>Addr:</b> 800 GARFIELD AVENUE<br><b>State:</b> WV<br><b>County:</b> WOOD<br><b>City:</b> PARKERSBURG<br><b>Zip Code:</b> 26102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47bfc0b9706e47ab8b8e6fe1b7076044 = L.circleMarker(
+                [38.34334010000003, -81.6301575],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_47bfc0b9706e47ab8b8e6fe1b7076044.bindTooltip(
+                `<div>
+                     <b>Name:</b> EYE AND EAR CLINIC<br><b>Addr:</b> 1306 KANAWHA BLVD E<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLETON<br><b>Zip Code:</b> 25328<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_819f0f0208084b7f91c917cee86e369a = L.circleMarker(
+                [37.79868359999999, -81.168181],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_819f0f0208084b7f91c917cee86e369a.bindTooltip(
+                `<div>
+                     <b>Name:</b> BECKLEY ARH<br><b>Addr:</b> 306 STANAFORD ROAD<br><b>State:</b> WV<br><b>County:</b> RALEIGH<br><b>City:</b> BECKLEY<br><b>Zip Code:</b> 25801-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a82b52c54944c02b961fe948f8931b4 = L.circleMarker(
+                [37.788021099999995, -81.2017763],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_8a82b52c54944c02b961fe948f8931b4.bindTooltip(
+                `<div>
+                     <b>Name:</b> RALEIGH GENERAL HOSPITAL<br><b>Addr:</b> 1710 HARPER ROAD<br><b>State:</b> WV<br><b>County:</b> RALEIGH<br><b>City:</b> BECKLEY<br><b>Zip Code:</b> 25801<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f97043a3323f44dc98aaaae9affe6338 = L.circleMarker(
+                [37.255191900000014, -81.2351822],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_f97043a3323f44dc98aaaae9affe6338.bindTooltip(
+                `<div>
+                     <b>Name:</b> BLUEFIELD REGIONAL MEDICAL CENTER<br><b>Addr:</b> 500 CHERRY ST<br><b>State:</b> WV<br><b>County:</b> MERCER<br><b>City:</b> BLUEFIELD<br><b>Zip Code:</b> 24701-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b20dfa96d1e4d7da9b02c9b74960619 = L.circleMarker(
+                [39.649999999999984, -80.86],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_2b20dfa96d1e4d7da9b02c9b74960619.bindTooltip(
+                `<div>
+                     <b>Name:</b> WETZEL COUNTY HOSPITAL<br><b>Addr:</b> 3 EAST BENJAMIN DRIVE<br><b>State:</b> WV<br><b>County:</b> WETZEL<br><b>City:</b> NEW MARTINSVILLE<br><b>Zip Code:</b> 26155<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 3580
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34e5707c26ea42afb6e2da8c1f526a12 = L.circleMarker(
+                [37.67887100000001, -82.272576],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_34e5707c26ea42afb6e2da8c1f526a12.bindTooltip(
+                `<div>
+                     <b>Name:</b> WILLIAMSON MEMORIAL HOSPITAL<br><b>Addr:</b> 859 ALDERSON STREET<br><b>State:</b> WV<br><b>County:</b> MINGO<br><b>City:</b> WILLIAMSON<br><b>Zip Code:</b> 25661<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09602cd75b5640d9a26291bb1a78e7bb = L.circleMarker(
+                [38.29262119999997, -80.829848],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_09602cd75b5640d9a26291bb1a78e7bb.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUMMERSVILLE REGIONAL MED CENTER<br><b>Addr:</b> 400 FAIRVIEW HEIGHTS ROAD<br><b>State:</b> WV<br><b>County:</b> NICHOLAS<br><b>City:</b> SUMMERSVILLE<br><b>Zip Code:</b> 26551<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8223d6dadc3042a58e3bbae941c65111 = L.circleMarker(
+                [37.43908919999993, -81.5880315],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_8223d6dadc3042a58e3bbae941c65111.bindTooltip(
+                `<div>
+                     <b>Name:</b> WELCH COMMUNITY HOSPITAL<br><b>Addr:</b> 454 MCDOWELL STREET<br><b>State:</b> WV<br><b>County:</b> NaN<br><b>City:</b> WELCH<br><b>Zip Code:</b> 24801<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_737eea0c47b445aa877dba3dfda76dff = L.circleMarker(
+                [39.143328099999984, -80.0619918],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_737eea0c47b445aa877dba3dfda76dff.bindTooltip(
+                `<div>
+                     <b>Name:</b> BROADDUS HOSPITAL ASSOCIATION<br><b>Addr:</b> 1 HEALTHCARE DRIVE<br><b>State:</b> WV<br><b>County:</b> BARBOUR<br><b>City:</b> PHILIPPI<br><b>Zip Code:</b> 26416-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d077cdb7c5d64fa89b85e33eb748687b = L.circleMarker(
+                [38.48228600000001, -80.410475],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_d077cdb7c5d64fa89b85e33eb748687b.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEBSTER COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 324 MILLER MOUNTAIN ROAD<br><b>State:</b> WV<br><b>County:</b> WEBSTER<br><b>City:</b> WEBSTER SPRINGS<br><b>Zip Code:</b> 26288-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02f38ce30e9042a59d8a486c1fac78cd = L.circleMarker(
+                [38.92293519999998, -81.0924804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_02f38ce30e9042a59d8a486c1fac78cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> MINNIE HAMILTON HEALTH CARE CENTER<br><b>Addr:</b> 186 HOSPITAL DRIVE<br><b>State:</b> WV<br><b>County:</b> CALHOUN<br><b>City:</b> GRANTSVILLE<br><b>Zip Code:</b> 26147-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_deb6157024ef40da90a35abc8227439f = L.circleMarker(
+                [39.55865719999998, -81.0042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_deb6157024ef40da90a35abc8227439f.bindTooltip(
+                `<div>
+                     <b>Name:</b> SISTERSVILLE GENERAL HOSPITAL<br><b>Addr:</b> 314 SOUTH WELLS STREET<br><b>State:</b> WV<br><b>County:</b> TYLER<br><b>City:</b> SISTERSVILLE<br><b>Zip Code:</b> 26175<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d4ad0b60d4f4eeca060a312bfc141de = L.circleMarker(
+                [38.81296610000002, -81.3692406],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_1d4ad0b60d4f4eeca060a312bfc141de.bindTooltip(
+                `<div>
+                     <b>Name:</b> ROANE GENERAL HOSPITAL<br><b>Addr:</b> 200 HOSPITAL DRIVE<br><b>State:</b> WV<br><b>County:</b> ROANE<br><b>City:</b> SPENCER<br><b>Zip Code:</b> 25276-1060<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b50dbba65fe14c7abc3e556a067fb4af = L.circleMarker(
+                [39.34366849999997, -80.0250224],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_b50dbba65fe14c7abc3e556a067fb4af.bindTooltip(
+                `<div>
+                     <b>Name:</b> GRAFTON CITY HOSPITAL<br><b>Addr:</b> ROUTE 50 & MARKET STREET<br><b>State:</b> WV<br><b>County:</b> TAYLOR<br><b>City:</b> GRAFTON<br><b>Zip Code:</b> 26354-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c5f7bbb5a0f45dba2f92166b3ec6db9 = L.circleMarker(
+                [38.660801900000024, -80.749249],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_3c5f7bbb5a0f45dba2f92166b3ec6db9.bindTooltip(
+                `<div>
+                     <b>Name:</b> BRAXTON COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 100 HOYLMAN DRIVE<br><b>State:</b> WV<br><b>County:</b> BRAXTON<br><b>City:</b> GASSAWAY<br><b>Zip Code:</b> 26624<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3222dc3a887d44da9cce8b8f3b1405f0 = L.circleMarker(
+                [39.64231649999995, -78.2005226],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_3222dc3a887d44da9cce8b8f3b1405f0.bindTooltip(
+                `<div>
+                     <b>Name:</b> WAR MEMORIAL HOSPITAL<br><b>Addr:</b> 1 HEALTHY WAY<br><b>State:</b> WV<br><b>County:</b> MORGAN<br><b>City:</b> BERKELEY SPRINGS<br><b>Zip Code:</b> 25411-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_830d277fa6a744c9862a5c1002804f6e = L.circleMarker(
+                [37.6505501, -80.8592819],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_830d277fa6a744c9862a5c1002804f6e.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUMMERS COUNTY ARH<br><b>Addr:</b> TERRACE STREET<br><b>State:</b> WV<br><b>County:</b> SUMMERS<br><b>City:</b> HINTON<br><b>Zip Code:</b> 25951-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e702a8ccc875461e921b1861f74a59f7 = L.circleMarker(
+                [39.333318299999995, -78.69849349999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_e702a8ccc875461e921b1861f74a59f7.bindTooltip(
+                `<div>
+                     <b>Name:</b> HAMPSHIRE MEMORIAL HOSPITAL<br><b>Addr:</b> 363 SUNRISE BOULEVARD<br><b>State:</b> WV<br><b>County:</b> HAMPSHIRE<br><b>City:</b> ROMNEY<br><b>Zip Code:</b> 26757<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_abae2628164b40dcb5c2c880ad0a5e31 = L.circleMarker(
+                [39.46501970000002, -79.677466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_abae2628164b40dcb5c2c880ad0a5e31.bindTooltip(
+                `<div>
+                     <b>Name:</b> PRESTON MEMORIAL HOSPITAL<br><b>Addr:</b> 150 MEMORIAL DRIVE<br><b>State:</b> WV<br><b>County:</b> PRESTON<br><b>City:</b> KINGWOOD<br><b>Zip Code:</b> 26537-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24eaf6cb2a684ffea9bd5f2271e67831 = L.circleMarker(
+                [38.047838299999974, -81.8063838],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_24eaf6cb2a684ffea9bd5f2271e67831.bindTooltip(
+                `<div>
+                     <b>Name:</b> BOONE MEMORIAL HOSPITAL<br><b>Addr:</b> 701 MADISON<br><b>State:</b> WV<br><b>County:</b> BOONE<br><b>City:</b> MADISON<br><b>Zip Code:</b> 25130-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1972ad4ecfc44c6692a4dc40d5732915 = L.circleMarker(
+                [38.20066999999998, -80.108964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_1972ad4ecfc44c6692a4dc40d5732915.bindTooltip(
+                `<div>
+                     <b>Name:</b> POCAHONTAS MEMORIAL HOSPITAL<br><b>Addr:</b> RT 2 BOX 52W<br><b>State:</b> WV<br><b>County:</b> POCAHONTAS<br><b>City:</b> BUCKEYE<br><b>Zip Code:</b> 24924-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac63e0579c564606b1c67667bac62822 = L.circleMarker(
+                [39.40953650000004, -79.002872],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_ac63e0579c564606b1c67667bac62822.bindTooltip(
+                `<div>
+                     <b>Name:</b> POTOMAC VALLEY HOSPITAL<br><b>Addr:</b> 100 PIN OAK LANE<br><b>State:</b> WV<br><b>County:</b> MINERAL<br><b>City:</b> KEYSER<br><b>Zip Code:</b> 26726<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8790956c260a43398a28842f84a7c3a8 = L.circleMarker(
+                [39.00150849999997, -79.1376448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_8790956c260a43398a28842f84a7c3a8.bindTooltip(
+                `<div>
+                     <b>Name:</b> GRANT MEMORIAL HOSPITAL<br><b>Addr:</b> 117 HOSPITAL DRIVE<br><b>State:</b> WV<br><b>County:</b> GRANT<br><b>City:</b> PETERSBURG<br><b>Zip Code:</b> 26847<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a4415a9651849ea8b99db05c304ebcb = L.circleMarker(
+                [37.972096000000015, -81.1491093],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_2a4415a9651849ea8b99db05c304ebcb.bindTooltip(
+                `<div>
+                     <b>Name:</b> PLATEAU MEDICAL CENTER<br><b>Addr:</b> 430 MAIN STREET<br><b>State:</b> WV<br><b>County:</b> FAYETTE<br><b>City:</b> OAK HILL<br><b>Zip Code:</b> 25901-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ed7790e33354fc3b0cbc5139bb1701b = L.circleMarker(
+                [38.18261679999999, -81.32435919999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_6ed7790e33354fc3b0cbc5139bb1701b.bindTooltip(
+                `<div>
+                     <b>Name:</b> MONTGOMERY GENERAL HOSPITAL<br><b>Addr:</b> 401 6TH AVENUE<br><b>State:</b> WV<br><b>County:</b> FAYETTE<br><b>City:</b> MONTGOMERY<br><b>Zip Code:</b> 25136<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e9408607f3b4cc0bb32fb94223177ac = L.circleMarker(
+                [39.29596500000003, -77.85873999999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_2e9408607f3b4cc0bb32fb94223177ac.bindTooltip(
+                `<div>
+                     <b>Name:</b> JEFFERSON MEMORIAL HOSPITAL<br><b>Addr:</b> 300 S. PRESTON STREET<br><b>State:</b> WV<br><b>County:</b> JEFFERSON<br><b>City:</b> RANSON<br><b>Zip Code:</b> 25438<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a83118b1d37c4b07a13c97a16785c456 = L.circleMarker(
+                [38.35403510000001, -81.6330798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_a83118b1d37c4b07a13c97a16785c456.bindTooltip(
+                `<div>
+                     <b>Name:</b> SSH - CHARLESTON<br><b>Addr:</b> 333 LAIDLEY STWY<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLESTON<br><b>Zip Code:</b> 25301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ede7e1d43554f4da978587a451ffb79 = L.circleMarker(
+                [40.07996740000002, -80.6939926],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_6ede7e1d43554f4da978587a451ffb79.bindTooltip(
+                `<div>
+                     <b>Name:</b> PETERSON HEALTHCARE AND REHAB<br><b>Addr:</b> 20 HOMESTEAD AVENUE<br><b>State:</b> WV<br><b>County:</b> OHIO<br><b>City:</b> WHEELING<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29e2819f425d420a8d5a9c68d012bfff = L.circleMarker(
+                [37.36355820000003, -81.1114591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_29e2819f425d420a8d5a9c68d012bfff.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH SOUTHERN HILLS REHABILIT<br><b>Addr:</b> 120 12TH STREET<br><b>State:</b> WV<br><b>County:</b> MERCER<br><b>City:</b> PRINCETON<br><b>Zip Code:</b> 24740<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebbf2788422a41e3b9dc9fce7e1968c6 = L.circleMarker(
+                [39.30587970000005, -81.53442419999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_ebbf2788422a41e3b9dc9fce7e1968c6.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH WESTERN HILLS REGIONAL R<br><b>Addr:</b> 3 WESTERN HILLS DRIVE<br><b>State:</b> WV<br><b>County:</b> WOOD<br><b>City:</b> PARKERSBURG<br><b>Zip Code:</b> 26105<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a86330a79b574f20a1a0f03976e38e05 = L.circleMarker(
+                [38.41888999999998, -82.3386647],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_a86330a79b574f20a1a0f03976e38e05.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH REHABILITATION HOSPITAL<br><b>Addr:</b> 6900 WEST COUNTRY CLUB DRIVE<br><b>State:</b> WV<br><b>County:</b> CABELL<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 35705<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48de5b23f76142719be1396747e03196 = L.circleMarker(
+                [39.65649319999998, -79.962042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_48de5b23f76142719be1396747e03196.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH MOUNTAIN VIEW REGIONAL R<br><b>Addr:</b> 1160 VAN VOORHIS ROAD<br><b>State:</b> WV<br><b>County:</b> MONONGALIA<br><b>City:</b> MORGANTOWN<br><b>Zip Code:</b> 26505<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7cfd8fa2b5064282a1f7564cd1ee6ebe = L.circleMarker(
+                [38.31471519999998, -81.568666],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_7cfd8fa2b5064282a1f7564cd1ee6ebe.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIGHLAND HOSPITAL ASSOCIATION  INC.<br><b>Addr:</b> 300 56TH STREET<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLESTON<br><b>Zip Code:</b> 25364<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d1dae6bb2d2040b59dcc3bb7824783fb = L.circleMarker(
+                [38.41953459999995, -82.43686249999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_d1dae6bb2d2040b59dcc3bb7824783fb.bindTooltip(
+                `<div>
+                     <b>Name:</b> RIVER PARK HOSPITAL<br><b>Addr:</b> 1230 SIXTH AVENUE<br><b>State:</b> WV<br><b>County:</b> CABELL<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 25719-1875<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a1c69f5f4aa4ec09cd1a06a16870ef1 = L.circleMarker(
+                [38.41269609999998, -82.4132272],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_8a1c69f5f4aa4ec09cd1a06a16870ef1.bindTooltip(
+                `<div>
+                     <b>Name:</b> MILDRED MITCHELL-BATEMAN HOSPITAL<br><b>Addr:</b> 1530 NORWAY AVENUE<br><b>State:</b> WV<br><b>County:</b> NaN<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 25706<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_450a434e1fa74b4aa1d06db02f0f9fbb = L.circleMarker(
+                [39.04116399999998, -80.4964347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_450a434e1fa74b4aa1d06db02f0f9fbb.bindTooltip(
+                `<div>
+                     <b>Name:</b> WILLIAM R SHARPE JR HOSPITAL<br><b>Addr:</b> 936 SHARPE HOSPITAL ROAD<br><b>State:</b> WV<br><b>County:</b> LEWIS<br><b>City:</b> WESTON<br><b>Zip Code:</b> 26452-8550<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49e873e83978431a955cae44ab0de3e0 = L.circleMarker(
+                [39.27158539999998, -80.3711511],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_bef511c4d29641c0aa9a01c2a401a3ba);
+        
+    
+            circle_marker_49e873e83978431a955cae44ab0de3e0.bindTooltip(
+                `<div>
+                     <b>Name:</b> HIGHLAND-CLARKSBURG HOSPITAL<br><b>Addr:</b> 3 HOSPITAL PLAZA<br><b>State:</b> WV<br><b>County:</b> NaN<br><b>City:</b> CLARKSBURG<br><b>Zip Code:</b> 26301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_99db4e8bd41d4646a0ad7334df13ae8a = L.featureGroup(
+                {}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var circle_marker_0be64f2f07e14a22af881fc56ac7f9de = L.circleMarker(
+                [39.6537747, -79.9579772],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_0be64f2f07e14a22af881fc56ac7f9de.bindTooltip(
+                `<div>
+                     <b>Name:</b> JW Ruby Memorial Hospital<br><b>Addr:</b> 1 Medical Center Dr<br><b>State:</b> WV<br><b>County:</b> Monongalia<br><b>City:</b> Morgantown<br><b>Zip Code:</b> 26506<br><b>Distance discrepancy:</b> 366 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_69f6486d7c4347368a78e05c2b4d3afb = L.circleMarker(
+                [37.76837289999996, -80.46524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_69f6486d7c4347368a78e05c2b4d3afb.bindTooltip(
+                `<div>
+                     <b>Name:</b> Greenbrier Valley Medical Center<br><b>Addr:</b> 1320 Maplewood Ave<br><b>State:</b> WV<br><b>County:</b> Greenbrier<br><b>City:</b> Ronceverte<br><b>Zip Code:</b> 24970<br><b>Distance discrepancy:</b> 2117 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_930021f72652434289f5bb00ff7c2074 = L.circleMarker(
+                [39.3271911, -80.2401398],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_930021f72652434289f5bb00ff7c2074.bindTooltip(
+                `<div>
+                     <b>Name:</b> United Hospital Center<br><b>Addr:</b> 327 Medical Park Dr<br><b>State:</b> WV<br><b>County:</b> Harrison<br><b>City:</b> Bridgeport<br><b>Zip Code:</b> 26330<br><b>Distance discrepancy:</b> 205 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee6c239459354e5b8b1b5efb808a54b6 = L.circleMarker(
+                [39.47644300000003, -77.98018399999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_ee6c239459354e5b8b1b5efb808a54b6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Berkeley Medical Center (FKA City Hospital)<br><b>Addr:</b> 2500 Hospital Dr<br><b>State:</b> WV<br><b>County:</b> Berkeley<br><b>City:</b> Martinsburg<br><b>Zip Code:</b> 25401<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad197c91478740f29744f714e35fbea4 = L.circleMarker(
+                [38.86883449999999, -82.1231138],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_ad197c91478740f29744f714e35fbea4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pleasant Valley Hospital<br><b>Addr:</b> 2520 Valley Dr<br><b>State:</b> WV<br><b>County:</b> Mason<br><b>City:</b> Point Pleasant<br><b>Zip Code:</b> 25550<br><b>Distance discrepancy:</b> 20 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34938ded7c6e49fd8877b26e4642621d = L.circleMarker(
+                [39.946119100000026, -80.7528814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_34938ded7c6e49fd8877b26e4642621d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Reynolds Memorial Hospital<br><b>Addr:</b> 800 Wheeling Ave<br><b>State:</b> WV<br><b>County:</b> Marshall<br><b>City:</b> Glen Dale<br><b>Zip Code:</b> 26038<br><b>Distance discrepancy:</b> 173 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 122
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5fe0bd21a96343eba7a12e164f2691b2 = L.circleMarker(
+                [38.8228833, -81.7295135],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_5fe0bd21a96343eba7a12e164f2691b2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Jackson General Hospital<br><b>Addr:</b> 122 Pinnell St<br><b>State:</b> WV<br><b>County:</b> Jackson<br><b>City:</b> Ripley<br><b>Zip Code:</b> 25271<br><b>Distance discrepancy:</b> 43 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a425d7509b114db0ad22eea5c5a9b0bb = L.circleMarker(
+                [38.34764920000002, -81.6271407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a425d7509b114db0ad22eea5c5a9b0bb.bindTooltip(
+                `<div>
+                     <b>Name:</b> CAMC General Hospital<br><b>Addr:</b> 501 Morris St<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> Charleston<br><b>Zip Code:</b> 25301<br><b>Distance discrepancy:</b> 96 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33af7f0623144581b181d1d439c179b9 = L.circleMarker(
+                [40.39305149999999, -80.5279355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_33af7f0623144581b181d1d439c179b9.bindTooltip(
+                `<div>
+                     <b>Name:</b> Weirton Medical Center<br><b>Addr:</b> 601 Colliers Way<br><b>State:</b> WV<br><b>County:</b> Brooke<br><b>City:</b> Weirton<br><b>Zip Code:</b> 26062<br><b>Distance discrepancy:</b> 367 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a50869763434405a5516eb432aa634f = L.circleMarker(
+                [39.663009899999984, -79.9470008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_1a50869763434405a5516eb432aa634f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mon Health Medical Center (FKA Mon General Hospital)<br><b>Addr:</b> 1200 J D Anderson Dr<br><b>State:</b> WV<br><b>County:</b> Monongalia<br><b>City:</b> Morgantown<br><b>Zip Code:</b> 26505<br><b>Distance discrepancy:</b> 164 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f9689b918264ae894899b21af463021 = L.circleMarker(
+                [38.35430950000001, -81.7259752],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_2f9689b918264ae894899b21af463021.bindTooltip(
+                `<div>
+                     <b>Name:</b> Thomas Memorial Hospital<br><b>Addr:</b> 4605 Maccorkle Ave Sw<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> South Charleston<br><b>Zip Code:</b> 25309<br><b>Distance discrepancy:</b> 56 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7aaa2d2b134346a292ecbc79bf45aa66 = L.circleMarker(
+                [38.928066699999995, -79.8543421],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_7aaa2d2b134346a292ecbc79bf45aa66.bindTooltip(
+                `<div>
+                     <b>Name:</b> Davis Medical Center (AKA Davis Memorial Hospital)<br><b>Addr:</b> 812 Gorman Ave<br><b>State:</b> WV<br><b>County:</b> Randolph<br><b>City:</b> Elkins<br><b>Zip Code:</b> 26241<br><b>Distance discrepancy:</b> 54 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 225
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b8688f58a6a0486980cc49ad3f920d36 = L.circleMarker(
+                [38.35387789999998, -81.6330328],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_b8688f58a6a0486980cc49ad3f920d36.bindTooltip(
+                `<div>
+                     <b>Name:</b> Saint Francis Hospital<br><b>Addr:</b> 333 Laidley St<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> Charleston<br><b>Zip Code:</b> 25301<br><b>Distance discrepancy:</b> 18 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4293e61e552845a1b39a498e7dd3f9c6 = L.circleMarker(
+                [39.04773239999994, -80.4922194],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_4293e61e552845a1b39a498e7dd3f9c6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Stonewall Jackson Memorial Hospital<br><b>Addr:</b> 230 Hospital Plz<br><b>State:</b> WV<br><b>County:</b> Lewis<br><b>City:</b> Weston<br><b>Zip Code:</b> 26452<br><b>Distance discrepancy:</b> 21 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e99105fd715442549432d79cea1a2e35 = L.circleMarker(
+                [37.36292419999998, -81.11302080000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_e99105fd715442549432d79cea1a2e35.bindTooltip(
+                `<div>
+                     <b>Name:</b> Princeton Community Hospital<br><b>Addr:</b> 122 12th St<br><b>State:</b> WV<br><b>County:</b> Mercer<br><b>City:</b> Princeton<br><b>Zip Code:</b> 24740<br><b>Distance discrepancy:</b> 116 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_437d70a031e9432c890cb36e2a64d9dd = L.circleMarker(
+                [39.48241649999995, -80.1653076],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_437d70a031e9432c890cb36e2a64d9dd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Fairmont Regional Medical Center (Closing Spring 2020)<br><b>Addr:</b> 1325 Locust Ave<br><b>State:</b> WV<br><b>County:</b> Marion<br><b>City:</b> Fairmont<br><b>Zip Code:</b> 26554<br><b>Distance discrepancy:</b> 16 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 44
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_499a56741f1641eeb16523b6c537b071 = L.circleMarker(
+                [37.84586850000007, -81.9934059],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_499a56741f1641eeb16523b6c537b071.bindTooltip(
+                `<div>
+                     <b>Name:</b> Logan Regional Medical Center<br><b>Addr:</b> 20 Hospital Dr<br><b>State:</b> WV<br><b>County:</b> Logan<br><b>City:</b> Logan<br><b>Zip Code:</b> 25601<br><b>Distance discrepancy:</b> 280 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d1239a3bbad48ce99ce9c300a195eaf = L.circleMarker(
+                [40.05907360000003, -80.6847817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_4d1239a3bbad48ce99ce9c300a195eaf.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wheeling Hospital<br><b>Addr:</b> 1 Medical Park<br><b>State:</b> WV<br><b>County:</b> Ohio<br><b>City:</b> Wheeling<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> 44 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e3750647d5b467fa8330517d4426004 = L.circleMarker(
+                [38.99113929999994, -80.2362978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_2e3750647d5b467fa8330517d4426004.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Josephs Hospital<br><b>Addr:</b> 1 Amalia Dr<br><b>State:</b> WV<br><b>County:</b> Upshur<br><b>City:</b> Buckhannon<br><b>Zip Code:</b> 26201<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a14806e2139d45c4b1ddb73f4de26982 = L.circleMarker(
+                [38.409453400000004, -82.4263569],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a14806e2139d45c4b1ddb73f4de26982.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cabell Huntington Hospital<br><b>Addr:</b> 1340 Hal Greer Blvd<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25701<br><b>Distance discrepancy:</b> 76 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1828a7b5e8949a6be45458922fab2e1 = L.circleMarker(
+                [39.26936, -81.559285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_b1828a7b5e8949a6be45458922fab2e1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Camden Clark Medical Center - Memorial Campus<br><b>Addr:</b> 800 Garfield Ave<br><b>State:</b> WV<br><b>County:</b> Wood<br><b>City:</b> Parkersburg<br><b>Zip Code:</b> 26101<br><b>Distance discrepancy:</b> 83 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_806f3d24b1964035b8c71190a8148338 = L.circleMarker(
+                [38.34334010000003, -81.6301575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_806f3d24b1964035b8c71190a8148338.bindTooltip(
+                `<div>
+                     <b>Name:</b> Charleston Surgical Hospital<br><b>Addr:</b> 1306 Kanawha Blvd E<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> Charleston<br><b>Zip Code:</b> 25301<br><b>Distance discrepancy:</b> 45 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8e09989c5154170bd10288d110ec89c = L.circleMarker(
+                [37.79863179999995, -81.1685566],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a8e09989c5154170bd10288d110ec89c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Beckley ARH Hospital<br><b>Addr:</b> 306 Stanaford Rd<br><b>State:</b> WV<br><b>County:</b> Raleigh<br><b>City:</b> Beckley<br><b>Zip Code:</b> 25801<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17fdc8560f594d84a4a01847bf64e2d6 = L.circleMarker(
+                [37.788021099999995, -81.2017763],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_17fdc8560f594d84a4a01847bf64e2d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Raleigh General Hospital<br><b>Addr:</b> 1710 Harper Rd<br><b>State:</b> WV<br><b>County:</b> Raleigh<br><b>City:</b> Beckley<br><b>Zip Code:</b> 25801<br><b>Distance discrepancy:</b> 54 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_483bcbdd3ee24f03a12a89b29c8eefb4 = L.circleMarker(
+                [37.255191900000014, -81.2351822],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_483bcbdd3ee24f03a12a89b29c8eefb4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bluefield Regional Medical Center<br><b>Addr:</b> 500 Cherry St<br><b>State:</b> WV<br><b>County:</b> Mercer<br><b>City:</b> Bluefield<br><b>Zip Code:</b> 24701<br><b>Distance discrepancy:</b> 157 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6efc3efa3364ce3bdfc23e430e19247 = L.circleMarker(
+                [39.681071200000034, -80.8501977],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a6efc3efa3364ce3bdfc23e430e19247.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wetzel County Hospital<br><b>Addr:</b> 3 E Benjamin Dr<br><b>State:</b> WV<br><b>County:</b> Wetzel<br><b>City:</b> New Martinsville<br><b>Zip Code:</b> 26155<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 3580
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b37c24e9a7341c2a29d9ad8f53cbe0f = L.circleMarker(
+                [37.67887100000001, -82.272576],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_5b37c24e9a7341c2a29d9ad8f53cbe0f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Williamson Memorial Hospital<br><b>Addr:</b> 859 Alderson St<br><b>State:</b> WV<br><b>County:</b> Mingo<br><b>City:</b> Williamson<br><b>Zip Code:</b> 25661<br><b>Distance discrepancy:</b> 108 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_12e6d455ed764ae1a8aa75bf72ef4b69 = L.circleMarker(
+                [38.29262119999999, -80.829848],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_12e6d455ed764ae1a8aa75bf72ef4b69.bindTooltip(
+                `<div>
+                     <b>Name:</b> Summersville Regional Medical Center<br><b>Addr:</b> 400 Fairview Heights Rd<br><b>State:</b> WV<br><b>County:</b> Nicholas<br><b>City:</b> Summersville<br><b>Zip Code:</b> 26651<br><b>Distance discrepancy:</b> 21 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_183854d877794be193cfe221cce4588f = L.circleMarker(
+                [37.43908919999991, -81.5880315],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_183854d877794be193cfe221cce4588f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Welch Community Hospital<br><b>Addr:</b> 454 Mcdowell St<br><b>State:</b> WV<br><b>County:</b> McDowell<br><b>City:</b> Welch<br><b>Zip Code:</b> 24801<br><b>Distance discrepancy:</b> 201 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bcb493c9cda34fc18e23b5138c3a05a6 = L.circleMarker(
+                [39.14332809999994, -80.0619918],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_bcb493c9cda34fc18e23b5138c3a05a6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Broaddus Hospital<br><b>Addr:</b> 1 Healthcare Dr<br><b>State:</b> WV<br><b>County:</b> Barbour<br><b>City:</b> Philippi<br><b>Zip Code:</b> 26416<br><b>Distance discrepancy:</b> 3154 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c129baead054984b4b625ec878bbe07 = L.circleMarker(
+                [38.48228600000001, -80.410475],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_5c129baead054984b4b625ec878bbe07.bindTooltip(
+                `<div>
+                     <b>Name:</b> Webster County Memorial Hospital<br><b>Addr:</b> 324 Miller Mountain Dr<br><b>State:</b> WV<br><b>County:</b> Webster<br><b>City:</b> Webster Springs<br><b>Zip Code:</b> 26288<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3560b373d0545fbbea48944921dba71 = L.circleMarker(
+                [38.92293519999998, -81.0924804],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_b3560b373d0545fbbea48944921dba71.bindTooltip(
+                `<div>
+                     <b>Name:</b> Minnie Hamilton Health Care Center CAH (AKA Minnie Hamilton Health System)<br><b>Addr:</b> 186 Hospital Dr<br><b>State:</b> WV<br><b>County:</b> Calhoun<br><b>City:</b> Grantsville<br><b>Zip Code:</b> 26147<br><b>Distance discrepancy:</b> 319 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77108f963f8c40eb8831cde75c650088 = L.circleMarker(
+                [39.55865719999998, -81.0042],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_77108f963f8c40eb8831cde75c650088.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sistersville General Hospital<br><b>Addr:</b> 314 S Wells St<br><b>State:</b> WV<br><b>County:</b> Tyler<br><b>City:</b> Sistersville<br><b>Zip Code:</b> 26175<br><b>Distance discrepancy:</b> 15 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6f8900f577034ea486be23cbec121c35 = L.circleMarker(
+                [38.81296610000002, -81.3692406],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_6f8900f577034ea486be23cbec121c35.bindTooltip(
+                `<div>
+                     <b>Name:</b> Roane General Hospital<br><b>Addr:</b> 200 Hospital Dr<br><b>State:</b> WV<br><b>County:</b> Roane<br><b>City:</b> Spencer<br><b>Zip Code:</b> 25276<br><b>Distance discrepancy:</b> 421 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_077bad508c61417b8997bd1bb3f76812 = L.circleMarker(
+                [39.34366849999999, -80.0250224],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_077bad508c61417b8997bd1bb3f76812.bindTooltip(
+                `<div>
+                     <b>Name:</b> Grafton City Hospital<br><b>Addr:</b> 1 Hospital Plz<br><b>State:</b> WV<br><b>County:</b> Taylor<br><b>City:</b> Grafton<br><b>Zip Code:</b> 26354<br><b>Distance discrepancy:</b> 32 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0c2ff94d9574db98cdbecce43fd156d = L.circleMarker(
+                [38.660801900000045, -80.749249],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a0c2ff94d9574db98cdbecce43fd156d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Braxton County Memorial Hospital<br><b>Addr:</b> 100 Hoylman Dr<br><b>State:</b> WV<br><b>County:</b> Braxton<br><b>City:</b> Gassaway<br><b>Zip Code:</b> 26624<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c4ec33584b45461c9cc02c73b3201acc = L.circleMarker(
+                [39.64231649999995, -78.2005226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_c4ec33584b45461c9cc02c73b3201acc.bindTooltip(
+                `<div>
+                     <b>Name:</b> War Memorial Hospital<br><b>Addr:</b> 1 Healthy Way<br><b>State:</b> WV<br><b>County:</b> Morgan<br><b>City:</b> Berkeley Springs<br><b>Zip Code:</b> 25411<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8696c8368f6484a9e359602d625ed3e = L.circleMarker(
+                [37.651148400000004, -80.861438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_a8696c8368f6484a9e359602d625ed3e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Summers County ARH Hospital<br><b>Addr:</b> 115 Summers Hospital Rd<br><b>State:</b> WV<br><b>County:</b> Summers<br><b>City:</b> Hinton<br><b>Zip Code:</b> 25951<br><b>Distance discrepancy:</b> 4739 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_721cd549ae69429ca5c6d506603a313e = L.circleMarker(
+                [39.333318299999995, -78.69849349999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_721cd549ae69429ca5c6d506603a313e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hampshire Memorial Hospital<br><b>Addr:</b> 363 Sunrise Blvd<br><b>State:</b> WV<br><b>County:</b> Hampshire<br><b>City:</b> Romney<br><b>Zip Code:</b> 26757<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_249134f635ba49e0a3fc7633db98a410 = L.circleMarker(
+                [39.46501970000002, -79.677466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_249134f635ba49e0a3fc7633db98a410.bindTooltip(
+                `<div>
+                     <b>Name:</b> Preston Memorial Hospital<br><b>Addr:</b> 150 Memorial Dr<br><b>State:</b> WV<br><b>County:</b> Preston<br><b>City:</b> Kingwood<br><b>Zip Code:</b> 26537<br><b>Distance discrepancy:</b> 155 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b20e40a79664249aae142d56d74bdd0 = L.circleMarker(
+                [38.04783829999996, -81.8063838],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_0b20e40a79664249aae142d56d74bdd0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Boone Memorial Hospital<br><b>Addr:</b> 701 Madison Ave<br><b>State:</b> WV<br><b>County:</b> Boone<br><b>City:</b> Madison<br><b>Zip Code:</b> 25130<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d1987b34ca947808e8400d0187ca666 = L.circleMarker(
+                [38.20066999999998, -80.108964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_0d1987b34ca947808e8400d0187ca666.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pocahontas Memorial Hospital<br><b>Addr:</b> 150 Duncan Rd<br><b>State:</b> WV<br><b>County:</b> Pocahontas<br><b>City:</b> Buckeye<br><b>Zip Code:</b> 24924<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b853394e56384fda8b916b6c2c9e4aa7 = L.circleMarker(
+                [39.40953650000004, -79.002872],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_b853394e56384fda8b916b6c2c9e4aa7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Potomac Valley Hospital<br><b>Addr:</b> 100 Pin Oak Ln<br><b>State:</b> WV<br><b>County:</b> Mineral<br><b>City:</b> Keyser<br><b>Zip Code:</b> 26726<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cac128869cb4ac2a8008a9b56189710 = L.circleMarker(
+                [39.00150849999997, -79.13764479999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_1cac128869cb4ac2a8008a9b56189710.bindTooltip(
+                `<div>
+                     <b>Name:</b> Grant Memorial Hospital<br><b>Addr:</b> 117 Hospital Dr<br><b>State:</b> WV<br><b>County:</b> Grant<br><b>City:</b> Petersburg<br><b>Zip Code:</b> 26847<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7d6fb78ec554c58a8571a97b2782496 = L.circleMarker(
+                [37.972096000000015, -81.1491093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_c7d6fb78ec554c58a8571a97b2782496.bindTooltip(
+                `<div>
+                     <b>Name:</b> Plateau Medical Center<br><b>Addr:</b> 430 Main St W<br><b>State:</b> WV<br><b>County:</b> Fayette<br><b>City:</b> Oak Hill<br><b>Zip Code:</b> 25901<br><b>Distance discrepancy:</b> 51 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_951b1de398d049659e517852428c4886 = L.circleMarker(
+                [38.18261679999999, -81.32435919999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_951b1de398d049659e517852428c4886.bindTooltip(
+                `<div>
+                     <b>Name:</b> Montgomery General Hospital<br><b>Addr:</b> 401 6th Ave<br><b>State:</b> WV<br><b>County:</b> Fayette<br><b>City:</b> Montgomery<br><b>Zip Code:</b> 25136<br><b>Distance discrepancy:</b> 25 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_52a053e2574b430481c55ac66ded13d8 = L.circleMarker(
+                [39.29600600000001, -77.85906040000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_52a053e2574b430481c55ac66ded13d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Jefferson Medical Center (FKA Jefferson Memorial Hospital)<br><b>Addr:</b> 300 S Preston St<br><b>State:</b> WV<br><b>County:</b> Jefferson<br><b>City:</b> Ranson<br><b>Zip Code:</b> 25438<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_841cb9c3cda14828b10017d01b682d97 = L.circleMarker(
+                [38.35403510000001, -81.6330798],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_841cb9c3cda14828b10017d01b682d97.bindTooltip(
+                `<div>
+                     <b>Name:</b> Select Specialty Hospital - Charleston<br><b>Addr:</b> 333 Laidley St<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> Charleston<br><b>Zip Code:</b> 25301<br><b>Distance discrepancy:</b> 5 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80ebd43e6c8b430a980d3c40a4e5a0fa = L.circleMarker(
+                [40.07996740000002, -80.6939926],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_80ebd43e6c8b430a980d3c40a4e5a0fa.bindTooltip(
+                `<div>
+                     <b>Name:</b> Peterson Rehabilitation Hospital<br><b>Addr:</b> 20 Homestead Ave<br><b>State:</b> WV<br><b>County:</b> Ohio<br><b>City:</b> Wheeling<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> 135 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_449a6873aaa04dfcb5c748c9662728a3 = L.circleMarker(
+                [37.363558200000064, -81.1114591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_449a6873aaa04dfcb5c748c9662728a3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Princeton (FKA HealthSouth Southern Hills Rehabilitation Hospital)<br><b>Addr:</b> 120 12th St<br><b>State:</b> WV<br><b>County:</b> Mercer<br><b>City:</b> Princeton<br><b>Zip Code:</b> 24740<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d87204efbb9840979abbd60d7e3b77a7 = L.circleMarker(
+                [39.30587970000007, -81.53442419999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_d87204efbb9840979abbd60d7e3b77a7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Parkersburg (FKA HealthSouth Western Hills Regional Rehabilitation Hospital)<br><b>Addr:</b> 3 Western Hills Dr<br><b>State:</b> WV<br><b>County:</b> Wood<br><b>City:</b> Parkersburg<br><b>Zip Code:</b> 26105<br><b>Distance discrepancy:</b> 3978 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2c45d5c835d14eee81212b6e34c05f6a = L.circleMarker(
+                [38.41888999999998, -82.3386647],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_2c45d5c835d14eee81212b6e34c05f6a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Huntington (FKA HealthSouth Rehabilitation Hospital of Huntington)<br><b>Addr:</b> 6900 Country Club Dr<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25705<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f93b7c9c1ed4a33a7a340a81ded895f = L.circleMarker(
+                [39.65649319999996, -79.962042],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_3f93b7c9c1ed4a33a7a340a81ded895f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Morgantown (FKA HealthSouth MountainView Regional Rehabilitation Hospital)<br><b>Addr:</b> 1160 Van Voorhis Rd<br><b>State:</b> WV<br><b>County:</b> Monongalia<br><b>City:</b> Morgantown<br><b>Zip Code:</b> 26505<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08db6229262b4949b03ab793dca26a7c = L.circleMarker(
+                [38.31471519999998, -81.568666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_08db6229262b4949b03ab793dca26a7c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Highland - Charleston Hospital<br><b>Addr:</b> 300 56th St Se<br><b>State:</b> WV<br><b>County:</b> Kanawha<br><b>City:</b> Charleston<br><b>Zip Code:</b> 25364<br><b>Distance discrepancy:</b> 1468 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d5ffc5bd9084487c9dc4b19aacfba5e9 = L.circleMarker(
+                [38.41953459999998, -82.43686249999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_d5ffc5bd9084487c9dc4b19aacfba5e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> River Park Hospital<br><b>Addr:</b> 1230 6th Ave<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25701<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2580dc53a8624654901ad643d6e13096 = L.circleMarker(
+                [38.41269609999998, -82.4132272],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_2580dc53a8624654901ad643d6e13096.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mildred Mitchell-Bateman Hospital<br><b>Addr:</b> 1530 Norway Ave<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25705<br><b>Distance discrepancy:</b> 170 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_126b76a1d8734d708aa4dea334da9096 = L.circleMarker(
+                [39.04116399999998, -80.4964347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_126b76a1d8734d708aa4dea334da9096.bindTooltip(
+                `<div>
+                     <b>Name:</b> William R Sharpe Jr Hospital<br><b>Addr:</b> 936 Sharpe Hospital Rd<br><b>State:</b> WV<br><b>County:</b> Lewis<br><b>City:</b> Weston<br><b>Zip Code:</b> 26452<br><b>Distance discrepancy:</b> 55 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fc21a2f19a0410e92896934c423640c = L.circleMarker(
+                [39.27158539999998, -80.3711511],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_99db4e8bd41d4646a0ad7334df13ae8a);
+        
+    
+            circle_marker_6fc21a2f19a0410e92896934c423640c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Highland - Clarksburg Hospital<br><b>Addr:</b> 3 Hospital Plz<br><b>State:</b> WV<br><b>County:</b> Harrison<br><b>City:</b> Clarksburg<br><b>Zip Code:</b> 26301<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_8e8814157476429c9e6eadeeea893f27 = L.featureGroup(
+                {}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var circle_marker_c572691a1dc54dab9b6c9681e262b140 = L.circleMarker(
+                [38.41920000000002, -82.4452],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_c572691a1dc54dab9b6c9681e262b140.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. MARYS MEDICAL CENTER  INC.<br><b>Addr:</b> 2900 FIRST AVENUE<br><b>State:</b> WV<br><b>County:</b> CABELL<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 25702-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_015ae0f89d2c411696579cd2040b4e25 = L.circleMarker(
+                [40.06004630000002, -80.7211728],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_015ae0f89d2c411696579cd2040b4e25.bindTooltip(
+                `<div>
+                     <b>Name:</b> OHIO VALLEY GENERAL HOSPITAL<br><b>Addr:</b> 2000 EOFF STREET<br><b>State:</b> WV<br><b>County:</b> OHIO<br><b>City:</b> WHEELING<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef325f8c4af443ad9bf42211ff4308fe = L.circleMarker(
+                [38.4517194, -81.9523723],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_ef325f8c4af443ad9bf42211ff4308fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> CAMC TEAYS VALLEY HOSPITAL<br><b>Addr:</b> 1400 HOSPITAL DRIVE<br><b>State:</b> WV<br><b>County:</b> PUTNAM<br><b>City:</b> HURRICANE<br><b>Zip Code:</b> 25526-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b42b0c572ccd49569632bfae784a9097 = L.circleMarker(
+                [23.00035283663982, -96.00078131274772],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_b42b0c572ccd49569632bfae784a9097.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHARLESTON SURGICAL HOSPITAL<br><b>Addr:</b> 1306 KANAWHA BLVD E<br><b>State:</b> WV<br><b>County:</b> KANAWHA<br><b>City:</b> CHARLETON<br><b>Zip Code:</b> 25328<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c01f73f966944a8b0eca5200b8ada9b = L.circleMarker(
+                [23.0003572494398, -96.00078226375891],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_4c01f73f966944a8b0eca5200b8ada9b.bindTooltip(
+                `<div>
+                     <b>Name:</b> JACKSON GENERAL HOSPITAL<br><b>Addr:</b> PINNELL STREET<br><b>State:</b> WV<br><b>County:</b> JACKSON<br><b>City:</b> RIPLEY<br><b>Zip Code:</b> 25271<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17d4d98c21a64e188283e528fd7ca96d = L.circleMarker(
+                [23.00035879786151, -96.00076797164566],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_17d4d98c21a64e188283e528fd7ca96d.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. JOSEPHS HOSPITAL OF BUCKHANNON<br><b>Addr:</b> 1 AMALIA DRIVE<br><b>State:</b> WV<br><b>County:</b> UPSHUR<br><b>City:</b> BUCKHANNON<br><b>Zip Code:</b> 26201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dcac3a5ef3b8491fbb1caf9ef67cf080 = L.circleMarker(
+                [23.00035236997933, -96.0007736526824],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_dcac3a5ef3b8491fbb1caf9ef67cf080.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUMMERSVILLE REGIONAL MED CENTER<br><b>Addr:</b> 400 FAIRVIEW HEIGHTS ROAD<br><b>State:</b> WV<br><b>County:</b> NICHOLAS<br><b>City:</b> SUMMERSVILLE<br><b>Zip Code:</b> 26551<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85dc7def958b43969b2021d9789c453a = L.circleMarker(
+                [23.00035353464868, -96.00078911383012],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8e8814157476429c9e6eadeeea893f27);
+        
+    
+            circle_marker_85dc7def958b43969b2021d9789c453a.bindTooltip(
+                `<div>
+                     <b>Name:</b> CORNERSTONE HOSPITAL OF HUNTINGTON<br><b>Addr:</b> 2900 FIRST AVE<br><b>State:</b> WV<br><b>County:</b> CABELL<br><b>City:</b> HUNTINGTON<br><b>Zip Code:</b> 25702-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_c0fd45290db3462ea1f74da94a0226c5 = L.featureGroup(
+                {}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var circle_marker_9ae9bc1f6386484cb3d3652be2b96509 = L.circleMarker(
+                [38.43205360000002, -82.4010244],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_9ae9bc1f6386484cb3d3652be2b96509.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Marys Medical Center<br><b>Addr:</b> 2900 1st Ave<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25701<br><b>Distance discrepancy:</b> 6674 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9042fac569aa40afb7f9547019ae1fa6 = L.circleMarker(
+                [39.270322200000095, -80.3618038],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_9042fac569aa40afb7f9547019ae1fa6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Louis A Johnson VA Medical Center (AKA Clarksburg VA Medical Center)<br><b>Addr:</b> 1 Medical Center Dr<br><b>State:</b> WV<br><b>County:</b> Harrison<br><b>City:</b> Clarksburg<br><b>Zip Code:</b> 26301<br><b>Distance discrepancy:</b> 101 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e4a88dce74944313bcac15e325807101 = L.circleMarker(
+                [37.76549190000007, -81.1932509],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_e4a88dce74944313bcac15e325807101.bindTooltip(
+                `<div>
+                     <b>Name:</b> Beckley VA Medical Center<br><b>Addr:</b> 200 Veterans Ave<br><b>State:</b> WV<br><b>County:</b> Raleigh<br><b>City:</b> Beckley<br><b>Zip Code:</b> 25801<br><b>Distance discrepancy:</b> 81 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c1845f802644859846a98d5784ec8e2 = L.circleMarker(
+                [38.37660520000002, -82.5166895],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_8c1845f802644859846a98d5784ec8e2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hershel Woody Williams VA Medical Center (FKA Huntington VA Medical Center)<br><b>Addr:</b> 1540 Spring Valley Dr<br><b>State:</b> WV<br><b>County:</b> Wayne<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25704<br><b>Distance discrepancy:</b> 1075 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec8a9cafd1e64029b63fd5e2d554998c = L.circleMarker(
+                [38.43235500000002, -82.4006689],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_ec8a9cafd1e64029b63fd5e2d554998c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cornerstone Specialty Hospitals Huntington<br><b>Addr:</b> 2900 1st Ave<br><b>State:</b> WV<br><b>County:</b> Cabell<br><b>City:</b> Huntington<br><b>Zip Code:</b> 25702<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e10d242d8394850a692a953c5dbd828 = L.circleMarker(
+                [39.41665809999999, -77.9112565],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_5e10d242d8394850a692a953c5dbd828.bindTooltip(
+                `<div>
+                     <b>Name:</b> Martinsburg VA Medical Center<br><b>Addr:</b> 510 Butler Ave<br><b>State:</b> WV<br><b>County:</b> Berkeley<br><b>City:</b> Martinsburg<br><b>Zip Code:</b> 25405<br><b>Distance discrepancy:</b> 353 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_37ab515314fa410e93e8c0d2962935d0 = L.circleMarker(
+                [40.39337010000007, -80.5273042],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_37ab515314fa410e93e8c0d2962935d0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Acuity Specialty Hospital of Ohio Valley - Weirton Campus<br><b>Addr:</b> 601 Colliers Way<br><b>State:</b> WV<br><b>County:</b> Brooke<br><b>City:</b> Weirton<br><b>Zip Code:</b> 26062<br><b>Distance discrepancy:</b> 328 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ee85a9ee2004d9191bf8dc229ccc721 = L.circleMarker(
+                [40.058845899999916, -80.6850466],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_4ee85a9ee2004d9191bf8dc229ccc721.bindTooltip(
+                `<div>
+                     <b>Name:</b> Acuity Specialty Hospital of Ohio Valley - Wheeling Campus<br><b>Addr:</b> 1 Medical Park<br><b>State:</b> WV<br><b>County:</b> Ohio<br><b>City:</b> Wheeling<br><b>Zip Code:</b> 26003<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_036a099ad6ff4253b2dbf07cb3cc826b = L.circleMarker(
+                [39.32854599999999, -80.239579],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_036a099ad6ff4253b2dbf07cb3cc826b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of MountainView at Bridgeport<br><b>Addr:</b> 327 Medical Park Dr<br><b>State:</b> WV<br><b>County:</b> Harrison<br><b>City:</b> Bridgeport<br><b>Zip Code:</b> 26330<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6ccfc9e1f304017ae5d7daff146a8b8 = L.circleMarker(
+                [39.66392499999999, -79.9467491],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c0fd45290db3462ea1f74da94a0226c5);
+        
+    
+            circle_marker_c6ccfc9e1f304017ae5d7daff146a8b8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Acuity Specialty Hospital of Morgantown<br><b>Addr:</b> 1200 J D Anderson Dr<br><b>State:</b> WV<br><b>County:</b> Monongalia<br><b>City:</b> Morgantown<br><b>Zip Code:</b> 26505<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_0dde4b7e308a404889bdcb205dd0690e = L.featureGroup(
+                {}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+    
+            var poly_line_8b68cf3f3ff64126838a57aee5e267c4 = L.polyline(
+                [[39.65345069999999, -79.9573464], [39.6537747, -79.9579772]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_aaf18b5bf6bb43e6bd0f7395898d5b0d = L.polyline(
+                [[37.76837289999996, -80.46524], [37.76837289999996, -80.46524]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_7ea3538c4c144c01b443c1e3446690a2 = L.polyline(
+                [[39.3271911, -80.2401398], [39.3271911, -80.2401398]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_1d01b040d8244331b2e4fa61bc5a9405 = L.polyline(
+                [[39.47644300000003, -77.98018399999998], [39.47644300000003, -77.98018399999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_67a31b893c364ae9a1a16a9d0a0d475a = L.polyline(
+                [[38.86883449999999, -82.1231138], [38.86883449999999, -82.1231138]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_a4746fec70af46b3932aee03ea504fd9 = L.polyline(
+                [[39.94666349999995, -80.7541289], [39.946119100000026, -80.7528814]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_1c1c2ea9493a4116a0715bb8f81fc1b7 = L.polyline(
+                [[38.8228833, -81.7295135], [38.8228833, -81.7295135]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_a65c0f848bb940fca4db4fa4791d137a = L.polyline(
+                [[38.34764920000002, -81.6271407], [38.34764920000002, -81.6271407]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_cbb137bd396a439aa632ddd7f36f5686 = L.polyline(
+                [[40.39305149999999, -80.5279355], [40.39305149999999, -80.5279355]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_75b31a3f0de24a1ebd49c0145fb175a8 = L.polyline(
+                [[39.66300989999996, -79.9470008], [39.663009899999984, -79.9470008]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_750282b1a4c8434ba509a8cf293945ec = L.polyline(
+                [[38.35430950000001, -81.7259752], [38.35430950000001, -81.7259752]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_30b077923964474281700f0b77054dd5 = L.polyline(
+                [[38.92867499999999, -79.8518411], [38.928066699999995, -79.8543421]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_c359062bcd3f4b518f08b68e98ebdf23 = L.polyline(
+                [[38.35387789999998, -81.6330328], [38.35387789999998, -81.6330328]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_dfe2789d3c744610804d8edd0506aa47 = L.polyline(
+                [[39.047732399999965, -80.4922194], [39.04773239999994, -80.4922194]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_82946dd56e094389a88edbf7cd764226 = L.polyline(
+                [[37.36292419999995, -81.11302080000002], [37.36292419999998, -81.11302080000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_0650a52cebed414a847224e3d7b62fc6 = L.polyline(
+                [[39.48227399999999, -80.164825], [39.48241649999995, -80.1653076]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_c6c129d04e9f437eb00e99d0a36c3646 = L.polyline(
+                [[37.84586850000002, -81.9934059], [37.84586850000007, -81.9934059]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_ec5353a03e2c4378b679a0b505e0135b = L.polyline(
+                [[40.05907360000003, -80.6847817], [40.05907360000003, -80.6847817]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_e845a3ff514f4a0abb1b17287d06cb9e = L.polyline(
+                [[38.99113929999996, -80.2362978], [38.99113929999994, -80.2362978]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_000ec8c3c15f4132b906609fc3e3f2a7 = L.polyline(
+                [[38.409453400000004, -82.4263569], [38.409453400000004, -82.4263569]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_b33b2ab321dc4dc2bd4c974ba7df90c0 = L.polyline(
+                [[39.26961809999997, -81.5599487], [39.26936, -81.559285]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_7794311a7cf84ef7814324409ef880ce = L.polyline(
+                [[38.34334010000003, -81.6301575], [38.34334010000003, -81.6301575]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_7ee2158e49794ac496acbb7c253228fc = L.polyline(
+                [[37.79868359999999, -81.168181], [37.79863179999995, -81.1685566]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_6f7ef25ac1ce4ece81819cda2dfd3b6d = L.polyline(
+                [[37.788021099999995, -81.2017763], [37.788021099999995, -81.2017763]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_d921abda8298458591f48d3a05dd72ff = L.polyline(
+                [[37.255191900000014, -81.2351822], [37.255191900000014, -81.2351822]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_7670e29812e64a058ad5c40bdbeebf90 = L.polyline(
+                [[39.649999999999984, -80.86], [39.681071200000034, -80.8501977]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_02ca5e1dc83b465ca174e6d3831046d3 = L.polyline(
+                [[37.67887100000001, -82.272576], [37.67887100000001, -82.272576]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_1293003d08b14b98ba39faaaf79529fd = L.polyline(
+                [[38.29262119999997, -80.829848], [38.29262119999999, -80.829848]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_b4109f23064e4d09a5bcf35557a8b536 = L.polyline(
+                [[37.43908919999993, -81.5880315], [37.43908919999991, -81.5880315]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_27a64ad2430347cf8ee10f4c60aa16f8 = L.polyline(
+                [[39.143328099999984, -80.0619918], [39.14332809999994, -80.0619918]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_a220017385434fc5938e9e8716a2a935 = L.polyline(
+                [[38.48228600000001, -80.410475], [38.48228600000001, -80.410475]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_b8e8140e69954d55a6313a2c2cd6b099 = L.polyline(
+                [[38.92293519999998, -81.0924804], [38.92293519999998, -81.0924804]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_f21469f240254a0093c282a2eba73124 = L.polyline(
+                [[39.55865719999998, -81.0042], [39.55865719999998, -81.0042]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_6ad417d06bf74f0c9b9102e1da447119 = L.polyline(
+                [[38.81296610000002, -81.3692406], [38.81296610000002, -81.3692406]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_f50d324a13924e88a546dfbe5af5869a = L.polyline(
+                [[39.34366849999997, -80.0250224], [39.34366849999999, -80.0250224]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_a8cb8bcbd72a412a8e89730a7e2d3e4b = L.polyline(
+                [[38.660801900000024, -80.749249], [38.660801900000045, -80.749249]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_784f383e840c413d8b3e8bd34affa45c = L.polyline(
+                [[39.64231649999995, -78.2005226], [39.64231649999995, -78.2005226]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_9c25552e62504308a161c8925d659f88 = L.polyline(
+                [[37.6505501, -80.8592819], [37.651148400000004, -80.861438]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_e232919a41a84077a63a0a24b7068e26 = L.polyline(
+                [[39.333318299999995, -78.69849349999998], [39.333318299999995, -78.69849349999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_f55076215c084a2883a10f03b60104bd = L.polyline(
+                [[39.46501970000002, -79.677466], [39.46501970000002, -79.677466]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_f8a595e22a1a47d2a8540ec254bb879c = L.polyline(
+                [[38.047838299999974, -81.8063838], [38.04783829999996, -81.8063838]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_bdd6017150c04bc8a064a21674bf7357 = L.polyline(
+                [[38.20066999999998, -80.108964], [38.20066999999998, -80.108964]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_163bcd3500364243a392e84b0408f43f = L.polyline(
+                [[39.40953650000004, -79.002872], [39.40953650000004, -79.002872]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_92025711f7724facb7b915325411d14f = L.polyline(
+                [[39.00150849999997, -79.1376448], [39.00150849999997, -79.13764479999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_ff3af33490c64721a85ce85a5c5da53c = L.polyline(
+                [[37.972096000000015, -81.1491093], [37.972096000000015, -81.1491093]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_d6c3bc2806864ae58eb3b547f1136b9e = L.polyline(
+                [[38.18261679999999, -81.32435919999999], [38.18261679999999, -81.32435919999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_6f409deb98ef415ca4d0df4d78c1a6ff = L.polyline(
+                [[39.29596500000003, -77.85873999999998], [39.29600600000001, -77.85906040000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_14e5ec25b74c421580346d9497b1b153 = L.polyline(
+                [[38.35403510000001, -81.6330798], [38.35403510000001, -81.6330798]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_27025438b7d8427eb07260eb21a65808 = L.polyline(
+                [[40.07996740000002, -80.6939926], [40.07996740000002, -80.6939926]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_9f05e49730a34c5191a1075c9c33a808 = L.polyline(
+                [[37.36355820000003, -81.1114591], [37.363558200000064, -81.1114591]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_b5bd7ed19ffb4c46b19fec946b476d34 = L.polyline(
+                [[39.30587970000005, -81.53442419999999], [39.30587970000007, -81.53442419999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_991a69a8c09f4bea997b4bfcb172830f = L.polyline(
+                [[38.41888999999998, -82.3386647], [38.41888999999998, -82.3386647]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_94115858418b451db174b890a83061f0 = L.polyline(
+                [[39.65649319999998, -79.962042], [39.65649319999996, -79.962042]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_2764285eae25406daf94c5f0539409c1 = L.polyline(
+                [[38.31471519999998, -81.568666], [38.31471519999998, -81.568666]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_449e913d3cea461b81e7bdc728c5ade8 = L.polyline(
+                [[38.41953459999995, -82.43686249999999], [38.41953459999998, -82.43686249999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_ff20b142b336479eb571669ec21f94ce = L.polyline(
+                [[38.41269609999998, -82.4132272], [38.41269609999998, -82.4132272]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_b9235cf866f44441a8064dd09570d555 = L.polyline(
+                [[39.04116399999998, -80.4964347], [39.04116399999998, -80.4964347]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var poly_line_f6ecf7a9206b45dbb958941746f29877 = L.polyline(
+                [[39.27158539999998, -80.3711511], [39.27158539999998, -80.3711511]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0dde4b7e308a404889bdcb205dd0690e);
+        
+    
+            var layer_control_4bf2b37dcb9a409bb215579329959b63 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_773ce12d90574ce8b1987ce6fbc17794,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_bef511c4d29641c0aa9a01c2a401a3ba,
+                    "DH - matched" : feature_group_99db4e8bd41d4646a0ad7334df13ae8a,
+                    "HCRIS - unmatched" : feature_group_8e8814157476429c9e6eadeeea893f27,
+                    "DH - unmatched" : feature_group_c0fd45290db3462ea1f74da94a0226c5,
+                    "connections" : feature_group_0dde4b7e308a404889bdcb205dd0690e,
+                },
+            };
+            L.control.layers(
+                layer_control_4bf2b37dcb9a409bb215579329959b63.base_layers,
+                layer_control_4bf2b37dcb9a409bb215579329959b63.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_eb5bcf1ec5394230956039fa6e3f9725);
+        
+</script>

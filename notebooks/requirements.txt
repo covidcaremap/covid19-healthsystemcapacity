@@ -9,4 +9,8 @@ FuzzyWuzzy==0.18.0
 python-Levenshtein==0.12.0
 requests==2.23.0
 folium==0.10.1
+python-dateutil<=2.8.0
+urllib3 < 1.25
 pysal==2.2.0
+rapidfuzz==0.4.0
+

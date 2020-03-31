@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88" ></div>
+        
+</body>
+<script>    
+    
+            var map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88 = L.map(
+                "map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88",
+                {
+                    center: [44.14708975, -100.1784433],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_20e19f08ae73432eadb4bcb50ec4d680 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var feature_group_209cd4abae1343aaa41877dd46b6dfab = L.featureGroup(
+                {}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var circle_marker_778e66f7f4c3407abec9fa42ceb845b9 = L.circleMarker(
+                [44.91099800000003, -97.121106],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_778e66f7f4c3407abec9fa42ceb845b9.bindTooltip(
+                `<div>
+                     <b>Name:</b> PRAIRIE LAKES HEALTH CARE CENTER<br><b>Addr:</b> 401 9TH AVE. NW<br><b>State:</b> SD<br><b>County:</b> CODINGTON<br><b>City:</b> WATERTOWN<br><b>Zip Code:</b> 57201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1c8d4f5a4da40a6971b4a29304638e9 = L.circleMarker(
+                [44.30772069999998, -96.7669378],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_b1c8d4f5a4da40a6971b4a29304638e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> BROOKINGS HEALTH SYSTEM<br><b>Addr:</b> 300 22ND AVENUE<br><b>State:</b> SD<br><b>County:</b> BROOKINGS<br><b>City:</b> BROOKINGS<br><b>Zip Code:</b> 57006-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c3d2dee87eb49d7a7c50d5574b0622f = L.circleMarker(
+                [42.87309030000004, -97.4082009],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_8c3d2dee87eb49d7a7c50d5574b0622f.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA SACRED HEART HOSPITAL<br><b>Addr:</b> 501 SUMMIT ST<br><b>State:</b> SD<br><b>County:</b> YANKTON<br><b>City:</b> YANKTON<br><b>Zip Code:</b> 57078<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30e4500cec8b4d108f01a5667ab1446d = L.circleMarker(
+                [43.71502220000003, -98.0080107],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_30e4500cec8b4d108f01a5667ab1446d.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA QUEEN OF PEACE<br><b>Addr:</b> 501 NORTH FOSTER<br><b>State:</b> SD<br><b>County:</b> DAVISON<br><b>City:</b> MITCHELL<br><b>Zip Code:</b> 57301-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_736661aac48e4c1d83ad49b65f83d3e7 = L.circleMarker(
+                [45.46140159999996, -98.47804149999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_736661aac48e4c1d83ad49b65f83d3e7.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA ST. LUKES<br><b>Addr:</b> 305 SOUTH STATE STREET<br><b>State:</b> SD<br><b>County:</b> BROWN<br><b>City:</b> ABERDEEN<br><b>Zip Code:</b> 57402-4450<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_541bd22234664c818ec6fd7724d332c1 = L.circleMarker(
+                [44.36046969999998, -100.3418687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_541bd22234664c818ec6fd7724d332c1.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA ST MARYS<br><b>Addr:</b> 801 E SIOUX AVENUE<br><b>State:</b> SD<br><b>County:</b> HUGHES<br><b>City:</b> PIERRE<br><b>Zip Code:</b> 57501-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae2dca31cf854e0993852b61a0fb8d30 = L.circleMarker(
+                [43.53540709999998, -96.7425004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_ae2dca31cf854e0993852b61a0fb8d30.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD USD MEDICAL CENTER<br><b>Addr:</b> 1305 W 18TH ST<br><b>State:</b> SD<br><b>County:</b> MINNEHAHA<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57117-5039<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cfc031d95524c5f97bf52fd6ab14018 = L.circleMarker(
+                [44.49837859999997, -103.8606283],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_5cfc031d95524c5f97bf52fd6ab14018.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPEARFISH REGIONAL HOSPITAL<br><b>Addr:</b> 1440 NORTH MAIN<br><b>State:</b> SD<br><b>County:</b> LAWRENCE<br><b>City:</b> SPEARFISH<br><b>Zip Code:</b> 57783-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_093e727bc5c74245a71e1fd7376eeee3 = L.circleMarker(
+                [44.05775419999995, -103.2251787],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_093e727bc5c74245a71e1fd7376eeee3.bindTooltip(
+                `<div>
+                     <b>Name:</b> RAPID CITY REGIONAL HOSPITAL<br><b>Addr:</b> 353 FAIRMONT BLVD<br><b>State:</b> SD<br><b>County:</b> PENNINGTON<br><b>City:</b> RAPID CITY<br><b>Zip Code:</b> 57701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bfff88fa8df64947909d804370ffe796 = L.circleMarker(
+                [43.02396059999996, -102.541658],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_bfff88fa8df64947909d804370ffe796.bindTooltip(
+                `<div>
+                     <b>Name:</b> PINE RIDGE HOSPITAL<br><b>Addr:</b> E HIGHWAY 18<br><b>State:</b> SD<br><b>County:</b> SHANNON<br><b>City:</b> PINE RIDGE<br><b>Zip Code:</b> 57770<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e439a702a4104538aff72044c86b322a = L.circleMarker(
+                [44.07542900000002, -103.2715727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_e439a702a4104538aff72044c86b322a.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIOUX SAN HOSPITAL<br><b>Addr:</b> 3200 CANYON LAKE DRIVE<br><b>State:</b> SD<br><b>County:</b> PENNINGTON<br><b>City:</b> RAPID CITY<br><b>Zip Code:</b> 57702<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7b7c38e7dde41b3b1f35835417e79b0 = L.circleMarker(
+                [45.00040000000001, -101.2343],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_a7b7c38e7dde41b3b1f35835417e79b0.bindTooltip(
+                `<div>
+                     <b>Name:</b> PHS HOSPITAL - EAGLE BUTTE<br><b>Addr:</b> 24276 166TH STREET<br><b>State:</b> SD<br><b>County:</b> DEWEY<br><b>City:</b> EAGLE BUTTE<br><b>Zip Code:</b> 57625<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1210
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2692edaf025a4eee8db9d206c9d8dbc9 = L.circleMarker(
+                [43.283138100000016, -100.8705174],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_2692edaf025a4eee8db9d206c9d8dbc9.bindTooltip(
+                `<div>
+                     <b>Name:</b> USPHS HOSPITAL - ROSEBUD<br><b>Addr:</b> HWY 18 400 SOLDIER CREEK RD<br><b>State:</b> SD<br><b>County:</b> TODD<br><b>City:</b> ROSEBUD<br><b>Zip Code:</b> 57570<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 3366
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fc7d74ac7af467dbe97717997fcc03e = L.circleMarker(
+                [42.50551760000001, -96.4962583],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_6fc7d74ac7af467dbe97717997fcc03e.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIOUXLAND SURGERY CENTER<br><b>Addr:</b> 600 SIOUX POINT ROAD<br><b>State:</b> SD<br><b>County:</b> UNION<br><b>City:</b> DAKOTA DUNES<br><b>Zip Code:</b> 57049<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b64258c80784b07804f59234d6bf8f7 = L.circleMarker(
+                [43.53507630000002, -96.7142093],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_1b64258c80784b07804f59234d6bf8f7.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIOUX FALLS SPECIALTY HOSPITAL<br><b>Addr:</b> 910 EAST 20TH STREET<br><b>State:</b> SD<br><b>County:</b> MINNEHAHA<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57105-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81f3ec01b64d437d8f4db7bc07e87be6 = L.circleMarker(
+                [44.045997499999984, -103.2236073],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_81f3ec01b64d437d8f4db7bc07e87be6.bindTooltip(
+                `<div>
+                     <b>Name:</b> BLACK HILLS SURGICAL HOSPITAL LLP<br><b>Addr:</b> 216 ANAMARIA DRIVE<br><b>State:</b> SD<br><b>County:</b> PENNINGTON<br><b>City:</b> RAPID CITY<br><b>Zip Code:</b> 57701-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9552eb07270e40c78278868da842d9d5 = L.circleMarker(
+                [44.05858299999999, -103.2290518],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_9552eb07270e40c78278868da842d9d5.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAME DAY SURGERY CENTER<br><b>Addr:</b> 651 CATHEDRAL DRIVE<br><b>State:</b> SD<br><b>County:</b> PENNINGTON<br><b>City:</b> RAPID CITY<br><b>Zip Code:</b> 57701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_408b7c802b4a467f88e211c99717d5a2 = L.circleMarker(
+                [43.49098009999999, -96.7810825],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_408b7c802b4a467f88e211c99717d5a2.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA HEART HOSPITAL OF SOUTH DAKOTA<br><b>Addr:</b> 4500 WEST 69TH STREET<br><b>State:</b> SD<br><b>County:</b> LINCOLN<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b671d4ac372b4307937e2c44056b31ed = L.circleMarker(
+                [42.900481200000016, -97.4007378],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_b671d4ac372b4307937e2c44056b31ed.bindTooltip(
+                `<div>
+                     <b>Name:</b> LEWIS AND SPECIALTY HOSPITAL<br><b>Addr:</b> 2601 FOX RUN PARKWAY<br><b>State:</b> SD<br><b>County:</b> YANKTON<br><b>City:</b> YANKTON<br><b>Zip Code:</b> 57070-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_279e08dcc7224bfda00f1344993c840f = L.circleMarker(
+                [45.463280900000015, -98.4457144],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_279e08dcc7224bfda00f1344993c840f.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD ABERDEEN MEDICAL CENTER<br><b>Addr:</b> 3015 3RD AVE SE<br><b>State:</b> SD<br><b>County:</b> BROWN<br><b>City:</b> ABERDEEN<br><b>Zip Code:</b> 57401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_872a9c62f0b042aaa69c41e656b84b14 = L.circleMarker(
+                [43.99142349999998, -97.1180917],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_872a9c62f0b042aaa69c41e656b84b14.bindTooltip(
+                `<div>
+                     <b>Name:</b> MADISON REGIONAL HEALTH SYSTEM<br><b>Addr:</b> 323 SW 10TH ST<br><b>State:</b> SD<br><b>County:</b> LAKE<br><b>City:</b> MADISON<br><b>Zip Code:</b> 57042-1634<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd03ef37ac0c4c94a4903c18ced119a6 = L.circleMarker(
+                [45.030410699999955, -99.1329703],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_dd03ef37ac0c4c94a4903c18ced119a6.bindTooltip(
+                `<div>
+                     <b>Name:</b> FAULKTON AREA MEDICAL CENTER<br><b>Addr:</b> 1300 OAK STREETREET<br><b>State:</b> SD<br><b>County:</b> FAULK<br><b>City:</b> FAULKTON<br><b>Zip Code:</b> 57438-0100<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f7b617ba34e4482b5e9c7e132adb44b = L.circleMarker(
+                [45.01318010000002, -99.9471023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_0f7b617ba34e4482b5e9c7e132adb44b.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA GETTYSBURG HOSPITAL<br><b>Addr:</b> 606 EAST GARFIELD STREET<br><b>State:</b> SD<br><b>County:</b> POTTER<br><b>City:</b> GETTYSBURG<br><b>Zip Code:</b> 57442<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78041d7ecea24a2d98cda4783f9f69d6 = L.circleMarker(
+                [43.325283100000014, -98.3452749],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_78041d7ecea24a2d98cda4783f9f69d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOUGLAS COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> HIGHWAY 281 NORTH<br><b>State:</b> SD<br><b>County:</b> DOUGLAS<br><b>City:</b> ARMOUR<br><b>Zip Code:</b> 57313-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2f32a2f5b7647abb4cd382f61086d9b = L.circleMarker(
+                [43.38467030000001, -98.8360118],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_b2f32a2f5b7647abb4cd382f61086d9b.bindTooltip(
+                `<div>
+                     <b>Name:</b> PLATTE HEALTH CENTER  INC.<br><b>Addr:</b> 601 E 7TH STREET<br><b>State:</b> SD<br><b>County:</b> CHARLES MIX<br><b>City:</b> PLATTE<br><b>Zip Code:</b> 57369-0200<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74989501d19143feb7900df200b99c5d = L.circleMarker(
+                [44.752608699999975, -96.6831533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_74989501d19143feb7900df200b99c5d.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD MEDICAL CENTER CLEAR LAKE<br><b>Addr:</b> 701 3RD AVE<br><b>State:</b> SD<br><b>County:</b> DEUEL<br><b>City:</b> CLEAR LAKE<br><b>Zip Code:</b> 57226-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b71ca6b776a34004a2ccdeed704f7420 = L.circleMarker(
+                [45.76765019999998, -99.6137049],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_b71ca6b776a34004a2ccdeed704f7420.bindTooltip(
+                `<div>
+                     <b>Name:</b> EUREKA COMMUNITY HEALTH SERVICES<br><b>Addr:</b> 200 J AVE<br><b>State:</b> SD<br><b>County:</b> MC PHERSON<br><b>City:</b> EUREKA<br><b>Zip Code:</b> 57437-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8b1e008019034fa3853e5ca95dc4dc5d = L.circleMarker(
+                [43.18210969999995, -99.2941225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_8b1e008019034fa3853e5ca95dc4dc5d.bindTooltip(
+                `<div>
+                     <b>Name:</b> COMMUNITY MEMORIAL HOSPITAL<br><b>Addr:</b> 809 JACKSON ST<br><b>State:</b> SD<br><b>County:</b> GREGORY<br><b>City:</b> BURKE<br><b>Zip Code:</b> 57523-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e363756a8ef24b5b9aae116497869be3 = L.circleMarker(
+                [44.05120439999999, -96.5915517],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_e363756a8ef24b5b9aae116497869be3.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA FLANDREAU HOSPITAL<br><b>Addr:</b> 214 NORTH PRAIRIE AVE<br><b>State:</b> SD<br><b>County:</b> MOODY<br><b>City:</b> FLANDREAU<br><b>Zip Code:</b> 57028-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0dce99f9653848759204362f9e14b703 = L.circleMarker(
+                [45.340009099999946, -97.52226850000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_0dce99f9653848759204362f9e14b703.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD HOSPITAL WEBSTER<br><b>Addr:</b> 1401 W 1ST STREET<br><b>State:</b> SD<br><b>County:</b> DAY<br><b>City:</b> WEBSTER<br><b>Zip Code:</b> 57274-0489<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7114b3144c9949018e15d41a64f12dc7 = L.circleMarker(
+                [45.78866189999997, -97.7461957],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_7114b3144c9949018e15d41a64f12dc7.bindTooltip(
+                `<div>
+                     <b>Name:</b> MARSHALL COUNTY HEALTHCARE CENTER<br><b>Addr:</b> 413 9TH STREET<br><b>State:</b> SD<br><b>County:</b> MARSHALL<br><b>City:</b> BRITTON<br><b>Zip Code:</b> 57430-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_751b043a9ed04002842f7211c8c75617 = L.circleMarker(
+                [43.34794550000003, -97.4310373],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_751b043a9ed04002842f7211c8c75617.bindTooltip(
+                `<div>
+                     <b>Name:</b> FREEMAN MEDICAL CENTER<br><b>Addr:</b> 510 EAST 8TH<br><b>State:</b> SD<br><b>County:</b> HUTCHINSON<br><b>City:</b> FREEMAN<br><b>Zip Code:</b> 57029<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55c877da34924324b4ef803e9d643130 = L.circleMarker(
+                [43.16967529999999, -101.7308327],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_55c877da34924324b4ef803e9d643130.bindTooltip(
+                `<div>
+                     <b>Name:</b> BENNETT COUNTY HOSPITAL<br><b>Addr:</b> 102 MAJOR ALLEN STREET<br><b>State:</b> SD<br><b>County:</b> BENNETT<br><b>City:</b> MARTIN<br><b>Zip Code:</b> 57551<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db5aee3d334e4c9681e447f301c2230c = L.circleMarker(
+                [43.07843170000003, -98.3019545],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_db5aee3d334e4c9681e447f301c2230c.bindTooltip(
+                `<div>
+                     <b>Name:</b> WAGNER COMMUNITY MEMORIAL HOSPITAL<br><b>Addr:</b> 513 THIRD STREET<br><b>State:</b> SD<br><b>County:</b> CHARLES MIX<br><b>City:</b> WAGNER<br><b>Zip Code:</b> 57380-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6770105d6c4a449ea29b998ddccab39e = L.circleMarker(
+                [44.87208949999996, -98.5202246],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_6770105d6c4a449ea29b998ddccab39e.bindTooltip(
+                `<div>
+                     <b>Name:</b> COMMUNITY MEMORIAL HOSPITAL<br><b>Addr:</b> 111 WEST 10TH AVE<br><b>State:</b> SD<br><b>County:</b> SPINK<br><b>City:</b> REDFIELD<br><b>Zip Code:</b> 57469<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d894506d9d7e4a6ea978021c64c585c2 = L.circleMarker(
+                [43.14905490000006, -97.7291159],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_d894506d9d7e4a6ea978021c64c585c2.bindTooltip(
+                `<div>
+                     <b>Name:</b> LANDMANN-JUNGMAN MEMORIAL HOSPITAL<br><b>Addr:</b> 600 BILLARDS STREET<br><b>State:</b> SD<br><b>County:</b> BON HOMME<br><b>City:</b> SCOTLAND<br><b>Zip Code:</b> 57059-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0586c3c681a448c2b517f16a479110e2 = L.circleMarker(
+                [45.448053099999974, -99.6609364],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_0586c3c681a448c2b517f16a479110e2.bindTooltip(
+                `<div>
+                     <b>Name:</b> BOWDLE HOSPITAL<br><b>Addr:</b> 8001 W 5TH STREET<br><b>State:</b> SD<br><b>County:</b> EDMUNDS<br><b>City:</b> BOWDLE<br><b>Zip Code:</b> 57428-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dca14673338f47688992ce1051b1fd76 = L.circleMarker(
+                [44.03967989999999, -101.6718524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_dca14673338f47688992ce1051b1fd76.bindTooltip(
+                `<div>
+                     <b>Name:</b> PHILIP HEALTH SERVICES INC<br><b>Addr:</b> 503 W PINE STREET<br><b>State:</b> SD<br><b>County:</b> HAAKON<br><b>City:</b> PHILIP<br><b>Zip Code:</b> 57567-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_054990b7acb04dd3800a0c23ed09bf01 = L.circleMarker(
+                [44.36946720000005, -103.7287113],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_054990b7acb04dd3800a0c23ed09bf01.bindTooltip(
+                `<div>
+                     <b>Name:</b> LEAD-DEADWOOD REGIONAL HOSPITAL<br><b>Addr:</b> 61 CHARLES STREET<br><b>State:</b> SD<br><b>County:</b> LAWRENCE<br><b>City:</b> DEADWOOD<br><b>Zip Code:</b> 57732<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 30
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f21302ff56cb4cfb98b98cceac1fd80e = L.circleMarker(
+                [44.40256429999997, -103.50715930000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_f21302ff56cb4cfb98b98cceac1fd80e.bindTooltip(
+                `<div>
+                     <b>Name:</b> STURGIS REGIONAL HOSPITAL<br><b>Addr:</b> 949 HARMON<br><b>State:</b> SD<br><b>County:</b> MEADE<br><b>City:</b> STURGIS<br><b>Zip Code:</b> 57785-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 74
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca363c83094343e5aae11f81925a5d3e = L.circleMarker(
+                [43.41724339999998, -103.4800746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_ca363c83094343e5aae11f81925a5d3e.bindTooltip(
+                `<div>
+                     <b>Name:</b> FALL RIVER HOSPITAL<br><b>Addr:</b> 1201 HWY 71 SOUTH<br><b>State:</b> SD<br><b>County:</b> FALL RIVER<br><b>City:</b> HOT SPRINGS<br><b>Zip Code:</b> 57747<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b0452df871145599334a836264f54a6 = L.circleMarker(
+                [43.77130239999996, -103.5898727],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_5b0452df871145599334a836264f54a6.bindTooltip(
+                `<div>
+                     <b>Name:</b> CUSTER REGIONAL HOSPITAL<br><b>Addr:</b> 1220 MONTGOMERY STREET<br><b>State:</b> SD<br><b>County:</b> CUSTER<br><b>City:</b> CUSTER<br><b>Zip Code:</b> 57730-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 124
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe43c69f238b4569945e6de73a28a918 = L.circleMarker(
+                [44.08101870000003, -98.5637593],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_fe43c69f238b4569945e6de73a28a918.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA WESKOTA MEMORIAL MEDICAL CENTE<br><b>Addr:</b> 604 1ST STREET NE<br><b>State:</b> SD<br><b>County:</b> JERAULD<br><b>City:</b> WESSINGTON SPRINGS<br><b>Zip Code:</b> 57382-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_614c7a4ac0ca48bcbd58ebfd40e5ff57 = L.circleMarker(
+                [45.54636079999998, -100.4492693],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_614c7a4ac0ca48bcbd58ebfd40e5ff57.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOBRIDGE REGIONAL HOSPITAL<br><b>Addr:</b> 140110TH AVE WEST<br><b>State:</b> SD<br><b>County:</b> WALWORTH<br><b>City:</b> MOBRIDGE<br><b>Zip Code:</b> 57601-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0126849d80a43aba398fecc8fc6e162 = L.circleMarker(
+                [45.22010089999995, -96.6181946],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_f0126849d80a43aba398fecc8fc6e162.bindTooltip(
+                `<div>
+                     <b>Name:</b> MILBANK AREA HOSPITAL/AVERA HEALTH<br><b>Addr:</b> 301 FLYNN DRIVE<br><b>State:</b> SD<br><b>County:</b> GRANT<br><b>City:</b> MILBANK<br><b>Zip Code:</b> 57252-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 207
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef159b851b9148209b6abe0d53ea4b6e = L.circleMarker(
+                [42.991552700000014, -97.8674927],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_ef159b851b9148209b6abe0d53ea4b6e.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. MICHAELS HOSPITAL  INC.<br><b>Addr:</b> 410 WEST 16TH AVENUE<br><b>State:</b> SD<br><b>County:</b> BON HOMME<br><b>City:</b> TYNDALL<br><b>Zip Code:</b> 57066-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3df79942ac86497788f33d02e46a4d6e = L.circleMarker(
+                [43.17544919999998, -97.08388800000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_3df79942ac86497788f33d02e46a4d6e.bindTooltip(
+                `<div>
+                     <b>Name:</b> PIONEER MEMORIAL HOSPITAL AND HEALTH<br><b>Addr:</b> 314 NORTH WASHINGTON STREET<br><b>State:</b> SD<br><b>County:</b> TURNER<br><b>City:</b> VIBORG<br><b>Zip Code:</b> 57070<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49216ae6972745cfbc2d166964952d2b = L.circleMarker(
+                [43.7861742, -99.3249331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_49216ae6972745cfbc2d166964952d2b.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD CHAMBERLAIN MEDICAL CENTER<br><b>Addr:</b> 300 SOUTH BYRON BOULEVARD<br><b>State:</b> SD<br><b>County:</b> BRULE<br><b>City:</b> CHAMBERLAIN<br><b>Zip Code:</b> 57325<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d958bb9f51fe4cdfa417ae3123465a43 = L.circleMarker(
+                [43.39959709999995, -97.9915334],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_d958bb9f51fe4cdfa417ae3123465a43.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA ST. BENEDICT HEALTH CENTER<br><b>Addr:</b> 401 WEST GLYNN DRIVE<br><b>State:</b> SD<br><b>County:</b> HUTCHINSON<br><b>City:</b> PARKSTON<br><b>Zip Code:</b> 57366-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_67018bad964c4182be4fa48b32ebfb69 = L.circleMarker(
+                [43.82867559999996, -96.7159755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_67018bad964c4182be4fa48b32ebfb69.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA DELLS AREA HOSPITAL<br><b>Addr:</b> 909 NORTH IOWA AVENUE<br><b>State:</b> SD<br><b>County:</b> MINNEHAHA<br><b>City:</b> DELL RAPIDS<br><b>Zip Code:</b> 57022-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9aab05514a4b457c8f7e9028c6f5ffac = L.circleMarker(
+                [44.386042699999976, -97.5611172],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_9aab05514a4b457c8f7e9028c6f5ffac.bindTooltip(
+                `<div>
+                     <b>Name:</b> DE SMET MEMORIAL HOSPITAL<br><b>Addr:</b> 306 PRAIRIE AVE. SW<br><b>State:</b> SD<br><b>County:</b> KINGSBURY<br><b>City:</b> DE SMET<br><b>Zip Code:</b> 57231-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c378eec062ef44008500e91cac1653a4 = L.circleMarker(
+                [43.30414170000004, -96.5572741],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_c378eec062ef44008500e91cac1653a4.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD MEDICAL CENTER CANTON<br><b>Addr:</b> 440 NORTH HIAWATHA DRIVE<br><b>State:</b> SD<br><b>County:</b> LINCOLN<br><b>City:</b> CANTON<br><b>Zip Code:</b> 57013-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30b96dbdee3445c883ace03d225d0308 = L.circleMarker(
+                [43.37007209999999, -99.847024],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_30b96dbdee3445c883ace03d225d0308.bindTooltip(
+                `<div>
+                     <b>Name:</b> WINNER REGIONAL HEALTHCARE CENTER<br><b>Addr:</b> 745 EAST 8TH STREET<br><b>State:</b> SD<br><b>County:</b> TRIPP<br><b>City:</b> WINNER<br><b>Zip Code:</b> 57580-2677<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2855b59498fe42719544814872474e36 = L.circleMarker(
+                [44.36163430000002, -98.2105539],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_2855b59498fe42719544814872474e36.bindTooltip(
+                `<div>
+                     <b>Name:</b> HURON REGIONAL MEDICAL CENTER<br><b>Addr:</b> 172 4TH ST SE<br><b>State:</b> SD<br><b>County:</b> BEADLE<br><b>City:</b> HURON<br><b>Zip Code:</b> 57350<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f87c411d30b46ea9e6b2df79f212603 = L.circleMarker(
+                [42.779068, -96.9195113],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_8f87c411d30b46ea9e6b2df79f212603.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANFORD MEDICAL CENTER VERMILLION<br><b>Addr:</b> 20 SOUTH PLUM STREET<br><b>State:</b> SD<br><b>County:</b> CLAY<br><b>City:</b> VERMILLION<br><b>Zip Code:</b> 57069-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d910e69d46b465683225bff0f0275c4 = L.circleMarker(
+                [44.52001479999999, -98.9922375],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_2d910e69d46b465683225bff0f0275c4.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA HAND COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 300 WEST 5TH STREET<br><b>State:</b> SD<br><b>County:</b> HAND<br><b>City:</b> MILLER<br><b>Zip Code:</b> 57362-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30f76e98158c4a20b4f2f057d0a0fb3d = L.circleMarker(
+                [43.23061369999998, -99.4333496],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_30f76e98158c4a20b4f2f057d0a0fb3d.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA GREGORY HOSPITAL<br><b>Addr:</b> 400 PARK STREET<br><b>State:</b> SD<br><b>County:</b> GREGORY<br><b>City:</b> GREGORY<br><b>Zip Code:</b> 57533-0408<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 202
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7263303b8f4f4988be645afda18b5ddf = L.circleMarker(
+                [45.65749119999997, -97.05013580000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_7263303b8f4f4988be645afda18b5ddf.bindTooltip(
+                `<div>
+                     <b>Name:</b> COTEAU DES PRAIRIES<br><b>Addr:</b> 205 ORCHARD DRIVE<br><b>State:</b> SD<br><b>County:</b> ROBERTS<br><b>City:</b> SISSETON<br><b>Zip Code:</b> 57262-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a54e0c8db789402cac3b272e22e202b9 = L.circleMarker(
+                [43.5355194, -96.7432104],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_a54e0c8db789402cac3b272e22e202b9.bindTooltip(
+                `<div>
+                     <b>Name:</b> SSH - SIOUX FALLS  INC<br><b>Addr:</b> 1305 WEST 18TH STREET<br><b>State:</b> SD<br><b>County:</b> MINNEHAHA<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_63a6a3b8b4f845ffb6cd3eb05daa104f = L.circleMarker(
+                [43.52937899999999, -96.756134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_63a6a3b8b4f845ffb6cd3eb05daa104f.bindTooltip(
+                `<div>
+                     <b>Name:</b> LIFESCAPE<br><b>Addr:</b> 2501 W 26TH STREET<br><b>State:</b> SD<br><b>County:</b> NaN<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26d0d513d6394f17a619f7ca1ca430d9 = L.circleMarker(
+                [42.9147372, -97.4013251],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_209cd4abae1343aaa41877dd46b6dfab);
+        
+    
+            circle_marker_26d0d513d6394f17a619f7ca1ca430d9.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH DAKOTA HUMAN SERVICES CENTER<br><b>Addr:</b> 3515 BROADWAY AVE<br><b>State:</b> SD<br><b>County:</b> YANKTON<br><b>City:</b> YANKTON<br><b>Zip Code:</b> 57078-0076<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_41e9c0b50e0b41ddad6a83a7b43a3379 = L.featureGroup(
+                {}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var circle_marker_afe1339d150d413fa35f516ae888511b = L.circleMarker(
+                [44.91099800000003, -97.121106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_afe1339d150d413fa35f516ae888511b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Prairie Lakes Healthcare System<br><b>Addr:</b> 401 9th Ave Nw<br><b>State:</b> SD<br><b>County:</b> Codington<br><b>City:</b> Watertown<br><b>Zip Code:</b> 57201<br><b>Distance discrepancy:</b> 57 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d14b85141b540ed9ad3d0ad4e4d242d = L.circleMarker(
+                [44.30772069999997, -96.7669378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_9d14b85141b540ed9ad3d0ad4e4d242d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Brookings Health System (FKA Brookings Hospital)<br><b>Addr:</b> 300 22nd Ave<br><b>State:</b> SD<br><b>County:</b> Brookings<br><b>City:</b> Brookings<br><b>Zip Code:</b> 57006<br><b>Distance discrepancy:</b> 66 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8ab707947c1146bc985087e3ccd89cca = L.circleMarker(
+                [42.87309030000008, -97.4082009],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_8ab707947c1146bc985087e3ccd89cca.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Sacred Heart Hospital<br><b>Addr:</b> 501 Summit St<br><b>State:</b> SD<br><b>County:</b> Yankton<br><b>City:</b> Yankton<br><b>Zip Code:</b> 57078<br><b>Distance discrepancy:</b> 55 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_33eb85a0fed2453dac29369efa890152 = L.circleMarker(
+                [43.71502220000006, -98.0080107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_33eb85a0fed2453dac29369efa890152.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Queen of Peace Hospital<br><b>Addr:</b> 525 N Foster St<br><b>State:</b> SD<br><b>County:</b> Davison<br><b>City:</b> Mitchell<br><b>Zip Code:</b> 57301<br><b>Distance discrepancy:</b> 174 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_31670a4a05db4e8ca00c225bc3a24c39 = L.circleMarker(
+                [45.46140159999996, -98.47804149999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_31670a4a05db4e8ca00c225bc3a24c39.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera St Lukes Hospital<br><b>Addr:</b> 305 S State St<br><b>State:</b> SD<br><b>County:</b> Brown<br><b>City:</b> Aberdeen<br><b>Zip Code:</b> 57401<br><b>Distance discrepancy:</b> 44 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_116f65dfb3e946c080f0625574b46d54 = L.circleMarker(
+                [44.36046969999998, -100.3418687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_116f65dfb3e946c080f0625574b46d54.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera St Marys Hospital<br><b>Addr:</b> 801 E Sioux Ave<br><b>State:</b> SD<br><b>County:</b> Hughes<br><b>City:</b> Pierre<br><b>Zip Code:</b> 57501<br><b>Distance discrepancy:</b> 414 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc8b1dbff12541c7b743754db504b599 = L.circleMarker(
+                [43.53540709999998, -96.7425004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_cc8b1dbff12541c7b743754db504b599.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford USD Medical Center<br><b>Addr:</b> 1305 W 18th St<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57117<br><b>Distance discrepancy:</b> 10563 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9efa7c7fda20401b92301012b2e5b3cd = L.circleMarker(
+                [44.49837859999999, -103.8606283],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_9efa7c7fda20401b92301012b2e5b3cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Spearfish Hospital<br><b>Addr:</b> 1440 N Main St<br><b>State:</b> SD<br><b>County:</b> Lawrence<br><b>City:</b> Spearfish<br><b>Zip Code:</b> 57783<br><b>Distance discrepancy:</b> 20 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af088a0da4534d21a8bd03cc053ccd06 = L.circleMarker(
+                [44.05775419999994, -103.2251787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_af088a0da4534d21a8bd03cc053ccd06.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Rapid City Hospital<br><b>Addr:</b> 353 Fairmont Blvd<br><b>State:</b> SD<br><b>County:</b> Pennington<br><b>City:</b> Rapid City<br><b>Zip Code:</b> 57701<br><b>Distance discrepancy:</b> 61 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8256a4122e7b4061ac2b53dbc8152be6 = L.circleMarker(
+                [43.02396059999996, -102.541658],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_8256a4122e7b4061ac2b53dbc8152be6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pine Ridge Service Unit (AKA Pine Ridge Hospital)<br><b>Addr:</b> East Hwy 18<br><b>State:</b> SD<br><b>County:</b> Oglala Lakota<br><b>City:</b> Pine Ridge<br><b>Zip Code:</b> 57770<br><b>Distance discrepancy:</b> 51012 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1690f77111fd4647b0c17354f5f532da = L.circleMarker(
+                [44.07542900000002, -103.2715727],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_1690f77111fd4647b0c17354f5f532da.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rapid City Service Unit (AKA Sioux San Hospital)<br><b>Addr:</b> 3200 Canyon Lake Dr<br><b>State:</b> SD<br><b>County:</b> Pennington<br><b>City:</b> Rapid City<br><b>Zip Code:</b> 57702<br><b>Distance discrepancy:</b> 125 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d58c0f1d3ddd4447a9a8e15f27127b37 = L.circleMarker(
+                [44.9917741, -101.2436592],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_d58c0f1d3ddd4447a9a8e15f27127b37.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cheyenne River Health Center (AKA Eagle Butte Hospital)<br><b>Addr:</b> 24276 Airport Rd<br><b>State:</b> SD<br><b>County:</b> Ziebach<br><b>City:</b> Eagle Butte<br><b>Zip Code:</b> 57625<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 1210
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7202d40559c434799cccc13815ef111 = L.circleMarker(
+                [43.25669590000001, -100.8505171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_b7202d40559c434799cccc13815ef111.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rosebud Service Unit (AKA Rosebud Hospital)<br><b>Addr:</b> 400 Soldier Creek Dr<br><b>State:</b> SD<br><b>County:</b> Todd<br><b>City:</b> Rosebud<br><b>Zip Code:</b> 57570<br><b>Distance discrepancy:</b> 4611 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 3366
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c0d0206ff1949c5a15bfaf96517cab5 = L.circleMarker(
+                [42.50551760000001, -96.4962583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_0c0d0206ff1949c5a15bfaf96517cab5.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dunes Surgical Hospital (FKA Siouxland Surgery Center)<br><b>Addr:</b> 600 N Sioux Point Rd<br><b>State:</b> SD<br><b>County:</b> Union<br><b>City:</b> Dakota Dunes<br><b>Zip Code:</b> 57049<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87016f5269844a73a8c36b5f0a29b23f = L.circleMarker(
+                [43.53507630000002, -96.7142093],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_87016f5269844a73a8c36b5f0a29b23f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sioux Falls Specialty Hospital<br><b>Addr:</b> 910 E 20th St<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e17d4211a8d14093a3534fe196751377 = L.circleMarker(
+                [44.045997499999984, -103.2236073],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_e17d4211a8d14093a3534fe196751377.bindTooltip(
+                `<div>
+                     <b>Name:</b> Black Hills Surgical Hospital<br><b>Addr:</b> 216 Anamaria Dr<br><b>State:</b> SD<br><b>County:</b> Pennington<br><b>City:</b> Rapid City<br><b>Zip Code:</b> 57701<br><b>Distance discrepancy:</b> 46 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fcf8e369499942a7bff7e2dc7bac4a59 = L.circleMarker(
+                [44.05858299999999, -103.2290518],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_fcf8e369499942a7bff7e2dc7bac4a59.bindTooltip(
+                `<div>
+                     <b>Name:</b> Same Day Surgery Center in Rapid City<br><b>Addr:</b> 651 Cathedral Dr<br><b>State:</b> SD<br><b>County:</b> Pennington<br><b>City:</b> Rapid City<br><b>Zip Code:</b> 57701<br><b>Distance discrepancy:</b> 19 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0cd07d56f6244d5287ab9fb38bb22044 = L.circleMarker(
+                [43.49098009999999, -96.7810825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_0cd07d56f6244d5287ab9fb38bb22044.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Heart Hospital<br><b>Addr:</b> 4500 W 69th St<br><b>State:</b> SD<br><b>County:</b> Lincoln<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57108<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d1e035c5feb4cab9c37bf891fba7381 = L.circleMarker(
+                [42.900481200000016, -97.4007378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_7d1e035c5feb4cab9c37bf891fba7381.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Surgical Hospital (FKA Lewis and Clark Specialty Hospital)<br><b>Addr:</b> 2601 Fox Run Pkwy<br><b>State:</b> SD<br><b>County:</b> Yankton<br><b>City:</b> Yankton<br><b>Zip Code:</b> 57078<br><b>Distance discrepancy:</b> 80 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e5b04256e17465eb6263e85f10c2d5d = L.circleMarker(
+                [45.462730400000005, -98.4459144],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_5e5b04256e17465eb6263e85f10c2d5d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Aberdeen Medical Center<br><b>Addr:</b> 2905 3rd Ave Se<br><b>State:</b> SD<br><b>County:</b> Brown<br><b>City:</b> Aberdeen<br><b>Zip Code:</b> 57401<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d1b58fecb2d467f9b3011f9c6ee48ab = L.circleMarker(
+                [43.99142349999998, -97.1180917],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_2d1b58fecb2d467f9b3011f9c6ee48ab.bindTooltip(
+                `<div>
+                     <b>Name:</b> Madison Regional Health (FKA Madison Community Hospital)<br><b>Addr:</b> 323 Sw 10th St<br><b>State:</b> SD<br><b>County:</b> Lake<br><b>City:</b> Madison<br><b>Zip Code:</b> 57042<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6c94864701ee41948ac4536156706ee6 = L.circleMarker(
+                [45.03041069999992, -99.1329703],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_6c94864701ee41948ac4536156706ee6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Faulkton Area Medical Center<br><b>Addr:</b> 1300 Oak St<br><b>State:</b> SD<br><b>County:</b> Faulk<br><b>City:</b> Faulkton<br><b>Zip Code:</b> 57438<br><b>Distance discrepancy:</b> 7366 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac05643b176d46b1abc818e24dea2e4f = L.circleMarker(
+                [45.01318010000004, -99.9471023],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_ac05643b176d46b1abc818e24dea2e4f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Gettysburg Hospital<br><b>Addr:</b> 606 E Garfield Ave<br><b>State:</b> SD<br><b>County:</b> Potter<br><b>City:</b> Gettysburg<br><b>Zip Code:</b> 57442<br><b>Distance discrepancy:</b> 132 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ae9e766695c494aada0bd4e8644a80a = L.circleMarker(
+                [43.325283100000014, -98.3452749],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_3ae9e766695c494aada0bd4e8644a80a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Douglas County Memorial Hospital<br><b>Addr:</b> 708 8th St<br><b>State:</b> SD<br><b>County:</b> Douglas<br><b>City:</b> Armour<br><b>Zip Code:</b> 57313<br><b>Distance discrepancy:</b> 136 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_26c3945bc3b946d4a784fdc3ebd62139 = L.circleMarker(
+                [43.38467030000001, -98.8360118],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_26c3945bc3b946d4a784fdc3ebd62139.bindTooltip(
+                `<div>
+                     <b>Name:</b> Platte Health Center Avera<br><b>Addr:</b> 601 E 7th St<br><b>State:</b> SD<br><b>County:</b> Charles Mix<br><b>City:</b> Platte<br><b>Zip Code:</b> 57369<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0df4756a891d4956848c6c6c4ffaa423 = L.circleMarker(
+                [44.752608699999975, -96.6831533],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_0df4756a891d4956848c6c6c4ffaa423.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Clear Lake Medical Center<br><b>Addr:</b> 701 3rd Ave S<br><b>State:</b> SD<br><b>County:</b> Deuel<br><b>City:</b> Clear Lake<br><b>Zip Code:</b> 57226<br><b>Distance discrepancy:</b> 879 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b616544f92e498bbba057c650d8f522 = L.circleMarker(
+                [45.767650199999956, -99.6137049],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_7b616544f92e498bbba057c650d8f522.bindTooltip(
+                `<div>
+                     <b>Name:</b> Eureka Community Health Services Avera<br><b>Addr:</b> 200 J Ave<br><b>State:</b> SD<br><b>County:</b> McPherson<br><b>City:</b> Eureka<br><b>Zip Code:</b> 57437<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_94dbbea4107e409b9580004e55c443bc = L.circleMarker(
+                [43.18210969999995, -99.2941225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_94dbbea4107e409b9580004e55c443bc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Community Memorial Hospital<br><b>Addr:</b> 809 Jackson St<br><b>State:</b> SD<br><b>County:</b> Gregory<br><b>City:</b> Burke<br><b>Zip Code:</b> 57523<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4d67752994b4c58bda4062327e27639 = L.circleMarker(
+                [44.05120439999999, -96.5915517],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_a4d67752994b4c58bda4062327e27639.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Flandreau Hospital<br><b>Addr:</b> 214 N Prairie St<br><b>State:</b> SD<br><b>County:</b> Moody<br><b>City:</b> Flandreau<br><b>Zip Code:</b> 57028<br><b>Distance discrepancy:</b> 251 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68abe29c4a3347c5ac27757dcbf7d6e3 = L.circleMarker(
+                [45.34000909999993, -97.52226850000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_68abe29c4a3347c5ac27757dcbf7d6e3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Webster Medical Center<br><b>Addr:</b> 1401 W 1st St<br><b>State:</b> SD<br><b>County:</b> Day<br><b>City:</b> Webster<br><b>Zip Code:</b> 57274<br><b>Distance discrepancy:</b> 74 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_15a0974b1fb94cc5a6370ee3b1a57cd0 = L.circleMarker(
+                [45.78866189999997, -97.7461957],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_15a0974b1fb94cc5a6370ee3b1a57cd0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Marshall County Healthcare Center Avera<br><b>Addr:</b> 413 9th St<br><b>State:</b> SD<br><b>County:</b> Marshall<br><b>City:</b> Britton<br><b>Zip Code:</b> 57430<br><b>Distance discrepancy:</b> 87 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed9743756f554ee79a3063226c7c5f00 = L.circleMarker(
+                [43.34794550000003, -97.4310373],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_ed9743756f554ee79a3063226c7c5f00.bindTooltip(
+                `<div>
+                     <b>Name:</b> Freeman Regional Health Services (AKA Freeman Medical Center)<br><b>Addr:</b> 510 E 8th St<br><b>State:</b> SD<br><b>County:</b> Hutchinson<br><b>City:</b> Freeman<br><b>Zip Code:</b> 57029<br><b>Distance discrepancy:</b> 14 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02a58e3703e741958c5be689d0bb9320 = L.circleMarker(
+                [43.16967529999999, -101.7308327],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_02a58e3703e741958c5be689d0bb9320.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bennett County Hospital<br><b>Addr:</b> 102 Major Allen St<br><b>State:</b> SD<br><b>County:</b> Bennett<br><b>City:</b> Martin<br><b>Zip Code:</b> 57551<br><b>Distance discrepancy:</b> 222 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b6fd2d4f1cc04081afb09ef05b6b0046 = L.circleMarker(
+                [43.07843170000003, -98.3019545],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_b6fd2d4f1cc04081afb09ef05b6b0046.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wagner Community Memorial Hospital Avera<br><b>Addr:</b> 513 3rd St Sw<br><b>State:</b> SD<br><b>County:</b> Charles Mix<br><b>City:</b> Wagner<br><b>Zip Code:</b> 57380<br><b>Distance discrepancy:</b> 32 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82bb1152a3bd4fe3bd10141b12817d2e = L.circleMarker(
+                [44.87208949999999, -98.5202246],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_82bb1152a3bd4fe3bd10141b12817d2e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Community Memorial Hospital Avera<br><b>Addr:</b> 111 W 10th Ave<br><b>State:</b> SD<br><b>County:</b> Spink<br><b>City:</b> Redfield<br><b>Zip Code:</b> 57469<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_90edeb8874804e64a4063d05878d4822 = L.circleMarker(
+                [43.14905490000011, -97.7291159],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_90edeb8874804e64a4063d05878d4822.bindTooltip(
+                `<div>
+                     <b>Name:</b> Landmann-Jungman Memorial Hospital Avera<br><b>Addr:</b> 600 Billars St<br><b>State:</b> SD<br><b>County:</b> Bon Homme<br><b>City:</b> Scotland<br><b>Zip Code:</b> 57059<br><b>Distance discrepancy:</b> 65 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93a0a6216dca48398a8fd693afb9b3fd = L.circleMarker(
+                [45.448053099999974, -99.6609364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_93a0a6216dca48398a8fd693afb9b3fd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bowdle Hospital - Critical Access Hospital<br><b>Addr:</b> 8001 W 5th St<br><b>State:</b> SD<br><b>County:</b> Edmunds<br><b>City:</b> Bowdle<br><b>Zip Code:</b> 57428<br><b>Distance discrepancy:</b> 168 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5337496e9914b3bb563b77a59d14346 = L.circleMarker(
+                [44.03967989999999, -101.6718524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_b5337496e9914b3bb563b77a59d14346.bindTooltip(
+                `<div>
+                     <b>Name:</b> Philip Health Services<br><b>Addr:</b> 503 W Pine St<br><b>State:</b> SD<br><b>County:</b> Haakon<br><b>City:</b> Philip<br><b>Zip Code:</b> 57567<br><b>Distance discrepancy:</b> 55 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01b06ef919684491b0daae7b6e2bcf8b = L.circleMarker(
+                [44.3693703, -103.7290592],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_01b06ef919684491b0daae7b6e2bcf8b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Lead-Deadwood Hospital<br><b>Addr:</b> 61 Charles St<br><b>State:</b> SD<br><b>County:</b> Lawrence<br><b>City:</b> Deadwood<br><b>Zip Code:</b> 57732<br><b>Distance discrepancy:</b> 84 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 30
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a70045c3e53b4e908734233ab3a7f813 = L.circleMarker(
+                [44.40241699999999, -103.5080674],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_a70045c3e53b4e908734233ab3a7f813.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Sturgis Hospital<br><b>Addr:</b> 2140 Junction Ave<br><b>State:</b> SD<br><b>County:</b> Meade<br><b>City:</b> Sturgis<br><b>Zip Code:</b> 57785<br><b>Distance discrepancy:</b> 26644 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 74
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b89f36ed02e4132a9033f26ff5158da = L.circleMarker(
+                [43.41724339999998, -103.4800746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_7b89f36ed02e4132a9033f26ff5158da.bindTooltip(
+                `<div>
+                     <b>Name:</b> Fall River Hospital<br><b>Addr:</b> 1201 Highway 71 S<br><b>State:</b> SD<br><b>County:</b> Fall River<br><b>City:</b> Hot Springs<br><b>Zip Code:</b> 57747<br><b>Distance discrepancy:</b> 12 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecce4a8c3c6a4cb5aaa53102cba077ad = L.circleMarker(
+                [43.77234910000007, -103.5903754],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_ecce4a8c3c6a4cb5aaa53102cba077ad.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Custer Hospital (FKA Custer Regional Hospital - CAH)<br><b>Addr:</b> 1220 Montgomery Street<br><b>State:</b> SD<br><b>County:</b> Custer<br><b>City:</b> Custer<br><b>Zip Code:</b> 57730<br><b>Distance discrepancy:</b> 8915 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 124
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0675d3078aad40728d2f9256495b0f23 = L.circleMarker(
+                [44.08101870000001, -98.5637593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_0675d3078aad40728d2f9256495b0f23.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Weskota Memorial Hospital<br><b>Addr:</b> 604 1st St Ne<br><b>State:</b> SD<br><b>County:</b> Jerauld<br><b>City:</b> Wessington Springs<br><b>Zip Code:</b> 57382<br><b>Distance discrepancy:</b> 86 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e0fc948ed47c4d288fc447073dff6e02 = L.circleMarker(
+                [45.54636079999997, -100.4492693],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_e0fc948ed47c4d288fc447073dff6e02.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mobridge Regional Hospital<br><b>Addr:</b> 1401 10th Ave W<br><b>State:</b> SD<br><b>County:</b> Walworth<br><b>City:</b> Mobridge<br><b>Zip Code:</b> 57601<br><b>Distance discrepancy:</b> 138 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b690e730e1c4bc48012d3ceadba88e6 = L.circleMarker(
+                [45.22191779999999, -96.6176211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_1b690e730e1c4bc48012d3ceadba88e6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Milbank Area Hospital Avera<br><b>Addr:</b> 301 Flynn Dr<br><b>State:</b> SD<br><b>County:</b> Grant<br><b>City:</b> Milbank<br><b>Zip Code:</b> 57252<br><b>Distance discrepancy:</b> 8 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 207
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7fdd6608609846daa1aee5bcf4a19644 = L.circleMarker(
+                [42.991518099999986, -97.8675433],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_7fdd6608609846daa1aee5bcf4a19644.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Michaels Hospital Avera<br><b>Addr:</b> 410 W 16th Ave<br><b>State:</b> SD<br><b>County:</b> Bon Homme<br><b>City:</b> Tyndall<br><b>Zip Code:</b> 57066<br><b>Distance discrepancy:</b> 68 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_152eb957e6d84f09841958824a93cdee = L.circleMarker(
+                [43.17544919999992, -97.08388800000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_152eb957e6d84f09841958824a93cdee.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pioneer Memorial Hospital and Health Services<br><b>Addr:</b> 315 N Washington St<br><b>State:</b> SD<br><b>County:</b> Turner<br><b>City:</b> Viborg<br><b>Zip Code:</b> 57070<br><b>Distance discrepancy:</b> 308 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19fd6b0ad4d2403eac57f0809b3ed55f = L.circleMarker(
+                [43.7861742, -99.3249331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_19fd6b0ad4d2403eac57f0809b3ed55f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Chamberlain Medical Center<br><b>Addr:</b> 300 S Byron Blvd<br><b>State:</b> SD<br><b>County:</b> Brule<br><b>City:</b> Chamberlain<br><b>Zip Code:</b> 57325<br><b>Distance discrepancy:</b> 60 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb78580411ee42e6be9912c5ba9aa484 = L.circleMarker(
+                [43.399597099999916, -97.9915334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_eb78580411ee42e6be9912c5ba9aa484.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera St Benedict Health Center<br><b>Addr:</b> 401 W Glynn Dr<br><b>State:</b> SD<br><b>County:</b> Hutchinson<br><b>City:</b> Parkston<br><b>Zip Code:</b> 57366<br><b>Distance discrepancy:</b> 55 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_150db8c6d7db4a638eb55c1325d73235 = L.circleMarker(
+                [43.828675599999954, -96.7159755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_150db8c6d7db4a638eb55c1325d73235.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Dells Area Hospital<br><b>Addr:</b> 909 N Iowa Ave<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Dell Rapids<br><b>Zip Code:</b> 57022<br><b>Distance discrepancy:</b> 56 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b7b9286125d42b7a4b1995fae775ca0 = L.circleMarker(
+                [44.386042699999976, -97.5611172],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_3b7b9286125d42b7a4b1995fae775ca0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera De Smet Memorial Hospital<br><b>Addr:</b> 306 Prairie Ave Sw<br><b>State:</b> SD<br><b>County:</b> Kingsbury<br><b>City:</b> De Smet<br><b>Zip Code:</b> 57231<br><b>Distance discrepancy:</b> 463 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b52f9b0e538463da3894175d5487063 = L.circleMarker(
+                [43.304141700000066, -96.5572741],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_6b52f9b0e538463da3894175d5487063.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Canton-Inwood Medical Center<br><b>Addr:</b> 440 N Hiawatha Dr<br><b>State:</b> SD<br><b>County:</b> Lincoln<br><b>City:</b> Canton<br><b>Zip Code:</b> 57013<br><b>Distance discrepancy:</b> 337 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4605c5f36869447f87e70d39f9b3c1bc = L.circleMarker(
+                [43.370072099999966, -99.847024],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_4605c5f36869447f87e70d39f9b3c1bc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Winner Regional Hospital<br><b>Addr:</b> 745 E 8th St<br><b>State:</b> SD<br><b>County:</b> Tripp<br><b>City:</b> Winner<br><b>Zip Code:</b> 57580<br><b>Distance discrepancy:</b> 61 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_37c3960cb7264b77a0c6d21516720eed = L.circleMarker(
+                [44.36163429999999, -98.2105539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_37c3960cb7264b77a0c6d21516720eed.bindTooltip(
+                `<div>
+                     <b>Name:</b> Huron Regional Medical Center<br><b>Addr:</b> 172 4th St Se<br><b>State:</b> SD<br><b>County:</b> Beadle<br><b>City:</b> Huron<br><b>Zip Code:</b> 57350<br><b>Distance discrepancy:</b> 46 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba9ac0b09d91445a85e479253d0b6af8 = L.circleMarker(
+                [42.77898709999991, -96.91943080000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_ba9ac0b09d91445a85e479253d0b6af8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sanford Vermillion Medical Center<br><b>Addr:</b> 20 S Plum St<br><b>State:</b> SD<br><b>County:</b> Clay<br><b>City:</b> Vermillion<br><b>Zip Code:</b> 57069<br><b>Distance discrepancy:</b> 44 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bffcdb71e6ec4ae5b2560c1650cd6c61 = L.circleMarker(
+                [44.52001479999999, -98.9922375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_bffcdb71e6ec4ae5b2560c1650cd6c61.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Hand County Memorial Hospital<br><b>Addr:</b> 300 W 5th St<br><b>State:</b> SD<br><b>County:</b> Hand<br><b>City:</b> Miller<br><b>Zip Code:</b> 57362<br><b>Distance discrepancy:</b> 97 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_79fa6ef409ac4d41bae71681f75f0bc7 = L.circleMarker(
+                [43.23051309999999, -99.4358511],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_79fa6ef409ac4d41bae71681f75f0bc7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera Gregory Hospital<br><b>Addr:</b> 400 Park Ave<br><b>State:</b> SD<br><b>County:</b> Gregory<br><b>City:</b> Gregory<br><b>Zip Code:</b> 57533<br><b>Distance discrepancy:</b> 261 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 202
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a311e2819ec402aa484b2459eb20eb4 = L.circleMarker(
+                [45.65749119999999, -97.05013580000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_0a311e2819ec402aa484b2459eb20eb4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Coteau des Prairies Hospital and Clinic<br><b>Addr:</b> 205 Orchard Dr<br><b>State:</b> SD<br><b>County:</b> Roberts<br><b>City:</b> Sisseton<br><b>Zip Code:</b> 57262<br><b>Distance discrepancy:</b> 11 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fe2ffe1b248489cb9699821fb99d172 = L.circleMarker(
+                [43.5355194, -96.7432104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_9fe2ffe1b248489cb9699821fb99d172.bindTooltip(
+                `<div>
+                     <b>Name:</b> Select Specialty Hospital - South Dakota<br><b>Addr:</b> 1305 W 18th St<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> 16 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55af5e7126a74890ab76fe8181cced54 = L.circleMarker(
+                [43.52937899999999, -96.756134],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_55af5e7126a74890ab76fe8181cced54.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lifescape (FKA Childrens Care Hospital)<br><b>Addr:</b> 2501 W 26th St<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2d0e0d903b6f4fb7901354cd9fab006d = L.circleMarker(
+                [42.9147372, -97.4013251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_41e9c0b50e0b41ddad6a83a7b43a3379);
+        
+    
+            circle_marker_2d0e0d903b6f4fb7901354cd9fab006d.bindTooltip(
+                `<div>
+                     <b>Name:</b> South Dakota Human Services Center<br><b>Addr:</b> 3515 Broadway Ave<br><b>State:</b> SD<br><b>County:</b> Yankton<br><b>City:</b> Yankton<br><b>Zip Code:</b> 57078<br><b>Distance discrepancy:</b> 434 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_f2f2abf7f85148738c803ce363472d93 = L.featureGroup(
+                {}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var circle_marker_7e9c6ed4739e4242853747a97588793c = L.circleMarker(
+                [45.472938500000026, -98.5002517],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f2f2abf7f85148738c803ce363472d93);
+        
+    
+            circle_marker_7e9c6ed4739e4242853747a97588793c.bindTooltip(
+                `<div>
+                     <b>Name:</b> DAKOTA PLAINS SURGICAL CENTER LLP<br><b>Addr:</b> 701 8TH AVENUE NW  SUITE C<br><b>State:</b> SD<br><b>County:</b> BROWN<br><b>City:</b> ABERDEEN<br><b>Zip Code:</b> 57401-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e90e6bbf16e143808433f04465b4ef07 = L.circleMarker(
+                [23.000400605577443, -96.00092568635665],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f2f2abf7f85148738c803ce363472d93);
+        
+    
+            circle_marker_e90e6bbf16e143808433f04465b4ef07.bindTooltip(
+                `<div>
+                     <b>Name:</b> AVERA MCKENNAN<br><b>Addr:</b> 1325 SOUTH CLIFF<br><b>State:</b> SD<br><b>County:</b> MINNEHAHA<br><b>City:</b> SIOUX FALLS<br><b>Zip Code:</b> 57117-5045<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43c8ed1d90ac41bb89199816f41ca266 = L.circleMarker(
+                [23.000409469130012, -96.00099403047543],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f2f2abf7f85148738c803ce363472d93);
+        
+    
+            circle_marker_43c8ed1d90ac41bb89199816f41ca266.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPEARFISH REGIONAL SURGERY CENTER<br><b>Addr:</b> 1316 NORTH 10TH STREET<br><b>State:</b> SD<br><b>County:</b> LAWERENCE<br><b>City:</b> SPEARFISH<br><b>Zip Code:</b> 57783<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5a4bc2ac3c364f13ba14f53863e02dfa = L.featureGroup(
+                {}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var circle_marker_5456853d0a714fb4bfba61cfc7703a20 = L.circleMarker(
+                [44.412791600000006, -103.4707085],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5a4bc2ac3c364f13ba14f53863e02dfa);
+        
+    
+            circle_marker_5456853d0a714fb4bfba61cfc7703a20.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Black Hills Health Care System - Fort Meade Campus<br><b>Addr:</b> 113 Comanche Rd<br><b>State:</b> SD<br><b>County:</b> Meade<br><b>City:</b> Fort Meade<br><b>Zip Code:</b> 57741<br><b>Distance discrepancy:</b> 208 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e2cf447a44445969bd45421c28dc71c = L.circleMarker(
+                [43.534354799999996, -96.71195220000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5a4bc2ac3c364f13ba14f53863e02dfa);
+        
+    
+            circle_marker_7e2cf447a44445969bd45421c28dc71c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera McKennan Hospital & University Health Center<br><b>Addr:</b> 1325 S Cliff Ave<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> 339 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_770738116d96458695ebb5a9698eeab0 = L.circleMarker(
+                [43.531298800000016, -96.7550599],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5a4bc2ac3c364f13ba14f53863e02dfa);
+        
+    
+            circle_marker_770738116d96458695ebb5a9698eeab0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sioux Falls VA Health Care System - Royal C Johnson Veterans Memorial Hospital<br><b>Addr:</b> 2501 W 22nd St<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57105<br><b>Distance discrepancy:</b> 309 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29677ac3244741f2a3417991f94b45c2 = L.circleMarker(
+                [44.01679990000003, -103.2482407],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5a4bc2ac3c364f13ba14f53863e02dfa);
+        
+    
+            circle_marker_29677ac3244741f2a3417991f94b45c2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Regional Health Orthopedic & Specialty Hospital<br><b>Addr:</b> 1635 Caregiver Cir<br><b>State:</b> SD<br><b>County:</b> Pennington<br><b>City:</b> Rapid City<br><b>Zip Code:</b> 57702<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a34e7fd7cc5f4636b37d5e7505ad8fba = L.circleMarker(
+                [43.48879599999999, -96.7655975],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5a4bc2ac3c364f13ba14f53863e02dfa);
+        
+    
+            circle_marker_a34e7fd7cc5f4636b37d5e7505ad8fba.bindTooltip(
+                `<div>
+                     <b>Name:</b> Avera on Louise Health Campus<br><b>Addr:</b> 6100 S Louise Ave<br><b>State:</b> SD<br><b>County:</b> Minnehaha<br><b>City:</b> Sioux Falls<br><b>Zip Code:</b> 57108<br><b>Distance discrepancy:</b> 9034 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_92c0ae1169ea45449c8818c2943b1a8e = L.featureGroup(
+                {}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+    
+            var poly_line_8758f37a634b4624b561e0833dbd93b0 = L.polyline(
+                [[44.91099800000003, -97.121106], [44.91099800000003, -97.121106]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_dc3cff571fe84ff990be878be5304415 = L.polyline(
+                [[44.30772069999998, -96.7669378], [44.30772069999997, -96.7669378]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_fb95fb2dbabd470b86aecfa7acf3231c = L.polyline(
+                [[42.87309030000004, -97.4082009], [42.87309030000008, -97.4082009]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_38f7d572c393434dab611ee79791d334 = L.polyline(
+                [[43.71502220000003, -98.0080107], [43.71502220000006, -98.0080107]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_3b203b2b6c474e849f637fb3c8bb604b = L.polyline(
+                [[45.46140159999996, -98.47804149999999], [45.46140159999996, -98.47804149999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_de70c21cfe994ecb8ccbc9049b811344 = L.polyline(
+                [[44.36046969999998, -100.3418687], [44.36046969999998, -100.3418687]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_77f171fb1d7342ddb00c2fe0fd46e322 = L.polyline(
+                [[43.53540709999998, -96.7425004], [43.53540709999998, -96.7425004]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_3776d9797b9d4b9691b43f54d51b0964 = L.polyline(
+                [[44.49837859999997, -103.8606283], [44.49837859999999, -103.8606283]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_7382fea1575349c483cac917731484d2 = L.polyline(
+                [[44.05775419999995, -103.2251787], [44.05775419999994, -103.2251787]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_732a6f1a6dfe4f17a1a01bd9f6979f60 = L.polyline(
+                [[43.02396059999996, -102.541658], [43.02396059999996, -102.541658]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_64e33c04097e475c8e3a9a7a6f41aa47 = L.polyline(
+                [[44.07542900000002, -103.2715727], [44.07542900000002, -103.2715727]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_58101432cd604b37905f44f78a824d6c = L.polyline(
+                [[45.00040000000001, -101.2343], [44.9917741, -101.2436592]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_178886f4149c4a18ab6a920d7bc12e28 = L.polyline(
+                [[43.283138100000016, -100.8705174], [43.25669590000001, -100.8505171]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_222e7889211e4657ad52243bfdeb763f = L.polyline(
+                [[42.50551760000001, -96.4962583], [42.50551760000001, -96.4962583]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_8199caab72d045e584c64b69e2adbe78 = L.polyline(
+                [[43.53507630000002, -96.7142093], [43.53507630000002, -96.7142093]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_d16c294ce126472285a8d565dab0287c = L.polyline(
+                [[44.045997499999984, -103.2236073], [44.045997499999984, -103.2236073]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_85d15415c30240218300367f5a7288e0 = L.polyline(
+                [[44.05858299999999, -103.2290518], [44.05858299999999, -103.2290518]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_b027ca83abe443c29ab3aabac327845f = L.polyline(
+                [[43.49098009999999, -96.7810825], [43.49098009999999, -96.7810825]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_aeac3769dc2247e6a33381500fbc4ee1 = L.polyline(
+                [[42.900481200000016, -97.4007378], [42.900481200000016, -97.4007378]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_f494914dd9dc45e0a3218184cf754d3a = L.polyline(
+                [[45.463280900000015, -98.4457144], [45.462730400000005, -98.4459144]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_c3d080172b1f45b280f917b8be4f1d9c = L.polyline(
+                [[43.99142349999998, -97.1180917], [43.99142349999998, -97.1180917]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_44cf9cdb2ea44e59ba667760610df12c = L.polyline(
+                [[45.030410699999955, -99.1329703], [45.03041069999992, -99.1329703]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_09f6392cd2834ab8b40ca523dd6af492 = L.polyline(
+                [[45.01318010000002, -99.9471023], [45.01318010000004, -99.9471023]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_97149a0c6f794a43acf0ef21a25986fa = L.polyline(
+                [[43.325283100000014, -98.3452749], [43.325283100000014, -98.3452749]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_67fda345085a4dcfaf7049b10b2a7db5 = L.polyline(
+                [[43.38467030000001, -98.8360118], [43.38467030000001, -98.8360118]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_4ef16c0fb49e424499a8173792156084 = L.polyline(
+                [[44.752608699999975, -96.6831533], [44.752608699999975, -96.6831533]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_0e4bb1bc23d642a38f303c54e14d0c6b = L.polyline(
+                [[45.76765019999998, -99.6137049], [45.767650199999956, -99.6137049]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_d23b8a48b19f4016b5d319e48fd9d785 = L.polyline(
+                [[43.18210969999995, -99.2941225], [43.18210969999995, -99.2941225]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_ef830b19192d45c0b9a606adbe8644d7 = L.polyline(
+                [[44.05120439999999, -96.5915517], [44.05120439999999, -96.5915517]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_f7a843089cad4913b62549dda1b0b0e9 = L.polyline(
+                [[45.340009099999946, -97.52226850000001], [45.34000909999993, -97.52226850000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_666b0e8de8664f27b29b562d99a6cb98 = L.polyline(
+                [[45.78866189999997, -97.7461957], [45.78866189999997, -97.7461957]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_2487ec1c4e5e42f391b87b5ab30cf7d3 = L.polyline(
+                [[43.34794550000003, -97.4310373], [43.34794550000003, -97.4310373]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_3bf8796e7962407fb8016e77651739f3 = L.polyline(
+                [[43.16967529999999, -101.7308327], [43.16967529999999, -101.7308327]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_674b210587ba467bb88dcb7a90de97b7 = L.polyline(
+                [[43.07843170000003, -98.3019545], [43.07843170000003, -98.3019545]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_28c3f61635b54ac0a71eeace82e040b1 = L.polyline(
+                [[44.87208949999996, -98.5202246], [44.87208949999999, -98.5202246]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_1a817f1c785d4f1c81a7d00a0092283a = L.polyline(
+                [[43.14905490000006, -97.7291159], [43.14905490000011, -97.7291159]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_ab819b33d2bb40819bba8ca000eb5427 = L.polyline(
+                [[45.448053099999974, -99.6609364], [45.448053099999974, -99.6609364]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_ace2c448b8bd41aa8bd47ad0ad27d461 = L.polyline(
+                [[44.03967989999999, -101.6718524], [44.03967989999999, -101.6718524]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_94901efa2fce4bf6b4fdc190e0f5b34a = L.polyline(
+                [[44.36946720000005, -103.7287113], [44.3693703, -103.7290592]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_de011766530641cb8bf6c1cb3df83b71 = L.polyline(
+                [[44.40256429999997, -103.50715930000001], [44.40241699999999, -103.5080674]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_9aaa016d504a4b7db5baf9859f00c196 = L.polyline(
+                [[43.41724339999998, -103.4800746], [43.41724339999998, -103.4800746]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_f8df9f69e2c64518a434202accb33cf8 = L.polyline(
+                [[43.77130239999996, -103.5898727], [43.77234910000007, -103.5903754]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_804f1dcd776a43a39e3387ba89235fff = L.polyline(
+                [[44.08101870000003, -98.5637593], [44.08101870000001, -98.5637593]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_977c889d1b47473e8359673b332e43bc = L.polyline(
+                [[45.54636079999998, -100.4492693], [45.54636079999997, -100.4492693]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_2ae785a18b814f6e957a2fc9b7601e0d = L.polyline(
+                [[45.22010089999995, -96.6181946], [45.22191779999999, -96.6176211]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_28e1343ee4b94789902b91945f3877ad = L.polyline(
+                [[42.991552700000014, -97.8674927], [42.991518099999986, -97.8675433]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_46168b07fa394632b3986bcb94cdec31 = L.polyline(
+                [[43.17544919999998, -97.08388800000002], [43.17544919999992, -97.08388800000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_f36795af6b154b44a56091958886ba5c = L.polyline(
+                [[43.7861742, -99.3249331], [43.7861742, -99.3249331]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_8b37c15fb8f047e49bffae367f78a3d5 = L.polyline(
+                [[43.39959709999995, -97.9915334], [43.399597099999916, -97.9915334]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_9792ce88767a44779a82048ffbe99897 = L.polyline(
+                [[43.82867559999996, -96.7159755], [43.828675599999954, -96.7159755]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_4413130ec37945308c739121556c4c86 = L.polyline(
+                [[44.386042699999976, -97.5611172], [44.386042699999976, -97.5611172]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_ab656c54e202420089413f0f3d9f4037 = L.polyline(
+                [[43.30414170000004, -96.5572741], [43.304141700000066, -96.5572741]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_0b39ad51806f498ea734ba57d5a7f4f1 = L.polyline(
+                [[43.37007209999999, -99.847024], [43.370072099999966, -99.847024]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_08cfece2bbfb45cfb807bb9f54c3ad7c = L.polyline(
+                [[44.36163430000002, -98.2105539], [44.36163429999999, -98.2105539]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_b156b00db6514a1a9d1ef7da0dfaf668 = L.polyline(
+                [[42.779068, -96.9195113], [42.77898709999991, -96.91943080000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_179ad44002294605bce4a87f424ee09a = L.polyline(
+                [[44.52001479999999, -98.9922375], [44.52001479999999, -98.9922375]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_88249f62f90942a88074ce6face26778 = L.polyline(
+                [[43.23061369999998, -99.4333496], [43.23051309999999, -99.4358511]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_b219464b862c47a6a0491d6012e66ce8 = L.polyline(
+                [[45.65749119999997, -97.05013580000002], [45.65749119999999, -97.05013580000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_7c8c45ba63674b52a14733de606f144e = L.polyline(
+                [[43.5355194, -96.7432104], [43.5355194, -96.7432104]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_a563082f6d754cd481f0d609e8b01e1b = L.polyline(
+                [[43.52937899999999, -96.756134], [43.52937899999999, -96.756134]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var poly_line_984c691ca11b4221808610800847a386 = L.polyline(
+                [[42.9147372, -97.4013251], [42.9147372, -97.4013251]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_92c0ae1169ea45449c8818c2943b1a8e);
+        
+    
+            var layer_control_0390d1cf14974613a3f0ce73ef53f098 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_20e19f08ae73432eadb4bcb50ec4d680,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_209cd4abae1343aaa41877dd46b6dfab,
+                    "DH - matched" : feature_group_41e9c0b50e0b41ddad6a83a7b43a3379,
+                    "HCRIS - unmatched" : feature_group_f2f2abf7f85148738c803ce363472d93,
+                    "DH - unmatched" : feature_group_5a4bc2ac3c364f13ba14f53863e02dfa,
+                    "connections" : feature_group_92c0ae1169ea45449c8818c2943b1a8e,
+                },
+            };
+            L.control.layers(
+                layer_control_0390d1cf14974613a3f0ce73ef53f098.base_layers,
+                layer_control_0390d1cf14974613a3f0ce73ef53f098.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_cb3ef6e2a4dd42b4a6baf8dc92c7ce88);
+        
+</script>

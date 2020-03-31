@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e9c6c1d7d475404981032c137899bb25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e9c6c1d7d475404981032c137899bb25" ></div>
+        
+</body>
+<script>    
+    
+            var map_e9c6c1d7d475404981032c137899bb25 = L.map(
+                "map_e9c6c1d7d475404981032c137899bb25",
+                {
+                    center: [41.506804849999995, -72.77192715],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3cd2f87bc3f439e8877f681d2ed6b7f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var feature_group_362a6f78d3b545e886d7dbc4b6acd5e1 = L.featureGroup(
+                {}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var circle_marker_9884ba2ebe054dd7bc57b49928f96d0f = L.circleMarker(
+                [41.774182599999996, -72.6983438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_9884ba2ebe054dd7bc57b49928f96d0f.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAINT FRANCIS HOSPITAL<br><b>Addr:</b> 114 WOODLAND STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> HARTFORD<br><b>Zip Code:</b> 06105-1208<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47cdf51edb9b42c88de263dbf9d8b4d0 = L.circleMarker(
+                [41.90662699999997, -71.9139503],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_47cdf51edb9b42c88de263dbf9d8b4d0.bindTooltip(
+                `<div>
+                     <b>Name:</b> DAY KIMBALL HOSPITAL<br><b>Addr:</b> 320 POMFRET STREET<br><b>State:</b> CT<br><b>County:</b> WINDHAM<br><b>City:</b> PUTNAM<br><b>Zip Code:</b> 06260<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b07335017674200a096b87424469cfc = L.circleMarker(
+                [41.88052239999997, -73.4817316],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_2b07335017674200a096b87424469cfc.bindTooltip(
+                `<div>
+                     <b>Name:</b> SHARON HOSPITAL<br><b>Addr:</b> 50 HOSPITAL HILL ROAD<br><b>State:</b> CT<br><b>County:</b> LITCHFIELD<br><b>City:</b> SHARON<br><b>Zip Code:</b> 06069<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e2cdd49f1784042bcccc56e9fee5599 = L.circleMarker(
+                [41.55982580000002, -73.0596301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_4e2cdd49f1784042bcccc56e9fee5599.bindTooltip(
+                `<div>
+                     <b>Name:</b> WATERBURY HOSPITAL<br><b>Addr:</b> 64 ROBBINS STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> WATERBURY<br><b>Zip Code:</b> 06708<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_73025e56f9c0437f8e3f8256a8fd1530 = L.circleMarker(
+                [41.05539799999999, -73.55233100000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_73025e56f9c0437f8e3f8256a8fd1530.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE STAMFORD HOSPITAL<br><b>Addr:</b> ONE HOSPITAL PLAZA<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> STAMFORD  CT 06904<br><b>Zip Code:</b> 06904-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7c86f08fccb4aacaac38b6be9bb48f1 = L.circleMarker(
+                [41.33543749999998, -72.1049075],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_a7c86f08fccb4aacaac38b6be9bb48f1.bindTooltip(
+                `<div>
+                     <b>Name:</b> LAWRENCE & MEMORIAL HOSPITAL<br><b>Addr:</b> 365 MONTAUK AVENUE<br><b>State:</b> CT<br><b>County:</b> NEW LONDON<br><b>City:</b> NEW LONDON<br><b>Zip Code:</b> 06320-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ea8e07f0fc54fe7bf411b13d6909e65 = L.circleMarker(
+                [41.979134900000034, -72.3909802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_0ea8e07f0fc54fe7bf411b13d6909e65.bindTooltip(
+                `<div>
+                     <b>Name:</b> JOHNSON MEMORIAL HOSPITAL  INC.<br><b>Addr:</b> 201 CHESTNUT HILL ROAD<br><b>State:</b> CT<br><b>County:</b> TOLLAND<br><b>City:</b> STAFFORD SPRINGS<br><b>Zip Code:</b> 06076<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4565ff1c8f844a4b9684e394dc8b00fe = L.circleMarker(
+                [41.189128799999956, -73.16630430000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_4565ff1c8f844a4b9684e394dc8b00fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> BRIDGEPORT HOSPITAL<br><b>Addr:</b> 267 GRANT STREET<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> BRIDGEPORT<br><b>Zip Code:</b> 06610<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4714a0dcb9014fd59789f6ce188e8eae = L.circleMarker(
+                [41.792142999999996, -73.133854],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_4714a0dcb9014fd59789f6ce188e8eae.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHARLOTTE HUNGERFORD HOSPITAL<br><b>Addr:</b> 540 LITCHFIELD STREET<br><b>State:</b> CT<br><b>County:</b> LITCHFIELD COUNTY<br><b>City:</b> TORRINGTON<br><b>Zip Code:</b> 06790-0988<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d40236fc2fb4048b56719bb919c798a = L.circleMarker(
+                [41.866394899999996, -72.451531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_7d40236fc2fb4048b56719bb919c798a.bindTooltip(
+                `<div>
+                     <b>Name:</b> ROCKVILLE GENERAL HOSPITAL  INC.<br><b>Addr:</b> 31 UNION STREET<br><b>State:</b> CT<br><b>County:</b> TOLLAND<br><b>City:</b> VERNON<br><b>Zip Code:</b> 06066-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a93153fea2e6461185f031013ca25b99 = L.circleMarker(
+                [41.55269219999998, -73.0365718],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_a93153fea2e6461185f031013ca25b99.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. MARYS HOSPITAL<br><b>Addr:</b> 56 FRANKLIN STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> WATERBURY<br><b>Zip Code:</b> 06706-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_556eb595dba948edaddff97da8c5ebf1 = L.circleMarker(
+                [41.54930629999999, -72.8011451],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_556eb595dba948edaddff97da8c5ebf1.bindTooltip(
+                `<div>
+                     <b>Name:</b> MIDSTATE MEDICAL CENTER<br><b>Addr:</b> 435 LEWIS AVENUE<br><b>State:</b> CT<br><b>County:</b> NaN<br><b>City:</b> MERIDEN<br><b>Zip Code:</b> 06451<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9af8def6386c4994907059fcfc71b5ef = L.circleMarker(
+                [41.03447480000006, -73.629904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_9af8def6386c4994907059fcfc71b5ef.bindTooltip(
+                `<div>
+                     <b>Name:</b> GREENWICH HOSPITAL<br><b>Addr:</b> 5 PERRYRIDGE ROAD<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> GREENWICH<br><b>Zip Code:</b> 06830<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f82ab02dfe494f989255ca7b9a152b62 = L.circleMarker(
+                [41.2166148, -73.065281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_f82ab02dfe494f989255ca7b9a152b62.bindTooltip(
+                `<div>
+                     <b>Name:</b> MILFORD HOSPITAL  INC<br><b>Addr:</b> 300 SEASIDE AVENUE<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> MILFORD<br><b>Zip Code:</b> 06450<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de7d8cf8a04949b4b17d709fcece7bb2 = L.circleMarker(
+                [41.55545790000004, -72.646591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_de7d8cf8a04949b4b17d709fcece7bb2.bindTooltip(
+                `<div>
+                     <b>Name:</b> MIDDLESEX HOSPITAL<br><b>Addr:</b> 28 CRESCENT STREET<br><b>State:</b> CT<br><b>County:</b> MIDDLESEX<br><b>City:</b> MIDDLETOWN<br><b>Zip Code:</b> 06457-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 115
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9bdabb3e67994b449eac0e5a3b4726d5 = L.circleMarker(
+                [41.71759760000001, -72.2255535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_9bdabb3e67994b449eac0e5a3b4726d5.bindTooltip(
+                `<div>
+                     <b>Name:</b> WINDHAM COMMUNITY MEMORIAL HOSPITAL<br><b>Addr:</b> 112 MANSFIELD AVE<br><b>State:</b> CT<br><b>County:</b> WINDHAM<br><b>City:</b> WILLIMANTIC<br><b>Zip Code:</b> 06226<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b5ed7ade34845bda35ec5a172d11e01 = L.circleMarker(
+                [41.304422899999956, -72.9355663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_0b5ed7ade34845bda35ec5a172d11e01.bindTooltip(
+                `<div>
+                     <b>Name:</b> YALE-NEW HAVEN HOSPITAL<br><b>Addr:</b> 20 YORK STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> NEW HAVEN<br><b>Zip Code:</b> 06504<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_238ef3a6f4184b128e3a7c6525112146 = L.circleMarker(
+                [41.543243899999986, -72.0889953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_238ef3a6f4184b128e3a7c6525112146.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE WILLIAM W. BACKUS HOSPITAL<br><b>Addr:</b> 326 WASHINGTON STREET<br><b>State:</b> CT<br><b>County:</b> NEW LONDON<br><b>City:</b> NORWICH<br><b>Zip Code:</b> 06360<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d1bca2db1054eb58eb611d0c176e55e = L.circleMarker(
+                [41.75456159999996, -72.6792339],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_4d1bca2db1054eb58eb611d0c176e55e.bindTooltip(
+                `<div>
+                     <b>Name:</b> HARTFORD HOSPITAL<br><b>Addr:</b> 80 SEYMOUR STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> HARTFORD<br><b>Zip Code:</b> 06102-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2928c406c7e5436bb3eeecbf8fabf33a = L.circleMarker(
+                [41.781399999999984, -72.5252323],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_2928c406c7e5436bb3eeecbf8fabf33a.bindTooltip(
+                `<div>
+                     <b>Name:</b> MANCHESTER MEMORIAL HOSPITAL<br><b>Addr:</b> 71 HAYNES STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> MANCHESTER<br><b>Zip Code:</b> 06040-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c7a5dab13b74b67a48e95ea687bbedb = L.circleMarker(
+                [41.2009949, -73.2018703],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_5c7a5dab13b74b67a48e95ea687bbedb.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. VINCENTS MEDICAL CENTER<br><b>Addr:</b> 2800 MAIN STREET<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> BRIDGEPORT<br><b>Zip Code:</b> 06606-4201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0d512372329a4f93a8ddeda927ed3fbf = L.circleMarker(
+                [41.67574470000001, -72.9361422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_0d512372329a4f93a8ddeda927ed3fbf.bindTooltip(
+                `<div>
+                     <b>Name:</b> BRISTOL HOSPITAL  INC<br><b>Addr:</b> BREWSTER ROAD<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> BRISTOL<br><b>Zip Code:</b> 06111-0977<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_188ff45dd11e437eae711b93a7aaeb84 = L.circleMarker(
+                [41.335869199999976, -73.0899499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_188ff45dd11e437eae711b93a7aaeb84.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE GRIFFIN HOSPITAL<br><b>Addr:</b> 130 DIVISION STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> DERBY<br><b>Zip Code:</b> 06418-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_704cc75a7ee54c5c8e6c69cc70378c3c = L.circleMarker(
+                [41.405444300000035, -73.4451577],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_704cc75a7ee54c5c8e6c69cc70378c3c.bindTooltip(
+                `<div>
+                     <b>Name:</b> DANBURY HOSPITAL<br><b>Addr:</b> 24 HOSPITAL AVE<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> DANBURY<br><b>Zip Code:</b> 06810-6099<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2dcf50f5a9744ff28097afedf2f67753 = L.circleMarker(
+                [41.11199799999999, -73.42163970000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_2dcf50f5a9744ff28097afedf2f67753.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORWALK HOSPITAL<br><b>Addr:</b> MAPLE ST<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> NORWALK<br><b>Zip Code:</b> 06856-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4546ab230def40abbaba16f92301fe4c = L.circleMarker(
+                [41.73181340000006, -72.7899306],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_4546ab230def40abbaba16f92301fe4c.bindTooltip(
+                `<div>
+                     <b>Name:</b> JOHN DEMPSEY HOSPITAL<br><b>Addr:</b> 263 FARMINGTON AVENUE<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> FARMINGTON<br><b>Zip Code:</b> 06030<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 113
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4b91e4284344acdb4ae5372b7d4651f = L.circleMarker(
+                [41.256815, -72.832843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_a4b91e4284344acdb4ae5372b7d4651f.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE CONNECTICUT HOSPICE  INC.<br><b>Addr:</b> 100 DOUBLE BEACH ROAD<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> BRANFORD<br><b>Zip Code:</b> 06405<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_48218de8f1a44deea70a03fb23af5e40 = L.circleMarker(
+                [41.462812100000015, -72.83649620000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_48218de8f1a44deea70a03fb23af5e40.bindTooltip(
+                `<div>
+                     <b>Name:</b> MASONICARE HEALTH CENTER<br><b>Addr:</b> 22 MASONIC AVENUE<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> WALLINGFORD<br><b>Zip Code:</b> 06492<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d56338bdd4f44a1924422c516319fbb = L.circleMarker(
+                [41.80280009999994, -72.7292938],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_8d56338bdd4f44a1924422c516319fbb.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEBREW HOME & HOSPITAL<br><b>Addr:</b> ONE ABRAHAMS BLVD<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> WEST HARTFORD<br><b>Zip Code:</b> 06117<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ea4d5606c9864016885c8755e53318f1 = L.circleMarker(
+                [41.47255070000004, -72.8570866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_ea4d5606c9864016885c8755e53318f1.bindTooltip(
+                `<div>
+                     <b>Name:</b> GAYLORD HOSPITAL<br><b>Addr:</b> 400 GAYLORD FARMS<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> WALLINGFORD<br><b>Zip Code:</b> 06492<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f4f2e0442634601a32eaaf5aaf24b63 = L.circleMarker(
+                [41.68930570000001, -72.8022039],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_8f4f2e0442634601a32eaaf5aaf24b63.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL FOR SPECIAL CARE<br><b>Addr:</b> 2150 CORBIN AVENUE<br><b>State:</b> CT<br><b>County:</b> NaN<br><b>City:</b> NEW BRITAIN<br><b>Zip Code:</b> 06053<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22ed5aad3fbd4108938d5bee8edc8664 = L.circleMarker(
+                [41.65348910000007, -72.6514502],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_22ed5aad3fbd4108938d5bee8edc8664.bindTooltip(
+                `<div>
+                     <b>Name:</b> DEPT. OF VETERANS AFFAIRS HOSP SERV<br><b>Addr:</b> 287 WEST STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> ROCKY HILL<br><b>Zip Code:</b> 06067<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eda4f708a5184e1c8c375f1457a7929a = L.circleMarker(
+                [41.80005189999996, -72.6945989],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_eda4f708a5184e1c8c375f1457a7929a.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOUNT SINAI REHABILITATION HOSPTIAL<br><b>Addr:</b> 490 BLUE HILLS AVENUE<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> HARTFORD<br><b>Zip Code:</b> 06112-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1e4bda73704460aab0a9e0601a944a9 = L.circleMarker(
+                [41.753702699999984, -72.6816415],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_f1e4bda73704460aab0a9e0601a944a9.bindTooltip(
+                `<div>
+                     <b>Name:</b> CONNECTICUT CHILDRENS MEDICAL CENTER<br><b>Addr:</b> 282 WASHINGTON STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> HARTFORD<br><b>Zip Code:</b> 06106<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49b2bdc1603f4ea4a2b08e0a8e37817e = L.circleMarker(
+                [41.55568980000002, -72.6313018],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_49b2bdc1603f4ea4a2b08e0a8e37817e.bindTooltip(
+                `<div>
+                     <b>Name:</b> CONNECTICUT VALLEY HOSPITAL<br><b>Addr:</b> EASTERN DRIVE<br><b>State:</b> CT<br><b>County:</b> MIDDLESEX<br><b>City:</b> MIDDLETOWN<br><b>Zip Code:</b> 06457<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_479c5b68967a4025ad4676d8f8489e07 = L.circleMarker(
+                [41.74100459999997, -72.1979524],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_479c5b68967a4025ad4676d8f8489e07.bindTooltip(
+                `<div>
+                     <b>Name:</b> NATCHAUG HOSPITAL<br><b>Addr:</b> 189 STORRS ROAD<br><b>State:</b> CT<br><b>County:</b> TOLLAND<br><b>City:</b> MANSFIELD CENTER<br><b>Zip Code:</b> 06250-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cf57360a4b2f49a6aee9f2e7be46bdaf = L.circleMarker(
+                [41.305467699999966, -72.9367699],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_cf57360a4b2f49a6aee9f2e7be46bdaf.bindTooltip(
+                `<div>
+                     <b>Name:</b> CONNECTICUT MENTAL HEALTH CENTER<br><b>Addr:</b> 34 PARK STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> NEW HAVEN<br><b>Zip Code:</b> 06519<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd0f518e8ba841579b215cfc9caa10bb = L.circleMarker(
+                [41.18947830000001, -73.16795359999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_cd0f518e8ba841579b215cfc9caa10bb.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTHWEST CT MENTAL HEALTH SYSTEM<br><b>Addr:</b> 1635 CENTRAL AVENUE<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> BRIDGEPORT<br><b>Zip Code:</b> 06610<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc94cb474ecf469ebd70c8d51ef2c495 = L.circleMarker(
+                [41.16516469999997, -73.4686958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_bc94cb474ecf469ebd70c8d51ef2c495.bindTooltip(
+                `<div>
+                     <b>Name:</b> SILVER HILL HOSPITAL<br><b>Addr:</b> 208 VALLEY ROAD<br><b>State:</b> CT<br><b>County:</b> FAIRFIELD<br><b>City:</b> NEW CANAAN<br><b>Zip Code:</b> 06840<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffd08950fa954e5789fac1b5c4ee3b11 = L.circleMarker(
+                [41.558232200000006, -72.61488],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_362a6f78d3b545e886d7dbc4b6acd5e1);
+        
+    
+            circle_marker_ffd08950fa954e5789fac1b5c4ee3b11.bindTooltip(
+                `<div>
+                     <b>Name:</b> ALBERT J SOLNIT CHILDRENS CENTER<br><b>Addr:</b> 915 RIVER ROAD<br><b>State:</b> CT<br><b>County:</b> NaN<br><b>City:</b> MIDDLETOWN<br><b>Zip Code:</b> 06457<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_80294e5d95654db78ab7ee504f0acefd = L.featureGroup(
+                {}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var circle_marker_6032caf2e3cc4469a61f332700d0427d = L.circleMarker(
+                [41.774182599999996, -72.6983438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_6032caf2e3cc4469a61f332700d0427d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Saint Francis Hospital and Medical Center<br><b>Addr:</b> 114 Woodland St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6105<br><b>Distance discrepancy:</b> 117 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_286a0d56f73a42ceb4ff5956f4de81f2 = L.circleMarker(
+                [41.90662699999997, -71.9139503],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_286a0d56f73a42ceb4ff5956f4de81f2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Day Kimball Hospital<br><b>Addr:</b> 320 Pomfret St<br><b>State:</b> CT<br><b>County:</b> Windham<br><b>City:</b> Putnam<br><b>Zip Code:</b> 6260<br><b>Distance discrepancy:</b> 27 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77c273a1a9db4d56b81807b684e72696 = L.circleMarker(
+                [41.880522399999954, -73.48173160000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_77c273a1a9db4d56b81807b684e72696.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sharon Hospital<br><b>Addr:</b> 50 Hospital Hill Rd<br><b>State:</b> CT<br><b>County:</b> Litchfield<br><b>City:</b> Sharon<br><b>Zip Code:</b> 6069<br><b>Distance discrepancy:</b> 83 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_84aacc200aee46bab1133a12afdfc72d = L.circleMarker(
+                [41.55982580000002, -73.0596301],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_84aacc200aee46bab1133a12afdfc72d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Waterbury Hospital<br><b>Addr:</b> 64 Robbins St<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Waterbury<br><b>Zip Code:</b> 6708<br><b>Distance discrepancy:</b> 109 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a591c257afb84bff954be7375eb7631b = L.circleMarker(
+                [41.054482499999985, -73.5522978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_a591c257afb84bff954be7375eb7631b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Stamford Hospital (AKA Stamford Health)<br><b>Addr:</b> 1 Hospital Plz<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Stamford<br><b>Zip Code:</b> 6902<br><b>Distance discrepancy:</b> 267 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fb4f70c9487b4c1abbdcdf45560df9ef = L.circleMarker(
+                [41.33702999999999, -72.103805],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_fb4f70c9487b4c1abbdcdf45560df9ef.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lawrence & Memorial Hospital<br><b>Addr:</b> 365 Montauk Ave<br><b>State:</b> CT<br><b>County:</b> New London<br><b>City:</b> New London<br><b>Zip Code:</b> 6320<br><b>Distance discrepancy:</b> 227 meters<br><b>Geocode source:</b> geocoded:mapbox<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 200
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_127d158e6db6493e88539bd028550650 = L.circleMarker(
+                [41.97913490000008, -72.3909802],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_127d158e6db6493e88539bd028550650.bindTooltip(
+                `<div>
+                     <b>Name:</b> Johnson Memorial Hospital<br><b>Addr:</b> 201 Chestnut Hill Rd<br><b>State:</b> CT<br><b>County:</b> Tolland<br><b>City:</b> Stafford Springs<br><b>Zip Code:</b> 6076<br><b>Distance discrepancy:</b> 204 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc5e09ebef514f1d82ca81bdc0505306 = L.circleMarker(
+                [41.18912879999999, -73.16630430000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_bc5e09ebef514f1d82ca81bdc0505306.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bridgeport Hospital<br><b>Addr:</b> 267 Grant St<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Bridgeport<br><b>Zip Code:</b> 6610<br><b>Distance discrepancy:</b> 26 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a3bb79456174d35af986bc031bdcf2e = L.circleMarker(
+                [41.792142999999996, -73.133854],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_5a3bb79456174d35af986bc031bdcf2e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Charlotte Hungerford Hospital<br><b>Addr:</b> 540 Litchfield St<br><b>State:</b> CT<br><b>County:</b> Litchfield<br><b>City:</b> Torrington<br><b>Zip Code:</b> 6790<br><b>Distance discrepancy:</b> 92 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22fe0b8ca2a043ee9cc95ed4c918bced = L.circleMarker(
+                [41.866394899999996, -72.451531],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_22fe0b8ca2a043ee9cc95ed4c918bced.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rockville General Hospital<br><b>Addr:</b> 31 Union St<br><b>State:</b> CT<br><b>County:</b> Tolland<br><b>City:</b> Vernon<br><b>Zip Code:</b> 6066<br><b>Distance discrepancy:</b> 125 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d7e03b7459a4e7cbc87dd0691923868 = L.circleMarker(
+                [41.55269219999998, -73.0365718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_4d7e03b7459a4e7cbc87dd0691923868.bindTooltip(
+                `<div>
+                     <b>Name:</b> Saint Marys Hospital<br><b>Addr:</b> 56 Franklin St<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Waterbury<br><b>Zip Code:</b> 6706<br><b>Distance discrepancy:</b> 50 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3404044ef43b4688a5321428229989d7 = L.circleMarker(
+                [41.54930629999999, -72.8011451],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_3404044ef43b4688a5321428229989d7.bindTooltip(
+                `<div>
+                     <b>Name:</b> MidState Medical Center<br><b>Addr:</b> 435 Lewis Ave<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Meriden<br><b>Zip Code:</b> 6451<br><b>Distance discrepancy:</b> 2402 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f499e904e7074e66a61ac5049c3d1d4f = L.circleMarker(
+                [41.03447480000006, -73.629904],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_f499e904e7074e66a61ac5049c3d1d4f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Greenwich Hospital<br><b>Addr:</b> 5 Perryridge Rd<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Greenwich<br><b>Zip Code:</b> 6830<br><b>Distance discrepancy:</b> 41 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82e63a0456e7401d976d863420df8bd3 = L.circleMarker(
+                [41.2166148, -73.065281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_82e63a0456e7401d976d863420df8bd3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bridgeport Hospital Milford Campus (FKA Milford Hospital)<br><b>Addr:</b> 300 Seaside Ave<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Milford<br><b>Zip Code:</b> 6460<br><b>Distance discrepancy:</b> 14 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c249eb28a92a451f8a348362f39d4b0f = L.circleMarker(
+                [41.554539300000066, -72.6472098],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_c249eb28a92a451f8a348362f39d4b0f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Middlesex Hospital (AKA Middlesex Health System)<br><b>Addr:</b> 28 Crescent St<br><b>State:</b> CT<br><b>County:</b> Middlesex<br><b>City:</b> Middletown<br><b>Zip Code:</b> 6457<br><b>Distance discrepancy:</b> 19 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 115
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b1ec6c5580940969cde972cdc9233b6 = L.circleMarker(
+                [41.71759760000007, -72.2255535],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_5b1ec6c5580940969cde972cdc9233b6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Windham Hospital (FKA Windham Community Memorial Hospital)<br><b>Addr:</b> 112 Mansfield Ave<br><b>State:</b> CT<br><b>County:</b> Windham<br><b>City:</b> Willimantic<br><b>Zip Code:</b> 6226<br><b>Distance discrepancy:</b> 57 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1eba233c8bc04d72a231db8cfd07e314 = L.circleMarker(
+                [41.3044228999999, -72.9355663],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_1eba233c8bc04d72a231db8cfd07e314.bindTooltip(
+                `<div>
+                     <b>Name:</b> Yale New Haven Hospital<br><b>Addr:</b> 20 York St<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> New Haven<br><b>Zip Code:</b> 6510<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb06b9312b6a4eb3ad8dea4f512dc540 = L.circleMarker(
+                [41.54324389999996, -72.0889953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_cb06b9312b6a4eb3ad8dea4f512dc540.bindTooltip(
+                `<div>
+                     <b>Name:</b> The William W Backus Hospital (AKA Backus Hospital)<br><b>Addr:</b> 326 Washington St<br><b>State:</b> CT<br><b>County:</b> New London<br><b>City:</b> Norwich<br><b>Zip Code:</b> 6360<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_28c8849935324bfd960023e7a181d75c = L.circleMarker(
+                [41.75456159999996, -72.6792339],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_28c8849935324bfd960023e7a181d75c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hartford Hospital<br><b>Addr:</b> 80 Seymour St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6102<br><b>Distance discrepancy:</b> 66 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e89de5929cb4214aa8d4436ba71e708 = L.circleMarker(
+                [41.781399999999984, -72.5252323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_7e89de5929cb4214aa8d4436ba71e708.bindTooltip(
+                `<div>
+                     <b>Name:</b> Manchester Memorial Hospital<br><b>Addr:</b> 71 Haynes St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Manchester<br><b>Zip Code:</b> 6040<br><b>Distance discrepancy:</b> 95 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d08b09f5abee4747873f1d8294ea4cf6 = L.circleMarker(
+                [41.201004600000005, -73.2018453],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_d08b09f5abee4747873f1d8294ea4cf6.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Vincents Medical Center<br><b>Addr:</b> 2800 Main St<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Bridgeport<br><b>Zip Code:</b> 6606<br><b>Distance discrepancy:</b> 34 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b223ee487d644fc48304c55d8f8688b2 = L.circleMarker(
+                [41.67601449999999, -72.9357245],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_b223ee487d644fc48304c55d8f8688b2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bristol Hospital<br><b>Addr:</b> 41 Brewster Rd<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Bristol<br><b>Zip Code:</b> 6010<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4632e2938516458bbe9dd5927f168352 = L.circleMarker(
+                [41.33581749999998, -73.0898334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_4632e2938516458bbe9dd5927f168352.bindTooltip(
+                `<div>
+                     <b>Name:</b> Griffin Hospital<br><b>Addr:</b> 130 Division St<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Derby<br><b>Zip Code:</b> 6418<br><b>Distance discrepancy:</b> 180 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_645962fe8fae44f9a3cb7eb44f71fb34 = L.circleMarker(
+                [41.405444300000006, -73.4451577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_645962fe8fae44f9a3cb7eb44f71fb34.bindTooltip(
+                `<div>
+                     <b>Name:</b> Danbury Hospital<br><b>Addr:</b> 24 Hospital Ave<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Danbury<br><b>Zip Code:</b> 6810<br><b>Distance discrepancy:</b> 137 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c35cd116aa2c4bf98854cdcea0814d16 = L.circleMarker(
+                [41.11199799999999, -73.42163970000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_c35cd116aa2c4bf98854cdcea0814d16.bindTooltip(
+                `<div>
+                     <b>Name:</b> Norwalk Hospital<br><b>Addr:</b> 34 Maple St<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Norwalk<br><b>Zip Code:</b> 6850<br><b>Distance discrepancy:</b> 145 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e926a65ecd1f410e9c725b27a840ae11 = L.circleMarker(
+                [41.730857499999985, -72.7903633],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_e926a65ecd1f410e9c725b27a840ae11.bindTooltip(
+                `<div>
+                     <b>Name:</b> UConn John Dempsey Hospital (AKA UConn Health Center)<br><b>Addr:</b> 263 Farmington Ave<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Farmington<br><b>Zip Code:</b> 6030<br><b>Distance discrepancy:</b> 6192 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 113
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9421b9b988d7474ea109be7dcabf366d = L.circleMarker(
+                [41.25680599999998, -72.832842],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_9421b9b988d7474ea109be7dcabf366d.bindTooltip(
+                `<div>
+                     <b>Name:</b> The Connecticut Hospice<br><b>Addr:</b> 100 Double Beach Rd<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Branford<br><b>Zip Code:</b> 6405<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fdd5c838cbdf4ed2b1cb6069b115d4bb = L.circleMarker(
+                [41.46281210000004, -72.83649620000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_fdd5c838cbdf4ed2b1cb6069b115d4bb.bindTooltip(
+                `<div>
+                     <b>Name:</b> Masonicare Health Center<br><b>Addr:</b> 22 Masonic Ave<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Wallingford<br><b>Zip Code:</b> 6492<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_67202fca984f40b39b97d1cb90e6921d = L.circleMarker(
+                [41.802714499999944, -72.7300544],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_67202fca984f40b39b97d1cb90e6921d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hebrew Senior Care<br><b>Addr:</b> 1 Abrahms Blvd<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> West Hartford<br><b>Zip Code:</b> 6117<br><b>Distance discrepancy:</b> 65 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7592c44ff1ed4f9989d2842fb354a954 = L.circleMarker(
+                [41.472550700000035, -72.8570866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_7592c44ff1ed4f9989d2842fb354a954.bindTooltip(
+                `<div>
+                     <b>Name:</b> Gaylord Hospital (AKA Gaylord Specialty Healthcare)<br><b>Addr:</b> 50 Gaylord Farm Rd<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> Wallingford<br><b>Zip Code:</b> 6492<br><b>Distance discrepancy:</b> 168 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5060162a9a9f4987b2a1625070334a92 = L.circleMarker(
+                [41.68930570000004, -72.8022039],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_5060162a9a9f4987b2a1625070334a92.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital for Special Care<br><b>Addr:</b> 2150 Corbin Ave<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> New Britain<br><b>Zip Code:</b> 6053<br><b>Distance discrepancy:</b> 63 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_abe036ed2f3241058b429191d8761af3 = L.circleMarker(
+                [41.653489100000094, -72.6514502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_abe036ed2f3241058b429191d8761af3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sgt John L Levitow Veterans Health Center (AKA Rocky Hill Veterans Home)<br><b>Addr:</b> 287 West St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Rocky Hill<br><b>Zip Code:</b> 6067<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_752f38f7eec44ef2a3faeab9511c187c = L.circleMarker(
+                [41.800051899999964, -72.6945989],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_752f38f7eec44ef2a3faeab9511c187c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mount Sinai Rehabilitation Hospital<br><b>Addr:</b> 490 Blue Hills Ave<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6112<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d95a05374f1d4f9ca114171e8ff7edb4 = L.circleMarker(
+                [41.753702699999955, -72.6816415],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_d95a05374f1d4f9ca114171e8ff7edb4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Connecticut Childrens Medical Center<br><b>Addr:</b> 282 Washington St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6106<br><b>Distance discrepancy:</b> 21 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac86a98f97ab4db1aecc63418b4c3e78 = L.circleMarker(
+                [41.555689800000074, -72.6313018],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_ac86a98f97ab4db1aecc63418b4c3e78.bindTooltip(
+                `<div>
+                     <b>Name:</b> Connecticut Valley Hospital<br><b>Addr:</b> 1000 Silver St<br><b>State:</b> CT<br><b>County:</b> Middlesex<br><b>City:</b> Middletown<br><b>Zip Code:</b> 6457<br><b>Distance discrepancy:</b> 300 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0bf4cf55fce4d12a98df40ade31b1a8 = L.circleMarker(
+                [41.741004599999954, -72.1979524],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_c0bf4cf55fce4d12a98df40ade31b1a8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Natchaug Hospital<br><b>Addr:</b> 189 Storrs Rd<br><b>State:</b> CT<br><b>County:</b> Tolland<br><b>City:</b> Mansfield Center<br><b>Zip Code:</b> 6250<br><b>Distance discrepancy:</b> 24 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ec4bdb592384d449ad3b55b6aa5d27b = L.circleMarker(
+                [41.30546769999996, -72.9367699],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_2ec4bdb592384d449ad3b55b6aa5d27b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Connecticut Mental Health Center<br><b>Addr:</b> 34 Park St<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> New Haven<br><b>Zip Code:</b> 6519<br><b>Distance discrepancy:</b> 49 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_032558a94d3e4079bf92ceb5ae0ebfc1 = L.circleMarker(
+                [41.18946629999997, -73.1680581],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_032558a94d3e4079bf92ceb5ae0ebfc1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Greater Bridgeport Community Mental Health Center<br><b>Addr:</b> 1635 Central Ave<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> Bridgeport<br><b>Zip Code:</b> 6610<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bbddcf1f62944305a2fee701f158562d = L.circleMarker(
+                [41.16516469999997, -73.4686958],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_bbddcf1f62944305a2fee701f158562d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Silver Hill Hospital<br><b>Addr:</b> 208 Valley Rd<br><b>State:</b> CT<br><b>County:</b> Fairfield<br><b>City:</b> New Canaan<br><b>Zip Code:</b> 6840<br><b>Distance discrepancy:</b> 31 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08313509b6fd4ec1bfa497cf56f04477 = L.circleMarker(
+                [41.558232200000006, -72.61488],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_80294e5d95654db78ab7ee504f0acefd);
+        
+    
+            circle_marker_08313509b6fd4ec1bfa497cf56f04477.bindTooltip(
+                `<div>
+                     <b>Name:</b> Albert Solnit Psychiatric Childrens Center - South Campus<br><b>Addr:</b> 915 River Rd<br><b>State:</b> CT<br><b>County:</b> Middlesex<br><b>City:</b> Middletown<br><b>Zip Code:</b> 6457<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_174e3da141af49a691ec4246d317a241 = L.featureGroup(
+                {}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var circle_marker_1e080592f7ec4231a5d4b9e5398fc9ad = L.circleMarker(
+                [41.58142849999996, -73.4099202],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_174e3da141af49a691ec4246d317a241);
+        
+    
+            circle_marker_1e080592f7ec4231a5d4b9e5398fc9ad.bindTooltip(
+                `<div>
+                     <b>Name:</b> NEW MILFORD HOSPITAL<br><b>Addr:</b> 21 ELM STREET<br><b>State:</b> CT<br><b>County:</b> UNITED STATES<br><b>City:</b> NEW MILFORD<br><b>Zip Code:</b> 06776<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_edf7ae9b913c4942bc11a589b852478c = L.circleMarker(
+                [23.000380136244424, -96.00069815647534],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_174e3da141af49a691ec4246d317a241);
+        
+    
+            circle_marker_edf7ae9b913c4942bc11a589b852478c.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOSPITAL OF SAINT RAPHAEL<br><b>Addr:</b> 1450 CHAPEL STREET<br><b>State:</b> CT<br><b>County:</b> NEW HAVEN<br><b>City:</b> NEW HAVEN<br><b>Zip Code:</b> 06511<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c0e2e07ccad4e93aded608de14e7ea9 = L.circleMarker(
+                [23.000383371125338, -96.00069666995131],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_174e3da141af49a691ec4246d317a241);
+        
+    
+            circle_marker_3c0e2e07ccad4e93aded608de14e7ea9.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE HOSPITAL OF CENTRAL CONNECTICUT<br><b>Addr:</b> 100 GRAND STREET<br><b>State:</b> CT<br><b>County:</b> HARTFORD<br><b>City:</b> NEW BRITAIN<br><b>Zip Code:</b> 06050-<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> original<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_d2369368f0f1481d9c3421f19dff4e04 = L.featureGroup(
+                {}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var circle_marker_04d26f667d294b00864b9cbecf309cbd = L.circleMarker(
+                [41.283879700000014, -72.9604201],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_04d26f667d294b00864b9cbecf309cbd.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Connecticut Healthcare System - West Haven Campus (AKA West Haven VA Medical Center)<br><b>Addr:</b> 950 Campbell Ave<br><b>State:</b> CT<br><b>County:</b> New Haven<br><b>City:</b> West Haven<br><b>Zip Code:</b> 6516<br><b>Distance discrepancy:</b> 322 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac8a5303adc941b68a82b58b0ea695e2 = L.circleMarker(
+                [41.59641990000006, -72.8748367],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_ac8a5303adc941b68a82b58b0ea695e2.bindTooltip(
+                `<div>
+                     <b>Name:</b> The Hospital of Central Connecticut - Bradley Memorial Campus<br><b>Addr:</b> 81 Meriden Ave<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Southington<br><b>Zip Code:</b> 6489<br><b>Distance discrepancy:</b> 284 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ed9d0ce9218486aab4556cbc6f2bc2a = L.circleMarker(
+                [41.79644890000002, -72.6873859],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_7ed9d0ce9218486aab4556cbc6f2bc2a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Capitol Region Mental Health Center<br><b>Addr:</b> 500 Vine St<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6112<br><b>Distance discrepancy:</b> 27 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ecd864c79d0d46fb9c22856debdb021f = L.circleMarker(
+                [41.80006299999996, -72.694378],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_ecd864c79d0d46fb9c22856debdb021f.bindTooltip(
+                `<div>
+                     <b>Name:</b> InterCommunity Blue Hills (FKA St Francis Hospital & Medical Center - Mount Sinai Campus)<br><b>Addr:</b> 500 Blue Hills Ave<br><b>State:</b> CT<br><b>County:</b> Hartford<br><b>City:</b> Hartford<br><b>Zip Code:</b> 6112<br><b>Distance discrepancy:</b> 96 meters<br><b>Geocode source:</b> geocoded:mapbox<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0ebaeaae9fb4b0fa16b37a44dcd443f = L.circleMarker(
+                [41.47432769999996, -71.92806970000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_c0ebaeaae9fb4b0fa16b37a44dcd443f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Stonington Institute<br><b>Addr:</b> 75 Swantown Hill Rd<br><b>State:</b> CT<br><b>County:</b> New London<br><b>City:</b> North Stonington<br><b>Zip Code:</b> 6359<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f8be598e23c447ea50b8faf4f84550e = L.circleMarker(
+                [41.55194349999994, -72.62613060000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d2369368f0f1481d9c3421f19dff4e04);
+        
+    
+            circle_marker_4f8be598e23c447ea50b8faf4f84550e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Whiting Forensic Hospital<br><b>Addr:</b> 70 Obrien Dr<br><b>State:</b> CT<br><b>County:</b> Middlesex<br><b>City:</b> Middletown<br><b>Zip Code:</b> 6457<br><b>Distance discrepancy:</b> 3265 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_aa8ca32e1c104134a76f8186d01e5eb3 = L.featureGroup(
+                {}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+    
+            var poly_line_76849beff2404c4abfe1c3ab9d841437 = L.polyline(
+                [[41.774182599999996, -72.6983438], [41.774182599999996, -72.6983438]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_5ae45e327beb4b808ecb8fc11ba45676 = L.polyline(
+                [[41.90662699999997, -71.9139503], [41.90662699999997, -71.9139503]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_c18bdab9b0554613b7c9ee01acf3f0ca = L.polyline(
+                [[41.88052239999997, -73.4817316], [41.880522399999954, -73.48173160000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_c9a699ac73fd474c907601321a5cb8f2 = L.polyline(
+                [[41.55982580000002, -73.0596301], [41.55982580000002, -73.0596301]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_671b14e2e47d45aa81a915214ef0f6cd = L.polyline(
+                [[41.05539799999999, -73.55233100000001], [41.054482499999985, -73.5522978]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_829794c294f041c08feb80cb7149b621 = L.polyline(
+                [[41.33543749999998, -72.1049075], [41.33702999999999, -72.103805]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_f194f2751f314cb3bcb1c12cfbe51f1c = L.polyline(
+                [[41.979134900000034, -72.3909802], [41.97913490000008, -72.3909802]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_e38d0d78dd004c06812245f21a84119a = L.polyline(
+                [[41.189128799999956, -73.16630430000001], [41.18912879999999, -73.16630430000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_78ff75cd50124e9eab835d90ab545bf5 = L.polyline(
+                [[41.792142999999996, -73.133854], [41.792142999999996, -73.133854]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_87091ca47b1e4d3cac669a2dd10bc6be = L.polyline(
+                [[41.866394899999996, -72.451531], [41.866394899999996, -72.451531]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_16a59a46c59841c491f4f54e65cb0039 = L.polyline(
+                [[41.55269219999998, -73.0365718], [41.55269219999998, -73.0365718]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_323a42a91ba449b6a7e3893bdf20b281 = L.polyline(
+                [[41.54930629999999, -72.8011451], [41.54930629999999, -72.8011451]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_6979a02269ce4538a3bcbecb47a8e2be = L.polyline(
+                [[41.03447480000006, -73.629904], [41.03447480000006, -73.629904]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_f67d5ef2b2d5497d8548a04d520caa3e = L.polyline(
+                [[41.2166148, -73.065281], [41.2166148, -73.065281]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_d776fdf56db74f97b0eae0ee406532fa = L.polyline(
+                [[41.55545790000004, -72.646591], [41.554539300000066, -72.6472098]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_583d3160a573489294ff3f92a67027d9 = L.polyline(
+                [[41.71759760000001, -72.2255535], [41.71759760000007, -72.2255535]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_cf6e595ad18e4c58ba3bcbc720c141ed = L.polyline(
+                [[41.304422899999956, -72.9355663], [41.3044228999999, -72.9355663]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_3deab1001f2342cab82a8de2727dd524 = L.polyline(
+                [[41.543243899999986, -72.0889953], [41.54324389999996, -72.0889953]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_12f365facc104716ac30fb11fad27758 = L.polyline(
+                [[41.75456159999996, -72.6792339], [41.75456159999996, -72.6792339]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_2de4eacbcd9f4cdda2934333467e7e0a = L.polyline(
+                [[41.781399999999984, -72.5252323], [41.781399999999984, -72.5252323]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_b1591ef8a7ee43ad9163ad7c5c814c83 = L.polyline(
+                [[41.2009949, -73.2018703], [41.201004600000005, -73.2018453]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_ad5a10a56e414a05899ebfef1f89bdb6 = L.polyline(
+                [[41.67574470000001, -72.9361422], [41.67601449999999, -72.9357245]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_51e203f346dd4833b4f36399088a5bce = L.polyline(
+                [[41.335869199999976, -73.0899499], [41.33581749999998, -73.0898334]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_e3bee4149e85416ba9f495e3ea399800 = L.polyline(
+                [[41.405444300000035, -73.4451577], [41.405444300000006, -73.4451577]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_089b848285f84dcaa6ba6d8fb48c1f60 = L.polyline(
+                [[41.11199799999999, -73.42163970000001], [41.11199799999999, -73.42163970000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_8a1d14b0889045aeae8925fe4b121fff = L.polyline(
+                [[41.73181340000006, -72.7899306], [41.730857499999985, -72.7903633]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_18be5191e9ef4de897a78a0683ae0c84 = L.polyline(
+                [[41.256815, -72.832843], [41.25680599999998, -72.832842]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_46af6c42e8d64100b689b6710edd01be = L.polyline(
+                [[41.462812100000015, -72.83649620000001], [41.46281210000004, -72.83649620000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_b6ae0b7c64904ba096c7a84f529d2494 = L.polyline(
+                [[41.80280009999994, -72.7292938], [41.802714499999944, -72.7300544]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_9c5a7bf19eba411e8846ea8f87a90019 = L.polyline(
+                [[41.47255070000004, -72.8570866], [41.472550700000035, -72.8570866]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_ba31ab85171b4f2e8c448bdcd27bedd8 = L.polyline(
+                [[41.68930570000001, -72.8022039], [41.68930570000004, -72.8022039]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_aa0f4a2ff37044b9a370347630b82c59 = L.polyline(
+                [[41.65348910000007, -72.6514502], [41.653489100000094, -72.6514502]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_19466de78ead460b9f30f4a56eb53384 = L.polyline(
+                [[41.80005189999996, -72.6945989], [41.800051899999964, -72.6945989]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_1a13d57f0a9a4cebba11972abb3abfcd = L.polyline(
+                [[41.753702699999984, -72.6816415], [41.753702699999955, -72.6816415]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_27dd020557a042a28d7d035b34703026 = L.polyline(
+                [[41.55568980000002, -72.6313018], [41.555689800000074, -72.6313018]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_1b33dd8367284e2ebb3b7d3cd8f90fd6 = L.polyline(
+                [[41.74100459999997, -72.1979524], [41.741004599999954, -72.1979524]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_0353b42a9e654d94a6af89bd5c109168 = L.polyline(
+                [[41.305467699999966, -72.9367699], [41.30546769999996, -72.9367699]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_cd1147734ed546dfb339252dd8d6ef13 = L.polyline(
+                [[41.18947830000001, -73.16795359999999], [41.18946629999997, -73.1680581]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_4d87e86589d24366843aa82db05c3218 = L.polyline(
+                [[41.16516469999997, -73.4686958], [41.16516469999997, -73.4686958]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var poly_line_5733c8a8dd7040749110b73fe2644880 = L.polyline(
+                [[41.558232200000006, -72.61488], [41.558232200000006, -72.61488]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aa8ca32e1c104134a76f8186d01e5eb3);
+        
+    
+            var layer_control_7d6538f3e6ac4ffb9857ba6f68504b2d = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e3cd2f87bc3f439e8877f681d2ed6b7f,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_362a6f78d3b545e886d7dbc4b6acd5e1,
+                    "DH - matched" : feature_group_80294e5d95654db78ab7ee504f0acefd,
+                    "HCRIS - unmatched" : feature_group_174e3da141af49a691ec4246d317a241,
+                    "DH - unmatched" : feature_group_d2369368f0f1481d9c3421f19dff4e04,
+                    "connections" : feature_group_aa8ca32e1c104134a76f8186d01e5eb3,
+                },
+            };
+            L.control.layers(
+                layer_control_7d6538f3e6ac4ffb9857ba6f68504b2d.base_layers,
+                layer_control_7d6538f3e6ac4ffb9857ba6f68504b2d.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_e9c6c1d7d475404981032c137899bb25);
+        
+</script>
