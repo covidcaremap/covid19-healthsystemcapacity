@@ -1,5 +1,5 @@
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiYXphdmVhIiwiYSI6IkFmMFBYUUUifQ.eYn6znWt8NzYOa3OrWop8A";
+  "pk.eyJ1IjoiY292aWRjYXJlbWFwIiwiYSI6ImNrODlia3NvMTAzYmMzZmw5MTM3d3QyMXgifQ.XMvZuDfN2vnhi5ltTBx1MQ";
 
 var defaultCircleRadius = 0;
 var defaultCircleColor = "transparent";
@@ -202,7 +202,7 @@ var indicators = [
 
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/azavea/ck7z6wmai0zje1ioas2t1bzoo",
+  style: "mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy",
   zoom: 3.5,
   center: [-96, 38],
   minZoom: 3,
