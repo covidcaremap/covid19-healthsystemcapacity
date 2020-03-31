@@ -326,6 +326,12 @@ Start the Jupyter notebook server:
 > docker/notebook
 ```
 
+For windows:
+
+```
+> docker/notebook_windows  (you will want to run this in a Git Bash shell)
+```
+
 Now open the link that was last output by the above command. The link should look something like
 `http://127.0.0.1:8888/?token=2b39bb1d2a955bca4622e563fa50dc973016db70d23e0ae5`.
 This will open a jupyter notebook file browser
