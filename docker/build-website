@@ -28,6 +28,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
             -w /opt/build \
             --entrypoint /bin/bash \
             netlify/build:xenial \
-            -c "/usr/local/bin/build ./scripts/cibuild && rsync -acvz --delete /opt/buildhome/repo/_site/ /opt/repo/_site/"
+            -c "source /opt/buildhome/.rvm/scripts/rvm && cd /opt/repo && bundle install && /usr/local/bin/build ./scripts/cibuild && rsync -acvz --delete /opt/buildhome/repo/_site/ /opt/repo/_site/"
     fi
 fi

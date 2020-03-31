@@ -1,0 +1,6 @@
+{% assign sorted = (site.data.team.items | sort: 'order') %} {% for person in
+sorted limit:include.limit %}
+<a href="{{person.url}}" class="person">
+  <img src="{{person.image}}" class="person-image" />
+</a>
+{% endfor %}

@@ -1,0 +1,10 @@
+{% assign sorted = (site.data.visualization.visualization-items | sort: 'order')
+%} {% for viz in sorted limit:include.limit %}
+<a href="#" class="visualization-item card">
+  <img src="{{viz.image}}" class="visualization-image" />
+  <h3 class="visualization-heading">{{viz.heading}}</h3>
+  <p class="visualization-description">
+    {{viz.description}}
+  </p>
+</a>
+{% endfor %}

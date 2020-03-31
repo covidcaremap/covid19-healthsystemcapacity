@@ -1,0 +1,18 @@
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>
+		{{ page.title }}
+	</title>
+	<meta name="description" content="{{ page.intro }}" />
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:description" content="{{ page.intro }}" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:image" content="{{ site.url }}/assets/img/logo.png" />
+	<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
+	<link
+		href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed:400,500,600&display=swap&subset=latin-ext"
+		rel="stylesheet"
+	/>
+	{% include analytics.html %}
+</head>

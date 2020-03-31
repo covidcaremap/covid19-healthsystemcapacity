@@ -1,0 +1,15 @@
+visualization-heading: Visualizations
+visualization-description: <p class="large">Maps, charts, and other visualizations that use health care data. Don’t see what you’re looking for? <a href="#">Contact us</a> and let us know what what you need from our team.</p>
+visualization-items:
+  - image: /assets/img/viz-1.png
+    heading: Map of current beds data
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - image: /assets/img/viz-1.png
+    heading: Map of current beds data
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - image: /assets/img/viz-1.png
+    heading: Map of current beds data
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+

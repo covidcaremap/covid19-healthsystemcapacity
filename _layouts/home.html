@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+<section class="section-hero" id="hero">
+  {% include header.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-6">
+        <h1>{{ page.heading }}</h1>
+        <p class="large">
+          {{ page.intro }}
+        </p>
+        <a href="{{ page.cta-url}}" class="button large underline secondary"
+          >{{ page.cta-label}}</a
+        >
+      </div>
+      <div class="col-sm-4 col-md-6">
+        <a href="{{page.hover-button-url}}" class="screenshot">
+          <span class="screenshot-overlay">
+            <span class="button ghost white">{{page.hover-button-label}}</span>
+          </span>
+          <img
+            src="/assets/img/cropped-viz.png"
+            alt="Screenshot of a map showing our data"
+          />
+        </a>
+        <div class="embed-container"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-visualization">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        {% assign limit = 2 %}
+        <h2>{{site.data.visualization.visualization-heading}}</h2>
+        <div class="visualization-paragraphs">
+          {{site.data.visualization.visualization-description}}
+        </div>
+        <div class="visualization-items">
+          {% include visualizations.html limit=limit %}
+        </div>
+        {% if site.data.visualization.visualization-items.size > limit %}
+        <div class="visualization-readmore">
+          <a href="/visualizations" class="button ghost">View more </a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-data">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        {% assign limit = 3 %}
+        <h2>{{site.data.data.data-heading}}</h2>
+        <div class="data-paragraphs">
+          {{site.data.data.data-description}}
+        </div>
+        <div class="data-items">
+          {% include data.html limit=limit %}
+        </div>
+        {% if site.data.data.data-items.size > limit %}
+        <div class="data-readmore">
+          <a href="/data" class="button underline">View more</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-why">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="why-heading">{{ page.why-heading }}</h2>
+        <div class="why-paragraphs">
+          {{ page.why-description}}
+        </div>
+        <div class="why-ctas">
+          <a
+            href="{{page.why-cta1-url}}"
+            class="button large underline secondary"
+            >{{page.why-cta1-title}}</a
+          >
+
+          <a
+            href="{{page.why-cta2-url}}"
+            class="button large underline secondary"
+            >{{page.why-cta2-title}}</a
+          >
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img
+          src="/assets/img/curve.svg"
+          class="why-image"
+          alt="Graph that demonstrates the concept of 'flattening the curve'."
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="team-heading">{{ site.data.team.heading }}</h2>
+        <div class="team-paragraphs">
+          {{ site.data.team.description}}
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="team-people">
+          {% include team-photos.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

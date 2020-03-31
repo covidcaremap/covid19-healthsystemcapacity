@@ -1,0 +1,22 @@
+data-heading: Data
+data-description: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Mention the data notebooks.</p><p>Have more up to date data? <a href="#">Update data</a>.</p>
+data-items:
+  - title: Current beds
+    viz-url: http://google.com
+    download-url: http://apple.com
+    description: Includes information about beds and occupancy rates at the State, County, RCC, and Facility level
+    sources: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    types:
+      - CSV
+      - GeoJSON
+      - Jupyter notebook
+  - title: Current beds
+    viz-url: http://google.com
+    download-url: http://apple.com
+    description: Includes information about beds and occupancy rates at the State, County, RCC, and Facility level
+    sources: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    types:
+      - CSV
+      - GeoJSON
+      - Jupyter notebook
+

@@ -1,0 +1,18 @@
+<div class="cards">
+	{% assign sorted = (site.news | sort: 'date') | reverse %} {% for news in
+	sorted limit:include.limit %}
+	<div class="card-wrapper">
+		<a href="{{ news.link }}" target="_blank" class="card news-item">
+			<div class="item-logo">
+				<img src="{{ news.logo }}" alt="{{ news.publication }}" />
+			</div>
+			<h3>
+				{{ news.title }}
+			</h3>
+			<p>
+				{{ news.content }}
+			</p>
+		</a>
+	</div>
+	{% endfor %}
+</div>
