@@ -1,0 +1,48 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do SOURCE="$(readlink "$SOURCE")"; done
+SCRIPTS_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+PROJECT_ROOT="$(cd -P "$(dirname "$SCRIPTS_DIR")" && pwd)"
+
+DATA_DIR="${COVID19_DATA_DIR:-${PROJECT_ROOT}/data}"
+NOTEBOOK_DIR="${COVID19_NOTEBOOK_DIR:-${PROJECT_ROOT}/notebooks}"
+
+echo "$SCRIPTS_DIR"
+echo "$DATA_DIR"
+echo "$NOTEBOOK_DIR"
+echo "$PROJECT_ROOT"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Launch Jupyter notebooks.
+"
+}
+
+# Allow a local version of CHIME to be used.
+if [ -z "$CHIME_REPO" ]
+then
+    CHIME_SRC_FLAGS=""
+else
+    echo "Using CHIME at ${CHIME_REPO}"
+    CHIME_SRC_FLAGS="-v ${CHIME_REPO}/src/penn_chime:/opt/lib/penn_chime"
+fi
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    winpty docker run --rm -it \
+        --mount type=bind,source="$PROJECT_ROOT",target=/opt/src  \
+        --mount type=bind,source="$DATA_DIR",target=/opt/jupyter/data  \
+        --mount type=bind,source="$NOTEBOOK_DIR",target=/opt/jupyter/notebooks \
+        ${CHIME_SRC_FLAGS} \
+        -p 8888:8888 \
+        covid19:latest  
+fi
+
+#jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --notebook-dir=/opt/jupyter
