@@ -37,7 +37,12 @@ class Matcher:
         self.d2_matched = None
         self.update_matches()
 
-    def match_point_set(self, bounds, n=10):
+    def match_point_set(self, bounds, n=10, str_match_method='name'):
+
+        
+        if str_match_method.lower() not in ('name', 'properties', 'avg'):
+            raise Exception('"str_match" parameter must be one of ("name", "properties", or "average"), got "{}"'.format(str_match_method))
+        str_match_method = str_match_method.lower()
 
         if len(self.d2) < n:
             n = len(self.d2)
@@ -66,14 +71,22 @@ class Matcher:
                 dists.append(
                     round(euclidean(pts[0], pts[neighbor_indices[x] + 1])))
                 s = fuzz_str(self.d2_unmatched.iloc[neighbor_indices[x]])
-                ratios.append(fuzz.ratio(to_match_str, s))
+                s_name = self.d2_unmatched.iloc[neighbor_indices[x]]['HOSP10_Name'].lower()
+                r1 = fuzz.ratio(to_match_str, s)
+                r2 = fuzz.ratio(to_match['HOSP10_Name'].lower(), s_name)
+                if str_match_method == 'name':
+                    ratios.append(r2)
+                if str_match_method == 'properties':
+                    ratios.append(r1)
+                if str_match_method == 'avg':
+                    ratios.append(np.mean([r1, r2]))
 
             if not matched:
                 matched = dists[0] <= bounds[0] and dists[1] > bounds[1]
                 source = 'dist threshhold' if matched else 'unmatched'
 
             if not matched:
-                matched = (np.max(ratios) == ratios[0]) and dists[0] < 10000
+                matched = (np.max(ratios) == ratios[0]) and dists[0] < 2000
                 source = 'top dist and str match' if matched else 'unmatched'
 
             if not matched:
@@ -156,10 +169,10 @@ class Matcher:
 
         self.d2_matched = self.d2_matched.drop(unmatched.index)
 
-        self.d1_matched = self.d1_matched[~self.d1_matched['Provider Number'].isin(
-            unmatched['Provider Number'])]
+        self.d1_matched = self.d1_matched[~self.d1_matched[self.d1_uuid].isin(
+            unmatched[self.d1_uuid])]
         self.d1_unmatched = self.d1_unmatched.append(
-            self.d1[self.d1['Provider Number'].isin(unmatched['Provider Number'])])
+            self.d1[self.d1[self.d1_uuid].isin(unmatched[self.d1_uuid])].to_crs('epsg:5070'))
 
         self.matching_key = [k for k in self.matching_key if str(
             k[self.d1_uuid]) in self.d1_matched[self.d1_uuid].astype(str).values]

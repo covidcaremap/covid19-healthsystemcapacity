@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2" ></div>
+        
+</body>
+<script>    
+    
+            var map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2 = L.map(
+                "map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2",
+                {
+                    center: [34.35245165, -106.00891695],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f9529a92a12411991386f3e6e0b8835 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var feature_group_ade7541bd0a5415fa33625b9f543dc76 = L.featureGroup(
+                {}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var circle_marker_cfa084aea55746b9b4da393698647895 = L.circleMarker(
+                [35.08798159999997, -106.6172609],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_cfa084aea55746b9b4da393698647895.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNIVERSITY OF NEW MEXICO HOSPITAL<br><b>Addr:</b> 2211 LOMAS BLVD.  NE<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87106-2745<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 156
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae64a35d2bc64d5f9f6fbf791aee701f = L.circleMarker(
+                [35.65948649999997, -105.945416],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_ae64a35d2bc64d5f9f6fbf791aee701f.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. VINCENT HOSPITAL<br><b>Addr:</b> 455 ST. MICHAELS DRIVE<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> SANTA FE<br><b>Zip Code:</b> 87505<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_205516a5ad304b79bceadac3dcf4cdcd = L.circleMarker(
+                [35.623577800000014, -105.2107864],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_205516a5ad304b79bceadac3dcf4cdcd.bindTooltip(
+                `<div>
+                     <b>Name:</b> ALTA VISTA REGIONAL HOSPITAL<br><b>Addr:</b> 1235 8TH STREET<br><b>State:</b> NM<br><b>County:</b> SAN MIGUEL<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 87701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8706632fe7ae492880a44c0e3606f143 = L.circleMarker(
+                [32.92642820000001, -105.9347154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_8706632fe7ae492880a44c0e3606f143.bindTooltip(
+                `<div>
+                     <b>Name:</b> GERALD CHAMPION REGIONAL MEDICAL CTR<br><b>Addr:</b> 2669 N SCENIC DR<br><b>State:</b> NM<br><b>County:</b> OTERO<br><b>City:</b> ALAMOGORDO<br><b>Zip Code:</b> 83310<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2352afc88f2a427ebfe8d39bdd724fe6 = L.circleMarker(
+                [36.72382799999996, -108.2168008],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_2352afc88f2a427ebfe8d39bdd724fe6.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN JUAN REGIONAL MEDICAL CENTER<br><b>Addr:</b> O<br><b>State:</b> NM<br><b>County:</b> SAN JUAN<br><b>City:</b> FARMINGTON<br><b>Zip Code:</b> 87401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef5bf0362f844bb2bf03985902af49fd = L.circleMarker(
+                [33.42401119999999, -104.5283104],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_ef5bf0362f844bb2bf03985902af49fd.bindTooltip(
+                `<div>
+                     <b>Name:</b> EASTERN NEW MEXICO MEDICAL CENTER<br><b>Addr:</b> 405 W COUNTRY CLUB<br><b>State:</b> NM<br><b>County:</b> CHAVES<br><b>City:</b> ROSWELL<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a449094eb9cf4786b08c463ee0e8f934 = L.circleMarker(
+                [35.086712600000055, -106.6385235],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_a449094eb9cf4786b08c463ee0e8f934.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOVELACE MEDICAL CENTER- DOWNTOWN<br><b>Addr:</b> 601 MARTIN LUTHER KING  JR. NE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64dd8d26d19a448b9105a9f0262176fc = L.circleMarker(
+                [35.99765150000001, -106.0888819],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_64dd8d26d19a448b9105a9f0262176fc.bindTooltip(
+                `<div>
+                     <b>Name:</b> ESPANOLA HOSPITAL<br><b>Addr:</b> 1010 SPRUCE STREET<br><b>State:</b> NM<br><b>County:</b> RIO ARRIBA<br><b>City:</b> ESPANOLA<br><b>Zip Code:</b> 87532<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 54
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f35c0c2798d64f1ea49b907d61ee2d21 = L.circleMarker(
+                [36.36857800000002, -105.5762421],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_f35c0c2798d64f1ea49b907d61ee2d21.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOLY CROSS HOSPITAL<br><b>Addr:</b> 1397 WEIMER ROAD<br><b>State:</b> NM<br><b>County:</b> TAOS<br><b>City:</b> TAOS<br><b>Zip Code:</b> 87571<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77613544d19445258e6bf49d82791b76 = L.circleMarker(
+                [32.26037229999996, -107.7678531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_77613544d19445258e6bf49d82791b76.bindTooltip(
+                `<div>
+                     <b>Name:</b> MIMBRES MEMORIAL HOSPITAL<br><b>Addr:</b> 900 WEST ASH STREET<br><b>State:</b> NM<br><b>County:</b> LUNA<br><b>City:</b> DEMING<br><b>Zip Code:</b> 88030<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4395e668cba34b2bba083ca2ab29a3d2 = L.circleMarker(
+                [32.7970919, -108.2609134],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_4395e668cba34b2bba083ca2ab29a3d2.bindTooltip(
+                `<div>
+                     <b>Name:</b> GILA REGIONAL MEDICAL CENTER<br><b>Addr:</b> 1313 EAST 32ND STREET<br><b>State:</b> NM<br><b>County:</b> GRANT<br><b>City:</b> SILVER CITY<br><b>Zip Code:</b> 88061<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39df7dcf9ec64ff6a5e48463b8b65d79 = L.circleMarker(
+                [35.13137760000002, -106.5917655],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_39df7dcf9ec64ff6a5e48463b8b65d79.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOVELACE WOMENS HOSPITAL<br><b>Addr:</b> 4701 MONTGOMERY   NE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87109<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_28ad3a5ca5f6433e9491c59a1e7f964b = L.circleMarker(
+                [32.291492299999994, -106.7370594],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_28ad3a5ca5f6433e9491c59a1e7f964b.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEMORIAL MEDICAL CENTER<br><b>Addr:</b> 2450 S. TELSHORE BLVD<br><b>State:</b> NM<br><b>County:</b> DONA ANA<br><b>City:</b> LAS CRUCES<br><b>Zip Code:</b> 88011-5076<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba95f62f2d4b42469a2c684607509bda = L.circleMarker(
+                [35.08164600000001, -106.635553],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_ba95f62f2d4b42469a2c684607509bda.bindTooltip(
+                `<div>
+                     <b>Name:</b> PRESBYTERIAN HOSPITAL<br><b>Addr:</b> 1100 CENTRAL AVE SE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87125-6666<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e280cc1832c4a44b11ca7883a6c5b07 = L.circleMarker(
+                [34.419520199999994, -103.2320562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_6e280cc1832c4a44b11ca7883a6c5b07.bindTooltip(
+                `<div>
+                     <b>Name:</b> PLAINS REGIONAL MEDICAL CTR - CLOVIS<br><b>Addr:</b> 2100 NORTH THOMAS STREET<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> CLOVIS<br><b>Zip Code:</b> 88101<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50f8a972651d4c7f8a4697a95aca66cd = L.circleMarker(
+                [32.84846630000002, -104.4113286],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_50f8a972651d4c7f8a4697a95aca66cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> ARTESIA GENERAL HOSPITAL<br><b>Addr:</b> 702 N 13TH STREET<br><b>State:</b> NM<br><b>County:</b> EDDY<br><b>City:</b> ARTESIA<br><b>Zip Code:</b> 88210<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7afc0c77b624d41877e30da1cd2357e = L.circleMarker(
+                [35.881609000000005, -106.3197786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_d7afc0c77b624d41877e30da1cd2357e.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOS ALAMOS MEDICAL CENTER<br><b>Addr:</b> 3917 WEST ROAD<br><b>State:</b> NM<br><b>County:</b> LOS ALAMOS<br><b>City:</b> LOS ALAMOS<br><b>Zip Code:</b> 87544<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06297b8ce025419e88e571fc9b2962bc = L.circleMarker(
+                [35.50688599999999, -108.7276044],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_06297b8ce025419e88e571fc9b2962bc.bindTooltip(
+                `<div>
+                     <b>Name:</b> REHOBOTH MCKINLEY CHRISTIAN HOSPITAL<br><b>Addr:</b> 1901 RED ROCK DRIVE<br><b>State:</b> NM<br><b>County:</b> MCKINLEY<br><b>City:</b> GALLUP<br><b>Zip Code:</b> 87301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_37d4493a8e564feeaff17fa6f15c9625 = L.circleMarker(
+                [35.6681549, -105.9702698],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_37d4493a8e564feeaff17fa6f15c9625.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANTA FE INDIAN HOSPITAL<br><b>Addr:</b> 1700 CERILLIOS ROAD<br><b>State:</b> NM<br><b>County:</b> SANTA FE<br><b>City:</b> SANTA FE<br><b>Zip Code:</b> 87505<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f551384866a4bf29023f4dd858f3ded = L.circleMarker(
+                [33.158793900000035, -105.7723979],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_3f551384866a4bf29023f4dd858f3ded.bindTooltip(
+                `<div>
+                     <b>Name:</b> MESCALERO INDIAN HOSPITAL<br><b>Addr:</b> 301 SAGE AVENUE<br><b>State:</b> NM<br><b>County:</b> OTERO<br><b>City:</b> MESCALERO<br><b>Zip Code:</b> 88340<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8156ed9da4c4c90a488355dd3edbdb4 = L.circleMarker(
+                [36.80523530000001, -108.6914076],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_f8156ed9da4c4c90a488355dd3edbdb4.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTHERN NAVAJO MEDICAL CENTER<br><b>Addr:</b> US HWY 491 NORTH<br><b>State:</b> NM<br><b>County:</b> SAN JUAN<br><b>City:</b> SHIPROCK<br><b>Zip Code:</b> 87420<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c868849c82c1450e8ac030731f53dd01 = L.circleMarker(
+                [35.50761320000001, -108.73002350000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_c868849c82c1450e8ac030731f53dd01.bindTooltip(
+                `<div>
+                     <b>Name:</b> GALLUP INDIAN MEDICAL CENTER<br><b>Addr:</b> 516 E. NIZHOVI BLVD<br><b>State:</b> NM<br><b>County:</b> MCKINLEY<br><b>City:</b> GALLUP<br><b>Zip Code:</b> 87305<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_746dae69c75243a5a3ed15bd5a048cfe = L.circleMarker(
+                [35.698763899999996, -108.1396562],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_746dae69c75243a5a3ed15bd5a048cfe.bindTooltip(
+                `<div>
+                     <b>Name:</b> CROWNPOINT INDIAN HOSPITAL<br><b>Addr:</b> NM STATE RD 371<br><b>State:</b> NM<br><b>County:</b> MCKINLEY<br><b>City:</b> CROWNPOINT<br><b>Zip Code:</b> 87313<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e8fb8378bbe14c4fadcce98ab76f8329 = L.circleMarker(
+                [32.44164430000002, -104.2579986],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_e8fb8378bbe14c4fadcce98ab76f8329.bindTooltip(
+                `<div>
+                     <b>Name:</b> CARLSBAD MEDICAL CENTER<br><b>Addr:</b> 2430 WEST PIERCE STREET<br><b>State:</b> NM<br><b>County:</b> EDDY<br><b>City:</b> CARLSBAD<br><b>Zip Code:</b> 88220<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d40d7ab073742cd8d696c13718355d5 = L.circleMarker(
+                [32.7613671, -103.1847275],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_8d40d7ab073742cd8d696c13718355d5.bindTooltip(
+                `<div>
+                     <b>Name:</b> LEA REGIONAL HOSPITAL<br><b>Addr:</b> 5419 N LOVINGTON HWY<br><b>State:</b> NM<br><b>County:</b> LEA<br><b>City:</b> HOBBS<br><b>Zip Code:</b> 88240<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aabe8b7644b842e0a4e1446934f1b763 = L.circleMarker(
+                [34.930202399999985, -104.6934682],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_aabe8b7644b842e0a4e1446934f1b763.bindTooltip(
+                `<div>
+                     <b>Name:</b> GUADALUPE COUNTY HOSPITAL<br><b>Addr:</b> 117 CAMINO DE VIDA SUITE 100<br><b>State:</b> NM<br><b>County:</b> GUADALUPE<br><b>City:</b> SANTA ROSA<br><b>Zip Code:</b> 88435<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b32410cb50e94722a4723633fd31d533 = L.circleMarker(
+                [35.06821010000004, -107.5715964],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_b32410cb50e94722a4723633fd31d533.bindTooltip(
+                `<div>
+                     <b>Name:</b> ACOMA CANONCITO LAGUNA HOSPITAL<br><b>Addr:</b> 130<br><b>State:</b> NM<br><b>County:</b> CIBOLA<br><b>City:</b> SAN FIDEL<br><b>Zip Code:</b> 87049<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_daf5950f16d24e19957bd3b9081f2d9d = L.circleMarker(
+                [35.20704039999997, -106.6773168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_daf5950f16d24e19957bd3b9081f2d9d.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOVELACE WESTSIDE HOSPITAL<br><b>Addr:</b> 10501 GOLF COURSE ROAD NW<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87114<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a5709a7eb914a61a7df9267209f00b1 = L.circleMarker(
+                [34.16913300000002, -103.361978],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_1a5709a7eb914a61a7df9267209f00b1.bindTooltip(
+                `<div>
+                     <b>Name:</b> ROOSEVELT GENERAL HOSPITAL<br><b>Addr:</b> 42121 US HIGHWAY 70<br><b>State:</b> NM<br><b>County:</b> ROOSEVELT<br><b>City:</b> PORTALES<br><b>Zip Code:</b> 88130<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_987e2de2924043b1aeafe1e92a7aff24 = L.circleMarker(
+                [32.32323349999997, -106.7282739],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_987e2de2924043b1aeafe1e92a7aff24.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOUNTAIN VIEW REG MED CTR<br><b>Addr:</b> 4311 EAST LONHAM AVENUE<br><b>State:</b> NM<br><b>County:</b> DONA ANA<br><b>City:</b> LAS CRUCES<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7144792ceff14f88b8137f38ca72bed9 = L.circleMarker(
+                [33.416888300000004, -104.5210746],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_7144792ceff14f88b8137f38ca72bed9.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOVELACE REGIONAL HOSPITAL-ROSWELL<br><b>Addr:</b> 117 E. 19TH STREET<br><b>State:</b> NM<br><b>County:</b> CHAVES<br><b>City:</b> ROSWELL<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_de698a5f52e54fe5bd27c6676bb2a0a8 = L.circleMarker(
+                [35.30873629999999, -106.6800329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_de698a5f52e54fe5bd27c6676bb2a0a8.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNM SANDOVAL REGIONAL MEDICAL CENTER<br><b>Addr:</b> 3001 BROADMOOR BLVD NE<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> RIO RANCHO<br><b>Zip Code:</b> 87144<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5cb71d228fea4a75aeb35a92c8984faa = L.circleMarker(
+                [35.6164155, -106.02523240000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_5cb71d228fea4a75aeb35a92c8984faa.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANTA FE MEDICAL CENTER<br><b>Addr:</b> 4801 BECKER ROAD<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> SANTA FE<br><b>Zip Code:</b> 87507<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a5a7869ce0e4cf38246059ea5fcbf49 = L.circleMarker(
+                [33.1402658, -107.2418894],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_6a5a7869ce0e4cf38246059ea5fcbf49.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIERRA VISTA HOSPITAL<br><b>Addr:</b> 800 EAST 9TH STREET<br><b>State:</b> NM<br><b>County:</b> SIERRA<br><b>City:</b> TRUTH OR CONSEQUENCES<br><b>Zip Code:</b> 87901-1961<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_574bd6b06cd64be4adc5effeacd8e72a = L.circleMarker(
+                [34.03762330000001, -106.911891],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_574bd6b06cd64be4adc5effeacd8e72a.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOCORRO GENERAL HOSPITAL<br><b>Addr:</b> 1202 HIGHWAY 60 WEST<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> SOCORRO<br><b>Zip Code:</b> 87801<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_21630cedb16a46e8aa0c621a14516262 = L.circleMarker(
+                [35.15661309999996, -103.7224242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_21630cedb16a46e8aa0c621a14516262.bindTooltip(
+                `<div>
+                     <b>Name:</b> DR. DAN C. TRIGG<br><b>Addr:</b> EAST MIEL DE LUNA<br><b>State:</b> NM<br><b>County:</b> QUAY<br><b>City:</b> TUCUMCARI<br><b>Zip Code:</b> 88401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_929eefdfdae84e8fb72ec6d33f7fe4c4 = L.circleMarker(
+                [36.45375789999998, -103.1923614],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_929eefdfdae84e8fb72ec6d33f7fe4c4.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNION COUNTY GEN. HOSPITAL<br><b>Addr:</b> 301 HARDING ST.<br><b>State:</b> NM<br><b>County:</b> UNION<br><b>City:</b> CLAYTON<br><b>Zip Code:</b> 88415<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 160
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_12fe968a8dcc491f89a8bfd80f635c54 = L.circleMarker(
+                [32.965535999999986, -103.3471783],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_12fe968a8dcc491f89a8bfd80f635c54.bindTooltip(
+                `<div>
+                     <b>Name:</b> NOR-LEA HOSPITAL<br><b>Addr:</b> 1600 NORTH MAIN<br><b>State:</b> NM<br><b>County:</b> LEA<br><b>City:</b> LOVINGTON<br><b>Zip Code:</b> 89260<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3afaeff1745e4a59aad1f3206b5abb87 = L.circleMarker(
+                [33.322280199999994, -105.6311032],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_3afaeff1745e4a59aad1f3206b5abb87.bindTooltip(
+                `<div>
+                     <b>Name:</b> LINCOLN COUNTY MEDICAL CENTER<br><b>Addr:</b> 211 SUDDERTH<br><b>State:</b> NM<br><b>County:</b> LINCOLN<br><b>City:</b> RUIDOSO<br><b>Zip Code:</b> 88345<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cedfb0a107f47feb0beacd48c960b8c = L.circleMarker(
+                [36.862700699999955, -104.4422281],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_1cedfb0a107f47feb0beacd48c960b8c.bindTooltip(
+                `<div>
+                     <b>Name:</b> MINER OF COLFAX MEDICAL CENTER<br><b>Addr:</b> 200 HOSPITAL DRIVE<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> RATON<br><b>Zip Code:</b> 87740<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b5b2dd2110649129e32c60cd57a3b0a = L.circleMarker(
+                [35.1624965, -107.8270107],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_7b5b2dd2110649129e32c60cd57a3b0a.bindTooltip(
+                `<div>
+                     <b>Name:</b> CIBOLA GENERAL HOSPITAL<br><b>Addr:</b> 1016 ROOSEVELT<br><b>State:</b> NM<br><b>County:</b> CIBOLA<br><b>City:</b> GRANTS<br><b>Zip Code:</b> 87020<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a0eb578052440519656d3c35270022a = L.circleMarker(
+                [35.08877259999996, -106.6379263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_1a0eb578052440519656d3c35270022a.bindTooltip(
+                `<div>
+                     <b>Name:</b> KINDRED HOSPITAL ALBUQUERQUE<br><b>Addr:</b> 700 HIGH STREET  N.E.<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1296951c870a460397fdea318850715b = L.circleMarker(
+                [32.32606919999999, -106.7250303],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_1296951c870a460397fdea318850715b.bindTooltip(
+                `<div>
+                     <b>Name:</b> ADVANCED CARE HOSPITAL OF SOUTHERN N<br><b>Addr:</b> 4451 E LOHMAN AVENUE<br><b>State:</b> NM<br><b>County:</b> DONA ANA<br><b>City:</b> LAS CRUCES<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c48ac82b2e9b4be9b845418fd906106a = L.circleMarker(
+                [33.309437200000026, -104.52311370000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_c48ac82b2e9b4be9b845418fd906106a.bindTooltip(
+                `<div>
+                     <b>Name:</b> NEW MEXICO REHABILITATION CENTER<br><b>Addr:</b> 31 GAIL HARRIS AVE.<br><b>State:</b> NM<br><b>County:</b> CHAVES<br><b>City:</b> ROSWELL<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6b895ea54a645b2848b028fdbc75d41 = L.circleMarker(
+                [35.16035620000002, -106.5925466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_d6b895ea54a645b2848b028fdbc75d41.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH REHABILITATION HOSPITAL<br><b>Addr:</b> 7000 JEFFERSON ST  NE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87109<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_349bd7bf322d4069823ffb24da9546f1 = L.circleMarker(
+                [35.088110199999996, -106.638006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_349bd7bf322d4069823ffb24da9546f1.bindTooltip(
+                `<div>
+                     <b>Name:</b> LOVELACE REHABILITATION HOSPITAL<br><b>Addr:</b> 505 ELM STREET NE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d92a464af1614ec5a2e20ac16a9451ae = L.circleMarker(
+                [36.725544400000004, -108.21583580000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_d92a464af1614ec5a2e20ac16a9451ae.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAN JUAN REGIONAL REHAB HOSPITAL<br><b>Addr:</b> 525 S SCHWARTZ<br><b>State:</b> NM<br><b>County:</b> USA<br><b>City:</b> FARMINGTON<br><b>Zip Code:</b> 87401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a58333b1704b415c801952370abfda30 = L.circleMarker(
+                [32.325199999999974, -106.724206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_a58333b1704b415c801952370abfda30.bindTooltip(
+                `<div>
+                     <b>Name:</b> REHABILITATION HOSPITAL OF SOUTHERN<br><b>Addr:</b> 4441 EAST LOHMAN AVE<br><b>State:</b> NM<br><b>County:</b> DONA ANA<br><b>City:</b> LAS CRUCES<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d65ae0c0ba674ea795438270084492cb = L.circleMarker(
+                [32.356622899999984, -106.7739176],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_d65ae0c0ba674ea795438270084492cb.bindTooltip(
+                `<div>
+                     <b>Name:</b> MESILLA VALLEY HOSPITAL<br><b>Addr:</b> 3751 DEL REY BLVD<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> LAS CRUCES<br><b>Zip Code:</b> 88012<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d759383171b94f538fef9504126124d9 = L.circleMarker(
+                [31.84220260000002, -106.6198209],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_d759383171b94f538fef9504126124d9.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE PEAK HOSPITAL<br><b>Addr:</b> 5060 MCNUTT RD<br><b>State:</b> NM<br><b>County:</b> DONA ANA<br><b>City:</b> SANTA TERESA<br><b>Zip Code:</b> 88008<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 272
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e823d3ae7bf44ecbb4cd5a494277757 = L.circleMarker(
+                [35.057820600000035, -106.5831307],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_6e823d3ae7bf44ecbb4cd5a494277757.bindTooltip(
+                `<div>
+                     <b>Name:</b> HAVEN BEHAVIORAL SEN CARE OF ALBUQUR<br><b>Addr:</b> 5400 GIBSON BLVD SE  4TH FLOOR<br><b>State:</b> NM<br><b>County:</b> None<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87108<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1cc6ad4219f4599b0846b0f52da1160 = L.circleMarker(
+                [35.08511879999999, -106.6389395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ade7541bd0a5415fa33625b9f543dc76);
+        
+    
+            circle_marker_f1cc6ad4219f4599b0846b0f52da1160.bindTooltip(
+                `<div>
+                     <b>Name:</b> CENTRAL DESERT BEHAVIORAL HC<br><b>Addr:</b> 239 ELM STREET  N.E.<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_43b1f39a308c42f4b8b36e4c2704b7e7 = L.featureGroup(
+                {}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var circle_marker_25df2cbd20a84c5d98e8e283748e6204 = L.circleMarker(
+                [35.08811660000003, -106.6189811],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_25df2cbd20a84c5d98e8e283748e6204.bindTooltip(
+                `<div>
+                     <b>Name:</b> University of New Mexico Hospital (AKA UNM Hospital)<br><b>Addr:</b> 2211 Lomas Blvd Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87106<br><b>Distance discrepancy:</b> 192 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 156
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6c665710b619483ea0786c3dc6b2b4d0 = L.circleMarker(
+                [35.6595345, -105.9457829],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_6c665710b619483ea0786c3dc6b2b4d0.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHRISTUS St Vincent Regional Medical Center (AKA CHRISTUS St Vincent Health System)<br><b>Addr:</b> 455 Saint Michaels Dr<br><b>State:</b> NM<br><b>County:</b> Santa Fe<br><b>City:</b> Santa Fe<br><b>Zip Code:</b> 87505<br><b>Distance discrepancy:</b> 71 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ab50df3802c4fca990a9d5c14628f52 = L.circleMarker(
+                [35.623577800000014, -105.2107864],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_3ab50df3802c4fca990a9d5c14628f52.bindTooltip(
+                `<div>
+                     <b>Name:</b> Alta Vista Regional Hospital<br><b>Addr:</b> 104 Legion Dr<br><b>State:</b> NM<br><b>County:</b> San Miguel<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 87701<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81fe607b58a04ddbb23625a4486ccd83 = L.circleMarker(
+                [32.92642820000006, -105.9347154],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_81fe607b58a04ddbb23625a4486ccd83.bindTooltip(
+                `<div>
+                     <b>Name:</b> Gerald Champion Regional Medical Center<br><b>Addr:</b> 2669 Scenic Dr<br><b>State:</b> NM<br><b>County:</b> Otero<br><b>City:</b> Alamogordo<br><b>Zip Code:</b> 88310<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_819fbf8de5f9441e80162d4d8cb51f06 = L.circleMarker(
+                [36.72382799999996, -108.2168008],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_819fbf8de5f9441e80162d4d8cb51f06.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Juan Regional Medical Center<br><b>Addr:</b> 801 W Maple St<br><b>State:</b> NM<br><b>County:</b> San Juan<br><b>City:</b> Farmington<br><b>Zip Code:</b> 87401<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec2d54717b87496c819933bf71367905 = L.circleMarker(
+                [33.42401119999999, -104.5283104],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_ec2d54717b87496c819933bf71367905.bindTooltip(
+                `<div>
+                     <b>Name:</b> Eastern New Mexico Medical Center<br><b>Addr:</b> 405 W Country Club Rd<br><b>State:</b> NM<br><b>County:</b> Chaves<br><b>City:</b> Roswell<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> 29 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a36a6d9968b4b87995f3fffc4228934 = L.circleMarker(
+                [35.086712600000055, -106.6385235],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_9a36a6d9968b4b87995f3fffc4228934.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lovelace Medical Center<br><b>Addr:</b> 601 Dr Martin Luther King Jr Ave Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> 177 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0836ebee52b144599c6ad7544699c3fe = L.circleMarker(
+                [35.997314300000006, -106.0884554],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_0836ebee52b144599c6ad7544699c3fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> Presbyterian Espanola Hospital<br><b>Addr:</b> 1010 Spruce St<br><b>State:</b> NM<br><b>County:</b> Rio Arriba<br><b>City:</b> Espanola<br><b>Zip Code:</b> 87532<br><b>Distance discrepancy:</b> 78 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 54
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64bf4632312b4171ade9a9f132ab9ab2 = L.circleMarker(
+                [36.36857800000002, -105.5762421],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_64bf4632312b4171ade9a9f132ab9ab2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Holy Cross Hospital<br><b>Addr:</b> 1397 Weimer Rd<br><b>State:</b> NM<br><b>County:</b> Taos<br><b>City:</b> Taos<br><b>Zip Code:</b> 87571<br><b>Distance discrepancy:</b> 13 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce2a6407575a45a58ff966bdc58f7ccd = L.circleMarker(
+                [32.26037229999993, -107.7678531],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_ce2a6407575a45a58ff966bdc58f7ccd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mimbres Memorial Hospital<br><b>Addr:</b> 900 W Ash St<br><b>State:</b> NM<br><b>County:</b> Luna<br><b>City:</b> Deming<br><b>Zip Code:</b> 88030<br><b>Distance discrepancy:</b> 144 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d3ff6fd96ee4c0eb04342fd2ca9b0ff = L.circleMarker(
+                [32.7970919, -108.2609134],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_9d3ff6fd96ee4c0eb04342fd2ca9b0ff.bindTooltip(
+                `<div>
+                     <b>Name:</b> Gila Regional Medical Center<br><b>Addr:</b> 1313 E 32nd St<br><b>State:</b> NM<br><b>County:</b> Grant<br><b>City:</b> Silver City<br><b>Zip Code:</b> 88061<br><b>Distance discrepancy:</b> 286 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b36da3d02fd8485a857249bf4d70137d = L.circleMarker(
+                [35.13137759999999, -106.5917655],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_b36da3d02fd8485a857249bf4d70137d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lovelace Womens Hospital<br><b>Addr:</b> 4701 Montgomery Blvd Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87109<br><b>Distance discrepancy:</b> 141 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b658de1d641a4a7587ac2e0736bbf605 = L.circleMarker(
+                [32.291492299999994, -106.7370594],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_b658de1d641a4a7587ac2e0736bbf605.bindTooltip(
+                `<div>
+                     <b>Name:</b> Memorial Medical Center<br><b>Addr:</b> 2450 S Telshor Blvd<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Las Cruces<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> 18 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99cae1ed0a63480b922e1c67469d599c = L.circleMarker(
+                [35.08164600000001, -106.635553],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_99cae1ed0a63480b922e1c67469d599c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Presbyterian Hospital<br><b>Addr:</b> 1100 Central Ave Se<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87106<br><b>Distance discrepancy:</b> 193 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc51e556608b4fc4a2ce02e01b619510 = L.circleMarker(
+                [34.419520199999994, -103.2320562],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_fc51e556608b4fc4a2ce02e01b619510.bindTooltip(
+                `<div>
+                     <b>Name:</b> Plains Regional Medical Center<br><b>Addr:</b> 2100 Martin Luther King Jr<br><b>State:</b> NM<br><b>County:</b> Curry<br><b>City:</b> Clovis<br><b>Zip Code:</b> 88101<br><b>Distance discrepancy:</b> 50 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd52eff05a7a413c84b669184d42bea8 = L.circleMarker(
+                [32.84865460000003, -104.4111303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_cd52eff05a7a413c84b669184d42bea8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Artesia General Hospital<br><b>Addr:</b> 702 N 13th St<br><b>State:</b> NM<br><b>County:</b> Eddy<br><b>City:</b> Artesia<br><b>Zip Code:</b> 88210<br><b>Distance discrepancy:</b> 51 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_abc050d46f3948fdb7fe282c67638221 = L.circleMarker(
+                [35.881609000000005, -106.3197786],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_abc050d46f3948fdb7fe282c67638221.bindTooltip(
+                `<div>
+                     <b>Name:</b> Los Alamos Medical Center<br><b>Addr:</b> 3917 West Rd<br><b>State:</b> NM<br><b>County:</b> Los Alamos<br><b>City:</b> Los Alamos<br><b>Zip Code:</b> 87544<br><b>Distance discrepancy:</b> 91 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24b7e9a110da4fd18adb460e6a6b82da = L.circleMarker(
+                [35.50688599999999, -108.7276044],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_24b7e9a110da4fd18adb460e6a6b82da.bindTooltip(
+                `<div>
+                     <b>Name:</b> RMCHCS Hospital (AKA Rehoboth McKinley Christian Health Care Services)<br><b>Addr:</b> 1901 Red Rock Dr<br><b>State:</b> NM<br><b>County:</b> McKinley<br><b>City:</b> Gallup<br><b>Zip Code:</b> 87301<br><b>Distance discrepancy:</b> 62 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_972b09c367c54a35a2380eccfc3d03e2 = L.circleMarker(
+                [35.6681549, -105.9702698],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_972b09c367c54a35a2380eccfc3d03e2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Santa Fe Service Unit (AKA Santa Fe Indian Hospital)<br><b>Addr:</b> 1700 Cerrillos Rd<br><b>State:</b> NM<br><b>County:</b> Santa Fe<br><b>City:</b> Santa Fe<br><b>Zip Code:</b> 87501<br><b>Distance discrepancy:</b> 3521 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2938b8dd87924233bd0e3cb9675fade0 = L.circleMarker(
+                [33.15879390000006, -105.7723979],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_2938b8dd87924233bd0e3cb9675fade0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mescalero Service Unit (AKA Mescalero Indian Hospital)<br><b>Addr:</b> 318 Abalone Loop<br><b>State:</b> NM<br><b>County:</b> Otero<br><b>City:</b> Mescalero<br><b>Zip Code:</b> 88340<br><b>Distance discrepancy:</b> 78 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_868f776c87164c61ae0ad03ba6c5e07a = L.circleMarker(
+                [36.80523530000001, -108.6914076],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_868f776c87164c61ae0ad03ba6c5e07a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Shiprock - Northern Navajo Medical Center<br><b>Addr:</b> Hwy 491 North<br><b>State:</b> NM<br><b>County:</b> San Juan<br><b>City:</b> Shiprock<br><b>Zip Code:</b> 87420<br><b>Distance discrepancy:</b> 57606 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd724104ddb14ebda80c20e066a1c45a = L.circleMarker(
+                [35.50761320000001, -108.73002350000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_dd724104ddb14ebda80c20e066a1c45a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Gallup Indian Medical Center<br><b>Addr:</b> 516 E Nizhoni Blvd<br><b>State:</b> NM<br><b>County:</b> McKinley<br><b>City:</b> Gallup<br><b>Zip Code:</b> 87301<br><b>Distance discrepancy:</b> 109 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86abf3d3a90d401d9c2c1a9a555ba50f = L.circleMarker(
+                [35.698763899999996, -108.1396562],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_86abf3d3a90d401d9c2c1a9a555ba50f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Crownpoint Health Care Facility<br><b>Addr:</b> Junction Rd 371 Rt 9<br><b>State:</b> NM<br><b>County:</b> McKinley<br><b>City:</b> Crownpoint<br><b>Zip Code:</b> 87313<br><b>Distance discrepancy:</b> 30868 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1527ba0504394ebb977299de593b013a = L.circleMarker(
+                [32.441644300000064, -104.2579986],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_1527ba0504394ebb977299de593b013a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Carlsbad Medical Center<br><b>Addr:</b> 2430 W Pierce St<br><b>State:</b> NM<br><b>County:</b> Eddy<br><b>City:</b> Carlsbad<br><b>Zip Code:</b> 88220<br><b>Distance discrepancy:</b> 5 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d26cd3f4fdb04574b47ed94e81261925 = L.circleMarker(
+                [32.7613671, -103.1847275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_d26cd3f4fdb04574b47ed94e81261925.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lea Regional Medical Center<br><b>Addr:</b> 5419 N Lovington Hwy<br><b>State:</b> NM<br><b>County:</b> Lea<br><b>City:</b> Hobbs<br><b>Zip Code:</b> 88240<br><b>Distance discrepancy:</b> 124 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7516918763749c681352bf352641833 = L.circleMarker(
+                [34.930202399999985, -104.6934682],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_e7516918763749c681352bf352641833.bindTooltip(
+                `<div>
+                     <b>Name:</b> Guadalupe County Hospital<br><b>Addr:</b> 117 Camino De Vida<br><b>State:</b> NM<br><b>County:</b> Guadalupe<br><b>City:</b> Santa Rosa<br><b>Zip Code:</b> 88435<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ec926e9aa874678b5696222ec7b0ecd = L.circleMarker(
+                [35.06821010000006, -107.5715964],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_9ec926e9aa874678b5696222ec7b0ecd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Acoma-Canoncito-Laguna Service Unit<br><b>Addr:</b> 80 Veterans Blvd<br><b>State:</b> NM<br><b>County:</b> Cibola<br><b>City:</b> Acoma Pueblo<br><b>Zip Code:</b> 87034<br><b>Distance discrepancy:</b> 3340 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_98a5986f45244696b7c08922a53d1c7d = L.circleMarker(
+                [35.20705869999999, -106.6773004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_98a5986f45244696b7c08922a53d1c7d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lovelace Westside Hospital<br><b>Addr:</b> 10501 Golf Course Rd Nw<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87114<br><b>Distance discrepancy:</b> 44 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54b1c21e43ee4ac0a9b025eba2dd969b = L.circleMarker(
+                [34.16913300000002, -103.361978],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_54b1c21e43ee4ac0a9b025eba2dd969b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Roosevelt General Hospital<br><b>Addr:</b> 42121 Us Highway 70<br><b>State:</b> NM<br><b>County:</b> Roosevelt<br><b>City:</b> Portales<br><b>Zip Code:</b> 88130<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4889c40e5a264d5c936f23e6f3681a25 = L.circleMarker(
+                [32.323233499999965, -106.7282739],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_4889c40e5a264d5c936f23e6f3681a25.bindTooltip(
+                `<div>
+                     <b>Name:</b> MountainView Regional Medical Center<br><b>Addr:</b> 4311 E Lohman Ave<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Las Cruces<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> 108 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f3181cae8fa54d35907c3ec8e6b070d8 = L.circleMarker(
+                [33.416888300000004, -104.5210746],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_f3181cae8fa54d35907c3ec8e6b070d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lovelace Regional Hospital (FKA Roswell Regional Hospital)<br><b>Addr:</b> 117 E 19th St<br><b>State:</b> NM<br><b>County:</b> Chaves<br><b>City:</b> Roswell<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a85c88bec2f4c7dbe70cad40d789811 = L.circleMarker(
+                [35.30873629999999, -106.6800329],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_6a85c88bec2f4c7dbe70cad40d789811.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNM Sandoval Regional Medical Center<br><b>Addr:</b> 3001 Broadmoor Blvd Ne<br><b>State:</b> NM<br><b>County:</b> Sandoval<br><b>City:</b> Rio Rancho<br><b>Zip Code:</b> 87144<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_383338160d3d463bb667a242b3a05911 = L.circleMarker(
+                [35.6164155, -106.02523240000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_383338160d3d463bb667a242b3a05911.bindTooltip(
+                `<div>
+                     <b>Name:</b> Presbyterian Santa Fe Medical Center<br><b>Addr:</b> 4801 Beckner Rd<br><b>State:</b> NM<br><b>County:</b> Santa Fe<br><b>City:</b> Santa Fe<br><b>Zip Code:</b> 87507<br><b>Distance discrepancy:</b> 2945 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a456760c2a8a47438eea4f23d4c360b4 = L.circleMarker(
+                [33.1402658, -107.2418894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_a456760c2a8a47438eea4f23d4c360b4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sierra Vista Hospital<br><b>Addr:</b> 800 E 9th Ave<br><b>State:</b> NM<br><b>County:</b> Sierra<br><b>City:</b> Truth Or Consequences<br><b>Zip Code:</b> 87901<br><b>Distance discrepancy:</b> 77 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06e35251938141bb92db52ba2e3fe9ba = L.circleMarker(
+                [34.03762330000001, -106.911891],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_06e35251938141bb92db52ba2e3fe9ba.bindTooltip(
+                `<div>
+                     <b>Name:</b> Socorro General Hospital<br><b>Addr:</b> 1202 Highway 60<br><b>State:</b> NM<br><b>County:</b> Socorro<br><b>City:</b> Socorro<br><b>Zip Code:</b> 87801<br><b>Distance discrepancy:</b> 34 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e30d913cdee44a97bc140a3e4749951d = L.circleMarker(
+                [35.15661309999994, -103.7224242],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_e30d913cdee44a97bc140a3e4749951d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dr Dan C Trigg Memorial Hospital<br><b>Addr:</b> 301 E Miel De Luna Ave<br><b>State:</b> NM<br><b>County:</b> Quay<br><b>City:</b> Tucumcari<br><b>Zip Code:</b> 88410<br><b>Distance discrepancy:</b> 135 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_043b14c69fb148e1b45187314f444631 = L.circleMarker(
+                [36.454927399999995, -103.1934038],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_043b14c69fb148e1b45187314f444631.bindTooltip(
+                `<div>
+                     <b>Name:</b> Union County General Hospital<br><b>Addr:</b> 300 Wilson St<br><b>State:</b> NM<br><b>County:</b> Union<br><b>City:</b> Clayton<br><b>Zip Code:</b> 88415<br><b>Distance discrepancy:</b> 33 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 160
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e90944297864082bede0526e4416c63 = L.circleMarker(
+                [32.965535999999986, -103.3471783],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_5e90944297864082bede0526e4416c63.bindTooltip(
+                `<div>
+                     <b>Name:</b> Nor Lea General Hospital<br><b>Addr:</b> 1600 N Main Ave<br><b>State:</b> NM<br><b>County:</b> Lea<br><b>City:</b> Lovington<br><b>Zip Code:</b> 88260<br><b>Distance discrepancy:</b> 52 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6d483c2c29c543c2869cc719256b9d9b = L.circleMarker(
+                [33.322280199999994, -105.6311032],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_6d483c2c29c543c2869cc719256b9d9b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lincoln County Medical Center<br><b>Addr:</b> 211 Sudderth Dr<br><b>State:</b> NM<br><b>County:</b> Lincoln<br><b>City:</b> Ruidoso<br><b>Zip Code:</b> 88345<br><b>Distance discrepancy:</b> 123 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d25f67929a724ade901bf75ca1a61795 = L.circleMarker(
+                [36.86270069999993, -104.4422281],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_d25f67929a724ade901bf75ca1a61795.bindTooltip(
+                `<div>
+                     <b>Name:</b> Miners Colfax Medical Center<br><b>Addr:</b> 203 Hospital Dr<br><b>State:</b> NM<br><b>County:</b> Colfax<br><b>City:</b> Raton<br><b>Zip Code:</b> 87740<br><b>Distance discrepancy:</b> 28 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36c310e87c2b407b8d281825140b1e49 = L.circleMarker(
+                [35.1624965, -107.8270107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_36c310e87c2b407b8d281825140b1e49.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cibola General Hospital<br><b>Addr:</b> 1016 E Roosevelt Ave<br><b>State:</b> NM<br><b>County:</b> Cibola<br><b>City:</b> Grants<br><b>Zip Code:</b> 87020<br><b>Distance discrepancy:</b> 49 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c26b5084ce84edeae0cd1d973685c46 = L.circleMarker(
+                [35.08877259999998, -106.6379263],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_1c26b5084ce84edeae0cd1d973685c46.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kindred Hospital - Albuquerque<br><b>Addr:</b> 700 High St Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a25728c848d34565b5ae89a0a20aea22 = L.circleMarker(
+                [32.32606919999999, -106.7250303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_a25728c848d34565b5ae89a0a20aea22.bindTooltip(
+                `<div>
+                     <b>Name:</b> Advanced Care Hospital of Southern New Mexico<br><b>Addr:</b> 4451 E Lohman Ave<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Las Cruces<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_25b412a8530f48058cc0219a484dcb82 = L.circleMarker(
+                [33.30943720000004, -104.52311370000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_25b412a8530f48058cc0219a484dcb82.bindTooltip(
+                `<div>
+                     <b>Name:</b> New Mexico Rehabilitation Center<br><b>Addr:</b> 72 Gail Harris St<br><b>State:</b> NM<br><b>County:</b> Chaves<br><b>City:</b> Roswell<br><b>Zip Code:</b> 88201<br><b>Distance discrepancy:</b> 11305 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c253cda6b02a40f5bd81fbc4694a1f90 = L.circleMarker(
+                [35.16035620000002, -106.5925466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_c253cda6b02a40f5bd81fbc4694a1f90.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Albuquerque (FKA HealthSouth Rehabilitation Hospital of Albuquerque)<br><b>Addr:</b> 7000 Jefferson St Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87109<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4526ab5d68c5455aacd8a7e1709758d8 = L.circleMarker(
+                [35.088110199999996, -106.638006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_4526ab5d68c5455aacd8a7e1709758d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lovelace UNM Rehabilitation Hospital (FKA Lovelace Rehabilitation Hospital)<br><b>Addr:</b> 505 Elm St Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> 51 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7be5cec1948c44a6b63df548b9c7e898 = L.circleMarker(
+                [36.725544400000004, -108.21583580000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_7be5cec1948c44a6b63df548b9c7e898.bindTooltip(
+                `<div>
+                     <b>Name:</b> San Juan Regional Rehab Hospital<br><b>Addr:</b> 525 S Schwartz Ave<br><b>State:</b> NM<br><b>County:</b> San Juan<br><b>City:</b> Farmington<br><b>Zip Code:</b> 87401<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_923192d9c9b348b7b158c0e6e5c5bfe3 = L.circleMarker(
+                [32.325199999999974, -106.724206],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_923192d9c9b348b7b158c0e6e5c5bfe3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rehabilitation Hospital of Southern New Mexico<br><b>Addr:</b> 4441 E Lohman Ave<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Las Cruces<br><b>Zip Code:</b> 88011<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0079206ad084eae804aa6e073caf4b7 = L.circleMarker(
+                [32.356622899999955, -106.7739176],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_c0079206ad084eae804aa6e073caf4b7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mesilla Valley Hospital<br><b>Addr:</b> 3751 Del Rey Blvd<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Las Cruces<br><b>Zip Code:</b> 88012<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2eaab0b728c84c71b341a8b8872a9085 = L.circleMarker(
+                [31.84217270000009, -106.6227037],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_2eaab0b728c84c71b341a8b8872a9085.bindTooltip(
+                `<div>
+                     <b>Name:</b> Peak Behavioral Health<br><b>Addr:</b> 5055 McNutt Rd<br><b>State:</b> NM<br><b>County:</b> Dona Ana<br><b>City:</b> Santa Teresa<br><b>Zip Code:</b> 88008<br><b>Distance discrepancy:</b> 214 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 272
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86a4b0c271f94612893b5c383f2174ac = L.circleMarker(
+                [35.057820600000056, -106.5831307],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_86a4b0c271f94612893b5c383f2174ac.bindTooltip(
+                `<div>
+                     <b>Name:</b> Haven Behavioral Hospital of Albuquerque<br><b>Addr:</b> 5400 Gibson Blvd Se<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87108<br><b>Distance discrepancy:</b> 196 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4daeb66c74404992afecbfa9776bd1cf = L.circleMarker(
+                [35.08511879999999, -106.6389395],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_43b1f39a308c42f4b8b36e4c2704b7e7);
+        
+    
+            circle_marker_4daeb66c74404992afecbfa9776bd1cf.bindTooltip(
+                `<div>
+                     <b>Name:</b> Central Desert Behavioral Health Center<br><b>Addr:</b> 239 Elm St Ne<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6e37338a56044324b24a717658dc4306 = L.featureGroup(
+                {}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var circle_marker_59bc4f6bb23a4da59ada81015b8b8fb8 = L.circleMarker(
+                [35.06516960000001, -108.8331064],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6e37338a56044324b24a717658dc4306);
+        
+    
+            circle_marker_59bc4f6bb23a4da59ada81015b8b8fb8.bindTooltip(
+                `<div>
+                     <b>Name:</b> USPHS HOSPITAL-ZUNI<br><b>Addr:</b> ROUTE 301 N B STREET<br><b>State:</b> NM<br><b>County:</b> MCKINLEY<br><b>City:</b> ZUNI<br><b>Zip Code:</b> 87237<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_09798c39897e44fbafed06be5dee8865 = L.circleMarker(
+                [35.08661220000002, -106.6368511],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6e37338a56044324b24a717658dc4306);
+        
+    
+            circle_marker_09798c39897e44fbafed06be5dee8865.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEART HOSPITAL OF NEW MEXICO<br><b>Addr:</b> 504 ELM STREET  NE<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e93c08686ed4a489d246a9be15a5c88 = L.circleMarker(
+                [35.0849027, -106.6388921],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6e37338a56044324b24a717658dc4306);
+        
+    
+            circle_marker_5e93c08686ed4a489d246a9be15a5c88.bindTooltip(
+                `<div>
+                     <b>Name:</b> ALBUQUERQUE - AMG SPECIALTY HOSPITAL<br><b>Addr:</b> 235 ELM STREET<br><b>State:</b> NM<br><b>County:</b> BERNALILLO<br><b>City:</b> ALBUQUERQUE<br><b>Zip Code:</b> 87102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_918f2c282149411fbfaa441d17571eaf = L.circleMarker(
+                [32.26037229999996, -107.7678531],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6e37338a56044324b24a717658dc4306);
+        
+    
+            circle_marker_918f2c282149411fbfaa441d17571eaf.bindTooltip(
+                `<div>
+                     <b>Name:</b> MIMBRES MEMORIAL HOSPITAL<br><b>Addr:</b> 900 WEST ASH STREET<br><b>State:</b> NM<br><b>County:</b> LUNA<br><b>City:</b> DEMING<br><b>Zip Code:</b> 88030<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_18fab7d3924c459091388e97e2f943ba = L.circleMarker(
+                [36.36857800000002, -105.5762421],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6e37338a56044324b24a717658dc4306);
+        
+    
+            circle_marker_18fab7d3924c459091388e97e2f943ba.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOLY CROSS HOSPITAL<br><b>Addr:</b> 1397 WEIMER ROAD<br><b>State:</b> NM<br><b>County:</b> TAOS<br><b>City:</b> TAOS<br><b>Zip Code:</b> 87571<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_1008d138b568489f84727b4646a4ac11 = L.featureGroup(
+                {}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var circle_marker_ec7b78e87d624658876b0e8b946121e0 = L.circleMarker(
+                [35.05491959999991, -106.5823148],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1008d138b568489f84727b4646a4ac11);
+        
+    
+            circle_marker_ec7b78e87d624658876b0e8b946121e0.bindTooltip(
+                `<div>
+                     <b>Name:</b> New Mexico VA Health Care System - Raymond G Murphy VA Medical Center<br><b>Addr:</b> 1501 San Pedro Dr Se<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87108<br><b>Distance discrepancy:</b> 84 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2dac71bf297b43b4a30efd4942bcf74f = L.circleMarker(
+                [35.087178099999996, -108.7911712],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1008d138b568489f84727b4646a4ac11);
+        
+    
+            circle_marker_2dac71bf297b43b4a30efd4942bcf74f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Zuni Comprehensive Health Center<br><b>Addr:</b> 21 Rte 301 N<br><b>State:</b> NM<br><b>County:</b> McKinley<br><b>City:</b> Zuni<br><b>Zip Code:</b> 87327<br><b>Distance discrepancy:</b> 3112 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e5e4dfbcd4b4c8fbd8ca517269ffaab = L.circleMarker(
+                [35.60939469999996, -105.2431977],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1008d138b568489f84727b4646a4ac11);
+        
+    
+            circle_marker_1e5e4dfbcd4b4c8fbd8ca517269ffaab.bindTooltip(
+                `<div>
+                     <b>Name:</b> New Mexico Behavioral Health Institute<br><b>Addr:</b> 3695 Hot Springs Blvd<br><b>State:</b> NM<br><b>County:</b> San Miguel<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 87701<br><b>Distance discrepancy:</b> 258 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39e719246b834d9eb5e9f12496cded32 = L.circleMarker(
+                [35.057985999999985, -106.5813804],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1008d138b568489f84727b4646a4ac11);
+        
+    
+            circle_marker_39e719246b834d9eb5e9f12496cded32.bindTooltip(
+                `<div>
+                     <b>Name:</b> AMG Specialty Hospital - Albuquerue<br><b>Addr:</b> 5400 Gibson Blvd Se<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87108<br><b>Distance discrepancy:</b> 99 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8dee5521ee3464e8be8798154c850ff = L.circleMarker(
+                [35.057985999999985, -106.5813804],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_1008d138b568489f84727b4646a4ac11);
+        
+    
+            circle_marker_f8dee5521ee3464e8be8798154c850ff.bindTooltip(
+                `<div>
+                     <b>Name:</b> Turquoise Lodge Hospital<br><b>Addr:</b> 5901 Zuni Rd Se<br><b>State:</b> NM<br><b>County:</b> Bernalillo<br><b>City:</b> Albuquerque<br><b>Zip Code:</b> 87108<br><b>Distance discrepancy:</b> 2128 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6da45d05144f4380aefdfea274af455d = L.featureGroup(
+                {}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+    
+            var poly_line_a665d3fb63004913a49da9ecd37e02d7 = L.polyline(
+                [[35.08798159999997, -106.6172609], [35.08811660000003, -106.6189811]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_623a65289fa04337b1329bac2eb92739 = L.polyline(
+                [[35.65948649999997, -105.945416], [35.6595345, -105.9457829]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_25730977824740a4ac1a08f3d772b001 = L.polyline(
+                [[35.623577800000014, -105.2107864], [35.623577800000014, -105.2107864]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_9f5888d2535249f5a9fdaf0db882bb8d = L.polyline(
+                [[32.92642820000001, -105.9347154], [32.92642820000006, -105.9347154]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_da42d2b7f6b94bf2bbed4e6231c2e035 = L.polyline(
+                [[36.72382799999996, -108.2168008], [36.72382799999996, -108.2168008]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_9e8e1facf69b40d4a6d2e3df5ea9f440 = L.polyline(
+                [[33.42401119999999, -104.5283104], [33.42401119999999, -104.5283104]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_fc09a4f5268c43129d12445ff30f420a = L.polyline(
+                [[35.086712600000055, -106.6385235], [35.086712600000055, -106.6385235]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_fc86fa08bb354bea87b787086ba24e2a = L.polyline(
+                [[35.99765150000001, -106.0888819], [35.997314300000006, -106.0884554]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_3bdc14caa6c348d4b3e48b27852c19d0 = L.polyline(
+                [[36.36857800000002, -105.5762421], [36.36857800000002, -105.5762421]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_01fb9b0b4bf140a5a7a4a1ed119dca9d = L.polyline(
+                [[32.26037229999996, -107.7678531], [32.26037229999993, -107.7678531]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_51277dd5e52946e48f315a09c3b1e3f5 = L.polyline(
+                [[32.7970919, -108.2609134], [32.7970919, -108.2609134]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_9abef27186c34957a74f950e74cc0e78 = L.polyline(
+                [[35.13137760000002, -106.5917655], [35.13137759999999, -106.5917655]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_c10e66fe0d80488abbbb948fa9b7e806 = L.polyline(
+                [[32.291492299999994, -106.7370594], [32.291492299999994, -106.7370594]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_50c32fcd5200415a973b217e6c20014c = L.polyline(
+                [[35.08164600000001, -106.635553], [35.08164600000001, -106.635553]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_5449aaf776f742d197615b19f9956fb6 = L.polyline(
+                [[34.419520199999994, -103.2320562], [34.419520199999994, -103.2320562]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_25c2ff402bb64cb59290aa45f2f06b64 = L.polyline(
+                [[32.84846630000002, -104.4113286], [32.84865460000003, -104.4111303]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_bbfefe2a40fb488db1095cfa4754e9ef = L.polyline(
+                [[35.881609000000005, -106.3197786], [35.881609000000005, -106.3197786]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_b008cac6fb0f41e4bdc473b0bf75d9a1 = L.polyline(
+                [[35.50688599999999, -108.7276044], [35.50688599999999, -108.7276044]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_edf4fb99e21b45bf836d82672f311088 = L.polyline(
+                [[35.6681549, -105.9702698], [35.6681549, -105.9702698]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_e4a3d5fc36a745d98edaffb89b34647d = L.polyline(
+                [[33.158793900000035, -105.7723979], [33.15879390000006, -105.7723979]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_c5d18ee311b4464abc6bbb5b31760273 = L.polyline(
+                [[36.80523530000001, -108.6914076], [36.80523530000001, -108.6914076]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_17fb8a83809743999e87a4fc7264816e = L.polyline(
+                [[35.50761320000001, -108.73002350000002], [35.50761320000001, -108.73002350000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_016125146e3e4905aeb96f7438f13ad1 = L.polyline(
+                [[35.698763899999996, -108.1396562], [35.698763899999996, -108.1396562]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_67a1ada04dfa499080edaf25db2b1c2c = L.polyline(
+                [[32.44164430000002, -104.2579986], [32.441644300000064, -104.2579986]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_e37ae66390b240449efbd2d1d86d044e = L.polyline(
+                [[32.7613671, -103.1847275], [32.7613671, -103.1847275]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_2be95d6e8cd24dc7ac04e8d322b9d5e5 = L.polyline(
+                [[34.930202399999985, -104.6934682], [34.930202399999985, -104.6934682]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_ce69db2e03ae4a22838a628c3b9d733e = L.polyline(
+                [[35.06821010000004, -107.5715964], [35.06821010000006, -107.5715964]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_4295f379be0349aa86dee9647b3ce189 = L.polyline(
+                [[35.20704039999997, -106.6773168], [35.20705869999999, -106.6773004]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_64f03b9b06a74f5cb5b7052b87057765 = L.polyline(
+                [[34.16913300000002, -103.361978], [34.16913300000002, -103.361978]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_9d84b4ec7a6e469ab797a87a9d068253 = L.polyline(
+                [[32.32323349999997, -106.7282739], [32.323233499999965, -106.7282739]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_c3ad802337a14d708d1f66c094946a18 = L.polyline(
+                [[33.416888300000004, -104.5210746], [33.416888300000004, -104.5210746]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_4f08894505f64e06a6a1f25d1af89633 = L.polyline(
+                [[35.30873629999999, -106.6800329], [35.30873629999999, -106.6800329]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_563bfb215cce469ab5710eb93c91e273 = L.polyline(
+                [[35.6164155, -106.02523240000001], [35.6164155, -106.02523240000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_36c6d56cbe3e46aab2cd45841156beb6 = L.polyline(
+                [[33.1402658, -107.2418894], [33.1402658, -107.2418894]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_876226218c4248afb29558736b7b9054 = L.polyline(
+                [[34.03762330000001, -106.911891], [34.03762330000001, -106.911891]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_3554f16311844d32b33973ff5af024b0 = L.polyline(
+                [[35.15661309999996, -103.7224242], [35.15661309999994, -103.7224242]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_08e1d6bc98d340ceb1ffd473336bc201 = L.polyline(
+                [[36.45375789999998, -103.1923614], [36.454927399999995, -103.1934038]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_f21ba3987b0d47ffbde1793e7722412b = L.polyline(
+                [[32.965535999999986, -103.3471783], [32.965535999999986, -103.3471783]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_b474ffafe6b04f12ac323f6ec2d7e9fc = L.polyline(
+                [[33.322280199999994, -105.6311032], [33.322280199999994, -105.6311032]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_bd78e94189b34d0eb1e5a7bec1fe71a3 = L.polyline(
+                [[36.862700699999955, -104.4422281], [36.86270069999993, -104.4422281]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_8537b8d9f9694cdf994851f92586963c = L.polyline(
+                [[35.1624965, -107.8270107], [35.1624965, -107.8270107]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_06306c91746944a68e002315dbf7324f = L.polyline(
+                [[35.08877259999996, -106.6379263], [35.08877259999998, -106.6379263]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_322e6e5c79c64aa48374f895d49b50b7 = L.polyline(
+                [[32.32606919999999, -106.7250303], [32.32606919999999, -106.7250303]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_536765eb48974a23a048853332acd524 = L.polyline(
+                [[33.309437200000026, -104.52311370000001], [33.30943720000004, -104.52311370000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_4747cfd3de014d1b9e7cc702985f3e70 = L.polyline(
+                [[35.16035620000002, -106.5925466], [35.16035620000002, -106.5925466]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_0e965a6c50b645c3a7f24b80296dc5d5 = L.polyline(
+                [[35.088110199999996, -106.638006], [35.088110199999996, -106.638006]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_64fa1439f4df4b889d6c0b665e5cf1e7 = L.polyline(
+                [[36.725544400000004, -108.21583580000001], [36.725544400000004, -108.21583580000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_383b03694fbc475aafdb8205ef2ffd19 = L.polyline(
+                [[32.325199999999974, -106.724206], [32.325199999999974, -106.724206]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_3ff31e54c7a546649bfa23fbf138034a = L.polyline(
+                [[32.356622899999984, -106.7739176], [32.356622899999955, -106.7739176]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_1878df2a4833436ab46148f3388c6c7e = L.polyline(
+                [[31.84220260000002, -106.6198209], [31.84217270000009, -106.6227037]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_849aeb0f550a4e9797afc23da3698d0b = L.polyline(
+                [[35.057820600000035, -106.5831307], [35.057820600000056, -106.5831307]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var poly_line_1574203168ae41f69e6cdd2fa43a6006 = L.polyline(
+                [[35.08511879999999, -106.6389395], [35.08511879999999, -106.6389395]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6da45d05144f4380aefdfea274af455d);
+        
+    
+            var layer_control_f72f6a4f53074a5e8f85649fb5debfea = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6f9529a92a12411991386f3e6e0b8835,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_ade7541bd0a5415fa33625b9f543dc76,
+                    "DH - matched" : feature_group_43b1f39a308c42f4b8b36e4c2704b7e7,
+                    "HCRIS - unmatched" : feature_group_6e37338a56044324b24a717658dc4306,
+                    "DH - unmatched" : feature_group_1008d138b568489f84727b4646a4ac11,
+                    "connections" : feature_group_6da45d05144f4380aefdfea274af455d,
+                },
+            };
+            L.control.layers(
+                layer_control_f72f6a4f53074a5e8f85649fb5debfea.base_layers,
+                layer_control_f72f6a4f53074a5e8f85649fb5debfea.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_d4c0bc0cf34f4a9ca34ea8d1b5e487f2);
+        
+</script>

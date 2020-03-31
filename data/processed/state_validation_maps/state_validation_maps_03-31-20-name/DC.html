@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60ad2d195b254be9a3de5f22ffcd3e6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_60ad2d195b254be9a3de5f22ffcd3e6d" ></div>
+        
+</body>
+<script>    
+    
+            var map_60ad2d195b254be9a3de5f22ffcd3e6d = L.map(
+                "map_60ad2d195b254be9a3de5f22ffcd3e6d",
+                {
+                    center: [38.884482899999995, -77.04669955],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c424109785be41f5a6b94d4bd9053440 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var feature_group_8210b47017094e40aeca3b635341b2e9 = L.featureGroup(
+                {}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var circle_marker_9778b77d3086495b8b0ba17ffb301573 = L.circleMarker(
+                [38.901305, -77.05064599999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_9778b77d3086495b8b0ba17ffb301573.bindTooltip(
+                `<div>
+                     <b>Name:</b> GEORGE WASHINGTON UNIV HOSPITAL<br><b>Addr:</b> 900 23RD STREET<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20037-2377<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e704451558e04c45beebf6359fba23b1 = L.circleMarker(
+                [38.917789100000014, -77.0205342],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_e704451558e04c45beebf6359fba23b1.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOWARD UNIVERSITY HOSPITAL<br><b>Addr:</b> 2041 GEORGIA AVENUE NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20060<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_119240049e854e41b2f9ba24790251e9 = L.circleMarker(
+                [38.91145319999996, -77.07527470000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_119240049e854e41b2f9ba24790251e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> GEORGETOWN UNIVERSITY HOSPITAL<br><b>Addr:</b> 3800 RESERVOIR ROAD  NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20007<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4a4d6559ca12428da4063b135565a318 = L.circleMarker(
+                [38.93674900000002, -77.10840549999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_4a4d6559ca12428da4063b135565a318.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIBLEY MEMORIAL HOSPITAL<br><b>Addr:</b> 5255 LOUGHBORO ROAD NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20016-2695<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8582b4f1263747d99d9212b2a02baae9 = L.circleMarker(
+                [38.83593929999994, -76.9849936],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_8582b4f1263747d99d9212b2a02baae9.bindTooltip(
+                `<div>
+                     <b>Name:</b> NOT-FOR-PROFIT HOSPITAL CORPORATION<br><b>Addr:</b> 1310 SOUTHERN AVE  SE<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20032-4623<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83ccdf5f53af4640a5910634f4b35ff0 = L.circleMarker(
+                [38.929066400000025, -77.0145295],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_83ccdf5f53af4640a5910634f4b35ff0.bindTooltip(
+                `<div>
+                     <b>Name:</b> WASHINGTON HOSPITAL CENTER<br><b>Addr:</b> 110 IRVING STREET  NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fd51c8eb93f4108ae2f787d4084ee7a = L.circleMarker(
+                [38.892388399999994, -76.99534939999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_6fd51c8eb93f4108ae2f787d4084ee7a.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPECIALTY HOSPITAL OF WASHINGTON<br><b>Addr:</b> 700 CONSTITUTION AVENUE NE<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON DC<br><b>Zip Code:</b> 20002<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5adbc95574ea4f82bb01740b075683a5 = L.circleMarker(
+                [38.8250319, -77.01290870000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_5adbc95574ea4f82bb01740b075683a5.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPEC HOSPITAL WASHINGTON HADLEY<br><b>Addr:</b> 4601 MARTIN LUTHER KING JR AVE<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON DC<br><b>Zip Code:</b> 20032<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 69
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb84a94c1b2640e4a7fc8ce576b5cd2e = L.circleMarker(
+                [38.93050900000001, -77.0133786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_bb84a94c1b2640e4a7fc8ce576b5cd2e.bindTooltip(
+                `<div>
+                     <b>Name:</b> NATIONAL REHABILITATION HOSPITAL<br><b>Addr:</b> 102 IRVING STREET NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a98b462897d46e8bd28afa792c007ee = L.circleMarker(
+                [38.844926200000025, -76.99173140000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_1a98b462897d46e8bd28afa792c007ee.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. ELIZABETHS HOSPITAL<br><b>Addr:</b> 1100 ALABAMA AVE. SOUTHEAST<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20032<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4395f80a57b341c09f997e98dc905d75 = L.circleMarker(
+                [38.94393389999998, -77.07774450000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8210b47017094e40aeca3b635341b2e9);
+        
+    
+            circle_marker_4395f80a57b341c09f997e98dc905d75.bindTooltip(
+                `<div>
+                     <b>Name:</b> PSYCH INSTITUE OF WASHINGTON<br><b>Addr:</b> 4228 WISCONSIN AVENUE  NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20016<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_e5d7de5ddddc4ff9be1997684176d78b = L.featureGroup(
+                {}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var circle_marker_1e7e583c3f0a47cfb84b0f9916cfc682 = L.circleMarker(
+                [38.901305, -77.05064599999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_1e7e583c3f0a47cfb84b0f9916cfc682.bindTooltip(
+                `<div>
+                     <b>Name:</b> George Washington University Hospital<br><b>Addr:</b> 900 23rd St Nw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20037<br><b>Distance discrepancy:</b> 12 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc6bcb2165cd4007865befdd034423be = L.circleMarker(
+                [38.917789100000014, -77.0205342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_fc6bcb2165cd4007865befdd034423be.bindTooltip(
+                `<div>
+                     <b>Name:</b> Howard University Hospital<br><b>Addr:</b> 2041 Georgia Ave NW<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20060<br><b>Distance discrepancy:</b> 38 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_57555d1312a44476903148613194b7f5 = L.circleMarker(
+                [38.91145319999996, -77.07527470000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_57555d1312a44476903148613194b7f5.bindTooltip(
+                `<div>
+                     <b>Name:</b> MedStar Georgetown University Hospital<br><b>Addr:</b> 3800 Reservoir Rd NW<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20007<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e40889c5b8ba4e3a90ad4fb1b2a6f236 = L.circleMarker(
+                [38.93674900000002, -77.10840549999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_e40889c5b8ba4e3a90ad4fb1b2a6f236.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sibley Memorial Hospital<br><b>Addr:</b> 5255 Loughboro Rd Nw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20016<br><b>Distance discrepancy:</b> 91 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cffa56986b8c499fba80b71257a8e8f3 = L.circleMarker(
+                [38.8359392999999, -76.9849936],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_cffa56986b8c499fba80b71257a8e8f3.bindTooltip(
+                `<div>
+                     <b>Name:</b> United Medical Center<br><b>Addr:</b> 1310 Southern Ave Se<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20032<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0e38a746037464784b6efa1f89b886c = L.circleMarker(
+                [38.9290664, -77.01452950000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_a0e38a746037464784b6efa1f89b886c.bindTooltip(
+                `<div>
+                     <b>Name:</b> MedStar Washington Hospital Center<br><b>Addr:</b> 110 Irving St NW<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> 62 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3886bbc2f7cd460583850801d352b225 = L.circleMarker(
+                [38.89312749999999, -76.99565080000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_3886bbc2f7cd460583850801d352b225.bindTooltip(
+                `<div>
+                     <b>Name:</b> BridgePoint Hospital Capitol Hill (FKA Specialty Hospital of Washington - Capital Hill)<br><b>Addr:</b> 223 7th St Ne<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20002<br><b>Distance discrepancy:</b> 29 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29cdff389b3d497ebc69557d891907b0 = L.circleMarker(
+                [38.82460790000005, -77.0134854],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_29cdff389b3d497ebc69557d891907b0.bindTooltip(
+                `<div>
+                     <b>Name:</b> BridgePoint Hospital National Harbor (FKA Specialty Hospital of Washington - Hadley BridgePoint Hospital - Hadley)<br><b>Addr:</b> 4601 Martin Luther King Jr Ave Sw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20032<br><b>Distance discrepancy:</b> 70 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 69
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f3ab0330d1064536a4d45dbaf4599701 = L.circleMarker(
+                [38.93050900000001, -77.0133786],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_f3ab0330d1064536a4d45dbaf4599701.bindTooltip(
+                `<div>
+                     <b>Name:</b> MedStar National Rehabilitation Hospital<br><b>Addr:</b> 102 Irving St NW<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> 8 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e1a8490863a44ada475759aca018498 = L.circleMarker(
+                [38.844926200000025, -76.99173140000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_3e1a8490863a44ada475759aca018498.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Elizabeths Hospital<br><b>Addr:</b> 1100 Alabama Ave Se<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20032<br><b>Distance discrepancy:</b> 113 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30ba0cef57d94e6e9fb5ded85c4472fd = L.circleMarker(
+                [38.94393389999998, -77.07774450000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_e5d7de5ddddc4ff9be1997684176d78b);
+        
+    
+            circle_marker_30ba0cef57d94e6e9fb5ded85c4472fd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Psychiatric Institute of Washington<br><b>Addr:</b> 4228 Wisconsin Ave Nw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20016<br><b>Distance discrepancy:</b> 27 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_4e42ac3bfb194cdf952076018c55a571 = L.featureGroup(
+                {}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var circle_marker_a4df4964eca74fd28f938aa97d87769c = L.circleMarker(
+                [38.94376379999995, -76.99157310000001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_4e42ac3bfb194cdf952076018c55a571);
+        
+    
+            circle_marker_a4df4964eca74fd28f938aa97d87769c.bindTooltip(
+                `<div>
+                     <b>Name:</b> PROVIDENCE HOSPITAL<br><b>Addr:</b> 1150 VARNUM STREET  NE<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20017-2104<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_298b028acc5a4e4a9e4778268f4f82a0 = L.circleMarker(
+                [38.92655929999999, -77.0138728],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_4e42ac3bfb194cdf952076018c55a571);
+        
+    
+            circle_marker_298b028acc5a4e4a9e4778268f4f82a0.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHILDRENS HOSPITAL<br><b>Addr:</b> 111 MICHIGAN AVE  NW<br><b>State:</b> DC<br><b>County:</b> DC<br><b>City:</b> WASHINGTON<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_8f61419d80d54c3ea6d61169d2fa7234 = L.featureGroup(
+                {}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var circle_marker_3435cbffb6e24470b9b6d2eb2aa579e4 = L.circleMarker(
+                [38.92894080000002, -77.00988960000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8f61419d80d54c3ea6d61169d2fa7234);
+        
+    
+            circle_marker_3435cbffb6e24470b9b6d2eb2aa579e4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Washington DC VA Medical Center<br><b>Addr:</b> 50 Irving St Nw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20422<br><b>Distance discrepancy:</b> 288 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b362ab0433d4a2891abaf1d4bc63427 = L.circleMarker(
+                [38.92655929999999, -77.0138728],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8f61419d80d54c3ea6d61169d2fa7234);
+        
+    
+            circle_marker_4b362ab0433d4a2891abaf1d4bc63427.bindTooltip(
+                `<div>
+                     <b>Name:</b> Childrens National Medical Center (AKA Childrens National Health System)<br><b>Addr:</b> 111 Michigan Ave Nw<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20010<br><b>Distance discrepancy:</b> 130 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_21191f438e7d4b828e5d971959e64660 = L.circleMarker(
+                [38.9410221, -76.98124640000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_8f61419d80d54c3ea6d61169d2fa7234);
+        
+    
+            circle_marker_21191f438e7d4b828e5d971959e64660.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hospital for Sick Children Pediatric Center (AKA HSC Pediatric Center)<br><b>Addr:</b> 1731 Bunker Hill Rd Ne<br><b>State:</b> DC<br><b>County:</b> District of Columbia<br><b>City:</b> Washington<br><b>Zip Code:</b> 20017<br><b>Distance discrepancy:</b> 43 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_380e2cb40ada46d5a478251aba8b7f5e = L.featureGroup(
+                {}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+    
+            var poly_line_23d9b5597c0b4fe3824f647571de134c = L.polyline(
+                [[38.901305, -77.05064599999999], [38.901305, -77.05064599999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_0ab76b766f0d4650881499e93c6f7dd6 = L.polyline(
+                [[38.917789100000014, -77.0205342], [38.917789100000014, -77.0205342]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_4e0c5d27905a408eb98ff8e5c58e834b = L.polyline(
+                [[38.91145319999996, -77.07527470000001], [38.91145319999996, -77.07527470000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_3f863ee4e2cb4de0b2102710a1d1badb = L.polyline(
+                [[38.93674900000002, -77.10840549999999], [38.93674900000002, -77.10840549999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_6af8b0bba0a34aaa95a231e874e03ad7 = L.polyline(
+                [[38.83593929999994, -76.9849936], [38.8359392999999, -76.9849936]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_33640f9c623a4159bf0e80e4a77acc0d = L.polyline(
+                [[38.929066400000025, -77.0145295], [38.9290664, -77.01452950000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_6c5e66e729ab4a5fb5060a5b86a86c79 = L.polyline(
+                [[38.892388399999994, -76.99534939999998], [38.89312749999999, -76.99565080000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_99b3ffed51814ed7bef90b256cf8d285 = L.polyline(
+                [[38.8250319, -77.01290870000001], [38.82460790000005, -77.0134854]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_d9ae655171d0471482f43697a63ba17d = L.polyline(
+                [[38.93050900000001, -77.0133786], [38.93050900000001, -77.0133786]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_292b293f9faf493ca4c5b6c9dcd84911 = L.polyline(
+                [[38.844926200000025, -76.99173140000002], [38.844926200000025, -76.99173140000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var poly_line_71c5cf863551499ab81cba2f463b0b23 = L.polyline(
+                [[38.94393389999998, -77.07774450000001], [38.94393389999998, -77.07774450000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_380e2cb40ada46d5a478251aba8b7f5e);
+        
+    
+            var layer_control_24c97be19fa341169fa61ea21f4273ca = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c424109785be41f5a6b94d4bd9053440,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_8210b47017094e40aeca3b635341b2e9,
+                    "DH - matched" : feature_group_e5d7de5ddddc4ff9be1997684176d78b,
+                    "HCRIS - unmatched" : feature_group_4e42ac3bfb194cdf952076018c55a571,
+                    "DH - unmatched" : feature_group_8f61419d80d54c3ea6d61169d2fa7234,
+                    "connections" : feature_group_380e2cb40ada46d5a478251aba8b7f5e,
+                },
+            };
+            L.control.layers(
+                layer_control_24c97be19fa341169fa61ea21f4273ca.base_layers,
+                layer_control_24c97be19fa341169fa61ea21f4273ca.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_60ad2d195b254be9a3de5f22ffcd3e6d);
+        
+</script>

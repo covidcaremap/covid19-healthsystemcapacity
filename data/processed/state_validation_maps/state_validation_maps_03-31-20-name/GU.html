@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48c066d23cef42a4a8ab2bd0821d3157 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_48c066d23cef42a4a8ab2bd0821d3157" ></div>
+        
+</body>
+<script>    
+    
+            var map_48c066d23cef42a4a8ab2bd0821d3157 = L.map(
+                "map_48c066d23cef42a4a8ab2bd0821d3157",
+                {
+                    center: [13.51242695, 144.79725345],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fda5f76468ef4b2181382c899af7c91e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var feature_group_aef908ad98a64afc8edc8cf1f6da97bf = L.featureGroup(
+                {}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var circle_marker_b6963e8162e144b19d1a5f05fdc8b3aa = L.circleMarker(
+                [13.50485389999998, 144.77450690000003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_aef908ad98a64afc8edc8cf1f6da97bf);
+        
+    
+            circle_marker_b6963e8162e144b19d1a5f05fdc8b3aa.bindTooltip(
+                `<div>
+                     <b>Name:</b> GUAM MEMORIAL HOSPITAL<br><b>Addr:</b> 850 GOVERNOR CARLOS G CAMACHO RD<br><b>State:</b> GU<br><b>County:</b> None<br><b>City:</b> OKA  TAMUNING<br><b>Zip Code:</b> 96911<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_317ec05bc3844eea9d7e94fba9a8248e = L.circleMarker(
+                [13.51999999999999, 144.81999999999994],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_aef908ad98a64afc8edc8cf1f6da97bf);
+        
+    
+            circle_marker_317ec05bc3844eea9d7e94fba9a8248e.bindTooltip(
+                `<div>
+                     <b>Name:</b> GUAM REGIONAL MEDICAL CITY<br><b>Addr:</b> 133 ROUTE 3<br><b>State:</b> GU<br><b>County:</b> None<br><b>City:</b> DEDEDO<br><b>Zip Code:</b> 96929<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:mapbox<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 628
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_f945428b0c0c4a35828c52fc7f7aa94a = L.featureGroup(
+                {}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var circle_marker_8ac2149526804eab8434f7b0a607d048 = L.circleMarker(
+                [13.50485389999998, 144.7745069000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f945428b0c0c4a35828c52fc7f7aa94a);
+        
+    
+            circle_marker_8ac2149526804eab8434f7b0a607d048.bindTooltip(
+                `<div>
+                     <b>Name:</b> Guam Memorial Hospital Authority<br><b>Addr:</b> 850 Gov Carlos G Camacho Rd<br><b>State:</b> GU<br><b>County:</b> None<br><b>City:</b> Tamuning<br><b>Zip Code:</b> 96913<br><b>Distance discrepancy:</b> 849 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bad6edfde62b49f2b8d8d7c2fd3bd1bd = L.circleMarker(
+                [13.524836199999974, 144.82326530000006],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f945428b0c0c4a35828c52fc7f7aa94a);
+        
+    
+            circle_marker_bad6edfde62b49f2b8d8d7c2fd3bd1bd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Guam Regional Medical City<br><b>Addr:</b> 133 Route 3<br><b>State:</b> GU<br><b>County:</b> None<br><b>City:</b> Dededo<br><b>Zip Code:</b> 96929<br><b>Distance discrepancy:</b> 8005 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 628
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_796589095d4a4720ab60bd9bdade9a1d = L.featureGroup(
+                {}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var feature_group_f94f901a934642cb97a6ae19e840c5bf = L.featureGroup(
+                {}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var circle_marker_2fff653ff2774b0f9f91ad229ff3a2c0 = L.circleMarker(
+                [13.475210300000015, 144.73661180000005],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f94f901a934642cb97a6ae19e840c5bf);
+        
+    
+            circle_marker_2fff653ff2774b0f9f91ad229ff3a2c0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Naval Hospital Guam<br><b>Addr:</b> Bldg #50 Farenholt Ave<br><b>State:</b> GU<br><b>County:</b> None<br><b>City:</b> Agana Heights<br><b>Zip Code:</b> 96910<br><b>Distance discrepancy:</b> 189 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_188f2db7ad454c41b88089d54f135a34 = L.featureGroup(
+                {}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+    
+            var poly_line_39bae787c48341c49ad26f727427300d = L.polyline(
+                [[13.50485389999998, 144.77450690000003], [13.50485389999998, 144.7745069000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_188f2db7ad454c41b88089d54f135a34);
+        
+    
+            var poly_line_abce63f65ce241c5a9ad65cb67a5efc7 = L.polyline(
+                [[13.51999999999999, 144.81999999999994], [13.524836199999974, 144.82326530000006]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_188f2db7ad454c41b88089d54f135a34);
+        
+    
+            var layer_control_7e78684f05bb474c803543f4ebbf4d0f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fda5f76468ef4b2181382c899af7c91e,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_aef908ad98a64afc8edc8cf1f6da97bf,
+                    "DH - matched" : feature_group_f945428b0c0c4a35828c52fc7f7aa94a,
+                    "HCRIS - unmatched" : feature_group_796589095d4a4720ab60bd9bdade9a1d,
+                    "DH - unmatched" : feature_group_f94f901a934642cb97a6ae19e840c5bf,
+                    "connections" : feature_group_188f2db7ad454c41b88089d54f135a34,
+                },
+            };
+            L.control.layers(
+                layer_control_7e78684f05bb474c803543f4ebbf4d0f.base_layers,
+                layer_control_7e78684f05bb474c803543f4ebbf4d0f.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_48c066d23cef42a4a8ab2bd0821d3157);
+        
+</script>

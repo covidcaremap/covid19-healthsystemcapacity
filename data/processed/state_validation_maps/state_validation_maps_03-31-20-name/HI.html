@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_571925e0a0504b89b1bd5c11d8b8ba6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_571925e0a0504b89b1bd5c11d8b8ba6a" ></div>
+        
+</body>
+<script>    
+    
+            var map_571925e0a0504b89b1bd5c11d8b8ba6a = L.map(
+                "map_571925e0a0504b89b1bd5c11d8b8ba6a",
+                {
+                    center: [20.64348325, -157.39166335],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d2c89e97ed64eef8093e1abaaa4ff62 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var feature_group_7bffeed3d5f04003a07421cbfffc618e = L.featureGroup(
+                {}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var circle_marker_3bdc8baa7cd64275b1889b70e6d21982 = L.circleMarker(
+                [21.308548099999975, -157.8538531],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_3bdc8baa7cd64275b1889b70e6d21982.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE QUEENS MEDICAL CENTER<br><b>Addr:</b> 1301 PUNCHBOWL STREET<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96813<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_332756fbf17343a4956c5c0af05789a6 = L.circleMarker(
+                [20.884667299999993, -156.48937430000004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_332756fbf17343a4956c5c0af05789a6.bindTooltip(
+                `<div>
+                     <b>Name:</b> MAUI MEMORIAL MEDICAL CENTER<br><b>Addr:</b> 221 MAHALANI STREET<br><b>State:</b> HI<br><b>County:</b> MAUI<br><b>City:</b> WAILUKU<br><b>Zip Code:</b> 96793<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_076ad7d9375d4382adf970a5c38172ee = L.circleMarker(
+                [21.498712100000017, -158.0262253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_076ad7d9375d4382adf970a5c38172ee.bindTooltip(
+                `<div>
+                     <b>Name:</b> WAHIAWA GENERAL HOSPITAL<br><b>Addr:</b> 128 LEHUA STREET<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> WAHIAWA<br><b>Zip Code:</b> 96786<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d56d90244b994b56af05343565a12304 = L.circleMarker(
+                [19.717913500000005, -155.1125152],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_d56d90244b994b56af05343565a12304.bindTooltip(
+                `<div>
+                     <b>Name:</b> HILO MEDICAL CENTER<br><b>Addr:</b> 1190 WAIANUENUE AVENUE<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> HILO<br><b>Zip Code:</b> 96720<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55b686f224a54570bddc650604dc59b0 = L.circleMarker(
+                [21.38050180000001, -157.7575914],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_55b686f224a54570bddc650604dc59b0.bindTooltip(
+                `<div>
+                     <b>Name:</b> ADVENTIST HEALTH CASTLE<br><b>Addr:</b> 640 ULUKAHIKI ST<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> KAILUA<br><b>Zip Code:</b> 96734<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_51e5750f44ee46a8b320e8fc3a2cea7f = L.circleMarker(
+                [21.32179479999999, -157.8570751],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_51e5750f44ee46a8b320e8fc3a2cea7f.bindTooltip(
+                `<div>
+                     <b>Name:</b> KUAKINI MEDICAL CENTER<br><b>Addr:</b> 347 N. KUAKINI STREET<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96717<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cff1751b655d4a99bf4e105382a784bc = L.circleMarker(
+                [21.363254400000045, -157.9000128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_cff1751b655d4a99bf4e105382a784bc.bindTooltip(
+                `<div>
+                     <b>Name:</b> KFH-HAWAII<br><b>Addr:</b> 3288 MOANALUA ROAD<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96819-1495<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d4d38d50aae24bb9b2d519fb52e86ba1 = L.circleMarker(
+                [21.98557630000002, -159.3657077],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_d4d38d50aae24bb9b2d519fb52e86ba1.bindTooltip(
+                `<div>
+                     <b>Name:</b> WILCOX MEMORIAL HOSPTIAL<br><b>Addr:</b> 3-3420 KUHIO HIGHWAY<br><b>State:</b> HI<br><b>County:</b> KAUAI<br><b>City:</b> LIHUE<br><b>Zip Code:</b> 96766<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6dbee11d486e430aac849a354d6c1c1f = L.circleMarker(
+                [19.52008909999999, -155.9174725],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_6dbee11d486e430aac849a354d6c1c1f.bindTooltip(
+                `<div>
+                     <b>Name:</b> KONA COMMUNITY HOSPITAL<br><b>Addr:</b> 79-1019 HAUKAPILA STREET<br><b>State:</b> HI<br><b>County:</b> USA<br><b>City:</b> KEALAKEKUA<br><b>Zip Code:</b> 96750<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a358184eb65c47b6b7cfc696acdbe4c1 = L.circleMarker(
+                [21.302840099999997, -157.85086500000003],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_a358184eb65c47b6b7cfc696acdbe4c1.bindTooltip(
+                `<div>
+                     <b>Name:</b> STRAUB CLINIC & HOSPITAL<br><b>Addr:</b> 888 S. KING STREET<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96813<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef6dfa4a6a6a4be0aacef39d91ca6049 = L.circleMarker(
+                [21.38348410000001, -157.9384211],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_ef6dfa4a6a6a4be0aacef39d91ca6049.bindTooltip(
+                `<div>
+                     <b>Name:</b> PALI MOMI MEDICAL CENTER<br><b>Addr:</b> 98-1079 MOANALUA ROAD<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> AIEA<br><b>Zip Code:</b> 96701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e99b651272a404abf53a9eed6dc5f30 = L.circleMarker(
+                [20.022531699999984, -155.6646208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_4e99b651272a404abf53a9eed6dc5f30.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTH HAWAII COMMUNITY HOSPITAL<br><b>Addr:</b> 67-1125 MAMALAHOA HIGHWAY<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> KAMUELAA<br><b>Zip Code:</b> 96743<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a5c277a00cbb44f2a8293074d95707d3 = L.circleMarker(
+                [21.960671400000006, -159.6708115],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_a5c277a00cbb44f2a8293074d95707d3.bindTooltip(
+                `<div>
+                     <b>Name:</b> KAUAI VETERANS MEMORIAL HOSPITAL<br><b>Addr:</b> 4643 WAIMEA CANYON ROAD<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> WAIMEA KAUAI<br><b>Zip Code:</b> 96796<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c03c181460a459fb6e23ce8c6423660 = L.circleMarker(
+                [19.199622099999992, -155.47207],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_0c03c181460a459fb6e23ce8c6423660.bindTooltip(
+                `<div>
+                     <b>Name:</b> KAU HOSPITAL<br><b>Addr:</b> 1 KAMANI STREET<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> PAHALA<br><b>Zip Code:</b> 96777<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2be03429515b4a6b804a4dcd164d720b = L.circleMarker(
+                [20.232303300000005, -155.7966313],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_2be03429515b4a6b804a4dcd164d720b.bindTooltip(
+                `<div>
+                     <b>Name:</b> KOHALA HOSPITAL<br><b>Addr:</b> 54-383 OLD HOSPITAL ROAD<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> KAPAAU<br><b>Zip Code:</b> 96755<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42b48cb06ab0457d9ed0a79e998868a3 = L.circleMarker(
+                [21.0939536, -157.0175847],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_42b48cb06ab0457d9ed0a79e998868a3.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOLOKAI GENERAL HOSPITAL<br><b>Addr:</b> 280 HOME OLU<br><b>State:</b> HI<br><b>County:</b> MAUI<br><b>City:</b> KAUNAKAKAI<br><b>Zip Code:</b> 96748<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ade578f312e413ea0d0e6c07ea22e12 = L.circleMarker(
+                [21.676503200000035, -157.95433659999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_7ade578f312e413ea0d0e6c07ea22e12.bindTooltip(
+                `<div>
+                     <b>Name:</b> KAHUKU MEDICAL CENTER<br><b>Addr:</b> 56-117 PUALALEA ST.<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> KAHUKU<br><b>Zip Code:</b> 96731<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34b4d0bb527b42438dc78c509f6813fe = L.circleMarker(
+                [20.825887700000038, -156.9171559],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_34b4d0bb527b42438dc78c509f6813fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> LANAI COMMUNITY HOSPITAL<br><b>Addr:</b> 628 7TH STREET<br><b>State:</b> HI<br><b>County:</b> MAUI<br><b>City:</b> LANAI<br><b>Zip Code:</b> 96763<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a005a9dd61f143a589c133b2eb434229 = L.circleMarker(
+                [22.08734439999999, -159.3127103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_a005a9dd61f143a589c133b2eb434229.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAMUEL MAHELONA MEMORIAL HOSPITAL<br><b>Addr:</b> 4800 KAWAIHAU ROAD<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> KAPAA  KAUAI<br><b>Zip Code:</b> 96746<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_021fa5d3a4214189b21f4ccd25af9877 = L.circleMarker(
+                [20.076273800000028, -155.4697082],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_021fa5d3a4214189b21f4ccd25af9877.bindTooltip(
+                `<div>
+                     <b>Name:</b> HALE HOOLA HAMAKUA<br><b>Addr:</b> 45 - 547 PLUMERIA STREET<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> HONOKAA<br><b>Zip Code:</b> 96727<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ff0acc67fab4708abe33413c4101b69 = L.circleMarker(
+                [20.701272100000036, -156.357225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_6ff0acc67fab4708abe33413c4101b69.bindTooltip(
+                `<div>
+                     <b>Name:</b> KULA HOSPITAL<br><b>Addr:</b> 100 KEOKEA PLACE<br><b>State:</b> HI<br><b>County:</b> MAUI<br><b>City:</b> KULA<br><b>Zip Code:</b> 96790<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a08bf39134ba4a6e8f9650921f0a5c90 = L.circleMarker(
+                [21.273588699999973, -157.8013623],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_a08bf39134ba4a6e8f9650921f0a5c90.bindTooltip(
+                `<div>
+                     <b>Name:</b> LEAHI HOSPITAL<br><b>Addr:</b> 3675 KILAUEA AVENUE<br><b>State:</b> HI<br><b>County:</b> HAWAII<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96816<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_498758e4bedb4da6829d616645a67fca = L.circleMarker(
+                [21.32138690000002, -157.8545567],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_498758e4bedb4da6829d616645a67fca.bindTooltip(
+                `<div>
+                     <b>Name:</b> REHABILITATION HOSPITAL OF THE PACIF<br><b>Addr:</b> 226 N. KUAKINI STREET<br><b>State:</b> HI<br><b>County:</b> None<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96817-2421<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11d882d7a6574614b28345b2524966a8 = L.circleMarker(
+                [21.299842799999997, -157.8334591],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_11d882d7a6574614b28345b2524966a8.bindTooltip(
+                `<div>
+                     <b>Name:</b> KAPIOLANI MED CTR FOR WOMEN & CHILDR<br><b>Addr:</b> 1319 PUNAHOU STREET<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96826<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b14f8c5eb6b549f5ae22a8a6165e1dc0 = L.circleMarker(
+                [21.300561000000005, -157.835304],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_b14f8c5eb6b549f5ae22a8a6165e1dc0.bindTooltip(
+                `<div>
+                     <b>Name:</b> SHRINERS HOSPITAL FOR CHILDREN<br><b>Addr:</b> 1310 PUNAHOU STREET<br><b>State:</b> HI<br><b>County:</b> None<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96826<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a59489f1ec3490780451ec07df37767 = L.circleMarker(
+                [21.373596700000004, -158.0323732],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_7bffeed3d5f04003a07421cbfffc618e);
+        
+    
+            circle_marker_0a59489f1ec3490780451ec07df37767.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUTTER PACIFIC KAHI MOHALA HOSP<br><b>Addr:</b> 91-2301 FORT WEAVER ROAD<br><b>State:</b> HI<br><b>County:</b> HONOLULU<br><b>City:</b> EWA BEACH<br><b>Zip Code:</b> 96706<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_756ede9d2ece44f4b3e39b981d68656f = L.featureGroup(
+                {}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var circle_marker_31d3e376dd3b4066bdb3197a0265d362 = L.circleMarker(
+                [21.308548099999964, -157.8538531],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_31d3e376dd3b4066bdb3197a0265d362.bindTooltip(
+                `<div>
+                     <b>Name:</b> The Queens Medical Center<br><b>Addr:</b> 1301 Punchbowl St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96813<br><b>Distance discrepancy:</b> 9 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b2848bac739415c97643cd81d339a0a = L.circleMarker(
+                [20.8846673, -156.48937430000004],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_0b2848bac739415c97643cd81d339a0a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Maui Memorial Medical Center<br><b>Addr:</b> 221 Mahalani St<br><b>State:</b> HI<br><b>County:</b> Maui<br><b>City:</b> Wailuku<br><b>Zip Code:</b> 96793<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9edbc6a738f74f5c87a332cdfd917e70 = L.circleMarker(
+                [21.49871209999999, -158.0262253],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_9edbc6a738f74f5c87a332cdfd917e70.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wahiawa General Hospital<br><b>Addr:</b> 128 Lehua St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Wahiawa<br><b>Zip Code:</b> 96786<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e39bb5ea057b4f2fb36eaa9bd6f4609e = L.circleMarker(
+                [19.717913500000005, -155.1125152],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_e39bb5ea057b4f2fb36eaa9bd6f4609e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hilo Medical Center<br><b>Addr:</b> 1190 Waianuenue Ave<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Hilo<br><b>Zip Code:</b> 96720<br><b>Distance discrepancy:</b> 47 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd1b6bc7fc1342ac89857fb9ae423776 = L.circleMarker(
+                [21.38072079999998, -157.7578474],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_dd1b6bc7fc1342ac89857fb9ae423776.bindTooltip(
+                `<div>
+                     <b>Name:</b> Adventist Health Castle (FKA Castle Medical Center)<br><b>Addr:</b> 640 Ulukahiki St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Kailua<br><b>Zip Code:</b> 96734<br><b>Distance discrepancy:</b> 18 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96cb6fc87d0b406789a934050c647172 = L.circleMarker(
+                [21.321794799999992, -157.8570751],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_96cb6fc87d0b406789a934050c647172.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kuakini Medical Center (AKA Kuakini Health System)<br><b>Addr:</b> 347 N Kuakini St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96817<br><b>Distance discrepancy:</b> 16 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43a06f496b6a43e7bc5034ca1c19157f = L.circleMarker(
+                [21.36325440000007, -157.9000128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_43a06f496b6a43e7bc5034ca1c19157f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kaiser Permanente Moanalua Medical Center<br><b>Addr:</b> 3288 Moanalua Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96819<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_629d76285e0d4b989fbc368a36abe8cb = L.circleMarker(
+                [21.985576300000044, -159.3657077],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_629d76285e0d4b989fbc368a36abe8cb.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wilcox Medical Center<br><b>Addr:</b> 3-3420 Kuhio Hwy<br><b>State:</b> HI<br><b>County:</b> Kauai<br><b>City:</b> Lihue<br><b>Zip Code:</b> 96766<br><b>Distance discrepancy:</b> 137 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83dc5cfd953b4085a8bd11ef06a7ac4f = L.circleMarker(
+                [19.52008909999999, -155.9174725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_83dc5cfd953b4085a8bd11ef06a7ac4f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kona Community Hospital<br><b>Addr:</b> 79-1019 Haukapila St<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Kealakekua<br><b>Zip Code:</b> 96750<br><b>Distance discrepancy:</b> 19 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1f3629d10884995ab1ef97b44676188 = L.circleMarker(
+                [21.302840099999997, -157.85086500000003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_a1f3629d10884995ab1ef97b44676188.bindTooltip(
+                `<div>
+                     <b>Name:</b> Straub Medical Center<br><b>Addr:</b> 888 S King St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96813<br><b>Distance discrepancy:</b> 54 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c789682d071d430e973a3f651a244c7b = L.circleMarker(
+                [21.38348410000001, -157.9384211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_c789682d071d430e973a3f651a244c7b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pali Momi Medical Center<br><b>Addr:</b> 98-1079 Moanalua Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Aiea<br><b>Zip Code:</b> 96701<br><b>Distance discrepancy:</b> 19 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_79437b97f7f3459eb40fd7cedbac6d4a = L.circleMarker(
+                [20.022531699999945, -155.66462079999997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_79437b97f7f3459eb40fd7cedbac6d4a.bindTooltip(
+                `<div>
+                     <b>Name:</b> North Hawaii Community Hospital<br><b>Addr:</b> 67-1125 Mamalahoa Hwy<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Kamuela<br><b>Zip Code:</b> 96743<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5409625110dd4d0bbd25c414f1fc59eb = L.circleMarker(
+                [21.960671400000006, -159.6708115],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_5409625110dd4d0bbd25c414f1fc59eb.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kauai Veterans Memorial Hospital (AKA West Kauai Medical Center)<br><b>Addr:</b> 4643 Waimea Canyon Dr<br><b>State:</b> HI<br><b>County:</b> Kauai<br><b>City:</b> Waimea<br><b>Zip Code:</b> 96796<br><b>Distance discrepancy:</b> 46 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e6d8decd264144d2b2a767744eca0868 = L.circleMarker(
+                [19.199622099999992, -155.47207],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_e6d8decd264144d2b2a767744eca0868.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kau Hospital<br><b>Addr:</b> 1 Kamani St<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Pahale<br><b>Zip Code:</b> 96777<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_badadb91825944059fec2ce3b7faf144 = L.circleMarker(
+                [20.232303300000005, -155.7966313],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_badadb91825944059fec2ce3b7faf144.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kohala Hospital<br><b>Addr:</b> 54-383 Hospital Rd<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Kapaau<br><b>Zip Code:</b> 96755<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c15a164703784959b0d44837666b922f = L.circleMarker(
+                [21.0939536, -157.0175847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_c15a164703784959b0d44837666b922f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Molokai General Hospital<br><b>Addr:</b> 280 Home Olu Pl<br><b>State:</b> HI<br><b>County:</b> Maui<br><b>City:</b> Kaunakakai<br><b>Zip Code:</b> 96748<br><b>Distance discrepancy:</b> 15872 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_73037a830fbe4d1a898dfde65e1a4801 = L.circleMarker(
+                [21.676602599999995, -157.9542217],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_73037a830fbe4d1a898dfde65e1a4801.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kahuku Medical Center<br><b>Addr:</b> 56-117 Pualalea St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Kahuku<br><b>Zip Code:</b> 96731<br><b>Distance discrepancy:</b> 27 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c4f7b94503134c21a3ac16e659972981 = L.circleMarker(
+                [20.82588770000004, -156.9171559],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_c4f7b94503134c21a3ac16e659972981.bindTooltip(
+                `<div>
+                     <b>Name:</b> Lanai Community Hospital<br><b>Addr:</b> 628 7th St<br><b>State:</b> HI<br><b>County:</b> Maui<br><b>City:</b> Lanai City<br><b>Zip Code:</b> 96763<br><b>Distance discrepancy:</b> 1567 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f73585a5a6ac4b5eb9a2d1a41d79b3b4 = L.circleMarker(
+                [22.08734439999999, -159.3127103],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_f73585a5a6ac4b5eb9a2d1a41d79b3b4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Samuel Mahelona Memorial Hospital<br><b>Addr:</b> 4800 Kawaihau Rd<br><b>State:</b> HI<br><b>County:</b> Kauai<br><b>City:</b> Kapaa<br><b>Zip Code:</b> 96746<br><b>Distance discrepancy:</b> 168 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e68f98e9242f4b13863525ced6729ded = L.circleMarker(
+                [20.07627380000002, -155.4697082],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_e68f98e9242f4b13863525ced6729ded.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hale Ho Ola Hamakua (FKA Honoka a Hospital)<br><b>Addr:</b> 45-547 Plumeria St<br><b>State:</b> HI<br><b>County:</b> Hawaii<br><b>City:</b> Honokaa<br><b>Zip Code:</b> 96727<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2538b3e2db2248cabcfdbe1136d3061c = L.circleMarker(
+                [20.701272100000043, -156.357225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_2538b3e2db2248cabcfdbe1136d3061c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kula Hospital<br><b>Addr:</b> 100 Keokea Pl<br><b>State:</b> HI<br><b>County:</b> Maui<br><b>City:</b> Kula<br><b>Zip Code:</b> 96790<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_515ba375f2b640dfb13bf9d5db3d4262 = L.circleMarker(
+                [21.27358869999995, -157.8013623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_515ba375f2b640dfb13bf9d5db3d4262.bindTooltip(
+                `<div>
+                     <b>Name:</b> Leahi Hospital<br><b>Addr:</b> 3675 Kilauea Ave<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96816<br><b>Distance discrepancy:</b> 20 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e359f15c8bd14b479f6c07e80246c0ab = L.circleMarker(
+                [21.32138690000003, -157.8545567],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_e359f15c8bd14b479f6c07e80246c0ab.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rehabilitation Hospital of the Pacific<br><b>Addr:</b> 226 N Kuakini St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96817<br><b>Distance discrepancy:</b> 21 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f323e7ad514493d9077ca682bec7ef3 = L.circleMarker(
+                [21.299842799999997, -157.8334591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_2f323e7ad514493d9077ca682bec7ef3.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kapiolani Medical Center for Women & Children<br><b>Addr:</b> 1319 Punahou St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96826<br><b>Distance discrepancy:</b> 33 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_370936fa76ca4c488872789123f1e4ce = L.circleMarker(
+                [21.300561000000005, -157.835304],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_370936fa76ca4c488872789123f1e4ce.bindTooltip(
+                `<div>
+                     <b>Name:</b> Shriners Hospitals for Children - Honolulu<br><b>Addr:</b> 1310 Punahou St<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96826<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c0fa1c0218374b2a837a107e4052ac1b = L.circleMarker(
+                [21.373596700000004, -158.0323732],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_756ede9d2ece44f4b3e39b981d68656f);
+        
+    
+            circle_marker_c0fa1c0218374b2a837a107e4052ac1b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kahi Mohala<br><b>Addr:</b> 91-2301 Old Fort Weaver Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Ewa Beach<br><b>Zip Code:</b> 96706<br><b>Distance discrepancy:</b> 1095 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_827379aad483413b8578296a210cf5d0 = L.featureGroup(
+                {}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var circle_marker_b117e93f7a6045f685ea10e9761b619d = L.circleMarker(
+                [21.3722222, -158.0269444],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_827379aad483413b8578296a210cf5d0);
+        
+    
+            circle_marker_b117e93f7a6045f685ea10e9761b619d.bindTooltip(
+                `<div>
+                     <b>Name:</b> HAWAII MEDICAL CENTER - WEST<br><b>Addr:</b> 91-2141 FORT WEAVER ROAD<br><b>State:</b> HI<br><b>County:</b> OAHU<br><b>City:</b> EWA BEACH<br><b>Zip Code:</b> 96706<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c3edb889ccba4d3d9ea3c678caf631e9 = L.circleMarker(
+                [21.3287524, -157.85211590000003],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_827379aad483413b8578296a210cf5d0);
+        
+    
+            circle_marker_c3edb889ccba4d3d9ea3c678caf631e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> HAWAII MEDICAL CENTER - EAST<br><b>Addr:</b> 2330 LILIHA STREET<br><b>State:</b> HI<br><b>County:</b> OAHU<br><b>City:</b> HONOLULU<br><b>Zip Code:</b> 96817<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_c6ec59af0838446f9dd4233a10411d50 = L.featureGroup(
+                {}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var circle_marker_f0794783d59a414bab1b56b8b1247a9c = L.circleMarker(
+                [21.36124219999997, -157.8894113],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c6ec59af0838446f9dd4233a10411d50);
+        
+    
+            circle_marker_f0794783d59a414bab1b56b8b1247a9c.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Pacific Islands Health Care System - Spark M Matsunaga VA Medical Center<br><b>Addr:</b> 459 Patterson Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96819<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49b4337763ce47a6a30beeb7478c7b1f = L.circleMarker(
+                [21.405071099999994, -157.8157625],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c6ec59af0838446f9dd4233a10411d50);
+        
+    
+            circle_marker_49b4337763ce47a6a30beeb7478c7b1f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hawaii State Hospital<br><b>Addr:</b> 45-710 Keaahala Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Kaneohe<br><b>Zip Code:</b> 96744<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dccd05340fae465ba988ac6dbaf790a1 = L.circleMarker(
+                [21.359836799999997, -157.8900735],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c6ec59af0838446f9dd4233a10411d50);
+        
+    
+            circle_marker_dccd05340fae465ba988ac6dbaf790a1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Tripler Army Medical Center<br><b>Addr:</b> 1 Jarrett White Rd<br><b>State:</b> HI<br><b>County:</b> Honolulu<br><b>City:</b> Honolulu<br><b>Zip Code:</b> 96859<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_704ff3ba6c7341fbbed9524272bc047d = L.featureGroup(
+                {}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+    
+            var poly_line_257d4fee20f54be4afc3e1eeba4978e5 = L.polyline(
+                [[21.308548099999975, -157.8538531], [21.308548099999964, -157.8538531]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_408f3258aa2040b5bb1f18c74bc7f628 = L.polyline(
+                [[20.884667299999993, -156.48937430000004], [20.8846673, -156.48937430000004]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_e5f986b03eaf4d23ae2bba2fc8ef4fd1 = L.polyline(
+                [[21.498712100000017, -158.0262253], [21.49871209999999, -158.0262253]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_c6b26482bf114df880114086b13c3975 = L.polyline(
+                [[19.717913500000005, -155.1125152], [19.717913500000005, -155.1125152]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_fb0fc67298714914a452c9a70117fe39 = L.polyline(
+                [[21.38050180000001, -157.7575914], [21.38072079999998, -157.7578474]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_23c3958f5eb345b9abcdc3d41e6b8fef = L.polyline(
+                [[21.32179479999999, -157.8570751], [21.321794799999992, -157.8570751]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_489fdaad16794c3082936c5f5372bbd8 = L.polyline(
+                [[21.363254400000045, -157.9000128], [21.36325440000007, -157.9000128]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_21c4822be4e2403282fc96d9cf9c2cb6 = L.polyline(
+                [[21.98557630000002, -159.3657077], [21.985576300000044, -159.3657077]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_486d2bdf0cfe4d8b8a144b6735bc57f1 = L.polyline(
+                [[19.52008909999999, -155.9174725], [19.52008909999999, -155.9174725]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_fd0a7347f73b49c5b9855b05c7d5054d = L.polyline(
+                [[21.302840099999997, -157.85086500000003], [21.302840099999997, -157.85086500000003]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_e93bcf133ad54f4e9bcfa2765f19d643 = L.polyline(
+                [[21.38348410000001, -157.9384211], [21.38348410000001, -157.9384211]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_e48190a37aff4be7a7cdf720ebe6f782 = L.polyline(
+                [[20.022531699999984, -155.6646208], [20.022531699999945, -155.66462079999997]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_00be1630d9614a22b4d376ab5ea9220d = L.polyline(
+                [[21.960671400000006, -159.6708115], [21.960671400000006, -159.6708115]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_265121b208b24932a5c874c022d80620 = L.polyline(
+                [[19.199622099999992, -155.47207], [19.199622099999992, -155.47207]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_14645694bb924cd08df45e87d9603e43 = L.polyline(
+                [[20.232303300000005, -155.7966313], [20.232303300000005, -155.7966313]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_fd27a8894a7a4db48f2add6ebae6fdc9 = L.polyline(
+                [[21.0939536, -157.0175847], [21.0939536, -157.0175847]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_2b1541920ece47a88c4a4f22b9b0b626 = L.polyline(
+                [[21.676503200000035, -157.95433659999998], [21.676602599999995, -157.9542217]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_9792b2cb0cc343989e4a712bdf43a844 = L.polyline(
+                [[20.825887700000038, -156.9171559], [20.82588770000004, -156.9171559]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_5e182954b89d47a3a7eb6962a651459e = L.polyline(
+                [[22.08734439999999, -159.3127103], [22.08734439999999, -159.3127103]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_cf3497954aa842c69d6a698c4f5b350c = L.polyline(
+                [[20.076273800000028, -155.4697082], [20.07627380000002, -155.4697082]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_a259f52dff6f466aad3050d080f8fd14 = L.polyline(
+                [[20.701272100000036, -156.357225], [20.701272100000043, -156.357225]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_c397dea8d8ce4b9db4743c4f9b2d19d2 = L.polyline(
+                [[21.273588699999973, -157.8013623], [21.27358869999995, -157.8013623]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_dcb7ef87cf6c4200b42b9c96b567002f = L.polyline(
+                [[21.32138690000002, -157.8545567], [21.32138690000003, -157.8545567]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_7b131129242947b58b88a1a9774cec6b = L.polyline(
+                [[21.299842799999997, -157.8334591], [21.299842799999997, -157.8334591]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_159437d0e05c43cb98e16e1320790bc6 = L.polyline(
+                [[21.300561000000005, -157.835304], [21.300561000000005, -157.835304]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var poly_line_bf3d69f660bb4ca3b677384f9b64e8db = L.polyline(
+                [[21.373596700000004, -158.0323732], [21.373596700000004, -158.0323732]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_704ff3ba6c7341fbbed9524272bc047d);
+        
+    
+            var layer_control_1b4eee48815a4d8986fbe81fb961104f = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0d2c89e97ed64eef8093e1abaaa4ff62,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_7bffeed3d5f04003a07421cbfffc618e,
+                    "DH - matched" : feature_group_756ede9d2ece44f4b3e39b981d68656f,
+                    "HCRIS - unmatched" : feature_group_827379aad483413b8578296a210cf5d0,
+                    "DH - unmatched" : feature_group_c6ec59af0838446f9dd4233a10411d50,
+                    "connections" : feature_group_704ff3ba6c7341fbbed9524272bc047d,
+                },
+            };
+            L.control.layers(
+                layer_control_1b4eee48815a4d8986fbe81fb961104f.base_layers,
+                layer_control_1b4eee48815a4d8986fbe81fb961104f.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_571925e0a0504b89b1bd5c11d8b8ba6a);
+        
+</script>

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_577d3f735d6343b2942ac52d90683b60 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_577d3f735d6343b2942ac52d90683b60" ></div>
+        
+</body>
+<script>    
+    
+            var map_577d3f735d6343b2942ac52d90683b60 = L.map(
+                "map_577d3f735d6343b2942ac52d90683b60",
+                {
+                    center: [42.9838484, -107.58986635],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2b534f65ad34d2f943d2bd83c8846e3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5 = L.featureGroup(
+                {}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var circle_marker_0e5afc125ea14cfa9c624501c5fd63e5 = L.circleMarker(
+                [44.29052639999997, -105.51830750000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_0e5afc125ea14cfa9c624501c5fd63e5.bindTooltip(
+                `<div>
+                     <b>Name:</b> CAMPBELL COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 501 S BURMA  AVENUE<br><b>State:</b> WY<br><b>County:</b> CAMPBELL<br><b>City:</b> GILLETTE<br><b>Zip Code:</b> 82717-3011<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_500146a907ec44a093d3687a250720b4 = L.circleMarker(
+                [44.80859480000004, -106.9757547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_500146a907ec44a093d3687a250720b4.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEM. HOSPITAL OF SHERIDAN CTY.<br><b>Addr:</b> 1401 FIFTH ST.<br><b>State:</b> WY<br><b>County:</b> SHERIDAN<br><b>City:</b> SHERIDAN<br><b>Zip Code:</b> 82716<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8823a5c2cbbd450a85fa27853dec4c33 = L.circleMarker(
+                [43.03507040000005, -108.41901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_8823a5c2cbbd450a85fa27853dec4c33.bindTooltip(
+                `<div>
+                     <b>Name:</b> SAGE WEST HEALTH CARE<br><b>Addr:</b> 2100 WEST SUNSET DRIVE<br><b>State:</b> WY<br><b>County:</b> FREMONT<br><b>City:</b> RIVERTON<br><b>Zip Code:</b> 82501<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1b6e2f7f5564c1790c628de02545f4d = L.circleMarker(
+                [41.58492139999999, -109.235183],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_c1b6e2f7f5564c1790c628de02545f4d.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEM. HOSPT. OF SWEETWATER COUNTY<br><b>Addr:</b> 1200 COLLEGE DRIVE<br><b>State:</b> WY<br><b>County:</b> SWEETWATER<br><b>City:</b> ROCK SPRINGS<br><b>Zip Code:</b> 82901<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7690059255b43849b74a4910e0bac19 = L.circleMarker(
+                [42.848025699999965, -106.3084506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_b7690059255b43849b74a4910e0bac19.bindTooltip(
+                `<div>
+                     <b>Name:</b> WYOMING MEDICAL CENTER<br><b>Addr:</b> 1233 E. SECOND STREET<br><b>State:</b> WY<br><b>County:</b> NATRONA<br><b>City:</b> CASPER<br><b>Zip Code:</b> 82601<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_346e17bf99dd467f85feaa3f8f60deac = L.circleMarker(
+                [41.14101760000001, -104.8162535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_346e17bf99dd467f85feaa3f8f60deac.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHEYENNE REGIONAL MEDICAL CENTER<br><b>Addr:</b> 214 EAST 23RD STREET<br><b>State:</b> WY<br><b>County:</b> LARAMIE<br><b>City:</b> CHEYENNE<br><b>Zip Code:</b> 82001<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8831d7ad245d4790bac06a4e7d6fb6da = L.circleMarker(
+                [43.480789400000035, -110.7505177],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_8831d7ad245d4790bac06a4e7d6fb6da.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. JOHNS HOSPITAL<br><b>Addr:</b> 625 E. BROADWAY<br><b>State:</b> WY<br><b>County:</b> TETON<br><b>City:</b> JACKSON<br><b>Zip Code:</b> 83001<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e98cad07fe94eb999acfce7e8f8a8ef = L.circleMarker(
+                [41.31242819999996, -105.5559342],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_5e98cad07fe94eb999acfce7e8f8a8ef.bindTooltip(
+                `<div>
+                     <b>Name:</b> IVINSON MEMORIAL HOSPITAL<br><b>Addr:</b> 255 N. 30TH ST.<br><b>State:</b> WY<br><b>County:</b> ALBANY<br><b>City:</b> LARAMIE<br><b>Zip Code:</b> 82072<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d9af4e5ad3d43439cc76faab874f32d = L.circleMarker(
+                [41.243124399999964, -110.9906214],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_8d9af4e5ad3d43439cc76faab874f32d.bindTooltip(
+                `<div>
+                     <b>Name:</b> EVANSTON REGIONAL<br><b>Addr:</b> 190 ARROWHEAD DR<br><b>State:</b> WY<br><b>County:</b> UINTA<br><b>City:</b> EVANSTON<br><b>Zip Code:</b> 82930<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a11c187d109c467b9892314952034fcc = L.circleMarker(
+                [42.84168700000002, -106.230892],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_a11c187d109c467b9892314952034fcc.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUMMIT MEDICAL CENTER LLC<br><b>Addr:</b> 6350 E 2ND ST<br><b>State:</b> WY<br><b>County:</b> None<br><b>City:</b> CASPER<br><b>Zip Code:</b> 82609-4264<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7428b110fb8f4efd8fe6fc9fef476330 = L.circleMarker(
+                [41.60267289999999, -109.24689],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_7428b110fb8f4efd8fe6fc9fef476330.bindTooltip(
+                `<div>
+                     <b>Name:</b> ASPEN MOUNTAIN MEDICAL CENTER<br><b>Addr:</b> 4401 COLLEGE DR<br><b>State:</b> WY<br><b>County:</b> None<br><b>City:</b> ROCK SPRINGS<br><b>Zip Code:</b> 82901<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd3eb79efb44405f812036ca8c2f88a9 = L.circleMarker(
+                [44.43402900000001, -108.050828],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_fd3eb79efb44405f812036ca8c2f88a9.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH BIG HORN HOSPITAL<br><b>Addr:</b> 388 HWY 20 SOUTH<br><b>State:</b> WY<br><b>County:</b> BIG HORN<br><b>City:</b> BASIN<br><b>Zip Code:</b> 82410<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_503900a4348e4f3cb1833440b2ecf152 = L.circleMarker(
+                [42.75892480000003, -105.3808128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_503900a4348e4f3cb1833440b2ecf152.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEMORIAL HOSPITAL OF CONVERSE COUNTY<br><b>Addr:</b> 111 SOUTH 5TH STREET<br><b>State:</b> WY<br><b>County:</b> CONVERSE<br><b>City:</b> DOUGLAS<br><b>Zip Code:</b> 82633<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cd2d843e41f4bcabd9dc5fe74be8605 = L.circleMarker(
+                [43.84806849999997, -104.1891113],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_1cd2d843e41f4bcabd9dc5fe74be8605.bindTooltip(
+                `<div>
+                     <b>Name:</b> WESTON COUNTY HEALTH SERVICES<br><b>Addr:</b> 1124 WASHINGTON BLVD<br><b>State:</b> WY<br><b>County:</b> WESTON<br><b>City:</b> NEWCASTLE<br><b>Zip Code:</b> 82701<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a9b7bc3caa9c4e829b7b9605e9d8cb26 = L.circleMarker(
+                [43.64793590000001, -108.1995798],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_a9b7bc3caa9c4e829b7b9605e9d8cb26.bindTooltip(
+                `<div>
+                     <b>Name:</b> HOT SPRINGS COUNTY MEMORIAL<br><b>Addr:</b> 150 EAST ARAPAHOE<br><b>State:</b> WY<br><b>County:</b> HOT SPRINGS<br><b>City:</b> THERMOPOLIS<br><b>Zip Code:</b> 82443<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56c496369e5e4446b036dfac6b9da5aa = L.circleMarker(
+                [42.049960899999974, -104.9608411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_56c496369e5e4446b036dfac6b9da5aa.bindTooltip(
+                `<div>
+                     <b>Name:</b> PLATTE COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 201 14TH STREET<br><b>State:</b> WY<br><b>County:</b> PLATTE<br><b>City:</b> WHEATLAND<br><b>Zip Code:</b> 82201<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c619e80d163445b8b081e4348b9ba9ba = L.circleMarker(
+                [44.012854599999976, -107.9494017],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_c619e80d163445b8b081e4348b9ba9ba.bindTooltip(
+                `<div>
+                     <b>Name:</b> WASHAKIE MEDICAL CENTER<br><b>Addr:</b> 400 SOUTH 19TH STREET<br><b>State:</b> WY<br><b>County:</b> WASHAKIE<br><b>City:</b> WORLAND<br><b>Zip Code:</b> 82401<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a363c72a172644fc84d53da6c350b78d = L.circleMarker(
+                [42.082826100000034, -104.1936148],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_a363c72a172644fc84d53da6c350b78d.bindTooltip(
+                `<div>
+                     <b>Name:</b> COMMUNITY HOSPITAL<br><b>Addr:</b> 2000 CAMPBELL DRIVE<br><b>State:</b> WY<br><b>County:</b> GOSHEN<br><b>City:</b> TORRINGTON<br><b>Zip Code:</b> 82240<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2b13cbd0ee64ab1925b8baf44dbb4a7 = L.circleMarker(
+                [44.35054939999994, -106.7063743],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_f2b13cbd0ee64ab1925b8baf44dbb4a7.bindTooltip(
+                `<div>
+                     <b>Name:</b> JOHNSON COUNTY HEALTHCARE<br><b>Addr:</b> 497 W LOTT STREET<br><b>State:</b> WY<br><b>County:</b> JOHNSON<br><b>City:</b> BUFFALO<br><b>Zip Code:</b> 82834<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d37d6583ca04c609c3f412b31ca8480 = L.circleMarker(
+                [44.82667920000003, -108.3895263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_4d37d6583ca04c609c3f412b31ca8480.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTH BIG HORN HOSPITAL<br><b>Addr:</b> 1115 LANE 12<br><b>State:</b> WY<br><b>County:</b> BIG HORN<br><b>City:</b> LOVELL<br><b>Zip Code:</b> 82431<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1652840567c4453f8c374b03ca936a1d = L.circleMarker(
+                [44.75692470000001, -108.7711715],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_1652840567c4453f8c374b03ca936a1d.bindTooltip(
+                `<div>
+                     <b>Name:</b> POWELL VALLEY HEALTH CARE<br><b>Addr:</b> 777 AVENUE H<br><b>State:</b> WY<br><b>County:</b> PARK<br><b>City:</b> POWELL<br><b>Zip Code:</b> 82435<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fbe0fb898dda465e8140cb3ac05cbd66 = L.circleMarker(
+                [44.40897599999999, -104.3740742],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_fbe0fb898dda465e8140cb3ac05cbd66.bindTooltip(
+                `<div>
+                     <b>Name:</b> CROOK COUNTY MEDICAL SERVICES<br><b>Addr:</b> 713 OAK STREET<br><b>State:</b> WY<br><b>County:</b> CROOK<br><b>City:</b> SUNDANCE<br><b>Zip Code:</b> 82729<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7a180c6f5e84ccbaf1d62fc56a999f0 = L.circleMarker(
+                [44.52649410000003, -109.0735879],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_d7a180c6f5e84ccbaf1d62fc56a999f0.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEST PARK HOSPITAL<br><b>Addr:</b> 707 SHERIDAN AVE<br><b>State:</b> WY<br><b>County:</b> PARK<br><b>City:</b> CODY<br><b>Zip Code:</b> 82414<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_259c7b6123754c558d3402d1e33bb7e4 = L.circleMarker(
+                [42.71687650000001, -110.9310278],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_259c7b6123754c558d3402d1e33bb7e4.bindTooltip(
+                `<div>
+                     <b>Name:</b> STAR VALLEY HOSPITAL<br><b>Addr:</b> 901 ADAMS STREET<br><b>State:</b> WY<br><b>County:</b> LINCOLN<br><b>City:</b> AFTON<br><b>Zip Code:</b> 83110<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e23192afc8dd4f25adfc1957f6e450f3 = L.circleMarker(
+                [42.75319480000002, -104.4454308],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_e23192afc8dd4f25adfc1957f6e450f3.bindTooltip(
+                `<div>
+                     <b>Name:</b> NIOBRARA HEALTH AND LIFE CENTER<br><b>Addr:</b> 921 S. BALLANCEE AVENUE<br><b>State:</b> WY<br><b>County:</b> NIOBRARA<br><b>City:</b> LUSK<br><b>Zip Code:</b> 82225<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0427cb6b38904efdafdf27fdecc303bf = L.circleMarker(
+                [41.78979969999996, -110.5415652],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_0427cb6b38904efdafdf27fdecc303bf.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH LINCOLN HOSPITAL DISTRICT<br><b>Addr:</b> 711 ONYX STREET<br><b>State:</b> WY<br><b>County:</b> LINCOLN<br><b>City:</b> KEMMERER<br><b>Zip Code:</b> 83101<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_452725df0efc4d0fb94a690b5a331c83 = L.circleMarker(
+                [41.78695799999999, -107.2617135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_452725df0efc4d0fb94a690b5a331c83.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEMORIAL HOSPITAL OF CARBON COUNTY<br><b>Addr:</b> 221 WEST ELM STREET<br><b>State:</b> WY<br><b>County:</b> CARBON<br><b>City:</b> RAWLINS<br><b>Zip Code:</b> 82301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9a653c63672436992261a12a2b41b6b = L.circleMarker(
+                [42.8441, -106.242395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_e9a653c63672436992261a12a2b41b6b.bindTooltip(
+                `<div>
+                     <b>Name:</b> ELKHORN VALLEY REGIONAL REHABILITATI<br><b>Addr:</b> 5715 EAST SECOND STREET<br><b>State:</b> WY<br><b>County:</b> NATRONA<br><b>City:</b> CASPER<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba98aad1930a42a4861f0df0b4e0cefa = L.circleMarker(
+                [41.263795199999976, -110.9481806],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_ba98aad1930a42a4861f0df0b4e0cefa.bindTooltip(
+                `<div>
+                     <b>Name:</b> WYOMING STATE HOSPITAL<br><b>Addr:</b> 831 HIGHWAY 150 SOUTH<br><b>State:</b> WY<br><b>County:</b> UINTA<br><b>City:</b> EVANSTON<br><b>Zip Code:</b> 82930<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_29dbaa748a774b19bdeefb36a33f7c60 = L.circleMarker(
+                [42.83484319999999, -106.2943301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5);
+        
+    
+            circle_marker_29dbaa748a774b19bdeefb36a33f7c60.bindTooltip(
+                `<div>
+                     <b>Name:</b> WYOMING BEHAVIORAL INSTITUTE<br><b>Addr:</b> 2521 EAST 15TH STREET<br><b>State:</b> WY<br><b>County:</b> None<br><b>City:</b> CASPER<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_b5c6f8596364407d81caba9ff85b55cc = L.featureGroup(
+                {}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var circle_marker_d5845c7648c34d83931214e6ab79571a = L.circleMarker(
+                [44.2905264, -105.51830750000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_d5845c7648c34d83931214e6ab79571a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Campbell County Memorial Hospital<br><b>Addr:</b> 501 S Burma Ave<br><b>State:</b> WY<br><b>County:</b> Campbell<br><b>City:</b> Gillette<br><b>Zip Code:</b> 82716<br><b>Distance discrepancy:</b> 29 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f00fe34433b8416c9c7fb0ead2ef2921 = L.circleMarker(
+                [44.80859480000002, -106.9757547],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_f00fe34433b8416c9c7fb0ead2ef2921.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sheridan Memorial Hospital<br><b>Addr:</b> 1401 W 5th St<br><b>State:</b> WY<br><b>County:</b> Sheridan<br><b>City:</b> Sheridan<br><b>Zip Code:</b> 82801<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_739e27a061574c7fa2018a29275c3dfd = L.circleMarker(
+                [43.035070400000116, -108.41901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_739e27a061574c7fa2018a29275c3dfd.bindTooltip(
+                `<div>
+                     <b>Name:</b> SageWest - Riverton (FKA Riverton Memorial Hospital)<br><b>Addr:</b> 2100 W Sunset Dr<br><b>State:</b> WY<br><b>County:</b> Fremont<br><b>City:</b> Riverton<br><b>Zip Code:</b> 82501<br><b>Distance discrepancy:</b> 61 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_133a2d0b0699407e98dad10eb2cab933 = L.circleMarker(
+                [41.58492139999999, -109.235183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_133a2d0b0699407e98dad10eb2cab933.bindTooltip(
+                `<div>
+                     <b>Name:</b> Memorial Hospital of Sweetwater County<br><b>Addr:</b> 1200 College Dr<br><b>State:</b> WY<br><b>County:</b> Sweetwater<br><b>City:</b> Rock Springs<br><b>Zip Code:</b> 82901<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_863a6ea18c9c46a1ad7d8386cafbe3f5 = L.circleMarker(
+                [42.84802569999996, -106.3084506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_863a6ea18c9c46a1ad7d8386cafbe3f5.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wyoming Medical Center - Central Campus<br><b>Addr:</b> 1233 E 2nd St<br><b>State:</b> WY<br><b>County:</b> Natrona<br><b>City:</b> Casper<br><b>Zip Code:</b> 82601<br><b>Distance discrepancy:</b> 73 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d1ac00ee02d14e53897792b14cf0773e = L.circleMarker(
+                [41.14101760000004, -104.8162535],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_d1ac00ee02d14e53897792b14cf0773e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cheyenne Regional Medical Center - West Campus<br><b>Addr:</b> 214 E 23rd St<br><b>State:</b> WY<br><b>County:</b> Laramie<br><b>City:</b> Cheyenne<br><b>Zip Code:</b> 82001<br><b>Distance discrepancy:</b> 68 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac898691a2e847ffbebeb9c64c07ec66 = L.circleMarker(
+                [43.480789400000035, -110.7505177],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_ac898691a2e847ffbebeb9c64c07ec66.bindTooltip(
+                `<div>
+                     <b>Name:</b> St Johns Health (FKA St Johns Medical Center)<br><b>Addr:</b> 625 E Broadway Ave<br><b>State:</b> WY<br><b>County:</b> Teton<br><b>City:</b> Jackson<br><b>Zip Code:</b> 83001<br><b>Distance discrepancy:</b> 99 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2282e5536967419fae6a569034e97085 = L.circleMarker(
+                [41.31242819999993, -105.5559342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_2282e5536967419fae6a569034e97085.bindTooltip(
+                `<div>
+                     <b>Name:</b> Ivinson Memorial Hospital<br><b>Addr:</b> 255 N 30th St<br><b>State:</b> WY<br><b>County:</b> Albany<br><b>City:</b> Laramie<br><b>Zip Code:</b> 82072<br><b>Distance discrepancy:</b> 104 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_919022b666df4a72a9e00731a84da035 = L.circleMarker(
+                [41.243124399999935, -110.9906214],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_919022b666df4a72a9e00731a84da035.bindTooltip(
+                `<div>
+                     <b>Name:</b> Evanston Regional Hospital<br><b>Addr:</b> 190 Arrowhead Dr<br><b>State:</b> WY<br><b>County:</b> Uinta<br><b>City:</b> Evanston<br><b>Zip Code:</b> 82930<br><b>Distance discrepancy:</b> 70 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fec3e79b63544acca33109ac6c5d0e18 = L.circleMarker(
+                [42.84168700000002, -106.230892],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_fec3e79b63544acca33109ac6c5d0e18.bindTooltip(
+                `<div>
+                     <b>Name:</b> Summit Medical Center<br><b>Addr:</b> 6350 E 2nd St<br><b>State:</b> WY<br><b>County:</b> Natrona<br><b>City:</b> Casper<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> 141 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b0a486c66a04c26b29d49c4504f30a7 = L.circleMarker(
+                [41.60267289999999, -109.24689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_5b0a486c66a04c26b29d49c4504f30a7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Aspen Mountain Medical Center<br><b>Addr:</b> 4401 College Dr<br><b>State:</b> WY<br><b>County:</b> Sweetwater<br><b>City:</b> Rock Springs<br><b>Zip Code:</b> 82901<br><b>Distance discrepancy:</b> 107 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_487e56c31bd8446ead54eae1686ac96b = L.circleMarker(
+                [44.43402900000001, -108.050828],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_487e56c31bd8446ead54eae1686ac96b.bindTooltip(
+                `<div>
+                     <b>Name:</b> South Big Horn County Hospital<br><b>Addr:</b> 388 Us Highway 20 S<br><b>State:</b> WY<br><b>County:</b> Big Horn<br><b>City:</b> Basin<br><b>Zip Code:</b> 82410<br><b>Distance discrepancy:</b> 8754 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_16b0855c88a4461ebac561352bb1499c = L.circleMarker(
+                [42.75892480000002, -105.3808128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_16b0855c88a4461ebac561352bb1499c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Memorial Hospital of Converse County<br><b>Addr:</b> 111 S 5th St<br><b>State:</b> WY<br><b>County:</b> Converse<br><b>City:</b> Douglas<br><b>Zip Code:</b> 82633<br><b>Distance discrepancy:</b> 57034 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b683f71964664e498f7f938678f14040 = L.circleMarker(
+                [43.84806850000001, -104.1891113],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_b683f71964664e498f7f938678f14040.bindTooltip(
+                `<div>
+                     <b>Name:</b> Weston County Health Services<br><b>Addr:</b> 1124 Washington Blvd<br><b>State:</b> WY<br><b>County:</b> Weston<br><b>City:</b> Newcastle<br><b>Zip Code:</b> 82701<br><b>Distance discrepancy:</b> 131 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4c85beb9fee412e81f6ab99a340160d = L.circleMarker(
+                [43.64793590000001, -108.1995798],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_b4c85beb9fee412e81f6ab99a340160d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Hot Springs County Memorial Hospital<br><b>Addr:</b> 150 E Arapahoe St<br><b>State:</b> WY<br><b>County:</b> Hot Springs<br><b>City:</b> Thermopolis<br><b>Zip Code:</b> 82443<br><b>Distance discrepancy:</b> 123 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd9cdffdf24e40349d698409af90f6e1 = L.circleMarker(
+                [42.04996089999996, -104.9608411],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_fd9cdffdf24e40349d698409af90f6e1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Platte County Memorial Hospital<br><b>Addr:</b> 201 14th St<br><b>State:</b> WY<br><b>County:</b> Platte<br><b>City:</b> Wheatland<br><b>Zip Code:</b> 82201<br><b>Distance discrepancy:</b> 18 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c4a9e7260f8436bb27ff537d48f59f8 = L.circleMarker(
+                [44.012854599999976, -107.9494017],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_4c4a9e7260f8436bb27ff537d48f59f8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Washakie Medical Center<br><b>Addr:</b> 400 S 15th St<br><b>State:</b> WY<br><b>County:</b> Washakie<br><b>City:</b> Worland<br><b>Zip Code:</b> 82401<br><b>Distance discrepancy:</b> 57 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfa91b16c5d44e6da4695ba47a92b7e9 = L.circleMarker(
+                [42.08282610000007, -104.1936148],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_cfa91b16c5d44e6da4695ba47a92b7e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> Torrington Community Hospital<br><b>Addr:</b> 2000 Campbell Dr<br><b>State:</b> WY<br><b>County:</b> Goshen<br><b>City:</b> Torrington<br><b>Zip Code:</b> 82240<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_979477238b51445e9fc06ab0669416ca = L.circleMarker(
+                [44.35054939999993, -106.7063743],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_979477238b51445e9fc06ab0669416ca.bindTooltip(
+                `<div>
+                     <b>Name:</b> Johnson County Healthcare Center<br><b>Addr:</b> 497 W Lott St<br><b>State:</b> WY<br><b>County:</b> Johnson<br><b>City:</b> Buffalo<br><b>Zip Code:</b> 82834<br><b>Distance discrepancy:</b> 31 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0585dffdff74274bd46c484a2068cd7 = L.circleMarker(
+                [44.826679200000044, -108.3895263],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_a0585dffdff74274bd46c484a2068cd7.bindTooltip(
+                `<div>
+                     <b>Name:</b> North Big Horn Hospital<br><b>Addr:</b> 1115 Lane 12<br><b>State:</b> WY<br><b>County:</b> Big Horn<br><b>City:</b> Lovell<br><b>Zip Code:</b> 82431<br><b>Distance discrepancy:</b> 161 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e09cd0707ce4f94a1210f550cfe99cd = L.circleMarker(
+                [44.75692470000005, -108.7711715],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_8e09cd0707ce4f94a1210f550cfe99cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Powell Valley Healthcare<br><b>Addr:</b> 777 Avenue H<br><b>State:</b> WY<br><b>County:</b> Park<br><b>City:</b> Powell<br><b>Zip Code:</b> 82435<br><b>Distance discrepancy:</b> 193 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_caa529099b504d8793ca41bad2de5f6d = L.circleMarker(
+                [44.40897599999999, -104.3740742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_caa529099b504d8793ca41bad2de5f6d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Crook County Medical Service<br><b>Addr:</b> 713 Oak St<br><b>State:</b> WY<br><b>County:</b> Crook<br><b>City:</b> Sundance<br><b>Zip Code:</b> 82729<br><b>Distance discrepancy:</b> 16 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5bc41c6e58394a1aaaf2f630c7a9e6ed = L.circleMarker(
+                [44.52657510000008, -109.0739876],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_5bc41c6e58394a1aaaf2f630c7a9e6ed.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cody Regional Health (AKA West Park Hospital)<br><b>Addr:</b> 707 Sheridan Ave<br><b>State:</b> WY<br><b>County:</b> Park<br><b>City:</b> Cody<br><b>Zip Code:</b> 82414<br><b>Distance discrepancy:</b> 23 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_938f6025096c4505a66b875e89671ec4 = L.circleMarker(
+                [42.71687650000001, -110.9310278],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_938f6025096c4505a66b875e89671ec4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Star Valley Health (FKA Star Valley Medical Center)<br><b>Addr:</b> 901 Adams St<br><b>State:</b> WY<br><b>County:</b> Lincoln<br><b>City:</b> Afton<br><b>Zip Code:</b> 83110<br><b>Distance discrepancy:</b> 54 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e7c2944919641a8b9fb7258c6aae826 = L.circleMarker(
+                [42.75319480000003, -104.4454308],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_1e7c2944919641a8b9fb7258c6aae826.bindTooltip(
+                `<div>
+                     <b>Name:</b> Niobrara Health & Life Center<br><b>Addr:</b> 921 S Ballancee Ave<br><b>State:</b> WY<br><b>County:</b> Niobrara<br><b>City:</b> Lusk<br><b>Zip Code:</b> 82225<br><b>Distance discrepancy:</b> 164 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a2594e95610e4baabe1c2f0aeb65c07e = L.circleMarker(
+                [41.789799699999946, -110.5415652],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_a2594e95610e4baabe1c2f0aeb65c07e.bindTooltip(
+                `<div>
+                     <b>Name:</b> South Lincoln Medical Center<br><b>Addr:</b> 711 Onyx St<br><b>State:</b> WY<br><b>County:</b> Lincoln<br><b>City:</b> Kemmerer<br><b>Zip Code:</b> 83101<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39e6cccb379b45e7ad86e24ed91ad784 = L.circleMarker(
+                [41.78695799999999, -107.2617135],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_39e6cccb379b45e7ad86e24ed91ad784.bindTooltip(
+                `<div>
+                     <b>Name:</b> Memorial Hospital of Carbon County<br><b>Addr:</b> 2221 Elm St<br><b>State:</b> WY<br><b>County:</b> Carbon<br><b>City:</b> Rawlins<br><b>Zip Code:</b> 82301<br><b>Distance discrepancy:</b> 14 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a2edeb394c145abbce5106a56c70d7b = L.circleMarker(
+                [42.8441, -106.242395],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_6a2edeb394c145abbce5106a56c70d7b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Elkhorn Valley Rehabilitation Hospital<br><b>Addr:</b> 5715 E 2nd St<br><b>State:</b> WY<br><b>County:</b> Natrona<br><b>City:</b> Casper<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3cc66587a57d4f4b92e7113660cb5f12 = L.circleMarker(
+                [41.26379519999996, -110.9481806],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_3cc66587a57d4f4b92e7113660cb5f12.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wyoming State Hospital<br><b>Addr:</b> 831 Hwy 150 N<br><b>State:</b> WY<br><b>County:</b> Uinta<br><b>City:</b> Evanston<br><b>Zip Code:</b> 82930<br><b>Distance discrepancy:</b> 390 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb70c1e82b3f4d908c00ccab72ccd400 = L.circleMarker(
+                [42.83484319999999, -106.2943301],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_b5c6f8596364407d81caba9ff85b55cc);
+        
+    
+            circle_marker_eb70c1e82b3f4d908c00ccab72ccd400.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wyoming Behavioral Institute<br><b>Addr:</b> 2521 E 15th St<br><b>State:</b> WY<br><b>County:</b> Natrona<br><b>City:</b> Casper<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> 57 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_d565b695188a431aae25d8be0e8420ab = L.featureGroup(
+                {}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var circle_marker_a412cb89f21b4075b2c810d3234d08c9 = L.circleMarker(
+                [42.82050689999995, -108.7267758],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d565b695188a431aae25d8be0e8420ab);
+        
+    
+            circle_marker_a412cb89f21b4075b2c810d3234d08c9.bindTooltip(
+                `<div>
+                     <b>Name:</b> LANDER REGIONAL MEDICAL CENTER<br><b>Addr:</b> 1320 BISHOP RANDALL DRIVE<br><b>State:</b> WY<br><b>County:</b> FREMONT<br><b>City:</b> LANDER<br><b>Zip Code:</b> 82520<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7eb4bac9f5e4cccb9e28436e5e1c46a = L.circleMarker(
+                [42.8406643, -106.2259035],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_d565b695188a431aae25d8be0e8420ab);
+        
+    
+            circle_marker_d7eb4bac9f5e4cccb9e28436e5e1c46a.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOUNTAIN VIEW REGIONAL HOSPITAL<br><b>Addr:</b> 6550 EAST SECOND STREET<br><b>State:</b> WY<br><b>County:</b> NATRONA<br><b>City:</b> CASPER<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5eed31456ef24a8e8ec8cf56ddc4ed3a = L.featureGroup(
+                {}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var circle_marker_00b06b1d56c1442494d60a08017794ac = L.circleMarker(
+                [41.14796099999998, -104.7860948],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5eed31456ef24a8e8ec8cf56ddc4ed3a);
+        
+    
+            circle_marker_00b06b1d56c1442494d60a08017794ac.bindTooltip(
+                `<div>
+                     <b>Name:</b> Cheyenne VA Medical Center<br><b>Addr:</b> 2360 E Pershing Blvd<br><b>State:</b> WY<br><b>County:</b> Laramie<br><b>City:</b> Cheyenne<br><b>Zip Code:</b> 82001<br><b>Distance discrepancy:</b> 13 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e525195813b5470f942fa3b3de70c7fb = L.circleMarker(
+                [42.8406643, -106.2259035],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5eed31456ef24a8e8ec8cf56ddc4ed3a);
+        
+    
+            circle_marker_e525195813b5470f942fa3b3de70c7fb.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wyoming Medical Center - East Campus (FKA Mountain View Regional)<br><b>Addr:</b> 6550 E 2nd St<br><b>State:</b> WY<br><b>County:</b> Natrona<br><b>City:</b> Casper<br><b>Zip Code:</b> 82609<br><b>Distance discrepancy:</b> 53 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ed074848d99a49e2a9d15867eae9b031 = L.circleMarker(
+                [44.8273867, -106.9858096],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5eed31456ef24a8e8ec8cf56ddc4ed3a);
+        
+    
+            circle_marker_ed074848d99a49e2a9d15867eae9b031.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sheridan VA Medical Center<br><b>Addr:</b> 1898 Fort Rd<br><b>State:</b> WY<br><b>County:</b> Sheridan<br><b>City:</b> Sheridan<br><b>Zip Code:</b> 82801<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_d74f15c5f1904081ba99ed55823bf42b = L.featureGroup(
+                {}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+    
+            var poly_line_cf27321c5620484192a6b86785fa30d9 = L.polyline(
+                [[44.29052639999997, -105.51830750000002], [44.2905264, -105.51830750000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_89a062958ff94995b4a0cba307d8f6fd = L.polyline(
+                [[44.80859480000004, -106.9757547], [44.80859480000002, -106.9757547]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_7bfc3a666560481aa171a75387a7f49f = L.polyline(
+                [[43.03507040000005, -108.41901], [43.035070400000116, -108.41901]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_06e73d7364e74ca79af7e1871920045a = L.polyline(
+                [[41.58492139999999, -109.235183], [41.58492139999999, -109.235183]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_685d84ed6a78451cab7532731a3d76a1 = L.polyline(
+                [[42.848025699999965, -106.3084506], [42.84802569999996, -106.3084506]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_491f1dd7a4ad4e8da550ba567d7cbf06 = L.polyline(
+                [[41.14101760000001, -104.8162535], [41.14101760000004, -104.8162535]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_0461b20dc7334fb1923c7436f0dd6ddb = L.polyline(
+                [[43.480789400000035, -110.7505177], [43.480789400000035, -110.7505177]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_45949067ff664c59822a3b400f6630de = L.polyline(
+                [[41.31242819999996, -105.5559342], [41.31242819999993, -105.5559342]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_029e8098d6dd4c3f8416985f81f59f27 = L.polyline(
+                [[41.243124399999964, -110.9906214], [41.243124399999935, -110.9906214]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_6816b63da0d44c4ab626d6e319a8ce86 = L.polyline(
+                [[42.84168700000002, -106.230892], [42.84168700000002, -106.230892]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_f3e07789c87e4215894f0568f053d456 = L.polyline(
+                [[41.60267289999999, -109.24689], [41.60267289999999, -109.24689]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_055cd5502ed74399b18c7f99f22c481a = L.polyline(
+                [[44.43402900000001, -108.050828], [44.43402900000001, -108.050828]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_8fca364879404c7b871b5aa766134ba8 = L.polyline(
+                [[42.75892480000003, -105.3808128], [42.75892480000002, -105.3808128]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_3c4eb104755744c5aa0e4523844052e1 = L.polyline(
+                [[43.84806849999997, -104.1891113], [43.84806850000001, -104.1891113]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_508e9db0dc0645c586e87b0a50839869 = L.polyline(
+                [[43.64793590000001, -108.1995798], [43.64793590000001, -108.1995798]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_246f8285f1b24dfdb26d41472a90dae3 = L.polyline(
+                [[42.049960899999974, -104.9608411], [42.04996089999996, -104.9608411]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_44389646d29542c295c3a6b55e3dda64 = L.polyline(
+                [[44.012854599999976, -107.9494017], [44.012854599999976, -107.9494017]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_ff2df1c23fdf441a8c2c36f014dffd4c = L.polyline(
+                [[42.082826100000034, -104.1936148], [42.08282610000007, -104.1936148]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_da11b1660ffc46fe81706f1b5ee3f87d = L.polyline(
+                [[44.35054939999994, -106.7063743], [44.35054939999993, -106.7063743]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_055fa38e687240daa7ec4d504a72c376 = L.polyline(
+                [[44.82667920000003, -108.3895263], [44.826679200000044, -108.3895263]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_f574a2cbbf484bdba206fa10e87c7f4a = L.polyline(
+                [[44.75692470000001, -108.7711715], [44.75692470000005, -108.7711715]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_d6e3d16bc3594a61aa0e1d93380352f9 = L.polyline(
+                [[44.40897599999999, -104.3740742], [44.40897599999999, -104.3740742]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_731c26f14fa54c0d83863ed6e919709f = L.polyline(
+                [[44.52649410000003, -109.0735879], [44.52657510000008, -109.0739876]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_a3cf7206b99144518623d80659aa3ced = L.polyline(
+                [[42.71687650000001, -110.9310278], [42.71687650000001, -110.9310278]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_59706f8ac359428cb4a3b824131abd49 = L.polyline(
+                [[42.75319480000002, -104.4454308], [42.75319480000003, -104.4454308]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_f2b1944c90d14175a6503996e5eb8b88 = L.polyline(
+                [[41.78979969999996, -110.5415652], [41.789799699999946, -110.5415652]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_8c7496536932432daa1c19e6f4a9f9f5 = L.polyline(
+                [[41.78695799999999, -107.2617135], [41.78695799999999, -107.2617135]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_6cbea50cab12479589ee482766218593 = L.polyline(
+                [[42.8441, -106.242395], [42.8441, -106.242395]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_aaee7e227a76414ca1e8c1971850c166 = L.polyline(
+                [[41.263795199999976, -110.9481806], [41.26379519999996, -110.9481806]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var poly_line_11f9dc0738194c57b9eccadf9ccf3020 = L.polyline(
+                [[42.83484319999999, -106.2943301], [42.83484319999999, -106.2943301]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_d74f15c5f1904081ba99ed55823bf42b);
+        
+    
+            var layer_control_d11844ad993047c3b8976e9aaee7f175 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c2b534f65ad34d2f943d2bd83c8846e3,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_f4a12c02935e4821b4e6fb6f5fafe6d5,
+                    "DH - matched" : feature_group_b5c6f8596364407d81caba9ff85b55cc,
+                    "HCRIS - unmatched" : feature_group_d565b695188a431aae25d8be0e8420ab,
+                    "DH - unmatched" : feature_group_5eed31456ef24a8e8ec8cf56ddc4ed3a,
+                    "connections" : feature_group_d74f15c5f1904081ba99ed55823bf42b,
+                },
+            };
+            L.control.layers(
+                layer_control_d11844ad993047c3b8976e9aaee7f175.base_layers,
+                layer_control_d11844ad993047c3b8976e9aaee7f175.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_577d3f735d6343b2942ac52d90683b60);
+        
+</script>
