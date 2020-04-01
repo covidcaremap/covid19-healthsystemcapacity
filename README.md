@@ -12,12 +12,13 @@
   - [Take-home Message #2](#take-home-message-2)
 - [What To Do](#what-to-do)
 - [How To Help](#how-to-help)
-- [Developing COVIDCareMap](#developing-covidcaremap)
+- [Developing CovidCareMap](#developing-covidcaremap)
   - [Getting Started](#getting-started)
   - [Using Docker](#using-docker)
   - [Repository Organization](#repository-organization)
   - [Running the notebooks](#running-the-notebooks)
-  - [Building the map](#building-the-maps)
+  - [Adding a new map](#adding-a-new-map)
+  - [Building the maps](#building-the-maps)
   - [Deployment](#deployment)
 - [Glossary of Terms](#glossary-of-terms)
 - [Acknowledgments](#acknowledgments)
@@ -401,6 +402,22 @@ repository files are accessible through `/opt/src`.
 
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
+
+### Adding a new map
+
+If you intend to add a new map website, please add another directory within the `maps/` directory with an underscore prefixed name:
+
+```console
+$ tree -L 1 maps
+maps
+└── _a-new-map
+├── _hghi-vents
+└── _us-healthcare-system-capacity
+
+3 directories, 0 files
+```
+
+In addition, a `scripts` directory must exist within the new directory, and it must contain an executable `cibuild` script that handles converting the raw source code of the map into a production deployable static bundle. Please review the existing `cibuild` scripts to see this process occur in greater detail.
 
 ### Building the maps
 
