@@ -1070,7 +1070,7 @@ hr {
 .show-xs {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .show-xs {
     display: block !important;
   }
@@ -1190,7 +1190,7 @@ h1,
   font-size: $font-size-h1;
   font-weight: 400;
   @media (max-width: 767px) {
-    font-size: $font-size-h2;
+    font-size: 2.8rem;
   }
 }
 
@@ -1199,7 +1199,7 @@ h2,
 .text-h2 {
   font-size: $font-size-h2;
   @media (max-width: 767px) {
-    // font-size: $font-size-h3;
+    font-size: 2.4rem;
   }
 }
 
@@ -1237,18 +1237,19 @@ h2 {
 }
 
 .screenshot {
-  width: calc(50vw - 15px);
+  width: calc(50vw - 55px);
   display: inline-block;
   height: 450px;
   position: relative;
+  margin-left: 40px;
   @media (min-width: 1200px) {
     height: 500px;
   }
 
   img {
-    transform: scale(1.4);
+    transform: scale(1.5);
     @media (max-width: 1090px) {
-      transform: scale(2);
+      transform: scale(2.3);
     }
     transform-origin: left top;
   }
@@ -1366,15 +1367,18 @@ header {
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  @media (max-width: 767px) {
+    .section-hero & {
+      margin-bottom: -3rem;
+    }
+  }
 }
 
 .header-logo {
   img {
     height: 24px;
   }
-  // @media (max-width: 767px) {
-  //   width: 5.4rem;
-  // }
 }
 
 .header-nav {
@@ -1383,14 +1387,19 @@ header {
   font-weight: $font-weight-bold;
   & > a {
     margin-left: 3rem;
+    @media (max-width: 991px) {
+      margin-left: 1.5rem;
+    }
     &:first-child {
       margin-left: 0;
+    }
+    @media (max-width: 480px) {
+      display: none !important;
     }
     @media (max-width: 767px) {
       display: none;
       font-size: $font-size-h5;
-      &:nth-last-child(1),
-      &:nth-last-child(2) {
+      &:nth-last-child(1) {
         display: inline;
       }
     }
@@ -1407,18 +1416,27 @@ header {
 }
 
 .page {
-  margin-top: -80px;
+  margin-top: -40px;
 }
 
 section {
   padding-top: 90px;
   padding-bottom: 90px;
+
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .section-hero {
   background-image: linear-gradient(-225deg, #104d92 0%, #023557 100%);
   padding: 0;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding-bottom: 5rem;
+  }
 
   h1,
   p {
@@ -1452,16 +1470,23 @@ section {
 .visualization-items {
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
+  max-width: 800px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  @media (max-width: 767px) {
+    display: block;
+  }
 
   .page-visualizations & {
     width: initial;
     grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+    @media (max-width: 767px) {
+      display: block;
+    }
   }
 }
 
@@ -1483,6 +1508,11 @@ section {
   }
 }
 
+footer {
+  background-color: #252525;
+  height: 8rem;
+}
+
 .visualization-image {
   width: 100%;
 }
@@ -1494,6 +1524,7 @@ section {
 }
 
 .visualization-readmore {
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -1511,6 +1542,10 @@ section {
   border-radius: 1px;
   display: flex;
   position: relative;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
   &:not(:last-child) {
     margin-bottom: 35px;
   }
@@ -1529,13 +1564,19 @@ section {
 }
 
 .data-left {
-  width: 300px;
-  border-right: 2px solid rgb(204, 204, 204);
-  text-align: center;
+  @media (min-width: 768px) {
+    width: 300px;
+    border-right: 2px solid rgb(204, 204, 204);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(204, 204, 204);
+  }
   padding: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
   z-index: 100;
 }
@@ -1554,6 +1595,9 @@ section {
   font-size: $font-size-h5;
   &:not(:last-child) {
     margin-bottom: 8px;
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -1626,6 +1670,10 @@ section {
 
 .why-image {
   width: 100%;
+
+  @media (max-width: 767px) {
+    margin-top: 4rem;
+  }
 }
 
 .why-ctas {

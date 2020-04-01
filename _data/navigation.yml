@@ -1,12 +1,12 @@
 navigation:
   - text: About
-    url: /about
+    url: https://github.com/covidcaremap/covid19-healthsystemcapacity#overview
   - text: Visualizations
     url: /visualizations
   - text: Data
     url: /data
   - text: Github
     url: https://github.com/covidcaremap/covid19-healthsystemcapacity
-  - text: Request Data
+  - text: Request Data Support
     priority: true
     url: https://github.com/covidcaremap/covid19-healthsystemcapacity
