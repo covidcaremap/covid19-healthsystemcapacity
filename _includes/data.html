@@ -1,0 +1,35 @@
+{% assign sorted = (site.data.data.data-items | sort: 'order') %} {% for data in
+sorted limit:include.limit %}
+<div class="data-item">
+  <div class="data-left">
+    <div>
+      <h3 class="data-title">{{data.title}}</h3>
+      <div class="data-actions">
+        <div class="data-action">
+          <a href="{{data.viz-url}}" class="button explore"
+            >Explore the visualization</a
+          >
+        </div>
+        <div class="data-action">
+          <a href="{{data.download-url}}" class="button link"
+            >Download the data</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="data-right">
+    <div class="data-description">
+      {{data.description}}
+    </div>
+    <div class="data-sources">
+      Sources: {{data.sources}}
+    </div>
+    <div class="data-types">
+      {% for type in data.types %}
+      <div class="data-type {{type | slugify}}">{{type}}</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endfor %}

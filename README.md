@@ -12,12 +12,13 @@
   - [Take-home Message #2](#take-home-message-2)
 - [What To Do](#what-to-do)
 - [How To Help](#how-to-help)
-- [Developing COVIDCareMap](#developing-covidcaremap)
+- [Developing CovidCareMap](#developing-covidcaremap)
   - [Getting Started](#getting-started)
   - [Using Docker](#using-docker)
   - [Repository Organization](#repository-organization)
   - [Running the notebooks](#running-the-notebooks)
-  - [Building the map](#building-the-maps)
+  - [Adding a new map](#adding-a-new-map)
+  - [Building the maps](#building-the-maps)
   - [Deployment](#deployment)
 - [Glossary of Terms](#glossary-of-terms)
 - [Acknowledgments](#acknowledgments)
@@ -51,14 +52,14 @@ Published data can be found in the [data/published](https://github.com/covidcare
 
 | File                                                 | Description                                                                   |
 |------------------------------------------------------|-------------------------------------------------------------------------------|
-| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
-| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. [Data Dictionary](data/README.md#covidcaremap-capcity-data-dictionary)|
+| [us_healthcare_capacity-facility-CovidCareMap.geojson](data/published/us_healthcare_capacity-facility-CovidCareMap.geojson) | Capacity information for US Health Facilities in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-facility-CovidCareMap.csv](data/published/us_healthcare_capacity-facility-CovidCareMap.csv) | Capacity information for US Health Facilities in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.geojson](data/published/us_healthcare_capacity-county-CovidCareMap.geojson)   | Aggregated facility capacity information by County in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-county-CovidCareMap.csv](data/published/us_healthcare_capacity-county-CovidCareMap.csv)   | Aggregated facility capacity information by County in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.geojson](data/published/us_healthcare_capacity-state-CovidCareMap.geojson)    | Aggregated facility capacity information by State in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-state-CovidCareMap.csv](data/published/us_healthcare_capacity-state-CovidCareMap.csv)    | Aggregated facility capacity information by State in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.geojson](data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in GeoJSON format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
+| [us_healthcare_capacity-hrr-CovidCareMap.csv](data/published/us_healthcare_capacity-hrr-CovidCareMap.csv)      | Aggregated facility capacity information by Healthcare Referral Region (HRR) in CSV format. [Data Dictionary](data/README.md#covidcaremap-capacity-data-dictionary)|
 
 See the Published Datasets section in [data/README.md](data/README.md#published-datasets) for more information.
 
@@ -141,7 +142,7 @@ Source: [Financial Times, updated Mar 19, 2020](https://www.ft.com/content/a26fb
 
 ### Take-home Message #1
 
-[Social distancing and shelter-at-home policies work](https://twitter.com/ASlavitt/status/1241583932472274946) and [are urgently needed everywhere there's COVID19](https://covidactnow.org/) to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care. 
+[Social distancing and shelter-at-home policies work](https://twitter.com/ASlavitt/status/1241583932472274946) and [are urgently needed everywhere there's COVID19](https://covidactnow.org/) to slow the case growth rate, lower the peak demand, and flatten the curve so that our health systems have enough time to ramp up and the volume of cases doesn't exceed their capacity to provide effective care.
 
 Know what to do and do your part to protect yourself, your healthcare providers, and your community with these resources:
 
@@ -269,13 +270,13 @@ Help us get going. There's no more time to wait.
 
 ## How To Help
 
-- [Data gathering, cleaning, cataloging](https://github.com/daveluo/covid19-healthsystemcapacity/projects/1):
+- [Data gathering, cleaning, cataloging](https://github.com/covidcaremap/covid19-healthsystemcapacity/projects/1):
   - Researching and sourcing new data
   - Ingesting datasets and cleaning up things
   - Building data validation and error correction systems
   - Combining with other datasets like COVID19 case counts by day/county/state like from [covidtracking.com](https://covidtracking.com/)
 
-- [Data analytics](https://github.com/daveluo/covid19-healthsystemcapacity/projects/2):
+- [Data analytics](https://github.com/covidcaremap/covid19-healthsystemcapacity/projects/2):
   - Spatial and temporal analyses at different scales
   - Capacity modeling for beds, staffing, supplies, equipment to provide effective ICU care in crisis levels. Current project work on:
     - [Staffing needs](https://github.com/covidcaremap/covid19-healthsystemcapacity/issues/18)
@@ -323,13 +324,27 @@ After cloning the repository, build the docker container:
 Start the Jupyter notebook server:
 
 ```
-> docker/notebooks
+> docker/notebook
+```
+
+For windows:
+
+```
+> docker/notebook_windows  (you will want to run this in a Git Bash shell)
 ```
 
 Now open the link that was last output by the above command. The link should look something like
 `http://127.0.0.1:8888/?token=2b39bb1d2a955bca4622e563fa50dc973016db70d23e0ae5`.
 This will open a jupyter notebook file browser
 that shows a `data` and `notebooks` folder.
+
+Now navigate to the `00_getting_started` folder and run through the notebooks!
+
+#### Data Processing
+
+If you'll be working with data processing changes for the CovidCareMap.org us healtchare system capacity
+dataset, you can follow these steps. Note that you do not need to do this in order to get started using
+the notebooks for analytics.
 
 Open the the [processing/00_Download_Data.ipynb](notebooks/processing/00_Download_Data.ipynb) notebook
 to download any external data needed to run the other notebooks.
@@ -351,19 +366,9 @@ well as adding `apt-get install` commands into the [Dockerfile](docker/Dockerfil
 
 ### Repository Organization
 
-    ├── data
-    │   ├── README.md          <- This file.
-    │   ├── external           <- Intermediate data that has been transformed.
-    │   ├── published          <- The final, canonical data sets for COVIDCareMap.
-    │   └── processed          <- Folder containing intermediate processing data.
+    ├── data                   <- Data used in this project.
     │
     ├── notebooks              <- Jupyter notebooks.
-    │   ├── README.md          <- Overview of Jupyter Notebooks and how to run them.
-    │   ├── requirements.txt   <- Python packages required to run notebooks.
-    │   ├── old                <- Old notebooks such as previous versions of processing logic.
-    │   ├── examples           <- Notebooks containing examples for using COVIDCareMap data.
-    │   ├── processing         <- Notebooks for processing COVIDCareMap data.
-    │   └── validation         <- Notebooks for validating COVIDCareMap data.
     │
     ├── docker                 <- Folder containing scripts and files for running Docker.
     │
@@ -372,11 +377,9 @@ well as adding `apt-get install` commands into the [Dockerfile](docker/Dockerfil
     ├── requirements.txt       <- The requirements file for the covidcaremap python module.
     │
     └── covidcaremap           <- Source code for the covidcaremap python package.
-        │
-        ├── constants.py       <- Contains variables and functions related to constant parameters.
-        ├── data.py            <- Methods to download or generate data
-        └── geo.py             <- Methods for reusable geospatial methods.
 
+
+See the [notebooks](notebooks/README.md) and [data](data/README.md) folder for more information.
 
 ### Running the notebooks
 
@@ -400,31 +403,35 @@ repository files are accessible through `/opt/src`.
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
 
+### Adding a new map
+
+If you intend to add a new map website, please add another directory within the `maps/` directory with an underscore prefixed name:
+
+```console
+$ tree -L 1 maps
+maps
+└── _a-new-map
+├── _hghi-vents
+└── _us-healthcare-system-capacity
+
+3 directories, 0 files
+```
+
+In addition, a `scripts` directory must exist within the new directory, and it must contain an executable `cibuild` script that handles converting the raw source code of the map into a production deployable static bundle. Please review the existing `cibuild` scripts to see this process occur in greater detail.
+
 ### Building the maps
 
 To build the maps, run
 
 ```
-> ./docker/build
-> ./docker/generate-maps
+> ./scripts/build-website
 ```
 
-Now if you commit the `maps` folder, you'll make edits to the `covidcaremap.org/maps` sites.
-Make sure all data is placed correctly in the viz folders (i.e. run the notebook to [Process visualization data](notebooks#process-visualization-data).
+This will go through each map subdirectory and run its corresponding `cibuild` script inside of a simulated Netlify build environment. You can preview the website locally by running `python -m http.server 9000` in the `_site` directory.
 
 ### Deployment
 
-Deployment of the site happens through GitHub pages. With write access to the repo, you can perform the following steps:
-
-- Run through all the processing notebooks to produce fresh data, including the notebook to [Process visualization data](notebooks#process-visualization-data).
-- Run `docker/generate-maps` to generate the maps.
-- Commit the files, including the files in `maps/` which represent the static assets of the site.
-
-Be sure to curate carefully the things you want to commit from the `maps/` folder. There could be some files produced or overriden that are build artifacts and shouldn't necessarily be committed. For instance, if youu are only
-deploying US Healthcare System Capacity visualization changes, only commit the relevant changes in `maps/us-healthcare-system-capacity`.
-
-You can do a final pass debug of the visualization by running `python -m http.server 9000` in the repositor root and navigating to the visualization you are testing, e.g. http://localhost:9000/maps/us-healthcare-system-capacity.
-
+Deployment of the site happens automatically via the Netlify build process. In addition, each pull request generates its own isolated build of the site as a deployment preview. The last build status of the pull request will contain a link when it is ready.
 
 ## Glossary of Terms
 

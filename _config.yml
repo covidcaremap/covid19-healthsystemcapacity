@@ -1,2 +1,40 @@
-theme: jekyll-theme-cayman
-title: COVID Care Map
+title: CovidCareMap – Open geospatial work to support health systems' capacity to effectively care for rapidly growing COVID19 patient needs
+email: dave@covidcaremap.org
+description: >- # this means to ignore newlines until "baseurl:"
+  Open geospatial work to support health systems' capacity to effectively care for rapidly growing COVID19 patient needs
+baseurl: "" # the subpath of your site if applicable, e.g. /blog
+url: "https://www.covidcaremap.org" # the base hostname & protocol for your site, e.g. https://example.com
+
+timezone: America/New York
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Build settings
+markdown: kramdown
+
+# Kramdown options
+kramdown:
+  # Prevent IDs from being added to h1-h6 tags
+  auto_ids: false
+
+exclude:
+  - .github
+  - .nvmrc
+  - .ruby_version
+  - covidcaremap
+  - data/README.md
+  - docker
+  - figs
+  - notebooks
+  - scripts
+  - viz/README.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - LICENSE
+  - netlify.toml
+  - README.md
+  - runtime.txt
