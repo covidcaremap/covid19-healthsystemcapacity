@@ -1,15 +1,14 @@
 visualization-heading: Visualizations
-visualization-description: <p class="large">Maps, charts, and other visualizations that use health care data. Don’t see what you’re looking for? <a href="#">Contact us</a> and let us know what what you need from our team.</p>
+visualization-description: <p class="large">Maps, charts, and other visualizations that use health care data. Don’t see what you’re looking for? <a href="mailto:data@covidcaremap.org">Contact us</a> and let us know what what you need from our team.</p>
 visualization-items:
-  - image: /assets/img/viz-1.png
-    heading: Map of current beds data
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - image: /assets/img/viz-1.png
-    heading: Map of current beds data
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - image: /assets/img/viz-1.png
-    heading: Map of current beds data
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  - image: /assets/img/viz-vent-supply.png
+    url: https://www.covidcaremap.org/maps/hghi-vents/
+    heading: Ventilator Supply and Healthcare Capacity by State
+    description: 2010 estimated ventilator supply compared to healthcare capacity data released by the Harvard Global Health Initiative.
+  - image: /assets/img/viz-bed-capacity-map.png
+    url: https://www.covidcaremap.org/maps/us-healthcare-system-capacity/
+    heading: US Hospital Facility Bed Capacity Map
+    description: Open map data on all US hospitals’ bed capacity to care for COVID-19 patients by facility, county, hospital referral region, or state.
 
 
 
