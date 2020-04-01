@@ -13,11 +13,11 @@
 [context.production]
   environment = { JEKYLL_ENV = "production" }
 
-# [[redirects]]
-#   from = "https://covidcaremap.netlify.com/*"
-#   to = "https://www.covidcaremap.org/:splat"
-#   status = 301
-#   force = true
+[[redirects]]
+  from = "https://covidcaremap.netlify.com/*"
+  to = "https://www.covidcaremap.org/:splat"
+  status = 301
+  force = true
 
 [[headers]]
   for = "/*"
