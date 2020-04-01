@@ -151,3 +151,12 @@ dmypy.json
 .pyre/
 
 .DS_Store
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Netlify
+.netlify-cache

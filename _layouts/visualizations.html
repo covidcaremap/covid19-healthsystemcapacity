@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<section class="page-visualizations">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-md-6">
+				<h1>{{ site.data.visualization.visualization-heading }}</h1>
+				<p class="paragraphs">
+					{{ site.data.visualization.visualization-description }}
+				</p>
+			</div>
+			<div class="col-sm-4 col-md-6"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="visualization-items">{% include visualizations.html %}</div>
+			</div>
+		</div>
+	</div>
+</section>

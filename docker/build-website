@@ -1,0 +1,33 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+function usage() {
+
+    echo -n \
+        "Usage: $(basename "$0")
+Build the website!
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        docker run -ti --rm \
+            -e COVID19_DEBUG=1 \
+            -e NODE_VERSION=10.19.0 \
+            -e RUBY_VERSION=2.6.2 \
+            -e PYTHON_VERSION=3.7 \
+            -v "$PWD/.:/opt/repo" \
+            -v "$PWD/.netlify-cache:/opt/buildhome/cache" \
+            -w /opt/build \
+            --entrypoint /bin/bash \
+            netlify/build:xenial \
+            -c "build ./scripts/cibuild && rsync -acvz --delete /opt/buildhome/repo/_site/ /opt/repo/_site/"
+    fi
+fi
