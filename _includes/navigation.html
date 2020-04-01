@@ -1,0 +1,9 @@
+{% assign navurl = page.url | remove: 'index.html' %} {% for item in
+include.navigation.navigation %}
+<a
+  href="{{ item.url }}"
+  class="{% if item.url == navurl %}active{% endif %} {% if item.priority == true %}button ghost secondary{% endif %}"
+  >{{ item.text }}</a
+>
+{% if item.subitems %} {% include navigation.html navigation=item.subitems %} {%
+endif %} {% endfor %}

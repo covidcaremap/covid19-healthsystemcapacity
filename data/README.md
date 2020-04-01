@@ -1,5 +1,9 @@
 # Data Catalog
 
+- [Published Datasets](#published-datasets)
+- [External Datasets](#external-datasets)
+- [Processed Datasets](#processed-datasets)
+
 A catalog of all data used in the project.
 
     └── data
@@ -34,7 +38,7 @@ This data aggregates information about the healthcare system capacity. It source
 the [Healthcare Cost Report Information System (HCRIS)](#healthcare-cost-report-information-system-hcris-data) and
 an open hospital facilities dataset by [Definitive Healthcare](#definitive-health-dh-data).
 
-##### CovidCareMap Capcity Data Dictionary
+##### CovidCareMap Capacity Data Dictionary
 
 These fields are across all facility and regional datasets:
 
@@ -118,10 +122,13 @@ This information directly from the [ESRI page for the Definitive Healthcare data
 - [us_healthcare_capacity-facility-CovidCareMap.csv](published/us_healthcare_capacity-facility-CovidCareMap.csv): Data in CSV format.
 
 
-
-
-
 ## External Datasets
+
+External datasets used in the project will be documented here. This includes data committed to
+the repository in the `data/external` folder, data downloaded by the
+[Download_Data.ipynb](../notebooks/processing/Download_Data.ipynb) notebook, and data
+dynamically fetched from updating endpoints, normally exposed through the
+`covidcaremap` python package.
 
 ### Downloading Data
 
@@ -156,13 +163,19 @@ Sources:
 - **HCRIS-hosp10_2018_RPT.CSV**: HCRIS report data for 2018.
 - **HCRIS-hosp10_2018_NMRC.CSV**: Numeric column information for the HCRIS report data.
 
+#### Institute for Health Metric and Evaluation, University of Washington (IHME) Forecasts.
+
+http://www.healthdata.org/research-article/forecasting-covid-19-impact-hospital-bed-days-icu-days-ventilator-days-and-deaths
+
+IHME COVID-19 health service utilization forecasting team. Forecasting COVID-19 impact on hospital bed-days, ICU-days, ventilator days and deaths by US state in the next 4 months. MedRxiv. 26 March 2020.
+
 #### Harvard Global Health Institute (HGHI) Data
 
-This data was collected from the Harvard Global Health Institute (HGHI) study described here: https://globalepidemics.org/2020/03/17/caring-for-covid-19-patients/
+This data was collected from the Harvard Global Health Institute (HGHI) study described here: https://globalepidemics.org/2020-03-17-caring-for-covid-19-patients/
 
 ##### FILES
 
-- [HGHI - Hospital Capacity by State.csv](: Exported from https://docs.google.com/spreadsheets/d/1XUVyZF3X_4m72ztFnXZFvDKn5Yys1aKgu2Zmefd7wVo/edit?usp=sharing
+- **HGHI - Hospital Capacity by State.csv**: Exported from https://docs.google.com/spreadsheets/d/1XUVyZF3X_4m72ztFnXZFvDKn5Yys1aKgu2Zmefd7wVo/edit?usp=sharing. This data is the 60% Population estimate.
 - **HGHI - HRR Scorecard - 60% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
 - **HGHI - HRR Scorecard - 40% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
 - **HGHI - HRR Scorecard - 20% Population.csv** - Exported from https://docs.google.com/spreadsheets/d/1xAyBFTrlxSsTKQS7IDyr_Ah4JLBYj6_HX6ijKdm4fAY/edit?usp=sharing
@@ -269,7 +282,22 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 
 **Note** County level data is not committed to repository. See [Downloading Data](#downloading-data)
 
+### Covid19 confirmed cases
+
+USAFacts county-level COVID-19 data, see https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/.
+This data is fetched dynamically via methods in the `covidcaremap.cases` python package.
+
+NY Times provides county-level COVID-19 data, see
+https://github.com/nytimes/covid-19-data. This data is fetched
+dynamically via methods in the `covidcaremap.cases` python package.
+
 ## Processed Datasets
+
+Processed Datasets are ones which CovidCareMap.org processing and analytics produce and commit to the repository,
+but are not as well documented or verified as the published datasets as they are generall intermediary
+output.
+
+**Note:** The below list is not complete.
 
 ### HCRIS data
 

@@ -1,40 +1,35 @@
 import os
+import io
 import json
+from zipfile import ZipFile
 
 import pandas as pd
 import geopandas as gpd
+import requests
 
 from covidcaremap.constants import state_name_to_abbreviation
+from covidcaremap.util import fetch_df
 
-def data_dir():
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
 
-def external_data_dir():
-    """Data directory for data sourced externally from CovidCareMap.org"""
-    return os.path.abspath(os.path.join(data_dir(), 'external'))
+EXTERNAL_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'external'))
+PROCESSED_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'processed'))
+PUBLISHED_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'published'))
 
 def external_data_path(fname):
     """Make data path for data sourced externally from CovidCareMap.org"""
-    return os.path.join(external_data_dir(), fname)
-
-def processed_data_dir():
-    """Data directory for data processed by CovidCareMap.org"""
-    return os.path.abspath(os.path.join(data_dir(), 'processed'))
+    return os.path.join(EXTERNAL_DATA_DIR, fname)
 
 def processed_data_path(fname):
     """Make data path for data processed by CovidCareMap.org"""
-    return os.path.join(processed_data_dir(), fname)
-
-def published_data_dir():
-    """Data directory for data published by CovidCareMap.org"""
-    return os.path.abspath(os.path.join(data_dir(), 'published'))
+    return os.path.join(PROCESSED_DATA_DIR, fname)
 
 def published_data_path(fname):
     """Make data path for data published by CovidCareMap.org"""
-    return os.path.join(published_data_dir(), fname)
+    return os.path.join(PUBLISHED_DATA_DIR, fname)
 
 def data_path(fname):
-    return os.path.join(data_dir(), fname)
+    return os.path.join(DATA_DIR, fname)
 
 def read_hcris_gj():
     return json.loads(open(processed_data_path('usa_hospital_beds_hcris2018.geojson')).read())
@@ -58,3 +53,12 @@ def read_us_hrr_gdf():
 
 def read_census_data_df():
     return pd.read_csv(external_data_path('us-census-cc-est2018-alldata.csv'), encoding='unicode_escape')
+
+def get_ihme_forecast():
+    """Gets the latest CSV file from IHME predictions"""
+    url = 'https://ihmecovid19storage.blob.core.windows.net/latest/ihme-covid19.zip'
+    r = requests.get(url)
+    z = ZipFile(io.BytesIO(r.content))
+    latest_csv_name = sorted([x.filename for x in z.filelist if x.filename.endswith('csv')])[-1]
+    df = pd.read_csv(z.open(latest_csv_name))
+    return df

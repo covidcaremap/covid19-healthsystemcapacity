@@ -1,0 +1,21 @@
+data-heading: Data
+data-description: <p>Open, analysis-ready datasets about health system capacity to care for COVID-19 patients, especially the critically ill. All methods, data processing notebooks, visualizations, and other source code are free and open-source.</p><p>Have more up to date data? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF5Ctezi2hS85PJcqqYK58LMFxBySdBt2pxsriDLSh5XovUA/viewform">Update data</a>.</p>
+data-items:
+  - title: Hospital Bed Capacity
+    viz-url: /maps/us-healthcare-system-capacity/
+    download-url: https://github.com/covidcaremap/covid19-healthsystemcapacity/tree/master/data/published
+    description: Includes information about all hospital bed and ICU bed counts, historical occupancy rates, facility type and geolocation
+    sources: Definitive Healthcare, Healthcare Cost Report Information System (HCRIS), crowd-sourced updates
+    types:
+      - CSV
+      - GeoJSON
+      - Jupyter notebook
+  # - title: Current beds
+  #   viz-url: http://google.com
+  #   download-url: http://apple.com
+  #   description: Includes information about beds and occupancy rates at the State, County, RCC, and Facility level
+  #   sources: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  #   types:
+  #     - CSV
+  #     - GeoJSON
+  #     - Jupyter notebook

@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<section class="page-data">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-md-6">
+				<h1>{{ site.data.data.data-heading }}</h1>
+				<p class="paragraphs">
+					{{ site.data.data.data-description }}
+				</p>
+			</div>
+			<div class="col-sm-4 col-md-6"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="data-items">{% include data.html %}</div>
+			</div>
+		</div>
+	</div>
+</section>
