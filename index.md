@@ -7,7 +7,7 @@ intro: We are a volunteer-driven, open-source effort by geospatial data experts 
 cta-label: Request data support
 cta-url: mailto:data@covidcaremap.org
 hover-button-label: View the visualization
-hover-button-url: https://www.covidcaremap.org/maps/us-healthcare-system-capacity/
+hover-button-url: /maps/us-healthcare-system-capacity/
 why-heading: Why
 why-description: >-
   <p>Our healthcare system is at risk of being overwhelmed. The volume and speed at which people are falling ill to COVID-19 around the country may saturate or exceed our healthcare providers’ and facilities’ ability to effectively care for them, especially at the ICU level.</p><p>We must first #FlattenTheCurve to give our healthcare system more time to prepare. Preparation means more beds, ventilators, providers, PPEs and supplies at the right places and times to meet patient needs. Through our mapping and data efforts, we aim to provide situational awareness and foresight for health systems, policymakers, emergency managers, suppliers, and the public to plan and coordinate preparations to the needed level of detail of an individual facility, county, or state.</p>
