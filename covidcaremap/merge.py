@@ -41,7 +41,8 @@ class Matcher:
 
         
         if str_match_method.lower() not in ('name', 'properties', 'avg'):
-            raise Exception('"str_match" parameter must be one of ("name", "properties", or "average"), got "{}"'.format(str_match_method))
+            raise Exception(
+                '"str_match" parameter must be one of ("name", "properties", or "average"), got "{}"'.format(str_match_method))
         str_match_method = str_match_method.lower()
 
         if len(self.d2) < n:
@@ -237,12 +238,17 @@ class Matcher:
     def map_all(self, names, addl_labels=None):
         d1_name, d2_name = names
         m = HospMap(self.centroid(), 7)
-        m.add_point_subset(self.d1_matched.to_crs('epsg:4326'), '{} - matched'.format(d1_name), color='blue', addl_labels=addl_labels)
-        m.add_point_subset(self.d2_matched.to_crs('epsg:4326'), '{} - matched'.format(d2_name), color='red', addl_labels=addl_labels)
-        m.add_point_subset(self.d1_unmatched.to_crs('epsg:4326'), '{} - unmatched'.format(d1_name), color='purple')
-        m.add_point_subset(self.d2_unmatched.to_crs('epsg:4326'), '{} - unmatched'.format(d2_name), color='orange')
-        m.add_connections(self.d1_matched.to_crs('epsg:4326'), self.d2_matched.to_crs('epsg:4326'))
-        
+        m.add_point_subset(self.d1_matched.to_crs(
+            'epsg:4326'), '{} - matched'.format(d1_name), color='blue', addl_labels=addl_labels)
+        m.add_point_subset(self.d2_matched.to_crs(
+            'epsg:4326'), '{} - matched'.format(d2_name), color='red', addl_labels=addl_labels)
+        m.add_point_subset(self.d1_unmatched.to_crs(
+            'epsg:4326'), '{} - unmatched'.format(d1_name), color='purple')
+        m.add_point_subset(self.d2_unmatched.to_crs(
+            'epsg:4326'), '{} - unmatched'.format(d2_name), color='orange')
+        m.add_connections(self.d1_matched.to_crs('epsg:4326'),
+                          self.d2_matched.to_crs('epsg:4326'))
+
         return m
 
 

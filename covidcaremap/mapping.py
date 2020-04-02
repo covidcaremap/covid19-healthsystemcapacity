@@ -28,7 +28,7 @@ def gdf_for_folium(gdf, addl_labels=None):
 
         tooltip = '<br>'.join(
             [name, addr, state, county, city, zip_code, distance, g_source, c_source])
-        
+
         if addl_labels:
             for al in addl_labels:
                 tooltip += '<br><b>{}</b>: {}'.format(al, r[al])
@@ -39,7 +39,7 @@ def gdf_for_folium(gdf, addl_labels=None):
 
 
 class HospMap(Map):
-    def __init__(self, location=(39.8333333,-98.585522), zoom_start=4):
+    def __init__(self, location=(39.8333333, -98.585522), zoom_start=4):
         super().__init__(location, zoom_start=zoom_start)
         self.has_layer_control = False
 
@@ -82,9 +82,8 @@ class HospMap(Map):
                      [i for i, _ in gdf_for_folium(gdf2)]))
         for ll in l:
             fg.add_child(folium.PolyLine(ll, color=color, opacity=0.5))
-        
-        self.add_child(fg)
 
+        self.add_child(fg)
 
     @staticmethod
     def add_points(fg, gdf, color, addl_labels=None):
