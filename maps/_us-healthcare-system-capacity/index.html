@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>COVID Care Map</title>
+    <title>US Hospital Facility Bed Capacity Map | CovidCareMap</title>
     <meta name="description" content="" />
 
     <meta name="theme-color" content="#ffffff" />
@@ -31,15 +31,11 @@
             ><img
               src="/img/covidcaremap-logo.png"
               height="18"
-              alt="COVIDCareMap"
+              alt="CovidCareMap"
           /></a>
         </div>
         <nav>
-          <a target="_blank" href="https://forms.gle/KJsEjqgxkWn6xWRn8"
-            >Update data</a
-          >
-          <a target="_blank" href="https://www.covidcaremap.org/"
-            >About/Methodology</a
+          <a target="_blank" href="https://www.covidcaremap.org/">About</a
           ><a
             target="_blank"
             href="https://github.com/covidcaremap/covid19-healthsystemcapacity"
@@ -47,41 +43,63 @@
           ><a target="_blank" href="https://www.covidcaremap.org/#data"
             >Download data</a
           >
+          <a target="_blank" href="https://forms.gle/KJsEjqgxkWn6xWRn8"
+            >Update data</a
+          >
         </nav>
       </div>
       <div class="sidebar">
         <div class="content">
-          <p class="large">
-            Open map data on US health system capacity to care for COVID-19
-              patients
+          <h2 class="large">
+            US Hospital Facility Bed Capacity Map
+          </h2>
+          <p>
+            Open map data on all US hospitals’ bed capacity to care for COVID-19
+            patients. Organized by facility, county, hospital referral region,
+            or state. See our
+            <a href="https://www.covidcaremap.org/" target="_blank">website</a>
+            for methods, sources, data, and code—all free and open source.
           </p>
           <p>
-              We use open data to provide a recent view of the US health system's capacity to care for hospitalized COVID-19 patients.
-              <a href="https://www.covidcaremap.org/">See our project</a> for
-              methods, sources, data, and code - all free and open-source.
-          </p>
-          <p>
-              <strong>NOTE:</strong> Numbers are not reported in real-time. They are from 2018 facility reports or prior and may be incomplete or outdated. With your help, we are updating this data to create a more current view. <a target="_blank" href="https://forms.gle/KJsEjqgxkWn6xWRn8">Correct, update, or add data.</a>
+            Note: Numbers are not reported in real time. Most are from 2018
+            reports or prior and may be incomplete or outdated. With your help,
+            we are
+            <a target="_blank" href="https://forms.gle/KJsEjqgxkWn6xWRn8"
+              >updating this data</a
+            >
+            to show a more current view. Main data sources are
+            <a
+              target="_blank"
+              href="https://blog.definitivehc.com/news/definitive-healthcare-esri-geomapping-covid19"
+              >Definitive Healthcare</a
+            >
+            &
+            <a
+              target="_blank"
+              href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports"
+              >Healthcare Cost Report Information System</a
+            >
+            (HCRIS).
           </p>
           <hr />
           <div class="map-options menu" id="indicator">
             <button class="active" onclick="setIndicator(0)">
               <div class="button-icon" style="color: #023858">
-                <i class="icon-eye"></i>
-                <i class="icon-eye-off"></i>
+                <i class="icon-dot-circled"></i>
+                <i class="icon-circle-empty"></i>
               </div>
               <div class="button-text">
                 <div class="button-label">Staffed All Beds</div>
                 <div class="button-description">
-                  Number of all hospital beds typically set up and
-                  staffed for inpatient care
+                  Number of all hospital beds typically set up and staffed for
+                  inpatient care
                 </div>
               </div>
             </button>
             <button onclick="setIndicator(1)">
               <div class="button-icon" style="color: #4d004b">
-                <i class="icon-eye"></i>
-                <i class="icon-eye-off"></i>
+                <i class="icon-dot-circled"></i>
+                <i class="icon-circle-empty"></i>
               </div>
               <div class="button-text">
                 <div class="button-label">Staffed ICU Beds</div>
@@ -93,8 +111,8 @@
             </button>
             <button onclick="setIndicator(2)">
               <div class="button-icon" style="color: #00441b">
-                <i class="icon-eye"></i>
-                <i class="icon-eye-off"></i>
+                <i class="icon-dot-circled"></i>
+                <i class="icon-circle-empty"></i>
               </div>
               <div class="button-text">
                 <div class="button-label">Licensed All Beds</div>
@@ -105,21 +123,20 @@
             </button>
             <button onclick="setIndicator(3)">
               <div class="button-icon" style="color: #6c2167">
-                <i class="icon-eye"></i>
-                <i class="icon-eye-off"></i>
+                <i class="icon-dot-circled"></i>
+                <i class="icon-circle-empty"></i>
               </div>
               <div class="button-text">
                 <div class="button-label">All Bed Occupancy Rate</div>
                 <div class="button-description">
-                  Percent of all hospital beds typically occupied by
-                  patients
+                  Percent of all hospital beds typically occupied by patients
                 </div>
               </div>
             </button>
             <button onclick="setIndicator(4)">
               <div class="button-icon" style="color: #2a5675">
-                <i class="icon-eye"></i>
-                <i class="icon-eye-off"></i>
+                <i class="icon-dot-circled"></i>
+                <i class="icon-circle-empty"></i>
               </div>
               <div class="button-text">
                 <div class="button-label">ICU Bed Occupancy Rate</div>
