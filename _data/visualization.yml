@@ -1,5 +1,5 @@
 visualization-heading: Visualizations
-visualization-description: <p class="large">Maps, charts, analysis, and other visualizations about health system capacity. Don’t see what you’re looking for? Contact us to let us know what you need from our team. <a href="mailto:data@covidcaremap.org">Contact us</a> and let us know what what you need from our team.</p>
+visualization-description: <p class="large">Maps, charts, analysis, and other visualizations about health system capacity. Don’t see what you’re looking for? <a href="mailto:data@covidcaremap.org">Contact us</a> and let us know what what you need from our team.</p>
 visualization-items:
   - image: /assets/img/viz-vent-supply.png
     url: /maps/hghi-vents/

@@ -10,7 +10,7 @@ hover-button-label: View the visualization
 hover-button-url: /maps/us-healthcare-system-capacity/
 why-heading: Why
 why-description: >-
-  <p>Our healthcare system is at risk of being overwhelmed. How quickly and how many people are falling ill to COVID-19 at one time may exceed our ability to effectively care for everyone, especially at the ICU level.</p><p>We must #FlattenTheCurve to give our healthcare system more time to prepare for this surge of patients. Preparation means enough space, staff, supplies, and systems at the right places and times to meet patient needs. Through our mapping and analytics, we provide situational awareness and foresight for health systems, policymakers, emergency managers, suppliers, and the public to plan and coordinate preparations between facilities, counties, states, or nationwide.</p>
+  <p>Our healthcare system is at risk of being overwhelmed. How quickly and how many people are falling ill to COVID-19 at one time may exceed our ability to effectively care for everyone, especially at the ICU level.</p><p>We must #FlattenTheCurve to give our healthcare system more time to prepare for this surge of patients. Preparation means enough space, staff, supplies, and systems at the right places and times to meet patient needs. Through mapping and geospatial analytics, we provide situational awareness and foresight for health systems, policymakers, emergency managers, suppliers, and the public to plan and coordinate preparations between facilities, counties, states, or nationwide.</p>
 why-cta1-title: About this project
 why-cta1-url: https://github.com/covidcaremap/covid19-healthsystemcapacity#overview
 why-cta2-title: Request data support
