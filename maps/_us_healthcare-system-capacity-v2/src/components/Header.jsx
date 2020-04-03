@@ -9,18 +9,14 @@ export default function Header() {
                     <img
                         src="/img/covidcaremap-logo.png"
                         height="18"
-                        alt="COVIDCareMap"
+                        alt="CovidCareMap"
                     />
                 </a>
             </div>
             <nav>
                 <NewTabLink
-                    href="https://forms.gle/KJsEjqgxkWn6xWRn8"
-                    text="Update data"
-                ></NewTabLink>
-                <NewTabLink
                     href="https://www.covidcaremap.org/"
-                    text="About/Methodology"
+                    text="About"
                 ></NewTabLink>
                 <NewTabLink
                     href="https://github.com/covidcaremap/covid19-healthsystemcapacity"
@@ -29,6 +25,10 @@ export default function Header() {
                 <NewTabLink
                     href="https://www.covidcaremap.org/#data"
                     text="Download data"
+                ></NewTabLink>
+                <NewTabLink
+                    href="https://forms.gle/KJsEjqgxkWn6xWRn8"
+                    text="Update data"
                 ></NewTabLink>
             </nav>
         </div>

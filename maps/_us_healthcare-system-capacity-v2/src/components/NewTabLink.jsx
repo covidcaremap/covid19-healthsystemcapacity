@@ -4,7 +4,8 @@ import React from 'react';
 export default function NewTabLink({ href, text }) {
     return (
         <a target="_blank" rel="noopener noreferrer" href={href}>
-            {text}
+            {' '}
+            {text}{' '}
         </a>
     );
 }

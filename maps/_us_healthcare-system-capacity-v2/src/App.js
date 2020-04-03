@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import './normalize.css';
 import './App.css';
 import './fontello.css';
-import './normalize.css';
 
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -14,13 +14,13 @@ function App() {
     const [perCapita, setPerCapita] = useState(1);
     const [indicator, setIndicator] = useState(0);
 
-    const handleTypeChange = updatedType => {
+    const handleTypeChange = (updatedType) => {
         setAggType(updatedType);
     };
-    const handleCapitaChange = updateCapita => {
+    const handleCapitaChange = (updateCapita) => {
         setPerCapita(updateCapita);
     };
-    const handleIndicatorChange = updateIndicator => {
+    const handleIndicatorChange = (updateIndicator) => {
         setIndicator(updateIndicator);
     };
 

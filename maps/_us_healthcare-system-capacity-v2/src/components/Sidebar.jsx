@@ -2,36 +2,44 @@ import React from 'react';
 import NewTabLink from './NewTabLink';
 
 export default function Sidebar({ indicator, onIndicatorChanged }) {
-    const handleIndicatorChanged = indicatorId => {
+    const handleIndicatorChanged = (indicatorId) => {
         return () => onIndicatorChanged(indicatorId);
     };
 
     return (
         <div className="sidebar">
             <div className="content">
-                <p className="large">
-                    Open map data on US health system capacity to care for
-                    COVID-19 patients
+                <h2 class="large">US Hospital Facility Bed Capacity Map</h2>
+                <p>
+                    Open map data on all US hospitals’ bed capacity to care for
+                    COVID-19 patients. Organized by facility, county, hospital
+                    referral region, or state. See our
+                    <NewTabLink
+                        href="https://www.covidcaremap.org/"
+                        text="website"
+                    ></NewTabLink>
+                    for methods, sources, data, and code—all free and open
+                    source.
                 </p>
                 <p>
-                    We use open data to provide a recent view of the US health
-                    system's capacity to care for hospitalized COVID-19
-                    patients.
-                    <a href="https://www.covidcaremap.org/">
-                        See our project
-                    </a>{' '}
-                    for methods, sources, data, and code - all free and
-                    open-source.
-                </p>
-                <p>
-                    <strong>NOTE:</strong> Numbers are not reported in
-                    real-time. They are from 2018 facility reports or prior and
-                    may be incomplete or outdated. With your help, we are
-                    updating this data to create a more current view.{' '}
+                    Note: Numbers are not reported in real time. Most are from
+                    2018 reports or prior and may be incomplete or outdated.
+                    With your help, we are
                     <NewTabLink
                         href="https://forms.gle/KJsEjqgxkWn6xWRn8"
-                        text="Correct, update, or add data."
+                        text="updating this data"
                     ></NewTabLink>
+                    to show a more current view. Main data sources are
+                    <NewTabLink
+                        href="https://blog.definitivehc.com/news/definitive-healthcare-esri-geomapping-covid19"
+                        text="Definitive Healthcare"
+                    ></NewTabLink>
+                    &
+                    <NewTabLink
+                        href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports"
+                        text="Healthcare Cost Report Information System"
+                    ></NewTabLink>
+                    (HCRIS).
                 </p>
                 <hr />
                 <div className="map-options menu" id="indicator">
@@ -43,8 +51,8 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                             className="button-icon"
                             style={{ color: '#023858' }}
                         >
-                            <i className="icon-eye"></i>
-                            <i className="icon-eye-off"></i>
+                            <i className="icon-dot-circled"></i>
+                            <i className="icon-circle-empty"></i>
                         </div>
                         <div className="button-text">
                             <div className="button-label">Staffed All Beds</div>
@@ -62,8 +70,8 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                             className="button-icon"
                             style={{ color: '#4d004b' }}
                         >
-                            <i className="icon-eye"></i>
-                            <i className="icon-eye-off"></i>
+                            <i className="icon-dot-circled"></i>
+                            <i className="icon-circle-empty"></i>
                         </div>
                         <div className="button-text">
                             <div className="button-label">Staffed ICU Beds</div>
@@ -81,8 +89,8 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                             className="button-icon"
                             style={{ color: '#00441b' }}
                         >
-                            <i className="icon-eye"></i>
-                            <i className="icon-eye-off"></i>
+                            <i className="icon-dot-circled"></i>
+                            <i className="icon-circle-empty"></i>
                         </div>
                         <div className="button-text">
                             <div className="button-label">
@@ -101,8 +109,8 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                             className="button-icon"
                             style={{ color: '#6c2167' }}
                         >
-                            <i className="icon-eye"></i>
-                            <i className="icon-eye-off"></i>
+                            <i className="icon-dot-circled"></i>
+                            <i className="icon-circle-empty"></i>
                         </div>
                         <div className="button-text">
                             <div className="button-label">
@@ -122,8 +130,8 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                             className="button-icon"
                             style={{ color: '#2a5675' }}
                         >
-                            <i className="icon-eye"></i>
-                            <i className="icon-eye-off"></i>
+                            <i className="icon-dot-circled"></i>
+                            <i className="icon-circle-empty"></i>
                         </div>
                         <div className="button-text">
                             <div className="button-label">

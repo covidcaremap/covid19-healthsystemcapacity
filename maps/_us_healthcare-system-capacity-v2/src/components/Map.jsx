@@ -25,23 +25,25 @@ const boundarySource = {
 
 export default function Map({ indicator, aggType, perCapita }) {
     return (
-        <MapGL
-            className="map-container"
-            zoom={zoom}
-            center={center}
-            dragRotate={false}
-            pitchWithRotate={false}
-            touchZoomRotate={false}
-            style="mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy"
-        >
-            <Source id="boundaries" tileJsonSource={boundarySource} />
-            <HealthCareLayers
-                indicator={indicator}
-                aggType={aggType}
-                perCapita={perCapita}
-            />
-            <ZoomControl position="top-right" />
-        </MapGL>
+        <div className="map-container">
+            <MapGL
+                className="map"
+                zoom={zoom}
+                center={center}
+                dragRotate={false}
+                pitchWithRotate={false}
+                touchZoomRotate={false}
+                style="mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy"
+            >
+                <Source id="boundaries" tileJsonSource={boundarySource} />
+                <HealthCareLayers
+                    indicator={indicator}
+                    aggType={aggType}
+                    perCapita={perCapita}
+                />
+                <ZoomControl position="top-right" />
+            </MapGL>
+        </div>
     );
 }
 /*
