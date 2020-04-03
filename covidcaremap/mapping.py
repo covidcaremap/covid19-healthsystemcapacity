@@ -60,7 +60,7 @@ class HospMap(Map):
         if lines:
             gdf1.sort_values(sort_col, inplace=True)
             gdf2.sort_values(sort_col, inplace=True)
-            self.add_connecting_lines(fg, gdf1, gdf2, addl_labels=addl_labels)
+            self.add_connecting_lines(fg, gdf1, gdf2)
 
         self.add_child(fg)
 
