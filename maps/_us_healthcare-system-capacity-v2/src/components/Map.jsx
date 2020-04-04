@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMapGL, { Source, ZoomControl } from 'react-mapbox-gl';
 import HealthCareLayers from './HealthCareLayers';
+import PopupContent from './PopupContent';
 
 const MapGL = ReactMapGL({
     accessToken:
@@ -24,6 +25,28 @@ const boundarySource = {
 };
 
 export default function Map({ indicator, aggType, perCapita }) {
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupDetails, setPopupDetails] = useState();
+
+    const handleHoverFeature = (feature, coordinates) => {
+        setPopupDetails({ coords: coordinates, feature: feature });
+        setShowPopup(true);
+    };
+
+    const popup = showPopup ? (
+        <PopupContent
+            feature={popupDetails.feature}
+            coordinates={popupDetails.coords}
+            aggType={aggType}
+            perCapita={perCapita}
+        />
+    ) : null;
+
+    const handleMapOut = (e) => {
+        e._canvas.style.cursor = '';
+        setShowPopup(false);
+    };
+
     return (
         <div className="map-container">
             <MapGL
@@ -33,13 +56,16 @@ export default function Map({ indicator, aggType, perCapita }) {
                 dragRotate={false}
                 pitchWithRotate={false}
                 touchZoomRotate={false}
+                onMouseMove={handleMapOut}
                 style="mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy"
             >
                 <Source id="boundaries" tileJsonSource={boundarySource} />
+                {popup}
                 <HealthCareLayers
                     indicator={indicator}
                     aggType={aggType}
                     perCapita={perCapita}
+                    onHover={handleHoverFeature}
                 />
                 <ZoomControl position="top-right" />
             </MapGL>

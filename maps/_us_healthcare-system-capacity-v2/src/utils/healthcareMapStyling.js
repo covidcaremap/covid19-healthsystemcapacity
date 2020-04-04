@@ -1,7 +1,7 @@
 import { indicators, perCapitas } from './config';
 import { flatten, zip } from 'lodash';
 
-export const fillStyleByType = aggTypeMatchValue => {
+export const fillStyleByType = (aggTypeMatchValue) => {
     return (breaks, indicator, aggType, perCapita) => {
         // Fill based on breaks only if this layer matches the
         // defined aggregation type, else just render it transparent
@@ -122,7 +122,7 @@ function getBreaks(breaks, indicator, aggType, perCapita) {
     // property value; this comes up some places in our map where the first breakpoint is 0, where it
     // won't style any of the features with a value of 0. I am temporarily getting around this by
     // adding a very small value to the break point when this happens.
-    var modifiedBreaks = breakpoints.map(function(breakpoint, i) {
+    var modifiedBreaks = breakpoints.map(function (breakpoint, i) {
         if (i > 0 && breakpoint === breakpoints[i - 1]) {
             return breakpoint + 0.0000000000001;
         } else {
@@ -132,11 +132,7 @@ function getBreaks(breaks, indicator, aggType, perCapita) {
     return modifiedBreaks;
 }
 
-function allowTypeChange(theIndicator, aggType) {
-    return !(theIndicator === 3 || theIndicator === 4) && aggType !== 3;
-}
-
-function getProperty(theIndicator, aggType, perCapita) {
+export function getProperty(theIndicator, aggType, perCapita) {
     var indicatorProperty = indicators[theIndicator]['propertyInData'];
     if (shouldUsePerCapita(theIndicator, perCapita, aggType)) {
         indicatorProperty += perCapitas[perCapita]['stringInData'];

@@ -9,7 +9,7 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
     return (
         <div className="sidebar">
             <div className="content">
-                <h2 class="large">US Hospital Facility Bed Capacity Map</h2>
+                <h2 className="large">US Hospital Facility Bed Capacity Map</h2>
                 <p>
                     Open map data on all US hospitals’ bed capacity to care for
                     COVID-19 patients. Organized by facility, county, hospital

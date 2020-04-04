@@ -10,23 +10,44 @@ const stateFillStyle = fillStyleByType(0);
 const hrrFillStyle = fillStyleByType(1);
 const countyFillStyle = fillStyleByType(2);
 
-export default function HealthCareLayers({ indicator, aggType, perCapita }) {
+export default function HealthCareLayers({
+    indicator,
+    aggType,
+    perCapita,
+    onHover,
+    onHoverOut,
+}) {
     const [classBreaks, setBreaks] = useState(null);
     const [fetchingBreaks, setFetchingBreaks] = useState(false);
 
     if (!fetchingBreaks && !classBreaks) {
         setFetchingBreaks(true);
         Promise.all(
-            aggregationTypes.map(type =>
-                fetch(type.breaksUrl).then(function(response) {
+            aggregationTypes.map((type) =>
+                fetch(type.breaksUrl).then(function (response) {
                     return response.json();
                 }),
             ),
-        ).then(data => {
+        ).then((data) => {
             // Persist the breaks for each aggregation type by id
             setBreaks([data[0], data[1], data[2], data[3]]);
         });
     }
+
+    const handleMouseMove = (boundAggType) => {
+        return (e) => {
+            if (boundAggType === aggType) {
+                e.target.getCanvas().style.cursor = 'default';
+                const feature = e.features?.[0];
+                if (feature) {
+                    const { lng, lat } = e.lngLat;
+                    onHover(feature, [lng, lat]);
+                } else {
+                    onHoverOut();
+                }
+            }
+        };
+    };
 
     return (
         <>
@@ -36,6 +57,7 @@ export default function HealthCareLayers({ indicator, aggType, perCapita }) {
                 sourceId="boundaries"
                 sourceLayer="county"
                 before="road-label"
+                onMouseMove={handleMouseMove(2)}
                 paint={countyFillStyle(
                     classBreaks,
                     indicator,
@@ -70,6 +92,7 @@ export default function HealthCareLayers({ indicator, aggType, perCapita }) {
                 sourceId="boundaries"
                 sourceLayer="hrr"
                 before="road-label"
+                onMouseMove={handleMouseMove(1)}
                 paint={hrrFillStyle(classBreaks, indicator, aggType, perCapita)}
             />
             <Layer
@@ -120,6 +143,7 @@ export default function HealthCareLayers({ indicator, aggType, perCapita }) {
                 sourceId="boundaries"
                 sourceLayer="state"
                 before="state-line"
+                onMouseMove={handleMouseMove(0)}
                 paint={stateFillStyle(
                     classBreaks,
                     indicator,
@@ -133,6 +157,7 @@ export default function HealthCareLayers({ indicator, aggType, perCapita }) {
                 sourceId="boundaries"
                 sourceLayer="facility"
                 before="road-label"
+                onMouseMove={handleMouseMove(3)}
                 paint={facilityCircleStyle(
                     classBreaks,
                     indicator,
