@@ -10,7 +10,8 @@ A catalog of all data used in the project.
         ├── README.md          <- This file.
         ├── external           <- Intermediate data that has been transformed.
         ├── published          <- The final, canonical data sets for COVID Care Map.
-        └── processed          <- Folder containing intermediate processing data.
+        ├── processed          <- Folder containing intermediate processing data.
+        └── local              <- Folder containing intermediate data that is not comitted to the repository.
 
 ## Published Datasets
 
