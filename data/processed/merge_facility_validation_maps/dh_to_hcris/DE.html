@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f4d2b29abda4cc0bb1bb216f423d16a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f4d2b29abda4cc0bb1bb216f423d16a" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f4d2b29abda4cc0bb1bb216f423d16a = L.map(
+                "map_0f4d2b29abda4cc0bb1bb216f423d16a",
+                {
+                    center: [1985479.0290957668, 1747997.6243771003],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0863438c10824acbaea6c7b5b1b41451 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var feature_group_ad2c768fc06440e785bcce5a5a710077 = L.featureGroup(
+                {}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var circle_marker_b4f3085c9494497d82b889633051db43 = L.circleMarker(
+                [39.749794799999975, -75.56665190000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_b4f3085c9494497d82b889633051db43.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. FRANCIS HOSPITAL  WILMINGTON<br><b>Addr:</b> 7TH & CLAYTON STREETS<br><b>State:</b> DE<br><b>County:</b> None<br><b>City:</b> WILMINGTON<br><b>Zip Code:</b> 19805<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3e5d068062744d64ab436476b97ceae6 = L.circleMarker(
+                [39.15129590000005, -75.52362019999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_3e5d068062744d64ab436476b97ceae6.bindTooltip(
+                `<div>
+                     <b>Name:</b> BAYHEALTH HOSPITAL  KENT CAMPUS<br><b>Addr:</b> 640 SOUTH STATE STREET<br><b>State:</b> DE<br><b>County:</b> KENT<br><b>City:</b> DOVER<br><b>Zip Code:</b> 19901<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd0eea79fe4044c4a4f94353b6ff3c23 = L.circleMarker(
+                [38.6418275, -75.6045048],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_cd0eea79fe4044c4a4f94353b6ff3c23.bindTooltip(
+                `<div>
+                     <b>Name:</b> NANTICOKE MEMORIAL HOSPITAL<br><b>Addr:</b> 801 MIDDLEFORD ROAD<br><b>State:</b> DE<br><b>County:</b> SUSSEX<br><b>City:</b> SEAFORD<br><b>Zip Code:</b> 19973<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3dae2cdd8e6403a91957dc2f8af000a = L.circleMarker(
+                [38.7724506, -75.14413360000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_b3dae2cdd8e6403a91957dc2f8af000a.bindTooltip(
+                `<div>
+                     <b>Name:</b> BEEBE MEDICAL CENTER<br><b>Addr:</b> 424 SAVANAH ROAD<br><b>State:</b> DE<br><b>County:</b> SUSSEX<br><b>City:</b> LEWES<br><b>Zip Code:</b> 19958<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 109
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e81b7fcf2714aaf901442b23ef0f6d0 = L.circleMarker(
+                [38.886835700000056, -75.3911438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_4e81b7fcf2714aaf901442b23ef0f6d0.bindTooltip(
+                `<div>
+                     <b>Name:</b> BAYHEALTH HOSPITAL  SUSSEX CAMPUS<br><b>Addr:</b> 100 WELLNESS WAY<br><b>State:</b> DE<br><b>County:</b> SUSSEX<br><b>City:</b> MILFORD<br><b>Zip Code:</b> 19963<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9934b9d813e64649be0abb599104d10f = L.circleMarker(
+                [39.74999369999994, -75.5664999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_9934b9d813e64649be0abb599104d10f.bindTooltip(
+                `<div>
+                     <b>Name:</b> SSH - WILMINGTON  INC<br><b>Addr:</b> 7TH AND CLAYTON STREETS 5TH FLOOR<br><b>State:</b> DE<br><b>County:</b> NEWCASTLE<br><b>City:</b> WILMINGTON<br><b>Zip Code:</b> 19805<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23a264dc05dc4b389d967b84ae7d8837 = L.circleMarker(
+                [39.453486300000016, -75.6774276],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_23a264dc05dc4b389d967b84ae7d8837.bindTooltip(
+                `<div>
+                     <b>Name:</b> HEALTHSOUTH REHABILITATION HOSPITAL<br><b>Addr:</b> 250 EAST HAMPTON ROAD<br><b>State:</b> DE<br><b>County:</b> CASTLE<br><b>City:</b> MIDDLETOWN<br><b>Zip Code:</b> 19709<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b44dd7ebaef424cb5d3aa1313ee0377 = L.circleMarker(
+                [39.17731189999999, -75.55560159999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_6b44dd7ebaef424cb5d3aa1313ee0377.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM REHAB HOSPITAL OF DOVER<br><b>Addr:</b> 1240 MCKEE ROAD<br><b>State:</b> DE<br><b>County:</b> KENT<br><b>City:</b> DOVER<br><b>Zip Code:</b> 19904<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_679e1516315d48dfa57ffba11c748c1b = L.circleMarker(
+                [39.77937890000002, -75.55529760000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_679e1516315d48dfa57ffba11c748c1b.bindTooltip(
+                `<div>
+                     <b>Name:</b> ALFRED I DUPONT HOSP FOR CHILDREN<br><b>Addr:</b> 1600 ROCKLAND ROAD<br><b>State:</b> DE<br><b>County:</b> NEW CASTLE<br><b>City:</b> WILMINGTON<br><b>Zip Code:</b> 19899<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1a5c4dd6c14b4ab48be9e4195e7e0761 = L.circleMarker(
+                [39.700879300000004, -75.576347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_1a5c4dd6c14b4ab48be9e4195e7e0761.bindTooltip(
+                `<div>
+                     <b>Name:</b> DELAWARE PSYCHIATRIC CENTER<br><b>Addr:</b> 1901 N. DUPONT HIGHWAY<br><b>State:</b> DE<br><b>County:</b> None<br><b>City:</b> NEW CASTLE<br><b>Zip Code:</b> 19720<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b07be65bcd1f4b8e9464f8de6214e003 = L.circleMarker(
+                [39.69520199999998, -75.66080879999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_b07be65bcd1f4b8e9464f8de6214e003.bindTooltip(
+                `<div>
+                     <b>Name:</b> ROCKFORD<br><b>Addr:</b> 100 ROCKFORD DRIVE<br><b>State:</b> DE<br><b>County:</b> NEW CASTLE<br><b>City:</b> NEWARK<br><b>Zip Code:</b> 19713<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ddfb18995eb746ab84c789b6b5c93107 = L.circleMarker(
+                [39.640128599999976, -75.6295905],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_ddfb18995eb746ab84c789b6b5c93107.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEADOW WOOD HOSPITAL<br><b>Addr:</b> 575 SOUTH DUPONT HWY<br><b>State:</b> DE<br><b>County:</b> NEW CASTLE<br><b>City:</b> NEW CASTLE<br><b>Zip Code:</b> 19720-4606<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_02873ed07a2541f183ff4bdf58beca31 = L.circleMarker(
+                [39.15362400000003, -75.48431099999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_02873ed07a2541f183ff4bdf58beca31.bindTooltip(
+                `<div>
+                     <b>Name:</b> DOVER BEHAVIORAL HEALTH SYSTEM<br><b>Addr:</b> 725 HORSEPOND ROAD<br><b>State:</b> DE<br><b>County:</b> KENT<br><b>City:</b> DOVER<br><b>Zip Code:</b> 19901<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fdaded3b4451495dbb80809781c406c9 = L.circleMarker(
+                [38.6990883, -75.40741710000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_ad2c768fc06440e785bcce5a5a710077);
+        
+    
+            circle_marker_fdaded3b4451495dbb80809781c406c9.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUN BEHAVIORAL DELAWARE  LLC<br><b>Addr:</b> 21655 BIDEN AVENUE<br><b>State:</b> DE<br><b>County:</b> None<br><b>City:</b> GEORGETOWN<br><b>Zip Code:</b> 19947<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_88c99c2fe7bd4388997983d666e15cdb = L.featureGroup(
+                {}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var circle_marker_62fce6aa039c4d40932db3f5b02f388c = L.circleMarker(
+                [39.74979479999993, -75.56665190000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_62fce6aa039c4d40932db3f5b02f388c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Saint Francis Healthcare<br><b>Addr:</b> 701 N Clayton St<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Wilmington<br><b>Zip Code:</b> 19805<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b14585d8e8564387893ea1f7c48ac251 = L.circleMarker(
+                [39.151295900000065, -75.52362019999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_b14585d8e8564387893ea1f7c48ac251.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bayhealth Hospital - Kent Campus<br><b>Addr:</b> 640 S State St<br><b>State:</b> DE<br><b>County:</b> Kent<br><b>City:</b> Dover<br><b>Zip Code:</b> 19901<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d2ba5db86b94610b68b36bcba22cab0 = L.circleMarker(
+                [38.6418275, -75.6045048],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_9d2ba5db86b94610b68b36bcba22cab0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Nanticoke Memorial Hospital<br><b>Addr:</b> 801 Middleford Rd<br><b>State:</b> DE<br><b>County:</b> Sussex<br><b>City:</b> Seaford<br><b>Zip Code:</b> 19973<br><b>Distance discrepancy:</b> 243 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6baa8ec4d5c347f6bca5737fce33c742 = L.circleMarker(
+                [38.77195109999995, -75.1430456],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_6baa8ec4d5c347f6bca5737fce33c742.bindTooltip(
+                `<div>
+                     <b>Name:</b> Beebe Healthcare - Margaret H Rollins Lewes Campus (FKA Beebe Medical Center)<br><b>Addr:</b> 424 Savannah Rd<br><b>State:</b> DE<br><b>County:</b> Sussex<br><b>City:</b> Lewes<br><b>Zip Code:</b> 19958<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 109
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab4e573509b6448982d2cbef108d7476 = L.circleMarker(
+                [38.8868357000001, -75.3911438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_ab4e573509b6448982d2cbef108d7476.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bayhealth Hospital - Sussex Campus<br><b>Addr:</b> 100 Wellness Way<br><b>State:</b> DE<br><b>County:</b> Sussex<br><b>City:</b> Milford<br><b>Zip Code:</b> 19963<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f01bf0e270224ff8b15e78a81b059f55 = L.circleMarker(
+                [39.74999369999994, -75.56649990000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_f01bf0e270224ff8b15e78a81b059f55.bindTooltip(
+                `<div>
+                     <b>Name:</b> Select Specialty Hospital - Wilmington<br><b>Addr:</b> 701 N Clayton St<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Wilmington<br><b>Zip Code:</b> 19805<br><b>Distance discrepancy:</b> 33 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dfce2a1bc22341a0ad80d2fadb49aa35 = L.circleMarker(
+                [39.453486300000066, -75.6774276],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_dfce2a1bc22341a0ad80d2fadb49aa35.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Middletown (FKA HealthSouth Rehabilitation Hospital of Middletown)<br><b>Addr:</b> 250 E Hampden Rd<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Middletown<br><b>Zip Code:</b> 19709<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_da0e1e02b980491393a2900d44af6f93 = L.circleMarker(
+                [39.17731189999999, -75.55560159999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_da0e1e02b980491393a2900d44af6f93.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM Rehabilitation Hospital of Dover<br><b>Addr:</b> 1240 Mckee Rd<br><b>State:</b> DE<br><b>County:</b> Kent<br><b>City:</b> Dover<br><b>Zip Code:</b> 19904<br><b>Distance discrepancy:</b> 3112 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cd3226bc2cb24db7b749f35185cc413a = L.circleMarker(
+                [39.77937890000006, -75.55529760000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_cd3226bc2cb24db7b749f35185cc413a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Nemours Alfred I duPont Hospital for Children<br><b>Addr:</b> 1600 Rockland Rd<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Wilmington<br><b>Zip Code:</b> 19803<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_45197ce205004f389e26cadf36b69b24 = L.circleMarker(
+                [39.700819600000095, -75.57629349999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_45197ce205004f389e26cadf36b69b24.bindTooltip(
+                `<div>
+                     <b>Name:</b> Delaware Psychiatric Center<br><b>Addr:</b> 1901 N Dupont Hwy<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> New Castle<br><b>Zip Code:</b> 19720<br><b>Distance discrepancy:</b> 21 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2303d623b6944c01a9e78375e2466520 = L.circleMarker(
+                [39.69520199999998, -75.66080879999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_2303d623b6944c01a9e78375e2466520.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rockford Center<br><b>Addr:</b> 100 Rockford Dr<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Newark<br><b>Zip Code:</b> 19713<br><b>Distance discrepancy:</b> 37 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d17ab0c9f6c4ce299966bdbe0752294 = L.circleMarker(
+                [39.640128599999954, -75.6295905],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_9d17ab0c9f6c4ce299966bdbe0752294.bindTooltip(
+                `<div>
+                     <b>Name:</b> MeadowWood Hospital<br><b>Addr:</b> 575 S Dupont Hwy<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> New Castle<br><b>Zip Code:</b> 19720<br><b>Distance discrepancy:</b> 47 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_18e84a7dfc154d63b02a93d4b6c41357 = L.circleMarker(
+                [39.15362400000003, -75.48431099999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_18e84a7dfc154d63b02a93d4b6c41357.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dover Behavioral Health System<br><b>Addr:</b> 725 Horsepond Rd<br><b>State:</b> DE<br><b>County:</b> Kent<br><b>City:</b> Dover<br><b>Zip Code:</b> 19901<br><b>Distance discrepancy:</b> 6 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_718c834cbef348699f791c4205458274 = L.circleMarker(
+                [38.6990883, -75.40741710000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_88c99c2fe7bd4388997983d666e15cdb);
+        
+    
+            circle_marker_718c834cbef348699f791c4205458274.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUN Behavioral Delaware<br><b>Addr:</b> 21655 Biden Ave<br><b>State:</b> DE<br><b>County:</b> Sussex<br><b>City:</b> Georgetown<br><b>Zip Code:</b> 19947<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_21570601d45d49ce85e7a4eecd62d345 = L.featureGroup(
+                {}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var circle_marker_57619cfd487b4cc99ddcc60ce0eb55c2 = L.circleMarker(
+                [38.90742190000001, -75.432779],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_21570601d45d49ce85e7a4eecd62d345);
+        
+    
+            circle_marker_57619cfd487b4cc99ddcc60ce0eb55c2.bindTooltip(
+                `<div>
+                     <b>Name:</b> MILFORD MEMORIAL HOSPITAL<br><b>Addr:</b> CLARKE AVENUE<br><b>State:</b> DE<br><b>County:</b> SUSSEX<br><b>City:</b> MILFORD<br><b>Zip Code:</b> 19963<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac53f76fd21146a3b2fc2825c7b4bf91 = L.circleMarker(
+                [39.7511805, -75.5499168],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_21570601d45d49ce85e7a4eecd62d345);
+        
+    
+            circle_marker_ac53f76fd21146a3b2fc2825c7b4bf91.bindTooltip(
+                `<div>
+                     <b>Name:</b> CHRISTIANA CARE HEALTH SYSTEM<br><b>Addr:</b> 501 W. 14TH STREET<br><b>State:</b> DE<br><b>County:</b> NEW CASTLE<br><b>City:</b> WILMINGTON<br><b>Zip Code:</b> 19899<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_a4e0cfb7b2b141a99036fec35cdb266d = L.featureGroup(
+                {}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var circle_marker_b6d79a6c631b48f3bfd8e0562d8144e8 = L.circleMarker(
+                [39.74002089999996, -75.6060145],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a4e0cfb7b2b141a99036fec35cdb266d);
+        
+    
+            circle_marker_b6d79a6c631b48f3bfd8e0562d8144e8.bindTooltip(
+                `<div>
+                     <b>Name:</b> Wilmington VA Medical Center<br><b>Addr:</b> 1601 Kirkwood Hwy<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Wilmington<br><b>Zip Code:</b> 19805<br><b>Distance discrepancy:</b> 64 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d4e805f58e64c8a99cf2a1f16148756 = L.circleMarker(
+                [39.6877278, -75.67048060000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a4e0cfb7b2b141a99036fec35cdb266d);
+        
+    
+            circle_marker_5d4e805f58e64c8a99cf2a1f16148756.bindTooltip(
+                `<div>
+                     <b>Name:</b> Christiana Hospital<br><b>Addr:</b> 4755 Ogletown Stanton Rd<br><b>State:</b> DE<br><b>County:</b> New Castle<br><b>City:</b> Newark<br><b>Zip Code:</b> 19718<br><b>Distance discrepancy:</b> 715 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_42bee3970ff543c491673002217ab6ff = L.featureGroup(
+                {}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+    
+            var poly_line_f1bd4342e14d45eda4238d05e32bbb0d = L.polyline(
+                [[39.749794799999975, -75.56665190000001], [39.74979479999993, -75.56665190000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_966d18286f3e4ab88e8c6459b33564b6 = L.polyline(
+                [[39.15129590000005, -75.52362019999998], [39.151295900000065, -75.52362019999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_fdd957983e774602bc8f60f42aa3ffa8 = L.polyline(
+                [[38.6418275, -75.6045048], [38.6418275, -75.6045048]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_0f7f33ddec924ccfb8130453fa4cb6b1 = L.polyline(
+                [[38.7724506, -75.14413360000002], [38.77195109999995, -75.1430456]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_5bef36e3b5614ec3ada528f19cb6efa9 = L.polyline(
+                [[38.886835700000056, -75.3911438], [38.8868357000001, -75.3911438]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_03d28b316f454cac880554226884a8c7 = L.polyline(
+                [[39.74999369999994, -75.5664999], [39.74999369999994, -75.56649990000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_68118ed309104b519ac9993445ae54c6 = L.polyline(
+                [[39.453486300000016, -75.6774276], [39.453486300000066, -75.6774276]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_b9227ad40e0d4529b71827a40d9096d4 = L.polyline(
+                [[39.17731189999999, -75.55560159999999], [39.17731189999999, -75.55560159999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_e52a3bfd54ea4cfe855ce1d5c67db19a = L.polyline(
+                [[39.77937890000002, -75.55529760000002], [39.77937890000006, -75.55529760000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_53134a0954c746fda77578600b1dc6dc = L.polyline(
+                [[39.700879300000004, -75.576347], [39.700819600000095, -75.57629349999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_c185bd325b1a4a1cb4ef8036eff1a74d = L.polyline(
+                [[39.69520199999998, -75.66080879999998], [39.69520199999998, -75.66080879999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_397b123f81594e1784887c8b63cd0461 = L.polyline(
+                [[39.640128599999976, -75.6295905], [39.640128599999954, -75.6295905]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_994a569687d340be8a15fb403a56fe72 = L.polyline(
+                [[39.15362400000003, -75.48431099999999], [39.15362400000003, -75.48431099999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var poly_line_b7df6062a61a413fafbd1a6ac1a3677e = L.polyline(
+                [[38.6990883, -75.40741710000002], [38.6990883, -75.40741710000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42bee3970ff543c491673002217ab6ff);
+        
+    
+            var layer_control_8269a5ef16fc48c6b5c4a8dce2ec1b34 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_0863438c10824acbaea6c7b5b1b41451,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_ad2c768fc06440e785bcce5a5a710077,
+                    "DH - matched" : feature_group_88c99c2fe7bd4388997983d666e15cdb,
+                    "HCRIS - unmatched" : feature_group_21570601d45d49ce85e7a4eecd62d345,
+                    "DH - unmatched" : feature_group_a4e0cfb7b2b141a99036fec35cdb266d,
+                    "connections" : feature_group_42bee3970ff543c491673002217ab6ff,
+                },
+            };
+            L.control.layers(
+                layer_control_8269a5ef16fc48c6b5c4a8dce2ec1b34.base_layers,
+                layer_control_8269a5ef16fc48c6b5c4a8dce2ec1b34.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_0f4d2b29abda4cc0bb1bb216f423d16a);
+        
+</script>

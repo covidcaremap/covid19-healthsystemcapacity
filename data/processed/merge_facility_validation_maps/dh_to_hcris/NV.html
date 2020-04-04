@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_810373a33ece48fd9accbd65e302a19c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_810373a33ece48fd9accbd65e302a19c" ></div>
+        
+</body>
+<script>    
+    
+            var map_810373a33ece48fd9accbd65e302a19c = L.map(
+                "map_810373a33ece48fd9accbd65e302a19c",
+                {
+                    center: [1901877.6374945594, -1809442.6753534495],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fce09e79116c464cb0f726840b418663 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var feature_group_c92590de20b44e5497c0bcb3c29a2157 = L.featureGroup(
+                {}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var circle_marker_b7375e18f8e14326ab7b86c28dcffd09 = L.circleMarker(
+                [39.52551999999998, -119.79521139999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_b7375e18f8e14326ab7b86c28dcffd09.bindTooltip(
+                `<div>
+                     <b>Name:</b> RENOWN REGIONAL MEDICAL CENTER<br><b>Addr:</b> 1155 MILL STREET<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89502<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e08504ff5ad24f8f916a3b6d3af8156f = L.circleMarker(
+                [38.98389610000006, -119.1673158],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_e08504ff5ad24f8f916a3b6d3af8156f.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH LYON MEDICAL CENTER<br><b>Addr:</b> WHITAKER & SURPRISE<br><b>State:</b> NV<br><b>County:</b> LYON<br><b>City:</b> YERINGTON<br><b>Zip Code:</b> 89447<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fbb6a982d652432e8e872d02454803d8 = L.circleMarker(
+                [36.13339739999998, -115.1355891],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_fbb6a982d652432e8e872d02454803d8.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUNRISE HOSPITAL AND MEDICAL CENTER<br><b>Addr:</b> 3186 MARYLAND PARKWAY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89109-2317<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fb3a6f1eac094f499eda8a281ec8c1af = L.circleMarker(
+                [36.194903300000014, -115.12201149999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_fb3a6f1eac094f499eda8a281ec8c1af.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTH VISTA HOSPITAL<br><b>Addr:</b> 1409 EAST LAKE MEAD BLVD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> NORTH LAS VEGAS<br><b>Zip Code:</b> 89030<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b3efddcc27849ada3aa414f2911e47d = L.circleMarker(
+                [39.47661210000003, -118.76624209999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_1b3efddcc27849ada3aa414f2911e47d.bindTooltip(
+                `<div>
+                     <b>Name:</b> BANNER CHURCHILL COMMUNITY HOSPITAL<br><b>Addr:</b> 801 EAST WILLIAMS<br><b>State:</b> NV<br><b>County:</b> CHURCHILL<br><b>City:</b> FALLON<br><b>Zip Code:</b> 89406<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86221ff060ce49319071a22933de5df2 = L.circleMarker(
+                [36.16041349999996, -115.16759290000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_86221ff060ce49319071a22933de5df2.bindTooltip(
+                `<div>
+                     <b>Name:</b> UNIVERSITY MEDICAL CENTER<br><b>Addr:</b> 1800 W CHARLESTON BLVD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4fadb8aa7554d38aa9c03b3c6b4a395 = L.circleMarker(
+                [40.82310719999998, -115.7304969],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_a4fadb8aa7554d38aa9c03b3c6b4a395.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTHEASTERN NEVADA REGIONAL HOSPITA<br><b>Addr:</b> 2001 ERRECART BOULEVARD<br><b>State:</b> NV<br><b>County:</b> ELKO<br><b>City:</b> ELKO<br><b>Zip Code:</b> 89801<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8da692e1b45941cbb2c7f5c3c7fdb47f = L.circleMarker(
+                [39.53251659999999, -119.819251],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_8da692e1b45941cbb2c7f5c3c7fdb47f.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST MARYS REGIONAL MEDICAL CENTER<br><b>Addr:</b> 235 WEST SIXTH STREET<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89503-4548<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c94c755865734b0d86a10e0e62dfc9b3 = L.circleMarker(
+                [36.038897599999984, -114.9846331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c94c755865734b0d86a10e0e62dfc9b3.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. ROSE DOMINICAN - DELIMA<br><b>Addr:</b> 102 EAST LAKE MEAD DRIVE<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> HENDERSON<br><b>Zip Code:</b> 89015<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6dd807ab0ca4fa691c3e5a3ad8ef7fa = L.circleMarker(
+                [39.20203930000001, -119.7847638],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_a6dd807ab0ca4fa691c3e5a3ad8ef7fa.bindTooltip(
+                `<div>
+                     <b>Name:</b> CARSON TAHOE REGIONAL HEALTHCARE<br><b>Addr:</b> 1600 MEDICAL PARKWAY<br><b>State:</b> NV<br><b>County:</b> CARSON CITY<br><b>City:</b> CARSON CITY<br><b>Zip Code:</b> 89702<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c742686712cc40cf9b937bebb122cb61 = L.circleMarker(
+                [36.163448200000026, -115.1665941],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c742686712cc40cf9b937bebb122cb61.bindTooltip(
+                `<div>
+                     <b>Name:</b> VALLEY HOSPITAL MEDICAL CENTER<br><b>Addr:</b> 620 SHADOW LANE<br><b>State:</b> NV<br><b>County:</b> LAS VEGAS<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89106<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bee6191d9d66474ebc471daa38bb8d4f = L.circleMarker(
+                [36.1131969, -115.12505879999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_bee6191d9d66474ebc471daa38bb8d4f.bindTooltip(
+                `<div>
+                     <b>Name:</b> DESERT SPRINGS HOSPITAL MEDICAL CNTR<br><b>Addr:</b> 2075 EAST FLAMINGO ROAD<br><b>State:</b> NV<br><b>County:</b> LAS VEGAS<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89119<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7dc6536edc8543f3a5f3ed70f67e8dfe = L.circleMarker(
+                [39.54169849999997, -119.6977654],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_7dc6536edc8543f3a5f3ed70f67e8dfe.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTHERN NEVADA MEDICAL CENTER<br><b>Addr:</b> 2375 EAST PRATER WAY<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> SPARKS<br><b>Zip Code:</b> 89431<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9eaf95841dfb4411998b5f2e0f7b2bc1 = L.circleMarker(
+                [36.215694000000035, -115.24927049999998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_9eaf95841dfb4411998b5f2e0f7b2bc1.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOUNTAIN VIEW HOSPITAL<br><b>Addr:</b> 3100 N. TENAYA WAY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89128<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_753dee3e621549838a6fa759a87f4809 = L.circleMarker(
+                [36.181158199999985, -115.31682570000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_753dee3e621549838a6fa759a87f4809.bindTooltip(
+                `<div>
+                     <b>Name:</b> SUMMERLIN HOSPITAL MEDICAL CENTER<br><b>Addr:</b> 657 TOWN CENTER DRIVE<br><b>State:</b> NV<br><b>County:</b> LAS VEGAS<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89114<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60956b541aeb4de58498cee21acb984e = L.circleMarker(
+                [36.10787140000004, -115.12290759999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_60956b541aeb4de58498cee21acb984e.bindTooltip(
+                `<div>
+                     <b>Name:</b> THI OF NEVADA AT LAS VEGAS<br><b>Addr:</b> 2170 E HARMON AVENUE<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89119<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ae76ca033e44d05a685a19a26365edc = L.circleMarker(
+                [36.0042484, -115.1150318],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_7ae76ca033e44d05a685a19a26365edc.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. ROSE DOMINICAN - SIENA<br><b>Addr:</b> 3001 ST ROSE PARKWAY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> HENDERSON<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be44ddc39c4a4a4995309753604a9936 = L.circleMarker(
+                [36.09061530000001, -115.24070290000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_be44ddc39c4a4a4995309753604a9936.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPRING VALLEY HOSPITAL MEDICAL CNTR<br><b>Addr:</b> 5400 SOUTH RAINBOW BLVD<br><b>State:</b> NV<br><b>County:</b> LAS VEGAS<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89119<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ea9cfd9466c24dada51c83f12567ce05 = L.circleMarker(
+                [36.0720956, -115.29526750000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ea9cfd9466c24dada51c83f12567ce05.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTHERN HILLS HOSPITAL & MEDICAR CT<br><b>Addr:</b> 9300 WEST SUNSET RD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7970afb2f9f44e7f8ce1a2f8a239df8c = L.circleMarker(
+                [39.200092000000005, -119.784128],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_7970afb2f9f44e7f8ce1a2f8a239df8c.bindTooltip(
+                `<div>
+                     <b>Name:</b> SIERRA SURGERY HOSPITAL  LLC<br><b>Addr:</b> 1400 MEDICAL PARKWAY<br><b>State:</b> NV<br><b>County:</b> CARSON CITY<br><b>City:</b> CARSON CITY<br><b>Zip Code:</b> 89703<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1818506129442ffbb9fee42b745988c = L.circleMarker(
+                [36.05694340000001, -115.27203350000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c1818506129442ffbb9fee42b745988c.bindTooltip(
+                `<div>
+                     <b>Name:</b> ST. ROSE DOMINICAN - SAN MARTIN<br><b>Addr:</b> 8280 WEST WARM SPRINGS ROAD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89113<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db3e9daa8910476790837110071898f0 = L.circleMarker(
+                [36.2867883, -115.28603869999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_db3e9daa8910476790837110071898f0.bindTooltip(
+                `<div>
+                     <b>Name:</b> CENTENNIAL HILLS HOSPITAL<br><b>Addr:</b> 6900 N. DURANGO DRIVE<br><b>State:</b> NV<br><b>County:</b> LAS VEGAS<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89149<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_113fc7a0a123402f8637a8107cd14a55 = L.circleMarker(
+                [36.07900309999998, -115.2810729],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_113fc7a0a123402f8637a8107cd14a55.bindTooltip(
+                `<div>
+                     <b>Name:</b> MOUNTAINS EDGE HOSPITAL<br><b>Addr:</b> 8656 WEST PATRICK LANE<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9266b241b6b94df8a429515ecfba13e0 = L.circleMarker(
+                [36.072809400000004, -115.03052919999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_9266b241b6b94df8a429515ecfba13e0.bindTooltip(
+                `<div>
+                     <b>Name:</b> HENDERSON HOSPITAL<br><b>Addr:</b> 1050 WEST GALLERIA DRIVE<br><b>State:</b> NV<br><b>County:</b> AMADOR<br><b>City:</b> HENDERSON<br><b>Zip Code:</b> 89011<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64adbd36067e490b8ee0bd2bb17a6428 = L.circleMarker(
+                [36.24024340000001, -115.1625377],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_64adbd36067e490b8ee0bd2bb17a6428.bindTooltip(
+                `<div>
+                     <b>Name:</b> DIGINTY HEALTH ST ROSE DOMINICAN<br><b>Addr:</b> 1550 WEST CRAIG ROAD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> NORTH LAS VEGAS<br><b>Zip Code:</b> 89032<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca41d0e31925473286918b764696cf43 = L.circleMarker(
+                [38.51695150000001, -118.62792660000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ca41d0e31925473286918b764696cf43.bindTooltip(
+                `<div>
+                     <b>Name:</b> MT. GRANT GENERAL HOSPITAL<br><b>Addr:</b> 1ST AND A STREETS<br><b>State:</b> NV<br><b>County:</b> MINERAL<br><b>City:</b> HAWTHORNE<br><b>Zip Code:</b> 89415<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b17674aa59814eb185125a1f12e3a3e2 = L.circleMarker(
+                [39.25163229999998, -119.95426000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_b17674aa59814eb185125a1f12e3a3e2.bindTooltip(
+                `<div>
+                     <b>Name:</b> INCLINE VILLAGE HOSPITAL<br><b>Addr:</b> 880 ALDER AVENUE<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> INCLNE VILLAGE<br><b>Zip Code:</b> 89451<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d69f1bdfe9e4c458e8154905a93d1a9 = L.circleMarker(
+                [39.25551419999998, -114.85932860000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_8d69f1bdfe9e4c458e8154905a93d1a9.bindTooltip(
+                `<div>
+                     <b>Name:</b> WILLIAM BEE RIRIE HOSPITAL<br><b>Addr:</b> 1500 AVENUE G<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> ELY<br><b>Zip Code:</b> 89301<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_99213f9933ea4ec98c2529a923921e30 = L.circleMarker(
+                [40.64001719999998, -116.9400085],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_99213f9933ea4ec98c2529a923921e30.bindTooltip(
+                `<div>
+                     <b>Name:</b> BATTLE MOUNTAIN GENERAL HOSPITAL<br><b>Addr:</b> 535 S HUMBOLDT STREET<br><b>State:</b> NV<br><b>County:</b> LANDER<br><b>City:</b> BATTLE MOUNTAIN<br><b>Zip Code:</b> 89820<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a99d9faa9b2340eaadb6c39ae24ea2e1 = L.circleMarker(
+                [40.17605699999998, -118.4816411],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_a99d9faa9b2340eaadb6c39ae24ea2e1.bindTooltip(
+                `<div>
+                     <b>Name:</b> PERSHING GENERAL HOSPITAL<br><b>Addr:</b> 855 6TH STREET<br><b>State:</b> NV<br><b>County:</b> PERSHING<br><b>City:</b> LOVELOCK<br><b>Zip Code:</b> 89419<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b096239d90c4d5482e6e9889379ad45 = L.circleMarker(
+                [38.91965559999999, -119.7192963],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_0b096239d90c4d5482e6e9889379ad45.bindTooltip(
+                `<div>
+                     <b>Name:</b> CARSON VALLEY MEDICAL CENTER<br><b>Addr:</b> 1107 US HIGHWAY 395<br><b>State:</b> NV<br><b>County:</b> DOUGLAS<br><b>City:</b> GARDNERVILLE<br><b>Zip Code:</b> 89410<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd350a658192427f9ae7902ccdb346a5 = L.circleMarker(
+                [36.82143899999999, -114.1280052],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_fd350a658192427f9ae7902ccdb346a5.bindTooltip(
+                `<div>
+                     <b>Name:</b> MESA VIEW REGIONAL HOSPITAL<br><b>Addr:</b> 1299 BERTHA HOWE AVE<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> MESQUITE<br><b>Zip Code:</b> 89027<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ceb1367e68e4f79851b0d9f46f0b556 = L.circleMarker(
+                [40.97133680000001, -117.72718290000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_3ceb1367e68e4f79851b0d9f46f0b556.bindTooltip(
+                `<div>
+                     <b>Name:</b> HUMBOLDT GENERAL HOSPITAL<br><b>Addr:</b> 118 EAST HASKELL<br><b>State:</b> NV<br><b>County:</b> HUMBOLDT<br><b>City:</b> WINNEMUCCA<br><b>Zip Code:</b> 89445<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c746eedcfcfd4774ad8e9191bfdddad0 = L.circleMarker(
+                [35.967679200000006, -114.8432811],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c746eedcfcfd4774ad8e9191bfdddad0.bindTooltip(
+                `<div>
+                     <b>Name:</b> BOULDER CITY HOSPITAL<br><b>Addr:</b> 901 ADAMS BLVD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> BOULDER CITY<br><b>Zip Code:</b> 89005-2247<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60a0b51d59a145a499d3b359903b94bb = L.circleMarker(
+                [36.21439299999995, -116.02486699999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_60a0b51d59a145a499d3b359903b94bb.bindTooltip(
+                `<div>
+                     <b>Name:</b> DESERT VIEW REGIONAL MEDICAL CENTER<br><b>Addr:</b> 360 S LOLA LANE<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> PAHRUMP<br><b>Zip Code:</b> 89048<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef233c3965bb4224bf983a831e833572 = L.circleMarker(
+                [37.622712699999965, -114.5138347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ef233c3965bb4224bf983a831e833572.bindTooltip(
+                `<div>
+                     <b>Name:</b> GROVER C DILS MEDICAL CENTER<br><b>Addr:</b> 700 N. SPRING STREET<br><b>State:</b> NV<br><b>County:</b> LINCOLN<br><b>City:</b> CALIENTE<br><b>Zip Code:</b> 89008<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_55664377afed4b899134ec8d343cf201 = L.circleMarker(
+                [36.1456482, -115.21180390000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_55664377afed4b899134ec8d343cf201.bindTooltip(
+                `<div>
+                     <b>Name:</b> KINDRED HOSPITAL LAS VEGAS<br><b>Addr:</b> 5110 WEST SAHARA AVENUE<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d7633b32b27f45da8a988dd97a352abc = L.circleMarker(
+                [36.16312600000003, -115.162686],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_d7633b32b27f45da8a988dd97a352abc.bindTooltip(
+                `<div>
+                     <b>Name:</b> HORIZON SPEC HOSPITAL-LASVEGAS<br><b>Addr:</b> 640 MARTIN L KING BLVD<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89106<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f87a938de154d119e1c41e78fd384f1 = L.circleMarker(
+                [39.43582749999998, -119.7604159],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_7f87a938de154d119e1c41e78fd384f1.bindTooltip(
+                `<div>
+                     <b>Name:</b> TAHOE PACIFIC HOSPITAL  INC.<br><b>Addr:</b> 10101 DOUBLE R BLVD.<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89521-5931<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_409cbdb3ddd24364a906cf02778b23fd = L.circleMarker(
+                [36.205519999999986, -115.250383],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_409cbdb3ddd24364a906cf02778b23fd.bindTooltip(
+                `<div>
+                     <b>Name:</b> COMPLEX CARE HOSPITAL AT TENAYA<br><b>Addr:</b> 2500 NORTH TENAYA WAY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89128<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff003a17c3f044a8bf99ce48c67d7c2e = L.circleMarker(
+                [36.1165587, -115.1102797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ff003a17c3f044a8bf99ce48c67d7c2e.bindTooltip(
+                `<div>
+                     <b>Name:</b> LAS VEGAS AMG SPECIALTY HOSPITAL<br><b>Addr:</b> 4015 MCLOUD DR.<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89121<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_340868ad18964f91821e24fd9e6415ac = L.circleMarker(
+                [39.17129649999999, -119.77225349999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_340868ad18964f91821e24fd9e6415ac.bindTooltip(
+                `<div>
+                     <b>Name:</b> CARSON TAHOE CONTINUING CARE HOSPITA<br><b>Addr:</b> 775 FLEISCHMANN WAY<br><b>State:</b> NV<br><b>County:</b> CARSON CITY<br><b>City:</b> CARSON CITY<br><b>Zip Code:</b> 89703<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d2775eb578ee4b70808a515f2b13cfae = L.circleMarker(
+                [36.1563518, -115.19357779999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_d2775eb578ee4b70808a515f2b13cfae.bindTooltip(
+                `<div>
+                     <b>Name:</b> ENCOMPASS HEALTH REHABILITATION HOSP<br><b>Addr:</b> 1250 SOUTH VALLEY VIEW BLVD.<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89102<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7208b638a1449adafa7148d1195e7fe = L.circleMarker(
+                [36.00135950000001, -115.1211685],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_a7208b638a1449adafa7148d1195e7fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> ENCOMPASS HEALTH REHABILITATION HOSP<br><b>Addr:</b> 10301 JEFFREYS STREET<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> HENDERSON<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c946ec063e72469d8c9e8a5394300da6 = L.circleMarker(
+                [36.08075829999999, -115.29237069999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c946ec063e72469d8c9e8a5394300da6.bindTooltip(
+                `<div>
+                     <b>Name:</b> ENCOMPASS HEALTH REHABILITATION HOSP<br><b>Addr:</b> 9175 W OQUENDO RD.<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_923deadc923f499c90fb4ecf7f1c1598 = L.circleMarker(
+                [36.275103299999955, -115.2800857],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_923deadc923f499c90fb4ecf7f1c1598.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM REHAB HOSP OF CENTENNIAL HILLS<br><b>Addr:</b> 6166 N. DURANGO DR<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89149<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8a1c542c6074e9fa1d46cf13aa62169 = L.circleMarker(
+                [39.52944420000005, -119.7781297],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_c8a1c542c6074e9fa1d46cf13aa62169.bindTooltip(
+                `<div>
+                     <b>Name:</b> NORTHERN NEVADA ADULT MENTAL HEALTH<br><b>Addr:</b> 480 GALETTI WAY<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> SPARKS<br><b>Zip Code:</b> 89431<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffadd5b95c114b84a1d6b10b74ab1023 = L.circleMarker(
+                [36.15741319999996, -115.22658880000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ffadd5b95c114b84a1d6b10b74ab1023.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTHERN NEVADA ADULT MENTAL HEALTH<br><b>Addr:</b> 6161 W. CHARLESTON<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efe0e9d72e7c41168eb6bb3ac72c24c3 = L.circleMarker(
+                [39.53791120000001, -119.7974407],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_efe0e9d72e7c41168eb6bb3ac72c24c3.bindTooltip(
+                `<div>
+                     <b>Name:</b> WEST HILLS HOSPITAL<br><b>Addr:</b> 1240 EAST 9TH STREET<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89512<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_011b54934dd244c08c123483eee8dd1c = L.circleMarker(
+                [36.11201480000005, -115.2217062],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_011b54934dd244c08c123483eee8dd1c.bindTooltip(
+                `<div>
+                     <b>Name:</b> MONTEVISTA HOSPITAL<br><b>Addr:</b> 5900 WEST ROCHELLE AVENUE<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89103<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ac85b933e6694e4e93f5349180a3b689 = L.circleMarker(
+                [36.14586739999999, -115.21584970000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_ac85b933e6694e4e93f5349180a3b689.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPRING MOUNTAIN SAHARA<br><b>Addr:</b> 5640 WEST SAHARA AVENUE<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_745837c6fd5e4b338167034db164b660 = L.circleMarker(
+                [36.12633000000002, -115.24634000000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_745837c6fd5e4b338167034db164b660.bindTooltip(
+                `<div>
+                     <b>Name:</b> SPRING MOUNTAIN TREATMENT CENTER<br><b>Addr:</b> 7000 WEST SPRING MOUNTAIN ROAD<br><b>State:</b> NV<br><b>County:</b> None<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89117-3816<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2f2d925917cb494ebe59895288789766 = L.circleMarker(
+                [35.99636609999999, -115.12011260000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_2f2d925917cb494ebe59895288789766.bindTooltip(
+                `<div>
+                     <b>Name:</b> SEVEN HILLS BEHAVIORAL INSTITUTE<br><b>Addr:</b> 3021 W. HORIZON RIDGE PARKWAY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> HENDERSON<br><b>Zip Code:</b> 89052-3990<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f03df0d7690c4d87991b21891afc9c4a = L.circleMarker(
+                [36.13063500000002, -115.13820499999999],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_f03df0d7690c4d87991b21891afc9c4a.bindTooltip(
+                `<div>
+                     <b>Name:</b> DESERT PARKWAY BEHAVIORAL HEALTHCARE<br><b>Addr:</b> 3247 S MARYLAND PKWY<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89109-2412<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62e08c6a01ad4f44b8181e2c73f53758 = L.circleMarker(
+                [36.121537700000026, -115.22309510000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_62e08c6a01ad4f44b8181e2c73f53758.bindTooltip(
+                `<div>
+                     <b>Name:</b> SANA BEHAVIORAL HEALTH LAS VEGAS<br><b>Addr:</b> 5975 WEST TWAIN AVENUE STE. B<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89103<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_162a5ee86ff343c79bb1689b1f3084fe = L.circleMarker(
+                [39.46369170000002, -119.77636710000002],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_c92590de20b44e5497c0bcb3c29a2157);
+        
+    
+            circle_marker_162a5ee86ff343c79bb1689b1f3084fe.bindTooltip(
+                `<div>
+                     <b>Name:</b> RENO BEHAVIORAL HEALTHCARE HOSPITAL<br><b>Addr:</b> 6940 SIERRA CENTER PKWY<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89511<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_fdf20c3ffe314b118d5cb02e682d8a03 = L.featureGroup(
+                {}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var circle_marker_241ae4ec951a4d44ad6db018a44e16af = L.circleMarker(
+                [39.52551999999998, -119.79521139999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_241ae4ec951a4d44ad6db018a44e16af.bindTooltip(
+                `<div>
+                     <b>Name:</b> Renown Regional Medical Center<br><b>Addr:</b> 1155 Mill St<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89502<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2587c54049cf4a6eb78f6c193efaa571 = L.circleMarker(
+                [38.98389610000009, -119.1673158],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_2587c54049cf4a6eb78f6c193efaa571.bindTooltip(
+                `<div>
+                     <b>Name:</b> South Lyon Medical Center<br><b>Addr:</b> 213 S Whitacre St<br><b>State:</b> NV<br><b>County:</b> Lyon<br><b>City:</b> Yerington<br><b>Zip Code:</b> 89447<br><b>Distance discrepancy:</b> 81 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6946910b2e2d46e08ca7fd344c0ef9cd = L.circleMarker(
+                [36.13339739999998, -115.1355891],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_6946910b2e2d46e08ca7fd344c0ef9cd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sunrise Hospital & Medical Center<br><b>Addr:</b> 3186 S Maryland Pkwy<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89109<br><b>Distance discrepancy:</b> 81 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4202e384291491094e3c7f872b4f44e = L.circleMarker(
+                [36.194903300000014, -115.12201149999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_f4202e384291491094e3c7f872b4f44e.bindTooltip(
+                `<div>
+                     <b>Name:</b> North Vista Hospital<br><b>Addr:</b> 1409 E Lake Mead Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> North Las Vegas<br><b>Zip Code:</b> 89030<br><b>Distance discrepancy:</b> 70 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22df38dfbf9341c0ad7e37f8c25e26fc = L.circleMarker(
+                [39.47661210000003, -118.76624209999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_22df38dfbf9341c0ad7e37f8c25e26fc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Banner Churchill Community Hospital<br><b>Addr:</b> 801 E Williams Ave<br><b>State:</b> NV<br><b>County:</b> Churchill<br><b>City:</b> Fallon<br><b>Zip Code:</b> 89406<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e2404634b934f92a2cbf364fffe08d7 = L.circleMarker(
+                [36.160413499999976, -115.16759290000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_0e2404634b934f92a2cbf364fffe08d7.bindTooltip(
+                `<div>
+                     <b>Name:</b> University Medical Center (UMC) of Southern Nevada<br><b>Addr:</b> 1800 W Charleston Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89102<br><b>Distance discrepancy:</b> 230 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_01cc8d2b9cfb4388bb2d1d73c5571ae0 = L.circleMarker(
+                [40.82310719999998, -115.7304969],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_01cc8d2b9cfb4388bb2d1d73c5571ae0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northeastern Nevada Regional Hospital<br><b>Addr:</b> 2001 Errecart Blvd<br><b>State:</b> NV<br><b>County:</b> Elko<br><b>City:</b> Elko<br><b>Zip Code:</b> 89801<br><b>Distance discrepancy:</b> 79 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4feca1efbd14477fa782da1756bd618f = L.circleMarker(
+                [39.53251659999999, -119.819251],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_4feca1efbd14477fa782da1756bd618f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Saint Marys Regional Medical Center (AKA Saint Marys Health Network)<br><b>Addr:</b> 235 W 6th St<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89503<br><b>Distance discrepancy:</b> 106 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4068b2f9b1c147a88fbb493c379af758 = L.circleMarker(
+                [36.038897599999984, -114.9846331],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_4068b2f9b1c147a88fbb493c379af758.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - Rose De Lima Campus<br><b>Addr:</b> 102 E Lake Mead Pkwy<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89015<br><b>Distance discrepancy:</b> 45 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfdc2524a64b4657ad79f55e5493772c = L.circleMarker(
+                [39.20203930000001, -119.7847638],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_cfdc2524a64b4657ad79f55e5493772c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Carson Tahoe Regional Medical Center<br><b>Addr:</b> 1600 Medical Pkwy<br><b>State:</b> NV<br><b>County:</b> Carson City<br><b>City:</b> Carson City<br><b>Zip Code:</b> 89703<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24c9497d753f4772a876a36446f95865 = L.circleMarker(
+                [36.163448200000026, -115.1665941],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_24c9497d753f4772a876a36446f95865.bindTooltip(
+                `<div>
+                     <b>Name:</b> Valley Hospital Medical Center<br><b>Addr:</b> 620 Shadow Ln<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89106<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b996aac62ee48388f59d2802f585ab6 = L.circleMarker(
+                [36.1131969, -115.12505879999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_5b996aac62ee48388f59d2802f585ab6.bindTooltip(
+                `<div>
+                     <b>Name:</b> Desert Springs Hospital Medical Center<br><b>Addr:</b> 2075 E Flamingo Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89119<br><b>Distance discrepancy:</b> 46 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2cb8ee168f5d4621a7d243c38114f210 = L.circleMarker(
+                [39.54142899999998, -119.6973084],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_2cb8ee168f5d4621a7d243c38114f210.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northern Nevada Medical Center<br><b>Addr:</b> 2375 E Prater Way<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Sparks<br><b>Zip Code:</b> 89434<br><b>Distance discrepancy:</b> 37 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc1d9d9cb13e406d995493f8d65d1341 = L.circleMarker(
+                [36.215694000000035, -115.24927049999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_bc1d9d9cb13e406d995493f8d65d1341.bindTooltip(
+                `<div>
+                     <b>Name:</b> MountainView Hospital<br><b>Addr:</b> 3100 N Tenaya Way<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89128<br><b>Distance discrepancy:</b> 56 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf3eab04e26a4b529ccf250fcd7cb67f = L.circleMarker(
+                [36.181158199999985, -115.31682570000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_bf3eab04e26a4b529ccf250fcd7cb67f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Summerlin Hospital Medical Center<br><b>Addr:</b> 657 N Town Center Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89144<br><b>Distance discrepancy:</b> 71 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0f60689adab4318a8aa2219b452b993 = L.circleMarker(
+                [36.10787140000004, -115.12290759999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_f0f60689adab4318a8aa2219b452b993.bindTooltip(
+                `<div>
+                     <b>Name:</b> Harmon Hospital<br><b>Addr:</b> 2170 E Harmon Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89119<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e6f8e28ab55496a87b58714b9a2fc71 = L.circleMarker(
+                [36.0042484, -115.1150318],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_2e6f8e28ab55496a87b58714b9a2fc71.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - Siena Campus<br><b>Addr:</b> 3001 Saint Rose Pkwy<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> 38 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b79d3bbc9204e6cb6afcda14209aafc = L.circleMarker(
+                [36.09061530000001, -115.24070290000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_5b79d3bbc9204e6cb6afcda14209aafc.bindTooltip(
+                `<div>
+                     <b>Name:</b> Spring Valley Hospital Medical Center<br><b>Addr:</b> 5400 S Rainbow Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89118<br><b>Distance discrepancy:</b> 99 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c287eb15c27b46ce90260085ec6820e9 = L.circleMarker(
+                [36.0720956, -115.29526750000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_c287eb15c27b46ce90260085ec6820e9.bindTooltip(
+                `<div>
+                     <b>Name:</b> Southern Hills Hospital & Medical Center<br><b>Addr:</b> 9300 W Sunset Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> 52 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fdd609af9e67411f8534217d56f7c820 = L.circleMarker(
+                [39.200092000000005, -119.784128],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_fdd609af9e67411f8534217d56f7c820.bindTooltip(
+                `<div>
+                     <b>Name:</b> Carson Tahoe Sierra Surgery Hospital<br><b>Addr:</b> 1400 Medical Pkwy<br><b>State:</b> NV<br><b>County:</b> Carson City<br><b>City:</b> Carson City<br><b>Zip Code:</b> 89703<br><b>Distance discrepancy:</b> 37 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d120452b46ec475c93f9693736e6c4b1 = L.circleMarker(
+                [36.05694340000001, -115.27203350000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_d120452b46ec475c93f9693736e6c4b1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - San Martin Campus<br><b>Addr:</b> 8280 W Warm Springs Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89113<br><b>Distance discrepancy:</b> 115 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6362786c60ba4640a89836e1b389fc2c = L.circleMarker(
+                [36.2867883, -115.28603869999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_6362786c60ba4640a89836e1b389fc2c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Centennial Hills Hospital Medical Center<br><b>Addr:</b> 6900 N Durango Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89149<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d494afa750c04b5a8bc1cff910af68f4 = L.circleMarker(
+                [36.07900309999998, -115.2810729],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_d494afa750c04b5a8bc1cff910af68f4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Orthopedic Specialty Hospital of Nevada (FKA Mountains Edge Hospital)<br><b>Addr:</b> 8656 W Patrick Ln<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b2d13fd430d498b906ae7d20cbcfe66 = L.circleMarker(
+                [36.072809400000004, -115.03052919999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_7b2d13fd430d498b906ae7d20cbcfe66.bindTooltip(
+                `<div>
+                     <b>Name:</b> Henderson Hospital<br><b>Addr:</b> 1050 W Galleria Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89011<br><b>Distance discrepancy:</b> 8 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e8553ec92f544cdb336ab76d299632f = L.circleMarker(
+                [36.24024340000001, -115.1625377],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_8e8553ec92f544cdb336ab76d299632f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - North Las Vegas Campus<br><b>Addr:</b> 1550 W Craig Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> North Las Vegas<br><b>Zip Code:</b> 89032<br><b>Distance discrepancy:</b> 18 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bb5e71a46d9c438895657db6271e8ff7 = L.circleMarker(
+                [38.51695150000002, -118.62792660000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_bb5e71a46d9c438895657db6271e8ff7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mt Grant General Hospital<br><b>Addr:</b> 200 S A St<br><b>State:</b> NV<br><b>County:</b> Mineral<br><b>City:</b> Hawthorne<br><b>Zip Code:</b> 89415<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f38951c810524e628973fc44b5539648 = L.circleMarker(
+                [39.25163229999998, -119.95426000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_f38951c810524e628973fc44b5539648.bindTooltip(
+                `<div>
+                     <b>Name:</b> Incline Village Community Hospital<br><b>Addr:</b> 880 Alder Ave<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Incline Village<br><b>Zip Code:</b> 89451<br><b>Distance discrepancy:</b> 13 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6fd18bcf1fb24517ba640e6a23a235c7 = L.circleMarker(
+                [39.25567329999999, -114.85936760000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_6fd18bcf1fb24517ba640e6a23a235c7.bindTooltip(
+                `<div>
+                     <b>Name:</b> William Bee Ririe Hospital<br><b>Addr:</b> 1500 Avenue G<br><b>State:</b> NV<br><b>County:</b> White Pine<br><b>City:</b> Ely<br><b>Zip Code:</b> 89301<br><b>Distance discrepancy:</b> 144 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b5d8e00b4b54de18cb7b8acdb0e4b6d = L.circleMarker(
+                [40.640017199999974, -116.9400085],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_7b5d8e00b4b54de18cb7b8acdb0e4b6d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Battle Mountain General Hospital<br><b>Addr:</b> 535 S Humboldt St<br><b>State:</b> NV<br><b>County:</b> Lander<br><b>City:</b> Battle Mountain<br><b>Zip Code:</b> 89820<br><b>Distance discrepancy:</b> 479 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7df88d47c69744f4bc54d75d14134f7e = L.circleMarker(
+                [40.17605699999998, -118.4816411],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_7df88d47c69744f4bc54d75d14134f7e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Pershing General Hospital<br><b>Addr:</b> 855 6th St<br><b>State:</b> NV<br><b>County:</b> Pershing<br><b>City:</b> Lovelock<br><b>Zip Code:</b> 89419<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c158e3935614959936cb374e687253f = L.circleMarker(
+                [38.91965559999999, -119.7192963],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_3c158e3935614959936cb374e687253f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Carson Valley Medical Center<br><b>Addr:</b> 1107 Us Highway 395 N<br><b>State:</b> NV<br><b>County:</b> Douglas<br><b>City:</b> Gardnerville<br><b>Zip Code:</b> 89410<br><b>Distance discrepancy:</b> 152 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cbd3a7a4641b48ae88e4dd50d36e340b = L.circleMarker(
+                [36.82143899999999, -114.1280052],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_cbd3a7a4641b48ae88e4dd50d36e340b.bindTooltip(
+                `<div>
+                     <b>Name:</b> Mesa View Regional Hospital<br><b>Addr:</b> 1299 Bertha Howe Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Mesquite<br><b>Zip Code:</b> 89027<br><b>Distance discrepancy:</b> 2090 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d5c6e3daf4214bc7b4da1a9a43cfdb37 = L.circleMarker(
+                [40.971336800000024, -117.72718290000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_d5c6e3daf4214bc7b4da1a9a43cfdb37.bindTooltip(
+                `<div>
+                     <b>Name:</b> Humboldt General Hospital<br><b>Addr:</b> 118 E Haskell St<br><b>State:</b> NV<br><b>County:</b> Humboldt<br><b>City:</b> Winnemucca<br><b>Zip Code:</b> 89445<br><b>Distance discrepancy:</b> 61 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c83d9163cf342eda30b778e166b1a1c = L.circleMarker(
+                [35.967679200000006, -114.8432811],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_5c83d9163cf342eda30b778e166b1a1c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Boulder City Hospital<br><b>Addr:</b> 901 Adams Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Boulder City<br><b>Zip Code:</b> 89005<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e6e20f0bb124421bb29fd32fb72ceb4 = L.circleMarker(
+                [36.21439299999995, -116.02486699999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_0e6e20f0bb124421bb29fd32fb72ceb4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Desert View Hospital<br><b>Addr:</b> 360 S Lola Ln<br><b>State:</b> NV<br><b>County:</b> Nye<br><b>City:</b> Pahrump<br><b>Zip Code:</b> 89048<br><b>Distance discrepancy:</b> 26 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1c49f37879c4eeb9bcfc0f9dcc41f1c = L.circleMarker(
+                [37.62271269999996, -114.5138347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_a1c49f37879c4eeb9bcfc0f9dcc41f1c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Grover C Dils Medical Center<br><b>Addr:</b> 700 N Spring St<br><b>State:</b> NV<br><b>County:</b> Lincoln<br><b>City:</b> Caliente<br><b>Zip Code:</b> 89008<br><b>Distance discrepancy:</b> 233 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_05567b3e92b348a4995c5f34ff055b6e = L.circleMarker(
+                [36.1456482, -115.21180390000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_05567b3e92b348a4995c5f34ff055b6e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kindred Hospital - Las Vegas Sahara<br><b>Addr:</b> 5110 W Sahara Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> 5 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d394dac9613b41f79ed95d8a99e529c4 = L.circleMarker(
+                [36.16312600000003, -115.162686],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_d394dac9613b41f79ed95d8a99e529c4.bindTooltip(
+                `<div>
+                     <b>Name:</b> Horizon Specialty Hospital of Las Vegas<br><b>Addr:</b> 640 S Martin L King Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89106<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c71601559f36413eb77654063f44dcfd = L.circleMarker(
+                [39.43597069999999, -119.76008780000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_c71601559f36413eb77654063f44dcfd.bindTooltip(
+                `<div>
+                     <b>Name:</b> Renown South Meadows Medical Center<br><b>Addr:</b> 10101 Double R Blvd<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89521<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c57e13224da4c8e83a4a5e536beb810 = L.circleMarker(
+                [36.205519999999986, -115.250383],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_5c57e13224da4c8e83a4a5e536beb810.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM Specialty Hospital of Las Vegas (FKA Complex Care Hospital at Tenaya)<br><b>Addr:</b> 2500 N Tenaya Way<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89128<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44cf988d6ea04bec80c61b3c3b08fad4 = L.circleMarker(
+                [36.1165587, -115.1102797],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_44cf988d6ea04bec80c61b3c3b08fad4.bindTooltip(
+                `<div>
+                     <b>Name:</b> AMG Specialty Hospital - Las Vegas (FKA Progressive Hospital)<br><b>Addr:</b> 4015 Mcleod Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89121<br><b>Distance discrepancy:</b> 4 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c418c1b2f737491d96fb3bd9f409b6b7 = L.circleMarker(
+                [39.17129649999999, -119.77225349999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_c418c1b2f737491d96fb3bd9f409b6b7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Carson Tahoe Continuing Care Hospital<br><b>Addr:</b> 775 Fleischmann Way<br><b>State:</b> NV<br><b>County:</b> Carson City<br><b>City:</b> Carson City<br><b>Zip Code:</b> 89703<br><b>Distance discrepancy:</b> 58 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8dda0ac9f2946698acfe655170eef10 = L.circleMarker(
+                [36.1563518, -115.19357779999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_c8dda0ac9f2946698acfe655170eef10.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Las Vegas (FKA Healthsouth Rehabilitation Hospital of Las Vegas)<br><b>Addr:</b> 1250 S Valley View Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89102<br><b>Distance discrepancy:</b> 61 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc26fb44049a4165acabbc4377e72553 = L.circleMarker(
+                [36.00135950000001, -115.1211685],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_cc26fb44049a4165acabbc4377e72553.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Henderson (FKA Healthsouth Rehabilitation Hospital of Henderson)<br><b>Addr:</b> 10301 Jeffreys St<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> 54 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dd0f1a8bf006497ab317540f3c453c46 = L.circleMarker(
+                [36.08075829999999, -115.29237069999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_dd0f1a8bf006497ab317540f3c453c46.bindTooltip(
+                `<div>
+                     <b>Name:</b> Encompass Health Rehabilitation Hospital of Desert Canyon (FKA Healthsouth Desert Canyon Rehabilitation Hospital)<br><b>Addr:</b> 9175 W Oquendo Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89148<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8ec4ce3e7a442ac908bb5f83168c72c = L.circleMarker(
+                [36.27510329999993, -115.2800857],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_d8ec4ce3e7a442ac908bb5f83168c72c.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM Rehabilitation Hospital of Centennial Hills<br><b>Addr:</b> 6166 N Durango Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89149<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_70d73e8280f6446ba0dd9d6a591f9de7 = L.circleMarker(
+                [39.529444200000086, -119.7781297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_70d73e8280f6446ba0dd9d6a591f9de7.bindTooltip(
+                `<div>
+                     <b>Name:</b> Northern Nevada Adult Mental Health<br><b>Addr:</b> 480 Galletti Way<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Sparks<br><b>Zip Code:</b> 89431<br><b>Distance discrepancy:</b> 283 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bf98255ff0c411f92ccc45eb1c34c4e = L.circleMarker(
+                [36.15741319999996, -115.22658880000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_6bf98255ff0c411f92ccc45eb1c34c4e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Southern Nevada Adult Mental Health<br><b>Addr:</b> 6161 W Charleston Blvd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> 209 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e9245f6366694fc3b80fda1f77f051d6 = L.circleMarker(
+                [39.53791120000001, -119.7974407],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_e9245f6366694fc3b80fda1f77f051d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> West Hills Behavioral Health Hospital<br><b>Addr:</b> 1240 E 9th St<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89512<br><b>Distance discrepancy:</b> 35 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2cc2922aeb784eb78554745c6b7c4fba = L.circleMarker(
+                [36.11201480000008, -115.2217062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_2cc2922aeb784eb78554745c6b7c4fba.bindTooltip(
+                `<div>
+                     <b>Name:</b> Montevista Hospital<br><b>Addr:</b> 5900 W Rochelle Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89103<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cda381fcefa41798f3b15640a4ab7a9 = L.circleMarker(
+                [36.14586739999999, -115.21584970000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_1cda381fcefa41798f3b15640a4ab7a9.bindTooltip(
+                `<div>
+                     <b>Name:</b> Spring Mountain Sahara<br><b>Addr:</b> 5460 W Sahara Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> 15 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7e59e4e35815437f8a61ffa8f8c2ca3a = L.circleMarker(
+                [36.12633000000002, -115.24634000000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_7e59e4e35815437f8a61ffa8f8c2ca3a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Spring Mountain Treatment Center<br><b>Addr:</b> 7000 Spring Mountain Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89117<br><b>Distance discrepancy:</b> 88 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a81f61088a846fe8d1b53ead172703c = L.circleMarker(
+                [35.99636609999999, -115.12011260000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_9a81f61088a846fe8d1b53ead172703c.bindTooltip(
+                `<div>
+                     <b>Name:</b> Seven Hills Hospital<br><b>Addr:</b> 3021 W Horizon Ridge Pkwy<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> 28 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1c483b7293af475689acc40e91944244 = L.circleMarker(
+                [36.13063500000002, -115.13820499999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_1c483b7293af475689acc40e91944244.bindTooltip(
+                `<div>
+                     <b>Name:</b> Desert Parkway Behavioral Healthcare Hospital<br><b>Addr:</b> 3247 S Maryland Pkwy<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89109<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b637f7352e4465ca927d7ffed0c6b9e = L.circleMarker(
+                [36.12153770000005, -115.22309510000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_9b637f7352e4465ca927d7ffed0c6b9e.bindTooltip(
+                `<div>
+                     <b>Name:</b> Sana Behavioral Health<br><b>Addr:</b> 5975 W Twain Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89103<br><b>Distance discrepancy:</b> 29 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_19ce7d10a45b4b7eaa574fde8e711c0f = L.circleMarker(
+                [39.463691700000005, -119.77636710000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_fdf20c3ffe314b118d5cb02e682d8a03);
+        
+    
+            circle_marker_19ce7d10a45b4b7eaa574fde8e711c0f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Reno Behavioral Healthcare Hospital<br><b>Addr:</b> 6940 Sierra Center Pkwy<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89511<br><b>Distance discrepancy:</b> 42 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6b741e41d038445e9b84ef6a28cc1709 = L.featureGroup(
+                {}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var circle_marker_3e6f902ae3ae4dae8953b5c036b79fbf = L.circleMarker(
+                [38.0622649, -117.22174880000001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b741e41d038445e9b84ef6a28cc1709);
+        
+    
+            circle_marker_3e6f902ae3ae4dae8953b5c036b79fbf.bindTooltip(
+                `<div>
+                     <b>Name:</b> NYE REGIONAL MEDICAL CENTER<br><b>Addr:</b> 825 SOUTH MAIN STREET<br><b>State:</b> NV<br><b>County:</b> NYE<br><b>City:</b> TONOPAH<br><b>Zip Code:</b> 89049<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92b4ea5ab4734e3ab482d1fd9d80508c = L.circleMarker(
+                [39.52551999999998, -119.79521139999999],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b741e41d038445e9b84ef6a28cc1709);
+        
+    
+            circle_marker_92b4ea5ab4734e3ab482d1fd9d80508c.bindTooltip(
+                `<div>
+                     <b>Name:</b> RENOWN SOUTH MEADOWS MED CTR<br><b>Addr:</b> 1155 MILL STREET<br><b>State:</b> NV<br><b>County:</b> WASHOE<br><b>City:</b> RENO<br><b>Zip Code:</b> 89502<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c1abbfb4cb546a8a206558595bb9912 = L.circleMarker(
+                [39.47661210000003, -118.76624209999999],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b741e41d038445e9b84ef6a28cc1709);
+        
+    
+            circle_marker_3c1abbfb4cb546a8a206558595bb9912.bindTooltip(
+                `<div>
+                     <b>Name:</b> BANNER CHURCHILL COMMUNITY HOSPITAL<br><b>Addr:</b> 801 EAST WILLIAMS<br><b>State:</b> NV<br><b>County:</b> CHURCHILL<br><b>City:</b> FALLON<br><b>Zip Code:</b> 89406<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_80f1372691ab4b0f934a866f8f7e4ea8 = L.circleMarker(
+                [38.98389610000006, -119.1673158],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b741e41d038445e9b84ef6a28cc1709);
+        
+    
+            circle_marker_80f1372691ab4b0f934a866f8f7e4ea8.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH LYON MEDICAL CENTER<br><b>Addr:</b> WHITAKER & SURPRISE<br><b>State:</b> NV<br><b>County:</b> LYON<br><b>City:</b> YERINGTON<br><b>Zip Code:</b> 89447<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5015d49282ad4130a5d3c16dddf4a718 = L.circleMarker(
+                [36.12141400000002, -115.2233038],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b741e41d038445e9b84ef6a28cc1709);
+        
+    
+            circle_marker_5015d49282ad4130a5d3c16dddf4a718.bindTooltip(
+                `<div>
+                     <b>Name:</b> RED ROCK HOSPITAL<br><b>Addr:</b> 5975 WEST TWAINTREET<br><b>State:</b> NV<br><b>County:</b> CLARK<br><b>City:</b> LAS VEGAS<br><b>Zip Code:</b> 89103<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_a6c4488c05ce430691019aae859c8cd0 = L.featureGroup(
+                {}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var circle_marker_c71178de1f7745999bff0ec786f60203 = L.circleMarker(
+                [39.51599909999997, -119.7992031],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_c71178de1f7745999bff0ec786f60203.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Sierra Nevada Health Care System<br><b>Addr:</b> 975 Kirman Ave<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89502<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cefeb2ab92f744419a8c3dc4639f173b = L.circleMarker(
+                [39.540991500000004, -119.697315],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_cefeb2ab92f744419a8c3dc4639f173b.bindTooltip(
+                `<div>
+                     <b>Name:</b> PAM Specialty Hospital of Sparks (FKA Tahoe Pacific Hospitals - North)<br><b>Addr:</b> 2375 E Prater Way<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Sparks<br><b>Zip Code:</b> 89434<br><b>Distance discrepancy:</b> 38 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4422ea0fb06b4a2c862bb0b409c6f905 = L.circleMarker(
+                [36.032365899999995, -115.2070356],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_4422ea0fb06b4a2c862bb0b409c6f905.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - Blue Diamond Campus<br><b>Addr:</b> 4855 Blue Diamond Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89139<br><b>Distance discrepancy:</b> 23 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a1ce2755f3db44e0abb9684341abdb36 = L.circleMarker(
+                [36.145949300000055, -115.2091378],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_a1ce2755f3db44e0abb9684341abdb36.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - Sahara Campus<br><b>Addr:</b> 4980 W Sahara Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89102<br><b>Distance discrepancy:</b> 269 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_907129b0926647fa8b8d8b8d3f81b3ee = L.circleMarker(
+                [36.11586580000004, -115.3074818],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_907129b0926647fa8b8d8b8d3f81b3ee.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health St Rose Dominican - West Flamingo Campus<br><b>Addr:</b> 9880 W Flamingo Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89147<br><b>Distance discrepancy:</b> 10 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_53b0af7d8e7846b7a55050b062d3e6c1 = L.circleMarker(
+                [36.0042484, -115.1150318],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_53b0af7d8e7846b7a55050b062d3e6c1.bindTooltip(
+                `<div>
+                     <b>Name:</b> Dignity Health Rehabilitation Hospital - Siena Campus<br><b>Addr:</b> 2930 Siena Heights Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Henderson<br><b>Zip Code:</b> 89052<br><b>Distance discrepancy:</b> 2393 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b2cf702169f4e90b85acef640ff9cde = L.circleMarker(
+                [39.43597069999999, -119.76008780000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_7b2cf702169f4e90b85acef640ff9cde.bindTooltip(
+                `<div>
+                     <b>Name:</b> Tahoe Pacific Hospitals - Meadows<br><b>Addr:</b> 10101 Double R Blvd<br><b>State:</b> NV<br><b>County:</b> Washoe<br><b>City:</b> Reno<br><b>Zip Code:</b> 89521<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdf3200b2f0344c59df4fd24a64b7873 = L.circleMarker(
+                [36.285099099999954, -115.0944925],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_bdf3200b2f0344c59df4fd24a64b7873.bindTooltip(
+                `<div>
+                     <b>Name:</b> VA Southern Nevada Healthcare System<br><b>Addr:</b> 6900 N Pecos Rd<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> N Las Vegas<br><b>Zip Code:</b> 89086<br><b>Distance discrepancy:</b> 52 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec331f9d5c44496fad1f1ed066d5bb0d = L.circleMarker(
+                [36.15275289999996, -115.22730170000001],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_ec331f9d5c44496fad1f1ed066d5bb0d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rawson Neal Psychiatric Hospital<br><b>Addr:</b> 1650 Community College Dr<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89146<br><b>Distance discrepancy:</b> 19 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f6043c161984b33a2c2ecee0dd4e0d6 = L.circleMarker(
+                [36.245783599999974, -115.0497641],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_7f6043c161984b33a2c2ecee0dd4e0d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> 99th Medical Group - Mike OCallaghan Military Medical Center<br><b>Addr:</b> 4700 Las Vegas Blvd N<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Nellis Afb<br><b>Zip Code:</b> 89191<br><b>Distance discrepancy:</b> 65 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2b6e22a3db24b8f9e8f034ec99971ee = L.circleMarker(
+                [36.03360999999995, -115.116697],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_a6c4488c05ce430691019aae859c8cd0);
+        
+    
+            circle_marker_f2b6e22a3db24b8f9e8f034ec99971ee.bindTooltip(
+                `<div>
+                     <b>Name:</b> Horizon Specialty Hospital of Henderson<br><b>Addr:</b> 8550 S Eastern Ave<br><b>State:</b> NV<br><b>County:</b> Clark<br><b>City:</b> Las Vegas<br><b>Zip Code:</b> 89123<br><b>Distance discrepancy:</b> 0 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> zip code
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_5cc9717f2bf6430e904d72067f62676d = L.featureGroup(
+                {}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+    
+            var poly_line_0cc8a6c7276d42f28cd299e30dfa2688 = L.polyline(
+                [[39.52551999999998, -119.79521139999999], [39.52551999999998, -119.79521139999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0eb9d9c6181548ae802935a9ece7dfea = L.polyline(
+                [[38.98389610000006, -119.1673158], [38.98389610000009, -119.1673158]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_4a6c932dfd184fa9b97333762a522743 = L.polyline(
+                [[36.13339739999998, -115.1355891], [36.13339739999998, -115.1355891]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_7c1fad5b725640278f06c329d9e06e4a = L.polyline(
+                [[36.194903300000014, -115.12201149999999], [36.194903300000014, -115.12201149999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_b032f46b1ce94cdabc1aee4f170971e6 = L.polyline(
+                [[39.47661210000003, -118.76624209999999], [39.47661210000003, -118.76624209999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_55c62b6cf2b74efcb2a703fb6ff9c026 = L.polyline(
+                [[36.16041349999996, -115.16759290000002], [36.160413499999976, -115.16759290000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_adf1f33ede724afaa9834aca8f9ef210 = L.polyline(
+                [[40.82310719999998, -115.7304969], [40.82310719999998, -115.7304969]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_1bdacab0f71f4b17bf91a323cc922a30 = L.polyline(
+                [[39.53251659999999, -119.819251], [39.53251659999999, -119.819251]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_59e9f64c8dc644d090f49ca063c9ec07 = L.polyline(
+                [[36.038897599999984, -114.9846331], [36.038897599999984, -114.9846331]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_c1d2f2920d094df988671d73a85afa41 = L.polyline(
+                [[39.20203930000001, -119.7847638], [39.20203930000001, -119.7847638]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_7db2ae79a2fd426db81cbf3520813f9d = L.polyline(
+                [[36.163448200000026, -115.1665941], [36.163448200000026, -115.1665941]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_674e2463f82c4587a6832110319bcaaa = L.polyline(
+                [[36.1131969, -115.12505879999999], [36.1131969, -115.12505879999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_70a95d354d064ce4953e401c63ec7aae = L.polyline(
+                [[39.54169849999997, -119.6977654], [39.54142899999998, -119.6973084]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_041fef0055eb430988e4dc22bd70fb6f = L.polyline(
+                [[36.215694000000035, -115.24927049999998], [36.215694000000035, -115.24927049999998]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_bfe08151740847b7aee43be2e771ec65 = L.polyline(
+                [[36.181158199999985, -115.31682570000001], [36.181158199999985, -115.31682570000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_88bbd088288f453db14bf7f44eb545f7 = L.polyline(
+                [[36.10787140000004, -115.12290759999999], [36.10787140000004, -115.12290759999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_58244aaf073e4da0832ebd672f55b5a3 = L.polyline(
+                [[36.0042484, -115.1150318], [36.0042484, -115.1150318]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_80722931b31348a8a6cc7d40116a4c36 = L.polyline(
+                [[36.09061530000001, -115.24070290000002], [36.09061530000001, -115.24070290000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_159817bd5a514034a854dad5aec1eb6a = L.polyline(
+                [[36.0720956, -115.29526750000001], [36.0720956, -115.29526750000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_a44ca273680b4201b78850e8fb00ffe1 = L.polyline(
+                [[39.200092000000005, -119.784128], [39.200092000000005, -119.784128]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0e619aca82084cceba6424d5990455d5 = L.polyline(
+                [[36.05694340000001, -115.27203350000002], [36.05694340000001, -115.27203350000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_cd76918e233b4ed088d787361a317359 = L.polyline(
+                [[36.2867883, -115.28603869999999], [36.2867883, -115.28603869999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_f1154013a13142eaa9a9fb0bf27cf862 = L.polyline(
+                [[36.07900309999998, -115.2810729], [36.07900309999998, -115.2810729]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0ea9d73384424f3194375f9893b7fa6a = L.polyline(
+                [[36.072809400000004, -115.03052919999999], [36.072809400000004, -115.03052919999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_ede20a9d548c40fbaea21947def8672a = L.polyline(
+                [[36.24024340000001, -115.1625377], [36.24024340000001, -115.1625377]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_c655968611df4771b288e31785160ed8 = L.polyline(
+                [[38.51695150000001, -118.62792660000001], [38.51695150000002, -118.62792660000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_8bfb3a511209490891fcc2b406bb3c81 = L.polyline(
+                [[39.25163229999998, -119.95426000000002], [39.25163229999998, -119.95426000000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_b23c2957d71146cca2d295ab33b11930 = L.polyline(
+                [[39.25551419999998, -114.85932860000001], [39.25567329999999, -114.85936760000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_01aeaf6d2d4045f08899a31d29fc4515 = L.polyline(
+                [[40.64001719999998, -116.9400085], [40.640017199999974, -116.9400085]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_27ee0a9c114e409084b3c801a02967c7 = L.polyline(
+                [[40.17605699999998, -118.4816411], [40.17605699999998, -118.4816411]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_f4ae8744582946fd83a2a959c1da04c8 = L.polyline(
+                [[38.91965559999999, -119.7192963], [38.91965559999999, -119.7192963]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_8622f332158d48069e5cf191174f866a = L.polyline(
+                [[36.82143899999999, -114.1280052], [36.82143899999999, -114.1280052]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_f20bd92aa3b04641ae4713ce4a054b13 = L.polyline(
+                [[40.97133680000001, -117.72718290000002], [40.971336800000024, -117.72718290000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_fe702eaf7cd34dcb94acb264e4e1ba9a = L.polyline(
+                [[35.967679200000006, -114.8432811], [35.967679200000006, -114.8432811]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_d74d0d1d9bd14ca88545cfee394a784a = L.polyline(
+                [[36.21439299999995, -116.02486699999999], [36.21439299999995, -116.02486699999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_b2cfdc14e88747559c473767ffda1703 = L.polyline(
+                [[37.622712699999965, -114.5138347], [37.62271269999996, -114.5138347]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_820377c0e5fd40d295c4f42ba1647281 = L.polyline(
+                [[36.1456482, -115.21180390000002], [36.1456482, -115.21180390000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_e2eaabaf274b48d492501da0566a503d = L.polyline(
+                [[36.16312600000003, -115.162686], [36.16312600000003, -115.162686]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_b232a6f870a648d5825e07c18caa3056 = L.polyline(
+                [[39.43582749999998, -119.7604159], [39.43597069999999, -119.76008780000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_7e56d7cdb70d483ea4f6fa9a9676c856 = L.polyline(
+                [[36.205519999999986, -115.250383], [36.205519999999986, -115.250383]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_55fca52d7c6e49ff9b5fb9f78048d85e = L.polyline(
+                [[36.1165587, -115.1102797], [36.1165587, -115.1102797]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_d0e8eb14b2a14a78a9585f6a87ba5da2 = L.polyline(
+                [[39.17129649999999, -119.77225349999999], [39.17129649999999, -119.77225349999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_cc01a460a43c444f9e86977e95d48a13 = L.polyline(
+                [[36.1563518, -115.19357779999999], [36.1563518, -115.19357779999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_5d35b01b7a424223928faca25d58bba5 = L.polyline(
+                [[36.00135950000001, -115.1211685], [36.00135950000001, -115.1211685]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0890a7ee2f4342a68a7ed1c981b01390 = L.polyline(
+                [[36.08075829999999, -115.29237069999999], [36.08075829999999, -115.29237069999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_c6bcd253e14546e2bd1da190aeb4a513 = L.polyline(
+                [[36.275103299999955, -115.2800857], [36.27510329999993, -115.2800857]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_6b26ee47886b4fc89906e7b024a66bfa = L.polyline(
+                [[39.52944420000005, -119.7781297], [39.529444200000086, -119.7781297]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_e84db48355824fcf95cdf176acb2b56f = L.polyline(
+                [[36.15741319999996, -115.22658880000002], [36.15741319999996, -115.22658880000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_5c2cabcc72894cec806ec190defcfb05 = L.polyline(
+                [[39.53791120000001, -119.7974407], [39.53791120000001, -119.7974407]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0639d7bfc0c04bdc8c6dfede6456c350 = L.polyline(
+                [[36.11201480000005, -115.2217062], [36.11201480000008, -115.2217062]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_5fd7613ceb0d42a1a0942aac3c57839b = L.polyline(
+                [[36.14586739999999, -115.21584970000002], [36.14586739999999, -115.21584970000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_225f6357d97549069341b81d7c237a11 = L.polyline(
+                [[36.12633000000002, -115.24634000000002], [36.12633000000002, -115.24634000000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0da7bbb985264ef09032131df4448dd4 = L.polyline(
+                [[35.99636609999999, -115.12011260000001], [35.99636609999999, -115.12011260000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_0833eca9c87042e080a29b8a603dbb3d = L.polyline(
+                [[36.13063500000002, -115.13820499999999], [36.13063500000002, -115.13820499999999]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_fdcfe0ea15a14d19b4cef4da0feb3279 = L.polyline(
+                [[36.121537700000026, -115.22309510000001], [36.12153770000005, -115.22309510000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var poly_line_3e4f8c95c25841d2be57783c4cf10b74 = L.polyline(
+                [[39.46369170000002, -119.77636710000002], [39.463691700000005, -119.77636710000002]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5cc9717f2bf6430e904d72067f62676d);
+        
+    
+            var layer_control_d15a9d98c602459ab3e55ea06f9f2221 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_fce09e79116c464cb0f726840b418663,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_c92590de20b44e5497c0bcb3c29a2157,
+                    "DH - matched" : feature_group_fdf20c3ffe314b118d5cb02e682d8a03,
+                    "HCRIS - unmatched" : feature_group_6b741e41d038445e9b84ef6a28cc1709,
+                    "DH - unmatched" : feature_group_a6c4488c05ce430691019aae859c8cd0,
+                    "connections" : feature_group_5cc9717f2bf6430e904d72067f62676d,
+                },
+            };
+            L.control.layers(
+                layer_control_d15a9d98c602459ab3e55ea06f9f2221.base_layers,
+                layer_control_d15a9d98c602459ab3e55ea06f9f2221.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_810373a33ece48fd9accbd65e302a19c);
+        
+</script>

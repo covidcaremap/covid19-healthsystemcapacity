@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97b88b8575704b9d934406c24f423614 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_97b88b8575704b9d934406c24f423614" ></div>
+        
+</body>
+<script>    
+    
+            var map_97b88b8575704b9d934406c24f423614 = L.map(
+                "map_97b88b8575704b9d934406c24f423614",
+                {
+                    center: [2331697.3792508887, 2004280.9618853228],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad733657076b4952abc00cc2afee3be8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var feature_group_5de6412c77074876be299b1222d078bf = L.featureGroup(
+                {}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var circle_marker_adf9a0a21a6c457b9c580b3ea2dee074 = L.circleMarker(
+                [41.8346224, -71.4355842],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_adf9a0a21a6c457b9c580b3ea2dee074.bindTooltip(
+                `<div>
+                     <b>Name:</b> ROGER WILLIAMS HOSPITAL<br><b>Addr:</b> 825 CHALKSTONE AVENUE<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PROVIDENCE<br><b>Zip Code:</b> 02908<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2f701d5d7124d8786d94ef779965c3e = L.circleMarker(
+                [41.85574830000003, -71.4594443],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_f2f701d5d7124d8786d94ef779965c3e.bindTooltip(
+                `<div>
+                     <b>Name:</b> OUR LADY OF FATIMA HOSPITAL<br><b>Addr:</b> 200 HIGH SERVICE AVENUE<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> NORTH PROVIDENCE<br><b>Zip Code:</b> 02904<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f900fe065e5041c28740a926da1e31b4 = L.circleMarker(
+                [41.497150399999974, -71.3059966],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_f900fe065e5041c28740a926da1e31b4.bindTooltip(
+                `<div>
+                     <b>Name:</b> NEWPORT HOSPITAL<br><b>Addr:</b> 11 FRIENDSHIP STREET<br><b>State:</b> RI<br><b>County:</b> NEWPORT<br><b>City:</b> NEWPORT<br><b>Zip Code:</b> 02840<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f2f87aa45894dc99e68b3f2adac0c28 = L.circleMarker(
+                [41.8110732, -71.4090545],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_1f2f87aa45894dc99e68b3f2adac0c28.bindTooltip(
+                `<div>
+                     <b>Name:</b> RHODE ISLAND HOSPITAL<br><b>Addr:</b> 593 EDDY STREET<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PROVIDENCE<br><b>Zip Code:</b> 02901<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 163
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9ace3d18cab44b84a0ce062cf7c96b62 = L.circleMarker(
+                [41.431434300000014, -71.4966243],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_9ace3d18cab44b84a0ce062cf7c96b62.bindTooltip(
+                `<div>
+                     <b>Name:</b> SOUTH COUNTY HOSPITAL<br><b>Addr:</b> 100 KENYON AVENUE<br><b>State:</b> RI<br><b>County:</b> WASHINGTON<br><b>City:</b> WAKEFIELD<br><b>Zip Code:</b> 02879<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7bba60636414391a0a8978d7a44d1b2 = L.circleMarker(
+                [41.70541099999999, -71.477898],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_e7bba60636414391a0a8978d7a44d1b2.bindTooltip(
+                `<div>
+                     <b>Name:</b> KENT COUNTY MEMORIAL HOSPITAL<br><b>Addr:</b> 455 TOLL GATE ROAD<br><b>State:</b> RI<br><b>County:</b> KENT<br><b>City:</b> WARWICK<br><b>Zip Code:</b> 02886<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7b327f9e56de467fb631c0dcf02014a6 = L.circleMarker(
+                [42.005251799999975, -71.49528760000001],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_7b327f9e56de467fb631c0dcf02014a6.bindTooltip(
+                `<div>
+                     <b>Name:</b> LANDMARK MEDICAL CENTER<br><b>Addr:</b> 115 CASS AVENUE<br><b>State:</b> RI<br><b>County:</b> None<br><b>City:</b> WOONSOCKET<br><b>Zip Code:</b> 02895<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e60ab4d220e54c1dbdef2d5fbc883ae3 = L.circleMarker(
+                [41.85199770000001, -71.3982901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_e60ab4d220e54c1dbdef2d5fbc883ae3.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE MIRIAM HOSPITAL<br><b>Addr:</b> 164 SUMMIT AVENUE<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PROVIDENCE<br><b>Zip Code:</b> 02906<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0c54de34c7b4a82817fadec1b8f789c = L.circleMarker(
+                [41.36219669999998, -71.8245067],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_a0c54de34c7b4a82817fadec1b8f789c.bindTooltip(
+                `<div>
+                     <b>Name:</b> THE WESTERLY HOSPITAL<br><b>Addr:</b> 25 WELLS STREET<br><b>State:</b> RI<br><b>County:</b> WASHINGTON COUNTY<br><b>City:</b> WESTERLY<br><b>Zip Code:</b> 02891<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1e1d67c29a3f40b59f48838f70acb50f = L.circleMarker(
+                [41.74484929999997, -71.4626263],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_1e1d67c29a3f40b59f48838f70acb50f.bindTooltip(
+                `<div>
+                     <b>Name:</b> ELEANOR SLATER HOSPITAL<br><b>Addr:</b> 14 HARRINGTON ROAD<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> CRANSTON<br><b>Zip Code:</b> 02920-3080<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_89e039354cc8433ca05e6b9e6f7d9a5e = L.circleMarker(
+                [41.981334300000064, -71.512661],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_89e039354cc8433ca05e6b9e6f7d9a5e.bindTooltip(
+                `<div>
+                     <b>Name:</b> REHAB HOSP OF RI<br><b>Addr:</b> 116 EDDIE DOWLING HIGHWAY<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> NORTH SMITHFIELD<br><b>Zip Code:</b> 02896<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_28af91d5d5f34e5db64f0ebf9835e653 = L.circleMarker(
+                [41.84350200000003, -71.3809124],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_28af91d5d5f34e5db64f0ebf9835e653.bindTooltip(
+                `<div>
+                     <b>Name:</b> BUTLER HOSPITAL<br><b>Addr:</b> 345 BLACKSTONE BOULEVARD<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PROVIDENCE<br><b>Zip Code:</b> 02906<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9b07390ca1574557b50b207b3bda2b0f = L.circleMarker(
+                [41.792561199999945, -71.3671866],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_5de6412c77074876be299b1222d078bf);
+        
+    
+            circle_marker_9b07390ca1574557b50b207b3bda2b0f.bindTooltip(
+                `<div>
+                     <b>Name:</b> EMMA P. BRADLEY HOSPITAL<br><b>Addr:</b> 1011 VETERANS MEMORIAL PARKWAY<br><b>State:</b> RI<br><b>County:</b> None<br><b>City:</b> EAST PROVIDENCE<br><b>Zip Code:</b> 02915<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6b3442c94e34481cb72224578325a7b9 = L.featureGroup(
+                {}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var circle_marker_0dc9911b841e44a59c4c5da3a81ad88a = L.circleMarker(
+                [41.8346224, -71.4355842],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_0dc9911b841e44a59c4c5da3a81ad88a.bindTooltip(
+                `<div>
+                     <b>Name:</b> Roger Williams Medical Center<br><b>Addr:</b> 825 Chalkstone Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2908<br><b>Distance discrepancy:</b> 84 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: normalized average<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_051d2c26aa4e45898651ef58bf30984d = L.circleMarker(
+                [41.85574830000007, -71.4594443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_051d2c26aa4e45898651ef58bf30984d.bindTooltip(
+                `<div>
+                     <b>Name:</b> Our Lady of Fatima Hospital<br><b>Addr:</b> 200 High Service Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> North Providence<br><b>Zip Code:</b> 2904<br><b>Distance discrepancy:</b> 50 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_236cfc79f584496ab5527ecb3a93da00 = L.circleMarker(
+                [41.49715039999995, -71.3059966],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_236cfc79f584496ab5527ecb3a93da00.bindTooltip(
+                `<div>
+                     <b>Name:</b> Newport Hospital<br><b>Addr:</b> 20 Powel Ave<br><b>State:</b> RI<br><b>County:</b> Newport<br><b>City:</b> Newport<br><b>Zip Code:</b> 2840<br><b>Distance discrepancy:</b> 69 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7da2d8e79e684b56b4eed0175fad1194 = L.circleMarker(
+                [41.811171800000054, -71.411026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_7da2d8e79e684b56b4eed0175fad1194.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rhode Island Hospital<br><b>Addr:</b> 593 Eddy St<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2903<br><b>Distance discrepancy:</b> 35 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: top dist and str match<br><b>dist_apart</b>: 163
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0d07323e8434af28dfad3e6467ac0d6 = L.circleMarker(
+                [41.431434300000014, -71.4966243],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_b0d07323e8434af28dfad3e6467ac0d6.bindTooltip(
+                `<div>
+                     <b>Name:</b> South County Hospital<br><b>Addr:</b> 100 Kenyon Ave<br><b>State:</b> RI<br><b>County:</b> Washington<br><b>City:</b> Wakefield<br><b>Zip Code:</b> 2879<br><b>Distance discrepancy:</b> 17 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8130ce2207d44318aaede363d89d2b2 = L.circleMarker(
+                [41.70541099999999, -71.477898],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_f8130ce2207d44318aaede363d89d2b2.bindTooltip(
+                `<div>
+                     <b>Name:</b> Kent Hospital<br><b>Addr:</b> 455 Toll Gate Rd<br><b>State:</b> RI<br><b>County:</b> Kent<br><b>City:</b> Warwick<br><b>Zip Code:</b> 2886<br><b>Distance discrepancy:</b> 39 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f773a3800fd349389b4d82e8d4f296ce = L.circleMarker(
+                [42.00525179999993, -71.49528760000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_f773a3800fd349389b4d82e8d4f296ce.bindTooltip(
+                `<div>
+                     <b>Name:</b> Landmark Medical Center<br><b>Addr:</b> 115 Cass Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Woonsocket<br><b>Zip Code:</b> 2895<br><b>Distance discrepancy:</b> 57 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61e58e8ca5c844fd91acd496486c216f = L.circleMarker(
+                [41.85199770000001, -71.3982901],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_61e58e8ca5c844fd91acd496486c216f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Miriam Hospital<br><b>Addr:</b> 164 Summit Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2906<br><b>Distance discrepancy:</b> 41 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6780a89db8f41c899a3381049e49ff0 = L.circleMarker(
+                [41.36219669999994, -71.8245067],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_c6780a89db8f41c899a3381049e49ff0.bindTooltip(
+                `<div>
+                     <b>Name:</b> Westerly Hospital<br><b>Addr:</b> 25 Wells St<br><b>State:</b> RI<br><b>County:</b> Washington<br><b>City:</b> Westerly<br><b>Zip Code:</b> 2891<br><b>Distance discrepancy:</b> 45 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ea87fabe09914a19aeb4a69e617f153f = L.circleMarker(
+                [41.74495199999998, -71.462334],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_ea87fabe09914a19aeb4a69e617f153f.bindTooltip(
+                `<div>
+                     <b>Name:</b> Eleanor Slater Hospital<br><b>Addr:</b> 111 Howard Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Cranston<br><b>Zip Code:</b> 2920<br><b>Distance discrepancy:</b> 110 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81b09801452843a8a79246bd38d03025 = L.circleMarker(
+                [41.98133430000012, -71.512661],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_81b09801452843a8a79246bd38d03025.bindTooltip(
+                `<div>
+                     <b>Name:</b> Rehabilitation Hospital of Rhode Island<br><b>Addr:</b> 116 Eddie Dowling Hwy<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> North Smithfield<br><b>Zip Code:</b> 2896<br><b>Distance discrepancy:</b> 32 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dbf375e40a7449ca857fcec75ea82443 = L.circleMarker(
+                [41.84350200000003, -71.3809124],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_dbf375e40a7449ca857fcec75ea82443.bindTooltip(
+                `<div>
+                     <b>Name:</b> Butler Hospital<br><b>Addr:</b> 345 Blackstone Blvd<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2906<br><b>Distance discrepancy:</b> 102 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6c9e22a8dc14736bb9f0fcb143d5131 = L.circleMarker(
+                [41.79256119999994, -71.3671866],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6b3442c94e34481cb72224578325a7b9);
+        
+    
+            circle_marker_a6c9e22a8dc14736bb9f0fcb143d5131.bindTooltip(
+                `<div>
+                     <b>Name:</b> Bradley Hospital<br><b>Addr:</b> 1011 Veterans Memorial Pkwy<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Riverside<br><b>Zip Code:</b> 2915<br><b>Distance discrepancy:</b> 30 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state<br><b>match source</b>: dist threshhold<br><b>dist_apart</b>: 0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_83c3990ffce44f97b2fee892f67eb7e6 = L.featureGroup(
+                {}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var circle_marker_8590964984f34856a929e1ff3519fda5 = L.circleMarker(
+                [41.86993680000002, -71.3763227],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_83c3990ffce44f97b2fee892f67eb7e6);
+        
+    
+            circle_marker_8590964984f34856a929e1ff3519fda5.bindTooltip(
+                `<div>
+                     <b>Name:</b> MEMORIAL HOSPITAL OF RHODE ISLAND<br><b>Addr:</b> 111 BREWSTER STREET<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PAWTUCKET<br><b>Zip Code:</b> 02860<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e18414ded26b4bc8b2b0b946c37f2ac6 = L.circleMarker(
+                [41.81133369999997, -71.41199460000001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_83c3990ffce44f97b2fee892f67eb7e6);
+        
+    
+            circle_marker_e18414ded26b4bc8b2b0b946c37f2ac6.bindTooltip(
+                `<div>
+                     <b>Name:</b> WOMEN & INFANTS HOSPITAL<br><b>Addr:</b> 101 DUDLEY STREET<br><b>State:</b> RI<br><b>County:</b> PROVIDENCE<br><b>City:</b> PROVIDENCE<br><b>Zip Code:</b> 02905<br><b>Distance discrepancy:</b> N/A meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> N/A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6acae7a6bf764f029b8946674b758c1b = L.featureGroup(
+                {}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var circle_marker_6266582a9e5048e89ea78d225165b681 = L.circleMarker(
+                [41.83237030000009, -71.43409330000003],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6acae7a6bf764f029b8946674b758c1b);
+        
+    
+            circle_marker_6266582a9e5048e89ea78d225165b681.bindTooltip(
+                `<div>
+                     <b>Name:</b> Providence VA Medical Center<br><b>Addr:</b> 830 Chalkstone Ave<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2908<br><b>Distance discrepancy:</b> 13 meters<br><b>Geocode source:</b> geocoded:google<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c03455ba677435a9cfc489fbe30e454 = L.circleMarker(
+                [41.81071599999999, -71.41254],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 1.5}
+            ).addTo(feature_group_6acae7a6bf764f029b8946674b758c1b);
+        
+    
+            circle_marker_5c03455ba677435a9cfc489fbe30e454.bindTooltip(
+                `<div>
+                     <b>Name:</b> Women & Infants Hospital<br><b>Addr:</b> 101 Dudley St<br><b>State:</b> RI<br><b>County:</b> Providence<br><b>City:</b> Providence<br><b>Zip Code:</b> 2905<br><b>Distance discrepancy:</b> 36 meters<br><b>Geocode source:</b> geocoded:mapbox<br><b>Validation source:</b> state
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_6a4b0c20ac434fc6b207976b356b902f = L.featureGroup(
+                {}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+    
+            var poly_line_42017096ffba45c8a429e1161003453d = L.polyline(
+                [[41.8346224, -71.4355842], [41.8346224, -71.4355842]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_b26bdab92c6647a78fa9db302d5e3049 = L.polyline(
+                [[41.85574830000003, -71.4594443], [41.85574830000007, -71.4594443]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_89a9d8f7800a4546869bb31776d24059 = L.polyline(
+                [[41.497150399999974, -71.3059966], [41.49715039999995, -71.3059966]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_5470c4315262497a92b66ffe8a6b7f14 = L.polyline(
+                [[41.8110732, -71.4090545], [41.811171800000054, -71.411026]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_8ad653a71f8e4c558371ab4e8eb678be = L.polyline(
+                [[41.431434300000014, -71.4966243], [41.431434300000014, -71.4966243]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_27ed726197ca452faa14f68d642b2416 = L.polyline(
+                [[41.70541099999999, -71.477898], [41.70541099999999, -71.477898]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_8a0dff1e1e12454fbbbc9e058e45fd54 = L.polyline(
+                [[42.005251799999975, -71.49528760000001], [42.00525179999993, -71.49528760000001]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_c18cb59533ce4a4c9e5fa88e4f3691dc = L.polyline(
+                [[41.85199770000001, -71.3982901], [41.85199770000001, -71.3982901]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_a3e33fd1e7934fd086bd2aae598c23e3 = L.polyline(
+                [[41.36219669999998, -71.8245067], [41.36219669999994, -71.8245067]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_e3543460d58447229b72aa9cb309cba8 = L.polyline(
+                [[41.74484929999997, -71.4626263], [41.74495199999998, -71.462334]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_625adf4eb68a47a38d90032eea915475 = L.polyline(
+                [[41.981334300000064, -71.512661], [41.98133430000012, -71.512661]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_232bace182e44fc8bb5c700848b38a00 = L.polyline(
+                [[41.84350200000003, -71.3809124], [41.84350200000003, -71.3809124]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var poly_line_b5998d103214467093e8737d5ef85018 = L.polyline(
+                [[41.792561199999945, -71.3671866], [41.79256119999994, -71.3671866]],
+                {"bubblingMouseEvents": true, "color": "grey", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "grey", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_6a4b0c20ac434fc6b207976b356b902f);
+        
+    
+            var layer_control_6e13ca9aa495446bb48e2fa9f8f9c0d8 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ad733657076b4952abc00cc2afee3be8,
+                },
+                overlays :  {
+                    "HCRIS - matched" : feature_group_5de6412c77074876be299b1222d078bf,
+                    "DH - matched" : feature_group_6b3442c94e34481cb72224578325a7b9,
+                    "HCRIS - unmatched" : feature_group_83c3990ffce44f97b2fee892f67eb7e6,
+                    "DH - unmatched" : feature_group_6acae7a6bf764f029b8946674b758c1b,
+                    "connections" : feature_group_6a4b0c20ac434fc6b207976b356b902f,
+                },
+            };
+            L.control.layers(
+                layer_control_6e13ca9aa495446bb48e2fa9f8f9c0d8.base_layers,
+                layer_control_6e13ca9aa495446bb48e2fa9f8f9c0d8.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_97b88b8575704b9d934406c24f423614);
+        
+</script>
