@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Layer } from 'react-mapbox-gl';
-import { aggregationTypes } from '../utils/config';
 import {
     fillStyleByType,
     facilityCircleStyle,
@@ -16,24 +15,8 @@ export default function HealthCareLayers({
     perCapita,
     onHover,
     onHoverOut,
+    classBreaks,
 }) {
-    const [classBreaks, setBreaks] = useState(null);
-    const [fetchingBreaks, setFetchingBreaks] = useState(false);
-
-    if (!fetchingBreaks && !classBreaks) {
-        setFetchingBreaks(true);
-        Promise.all(
-            aggregationTypes.map((type) =>
-                fetch(type.breaksUrl).then(function (response) {
-                    return response.json();
-                }),
-            ),
-        ).then((data) => {
-            // Persist the breaks for each aggregation type by id
-            setBreaks([data[0], data[1], data[2], data[3]]);
-        });
-    }
-
     const handleMouseMove = (boundAggType) => {
         return (e) => {
             if (boundAggType === aggType) {

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ReactMapGL, { Source, ZoomControl } from 'react-mapbox-gl';
 import HealthCareLayers from './HealthCareLayers';
 import PopupContent from './PopupContent';
+import Legend from './Legend';
+import { aggregationTypes } from '../utils/config';
 
 const MapGL = ReactMapGL({
     accessToken:
@@ -28,6 +30,22 @@ export default function Map({ indicator, aggType, perCapita }) {
     const [showPopup, setShowPopup] = useState(false);
     const [popupDetails, setPopupDetails] = useState();
 
+    const [classBreaks, setBreaks] = useState(null);
+    const [fetchingBreaks, setFetchingBreaks] = useState(false);
+
+    if (!fetchingBreaks && !classBreaks) {
+        setFetchingBreaks(true);
+        Promise.all(
+            aggregationTypes.map((type) =>
+                fetch(type.breaksUrl).then(function (response) {
+                    return response.json();
+                }),
+            ),
+        ).then((data) => {
+            // Persist the breaks for each aggregation type by id
+            setBreaks([data[0], data[1], data[2], data[3]]);
+        });
+    }
     const handleHoverFeature = (feature, coordinates) => {
         setPopupDetails({ coords: coordinates, feature: feature });
         setShowPopup(true);
@@ -66,18 +84,16 @@ export default function Map({ indicator, aggType, perCapita }) {
                     aggType={aggType}
                     perCapita={perCapita}
                     onHover={handleHoverFeature}
+                    classBreaks={classBreaks}
                 />
                 <ZoomControl position="top-right" />
+                <Legend
+                    indicator={indicator}
+                    aggType={aggType}
+                    classBreaks={classBreaks}
+                    perCapita={perCapita}
+                />
             </MapGL>
         </div>
     );
 }
-/*
-    <div class="map-container">
-      <div class="map" id="map">
-        <div class="legend-container">
-          <div id="legend"></div>
-        </div>
-      </div>
-    </div>
-*/
