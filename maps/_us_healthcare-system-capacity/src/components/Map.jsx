@@ -75,6 +75,7 @@ export default function Map({ indicator, aggType, perCapita }) {
                 pitchWithRotate={false}
                 touchZoomRotate={false}
                 onMouseMove={handleMapOut}
+                // eslint-disable-next-line
                 style="mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy"
             >
                 <Source id="boundaries" tileJsonSource={boundarySource} />
