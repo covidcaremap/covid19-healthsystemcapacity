@@ -23,25 +23,13 @@ export const facilityCircleStyle = (breaks, indicator, aggType, perCapita) => {
     };
 };
 
-export const shouldUsePerCapita = (indicator, perCapita, aggType) => {
-    // number == 0 is showing total values
-    // Indicators 3 and 4 are capacity
-    // type == 3 is facility-level data
-    return (
-        perCapita !== 0 &&
-        !(indicator === 3 || indicator === 4) &&
-        aggType !== 3
-    );
-};
-
 function getFillPaintStyle(breaks, indicator, aggType, perCapita) {
-    var breaksValues = getBreaks(breaks, indicator, aggType, perCapita);
-    var colors = indicators[indicator].colors;
-    var colorBreaks = flatten(zip(breaksValues, colors)).splice(
-        1,
-        colors.length + breaksValues.length - 2,
+    const { colorBreaks } = getBreaksStyle(
+        breaks,
+        indicator,
+        aggType,
+        perCapita,
     );
-
     const property = getProperty(indicator, aggType, perCapita);
     return {
         'fill-color': [
@@ -58,15 +46,13 @@ function getFillPaintStyle(breaks, indicator, aggType, perCapita) {
 }
 
 function getCirclePaintStyle(breaks, indicator, aggType, perCapita) {
-    const colors = indicators[indicator].colors;
     const radii = indicators[indicator].radii;
-    const breaksValues = getBreaks(breaks, indicator, aggType);
-
-    const colorBreaks = flatten(zip(breaksValues, colors)).splice(
-        1,
-        colors.length + breaksValues.length - 2,
+    const { breaksValues, colorBreaks } = getBreaksStyle(
+        breaks,
+        indicator,
+        aggType,
+        perCapita,
     );
-
     const property = getProperty(indicator, aggType, perCapita);
 
     return {
@@ -114,7 +100,22 @@ function getCirclePaintStyle(breaks, indicator, aggType, perCapita) {
     //setLegend(colors, breaksValues);
 }
 
-function getBreaks(breaks, indicator, aggType, perCapita) {
+export const getBreaksStyle = (breaks, indicator, aggType, perCapita) => {
+    const breaksValues = getBreaks(breaks, indicator, aggType, perCapita);
+    const colors = indicators[indicator].colors;
+    const colorBreaks = flatten(zip(breaksValues, colors)).splice(
+        1,
+        colors.length + breaksValues.length - 2,
+    );
+
+    return {
+        breaksValues,
+        colors,
+        colorBreaks,
+    };
+};
+
+export const getBreaks = (breaks, indicator, aggType, perCapita) => {
     const property = getProperty(indicator, aggType, perCapita);
     var breakpoints = breaks[aggType][property];
     // TODO: Find a better way to handle this
@@ -130,12 +131,35 @@ function getBreaks(breaks, indicator, aggType, perCapita) {
         }
     });
     return modifiedBreaks;
-}
+};
 
-export function getProperty(theIndicator, aggType, perCapita) {
+export const shouldUsePerCapita = (indicator, perCapita, aggType) => {
+    // number == 0 is showing total values
+    // Indicators 3 and 4 are capacity
+    // type == 3 is facility-level data
+    return (
+        perCapita !== 0 &&
+        !(indicator === 3 || indicator === 4) &&
+        aggType !== 3
+    );
+};
+
+export const getProperty = (theIndicator, aggType, perCapita) => {
     var indicatorProperty = indicators[theIndicator]['propertyInData'];
     if (shouldUsePerCapita(theIndicator, perCapita, aggType)) {
         indicatorProperty += perCapitas[perCapita]['stringInData'];
     }
     return indicatorProperty;
-}
+};
+
+export const formatNumber = (x, indicator) => {
+    if (isNaN(x)) {
+        return 'N/A';
+    } else if (indicators[indicator].displayAsPercent) {
+        return (x * 100).toFixed(0) + '%';
+    } else if (Number.isInteger(x)) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    } else {
+        return x.toFixed(2);
+    }
+};

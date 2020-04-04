@@ -1,19 +1,12 @@
 import React from 'react';
 import { Popup } from 'react-mapbox-gl';
 import { aggregationTypes, indicators, perCapitas } from '../utils/config';
-import { shouldUsePerCapita, getProperty } from '../utils/healthcareMapStyling';
+import {
+    formatNumber,
+    shouldUsePerCapita,
+    getProperty,
+} from '../utils/healthcareMapStyling';
 
-const formatNumber = (x, indicator) => {
-    if (isNaN(x)) {
-        return 'N/A';
-    } else if (indicators[indicator].displayAsPercent) {
-        return (x * 100).toFixed(0) + '%';
-    } else if (Number.isInteger(x)) {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    } else {
-        return x.toFixed(2);
-    }
-};
 export default function PopupContent({
     feature,
     coordinates,
