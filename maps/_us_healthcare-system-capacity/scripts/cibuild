@@ -84,8 +84,8 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 
         # Synchronize everything to the Jekyll root
         rsync -avz \
-            "${DIR}/../build/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity-v2"
+            "${DIR}/../build/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity"
         rsync -avz \
-            "${DIR}/../data/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity-v2/data"
+            "${DIR}/../data/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity/data"
     fi
 fi
