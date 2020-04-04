@@ -14,22 +14,18 @@ export default function Header() {
                 </a>
             </div>
             <nav>
-                <NewTabLink
-                    href="https://www.covidcaremap.org/"
-                    text="About"
-                ></NewTabLink>
-                <NewTabLink
-                    href="https://github.com/covidcaremap/covid19-healthsystemcapacity"
-                    text="Github"
-                ></NewTabLink>
-                <NewTabLink
-                    href="https://www.covidcaremap.org/#data"
-                    text="Download data"
-                ></NewTabLink>
-                <NewTabLink
-                    href="https://forms.gle/KJsEjqgxkWn6xWRn8"
-                    text="Update data"
-                ></NewTabLink>
+                <NewTabLink href="https://www.covidcaremap.org/">
+                    About
+                </NewTabLink>
+                <NewTabLink href="https://github.com/covidcaremap/covid19-healthsystemcapacity">
+                    Github
+                </NewTabLink>
+                <NewTabLink href="https://www.covidcaremap.org/#data">
+                    Download data
+                </NewTabLink>
+                <NewTabLink href="https://forms.gle/KJsEjqgxkWn6xWRn8">
+                    Update data
+                </NewTabLink>
             </nav>
         </div>
     );

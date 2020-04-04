@@ -14,10 +14,9 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                     Open map data on all US hospitals’ bed capacity to care for
                     COVID-19 patients. Organized by facility, county, hospital
                     referral region, or state. See our
-                    <NewTabLink
-                        href="https://www.covidcaremap.org/"
-                        text="website"
-                    ></NewTabLink>
+                    <NewTabLink href="https://www.covidcaremap.org/">
+                        website
+                    </NewTabLink>
                     for methods, sources, data, and code—all free and open
                     source.
                 </p>
@@ -25,20 +24,17 @@ export default function Sidebar({ indicator, onIndicatorChanged }) {
                     Note: Numbers are not reported in real time. Most are from
                     2018 reports or prior and may be incomplete or outdated.
                     With your help, we are
-                    <NewTabLink
-                        href="https://forms.gle/KJsEjqgxkWn6xWRn8"
-                        text="updating this data"
-                    ></NewTabLink>
+                    <NewTabLink href="https://forms.gle/KJsEjqgxkWn6xWRn8">
+                        updating this data
+                    </NewTabLink>
                     to show a more current view. Main data sources are
-                    <NewTabLink
-                        href="https://blog.definitivehc.com/news/definitive-healthcare-esri-geomapping-covid19"
-                        text="Definitive Healthcare"
-                    ></NewTabLink>
+                    <NewTabLink href="https://blog.definitivehc.com/news/definitive-healthcare-esri-geomapping-covid19">
+                        Definitive Healthcare
+                    </NewTabLink>
                     &
-                    <NewTabLink
-                        href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports"
-                        text="Healthcare Cost Report Information System"
-                    ></NewTabLink>
+                    <NewTabLink href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/Cost-Reports">
+                        Healthcare Cost Report Information System
+                    </NewTabLink>
                     (HCRIS).
                 </p>
                 <hr />
