@@ -1,5 +1,7 @@
 from collections import defaultdict
+import json
 from functools import reduce
+
 import folium
 import geopandas as gpd
 import libpysal
@@ -40,7 +42,7 @@ class FacilityMatchResult:
         """Returns a dict that can be serialized into JSON for the unmatched ids per dataset."""
         result = {}
         for dataset_key in self.unmatched_per_dataset:
-            result[dataset_key] = list(self.unmatched_per_dataset[dataset_key])
+            result[dataset_key] = sorted(list(self.unmatched_per_dataset[dataset_key]))
         return result
 
 class FacilityColumns:
@@ -249,7 +251,8 @@ def match_facilities(facility_datasets,
 
         merged_df = merged_df.merge(df_prefixed, on=id_column, how='left')
 
-    merged_df = gpd.GeoDataFrame(merged_df, crs='epsg:4326')
+    merged_df = gpd.GeoDataFrame(merged_df, crs='epsg:4326').sort_values([facility_datasets[dataset_key]['columns'].facility_id
+                                                                          for dataset_key in dataset_order])
 
     return FacilityMatchResult(merged_df, matches_df, unmatched_per_dataset)
 
@@ -294,6 +297,14 @@ def reduce_matched_facility_records(authoritative_records,
     match_records_by_dataset = defaultdict(list)
     for record in records_to_match:
         match_records_by_dataset[record['dataset']].append(record)
+
+    # Sort the matches to ensure deterministic behavior
+    for dataset_key in match_records_by_dataset:
+        id_column = dataset_columns[dataset_key].facility_id
+        match_records_by_dataset[dataset_key] = sorted(
+            match_records_by_dataset[dataset_key],
+            key=lambda r: r[id_column]
+        )
 
     # List of (source_id, dataset_key, dest_id, name_score, address_score)
     scored_edges = []
