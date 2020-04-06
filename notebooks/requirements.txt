@@ -13,3 +13,4 @@ python-dateutil<=2.8.0
 urllib3 < 1.25
 pysal==2.2.0
 rapidfuzz==0.5.1
+networkx==2.4

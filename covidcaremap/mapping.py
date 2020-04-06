@@ -1,41 +1,7 @@
+import numpy as np
 import folium
 from folium import Map
 from shapely.geometry import mapping
-
-
-def gdf_for_folium(gdf, addl_labels=None):
-    info = []
-
-    for _, r in gdf.iterrows():
-        coords = mapping(r.geometry)['coordinates']
-        coords = (coords[1], coords[0])
-        name = "<b>Name:</b> {}".format(r['HOSP10_Name'])
-        addr = "<b>Addr:</b> {}".format(r['Street_Addr'])
-        state = "<b>State:</b> {}".format(r['STATE_NAME'])
-        county = "<b>County:</b> {}".format(r['COUNTY_NAME'])
-        city = "<b>City:</b> {}".format(r['CITY_NAME'])
-        zip_code = "<b>Zip Code:</b> {}".format(r['ZIP_CODE'])
-        if 'distance' in r and r['distance']:
-            x = round(float(r['distance']))
-        else:
-            x = 'N/A'
-        distance = "<b>Distance discrepancy:</b> {} meters".format(x)
-
-        g_source = "<b>Geocode source:</b> {}".format(
-            'geocoded:' + r['source'] if 'source' in r else 'original')
-        c_source = "<b>Validation source:</b> {}".format(
-            r['confirmation_source'] if 'confirmation_source' in r else 'N/A')
-
-        tooltip = '<br>'.join(
-            [name, addr, state, county, city, zip_code, distance, g_source, c_source])
-
-        if addl_labels:
-            for al in addl_labels:
-                tooltip += '<br><b>{}</b>: {}'.format(al, r[al])
-
-        info.append((coords, tooltip))
-
-    return info
 
 
 class HospMap(Map):
@@ -43,9 +9,9 @@ class HospMap(Map):
         super().__init__(location, zoom_start=zoom_start)
         self.has_layer_control = False
 
-    def add_point_subset(self, gdf, name, color, addl_labels=None):
+    def add_point_subset(self, gdf, name, color, label_dict):
         fg = folium.FeatureGroup(name, show=True)
-        self.add_points(fg, gdf, color, addl_labels=addl_labels)
+        self.add_points(fg, gdf, color, label_dict=label_dict)
         self.add_child(fg)
 
     def add_layer_selector(self):
@@ -86,8 +52,8 @@ class HospMap(Map):
         self.add_child(fg)
 
     @staticmethod
-    def add_points(fg, gdf, color, addl_labels=None):
-        for coords, tt in gdf_for_folium(gdf, addl_labels=addl_labels):
+    def add_points(fg, gdf, color, label_dict):
+        for coords, tt in gdf_for_folium(gdf, label_dict=label_dict):
             fg.add_child(folium.CircleMarker(
                 coords,
                 control=True,
@@ -96,3 +62,71 @@ class HospMap(Map):
                 color=color,
                 weight=1.5,
                 tooltip=tt))
+
+
+def gdf_for_folium(gdf, label_dict):
+    info = []
+
+    for _, r in gdf.iterrows():
+        coords = mapping(r.geometry)['coordinates']
+        coords = (coords[1], coords[0])
+        props = []
+        for prop in label_dict:
+            val = r[label_dict[prop]]
+            if type(val) is str:
+                val = val.replace('`', '')
+            props.append("<b>{}:</b> {}".format(prop, val))
+
+        tooltip = '<br>'.join(props)
+
+        info.append((coords, tooltip))
+
+    return info
+
+
+def map_facility_match_result(match_result, facility_datasets, authoritative_dataset):
+    def centroid():
+        xs = []
+        ys = []
+        for i in match_result.merged_df['geometry']:
+            ys.append(i.x)
+            xs.append(i.y)
+        return ((np.min(xs) + ((np.max(xs) - np.min(xs)) / 2)),
+                (np.min(ys) + ((np.max(ys) - np.min(ys)) / 2)))
+
+    def get_label_dict(ds):
+        columns = facility_datasets[ds]['columns']
+        return {
+            'Dataset': 'dataset',
+            'ID': columns.facility_id,
+            'Name': columns.facility_name,
+            'Address': columns.street_address
+        }
+
+    merged_df = match_result.merged_df.copy()
+    merged_df['dataset'] = 'Merged - {}'.format(authoritative_dataset)
+
+    m = HospMap(centroid(), 7)
+    m.add_point_subset(
+        merged_df,
+        '{} - matched'.format('Merged'),
+        color='blue',
+        label_dict=get_label_dict(authoritative_dataset)
+    )
+
+    colors = ['red', 'yellow', 'brown', 'orange', 'green']
+    for i, dataset_key in enumerate(facility_datasets):
+        if dataset_key in match_result.unmatched_per_dataset:
+            unmatched = match_result.unmatched_per_dataset[dataset_key]
+            df = facility_datasets[dataset_key]['df'].copy()
+            df['dataset'] = dataset_key
+            id_column = facility_datasets[dataset_key]['columns'].facility_id
+            unmatched_df = df[df[id_column].astype(str).isin(unmatched)]
+            m.add_point_subset(
+                unmatched_df.to_crs('epsg:4326'),
+                '{} - unmatched'.format(dataset_key),
+                color=colors[i % len(colors)],
+                label_dict=get_label_dict(dataset_key)
+            )
+
+    return m
