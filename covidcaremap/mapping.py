@@ -54,6 +54,7 @@ class HospMap(Map):
     @staticmethod
     def add_points(fg, gdf, color, label_dict):
         for coords, tt in gdf_for_folium(gdf, label_dict=label_dict):
+            coords = [float(x) for x in coords]
             fg.add_child(folium.CircleMarker(
                 coords,
                 control=True,
@@ -72,7 +73,12 @@ def gdf_for_folium(gdf, label_dict):
         coords = (coords[1], coords[0])
         props = []
         for prop in label_dict:
-            val = r[label_dict[prop]]
+            try:
+                val = r[label_dict[prop]]
+            except KeyError:
+                import pdb
+                pdb.set_trace()
+                print()
             if type(val) is str:
                 val = val.replace('`', '')
             props.append("<b>{}:</b> {}".format(prop, val))
@@ -88,7 +94,10 @@ def map_facility_match_result(match_result, facility_datasets, authoritative_dat
     def centroid():
         xs = []
         ys = []
-        for i in match_result.merged_df['geometry']:
+        df = match_result.merged_df.copy()
+        # contiguous US
+        df = df[~df['STATE'].isin(['HI', 'AK', 'GU', 'MP', 'AS', 'PW', 'PR'])]
+        for i in df['geometry']:
             ys.append(i.x)
             xs.append(i.y)
         return ((np.min(xs) + ((np.max(xs) - np.min(xs)) / 2)),
@@ -103,30 +112,67 @@ def map_facility_match_result(match_result, facility_datasets, authoritative_dat
             'Address': columns.street_address
         }
 
-    merged_df = match_result.merged_df.copy()
-    merged_df['dataset'] = 'Merged - {}'.format(authoritative_dataset)
+    df = match_result.merged_df
+    fields = []
+    for k, _ in facility_datasets.items():
+        if k != authoritative_dataset:
+            fields.append(df[facility_datasets[k]['columns'].facility_id].notnull().values)
+    unmatched_rows = np.where(np.add.reduce(np.array(fields)) == 0, True, False)
+    matched = df[~unmatched_rows].copy()
+    unmatched_authoritative = df[unmatched_rows].copy()
 
-    m = HospMap(centroid(), 7)
-    m.add_point_subset(
-        merged_df,
-        '{} - matched'.format('Merged'),
-        color='blue',
-        label_dict=get_label_dict(authoritative_dataset)
-    )
+    # merged_df = match_result.merged_df.copy()
+    matched['dataset'] = 'Merged - {}'.format(authoritative_dataset)
+    label_dict = get_label_dict(authoritative_dataset)
+        
+    # Add info on the facilities that matched to HIFLD data
+    for k in match_result.unmatched_per_dataset.keys():
+        columns = facility_datasets[k]['columns']
+        label_dict['{}-ID'.format(k)] = '{}'.format(columns.facility_id)
+        label_dict['{}-Name'.format(k)] = '{}_{}'.format(k, columns.facility_name)
+        label_dict['{}-Address'.format(k)] = '{}_{}'.format(k, columns.street_address)
 
-    colors = ['red', 'yellow', 'brown', 'orange', 'green']
-    for i, dataset_key in enumerate(facility_datasets):
-        if dataset_key in match_result.unmatched_per_dataset:
+    m = HospMap(centroid(), 5)
+
+    merged_df = match_result.merged_df
+    fields = {}
+    for k, _ in facility_datasets.items():
+        if k != authoritative_dataset:
+            fields[k] = merged_df[facility_datasets[k]['columns'].facility_id].notnull().values
+
+    fields['both'] = np.where(np.add.reduce(np.array([v for _, v in fields.items()])) == len(fields), True, False)
+    fields['neither'] = np.where(np.add.reduce(np.array([v for _, v in fields.items()])) == 0, True, False)
+    colors = [('red', 'yellow'), ('brown', 'orange'), ('green', 'purple'), ('#add8e6', 'blue')]
+    for i, d in enumerate(fields.items()):
+        dataset_key, matched_indices = d
+        matched_color, unmatched_color = colors[i]
+
+        m.add_point_subset(
+            matched,
+            '{} - matched'.format(dataset_key),
+            color=matched_color,
+            label_dict=label_dict
+        )
+
+        if dataset_key == 'both':
+            continue
+        if dataset_key == 'neither':
+            dataset_key = authoritative_dataset
+            unmatched_df = merged_df[matched_indices].copy()
+        elif dataset_key in match_result.unmatched_per_dataset:
             unmatched = match_result.unmatched_per_dataset[dataset_key]
             df = facility_datasets[dataset_key]['df'].copy()
-            df['dataset'] = dataset_key
             id_column = facility_datasets[dataset_key]['columns'].facility_id
-            unmatched_df = df[df[id_column].astype(str).isin(unmatched)]
-            m.add_point_subset(
-                unmatched_df.to_crs('epsg:4326'),
-                '{} - unmatched'.format(dataset_key),
-                color=colors[i % len(colors)],
-                label_dict=get_label_dict(dataset_key)
-            )
+            unmatched_df = df[df[id_column].astype(str).isin(unmatched)].copy()
+        else:
+            continue
+
+        unmatched_df['dataset'] = dataset_key
+        m.add_point_subset(
+            unmatched_df.to_crs('epsg:4326'),
+            '{} - unmatched'.format(dataset_key),
+            color=unmatched_color,
+            label_dict=get_label_dict(dataset_key)
+        )
 
     return m
