@@ -60,6 +60,7 @@ class FacilityColumns:
 
 def match_facilities(facility_datasets,
                      authoritative_dataset,
+                     manual_matches_df=None,
                      max_distance=150,
                      nearest_n=10,
                      meters_crs='epsg:5070',
@@ -76,6 +77,8 @@ def match_facilities(facility_datasets,
             containing a FacilityColumns object.
         authoritative_dataset: The dataset that contains the facilities all
             other datasets will match to.
+        manual_matches_df: Dataframe containing manually matched facilities. Should contain
+            columns for each of the ID columns of the datasets with matching IDs in each row.
         max_distance (int, optional): The maximum distance (in meters) that two matches can be apart.
             Defaults to 150 meters.
         nearest_n (int, optional): The number of neighbors to consider as potential options.
@@ -92,13 +95,15 @@ def match_facilities(facility_datasets,
     Note:
         The resulting dataframes will convert the id columns of any dataset into a str type.
     """
+    MATCH_ID_SEP = '_-_'
+
     if reducer_fn is None:
         reducer_fn = reduce_matched_facility_records
 
     def get_id_column(dataset_key):
         return facility_datasets[dataset_key]['columns'].facility_id
 
-    def get_matched_set(s):
+    def get_matched_set(subcomponent):
         """Method for collecting the data for the reducer_fn based on a
         connected subcomponent. Returns the records of the matched set and a dictionary
         that records the distances between the facilities.
@@ -106,6 +111,7 @@ def match_facilities(facility_datasets,
 
         records = []
         distances = {}
+        manual_matches = set([])
         for n in s:
             ds, facility_id = deconstruct_match_id(n)
             df = facility_datasets[ds]['df']
@@ -116,9 +122,24 @@ def match_facilities(facility_datasets,
             records.append(record)
 
             for u, v in G.edges(n):
-                distances[(u, v)] = G.get_edge_data(u, v)['weight']
+                edge_data = G.get_edge_data(u, v)
+                distances[(u, v)] = edge_data['weight']
+                if ds == authoritative_dataset and edge_data.get('manual_override', False):
+                    connected_ds, _ = deconstruct_match_id(v)
+                    manual_matches.add((u, connected_ds, v))
 
-        return records, distances
+        return records, distances, manual_matches
+
+    def construct_match_id(dataset_key, facility_id):
+        id_column = get_id_column(dataset_key)
+        return '{}{}{}'.format(
+            dataset_key,
+            MATCH_ID_SEP,
+            facility_id
+        )
+
+    def deconstruct_match_id(match_id):
+        return match_id.split(MATCH_ID_SEP)
 
     assert authoritative_dataset in facility_datasets
 
@@ -127,6 +148,7 @@ def match_facilities(facility_datasets,
         get_id_column(dataset_key)
         for dataset_key in facility_datasets
     ]
+
     if len(set(dataset_id_columns)) != len(dataset_id_columns):
         raise Exception('Dataset ID column names must be unique.')
 
@@ -134,14 +156,12 @@ def match_facilities(facility_datasets,
     dataset_order = [authoritative_dataset] + sorted([x for x in facility_datasets
                                                     if x != authoritative_dataset])
 
+    # Set of match_ids
     ids = []
+    # Set of (x,y) points aligned with ids, in meters_crs
     pts = []
+    # Mapping from match_id -> point
     ids_to_pts = {}
-
-    MATCH_ID_SEP = '_-_'
-
-    def deconstruct_match_id(match_id):
-        return match_id.split(MATCH_ID_SEP)
 
     # Construct a reprojected geodataframe per dataset, and
     # record the match ids and points for usage in the KNN
@@ -178,6 +198,23 @@ def match_facilities(facility_datasets,
             if  dist <= max_distance and not G.has_edge(match_id, neighbor_id):
                 G.add_edge(match_id, neighbor_id, weight=dist)
 
+    # Create edges for manual matches and mark them as such.
+    if manual_matches_df is not None:
+        auth_id_column = facility_datasets[authoritative_dataset]['columns'].facility_id
+        for _, row in manual_matches_df.iterrows():
+            # Get the authoritative dataset ID (required for each row)
+            auth_id = construct_match_id(authoritative_dataset, row[auth_id_column])
+            source_pt = ids_to_pts[auth_id]
+            for dataset_key in facility_datasets:
+                if dataset_key != authoritative_dataset:
+                    id_column = facility_datasets[dataset_key]['columns'].facility_id
+                    if id_column in row:
+                        if row[id_column]:
+                            neighbor_id = construct_match_id(dataset_key, row[id_column])
+                            neighbor_pt = ids_to_pts[neighbor_id]
+                            dist = euclidean(source_pt, neighbor_pt)
+                            G.add_edge(auth_id, neighbor_id, weight=dist, manual_override=True)
+
     # Set up a dict to be turned into the matches dataframe,
     # and a dict that tracks what non-authoritative datasets
     # have been matched.
@@ -196,7 +233,7 @@ def match_facilities(facility_datasets,
     for s in nx.connected_components(G):
         # Ignore components that don't have a point from the authoritative dataset.
         if authoritative_dataset in [deconstruct_match_id(m)[0] for m in s]:
-            records, distances = get_matched_set(s)
+            records, distances, manual_matches = get_matched_set(s)
             if len(records) == 1:
                 reduced_components = [[records[0]['match_id']]]
             else:
@@ -205,6 +242,7 @@ def match_facilities(facility_datasets,
                 reduced_components = reducer_fn(authoritative_records,
                                                 records_to_match,
                                                 distances,
+                                                manual_matches,
                                                 dataset_columns)
 
             for match_set in reduced_components:
@@ -251,14 +289,17 @@ def match_facilities(facility_datasets,
 
         merged_df = merged_df.merge(df_prefixed, on=id_column, how='left')
 
-    merged_df = gpd.GeoDataFrame(merged_df, crs='epsg:4326').sort_values([facility_datasets[dataset_key]['columns'].facility_id
-                                                                          for dataset_key in dataset_order])
+    merged_df = gpd.GeoDataFrame(merged_df, crs='epsg:4326') \
+                   .sort_values([facility_datasets[dataset_key]['columns'].facility_id
+                                 for dataset_key in dataset_order])
 
     return FacilityMatchResult(merged_df, matches_df, unmatched_per_dataset)
 
 def reduce_matched_facility_records(authoritative_records,
                                     records_to_match,
-                                    distances, dataset_columns):
+                                    distances,
+                                    manual_matches,
+                                    dataset_columns):
     """Subset a set of facility records that are near each other.
 
     Implementations can override this to implement their own matching approaches.
@@ -272,6 +313,10 @@ def reduce_matched_facility_records(authoritative_records,
         records_to_match(List[Dict]):
         distances (Dict[(Str, Str),Float]): The distance in meters between any two records.
             Use the "match_id" in the records as a tuple to get the distance between those two records.
+        manual_matches (Set[(Str, Str, Str)]): A set of matches between authoritative IDs and other dataset
+            IDs used to force a match. In the form (auth_match_id, datset_key, neighbor_match_id).
+            If a tuple (auth_match_id, datset_key, neighbor_match_id) exists in this set, then that
+            match will be used for the respective dataset.
         dataset_columns (Dict[Str, Dict]): The column name information for each dataset.
 
     Returns:
@@ -350,6 +395,11 @@ def reduce_matched_facility_records(authoritative_records,
 
     matched_to_source = defaultdict(dict)
     matched_by_ds = defaultdict(list)
+
+    # Assign matches based on manual override first.
+    for source_id, dataset_key, dest_id in manual_matches:
+        matched_to_source[source_id][dataset_key] = dest_id
+        matched_by_ds[dataset_key].append(dest_id)
 
     # Assign matches based on the highest scores.
     # Go through the scored edges in descending order and assign matches
