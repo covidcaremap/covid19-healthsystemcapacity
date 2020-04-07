@@ -38,8 +38,9 @@ CCM_BED_OCCUPANCY_COLUMN = 'All Bed Occupancy Rate'
 CCM_ICU_BED_OCCUPANCY_COLUMN = 'ICU Bed Occupancy Rate'
 
 CCM_ID = 'CCM_ID'
-DH_ID = 'DH-OBJECTID'
-HCRIS_ID = 'HCRIS-Provider Number'
+DH_ID = 'OBJECTID'
+HCRIS_ID = 'Provider Number'
+HIFLD_ID = 'ID'
 
 def source_column(c):
     return '{} - SOURCE'.format(c)
@@ -91,8 +92,9 @@ CCM_CSV_COLUMNS = [
     source_column(CCM_BED_OCCUPANCY_COLUMN),
     source_column(CCM_ICU_BED_OCCUPANCY_COLUMN),
     CCM_ID,
-    DH_ID,
-    HCRIS_ID
+    "DH-ID",
+    "HCRIS-ID",
+    "HIFLD-ID"
 ]
 
 ## CareModel constants
