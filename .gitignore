@@ -12,6 +12,9 @@ notebooks/**/*.txt*
 data/external/us-census-cc-est2018-alldata.csv
 data/external/HCRIS*
 
+# Processed data that is not committed to the repo
+data/local
+
 # Download cache used by data download notebook
 data/external/download_cache
 

@@ -10,7 +10,8 @@ A catalog of all data used in the project.
         ├── README.md          <- This file.
         ├── external           <- Intermediate data that has been transformed.
         ├── published          <- The final, canonical data sets for COVID Care Map.
-        └── processed          <- Folder containing intermediate processing data.
+        ├── processed          <- Folder containing intermediate processing data.
+        └── local              <- Folder containing intermediate data that is not comitted to the repository.
 
 ## Published Datasets
 
@@ -162,6 +163,12 @@ Sources:
 - **HCRIS-HCRIS_DataDictionary.csv**: Data dictionary with report column mappings.
 - **HCRIS-hosp10_2018_RPT.CSV**: HCRIS report data for 2018.
 - **HCRIS-hosp10_2018_NMRC.CSV**: Numeric column information for the HCRIS report data.
+
+#### HCRIS data from 2017 and 2018 from Jacob Fenton project
+
+We used data from [this project](https://github.com/jsfenfen/covid_hospitals_demographics) to override bed counts and occupancy rates where there is data, otherwise we use our 2018 HCRIS calculations.
+
+- **hospital_data_jsfenfen20200406.csv**: HCRIS data from Jacob Fenton's project.
 
 #### Institute for Health Metric and Evaluation, University of Washington (IHME) Forecasts.
 

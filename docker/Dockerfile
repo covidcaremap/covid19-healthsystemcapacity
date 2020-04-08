@@ -31,6 +31,9 @@ RUN pip install -r /tmp/requirements.txt
 ## Streamlit needs a specific older version of datetimeutils. Why.
 RUN pip install python-dateutil==2.8.0
 
+## Install Dash for CHIME
+RUN pip install dash==1.9.1
+
 ## Install chime
 RUN mkdir -p /opt/tmp && \
     cd /opt/tmp && \

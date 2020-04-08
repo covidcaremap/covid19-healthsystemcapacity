@@ -15,6 +15,7 @@ DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
 EXTERNAL_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'external'))
 PROCESSED_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'processed'))
 PUBLISHED_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'published'))
+LOCAL_DATA_DIR = os.path.abspath(os.path.join(DATA_DIR, 'local'))
 
 def external_data_path(fname):
     """Make data path for data sourced externally from CovidCareMap.org"""
@@ -27,6 +28,12 @@ def processed_data_path(fname):
 def published_data_path(fname):
     """Make data path for data published by CovidCareMap.org"""
     return os.path.join(PUBLISHED_DATA_DIR, fname)
+
+def local_data_path(fname):
+    """Make data path for data that is not committed to the repository"""
+    if not os.path.isdir(LOCAL_DATA_DIR):
+        os.makedirs(LOCAL_DATA_DIR)
+    return os.path.join(LOCAL_DATA_DIR, fname)
 
 def data_path(fname):
     return os.path.join(DATA_DIR, fname)
