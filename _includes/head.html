@@ -14,5 +14,7 @@
 		href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed:400,500,600&display=swap&subset=latin-ext"
 		rel="stylesheet"
 	/>
+	{% if jekyll.environment == 'production' %}
 	{% include analytics.html %}
+	{% endif %}
 </head>

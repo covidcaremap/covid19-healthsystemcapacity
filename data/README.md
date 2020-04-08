@@ -164,6 +164,12 @@ Sources:
 - **HCRIS-hosp10_2018_RPT.CSV**: HCRIS report data for 2018.
 - **HCRIS-hosp10_2018_NMRC.CSV**: Numeric column information for the HCRIS report data.
 
+#### HCRIS data from 2017 and 2018 from Jacob Fenton project
+
+We used data from [this project](https://github.com/jsfenfen/covid_hospitals_demographics) to override bed counts and occupancy rates where there is data, otherwise we use our 2018 HCRIS calculations.
+
+- **hospital_data_jsfenfen20200406.csv**: HCRIS data from Jacob Fenton's project.
+
 #### Institute for Health Metric and Evaluation, University of Washington (IHME) Forecasts.
 
 http://www.healthdata.org/research-article/forecasting-covid-19-impact-hospital-bed-days-icu-days-ventilator-days-and-deaths

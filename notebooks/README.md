@@ -65,6 +65,10 @@ merging in with the geocoded points from above. The notebook calculates ICU bed 
 occupancy rates based on the inpatient days and bed days available from the reports of various
 types of ICU beds: Intensive Care Unit, Coronary Care Unit, Burn ICU, and Surgical ICU beds.
 
+#### Process HIFLD Data
+
+This notebook converts HIFLD data from CSV format to GeoJSON and drops any closed facilities.
+
 #### Merge Facility Information
 
 This notebook merges the facility information from the HCRIS and DH datasets.
@@ -102,19 +106,20 @@ This notebook aggregates the facility data into bed counts, ratios and per-capit
 counties, states, and HRRs. For states, it is also merged with [ventilator data](../data/README.md#ventilator-data).
 The regioal aggregation uses logic contained in the `sum_per_region` method of [covidcaremap/geo.py](../covidcaremap/geo.py).
 
-#### Process visualization data
+#### Compute Quantile Breaks
 
-This notebook will generate the vector tiles needed to run the `us-healthcare-system-capacity` visualization.
+This notebook will compute the quantile breaks for the US Healtchare System Capacity visualization.
 
 ##### Notebooks
 
 - [processing/01_Geocode_HCRIS_Data.ipynb](processing/01_Geocode_HCRIS_Data.ipynb)
 - [processing/02_Process_HCRIS_Data.ipynb](processing/02_Process_HCRIS_Data.ipynb)
+- [processing/02a_Process_HIFLD_Data.ipynb](processing/02_Process_HIFLD_Data.ipynb)
 - [processing/03_Merge_Facility_Information.ipynb](processing/03_Merge_Facility_Information.ipynb)
 - [processing/04_Generate_CovidCareMap_Facility_Data.ipynb](processing/04_Generate_CovidCareMap_Facility_Data.ipynb)
 - [processing/05_Merge_Region_and_Census_Data.ipynb](processing/05_Merge_Region_and_Census_Data.ipynb)
 - [processing/06_Generate_CovidCareMap_Regional_Data.ipynb](processing/06_Generate_CovidCareMap_Regional_Data.ipynb)
-- [processing/07_Process_visualization_data.ipynb](processing/07_Process_visualization_data.ipynb)
+- [processing/07_Compute_Quantile_Breaks.ipynb](processing/07_Computte_Quantile_Breaks.ipynb)
 
 ### CareModel Data
 

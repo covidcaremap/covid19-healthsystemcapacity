@@ -411,7 +411,7 @@ p.large {
   position: absolute;
   top: 48px;
   left: 0;
-  width: 380px;
+  width: 400px;
   bottom: 0;
   padding: 20px 15px;
   overflow-y: auto;
@@ -440,7 +440,7 @@ p.large {
 .visualization {
   position: absolute;
   top: 48px;
-  left: calc(380px - 10px);
+  left: calc(400px - 10px);
   right: 0;
   bottom: 0;
   display: flex;
@@ -525,16 +525,16 @@ button.primary,
   background-color: #fff;
 }
 
-.menu .icon-eye,
-.menu .icon-eye-off {
+.menu .icon-dot-circled,
+.menu .icon-circle-empty {
   display: none;
 }
 
-.menu button.active .icon-eye {
+.menu button.active .icon-dot-circled {
   display: block;
 }
 
-.menu button:not(.active) .icon-eye-off {
+.menu button:not(.active) .icon-circle-empty {
   display: block;
   color: #ccc;
 }
@@ -551,10 +551,11 @@ button.primary,
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px;
   display: flex;
+  background-color: transparent;
 }
 
 #indicator button.active {
-  background-color: #f4f5f5;
+  background-color: #fff;
 }
 
 #indicator button div {
@@ -564,6 +565,7 @@ button.primary,
 .button-icon {
   padding-right: 10px;
   align-self: center;
+  font-size: 16px;
 }
 
 .button-label {
