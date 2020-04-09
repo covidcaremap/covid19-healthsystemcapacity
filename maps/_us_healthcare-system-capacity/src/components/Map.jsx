@@ -22,8 +22,8 @@ const boundarySource = {
             window.location.pathname +
             'data/tiles/{z}/{x}/{y}.pbf',
     ],
-    minZoom: 3,
-    maxZoom: 8,
+    minzoom: 3,
+    maxzoom: 8,
 };
 
 export default function Map({ indicator, aggType, perCapita }) {
