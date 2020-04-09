@@ -1,0 +1,91 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+DIR="$(dirname "$0")"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Build the site!
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        . "/usr/local/bin/run-build-functions.sh"
+
+        mkdir -p build-cache
+        mkdir -p data/config
+
+        # Copy processed configuration files
+        cp "${DIR}/../../../data/processed/ccm_county_breaks.json" data/config/
+        cp "${DIR}/../../../data/processed/ccm_state_breaks.json" data/config/
+        cp "${DIR}/../../../data/processed/ccm_hrr_breaks.json" data/config/
+        cp "${DIR}/../../../data/processed/ccm_facility_breaks.json" data/config/
+
+        # Copy published GeoJSON files
+        cp "${DIR}/../../../data/published/us_healthcare_capacity-state-CovidCareMap.geojson" build-cache/
+        cp "${DIR}/../../../data/published/us_healthcare_capacity-county-CovidCareMap.geojson" build-cache/
+        cp "${DIR}/../../../data/published/us_healthcare_capacity-hrr-CovidCareMap.geojson" build-cache/
+        cp "${DIR}/../../../data/published/us_healthcare_capacity-facility-CovidCareMap.geojson" build-cache/
+
+        # Replace all instances of NaN with null
+        sed -i.bak 's/NaN/null/' build-cache/*.geojson
+
+        # Install tippecanoe
+        if [ ! -d $NETLIFY_CACHE_DIR/tippecanoe-1.32.5 ]; then
+            wget -qO- https://github.com/mapbox/tippecanoe/archive/1.32.5.tar.gz |
+                tar xvz -C build-cache/
+            make -C build-cache/tippecanoe-1.32.5
+            cp -R build-cache/tippecanoe-1.32.5 $NETLIFY_CACHE_DIR/tippecanoe-1.32.5
+        fi
+
+        export PATH=$NETLIFY_CACHE_DIR/tippecanoe-1.32.5:$PATH
+
+        # Generate intermediate data set
+        tippecanoe -f -pk --no-tile-compression -o build-cache/state.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=2 -l state build-cache/us_healthcare_capacity-state-CovidCareMap.geojson
+        tippecanoe -f -pk --no-tile-compression -o build-cache/county.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=2 -l county build-cache/us_healthcare_capacity-county-CovidCareMap.geojson
+        tippecanoe -f -pk --no-tile-compression -o build-cache/hrr.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=2 -l hrr build-cache/us_healthcare_capacity-hrr-CovidCareMap.geojson
+        tippecanoe -f -pk -pf --no-tile-compression -o build-cache/facility.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=2 -B 0 -l facility build-cache/us_healthcare_capacity-facility-CovidCareMap.geojson
+
+        tile-join -f -pk --no-tile-compression -o build-cache/combined.mbtiles \
+            build-cache/county.mbtiles \
+            build-cache/state.mbtiles \
+            build-cache/hrr.mbtiles \
+            build-cache/facility.mbtiles
+
+        # Install mb-util
+        if [ ! -d $NETLIFY_CACHE_DIR/mbutil-0.3.0 ]; then
+            wget -qO- https://github.com/mapbox/mbutil/archive/v0.3.0.tar.gz |
+                tar xvz -C build-cache/
+            cp -R build-cache/mbutil-0.3.0 $NETLIFY_CACHE_DIR/mbutil-0.3.0
+        fi
+
+        export PATH=$NETLIFY_CACHE_DIR/mbutil-0.3.0:$PATH
+
+        # Generate vector tiles
+        rm -rf data/tiles
+        mb-util --image_format=pbf build-cache/combined.mbtiles data/tiles
+
+        # Build React application
+        npm install
+        npm run build
+
+        # Synchronize everything to the Jekyll root
+        rsync -avz \
+            "${DIR}/../build/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity"
+        rsync -avz \
+            "${DIR}/../data/" "${DIR}/../../../_site/maps/us-healthcare-system-capacity/data"
+    fi
+fi
