@@ -13,16 +13,16 @@ export default function Legend({ classBreaks, indicator, aggType, perCapita }) {
         const from = formatNumber(breaksValues[i], indicator);
         const to = formatNumber(breaksValues[i + 1], indicator);
         return (
-            <>
+            <React.Fragment key={`break-${i}`}>
                 <div
                     className="legend-color"
-                    style={{ 'background-color': color }}
+                    style={{ backgroundColor: color }}
                 ></div>
 
                 <div className="legend-numbers">
                     {from}–{to}
                 </div>
-            </>
+            </React.Fragment>
         );
     });
     return (
