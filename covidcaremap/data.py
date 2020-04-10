@@ -2,7 +2,10 @@ import os
 import io
 import json
 from zipfile import ZipFile
+from dateutil import parser
+import datetime
 
+import numpy as np
 import pandas as pd
 import geopandas as gpd
 import requests
@@ -68,4 +71,43 @@ def get_ihme_forecast():
     z = ZipFile(io.BytesIO(r.content))
     latest_csv_name = sorted([x.filename for x in z.filelist if x.filename.endswith('csv')])[-1]
     df = pd.read_csv(z.open(latest_csv_name))
+    df['date'] = df['date'].apply(lambda x: parser.parse(x))
     return df
+
+def read_county_case_info(date=None):
+    return _read_case_info('counties', date)
+
+# From nytimes:
+# def read_state_case_info(date=None):
+#     return _read_case_info('states', date)
+# getting state info from covidtracking.com because that source has 
+# test count
+
+def read_state_case_info(date=None):
+    if not date:
+        yesterday = datetime.date.today() - datetime.timedelta(days=1)
+        date = yesterday.strftime('%Y%m%d')
+    
+    res = requests.get('https://covidtracking.com/api/states/daily?date={}'.format(date))
+    df=pd.DataFrame(json.loads(res.text))
+    df['date'] = df['date'].apply(lambda x: parser.parse(str(x)))
+    df.rename(columns = {'total': 'tested'}, inplace=True)
+
+    return df
+
+    
+
+
+def _read_case_info(level, date):
+    url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-{}.csv'.format(level)
+    df = pd.read_csv(url, dtype=str)
+    df['cases'] = df['cases'].astype(int)
+    df['deaths'] = df['deaths'].astype(int)
+    df['date'] = df['date'].apply(lambda x: parser.parse(x))
+    
+    if date:
+        date = parser.parse(date)
+    else:
+        date = np.max(df['date'])
+    
+    return df[df['date'] == date].copy()

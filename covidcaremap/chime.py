@@ -3,9 +3,8 @@ from collections import ChainMap
 
 import pandas as pd
 
-from penn_chime.parameters import Parameters
+from penn_chime.parameters import Parameters, Disposition
 from penn_chime.models import RegionalSirModel
-from penn_chime.utils import RateLos
 
 from covidcaremap.cases import get_county_case_info
 
@@ -15,7 +14,7 @@ DEFAULT_PARAMS = {
     "detection_probability": 0.14,
 
     # Doubling time before social distancing (days)
-    "doubling_time" : 4,
+    "doubling_time": 4,
 
     # Social Distancing Reduction Rate: 0.0 - 1.0
     "relative_contact_rate": 0.3,
@@ -35,24 +34,28 @@ DEFAULT_PARAMS = {
     # Ventilated Rate: 0.0 - 1.0
     "ventilated_rate": 0.005,
 
-    #Ventilated Length of Stay (days)
+    # Ventilated Length of Stay (days)
     "ventilated_los": 10,
 
-    "recovery_days": 14
+    # Infectious days
+    "infectious_days": 14
 
 }
+
 
 def print_params(p):
     print(json.dumps(params_to_json(p)))
 
+
 def params_to_json(p):
     def ratelos_to_json(r):
-        return { 'rate': r.rate, 'length_of_stay': r.length_of_stay }
+        return {'rate': r.rate, 'length_of_stay': r.length_of_stay}
 
     return {
         'current_hospitalized': p.current_hospitalized,
         'doubling_time': p.doubling_time,
         'known_infected': p.known_infected,
+        'tested': p.tested,
         'relative_contact_rate': p.relative_contact_rate,
         'population': p.population,
 
@@ -60,17 +63,20 @@ def params_to_json(p):
         'icu': ratelos_to_json(p.icu),
         'ventilated': ratelos_to_json(p.ventilated),
 
-        'as_date': p.as_date,
         'market_share': p.market_share,
         'max_y_axis': p.max_y_axis,
         'n_days': p.n_days,
-        'recovery_days': p.recovery_days
+        'infectious_days': p.infectious_days
     }
+
 
 def get_parameters_for_region(region_population,
                               region_cases,
+                              region_tested,
+                              region_recovered,
                               num_days=60,
-                              param_override=None):
+                              param_override=None,
+                              calculate_infected=None):
     if param_override is None:
         param_override = {}
 
@@ -84,25 +90,30 @@ def get_parameters_for_region(region_population,
         # Number of days to project >= 0
         "n_days": num_days,
 
-        # Seems like a viz thing
-        "as_date": False,
+        # Number of people tested
+        "tested": region_tested,
+
+        # Number of people to recover
+        "recovered": region_recovered,
+
+        "calculate_infected": calculate_infected
 
     }, DEFAULT_PARAMS, param_override))
 
-    p['current_hospitalized'] = None # Unused for regional calculation
-
-    p['hospitalized'] = RateLos(p['hospitalized_rate'],
-                                p['hospitalized_los'])
+    # None # Unused for regional calculation
+    p['current_hospitalized'] = round(p['hospitalized_rate'] * region_cases)
+    p['hospitalized'] = Disposition(p['hospitalized_los'],
+                                    p['hospitalized_rate'])
     del p['hospitalized_rate']
     del p['hospitalized_los']
 
-    p['icu'] = RateLos(p['icu_rate'],
-                       p['icu_los'])
+    p['icu'] = Disposition(p['icu_los'],
+                           p['icu_rate'])
     del p['icu_rate']
     del p['icu_los']
 
-    p['ventilated'] = RateLos(p['ventilated_rate'],
-                              p['ventilated_los'])
+    p['ventilated'] = Disposition(p['ventilated_los'],
+                                  p['ventilated_rate'])
     del p['ventilated_rate']
     del p['ventilated_los']
 
@@ -110,6 +121,7 @@ def get_parameters_for_region(region_population,
     del p['detection_probability']
 
     p['population'] = region_population
+    p['calculate_infected'] = calculate_infected
 
     chime_params = Parameters(
         **p
@@ -119,21 +131,31 @@ def get_parameters_for_region(region_population,
 
     return chime_params
 
+
 def get_regional_predictions(
         regions_df,
         region_id_column,
+        tested_column='tested',
         population_column='Population',
         cases_column='Confirmed Cases',
+        recovered_column='recovered',
         num_days=60,
-        region_param_override=None
+        region_param_override=None,
+        calculate_infected=None
 ):
     """Runs a regional CHIME prediction based on region population and case counts.
 
     Args:
         regions_df: The regions to be run over. Requires an ID, population, and cases columns.
         region_id_column: The column holding the region ID.
-        population_column: The column holding the population count. Default
-        cases_column: The column holding the number of confirmed cases
+        tested_column: The name of the column holding the count of people who have been 
+            tested. Default: 'tested'.
+        population_column: The  column holding the population count. Default: 'Population'.
+        cases_column: The column holding the number of confirmed cases. Default:
+            'Confirmed Cases'.
+        recovered_column: The name of the column holding the count of people in the
+            region who have recovered. Default: 'recovered'
+        num_days: Default: 60.
         region_param_override: A dictionary with keys of region IDs and values being
             being a dict of overridding values for the CHIME parameters. This allows
             regional parameters to be supplied by the user per region.
@@ -145,10 +167,14 @@ def get_regional_predictions(
         if row[cases_column] <= 0:
             return None
 
-        p = get_parameters_for_region(row[population_column], row[cases_column], num_days=num_days)
+        p = get_parameters_for_region(row[population_column], row[cases_column], row[tested_column],
+                                      row[recovered_column], num_days=num_days, param_override=region_param_override,
+                                      calculate_infected=calculate_infected)
         m = RegionalSirModel(p)
-        merged = m.dispositions_df.join(m.admits_df.set_index('day'), lsuffix='_total', rsuffix='_admitted')
-        merged = merged.join(m.census_df.set_index('day').add_suffix('_census'))
+        merged = m.dispositions_df.join(m.admits_df.set_index(
+            'day'), lsuffix='_total', rsuffix='_admitted')
+        merged = merged.join(m.census_df.set_index(
+            'day').add_suffix('_census'))
         merged = merged.dropna().round()
         merged[region_id_column] = row[region_id_column]
 
@@ -165,6 +191,7 @@ def get_regional_predictions(
     )
 
     return predictions_by_county
+
 
 def get_county_predictions(num_days=60, region_param_override=None):
     cases_by_county = get_county_case_info()
