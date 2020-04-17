@@ -38,7 +38,7 @@ RUN pip install dash==1.9.1
 RUN mkdir -p /opt/tmp && \
     cd /opt/tmp && \
     git clone --single-branch --depth 1 \
-        --branch rde/feature/regional-sir https://github.com/simonkassel/chime.git && \
+        --branch rde/feature/regional-sir-model https://github.com/lossyrob/chime.git && \
     cd chime && \
     python setup.py install
 
