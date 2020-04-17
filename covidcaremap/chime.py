@@ -39,7 +39,6 @@ DEFAULT_PARAMS = {
 
     # Infectious days
     "infectious_days": 14
-
 }
 
 
@@ -76,7 +75,9 @@ def get_parameters_for_region(region_population,
                               region_recovered,
                               num_days=60,
                               param_override=None,
-                              calculate_infected=None):
+                              calculate_infected=None,
+                              current_date=None):
+
     if param_override is None:
         param_override = {}
 
@@ -96,7 +97,10 @@ def get_parameters_for_region(region_population,
         # Number of people to recover
         "recovered": region_recovered,
 
-        "calculate_infected": calculate_infected
+        "calculate_infected": calculate_infected,
+
+        # Date to model from
+        "current_date": current_date
 
     }, DEFAULT_PARAMS, param_override))
 
@@ -141,6 +145,7 @@ def get_regional_predictions(
         recovered_column='recovered',
         num_days=60,
         region_param_override=None,
+        current_date=None,
         calculate_infected=None
 ):
     """Runs a regional CHIME prediction based on region population and case counts.
@@ -169,7 +174,7 @@ def get_regional_predictions(
 
         p = get_parameters_for_region(row[population_column], row[cases_column], row[tested_column],
                                       row[recovered_column], num_days=num_days, param_override=region_param_override,
-                                      calculate_infected=calculate_infected)
+                                      current_date=current_date, calculate_infected=calculate_infected)
         m = RegionalSirModel(p)
         merged = m.dispositions_df.join(m.admits_df.set_index(
             'day'), lsuffix='_total', rsuffix='_admitted')

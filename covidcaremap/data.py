@@ -83,15 +83,20 @@ def read_county_case_info(date=None):
 # getting state info from covidtracking.com because that source has 
 # test count
 
-def read_state_case_info(date=None):
-    if not date:
-        yesterday = datetime.date.today() - datetime.timedelta(days=1)
-        date = yesterday.strftime('%Y%m%d')
+def read_state_case_info(date=None, all_days=False):
+    if all_days:
+        res = requests.get('https://covidtracking.com/api/states/daily?')
+    else:
+        if not date:
+            yesterday = datetime.date.today() - datetime.timedelta(days=1)
+            date = yesterday.strftime('%Y%m%d')
+        
+        res = requests.get('https://covidtracking.com/api/states/daily?date={}'.format(date))
     
-    res = requests.get('https://covidtracking.com/api/states/daily?date={}'.format(date))
     df=pd.DataFrame(json.loads(res.text))
     df['date'] = df['date'].apply(lambda x: parser.parse(str(x)))
-    df.rename(columns = {'total': 'tested'}, inplace=True)
+    df.rename(columns={'total': 'tested'}, inplace=True)
+    df.fillna(0, inplace=True)
 
     return df
 
