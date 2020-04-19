@@ -1,0 +1,80 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+DIR="$(dirname "$0")"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Build the site!
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        . "/usr/local/bin/run-build-functions.sh"
+
+        mkdir -p build-cache
+        mkdir -p data
+
+        # Copy config file
+        cp "${DIR}/../../../data/processed/ihme-config.json" data/
+
+        # Copy GeoJSON files
+        cp "${DIR}/../../../data/processed/ihme-country-data.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-region-data.geojson" build-cache/
+
+        # Replace all instances of NaN with null
+        sed -i.bak 's/NaN/null/' build-cache/*.geojson
+
+        # Install tippecanoe
+        if [ ! -d $NETLIFY_CACHE_DIR/tippecanoe-1.32.5 ]; then
+            wget -qO- https://github.com/mapbox/tippecanoe/archive/1.32.5.tar.gz |
+                tar xvz -C build-cache/
+            make -C build-cache/tippecanoe-1.32.5
+            cp -R build-cache/tippecanoe-1.32.5 $NETLIFY_CACHE_DIR/tippecanoe-1.32.5
+        fi
+
+        export PATH=$NETLIFY_CACHE_DIR/tippecanoe-1.32.5:$PATH
+
+        # Generate intermediate data set
+        tippecanoe -f -pk --no-tile-compression -o build-cache/country.mbtiles \
+                   --maximum-zoom=8 --minimum-zoom=0 -l country build-cache/ihme-country-data.geojson
+        tippecanoe -f -pk --no-tile-compression -o build-cache/region.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=0 -l region build-cache/ihme-region-data.geojson
+
+        tile-join -f -pk --no-tile-compression -o build-cache/combined.mbtiles \
+            build-cache/country.mbtiles \
+            build-cache/region.mbtiles
+
+        # Install mb-util
+        if [ ! -d $NETLIFY_CACHE_DIR/mbutil-0.3.0 ]; then
+            wget -qO- https://github.com/mapbox/mbutil/archive/v0.3.0.tar.gz |
+                tar xvz -C build-cache/
+            cp -R build-cache/mbutil-0.3.0 $NETLIFY_CACHE_DIR/mbutil-0.3.0
+        fi
+
+        export PATH=$NETLIFY_CACHE_DIR/mbutil-0.3.0:$PATH
+
+        # Generate vector tiles
+        rm -rf data/tiles
+        mb-util --image_format=pbf build-cache/combined.mbtiles data/tiles
+
+        # Build React application
+        npm install
+        npm run build
+
+        # Synchronize everything to the Jekyll root
+        rsync -avz \
+            "${DIR}/../build/" "${DIR}/../../../_site/maps/ihme-explorer"
+        rsync -avz \
+            "${DIR}/../data/" "${DIR}/../../../_site/maps/ihme-explorer/data"
+    fi
+fi

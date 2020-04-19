@@ -1,0 +1,54 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+DIR="$(dirname "$0")"
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Builds the dataset and puts them into public/data
+"
+}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+    if [ "${1:-}" = "--help" ]; then
+        usage
+    else
+        mkdir -p build-cache
+        mkdir -p data/config
+
+        # Copy config file
+        cp "${DIR}/../../../data/processed/ihme-config.json" data/
+
+        # Copy GeoJSON files
+        cp "${DIR}/../../../data/processed/ihme-country-data.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-region-data.geojson" build-cache/
+
+        # Replace all instances of NaN with null
+        sed -i.bak 's/NaN/null/' build-cache/*.geojson
+
+        # Generate intermediate data set
+        tippecanoe -f -pk --no-tile-compression -o build-cache/country.mbtiles \
+                   --maximum-zoom=8 --minimum-zoom=0 -l country build-cache/ihme-country-data.geojson
+        tippecanoe -f -pk --no-tile-compression -o build-cache/region.mbtiles \
+            --maximum-zoom=8 --minimum-zoom=0 -l region build-cache/ihme-region-data.geojson
+
+        tile-join -f -pk --no-tile-compression -o build-cache/combined.mbtiles \
+            build-cache/country.mbtiles \
+            build-cache/region.mbtiles
+
+        # Generate vector tiles
+        rm -rf data/tiles
+        mb-util --image_format=pbf build-cache/combined.mbtiles data/tiles
+
+        # Synchronize everything to the Jekyll root
+        rm -r public/data
+        mv data public/data
+
+    fi
+fi
