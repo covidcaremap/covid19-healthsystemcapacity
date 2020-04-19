@@ -10,6 +10,10 @@ import Visualization from './components/Visualization';
 import { loadConfig, aggregationTypes, indicators, boundLevels } from './utils/config';
 
 function App() {
+    // IHME model version
+    const [modelVersion, setModelVersion] = useState(null);
+
+    // Map and indicator options
     const [aggType, setAggType] = useState(
         // Grabs the key of the default setting
         _.filter(_.pairs(aggregationTypes), (pair => pair[1].default))[0][0]
@@ -21,6 +25,8 @@ function App() {
         _.filter(_.pairs(boundLevels), (pair => pair[1].default))[0][0]
     );
     const [usePerCapita, setUsePerCapita] = useState(true);
+
+    // Date
     const [activeDate, setActiveDate] = useState(0);
     const today = new Date().toISOString().slice(0, 10);
     const [dates, setDates] = useState([today, today]);
@@ -34,7 +40,7 @@ function App() {
             fetch("data/ihme-config.json")
                 .then(response => response.json())
                 .then(data => {
-                    loadConfig(data, setDates, setActiveDate);
+                    loadConfig(data, setModelVersion, setDates, setActiveDate);
                     setConfigLoaded(true);
                     setLoadingConfig(false);
                 });
@@ -61,6 +67,7 @@ function App() {
         <div className="app">
           <Header />
           <Sidebar
+            modelVersion={modelVersion}
             aggType={aggType}
             onAggTypeChange={handleTypeChange}
             usePerCapita={usePerCapita}

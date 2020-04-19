@@ -1,6 +1,8 @@
 import * as _ from 'underscore';
 
-export const loadConfig = (config, setDates, setActiveDate) => {
+export const loadConfig = (config, setModelVersion, setDates, setActiveDate) => {
+    // Set model version
+    setModelVersion(config['ihme_version']);
 
     // Handle dates
     let dates = config['dates'],
@@ -20,6 +22,8 @@ export const loadConfig = (config, setDates, setActiveDate) => {
             aggConfig[kv2[0]] = kv2[1];
         });
     });
+
+    return config;
 };
 
 export const aggregationTypes = {

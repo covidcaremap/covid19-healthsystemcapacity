@@ -10,6 +10,7 @@ import NewTabLink from './NewTabLink';
 import { aggregationTypes, indicators } from '../utils/config';
 
 export default function Sidebar({
+    modelVersion,
     aggType,
     onAggTypeChange,
     usePerCapita,
@@ -78,6 +79,7 @@ export default function Sidebar({
             <h2 className="large">
               IHME COVID-19 Projections
             </h2>
+            <p id="model-version">Model Version: {modelVersion}</p>
             <p>
               <b>Source:</b> Institute for Health Metrics and Evaluation (IHME).
               COVID-19 Hospital Needs and Death Projections. Seattle, United States of America: Institute for Health Metrics and Evaluation (IHME), University of Washington, 2020. <a href="http://www.healthdata.org/covid">http://www.healthdata.org/covid</a>

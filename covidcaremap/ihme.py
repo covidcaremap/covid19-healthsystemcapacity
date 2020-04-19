@@ -1,4 +1,5 @@
 import io
+import os
 from zipfile import ZipFile
 
 import pandas as pd
@@ -48,11 +49,21 @@ class IHME:
 
 
     @staticmethod
-    def get_latest():
-        """Gets the latest CSV file from IHME predictions"""
+    def get_latest(include_version=False):
+        """Gets the latest CSV file from IHME predictions.
+
+        Returns:
+            DataFrame or Tuple[DataFrame, str]: Returns the latest results in a DataFramee.
+            If include_version is True, returns a tuple with the first element being the
+            dataframe of results and the second being the model version string.
+        """
         url = 'https://ihmecovid19storage.blob.core.windows.net/latest/ihme-covid19.zip'
         r = requests.get(url)
         z = ZipFile(io.BytesIO(r.content))
+        model_version = os.path.dirname(z.filelist[0].filename)
         latest_csv_name = sorted([x.filename for x in z.filelist if x.filename.endswith('csv')])[-1]
         df = pd.read_csv(z.open(latest_csv_name))
-        return df
+        if include_version:
+            return (df, model_version)
+        else:
+            return df

@@ -430,6 +430,12 @@ p.large {
 .sidebar-content {
     flex: 1 1;
 }
+
+#model-version {
+    font-style: italic;
+    margin-top: -0.5em;
+}
+
 .sidebar-button-panel {
     margin-bottom: 1em;
 }
