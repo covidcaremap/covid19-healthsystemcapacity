@@ -8,7 +8,7 @@ visualization-items:
   - image: /assets/img/ihme-explorer-map.png
     url: /maps/ihme-explorer
     heading: IHME COVID-19 Explorer
-    description: Explore the latest IHME COVID-19 Predictions through time by country and region.
+    description: Explore the latest Institute for Health Metrics and Evaluation (IHME) COVID-19 projections through time by country and region.
   - image: /assets/img/viz-vent-supply.png
     url: /maps/hghi-vents/
     heading: Ventilator Supply and Healthcare Capacity by State

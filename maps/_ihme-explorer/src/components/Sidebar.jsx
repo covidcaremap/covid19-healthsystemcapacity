@@ -89,7 +89,8 @@ export default function Sidebar({
             <p>
               <b>Disclaimer:</b> Projections are estimates and assume that current social distancing
               is strictly adhered to until infections are minimized and containment is implemented.
-              IHME's is not the only model out there, and not all models agree with these projections.
+              Projections can change with new data (see <a href="http://www.covid-projections.com/">covid-projections</a>) and there are
+              different models with different projections (see <a href="https://reichlab.io/covid19-forecast-hub/">Reich Lab COVID-19 Forecast Hub</a>).
             </p>
             <hr/>
             <div className="sidebar-button-panel" id="sidebar-option-buttons">
