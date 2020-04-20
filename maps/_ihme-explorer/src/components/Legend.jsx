@@ -9,7 +9,7 @@ export default function Legend({ classBreaks, indicator }) {
     );
 
     const legendSteps = colors.map((color, i) => {
-        const from = formatNumber(classBreaks[i], indicator);
+        const from = formatNumber(classBreaks[i], indicator, 1);
         return (
             <React.Fragment key={`break-${i}`}>
                 <div

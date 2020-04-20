@@ -86,12 +86,12 @@ export function getProperty(date, indicator, boundLevel) {
 }
 
 
-export const formatNumber = (x, indicator) => {
+export const formatNumber = (x, indicator, digits=2) => {
     if (isNaN(x)) {
         return 'N/A';
     } else if (Number.isInteger(x)) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     } else {
-        return x.toFixed(2);
+        return x.toFixed(digits);
     }
 };
