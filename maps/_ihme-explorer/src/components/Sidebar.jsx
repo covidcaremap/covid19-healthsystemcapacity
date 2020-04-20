@@ -49,29 +49,31 @@ export default function Sidebar({
         );
     });
 
-    const indicatorButtons = _.map(_.pairs(indicators), (kv) => {
-        return (
-            <button
-              key={kv[0]}
-              className={indicator === kv[0] ? 'active' : ''}
-              onClick={handleIndicatorChanged(kv[0])}
-            >
-              <div
-                className="button-icon"
-                style={{ color: '#023858' }}
-              >
-                <i className="icon-dot-circled"></i>
-                <i className="icon-circle-empty"></i>
-              </div>
-              <div className="button-text">
-                <div className="button-label">{kv[1].label}</div>
-                <div className="button-description">
-                  {kv[1].description}
-                </div>
-              </div>
-            </button>
-        );
-    });
+    const indicatorButtons = _.map(
+        _.sortBy(_.pairs(indicators), kv => kv[1].order),
+        (kv) => {
+            return (
+                <button
+                  key={kv[0]}
+                  className={indicator === kv[0] ? 'active' : ''}
+                  onClick={handleIndicatorChanged(kv[0])}
+                >
+                  <div
+                    className="button-icon"
+                    style={{ color: '#023858' }}
+                  >
+                    <i className="icon-dot-circled"></i>
+                    <i className="icon-circle-empty"></i>
+                  </div>
+                  <div className="button-text">
+                    <div className="button-label">{kv[1].label}</div>
+                    <div className="button-description">
+                      {kv[1].description}
+                    </div>
+                  </div>
+                </button>
+            );
+        });
 
     return (
         <div className="sidebar">

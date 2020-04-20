@@ -38,51 +38,60 @@ export const aggregationTypes = {
 
 // Keys match IHME columns
 export const indicators = {
+    'deaths': {
+        label: 'Daily COVID-19 Deaths',
+        colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
+        description: 'New deaths per day of COVID-19 patients',
+        order: 0,
+        default: true
+    },
+    'admis': {
+        label: 'Daily Hospital Admissions',
+        colors: ['#fff7fb', '#9db5ce', '#4d7596', '#023858'],
+        description: 'New hospital admissions per day of COVID-19 patients',
+        order: 1
+    },
+    'newICU': {
+        label: 'Daily ICU Admissions',
+        colors: ['#f7fcfd', '#b0aacb', '#7a5a8d', '#4d004b'],
+        description: 'New ICU admissions per day of COVID-19 patients',
+        order: 2
+    },
     'allbed': {
         label: 'All Beds',
         colors: ['#fff7fb', '#9db5ce', '#4d7596', '#023858'],
-        description: 'Hospital beds needed per day for COVID-19 patients'
+        description: 'Hospital beds needed per day for COVID-19 patients',
+        order: 3
     },
     'ICUbed': {
         label: 'ICU Beds',
         colors: ['#f7fcfd', '#b0aacb', '#7a5a8d', '#4d004b'],
         description: 'ICU beds needed per day for COVID-19 patients',
-        default: true
+        order: 4
     },
     'InvVen': {
         label: 'Ventilators',
         colors: ['#f7fcfd', '#8cc1aa', '#40825e', '#00441b'],
-        description: 'Invasive ventilation needed per day for COVID-19 patients'
-    },
-    'admis': {
-        label: 'Daily Hospital Admissions',
-        colors: ['#fff7fb', '#9db5ce', '#4d7596', '#023858'],
-        description: 'Daily deaths of COVID-19 patients'
-    },
-    'newICU': {
-        label: 'Daily ICU Admissions',
-        colors: ['#f7fcfd', '#b0aacb', '#7a5a8d', '#4d004b'],
-        description: 'New hospital admissions per day of COVID-19 patients'
-    },
-    'deaths': {
-        label: 'Daily COVID-19 Deaths',
-        colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
-        description: 'New ICU admissions per day of COVID-19 patients'
-    },
-    'totdea': {
-        label: 'Total COVID-19 Deaths',
-        colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
-        description: 'Cumulative deaths of COVID-19 patients'
+        description: 'Invasive ventilation needed per day for COVID-19 patients',
+        order: 5
     },
     'bedover': {
         label: 'Hospital Bed Shortage',
         colors: ['#fff7fb', '#9db5ce', '#4d7596', '#023858'],
-        description: 'Difference between total hospital beds needed for COVID-19 patients and estimated count of hospital beds available'
+        description: 'Difference between total hospital beds needed for COVID-19 patients and estimated count of hospital beds available',
+        order: 6
     },
     'icuover': {
         label: 'ICU Bed Shortage',
         colors: ['#f7fcfd', '#b0aacb', '#7a5a8d', '#4d004b'],
-        description: 'Difference between total ICU beds needed for COVID-19 patients and estimated count of ICU beds available'
+        description: 'Difference between total ICU beds needed for COVID-19 patients and estimated count of ICU beds available',
+        order: 7
+    },
+    'totdea': {
+        label: 'Total COVID-19 Deaths',
+        colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
+        description: 'Cumulative deaths of COVID-19 patients',
+        order: 8
     }
 };
 
