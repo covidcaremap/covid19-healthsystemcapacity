@@ -289,6 +289,15 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 
 **Note** County level data is not committed to repository. See [Downloading Data](#downloading-data)
 
+#### WorldPop
+
+[WorldPop data](https://www.worldpop.org/methods) as utilized in zonal summary calculates for country and region geometries produced by @echeipesh via https://github.com/echeipesh/geotrellis-worldpop to create 2020 population estimates.
+
+##### FILES
+
+- **worldpop-region-pop-for-ihme-2020.csv**: Populations for regions in IHME projections.
+- **worldpop-country-pop-for-ihme-2020.csv**: Populations for countries in IHME projections.
+
 ### Covid19 confirmed cases
 
 USAFacts county-level COVID-19 data, see https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/.

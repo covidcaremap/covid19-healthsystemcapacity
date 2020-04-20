@@ -60,12 +60,3 @@ def read_us_hrr_gdf():
 
 def read_census_data_df():
     return pd.read_csv(external_data_path('us-census-cc-est2018-alldata.csv'), encoding='unicode_escape')
-
-def get_ihme_forecast():
-    """Gets the latest CSV file from IHME predictions"""
-    url = 'https://ihmecovid19storage.blob.core.windows.net/latest/ihme-covid19.zip'
-    r = requests.get(url)
-    z = ZipFile(io.BytesIO(r.content))
-    latest_csv_name = sorted([x.filename for x in z.filelist if x.filename.endswith('csv')])[-1]
-    df = pd.read_csv(z.open(latest_csv_name))
-    return df
