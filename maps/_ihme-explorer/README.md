@@ -1,8 +1,8 @@
-# CovidCareMap.org US Healthcare System Capacity
+# CovidCareMap.org IHME projection data explorer
 
-Open map data on US health system capacity to care for COVID-19 patients for all hospital facilities nationwide
+Explore the latest Institute for Health Metrics and Evaluation (IHME) COVID-19 projections through time by country and region.
 
-Created by [@jfrankl](https://github.com/jfrankl)
+Created by [@lossyrob](https://github.com/lossyrob) and [@jfrankl](https://github.com/jfrankl)
 
 To generate vector tiles, run
 
@@ -12,7 +12,7 @@ To generate vector tiles, run
 
 ## Data Processing
 
-To generate the data necessary to run this visualization, use the [processing/07_Process_visualization_data.ipynb](../../notebooks/processing/07_Process_visualization_data.ipynb) notebook. See the [Getting Started](../../README.md#getting-started) section of the README for information about running the notebooks via Docker.
+To generate the data necessary to run this visualization, use the [processing/Process_IHME_data.ipynb](../../notebooks/processing/Process_IHME_data.ipynb) notebook. See the [Getting Started](../../README.md#getting-started) section of the README for information about running the notebooks via Docker.
 
 ## Available Scripts
 
