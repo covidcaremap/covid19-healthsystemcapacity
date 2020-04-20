@@ -20,8 +20,8 @@ const MapGL = ReactMapGL({
     hash: true,
 });
 
-const center = [-96, 38];
-const zoom = [3.5];
+const center = [-46, 38];
+const zoom = [1.75];
 const boundarySource = {
     type: 'vector',
     tiles: [
