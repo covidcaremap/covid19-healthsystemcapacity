@@ -5,6 +5,10 @@ from zipfile import ZipFile
 import pandas as pd
 import geopandas as gpd
 import requests
+import us
+
+from covidcaremap.data import (read_us_states_gdf,
+                               read_us_counties_gdf)
 
 ## IHME Columns
 
@@ -67,3 +71,24 @@ class IHME:
             return (df, model_version)
         else:
             return df
+
+    @classmethod
+    def get_latest_by_county(cls):
+        """
+        Gets the latest IHME predictions and disggregates them to the
+        county level based on population, returns GeoDataFrame of counties.
+        """
+        counties = read_us_counties_gdf()
+        states = read_us_states_gdf()
+
+        state_pop = dict(zip(states['State'], states['Population']))
+        counties['proportion_of_state'] = counties.apply(lambda r: r['Population'] / state_pop.get(r['State']), axis = 1)
+
+        ihme = cls.get_latest()
+        ihme = ihme[ihme['location_name'].isin([x.name  for x in us.states.STATES])].copy()
+        ihme['State'] = ihme['location_name'].apply(lambda x: us.states.lookup(x).abbr)
+
+        county_ihme = pd.merge(ihme, counties, 'inner', on='State')
+        county_ihme = county_ihme.apply(lambda x: x * county_ihme['proportion_of_state'] if x.name.split('_')[-1] in ('lower', 'upper', 'mean') else x)
+
+        return gpd.GeoDataFrame(county_ihme)
