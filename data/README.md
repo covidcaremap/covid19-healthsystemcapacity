@@ -41,13 +41,9 @@ an open hospital facilities dataset by [Definitive Healthcare](#definitive-healt
 
 ##### CovidCareMap Capacity Data Dictionary
 
+**Common Fields**
+
 These fields are across all facility and regional datasets:
-
-- **Name**: Name of the facility, same as Definitive Healthcare data.
-
-- **Hospital Type**: Hospital Type from Definititve Healthcare data. See [Hospital Types](#hospital-type)
-
-- **Address**, **Address_2**, **City**, **State**, **Zipcode**, **County**, **Latitude**, **Longitude**: Location information from the Definitive Healthcare data.
 
 - **Staffed All Beds** - Number of hospital beds of all types typically set up and staffed for inpatient care as reported/estimated in selected facility or area
 
@@ -59,6 +55,16 @@ These fields are across all facility and regional datasets:
 
 - **ICU Bed Occupancy Rate** - % of ICU beds typically occupied by patients in selected facility or area
 
+**Facility Fields**
+
+In addition to the above fields, facility data has the following:
+
+- **Name**: Name of the facility, same as Definitive Healthcare data.
+
+- **Hospital Type**: Hospital Type from Definititve Healthcare data. See [Hospital Types](#hospital-type)
+
+- **Address**, **Address_2**, **City**, **State**, **Zipcode**, **County**, **Latitude**, **Longitude**: Location information from the Definitive Healthcare data.
+
 - **CCM_ID** - Unique identifier for the facility. Matches the Definitive Healtchare ID until new facilities are added or other datasets are brought in.
 
 - **DH-OBJECTID** - The `OBJECTID` in the Definitive Healthcare dataset for this facility.
@@ -67,6 +73,8 @@ These fields are across all facility and regional datasets:
 in the facility information).
 
 **Source information**: In the facility dataset there is also a set of columns suffixed with '- SOURCE', which describes the source of the value for the corresponding column. The values are prefixed with 'HCRIS', in which case the number comes from HCRIS data, or 'DH', in which it's Definitive Health data. It also has the column name from that dataset so you can trace everything back to the source datasets. The HCRIS columns are created from the data processing steps, which are traceable back to the origin HCRIS file data value through the processing notebook workflow. The DH data columns match directly to the DH external dataset.
+
+**Regional Fields**
 
 **Per Capita Information**: There are additional per-capita fields in the regional datasets:
 
@@ -77,6 +85,14 @@ in the facility information).
 - **Population (65+)** - Population of people aged 65 years or older.
 
 - **Staffed All Beds [Per 1000 People]**, **Staffed All Beds [Per 1000 Adults (20+)]**, **Staffed All Beds [Per 1000 Elderly (65+)]**, etc. - The `Staffed All Beds`, `Staffed ICU Beds`, and `Licensed All Beds` fields per capita of the population described.
+
+**County-level fields**
+
+The count dataset includes a `fips_code`, a [unique identifier](https://en.wikipedia.org/wiki/FIPS_county_code) for counties.
+
+- **fips_code** - The FIPS county code for the given county.
+
+**State-level fields**
 
 **Ventilator Information**: There is additional information about [estimated mechanical ventilators](#ventilator-data) for state-level data which is from a 2010 study that uses survey data of hospitals conducted in 2009 and US Census population estimates from 2008:
 
@@ -288,6 +304,15 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 - **PEP_2018_PEPAGESEX_with_ann.csv**: State level data including Puerto Rico. Downloaded from https://www2.census.gov/programs-surveys/popest/tables/2010-2018/state/asrh/PEP_2018_PEPAGESEX.zip
 
 **Note** County level data is not committed to repository. See [Downloading Data](#downloading-data)
+
+#### WorldPop
+
+[WorldPop data](https://www.worldpop.org/methods) as utilized in zonal summary calculates for country and region geometries produced by @echeipesh via https://github.com/echeipesh/geotrellis-worldpop to create 2020 population estimates.
+
+##### FILES
+
+- **worldpop-region-pop-for-ihme-2020.csv**: Populations for regions in IHME projections.
+- **worldpop-country-pop-for-ihme-2020.csv**: Populations for countries in IHME projections.
 
 ### Covid19 confirmed cases
 

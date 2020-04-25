@@ -1,4 +1,9 @@
-viz/
+**/build-cache
+**/public/data
+**/data/tiles
+**/node_modules
+.git
+.netlify-cache
 
 **/*.json
 **/*.geojson
