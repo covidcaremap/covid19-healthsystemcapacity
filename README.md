@@ -244,7 +244,7 @@ Help us get going. There's no more time to wait.
 
    1.2: Clean-up and bring together into data-science ready formats:
 
-    - [Jupyter Notebooks](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/nbs)
+    - [Jupyter Notebooks](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/notebooks)
     - [GeoJSON, spreadsheets, & other data produced](https://github.com/daveluo/covid19-healthsystemcapacity/tree/master/data)
 
    1.3: Visualizations and Dashboards:
@@ -402,7 +402,7 @@ folder will be accessable through `/opt/jupyter/data` inside any notebook. Also 
 repository files are accessible through `/opt/src`.
 
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
-All required libraries to run notebooks should be placed in `nbs/requirements.txt`.
+All required libraries to run notebooks should be placed in `notebooks/requirements.txt`.
 
 ### Adding a new map
 

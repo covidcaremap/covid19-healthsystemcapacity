@@ -21,7 +21,7 @@ RUN cd /opt && \
     unzip v0.3.0.zip && \
     ln -s `pwd`/mbutil-0.3.0/mb-util /usr/local/bin/mb-util
 
-COPY requirements.txt /tmp/requirements.txt
+COPY notebooks/requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 # UPenn's CHIME.
