@@ -25,7 +25,7 @@ jobs:
       - name: Commit any data changes
         id: commit_changes
         run: |
-          ./.github/actions/scripts/commit-data-update-changes.sh
+          ./.github/actions/scripts/commit-data-update-changes.sh data/update
       - name: Push data update to repository
         uses: ad-m/github-push-action@v0.5.0
         if: steps.commit_changes.outputs.status == 'CHANGED'
@@ -33,3 +33,15 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: data/update
           force: true
+
+      - name: Install JS Actions dependencies
+        if: steps.commit_changes.outputs.status == 'CHANGED'
+        run: |
+          cd ./.github/actions/data-update-pr && npm ci
+
+      - name: Data Update Pull Request
+        if: steps.commit_changes.outputs.status == 'CHANGED' || steps.commit_changes.outputs.status == 'CHANGES_ALREADY_PUSHED'
+        uses: ./.github/actions/data-update-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          makeComment: ${{ steps.commit_changes.outputs.status == 'CHANGED' }}

@@ -1,0 +1,24 @@
+name: 'Data Update Pull Request'
+description: 'Generates a Pull Request for the data update changes.'
+inputs:
+  token:
+    description: The GitHub token to use for making API requests.
+    required: true
+  owner:
+    description: The name of the Repository owner.
+  repo:
+    description: The name of the GitHub repository for the PR.
+  title:
+    description: Pull request title
+  dataUpdateBranch:
+    description: Branch name of the data update branch to pull from.
+  base:
+    description: Branch name to pull to.
+  makeComment:
+    description: True if should comment on an existing PR.
+    default: true
+  comment:
+    description: Comment text.
+runs:
+  using: 'node12'
+  main: 'index.js'
