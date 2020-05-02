@@ -1,0 +1,6 @@
+name: 'update-data'
+
+description: 'Updates data.'
+runs:
+  using: 'docker'
+  image: '../../../Dockerfile'

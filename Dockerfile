@@ -21,7 +21,7 @@ RUN cd /opt && \
     unzip v0.3.0.zip && \
     ln -s `pwd`/mbutil-0.3.0/mb-util /usr/local/bin/mb-util
 
-COPY notebooks/requirements.txt /tmp/requirements.txt
+COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
 # UPenn's CHIME.
@@ -46,5 +46,6 @@ WORKDIR /opt/src
 
 ENV PYTHONPATH=/opt/src:/opt/lib:$PYTHONPATH
 
-ENTRYPOINT [ "jupyter" ]
-CMD [ "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--notebook-dir=/opt/jupyter" ]
+COPY docker/entrypoint.sh /opt/entrypoint.sh
+
+ENTRYPOINT [ "/opt/entrypoint.sh" ]

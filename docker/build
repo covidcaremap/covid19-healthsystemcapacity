@@ -16,7 +16,7 @@ Setup project containers.
 
 function build_containers() {
     echo "Building containers"
-    docker build -t covid19 -f docker/Dockerfile .
+    docker build -t covid19 -f Dockerfile .
 }
 
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then

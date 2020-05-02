@@ -1,0 +1,35 @@
+name: Data Update
+
+# This workflow is triggered on a cron schedule based on the develop branch's
+# version of the workflow. This is what performs the automatic updates.
+# We also have this triggered by pushes to the branch feature/automatic-data-update,
+# so that as we develop changes to the data update workflow we can push to that
+# branch and see it in action.
+on:
+  push:
+    branches:
+      - feature/automatic-data-update
+  schedule:
+    - cron: "30 * * * *"
+
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Update data
+        uses: ./.github/actions/update-data
+
+      - name: Commit any data changes
+        id: commit_changes
+        run: |
+          ./.github/actions/scripts/commit-data-update-changes.sh
+      - name: Push data update to repository
+        uses: ad-m/github-push-action@v0.5.0
+        if: steps.commit_changes.outputs.status == 'CHANGED'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: data/update
+          force: true
