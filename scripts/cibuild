@@ -24,6 +24,16 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         bundle config set path "$NETLIFY_CACHE_DIR/bundle"
         jekyll build
 
+        # Install tippecanoe
+        if [ ! -d $NETLIFY_CACHE_DIR/tippecanoe-1.32.5 ]; then
+            wget -qO- https://github.com/mapbox/tippecanoe/archive/1.32.5.tar.gz |
+                tar xvz -C build-cache/
+            make -C build-cache/tippecanoe-1.32.5
+            cp -R build-cache/tippecanoe-1.32.5 $NETLIFY_CACHE_DIR/tippecanoe-1.32.5
+        fi
+
+        export PATH=$NETLIFY_CACHE_DIR/tippecanoe-1.32.5:$PATH
+
         mkdir -p "${DIR}/../_site/maps"
 
         for map in "${DIR}"/../maps/*; do
