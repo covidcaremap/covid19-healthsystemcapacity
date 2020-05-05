@@ -6,7 +6,8 @@ if [[ -n "${COVID19_DEBUG}" ]]; then
     set -x
 fi
 
-TARGET_BRANCH=${1}
+CLONE_DIR=${1}
+TARGET_BRANCH=${2}
 
 PROCESSED_DATA_DIR=data/processed
 PUBLISHED_DATA_DIR=data/published
@@ -14,7 +15,7 @@ PUBLISHED_DATA_DIR=data/published
 function usage() {
 
     echo -n \
-        "Usage: $(basename "$0") CLONE_DIR
+        "Usage: $(basename "$0") CLONE_DIR TARGET_BRANCH
 Push data update changes as part of the data update workflow.
 
 Args:
@@ -27,10 +28,15 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
     if [ "${1:-}" = "--help" ]; then
         usage
     else
+        pushd ${CLONE_DIR};
+
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
         git fetch origin
+
+        echo "PWD"
+        pwd
 
         # Show what files changed
         git status ${PUBLISHED_DATA_DIR} ${PROCESSED_DATA_DIR}
@@ -43,14 +49,15 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 
         if git ls-remote --exit-code origin ${TARGET_BRANCH}; then
             echo "${TARGET_BRANCH} already exists."
+
+            if git diff --quiet HEAD origin/${TARGET_BRANCH} -- ${PUBLISHED_DATA_DIR} ${PROCESSED_DATA_DIR}; then
+                echo "No differences found between HEAD and origin/${TARGET_BRANCH}"
+            else
+                git diff --compact-summary HEAD origin/${TARGET_BRANCH} -- ${PUBLISHED_DATA_DIR}
+            fi
+
         else
             echo "${TARGET_BRANCH} will be created if there are data changes."
-        fi
-
-        if git diff --quiet HEAD origin/${TARGET_BRANCH} -- ${PUBLISHED_DATA_DIR} ${PROCESSED_DATA_DIR}; then
-            echo "No differences found between HEAD and origin/${TARGET_BRANCH}"
-        else
-            git diff --compact-summary HEAD origin/${TARGET_BRANCH} -- ${PUBLISHED_DATA_DIR}
         fi
 
         # Only if there are diffs in the data update should we push.
@@ -72,5 +79,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
             echo "NO DATA UPDATES FOUND."
             echo "::set-output name=status::NO_CHANGES"
         fi
+
+        popd
     fi
 fi

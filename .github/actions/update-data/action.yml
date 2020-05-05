@@ -1,6 +1,12 @@
 name: 'update-data'
 
 description: 'Updates data.'
+inputs:
+  update_root:
+    description: The root directory containing the codebase to use for the data update.
+    required: true
 runs:
   using: 'docker'
   image: '../../../Dockerfile'
+  args:
+    - ${{ inputs.update_root }}
