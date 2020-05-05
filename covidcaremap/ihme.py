@@ -65,7 +65,11 @@ class IHME:
         r = requests.get(url)
         z = ZipFile(io.BytesIO(r.content))
         model_version = os.path.dirname(z.filelist[0].filename)
-        latest_csv_name = sorted([x.filename for x in z.filelist if x.filename.endswith('csv')])[-1]
+
+        latest_csv_name = [x.filename
+                           for x in z.filelist
+                           if x.filename.endswith('Hospitalization_all_locs.csv')][0]
+
         df = pd.read_csv(z.open(latest_csv_name))
         if include_version:
             return (df, model_version)

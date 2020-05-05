@@ -46,5 +46,6 @@ WORKDIR /opt/src
 
 ENV PYTHONPATH=/opt/src:/opt/lib:$PYTHONPATH
 
-ENTRYPOINT [ "jupyter" ]
-CMD [ "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--notebook-dir=/opt/jupyter" ]
+COPY docker/entrypoint.sh /opt/entrypoint.sh
+
+ENTRYPOINT [ "/opt/entrypoint.sh" ]

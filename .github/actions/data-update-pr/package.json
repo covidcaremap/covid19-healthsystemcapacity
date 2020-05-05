@@ -1,0 +1,16 @@
+{
+  "name": "js-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "action": "node index.js"
+  },
+  "keywords": [],
+  "author": "Rob Emanuele <rdemanuele@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^2.1.1"
+  }
+}
