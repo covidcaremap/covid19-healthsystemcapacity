@@ -35,14 +35,11 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         sed -i.bak 's/NaN/null/' build-cache/*.geojson
 
         # Generate intermediate data set
-        tippecanoe -f -pk --no-tile-compression -o build-cache/country.mbtiles \
-                   --maximum-zoom=8 --minimum-zoom=0 -l country build-cache/ihme-country-data.geojson
-        tippecanoe -f -pk --no-tile-compression -o build-cache/region.mbtiles \
-            --maximum-zoom=8 --minimum-zoom=0 -l region build-cache/ihme-region-data.geojson
-
-        tile-join -f -pk --no-tile-compression -e data/tiles \
-            build-cache/country.mbtiles \
-            build-cache/region.mbtiles
+        tippecanoe -f -pk -pf --no-tile-compression \
+                   --maximum-zoom=8 --minimum-zoom=0 \
+                   -e data/tiles \
+                   --named-layer=country:build-cache/ihme-country-data.geojson \
+                   --named-layer=region:build-cache/ihme-region-data.geojson
 
         # Build React application
         npm install
