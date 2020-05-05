@@ -13,12 +13,23 @@ Process data for CovidCareMap.
 "
 }
 
+UPDATE_ROOT=${1}
+
 NOTEBOOKS_TO_RUN=(
     "processing/Process_IHME_data.ipynb"
 )
 
 if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
-    mkdir -p notebook-logs
+
+    if [ "${UPDATE_ROOT}" ]
+    then
+        pushd ${UPDATE_ROOT}
+    fi
+
+    echo "PWD"
+    pwd
+
+    mkdir -p ${UPDATE_ROOT}notebook-logs
 
     for notebook in "${NOTEBOOKS_TO_RUN[@]}"; do
         echo
@@ -26,9 +37,15 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         echo
 
 
-        mkdir -p notebook-logs/$(dirname $notebook)
+        mkdir -p ${UPDATE_ROOT}notebook-logs/$(dirname $notebook)
         papermill \
-            notebooks/${notebook} \
-            notebook-logs/${notebook}
+            ${UPDATE_ROOT}notebooks/${notebook} \
+            ${UPDATE_ROOT}notebook-logs/${notebook}
     done
+
+    if [ "${UPDATE_ROOT}" ]
+    then
+        popd
+    fi
+
 fi
