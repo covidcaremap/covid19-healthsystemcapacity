@@ -40,22 +40,9 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         tippecanoe -f -pk --no-tile-compression -o build-cache/region.mbtiles \
             --maximum-zoom=8 --minimum-zoom=0 -l region build-cache/ihme-region-data.geojson
 
-        tile-join -f -pk --no-tile-compression -o build-cache/combined.mbtiles \
+        tile-join -f -pk --no-tile-compression -e data/tiles \
             build-cache/country.mbtiles \
             build-cache/region.mbtiles
-
-        # Install mb-util
-        if [ ! -d $NETLIFY_CACHE_DIR/mbutil-0.3.0 ]; then
-            wget -qO- https://github.com/mapbox/mbutil/archive/v0.3.0.tar.gz |
-                tar xvz -C build-cache/
-            cp -R build-cache/mbutil-0.3.0 $NETLIFY_CACHE_DIR/mbutil-0.3.0
-        fi
-
-        export PATH=$NETLIFY_CACHE_DIR/mbutil-0.3.0:$PATH
-
-        # Generate vector tiles
-        rm -rf data/tiles
-        mb-util --image_format=pbf build-cache/combined.mbtiles data/tiles
 
         # Build React application
         npm install
