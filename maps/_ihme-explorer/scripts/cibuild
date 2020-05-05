@@ -34,16 +34,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         # Replace all instances of NaN with null
         sed -i.bak 's/NaN/null/' build-cache/*.geojson
 
-        # Install tippecanoe
-        if [ ! -d $NETLIFY_CACHE_DIR/tippecanoe-1.32.5 ]; then
-            wget -qO- https://github.com/mapbox/tippecanoe/archive/1.32.5.tar.gz |
-                tar xvz -C build-cache/
-            make -C build-cache/tippecanoe-1.32.5
-            cp -R build-cache/tippecanoe-1.32.5 $NETLIFY_CACHE_DIR/tippecanoe-1.32.5
-        fi
-
-        export PATH=$NETLIFY_CACHE_DIR/tippecanoe-1.32.5:$PATH
-
         # Generate intermediate data set
         tippecanoe -f -pk --no-tile-compression -o build-cache/country.mbtiles \
                    --maximum-zoom=8 --minimum-zoom=0 -l country build-cache/ihme-country-data.geojson
