@@ -45,7 +45,7 @@ jobs:
           force: true
 
       - name: Install JS Actions dependencies
-        if: steps.commit_changes.outputs.status == 'CHANGED'
+        if: steps.commit_changes.outputs.status == 'CHANGED' || steps.commit_changes.outputs.status == 'CHANGES_ALREADY_PUSHED'
         run: |
           cd ./.github/actions/data-update-pr && npm ci
 
