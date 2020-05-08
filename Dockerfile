@@ -46,6 +46,8 @@ WORKDIR /opt/src
 
 ENV PYTHONPATH=/opt/src:/opt/lib:$PYTHONPATH
 
-COPY docker/entrypoint.sh /opt/entrypoint.sh
+COPY scripts/process-data /opt/process-data
+COPY scripts/process-ihme-data /opt/process-ihme-data
+COPY scripts/process-hscap-data /opt/process-hscap-data
 
-ENTRYPOINT [ "/opt/entrypoint.sh" ]
+ENTRYPOINT [ "/opt/process-data" ]

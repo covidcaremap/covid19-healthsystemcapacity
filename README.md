@@ -17,6 +17,7 @@
   - [Using Docker](#using-docker)
   - [Repository Organization](#repository-organization)
   - [Running the notebooks](#running-the-notebooks)
+  - [Updating Data](#updating-data)
   - [Adding a new map](#adding-a-new-map)
   - [Building the maps](#building-the-maps)
   - [Deployment](#deployment)
@@ -403,6 +404,30 @@ repository files are accessible through `/opt/src`.
 
 Developing inside a docker container keeps track of what dependencies the notebooks need to run.
 All required libraries to run notebooks should be placed in `notebooks/requirements.txt`.
+
+### Updating Data
+
+You can update datasets by using scripts inside docker to run notebooks through [papermill](https://papermill.readthedocs.io/en/latest/). To run, use:
+
+```
+> docker/process-data
+```
+
+This will run the same data update process that currently executes as a scheduled GitHub Action (see `./github/workflows/dataproc.yml`). This currently only includes the IHME data processing.
+
+To run just the IHME data processing, use
+
+```
+> docker/process-ihme-data
+```
+
+To run the healthcare capacity data processing workflow, which starts from running any state update notebooks
+and then the `04_Generate_CovidCareMap_Facility_Data.ipynb` and any furtherr notebook used to generate
+the capacity data in the `published` as well as the color breaks for visualization, run:
+
+```
+> docker/process-hscap-data
+```
 
 ### Adding a new map
 
