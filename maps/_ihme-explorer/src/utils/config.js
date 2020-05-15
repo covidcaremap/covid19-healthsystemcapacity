@@ -1,4 +1,5 @@
 import * as _ from 'underscore';
+import moment from "moment";
 
 export const loadConfig = (config, setModelVersion, setDates, setActiveDate) => {
     // Set model version
@@ -6,7 +7,10 @@ export const loadConfig = (config, setModelVersion, setDates, setActiveDate) => 
 
     // Handle dates
     let dates = config['dates'],
-        sortedDates = Array.from(new Set(dates)).sort();
+        sortedDates = Array.from(new Set(dates)).sort( (a, b) => {
+          return new Date(moment(a)).date - new Date(moment(b)).date;
+        });
+
     setDates(sortedDates);
 
     const today = new Date().toISOString().slice(0, 10),

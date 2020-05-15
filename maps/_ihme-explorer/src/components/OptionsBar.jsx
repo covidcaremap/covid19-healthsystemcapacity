@@ -68,9 +68,6 @@ export default function OptionsBar({
                   className="date-input"
                   popoverProps={{ minimal: true }}
                   formatDate={date => formatDateReadable(date)}
-                  minDate={new Date(moment(dates[0], "YY-MM-DD"))}
-                  maxDate={new Date(
-                      moment(dates[dates.length - 1], "YY-MM-DD"))}
                   onChange={handleDateInputChange}
                   parseDate={str => new Date(str)}
                   canClearSelection={false}

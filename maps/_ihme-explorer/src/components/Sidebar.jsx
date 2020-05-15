@@ -8,6 +8,7 @@ import "@blueprintjs/core/lib/css/blueprint.css";
 import moment from "moment";
 import NewTabLink from './NewTabLink';
 import { aggregationTypes, indicators } from '../utils/config';
+import { formatNumber } from '../utils/healthcareMapStyling';
 
 export default function Sidebar({
     modelVersion,
@@ -92,6 +93,10 @@ export default function Sidebar({
               Projections can change with new data (see <a href="http://www.covid-projections.com/">covid-projections</a>) and there are
               different models with different projections (see <a href="https://reichlab.io/covid19-forecast-hub/">Reich Lab COVID-19 Forecast Hub</a>).
             </p>
+            {!!aggregationTypes['country'].per_capita_base && (<p>
+              {`Per capita figure are per ${formatNumber(aggregationTypes['country'].per_capita_base)} people for national data, and per `}
+              {`${formatNumber(aggregationTypes['region'].per_capita_base)} people for regional data.`}
+                                                                </p>)}
             <hr/>
             <div className="sidebar-button-panel" id="sidebar-option-buttons">
               <div className="map-options sidebar-button-group-container">
