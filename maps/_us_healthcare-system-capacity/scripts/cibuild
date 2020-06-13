@@ -37,7 +37,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         cp "${DIR}/../../../data/published/us_healthcare_capacity-facility-CovidCareMap.geojson" build-cache/
 
         # Replace all instances of NaN with null
-        sed -i.bak 's/NaN/null/' build-cache/*.geojson
+        sed -i.bak 's/NaN/null/g' build-cache/*.geojson
 
         # Generate intermediate data set
         tippecanoe -f -pk --no-tile-compression -o build-cache/state.mbtiles \
