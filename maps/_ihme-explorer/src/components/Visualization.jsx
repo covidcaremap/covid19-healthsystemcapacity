@@ -9,6 +9,8 @@ export default function Visualization({
   indicator,
   activeDate,
   onActiveDateChange,
+  countryData,
+  regionData,
   dates,
   configLoaded,
 }) {
@@ -21,6 +23,8 @@ export default function Visualization({
         dates={dates}
       />
       <Map
+        countryData={countryData}
+        regionData={regionData}
         dates={dates}
         aggType={aggType}
         activeDate={activeDate}

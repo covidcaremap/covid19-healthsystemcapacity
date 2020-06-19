@@ -31,7 +31,7 @@ export default function IHMELayers({
   };
 
   let layers = _.flatten(
-    _.map(_.pairs(aggregationTypes), (kv) => {
+    _.map(Object.entries(aggregationTypes), (kv) => {
       return [
         <Layer
           id={kv[0] + '-fill'}

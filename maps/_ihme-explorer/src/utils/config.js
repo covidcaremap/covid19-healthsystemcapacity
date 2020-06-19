@@ -38,19 +38,19 @@ export const loadConfig = (
 export const aggregationTypes = {
   country: {
     label: 'National',
+    default: true,
   },
   region: {
     label: 'Regional',
-    default: true,
   },
 };
 
 // Keys match IHME columns
 export const indicators = {
-  deaths: {
-    label: 'Daily COVID-19 Deaths',
+  'smoothed-deaths': {
+    label: 'Daily COVID-19 Deaths (smoothed)',
     colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
-    description: 'New deaths per day of COVID-19 patients',
+    description: 'New deaths per day of COVID-19 patients (smoothed)',
     order: 0,
     default: true,
   },
@@ -98,11 +98,17 @@ export const indicators = {
       'Difference between total ICU beds needed for COVID-19 patients and estimated count of ICU beds available',
     order: 7,
   },
-  totdea: {
-    label: 'Total COVID-19 Deaths',
+  'smoothed-totdea': {
+    label: 'Total COVID-19 Deaths (smoothed)',
     colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
-    description: 'Cumulative deaths of COVID-19 patients',
+    description: 'Cumulative deaths of COVID-19 patients (smoothed)',
     order: 8,
+  },
+  'est-infections': {
+    label: 'Estimated COVID-19 Infections',
+    colors: ['#f3e7e9', '#d49ebb', '#a55c90', '#6c2167'],
+    description: 'Estimated number of people infected witth COVID-19.',
+    order: 9,
   },
 };
 

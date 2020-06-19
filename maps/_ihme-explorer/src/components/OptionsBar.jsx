@@ -45,7 +45,6 @@ export default function OptionsBar({ activeDate, onActiveDateChange, dates }) {
 
   const handleDateInputChange = (event) => {
     const dateFormatted = formatDateToData(event);
-    console.log(dateFormatted);
     const dateIndex = dates.indexOf(dateFormatted);
     updateDate(dateIndex !== -1 ? dateIndex : dates.length - 1);
   };

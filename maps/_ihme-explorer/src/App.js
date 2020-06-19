@@ -31,26 +31,47 @@ function App() {
   );
   const [usePerCapita, setUsePerCapita] = useState(true);
 
+  // Data
+  const [countryData, setCountryData] = useState(undefined);
+  const [regionData, setRegionData] = useState(undefined);
+
   // Date
   const [activeDate, setActiveDate] = useState(0);
   const today = new Date().toISOString().slice(0, 10);
   const [dates, setDates] = useState([today, today]);
 
-  const [loadingConfig, setLoadingConfig] = useState(false);
   const [configLoaded, setConfigLoaded] = useState(false);
+  const [countryDataLoaded, setCountryDataLoaded] = useState(false);
+  const [regionDataLoaded, setRegionDataLoaded] = useState(false);
 
   useEffect(() => {
-    if (!configLoaded && !loadingConfig) {
-      setLoadingConfig(true);
+    if (!configLoaded) {
       fetch('data/ihme-config.json')
         .then((response) => response.json())
         .then((data) => {
           loadConfig(data, setModelVersion, setDates, setActiveDate);
           setConfigLoaded(true);
-          setLoadingConfig(false);
         });
     }
-  });
+
+    if (!countryDataLoaded) {
+      fetch('data/ihme-country-data.json')
+        .then((response) => response.json())
+        .then((data) => {
+          setCountryData(data);
+          setCountryDataLoaded(true);
+        });
+    }
+
+    if (!regionDataLoaded) {
+      fetch('data/ihme-region-data.json')
+        .then((response) => response.json())
+        .then((data) => {
+          setRegionData(data);
+          setRegionDataLoaded(true);
+        });
+    }
+  }, []);
 
   const handleTypeChange = (updatedType) => {
     setAggType(updatedType);
@@ -89,8 +110,12 @@ function App() {
         indicator={indicator}
         activeDate={activeDate}
         onActiveDateChange={handleActiveDateChange}
+        countryData={countryData}
+        regionData={regionData}
         dates={dates}
         configLoaded={configLoaded}
+        countryData={countryData}
+        regionData={regionData}
       />
     </div>
   );

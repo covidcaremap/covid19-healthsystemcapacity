@@ -11,6 +11,8 @@ import {
 export default function PopupContent({
   feature,
   coordinates,
+  countryData,
+  regionData,
   dates,
   aggType,
   indicator,
@@ -19,9 +21,21 @@ export default function PopupContent({
   usePerCapita,
 }) {
   if (!feature) return null;
+
+  const data = aggType == 'country' ? countryData : regionData;
+
+  if (!data) return null;
+
   const aggregation = aggregationTypes[aggType],
     per_capita_base = aggregationTypes[aggType]['per_capita_base'],
-    population = feature.properties['population'];
+    population = feature.properties['population'],
+    locationId = feature.properties['id'];
+
+  if (!(locationId in data)) {
+    return null;
+  }
+
+  const locationData = data[locationId]['values'];
 
   let name = usePerCapita
     ? feature.properties['location_name'] +
@@ -31,10 +45,10 @@ export default function PopupContent({
     : feature.properties['location_name'];
 
   const rows = _.pairs(indicators).map(function (kv) {
-    const propName = getProperty(dates[activeDate], kv[0], boundLevel);
+    const rawValue = locationData[kv[0]][boundLevel][dates[activeDate]];
     const value = usePerCapita
-      ? feature.properties[propName] / (population / per_capita_base)
-      : feature.properties[propName];
+      ? rawValue / (population / per_capita_base)
+      : rawValue;
     return (
       <tr key={`popup-${kv[0]}`}>
         <th>

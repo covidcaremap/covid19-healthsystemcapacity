@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ReactMapGL, { Source, ZoomControl } from 'react-mapbox-gl';
+import React, { useState, useEffect, useRef } from 'react';
+import ReactMapGL, { MapContext, Source, ZoomControl } from 'react-mapbox-gl';
 import * as _ from 'underscore';
 import { Layer } from 'react-mapbox-gl';
 import DeckGL from '@deck.gl/react';
@@ -38,6 +38,8 @@ const boundarySource = {
 };
 
 export default function Map({
+  countryData,
+  regionData,
   dates,
   aggType,
   activeDate,
@@ -48,6 +50,9 @@ export default function Map({
 }) {
   const [showPopup, setShowPopup] = useState(false);
   const [popupDetails, setPopupDetails] = useState();
+
+  const [mapInitNeeded, setMapInitNeeded] = useState(true);
+  const mapElement = useRef(null);
 
   let currentBreaks = null;
 
@@ -61,6 +66,49 @@ export default function Map({
     }
   }
 
+  const mapInit = (map) => {
+    if (mapInitNeeded) {
+      setMapInitNeeded(false);
+    }
+  };
+
+  const setFeatureStates = function (sourceLayer, data) {
+    Object.entries(data).forEach(([key, locationData]) => {
+      const indicatorData = locationData['values'][indicator],
+        levelData = indicatorData ? indicatorData[boundLevel] : null,
+        value = levelData ? levelData[dates[activeDate]] : null,
+        hasValue = value !== null && value !== undefined;
+
+      mapElement.current.state.map.setFeatureState(
+        { source: 'boundaries', sourceLayer: sourceLayer, id: parseInt(key) },
+        { value: value, hasValue: hasValue ? 1 : 0 },
+      );
+    });
+  };
+
+  // Handle setting feature state based on selected layer.
+  useEffect(() => {
+    if (!mapInitNeeded) {
+      const data = aggType == 'country' ? countryData : regionData;
+      if (!!data) {
+        setFeatureStates(
+          aggType,
+          aggType == 'country' ? countryData : regionData,
+        );
+      }
+    }
+  }, [
+    aggType,
+    countryData,
+    regionData,
+    dates,
+    configLoaded,
+    activeDate,
+    indicator,
+    boundLevel,
+    mapInitNeeded,
+  ]);
+
   const handleHoverFeature = (feature, coordinates) => {
     setPopupDetails({ coords: coordinates, feature: feature });
     setShowPopup(true);
@@ -70,6 +118,8 @@ export default function Map({
     <PopupContent
       feature={popupDetails.feature}
       coordinates={popupDetails.coords}
+      countryData={countryData}
+      regionData={regionData}
       dates={dates}
       aggType={aggType}
       indicator={indicator}
@@ -110,7 +160,13 @@ export default function Map({
         onMouseMove={handleMapOut}
         // eslint-disable-next-line
         style="mapbox://styles/covidcaremap/ck89blkw62p7h1irla8z8b7fy"
+        ref={mapElement}
       >
+        <MapContext.Consumer>
+          {(map) => {
+            mapInitNeeded && mapInit(map);
+          }}
+        </MapContext.Consumer>
         <Source id="boundaries" tileJsonSource={boundarySource} />
         {popup}
         {layers}
@@ -123,8 +179,6 @@ export default function Map({
           boundLevel={boundLevel}
         />
       </MapGL>
-
-      {/* </DeckGL> */}
     </div>
   );
 }

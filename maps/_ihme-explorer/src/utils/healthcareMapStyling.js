@@ -47,23 +47,29 @@ function getFillPaintStyle(
     boundLevel,
     usePerCapita,
   );
-  const property = getProperty(dates[dateIndex], indicator, boundLevel);
 
-  let number = ['number', ['get', property], breaks[0]];
+  let value = ['number', ['feature-state', 'value'], 0];
+  let hasValue = ['number', ['feature-state', 'hasValue'], 0];
 
   // If using per-capita numbers, transform the value according to the feature
   // population and the per-capita base.
   if (usePerCapita && aggregationTypes[aggType].per_capita_base) {
     const perCapitaBase = aggregationTypes[aggType].per_capita_base;
-    number = [
+    value = [
       'number',
-      ['/', ['get', property], ['/', ['get', 'population'], perCapitaBase]],
+      ['/', value, ['/', ['get', 'population'], perCapitaBase]],
       breaks[0],
     ];
   }
 
   return {
-    'fill-color': ['interpolate', ['linear'], number].concat(colorBreaks),
+    'fill-color': [
+      'case',
+      ['==', hasValue, 1],
+      ['interpolate', ['linear'], value].concat(colorBreaks),
+      // If there isn't data, make it transparent.
+      'rgba(0, 0, 0, 0.1)',
+    ],
   };
 }
 
@@ -99,12 +105,8 @@ export const modifyBreaks = (breaks) => {
   return modifiedBreaks;
 };
 
-export function getProperty(date, indicator, boundLevel) {
-  return date + '_' + indicator + '_' + boundLevel;
-}
-
 export const formatNumber = (x, indicator, digits = 2) => {
-  if (isNaN(x)) {
+  if (x === null || isNaN(x)) {
     return 'N/A';
   } else if (Number.isInteger(x)) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
