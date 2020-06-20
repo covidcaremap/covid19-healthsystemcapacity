@@ -342,6 +342,9 @@ that shows a `data` and `notebooks` folder.
 
 Now navigate to the `00_getting_started` folder and run through the notebooks!
 
+If you plan on running notebooks that use Airtable, you'll need to set the `CCM_AIRTABLE_KEY` environment
+variable to your Airtable API key before running docker.
+
 #### Data Processing
 
 If you'll be working with data processing changes for the CovidCareMap.org us healtchare system capacity
