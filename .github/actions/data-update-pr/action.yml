@@ -12,6 +12,7 @@ inputs:
     description: Pull request title
   dataUpdateBranch:
     description: Branch name of the data update branch to pull from.
+    default: 'data/update'
   base:
     description: Branch name to pull to.
   makeComment:

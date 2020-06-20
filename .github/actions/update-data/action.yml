@@ -5,8 +5,17 @@ inputs:
   update_root:
     description: The root directory containing the codebase to use for the data update.
     required: true
+  dataset:
+    description: The dataset to be updated. Not setting will run all scripts.
+    default: 'ALL'
+  airtable_key:
+    description: Airtable API key
+    default: null
 runs:
   using: 'docker'
   image: '../../../Dockerfile'
+  env:
+    AIRTABLE_KEY: ${{ inputs.airtable_key }}
   args:
+    - ${{ inputs.dataset }}
     - ${{ inputs.update_root }}
