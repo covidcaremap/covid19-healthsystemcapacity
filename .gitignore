@@ -8,6 +8,8 @@ notebooks/**/*.xlsx*
 notebooks/**/*.docx*
 notebooks/**/*.txt*
 
+notebook-logs/
+
 # Data that is too big to commit to the repo
 data/external/us-census-cc-est2018-alldata.csv
 data/external/HCRIS*

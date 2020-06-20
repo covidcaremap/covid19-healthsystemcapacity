@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Process data for CovidCareMap.
+"
+}
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do SOURCE="$(readlink "$SOURCE")"; done
+SCRIPT_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+
+
+UPDATE_ROOT=${1}
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+
+    ${SCRIPT_DIR}/process-ihme-data
+
+    # Uncomment to process as part of data update action.
+    # ${SCRIPT_DIR}/process-hscap-data
+
+fi

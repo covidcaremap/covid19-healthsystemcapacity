@@ -1,0 +1,58 @@
+#!/bin/bash
+
+set -e
+
+if [[ -n "${COVID19_DEBUG}" ]]; then
+    set -x
+fi
+
+function usage() {
+    echo -n \
+        "Usage: $(basename "$0")
+Process hospital system capacity data for CovidCareMap.
+"
+}
+
+UPDATE_ROOT=${1}
+
+NOTEBOOKS_TO_RUN=(
+    # Notebooks for previous steps not run as part of
+    # this process; changes should be run manually and
+    # commit processed data to the repository.
+    "processing/Update_FL_Facilities.ipynb"
+    "processing/04_Generate_CovidCareMap_Facility_Data.ipynb"
+    "processing/State_County_Override_via_Airtable.ipynb"
+    "processing/06_Generate_CovidCareMap_Regional_Data.ipynb"
+    "processing/07_Compute_Quantile_Breaks.ipynb"
+)
+
+if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
+
+    if [ "${UPDATE_ROOT}" ]
+    then
+        pushd ${UPDATE_ROOT}
+    fi
+
+    echo "PWD"
+    pwd
+
+    mkdir -p ${UPDATE_ROOT}notebook-logs
+
+    for notebook in "${NOTEBOOKS_TO_RUN[@]}"; do
+        echo
+        echo "==RUNNING ${notebook}=="
+        echo
+
+
+        mkdir -p ${UPDATE_ROOT}notebook-logs/$(dirname $notebook)
+        papermill \
+            ${UPDATE_ROOT}notebooks/${notebook} \
+            ${UPDATE_ROOT}notebook-logs/${notebook}
+    done
+
+    if [ "${UPDATE_ROOT}" ]
+    then
+        popd
+    fi
+
+fi

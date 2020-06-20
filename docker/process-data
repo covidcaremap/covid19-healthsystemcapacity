@@ -29,5 +29,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
            -v "$PROJECT_ROOT":/opt/src \
            -v "$DATA_DIR":/opt/jupyter/data \
            -v "$NOTEBOOK_DIR":/opt/jupyter/notebooks \
+           -e AIRTABLE_KEY=${CCM_AIRTABLE_KEY} \
            ${IMAGE_NAME}:latest
 fi
