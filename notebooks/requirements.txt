@@ -16,3 +16,4 @@ rapidfuzz==0.5.1
 networkx==2.4
 jenkspy==0.1.5
 papermill==2.1.1
+unidecode==1.1.1
