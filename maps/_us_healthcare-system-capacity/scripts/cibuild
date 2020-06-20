@@ -57,7 +57,8 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 
         # Build React application
         npm install
-        npm run build
+        # Set CI="" to avoid failing on warnings.
+        CI="" npm run build
 
         # Synchronize everything to the Jekyll root
         rsync -avz \
