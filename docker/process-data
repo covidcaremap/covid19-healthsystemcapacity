@@ -19,8 +19,11 @@ NOTEBOOK_DIR="${COVID19_NOTEBOOK_DIR:-${PROJECT_ROOT}/notebooks}"
 
 function usage() {
     echo -n \
-        "Usage: $(basename "$0")
+        "Usage: $(basename "$0") DATASET
 Proceess and update data that pulls from live sources.
+
+Arguments:
+        DATASET - Leave blank to run all data updates. HSCAP to run hscap notebooks. IHME to ruh ihme notebooks.
 "
 }
 
@@ -30,5 +33,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
            -v "$DATA_DIR":/opt/jupyter/data \
            -v "$NOTEBOOK_DIR":/opt/jupyter/notebooks \
            -e AIRTABLE_KEY=${CCM_AIRTABLE_KEY} \
-           ${IMAGE_NAME}:latest
+           ${IMAGE_NAME}:latest \
+           $1
 fi
