@@ -130,7 +130,9 @@ export default function Map({
   ) : null;
 
   const handleMapOut = (e) => {
-    e._canvas.style.cursor = '';
+    if (e) {
+      e._canvas.style.cursor = '';
+    }
     setShowPopup(false);
   };
 
@@ -165,6 +167,9 @@ export default function Map({
         <MapContext.Consumer>
           {(map) => {
             mapInitNeeded && mapInit(map);
+            map.on('mouseleave', 'country-fill', function () {
+              handleMapOut();
+            });
           }}
         </MapContext.Consumer>
         <Source id="boundaries" tileJsonSource={boundarySource} />
