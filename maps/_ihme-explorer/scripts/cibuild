@@ -24,12 +24,14 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         mkdir -p build-cache
         mkdir -p data
 
-        # Copy config file
+        # Copy config and data files
         cp "${DIR}/../../../data/processed/ihme-config.json" data/
+        cp "${DIR}/../../../data/processed/ihme-country-data.json" data/
+        cp "${DIR}/../../../data/processed/ihme-region-data.json" data/
 
         # Copy GeoJSON files
-        cp "${DIR}/../../../data/processed/ihme-country-data.geojson" build-cache/
-        cp "${DIR}/../../../data/processed/ihme-region-data.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-country.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-region.geojson" build-cache/
 
         # Replace all instances of NaN with null
         sed -i.bak 's/NaN/null/g' build-cache/*.geojson
@@ -38,11 +40,13 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         tippecanoe -f -pk -pf --no-tile-compression \
                    --maximum-zoom=8 --minimum-zoom=0 \
                    -e data/tiles \
-                   --named-layer=country:build-cache/ihme-country-data.geojson \
-                   --named-layer=region:build-cache/ihme-region-data.geojson
+                   --named-layer=country:build-cache/ihme-country.geojson \
+                   --named-layer=region:build-cache/ihme-region.geojson
 
         # Build React application
         npm install
+        npm install --global prettier
+        prettier --check ./src
         # Set CI="" to avoid failing on warnings.
         CI="" npm run build
 

@@ -22,29 +22,24 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         mkdir -p build-cache
         mkdir -p data/config
 
-        # Copy config file
+        # Copy config and data files
         cp "${DIR}/../../../data/processed/ihme-config.json" data/
+        cp "${DIR}/../../../data/processed/ihme-country-data.json" data/
+        cp "${DIR}/../../../data/processed/ihme-region-data.json" data/
 
         # Copy GeoJSON files
-        cp "${DIR}/../../../data/processed/ihme-country-data.geojson" build-cache/
-        cp "${DIR}/../../../data/processed/ihme-region-data.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-country.geojson" build-cache/
+        cp "${DIR}/../../../data/processed/ihme-region.geojson" build-cache/
 
         # Replace all instances of NaN with null
-        sed -i.bak 's/NaN/null/' build-cache/*.geojson
+        sed -i.bak 's/NaN/null/g' build-cache/*.geojson
 
         # Generate intermediate data set
-        tippecanoe -f -pk --no-tile-compression -o build-cache/country.mbtiles \
-                   --maximum-zoom=8 --minimum-zoom=0 -l country build-cache/ihme-country-data.geojson
-        tippecanoe -f -pk --no-tile-compression -o build-cache/region.mbtiles \
-            --maximum-zoom=8 --minimum-zoom=0 -l region build-cache/ihme-region-data.geojson
-
-        tile-join -f -pk --no-tile-compression -o build-cache/combined.mbtiles \
-            build-cache/country.mbtiles \
-            build-cache/region.mbtiles
-
-        # Generate vector tiles
-        rm -rf data/tiles
-        mb-util --image_format=pbf build-cache/combined.mbtiles data/tiles
+        tippecanoe -f -pk -pf --no-tile-compression \
+                   --maximum-zoom=8 --minimum-zoom=0 \
+                   -e data/tiles \
+                   --named-layer=country:build-cache/ihme-country.geojson \
+                   --named-layer=region:build-cache/ihme-region.geojson
 
         # Synchronize everything to the Jekyll root
         rm -r public/data
