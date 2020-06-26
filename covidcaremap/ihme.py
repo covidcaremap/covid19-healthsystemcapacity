@@ -68,7 +68,9 @@ class IHME:
 
         latest_csv_name = [x.filename
                            for x in z.filelist
-                           if x.filename.endswith('Hospitalization_all_locs.csv')][0]
+                           if x.filename.endswith('Hospitalization_all_locs.csv') or
+                           x.filename.endswith('Reference_hospitalization_all_locs.csv')
+        ][0]
 
         df = pd.read_csv(z.open(latest_csv_name))
         if include_version:
