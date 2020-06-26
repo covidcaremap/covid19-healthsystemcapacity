@@ -309,6 +309,16 @@ Puerto Rico populations taken from [Puerto Rico Commonwealth Population by Chara
 
 [WorldPop data](https://www.worldpop.org/methods) as utilized in zonal summary calculates for country and region geometries produced by @echeipesh via https://github.com/echeipesh/geotrellis-worldpop to create 2020 population estimates.
 
+#### World Bank Population
+
+Accessed from https://data.worldbank.org/indicator/SP.POP.TOTL on June 26, 2020.
+
+Sources: (1) United Nations Population Division. World Population Prospects: 2019 Revision. (2) Census reports and other statistical publications from national statistical offices, (3) Eurostat: Demographic Statistics, (4) United Nations Statistical Division. Population and Vital Statistics Reprot (various years), (5) U.S. Census Bureau: International Database, and (6) Secretariat of the Pacific Community: Statistics and Demography Programme.
+
+License: CC-BY-4.0
+
+- **API_SP.POP.TOTL_DS2_en_csv_v2_1120881.csv**: Total population for all countries and economies
+
 ##### FILES
 
 - **worldpop-region-pop-for-ihme-2020.csv**: Populations for regions in IHME projections.
