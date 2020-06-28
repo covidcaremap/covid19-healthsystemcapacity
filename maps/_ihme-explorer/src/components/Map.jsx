@@ -58,11 +58,9 @@ export default function Map({
 
   if (aggregationTypes[aggType].breaks) {
     if (usePerCapita) {
-      currentBreaks =
-        aggregationTypes[aggType].breaks['per_capita'][indicator][boundLevel];
+      currentBreaks = aggregationTypes[aggType].breaks['per_capita'][indicator];
     } else {
-      currentBreaks =
-        aggregationTypes[aggType].breaks['totals'][indicator][boundLevel];
+      currentBreaks = aggregationTypes[aggType].breaks['totals'][indicator];
     }
   }
 
