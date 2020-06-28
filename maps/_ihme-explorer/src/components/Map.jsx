@@ -5,11 +5,8 @@ import { Layer } from 'react-mapbox-gl';
 import DeckGL from '@deck.gl/react';
 import { StaticMap } from 'react-map-gl';
 import { GeoJsonLayer, PolygonLayer } from '@deck.gl/layers';
-import {
-  LightingEffect,
-  AmbientLight,
-  _SunLight as SunLight,
-} from '@deck.gl/core';
+
+import Loading from '../Loading';
 import { scaleThreshold } from 'd3-scale';
 import IHMELayers from './IHMELayers';
 import PopupContent from './PopupContent';
@@ -58,11 +55,9 @@ export default function Map({
 
   if (aggregationTypes[aggType].breaks) {
     if (usePerCapita) {
-      currentBreaks =
-        aggregationTypes[aggType].breaks['per_capita'][indicator][boundLevel];
+      currentBreaks = aggregationTypes[aggType].breaks['per_capita'][indicator];
     } else {
-      currentBreaks =
-        aggregationTypes[aggType].breaks['totals'][indicator][boundLevel];
+      currentBreaks = aggregationTypes[aggType].breaks['totals'][indicator];
     }
   }
 
@@ -152,6 +147,7 @@ export default function Map({
 
   return (
     <div className="map-container">
+      {!(configLoaded && !!countryData) && <Loading />}
       <MapGL
         className="map"
         zoom={zoom}
