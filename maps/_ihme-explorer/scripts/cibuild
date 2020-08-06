@@ -19,7 +19,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
     if [ "${1:-}" = "--help" ]; then
         usage
     else
-        . "/usr/local/bin/run-build-functions.sh"
 
         mkdir -p build-cache
         mkdir -p data
