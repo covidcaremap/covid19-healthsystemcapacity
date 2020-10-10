@@ -9,8 +9,8 @@ on:
   push:
     branches:
       - feature/automatic-data-update
-  schedule:
-    - cron: "0 0 * * *"
+  # schedule:
+  #   - cron: "0 0 * * *"
 
 jobs:
   publish_ihme:
