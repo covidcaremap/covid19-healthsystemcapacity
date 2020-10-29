@@ -35,12 +35,12 @@ RUN pip install python-dateutil==2.8.0
 RUN pip install dash==1.9.1
 
 ## Install chime
-RUN mkdir -p /opt/tmp && \
-    cd /opt/tmp && \
-    git clone --single-branch --depth 1 \
-        --branch rde/feature/regional-sir-model https://github.com/lossyrob/chime.git && \
-    cd chime && \
-    python setup.py install
+# RUN mkdir -p /opt/tmp && \
+#     cd /opt/tmp && \
+#     git clone --single-branch --depth 1 \
+#         --branch rde/feature/regional-sir-model https://github.com/lossyrob/chime.git && \
+#     cd chime && \
+#     python setup.py install
 
 WORKDIR /opt/src
 
