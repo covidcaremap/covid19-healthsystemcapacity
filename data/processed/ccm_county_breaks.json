@@ -29,7 +29,7 @@
     ],
     "ICU Bed Occupancy Rate": [
         0.0,
-        0.35,
+        0.3425,
         0.52,
         0.67,
         1.0
@@ -37,22 +37,22 @@
     "Staffed All Beds [Per 1000 People]": [
         0.0,
         1.244,
-        1.998,
+        1.996,
         3.084,
         30.373
     ],
     "Staffed All Beds [Per 1000 Adults (20+)]": [
         0.0,
         1.636,
-        2.66,
+        2.662,
         4.148,
         39.077
     ],
     "Staffed All Beds [Per 1000 Elderly (65+)]": [
         0.0,
-        6.672,
-        11.02,
-        17.488,
+        6.673,
+        11.018,
+        17.47,
         155.666
     ],
     "Staffed ICU Beds [Per 1000 People]": [
