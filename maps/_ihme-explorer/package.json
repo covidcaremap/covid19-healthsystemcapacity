@@ -17,7 +17,7 @@
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.3",
     "react-mapbox-gl": "^4.8.3",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-use": "^13.27.1",
     "underscore": "1.10.2",
     "color-interpolate": "1.0.5"
